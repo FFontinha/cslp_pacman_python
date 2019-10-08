@@ -1,0 +1,74 @@
+\hypertarget{classpip_1_1exceptions_1_1_hash_mismatch}{}\section{pip.\+exceptions.\+Hash\+Mismatch Class Reference}
+\label{classpip_1_1exceptions_1_1_hash_mismatch}\index{pip.\+exceptions.\+Hash\+Mismatch@{pip.\+exceptions.\+Hash\+Mismatch}}
+
+
+Inherits \hyperlink{classpip_1_1exceptions_1_1_hash_error}{pip.\+exceptions.\+Hash\+Error}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpip_1_1exceptions_1_1_hash_mismatch_a93257ed7d14ba873ad101ab089f1046d}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, allowed, gots)
+\item 
+\mbox{\Hypertarget{classpip_1_1exceptions_1_1_hash_mismatch_a538200e2164d37e674beeb25e660dc6e}\label{classpip_1_1exceptions_1_1_hash_mismatch_a538200e2164d37e674beeb25e660dc6e}} 
+def {\bfseries body} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1exceptions_1_1_hash_mismatch_a5917ca036966d76548ec97c16fddea4a}\label{classpip_1_1exceptions_1_1_hash_mismatch_a5917ca036966d76548ec97c16fddea4a}} 
+{\bfseries allowed}
+\item 
+\mbox{\Hypertarget{classpip_1_1exceptions_1_1_hash_mismatch_a5be1ede118cf9d20bf929f9a29c3322d}\label{classpip_1_1exceptions_1_1_hash_mismatch_a5be1ede118cf9d20bf929f9a29c3322d}} 
+{\bfseries gots}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1exceptions_1_1_hash_mismatch_a25618466d1333da33282e5bc43d57a21}\label{classpip_1_1exceptions_1_1_hash_mismatch_a25618466d1333da33282e5bc43d57a21}} 
+int {\bfseries order} = 4
+\item 
+tuple {\bfseries head}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Distribution file hash values don't match.
+
+:ivar package_name: The name of the package that triggered the hash
+    mismatch. Feel free to write to this after the exception is raise to
+    improve its error message.\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpip_1_1exceptions_1_1_hash_mismatch_a93257ed7d14ba873ad101ab089f1046d}\label{classpip_1_1exceptions_1_1_hash_mismatch_a93257ed7d14ba873ad101ab089f1046d}} 
+\index{pip\+::exceptions\+::\+Hash\+Mismatch@{pip\+::exceptions\+::\+Hash\+Mismatch}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pip\+::exceptions\+::\+Hash\+Mismatch@{pip\+::exceptions\+::\+Hash\+Mismatch}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pip.\+exceptions.\+Hash\+Mismatch.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{allowed,  }\item[{}]{gots }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param allowed: A dict of algorithm names pointing to lists of allowed
+    hex digests
+:param gots: A dict of algorithm names pointing to hashes we
+    actually got from the files under suspicion
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpip_1_1exceptions_1_1_hash_mismatch_aed474364b861f4940307ca4d80e457ab}\label{classpip_1_1exceptions_1_1_hash_mismatch_aed474364b861f4940307ca4d80e457ab}} 
+\index{pip\+::exceptions\+::\+Hash\+Mismatch@{pip\+::exceptions\+::\+Hash\+Mismatch}!head@{head}}
+\index{head@{head}!pip\+::exceptions\+::\+Hash\+Mismatch@{pip\+::exceptions\+::\+Hash\+Mismatch}}
+\subsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily tuple pip.\+exceptions.\+Hash\+Mismatch.\+head\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  (\textcolor{stringliteral}{'THESE PACKAGES DO NOT MATCH THE HASHES FROM THE REQUIREMENTS '}
+            \textcolor{stringliteral}{'FILE. If you have updated the package versions, please update '}
+            \textcolor{stringliteral}{'the hashes. Otherwise, examine the package contents carefully; '}
+            \textcolor{stringliteral}{'someone may have tampered with them.'})
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pip/exceptions.\+py\end{DoxyCompactItemize}

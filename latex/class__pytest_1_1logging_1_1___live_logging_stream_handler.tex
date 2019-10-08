@@ -1,0 +1,67 @@
+\hypertarget{class__pytest_1_1logging_1_1___live_logging_stream_handler}{}\section{\+\_\+pytest.\+logging.\+\_\+\+Live\+Logging\+Stream\+Handler Class Reference}
+\label{class__pytest_1_1logging_1_1___live_logging_stream_handler}\index{\+\_\+pytest.\+logging.\+\_\+\+Live\+Logging\+Stream\+Handler@{\+\_\+pytest.\+logging.\+\_\+\+Live\+Logging\+Stream\+Handler}}
+
+
+Inherits Stream\+Handler.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{class__pytest_1_1logging_1_1___live_logging_stream_handler_a323e33576cb884d3d93c5f8e44cb0b57}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, terminal\+\_\+reporter, capture\+\_\+manager)
+\item 
+def \hyperlink{class__pytest_1_1logging_1_1___live_logging_stream_handler_a7150005144dee0a36acccf875fefed04}{reset} (self)
+\item 
+def \hyperlink{class__pytest_1_1logging_1_1___live_logging_stream_handler_a78eaedf1bf9dec22a47f94a41730b83c}{set\+\_\+when} (self, when)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1logging_1_1___live_logging_stream_handler_ac6bea0e69e6feb5bf38c2392b9569dc5}\label{class__pytest_1_1logging_1_1___live_logging_stream_handler_ac6bea0e69e6feb5bf38c2392b9569dc5}} 
+def {\bfseries emit} (self, record)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1logging_1_1___live_logging_stream_handler_ae43bc17c2f6d1e69911dc48a1a2d428b}\label{class__pytest_1_1logging_1_1___live_logging_stream_handler_ae43bc17c2f6d1e69911dc48a1a2d428b}} 
+{\bfseries capture\+\_\+manager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Custom StreamHandler used by the live logging feature: it will write a newline before the first log message
+in each test.
+
+During live logging we must also explicitly disable stdout/stderr capturing otherwise it will get captured
+and won't appear in the terminal.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class__pytest_1_1logging_1_1___live_logging_stream_handler_a323e33576cb884d3d93c5f8e44cb0b57}\label{class__pytest_1_1logging_1_1___live_logging_stream_handler_a323e33576cb884d3d93c5f8e44cb0b57}} 
+\index{\+\_\+pytest\+::logging\+::\+\_\+\+Live\+Logging\+Stream\+Handler@{\+\_\+pytest\+::logging\+::\+\_\+\+Live\+Logging\+Stream\+Handler}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!\+\_\+pytest\+::logging\+::\+\_\+\+Live\+Logging\+Stream\+Handler@{\+\_\+pytest\+::logging\+::\+\_\+\+Live\+Logging\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+logging.\+\_\+\+Live\+Logging\+Stream\+Handler.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{terminal\+\_\+reporter,  }\item[{}]{capture\+\_\+manager }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param _pytest.terminal.TerminalReporter terminal_reporter:
+:param _pytest.capture.CaptureManager capture_manager:
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1logging_1_1___live_logging_stream_handler_a7150005144dee0a36acccf875fefed04}\label{class__pytest_1_1logging_1_1___live_logging_stream_handler_a7150005144dee0a36acccf875fefed04}} 
+\index{\+\_\+pytest\+::logging\+::\+\_\+\+Live\+Logging\+Stream\+Handler@{\+\_\+pytest\+::logging\+::\+\_\+\+Live\+Logging\+Stream\+Handler}!reset@{reset}}
+\index{reset@{reset}!\+\_\+pytest\+::logging\+::\+\_\+\+Live\+Logging\+Stream\+Handler@{\+\_\+pytest\+::logging\+::\+\_\+\+Live\+Logging\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+logging.\+\_\+\+Live\+Logging\+Stream\+Handler.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reset the handler; should be called before the start of each test\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1logging_1_1___live_logging_stream_handler_a78eaedf1bf9dec22a47f94a41730b83c}\label{class__pytest_1_1logging_1_1___live_logging_stream_handler_a78eaedf1bf9dec22a47f94a41730b83c}} 
+\index{\+\_\+pytest\+::logging\+::\+\_\+\+Live\+Logging\+Stream\+Handler@{\+\_\+pytest\+::logging\+::\+\_\+\+Live\+Logging\+Stream\+Handler}!set\+\_\+when@{set\+\_\+when}}
+\index{set\+\_\+when@{set\+\_\+when}!\+\_\+pytest\+::logging\+::\+\_\+\+Live\+Logging\+Stream\+Handler@{\+\_\+pytest\+::logging\+::\+\_\+\+Live\+Logging\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{set\+\_\+when()}{set\_when()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+logging.\+\_\+\+Live\+Logging\+Stream\+Handler.\+set\+\_\+when (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{when }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prepares for the given test phase (setup/call/teardown)\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/logging.\+py\end{DoxyCompactItemize}

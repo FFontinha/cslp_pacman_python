@@ -1,0 +1,225 @@
+\hypertarget{scrap_8h}{}\section{venv/include/site/python3.6/pygame/scrap.h File Reference}
+\label{scrap_8h}\index{venv/include/site/python3.\+6/pygame/scrap.\+h@{venv/include/site/python3.\+6/pygame/scrap.\+h}}
+{\ttfamily \#include $<$Python.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{scrap_8h_a10deffb6184d0baf78d24e874fa501ae}{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+T\+E\+XT}~\char`\"{}text/plain\char`\"{}
+\item 
+\#define \hyperlink{scrap_8h_acd6ba02e5e55726227877730ef3f8ace}{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+B\+MP}~\char`\"{}image/bmp\char`\"{}
+\item 
+\#define \hyperlink{scrap_8h_a99ec70deff4a7ff99dc78afdd0256385}{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+P\+PM}~\char`\"{}image/ppm\char`\"{}
+\item 
+\#define \hyperlink{scrap_8h_ae2b8da50a64529ba4d9fc96e84b47074}{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+P\+BM}~\char`\"{}image/pbm\char`\"{}
+\item 
+\#define \hyperlink{scrap_8h_aefc04d5b8ed124ba98f4aa14735657d3}{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK}()
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{scrap_8h_adc7cd547b8cf9f04a2ce6d26d42ccc68}{Scrap\+Clip\+Type} \{ \hyperlink{scrap_8h_adc7cd547b8cf9f04a2ce6d26d42ccc68ab40b2c009c0393858127fe2eaa2a5120}{S\+C\+R\+A\+P\+\_\+\+C\+L\+I\+P\+B\+O\+A\+RD}, 
+\hyperlink{scrap_8h_adc7cd547b8cf9f04a2ce6d26d42ccc68acad116ed8ec9b3ed59ea64b1112ae080}{S\+C\+R\+A\+P\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{scrap_8h_acb23fc9f9ade4f013f027b976ae9381d}{pygame\+\_\+scrap\+\_\+initialized} (void)
+\begin{DoxyCompactList}\small\item\em Checks, whether the pygame scrap module was initialized. \end{DoxyCompactList}\item 
+int \hyperlink{scrap_8h_ab9ccf25ebed5350a9515e765e0539f12}{pygame\+\_\+scrap\+\_\+init} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the pygame scrap module internals. Call this before any other method. \end{DoxyCompactList}\item 
+int \hyperlink{scrap_8h_a52319f1ec7056fdc5f810e065914083c}{pygame\+\_\+scrap\+\_\+lost} (void)
+\begin{DoxyCompactList}\small\item\em Checks, whether the pygame window lost the clipboard focus or not. \end{DoxyCompactList}\item 
+int \hyperlink{scrap_8h_a82392fe615cf0cdd07714600e67d1e64}{pygame\+\_\+scrap\+\_\+put} (char $\ast$type, int srclen, char $\ast$src)
+\begin{DoxyCompactList}\small\item\em Places content of a specific type into the clipboard. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{scrap_8h_a58e220b2b626811e033a41184f43a7bd}{pygame\+\_\+scrap\+\_\+get} (char $\ast$type, unsigned long $\ast$count)
+\begin{DoxyCompactList}\small\item\em Gets the current content from the clipboard. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \hyperlink{scrap_8h_ac400e97df556e42dd5935060fd4c18da}{pygame\+\_\+scrap\+\_\+get\+\_\+types} (void)
+\begin{DoxyCompactList}\small\item\em Gets the currently available content types from the clipboard. \end{DoxyCompactList}\item 
+int \hyperlink{scrap_8h_a41d070c985f75ed3341367105bae8ce8}{pygame\+\_\+scrap\+\_\+contains} (char $\ast$type)
+\begin{DoxyCompactList}\small\item\em Checks whether content for the specified scrap type is currently available in the clipboard. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{scrap_8h_acd6ba02e5e55726227877730ef3f8ace}\label{scrap_8h_acd6ba02e5e55726227877730ef3f8ace}} 
+\index{scrap.\+h@{scrap.\+h}!P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+B\+MP@{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+B\+MP}}
+\index{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+B\+MP@{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+B\+MP}!scrap.\+h@{scrap.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+B\+MP}{PYGAME\_SCRAP\_BMP}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+B\+MP~\char`\"{}image/bmp\char`\"{}}
+
+\mbox{\Hypertarget{scrap_8h_aefc04d5b8ed124ba98f4aa14735657d3}\label{scrap_8h_aefc04d5b8ed124ba98f4aa14735657d3}} 
+\index{scrap.\+h@{scrap.\+h}!P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK@{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK}}
+\index{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK@{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK}!scrap.\+h@{scrap.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK}{PYGAME\_SCRAP\_INIT\_CHECK}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if}(!\hyperlink{scrap_8h_acb23fc9f9ade4f013f027b976ae9381d}{pygame\_scrap\_initialized}()) \(\backslash\)
+        return (PyErr\_SetString (\hyperlink{__pygame_8h_ad80ae665421878ea243b8c23dfbf7d34}{PyExc\_SDLError}, \(\backslash\)
+                                 \textcolor{stringliteral}{"scrap system not initialized."}), NULL)
+\end{DoxyCode}
+Macro for initialization checks. \mbox{\Hypertarget{scrap_8h_ae2b8da50a64529ba4d9fc96e84b47074}\label{scrap_8h_ae2b8da50a64529ba4d9fc96e84b47074}} 
+\index{scrap.\+h@{scrap.\+h}!P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+P\+BM@{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+P\+BM}}
+\index{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+P\+BM@{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+P\+BM}!scrap.\+h@{scrap.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+P\+BM}{PYGAME\_SCRAP\_PBM}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+P\+BM~\char`\"{}image/pbm\char`\"{}}
+
+\mbox{\Hypertarget{scrap_8h_a99ec70deff4a7ff99dc78afdd0256385}\label{scrap_8h_a99ec70deff4a7ff99dc78afdd0256385}} 
+\index{scrap.\+h@{scrap.\+h}!P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+P\+PM@{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+P\+PM}}
+\index{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+P\+PM@{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+P\+PM}!scrap.\+h@{scrap.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+P\+PM}{PYGAME\_SCRAP\_PPM}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+P\+PM~\char`\"{}image/ppm\char`\"{}}
+
+\mbox{\Hypertarget{scrap_8h_a10deffb6184d0baf78d24e874fa501ae}\label{scrap_8h_a10deffb6184d0baf78d24e874fa501ae}} 
+\index{scrap.\+h@{scrap.\+h}!P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+T\+E\+XT@{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+T\+E\+XT}}
+\index{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+T\+E\+XT@{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+T\+E\+XT}!scrap.\+h@{scrap.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+T\+E\+XT}{PYGAME\_SCRAP\_TEXT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+T\+E\+XT~\char`\"{}text/plain\char`\"{}}
+
+Predefined supported pygame scrap types. 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{scrap_8h_adc7cd547b8cf9f04a2ce6d26d42ccc68}\label{scrap_8h_adc7cd547b8cf9f04a2ce6d26d42ccc68}} 
+\index{scrap.\+h@{scrap.\+h}!Scrap\+Clip\+Type@{Scrap\+Clip\+Type}}
+\index{Scrap\+Clip\+Type@{Scrap\+Clip\+Type}!scrap.\+h@{scrap.\+h}}
+\subsubsection{\texorpdfstring{Scrap\+Clip\+Type}{ScrapClipType}}
+{\footnotesize\ttfamily enum \hyperlink{scrap_8h_adc7cd547b8cf9f04a2ce6d26d42ccc68}{Scrap\+Clip\+Type}}
+
+The supported scrap clipboard types.
+
+This is only relevant in a X11 environment, which supports mouse selections as well. For Win32 and Mac\+OS environments the default clipboard is used, no matter what value is passed. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+C\+R\+A\+P\+\_\+\+C\+L\+I\+P\+B\+O\+A\+RD@{S\+C\+R\+A\+P\+\_\+\+C\+L\+I\+P\+B\+O\+A\+RD}!scrap.\+h@{scrap.\+h}}\index{scrap.\+h@{scrap.\+h}!S\+C\+R\+A\+P\+\_\+\+C\+L\+I\+P\+B\+O\+A\+RD@{S\+C\+R\+A\+P\+\_\+\+C\+L\+I\+P\+B\+O\+A\+RD}}}\mbox{\Hypertarget{scrap_8h_adc7cd547b8cf9f04a2ce6d26d42ccc68ab40b2c009c0393858127fe2eaa2a5120}\label{scrap_8h_adc7cd547b8cf9f04a2ce6d26d42ccc68ab40b2c009c0393858127fe2eaa2a5120}} 
+S\+C\+R\+A\+P\+\_\+\+C\+L\+I\+P\+B\+O\+A\+RD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+C\+R\+A\+P\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON@{S\+C\+R\+A\+P\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON}!scrap.\+h@{scrap.\+h}}\index{scrap.\+h@{scrap.\+h}!S\+C\+R\+A\+P\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON@{S\+C\+R\+A\+P\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON}}}\mbox{\Hypertarget{scrap_8h_adc7cd547b8cf9f04a2ce6d26d42ccc68acad116ed8ec9b3ed59ea64b1112ae080}\label{scrap_8h_adc7cd547b8cf9f04a2ce6d26d42ccc68acad116ed8ec9b3ed59ea64b1112ae080}} 
+S\+C\+R\+A\+P\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{scrap_8h_a41d070c985f75ed3341367105bae8ce8}\label{scrap_8h_a41d070c985f75ed3341367105bae8ce8}} 
+\index{scrap.\+h@{scrap.\+h}!pygame\+\_\+scrap\+\_\+contains@{pygame\+\_\+scrap\+\_\+contains}}
+\index{pygame\+\_\+scrap\+\_\+contains@{pygame\+\_\+scrap\+\_\+contains}!scrap.\+h@{scrap.\+h}}
+\subsubsection{\texorpdfstring{pygame\+\_\+scrap\+\_\+contains()}{pygame\_scrap\_contains()}}
+{\footnotesize\ttfamily int pygame\+\_\+scrap\+\_\+contains (\begin{DoxyParamCaption}\item[{char $\ast$}]{type }\end{DoxyParamCaption})}
+
+
+
+Checks whether content for the specified scrap type is currently available in the clipboard. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type to check for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1, if there is content and 0 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{scrap_8h_a58e220b2b626811e033a41184f43a7bd}\label{scrap_8h_a58e220b2b626811e033a41184f43a7bd}} 
+\index{scrap.\+h@{scrap.\+h}!pygame\+\_\+scrap\+\_\+get@{pygame\+\_\+scrap\+\_\+get}}
+\index{pygame\+\_\+scrap\+\_\+get@{pygame\+\_\+scrap\+\_\+get}!scrap.\+h@{scrap.\+h}}
+\subsubsection{\texorpdfstring{pygame\+\_\+scrap\+\_\+get()}{pygame\_scrap\_get()}}
+{\footnotesize\ttfamily char$\ast$ pygame\+\_\+scrap\+\_\+get (\begin{DoxyParamCaption}\item[{char $\ast$}]{type,  }\item[{unsigned long $\ast$}]{count }\end{DoxyParamCaption})}
+
+
+
+Gets the current content from the clipboard. 
+
+\begin{DoxyNote}{Note}
+The received content does not need to be the content previously placed in the clipboard using pygame\+\_\+put\+\_\+scrap(). See the pygame\+\_\+put\+\_\+scrap() notes for more details.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the content to receive. \\
+\hline
+{\em count} & The size of the returned content. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The content or N\+U\+LL in case of an error or if no content of the specified type was available. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{scrap_8h_ac400e97df556e42dd5935060fd4c18da}\label{scrap_8h_ac400e97df556e42dd5935060fd4c18da}} 
+\index{scrap.\+h@{scrap.\+h}!pygame\+\_\+scrap\+\_\+get\+\_\+types@{pygame\+\_\+scrap\+\_\+get\+\_\+types}}
+\index{pygame\+\_\+scrap\+\_\+get\+\_\+types@{pygame\+\_\+scrap\+\_\+get\+\_\+types}!scrap.\+h@{scrap.\+h}}
+\subsubsection{\texorpdfstring{pygame\+\_\+scrap\+\_\+get\+\_\+types()}{pygame\_scrap\_get\_types()}}
+{\footnotesize\ttfamily char$\ast$$\ast$ pygame\+\_\+scrap\+\_\+get\+\_\+types (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gets the currently available content types from the clipboard. 
+
+\begin{DoxyReturn}{Returns}
+The different available content types or N\+U\+LL in case of an error or if no content type is available. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{scrap_8h_ab9ccf25ebed5350a9515e765e0539f12}\label{scrap_8h_ab9ccf25ebed5350a9515e765e0539f12}} 
+\index{scrap.\+h@{scrap.\+h}!pygame\+\_\+scrap\+\_\+init@{pygame\+\_\+scrap\+\_\+init}}
+\index{pygame\+\_\+scrap\+\_\+init@{pygame\+\_\+scrap\+\_\+init}!scrap.\+h@{scrap.\+h}}
+\subsubsection{\texorpdfstring{pygame\+\_\+scrap\+\_\+init()}{pygame\_scrap\_init()}}
+{\footnotesize\ttfamily int pygame\+\_\+scrap\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the pygame scrap module internals. Call this before any other method. 
+
+\begin{DoxyReturn}{Returns}
+1 on successful initialization, 0 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{scrap_8h_acb23fc9f9ade4f013f027b976ae9381d}\label{scrap_8h_acb23fc9f9ade4f013f027b976ae9381d}} 
+\index{scrap.\+h@{scrap.\+h}!pygame\+\_\+scrap\+\_\+initialized@{pygame\+\_\+scrap\+\_\+initialized}}
+\index{pygame\+\_\+scrap\+\_\+initialized@{pygame\+\_\+scrap\+\_\+initialized}!scrap.\+h@{scrap.\+h}}
+\subsubsection{\texorpdfstring{pygame\+\_\+scrap\+\_\+initialized()}{pygame\_scrap\_initialized()}}
+{\footnotesize\ttfamily int pygame\+\_\+scrap\+\_\+initialized (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Checks, whether the pygame scrap module was initialized. 
+
+\begin{DoxyReturn}{Returns}
+1 if the modules was initialized, 0 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{scrap_8h_a52319f1ec7056fdc5f810e065914083c}\label{scrap_8h_a52319f1ec7056fdc5f810e065914083c}} 
+\index{scrap.\+h@{scrap.\+h}!pygame\+\_\+scrap\+\_\+lost@{pygame\+\_\+scrap\+\_\+lost}}
+\index{pygame\+\_\+scrap\+\_\+lost@{pygame\+\_\+scrap\+\_\+lost}!scrap.\+h@{scrap.\+h}}
+\subsubsection{\texorpdfstring{pygame\+\_\+scrap\+\_\+lost()}{pygame\_scrap\_lost()}}
+{\footnotesize\ttfamily int pygame\+\_\+scrap\+\_\+lost (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Checks, whether the pygame window lost the clipboard focus or not. 
+
+\begin{DoxyReturn}{Returns}
+1 if the window lost the focus, 0 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{scrap_8h_a82392fe615cf0cdd07714600e67d1e64}\label{scrap_8h_a82392fe615cf0cdd07714600e67d1e64}} 
+\index{scrap.\+h@{scrap.\+h}!pygame\+\_\+scrap\+\_\+put@{pygame\+\_\+scrap\+\_\+put}}
+\index{pygame\+\_\+scrap\+\_\+put@{pygame\+\_\+scrap\+\_\+put}!scrap.\+h@{scrap.\+h}}
+\subsubsection{\texorpdfstring{pygame\+\_\+scrap\+\_\+put()}{pygame\_scrap\_put()}}
+{\footnotesize\ttfamily int pygame\+\_\+scrap\+\_\+put (\begin{DoxyParamCaption}\item[{char $\ast$}]{type,  }\item[{int}]{srclen,  }\item[{char $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+Places content of a specific type into the clipboard. 
+
+\begin{DoxyNote}{Note}
+For X11 the following notes are important\+: The following types are reserved for internal usage and thus will throw an error on setting them\+: \char`\"{}\+T\+I\+M\+E\+S\+T\+A\+M\+P\char`\"{}, \char`\"{}\+T\+A\+R\+G\+E\+T\+S\char`\"{}, \char`\"{}\+S\+D\+L\+\_\+\+S\+E\+L\+E\+C\+T\+I\+O\+N\char`\"{}. Setting P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+T\+E\+XT (\char`\"{}text/plain\char`\"{}) will also automatically set the X11 types \char`\"{}\+S\+T\+R\+I\+N\+G\char`\"{} (X\+A\+\_\+\+S\+T\+R\+I\+NG), \char`\"{}\+T\+E\+X\+T\char`\"{} and \char`\"{}\+U\+T\+F8\+\_\+\+S\+T\+R\+I\+N\+G\char`\"{}.
+\end{DoxyNote}
+For Win32 the following notes are important\+: Setting P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+T\+E\+XT (\char`\"{}text/plain\char`\"{}) will also automatically set the Win32 type \char`\"{}\+T\+E\+X\+T\char`\"{} (C\+F\+\_\+\+T\+E\+XT).
+
+For Q\+NX the following notes are important\+: Setting P\+Y\+G\+A\+M\+E\+\_\+\+S\+C\+R\+A\+P\+\_\+\+T\+E\+XT (\char`\"{}text/plain\char`\"{}) will also automatically set the Q\+NX type \char`\"{}\+T\+E\+X\+T\char`\"{} (Ph\+\_\+\+C\+L\+\_\+\+T\+E\+XT).
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the content. \\
+\hline
+{\em srclen} & The length of the content. \\
+\hline
+{\em src} & The N\+U\+LL terminated content. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1, if the content could be successfully pasted into the clipboard, 0 otherwise. 
+\end{DoxyReturn}

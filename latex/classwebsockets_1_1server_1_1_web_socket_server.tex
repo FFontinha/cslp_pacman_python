@@ -1,0 +1,125 @@
+\hypertarget{classwebsockets_1_1server_1_1_web_socket_server}{}\section{websockets.\+server.\+Web\+Socket\+Server Class Reference}
+\label{classwebsockets_1_1server_1_1_web_socket_server}\index{websockets.\+server.\+Web\+Socket\+Server@{websockets.\+server.\+Web\+Socket\+Server}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1server_1_1_web_socket_server_a0654e289d8c9887f0ed3e57c04efdf06}\label{classwebsockets_1_1server_1_1_web_socket_server_a0654e289d8c9887f0ed3e57c04efdf06}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, loop)
+\item 
+def \hyperlink{classwebsockets_1_1server_1_1_web_socket_server_a60597fd69a0934641d155224dabbbbb6}{wrap} (self, server)
+\item 
+def \hyperlink{classwebsockets_1_1server_1_1_web_socket_server_aeb56f1f2ae987bc26a411df007ebbad2}{register} (self, protocol)
+\item 
+def \hyperlink{classwebsockets_1_1server_1_1_web_socket_server_aa31d87887a41677810ee3bf697c91c6b}{unregister} (self, protocol)
+\item 
+def \hyperlink{classwebsockets_1_1server_1_1_web_socket_server_a8c35ed402352e7ba84f5f63759416634}{close} (self)
+\item 
+def \hyperlink{classwebsockets_1_1server_1_1_web_socket_server_a26e9d65297da6b0cbd03bdffb59da006}{wait\+\_\+closed} (self)
+\item 
+def \hyperlink{classwebsockets_1_1server_1_1_web_socket_server_af29b25dfd0978574df573130b4f0c3e3}{sockets} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1server_1_1_web_socket_server_ac50a67194207e91a9b96b5aaeddce0ab}\label{classwebsockets_1_1server_1_1_web_socket_server_ac50a67194207e91a9b96b5aaeddce0ab}} 
+{\bfseries loop}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1server_1_1_web_socket_server_a7c095f358bb98e4074c83bb22b7f75cd}\label{classwebsockets_1_1server_1_1_web_socket_server_a7c095f358bb98e4074c83bb22b7f75cd}} 
+{\bfseries closing}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1server_1_1_web_socket_server_a04d867aadcbf46fc2d7352acdd2833d6}\label{classwebsockets_1_1server_1_1_web_socket_server_a04d867aadcbf46fc2d7352acdd2833d6}} 
+{\bfseries websockets}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1server_1_1_web_socket_server_aae3d6d1cd1e98ddfa90e9112d7339db5}\label{classwebsockets_1_1server_1_1_web_socket_server_aae3d6d1cd1e98ddfa90e9112d7339db5}} 
+{\bfseries server}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Wrapper for :class:`~asyncio.Server` that closes connections on exit.
+
+This class provides the return type of :func:`~websockets.server.serve`.
+
+It mimics the interface of :class:`~asyncio.AbstractServer`, namely its
+:meth:`~asyncio.AbstractServer.close()` and
+:meth:`~asyncio.AbstractServer.wait_closed()` methods, to close WebSocket
+connections properly on exit, in addition to closing the underlying
+:class:`~asyncio.Server`.
+
+Instances of this class store a reference to the :class:`~asyncio.Server`
+object returned by :meth:`~asyncio.AbstractEventLoop.create_server` rather
+than inherit from :class:`~asyncio.Server` in part because
+:meth:`~asyncio.AbstractEventLoop.create_server` doesn't support passing a
+custom :class:`~asyncio.Server` class.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classwebsockets_1_1server_1_1_web_socket_server_a8c35ed402352e7ba84f5f63759416634}\label{classwebsockets_1_1server_1_1_web_socket_server_a8c35ed402352e7ba84f5f63759416634}} 
+\index{websockets\+::server\+::\+Web\+Socket\+Server@{websockets\+::server\+::\+Web\+Socket\+Server}!close@{close}}
+\index{close@{close}!websockets\+::server\+::\+Web\+Socket\+Server@{websockets\+::server\+::\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily def websockets.\+server.\+Web\+Socket\+Server.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Close the underlying server, and clean up connections.
+
+This calls :meth:`~asyncio.Server.close` on the underlying
+:class:`~asyncio.Server` object, closes open connections with
+status code 1001, and stops accepting new connections.\end{DoxyVerb}
+ \mbox{\Hypertarget{classwebsockets_1_1server_1_1_web_socket_server_aeb56f1f2ae987bc26a411df007ebbad2}\label{classwebsockets_1_1server_1_1_web_socket_server_aeb56f1f2ae987bc26a411df007ebbad2}} 
+\index{websockets\+::server\+::\+Web\+Socket\+Server@{websockets\+::server\+::\+Web\+Socket\+Server}!register@{register}}
+\index{register@{register}!websockets\+::server\+::\+Web\+Socket\+Server@{websockets\+::server\+::\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily def websockets.\+server.\+Web\+Socket\+Server.\+register (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{protocol }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a connection with this server.\end{DoxyVerb}
+ \mbox{\Hypertarget{classwebsockets_1_1server_1_1_web_socket_server_af29b25dfd0978574df573130b4f0c3e3}\label{classwebsockets_1_1server_1_1_web_socket_server_af29b25dfd0978574df573130b4f0c3e3}} 
+\index{websockets\+::server\+::\+Web\+Socket\+Server@{websockets\+::server\+::\+Web\+Socket\+Server}!sockets@{sockets}}
+\index{sockets@{sockets}!websockets\+::server\+::\+Web\+Socket\+Server@{websockets\+::server\+::\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{sockets()}{sockets()}}
+{\footnotesize\ttfamily def websockets.\+server.\+Web\+Socket\+Server.\+sockets (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}List of :class:`~socket.socket` objects the server is listening to.
+
+``None`` if the server is closed.\end{DoxyVerb}
+ \mbox{\Hypertarget{classwebsockets_1_1server_1_1_web_socket_server_aa31d87887a41677810ee3bf697c91c6b}\label{classwebsockets_1_1server_1_1_web_socket_server_aa31d87887a41677810ee3bf697c91c6b}} 
+\index{websockets\+::server\+::\+Web\+Socket\+Server@{websockets\+::server\+::\+Web\+Socket\+Server}!unregister@{unregister}}
+\index{unregister@{unregister}!websockets\+::server\+::\+Web\+Socket\+Server@{websockets\+::server\+::\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{unregister()}{unregister()}}
+{\footnotesize\ttfamily def websockets.\+server.\+Web\+Socket\+Server.\+unregister (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{protocol }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Unregister a connection with this server.\end{DoxyVerb}
+ \mbox{\Hypertarget{classwebsockets_1_1server_1_1_web_socket_server_a26e9d65297da6b0cbd03bdffb59da006}\label{classwebsockets_1_1server_1_1_web_socket_server_a26e9d65297da6b0cbd03bdffb59da006}} 
+\index{websockets\+::server\+::\+Web\+Socket\+Server@{websockets\+::server\+::\+Web\+Socket\+Server}!wait\+\_\+closed@{wait\+\_\+closed}}
+\index{wait\+\_\+closed@{wait\+\_\+closed}!websockets\+::server\+::\+Web\+Socket\+Server@{websockets\+::server\+::\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{wait\+\_\+closed()}{wait\_closed()}}
+{\footnotesize\ttfamily def websockets.\+server.\+Web\+Socket\+Server.\+wait\+\_\+closed (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wait until the underlying server and all connections are closed.
+
+This calls :meth:`~asyncio.Server.wait_closed` on the underlying
+:class:`~asyncio.Server` object and waits until closing handshakes
+are complete and all connections are closed.
+
+This method must be called after :meth:`close()`.\end{DoxyVerb}
+ \mbox{\Hypertarget{classwebsockets_1_1server_1_1_web_socket_server_a60597fd69a0934641d155224dabbbbb6}\label{classwebsockets_1_1server_1_1_web_socket_server_a60597fd69a0934641d155224dabbbbb6}} 
+\index{websockets\+::server\+::\+Web\+Socket\+Server@{websockets\+::server\+::\+Web\+Socket\+Server}!wrap@{wrap}}
+\index{wrap@{wrap}!websockets\+::server\+::\+Web\+Socket\+Server@{websockets\+::server\+::\+Web\+Socket\+Server}}
+\subsubsection{\texorpdfstring{wrap()}{wrap()}}
+{\footnotesize\ttfamily def websockets.\+server.\+Web\+Socket\+Server.\+wrap (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{server }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Attach to a given :class:`~asyncio.Server`.
+
+Since :meth:`~asyncio.AbstractEventLoop.create_server` doesn't support
+injecting a custom ``Server`` class, the easiest solution that doesn't
+rely on private :mod:`asyncio` APIs is to:
+
+- instantiate a :class:`WebSocketServer`
+- give the protocol factory a reference to that instance
+- call :meth:`~asyncio.AbstractEventLoop.create_server` with the
+  factory
+- attach the resulting :class:`~asyncio.Server` with this method\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/websockets/server.\+py\end{DoxyCompactItemize}

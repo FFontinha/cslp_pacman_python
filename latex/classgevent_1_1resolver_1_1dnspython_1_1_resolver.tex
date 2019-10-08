@@ -1,0 +1,88 @@
+\hypertarget{classgevent_1_1resolver_1_1dnspython_1_1_resolver}{}\section{gevent.\+resolver.\+dnspython.\+Resolver Class Reference}
+\label{classgevent_1_1resolver_1_1dnspython_1_1_resolver}\index{gevent.\+resolver.\+dnspython.\+Resolver@{gevent.\+resolver.\+dnspython.\+Resolver}}
+
+
+Inherits Abstract\+Resolver.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1dnspython_1_1_resolver_ae3cd73f573ab2850b73f82a794ed96b5}\label{classgevent_1_1resolver_1_1dnspython_1_1_resolver_ae3cd73f573ab2850b73f82a794ed96b5}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, hub=None)
+\item 
+def \hyperlink{classgevent_1_1resolver_1_1dnspython_1_1_resolver_a2d9f5e7cece604fbc7df0261444c0e72}{resolver} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1dnspython_1_1_resolver_a3ff353d8a078f374426c2e37d89382a1}\label{classgevent_1_1resolver_1_1dnspython_1_1_resolver_a3ff353d8a078f374426c2e37d89382a1}} 
+def {\bfseries close} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1dnspython_1_1_resolver_a790a07a1cf6d8fb46c04e7e53eac9968}\label{classgevent_1_1resolver_1_1dnspython_1_1_resolver_a790a07a1cf6d8fb46c04e7e53eac9968}} 
+def {\bfseries getaddrinfo} (self, host, port, family=0, socktype=0, proto=0, flags=0)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1dnspython_1_1_resolver_abdffa7b82ee168e313e7f88a71943cc5}\label{classgevent_1_1resolver_1_1dnspython_1_1_resolver_abdffa7b82ee168e313e7f88a71943cc5}} 
+def {\bfseries getnameinfo} (self, sockaddr, flags)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1dnspython_1_1_resolver_adbf5242ee498d257f5ad0af9e803d9e3}\label{classgevent_1_1resolver_1_1dnspython_1_1_resolver_adbf5242ee498d257f5ad0af9e803d9e3}} 
+def {\bfseries gethostbyaddr} (self, ip\+\_\+address)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}An *experimental* resolver that uses `dnspython`_.
+
+This is typically slower than the default threaded resolver
+(unless there's a cache hit, in which case it can be much faster).
+It is usually much faster than the c-ares resolver. It tends to
+scale well as more concurrent resolutions are attempted.
+
+Under Python 2, if the ``idna`` package is installed, this
+resolver can resolve Unicode host names that the system resolver
+cannot.
+
+.. note::
+
+    This **does not** use dnspython's default resolver object, or share any
+    classes with ``import dns``. A separate copy of the objects is imported to
+    be able to function in a non monkey-patched process. The documentation for the resolver
+    object still applies.
+
+    The resolver that we use is available as the :attr:`resolver` attribute
+    of this object (typically ``gevent.get_hub().resolver.resolver``).
+
+.. caution::
+
+    Many of the same caveats about DNS results apply here as are documented
+    for :class:`gevent.resolver.ares.Resolver`.
+
+.. caution::
+
+    This resolver is experimental. It may be removed or modified in
+    the future. As always, feedback is welcome.
+
+.. versionadded:: 1.3a2
+
+.. _dnspython: http://www.dnspython.org
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1dnspython_1_1_resolver_a2d9f5e7cece604fbc7df0261444c0e72}\label{classgevent_1_1resolver_1_1dnspython_1_1_resolver_a2d9f5e7cece604fbc7df0261444c0e72}} 
+\index{gevent\+::resolver\+::dnspython\+::\+Resolver@{gevent\+::resolver\+::dnspython\+::\+Resolver}!resolver@{resolver}}
+\index{resolver@{resolver}!gevent\+::resolver\+::dnspython\+::\+Resolver@{gevent\+::resolver\+::dnspython\+::\+Resolver}}
+\subsubsection{\texorpdfstring{resolver()}{resolver()}}
+{\footnotesize\ttfamily def gevent.\+resolver.\+dnspython.\+Resolver.\+resolver (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The dnspython resolver object we use.
+
+This object has several useful attributes that can be used to
+adjust the behaviour of the DNS system:
+
+* ``cache`` is a :class:`dns.resolver.LRUCache`. Its maximum size
+  can be configured by calling :meth:`resolver.cache.set_max_size`
+* ``nameservers`` controls which nameservers to talk to
+* ``lifetime`` configures a timeout for each individual query.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/resolver/dnspython.\+py\end{DoxyCompactItemize}

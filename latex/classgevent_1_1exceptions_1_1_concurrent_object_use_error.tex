@@ -1,0 +1,23 @@
+\hypertarget{classgevent_1_1exceptions_1_1_concurrent_object_use_error}{}\section{gevent.\+exceptions.\+Concurrent\+Object\+Use\+Error Class Reference}
+\label{classgevent_1_1exceptions_1_1_concurrent_object_use_error}\index{gevent.\+exceptions.\+Concurrent\+Object\+Use\+Error@{gevent.\+exceptions.\+Concurrent\+Object\+Use\+Error}}
+
+
+Inherits Assertion\+Error.
+
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Raised when an object is used (waited on) by two greenlets
+independently, meaning the object was entered into a blocking
+state by one greenlet and then another while still blocking in the
+first one.
+
+This is usually a programming error.
+
+.. seealso:: `gevent.socket.wait`
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/exceptions.\+py\end{DoxyCompactItemize}

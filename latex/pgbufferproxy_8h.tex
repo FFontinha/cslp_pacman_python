@@ -1,0 +1,110 @@
+\hypertarget{pgbufferproxy_8h}{}\section{venv/include/site/python3.6/pygame/pgbufferproxy.h File Reference}
+\label{pgbufferproxy_8h}\index{venv/include/site/python3.\+6/pygame/pgbufferproxy.\+h@{venv/include/site/python3.\+6/pygame/pgbufferproxy.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{pgbufferproxy_8h_a15f9d267e88cdd2e9aa8783250befd07}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+N\+U\+M\+S\+L\+O\+TS}~4
+\item 
+\#define \hyperlink{pgbufferproxy_8h_a28f2b28514cb3691daf4d81994303ec3}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}~0
+\item 
+\#define \hyperlink{pgbufferproxy_8h_a5516ec7f94554417d716cfcebb2de50f}{Pg\+Bufproxy\+\_\+\+Type}~($\ast$(Py\+Type\+Object$\ast$)Pg\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+C\+\_\+\+A\+PI\mbox{[}0\mbox{]})
+\item 
+\#define \hyperlink{pgbufferproxy_8h_ae15dcd9824c0cfd2b42bb7243ea06d63}{Pg\+Bufproxy\+\_\+\+New}~($\ast$(\hyperlink{pgbufferproxy_8h_a07672803cd08c0d4f2d41bea8ad6b919}{\+\_\+pgbufproxy\+\_\+new\+\_\+t})Pg\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+C\+\_\+\+A\+PI\mbox{[}1\mbox{]})
+\item 
+\#define \hyperlink{pgbufferproxy_8h_af9a4d87a7cb7c564f43897a29720d180}{Pg\+Bufproxy\+\_\+\+Get\+Parent}~($\ast$(\hyperlink{pgbufferproxy_8h_ac985e81ae71c6b111244bc3d35d39ce1}{\+\_\+pgbufproxy\+\_\+get\+\_\+obj\+\_\+t})Pg\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+C\+\_\+\+A\+PI\mbox{[}2\mbox{]})
+\item 
+\#define \hyperlink{pgbufferproxy_8h_a35a28347343dfb5ce25e132c84eb4e23}{Pg\+Bufproxy\+\_\+\+Trip}~($\ast$(\hyperlink{pgbufferproxy_8h_a8739eea448269d2e419919ddc33794c9}{\+\_\+pgbufproxy\+\_\+trip\+\_\+t})Pg\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+C\+\_\+\+A\+PI\mbox{[}3\mbox{]})
+\item 
+\#define \hyperlink{pgbufferproxy_8h_a409f97fa75b89d20f61fbdb02dce77be}{Pg\+Bufproxy\+\_\+\+Check}(x)~((x)-\/$>$ob\+\_\+type == (\hyperlink{pgbufferproxy_8h_a5516ec7f94554417d716cfcebb2de50f}{Pg\+Bufproxy\+\_\+\+Type}))
+\item 
+\#define \hyperlink{pgbufferproxy_8h_a296cb4ae53e7be2e1192d5830d90f12c}{import\+\_\+pygame\+\_\+bufferproxy}()~\hyperlink{__pygame_8h_a97ba72dc608817ef953d8fefeeccc4f1}{\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}(bufferproxy, B\+U\+F\+P\+R\+O\+XY, Pg\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+C\+\_\+\+A\+PI)
+\item 
+\#define \hyperlink{pgbufferproxy_8h_a49891ea4e2ea3d56c4b6ec8b711ceac0}{P\+G\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+H\+E\+A\+D\+ER}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Py\+Object $\ast$($\ast$ \hyperlink{pgbufferproxy_8h_a07672803cd08c0d4f2d41bea8ad6b919}{\+\_\+pgbufproxy\+\_\+new\+\_\+t}) (Py\+Object $\ast$, \hyperlink{__pygame_8h_aa017fb2160e0b5c8aa3da451f0481384}{getbufferproc})
+\item 
+typedef Py\+Object $\ast$($\ast$ \hyperlink{pgbufferproxy_8h_ac985e81ae71c6b111244bc3d35d39ce1}{\+\_\+pgbufproxy\+\_\+get\+\_\+obj\+\_\+t}) (Py\+Object $\ast$)
+\item 
+typedef int($\ast$ \hyperlink{pgbufferproxy_8h_a8739eea448269d2e419919ddc33794c9}{\+\_\+pgbufproxy\+\_\+trip\+\_\+t}) (Py\+Object $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{pgbufferproxy_8h_a296cb4ae53e7be2e1192d5830d90f12c}\label{pgbufferproxy_8h_a296cb4ae53e7be2e1192d5830d90f12c}} 
+\index{pgbufferproxy.\+h@{pgbufferproxy.\+h}!import\+\_\+pygame\+\_\+bufferproxy@{import\+\_\+pygame\+\_\+bufferproxy}}
+\index{import\+\_\+pygame\+\_\+bufferproxy@{import\+\_\+pygame\+\_\+bufferproxy}!pgbufferproxy.\+h@{pgbufferproxy.\+h}}
+\subsubsection{\texorpdfstring{import\+\_\+pygame\+\_\+bufferproxy}{import\_pygame\_bufferproxy}}
+{\footnotesize\ttfamily \#define import\+\_\+pygame\+\_\+bufferproxy(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\hyperlink{__pygame_8h_a97ba72dc608817ef953d8fefeeccc4f1}{\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}(bufferproxy, B\+U\+F\+P\+R\+O\+XY, Pg\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+C\+\_\+\+A\+PI)}
+
+\mbox{\Hypertarget{pgbufferproxy_8h_a49891ea4e2ea3d56c4b6ec8b711ceac0}\label{pgbufferproxy_8h_a49891ea4e2ea3d56c4b6ec8b711ceac0}} 
+\index{pgbufferproxy.\+h@{pgbufferproxy.\+h}!P\+G\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+H\+E\+A\+D\+ER@{P\+G\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+H\+E\+A\+D\+ER}}
+\index{P\+G\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+H\+E\+A\+D\+ER@{P\+G\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+H\+E\+A\+D\+ER}!pgbufferproxy.\+h@{pgbufferproxy.\+h}}
+\subsubsection{\texorpdfstring{P\+G\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+H\+E\+A\+D\+ER}{PG\_BUFPROXY\_HEADER}}
+{\footnotesize\ttfamily \#define P\+G\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+H\+E\+A\+D\+ER}
+
+\mbox{\Hypertarget{pgbufferproxy_8h_a409f97fa75b89d20f61fbdb02dce77be}\label{pgbufferproxy_8h_a409f97fa75b89d20f61fbdb02dce77be}} 
+\index{pgbufferproxy.\+h@{pgbufferproxy.\+h}!Pg\+Bufproxy\+\_\+\+Check@{Pg\+Bufproxy\+\_\+\+Check}}
+\index{Pg\+Bufproxy\+\_\+\+Check@{Pg\+Bufproxy\+\_\+\+Check}!pgbufferproxy.\+h@{pgbufferproxy.\+h}}
+\subsubsection{\texorpdfstring{Pg\+Bufproxy\+\_\+\+Check}{PgBufproxy\_Check}}
+{\footnotesize\ttfamily \#define Pg\+Bufproxy\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((x)-\/$>$ob\+\_\+type == (\hyperlink{pgbufferproxy_8h_a5516ec7f94554417d716cfcebb2de50f}{Pg\+Bufproxy\+\_\+\+Type}))}
+
+\mbox{\Hypertarget{pgbufferproxy_8h_af9a4d87a7cb7c564f43897a29720d180}\label{pgbufferproxy_8h_af9a4d87a7cb7c564f43897a29720d180}} 
+\index{pgbufferproxy.\+h@{pgbufferproxy.\+h}!Pg\+Bufproxy\+\_\+\+Get\+Parent@{Pg\+Bufproxy\+\_\+\+Get\+Parent}}
+\index{Pg\+Bufproxy\+\_\+\+Get\+Parent@{Pg\+Bufproxy\+\_\+\+Get\+Parent}!pgbufferproxy.\+h@{pgbufferproxy.\+h}}
+\subsubsection{\texorpdfstring{Pg\+Bufproxy\+\_\+\+Get\+Parent}{PgBufproxy\_GetParent}}
+{\footnotesize\ttfamily \#define Pg\+Bufproxy\+\_\+\+Get\+Parent~($\ast$(\hyperlink{pgbufferproxy_8h_ac985e81ae71c6b111244bc3d35d39ce1}{\+\_\+pgbufproxy\+\_\+get\+\_\+obj\+\_\+t})Pg\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+C\+\_\+\+A\+PI\mbox{[}2\mbox{]})}
+
+\mbox{\Hypertarget{pgbufferproxy_8h_ae15dcd9824c0cfd2b42bb7243ea06d63}\label{pgbufferproxy_8h_ae15dcd9824c0cfd2b42bb7243ea06d63}} 
+\index{pgbufferproxy.\+h@{pgbufferproxy.\+h}!Pg\+Bufproxy\+\_\+\+New@{Pg\+Bufproxy\+\_\+\+New}}
+\index{Pg\+Bufproxy\+\_\+\+New@{Pg\+Bufproxy\+\_\+\+New}!pgbufferproxy.\+h@{pgbufferproxy.\+h}}
+\subsubsection{\texorpdfstring{Pg\+Bufproxy\+\_\+\+New}{PgBufproxy\_New}}
+{\footnotesize\ttfamily \#define Pg\+Bufproxy\+\_\+\+New~($\ast$(\hyperlink{pgbufferproxy_8h_a07672803cd08c0d4f2d41bea8ad6b919}{\+\_\+pgbufproxy\+\_\+new\+\_\+t})Pg\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+C\+\_\+\+A\+PI\mbox{[}1\mbox{]})}
+
+\mbox{\Hypertarget{pgbufferproxy_8h_a35a28347343dfb5ce25e132c84eb4e23}\label{pgbufferproxy_8h_a35a28347343dfb5ce25e132c84eb4e23}} 
+\index{pgbufferproxy.\+h@{pgbufferproxy.\+h}!Pg\+Bufproxy\+\_\+\+Trip@{Pg\+Bufproxy\+\_\+\+Trip}}
+\index{Pg\+Bufproxy\+\_\+\+Trip@{Pg\+Bufproxy\+\_\+\+Trip}!pgbufferproxy.\+h@{pgbufferproxy.\+h}}
+\subsubsection{\texorpdfstring{Pg\+Bufproxy\+\_\+\+Trip}{PgBufproxy\_Trip}}
+{\footnotesize\ttfamily \#define Pg\+Bufproxy\+\_\+\+Trip~($\ast$(\hyperlink{pgbufferproxy_8h_a8739eea448269d2e419919ddc33794c9}{\+\_\+pgbufproxy\+\_\+trip\+\_\+t})Pg\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+C\+\_\+\+A\+PI\mbox{[}3\mbox{]})}
+
+\mbox{\Hypertarget{pgbufferproxy_8h_a5516ec7f94554417d716cfcebb2de50f}\label{pgbufferproxy_8h_a5516ec7f94554417d716cfcebb2de50f}} 
+\index{pgbufferproxy.\+h@{pgbufferproxy.\+h}!Pg\+Bufproxy\+\_\+\+Type@{Pg\+Bufproxy\+\_\+\+Type}}
+\index{Pg\+Bufproxy\+\_\+\+Type@{Pg\+Bufproxy\+\_\+\+Type}!pgbufferproxy.\+h@{pgbufferproxy.\+h}}
+\subsubsection{\texorpdfstring{Pg\+Bufproxy\+\_\+\+Type}{PgBufproxy\_Type}}
+{\footnotesize\ttfamily \#define Pg\+Bufproxy\+\_\+\+Type~($\ast$(Py\+Type\+Object$\ast$)Pg\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+C\+\_\+\+A\+PI\mbox{[}0\mbox{]})}
+
+\mbox{\Hypertarget{pgbufferproxy_8h_a28f2b28514cb3691daf4d81994303ec3}\label{pgbufferproxy_8h_a28f2b28514cb3691daf4d81994303ec3}} 
+\index{pgbufferproxy.\+h@{pgbufferproxy.\+h}!P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}
+\index{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}!pgbufferproxy.\+h@{pgbufferproxy.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}{PYGAMEAPI\_BUFPROXY\_FIRSTSLOT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT~0}
+
+\mbox{\Hypertarget{pgbufferproxy_8h_a15f9d267e88cdd2e9aa8783250befd07}\label{pgbufferproxy_8h_a15f9d267e88cdd2e9aa8783250befd07}} 
+\index{pgbufferproxy.\+h@{pgbufferproxy.\+h}!P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+N\+U\+M\+S\+L\+O\+TS@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+N\+U\+M\+S\+L\+O\+TS}}
+\index{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+N\+U\+M\+S\+L\+O\+TS@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+N\+U\+M\+S\+L\+O\+TS}!pgbufferproxy.\+h@{pgbufferproxy.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+N\+U\+M\+S\+L\+O\+TS}{PYGAMEAPI\_BUFPROXY\_NUMSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+B\+U\+F\+P\+R\+O\+X\+Y\+\_\+\+N\+U\+M\+S\+L\+O\+TS~4}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{pgbufferproxy_8h_ac985e81ae71c6b111244bc3d35d39ce1}\label{pgbufferproxy_8h_ac985e81ae71c6b111244bc3d35d39ce1}} 
+\index{pgbufferproxy.\+h@{pgbufferproxy.\+h}!\+\_\+pgbufproxy\+\_\+get\+\_\+obj\+\_\+t@{\+\_\+pgbufproxy\+\_\+get\+\_\+obj\+\_\+t}}
+\index{\+\_\+pgbufproxy\+\_\+get\+\_\+obj\+\_\+t@{\+\_\+pgbufproxy\+\_\+get\+\_\+obj\+\_\+t}!pgbufferproxy.\+h@{pgbufferproxy.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+pgbufproxy\+\_\+get\+\_\+obj\+\_\+t}{\_pgbufproxy\_get\_obj\_t}}
+{\footnotesize\ttfamily typedef Py\+Object$\ast$($\ast$ \+\_\+pgbufproxy\+\_\+get\+\_\+obj\+\_\+t) (Py\+Object $\ast$)}
+
+\mbox{\Hypertarget{pgbufferproxy_8h_a07672803cd08c0d4f2d41bea8ad6b919}\label{pgbufferproxy_8h_a07672803cd08c0d4f2d41bea8ad6b919}} 
+\index{pgbufferproxy.\+h@{pgbufferproxy.\+h}!\+\_\+pgbufproxy\+\_\+new\+\_\+t@{\+\_\+pgbufproxy\+\_\+new\+\_\+t}}
+\index{\+\_\+pgbufproxy\+\_\+new\+\_\+t@{\+\_\+pgbufproxy\+\_\+new\+\_\+t}!pgbufferproxy.\+h@{pgbufferproxy.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+pgbufproxy\+\_\+new\+\_\+t}{\_pgbufproxy\_new\_t}}
+{\footnotesize\ttfamily typedef Py\+Object$\ast$($\ast$ \+\_\+pgbufproxy\+\_\+new\+\_\+t) (Py\+Object $\ast$, \hyperlink{__pygame_8h_aa017fb2160e0b5c8aa3da451f0481384}{getbufferproc})}
+
+\mbox{\Hypertarget{pgbufferproxy_8h_a8739eea448269d2e419919ddc33794c9}\label{pgbufferproxy_8h_a8739eea448269d2e419919ddc33794c9}} 
+\index{pgbufferproxy.\+h@{pgbufferproxy.\+h}!\+\_\+pgbufproxy\+\_\+trip\+\_\+t@{\+\_\+pgbufproxy\+\_\+trip\+\_\+t}}
+\index{\+\_\+pgbufproxy\+\_\+trip\+\_\+t@{\+\_\+pgbufproxy\+\_\+trip\+\_\+t}!pgbufferproxy.\+h@{pgbufferproxy.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+pgbufproxy\+\_\+trip\+\_\+t}{\_pgbufproxy\_trip\_t}}
+{\footnotesize\ttfamily typedef int($\ast$ \+\_\+pgbufproxy\+\_\+trip\+\_\+t) (Py\+Object $\ast$)}
+

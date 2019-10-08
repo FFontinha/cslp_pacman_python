@@ -1,0 +1,90 @@
+\hypertarget{classaiohttp_1_1payload_1_1_payload}{}\section{aiohttp.\+payload.\+Payload Class Reference}
+\label{classaiohttp_1_1payload_1_1_payload}\index{aiohttp.\+payload.\+Payload@{aiohttp.\+payload.\+Payload}}
+
+
+Inherits A\+BC.
+
+
+
+Inherited by \hyperlink{classaiohttp_1_1multipart_1_1_body_part_reader_payload}{aiohttp.\+multipart.\+Body\+Part\+Reader\+Payload}, \hyperlink{classaiohttp_1_1multipart_1_1_multipart_writer}{aiohttp.\+multipart.\+Multipart\+Writer}, \hyperlink{classaiohttp_1_1payload_1_1_async_iterable_payload}{aiohttp.\+payload.\+Async\+Iterable\+Payload}, \hyperlink{classaiohttp_1_1payload_1_1_bytes_payload}{aiohttp.\+payload.\+Bytes\+Payload}, \hyperlink{classaiohttp_1_1payload_1_1_i_o_base_payload}{aiohttp.\+payload.\+I\+O\+Base\+Payload}, and \hyperlink{classaiohttp_1_1payload__streamer_1_1_stream_wrapper_payload}{aiohttp.\+payload\+\_\+streamer.\+Stream\+Wrapper\+Payload}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1payload_1_1_payload_aa1099d87bf632ec16e34ee29596b277b}\label{classaiohttp_1_1payload_1_1_payload_aa1099d87bf632ec16e34ee29596b277b}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, value, \hyperlink{classaiohttp_1_1payload_1_1_payload_a2a53edff1dc2e83f11fb952f4471426d}{headers}=None, \hyperlink{classaiohttp_1_1payload_1_1_payload_ab7f478716f0cb49905362cc8faf06ec3}{content\+\_\+type}=sentinel, \hyperlink{classaiohttp_1_1payload_1_1_payload_a2cd8854236d2ef6f3cedb3ef5e838dee}{filename}=None, \hyperlink{classaiohttp_1_1payload_1_1_payload_a32f545f68c7bf65bee28f566b35edb4e}{encoding}=None, kwargs)
+\item 
+def \hyperlink{classaiohttp_1_1payload_1_1_payload_a86046afc253ab3fef11df56e55248269}{size} (self)
+\item 
+def \hyperlink{classaiohttp_1_1payload_1_1_payload_a2cd8854236d2ef6f3cedb3ef5e838dee}{filename} (self)
+\item 
+def \hyperlink{classaiohttp_1_1payload_1_1_payload_a2a53edff1dc2e83f11fb952f4471426d}{headers} (self)
+\item 
+def \hyperlink{classaiohttp_1_1payload_1_1_payload_a32f545f68c7bf65bee28f566b35edb4e}{encoding} (self)
+\item 
+def \hyperlink{classaiohttp_1_1payload_1_1_payload_ab7f478716f0cb49905362cc8faf06ec3}{content\+\_\+type} (self)
+\item 
+def \hyperlink{classaiohttp_1_1payload_1_1_payload_a05112789187141cf733c92a339d3ac6b}{set\+\_\+content\+\_\+disposition} (self, disptype, quote\+\_\+fields=True, params)
+\item 
+def \hyperlink{classaiohttp_1_1payload_1_1_payload_ab20159ceaa9331365ba283028bf48da8}{write} (self, writer)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1payload_1_1_payload_ab7f478716f0cb49905362cc8faf06ec3}\label{classaiohttp_1_1payload_1_1_payload_ab7f478716f0cb49905362cc8faf06ec3}} 
+\index{aiohttp\+::payload\+::\+Payload@{aiohttp\+::payload\+::\+Payload}!content\+\_\+type@{content\+\_\+type}}
+\index{content\+\_\+type@{content\+\_\+type}!aiohttp\+::payload\+::\+Payload@{aiohttp\+::payload\+::\+Payload}}
+\subsubsection{\texorpdfstring{content\+\_\+type()}{content\_type()}}
+{\footnotesize\ttfamily def aiohttp.\+payload.\+Payload.\+content\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Content type\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1payload_1_1_payload_a32f545f68c7bf65bee28f566b35edb4e}\label{classaiohttp_1_1payload_1_1_payload_a32f545f68c7bf65bee28f566b35edb4e}} 
+\index{aiohttp\+::payload\+::\+Payload@{aiohttp\+::payload\+::\+Payload}!encoding@{encoding}}
+\index{encoding@{encoding}!aiohttp\+::payload\+::\+Payload@{aiohttp\+::payload\+::\+Payload}}
+\subsubsection{\texorpdfstring{encoding()}{encoding()}}
+{\footnotesize\ttfamily def aiohttp.\+payload.\+Payload.\+encoding (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Payload encoding\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1payload_1_1_payload_a2cd8854236d2ef6f3cedb3ef5e838dee}\label{classaiohttp_1_1payload_1_1_payload_a2cd8854236d2ef6f3cedb3ef5e838dee}} 
+\index{aiohttp\+::payload\+::\+Payload@{aiohttp\+::payload\+::\+Payload}!filename@{filename}}
+\index{filename@{filename}!aiohttp\+::payload\+::\+Payload@{aiohttp\+::payload\+::\+Payload}}
+\subsubsection{\texorpdfstring{filename()}{filename()}}
+{\footnotesize\ttfamily def aiohttp.\+payload.\+Payload.\+filename (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Filename of the payload.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1payload_1_1_payload_a2a53edff1dc2e83f11fb952f4471426d}\label{classaiohttp_1_1payload_1_1_payload_a2a53edff1dc2e83f11fb952f4471426d}} 
+\index{aiohttp\+::payload\+::\+Payload@{aiohttp\+::payload\+::\+Payload}!headers@{headers}}
+\index{headers@{headers}!aiohttp\+::payload\+::\+Payload@{aiohttp\+::payload\+::\+Payload}}
+\subsubsection{\texorpdfstring{headers()}{headers()}}
+{\footnotesize\ttfamily def aiohttp.\+payload.\+Payload.\+headers (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Custom item headers\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1payload_1_1_payload_a05112789187141cf733c92a339d3ac6b}\label{classaiohttp_1_1payload_1_1_payload_a05112789187141cf733c92a339d3ac6b}} 
+\index{aiohttp\+::payload\+::\+Payload@{aiohttp\+::payload\+::\+Payload}!set\+\_\+content\+\_\+disposition@{set\+\_\+content\+\_\+disposition}}
+\index{set\+\_\+content\+\_\+disposition@{set\+\_\+content\+\_\+disposition}!aiohttp\+::payload\+::\+Payload@{aiohttp\+::payload\+::\+Payload}}
+\subsubsection{\texorpdfstring{set\+\_\+content\+\_\+disposition()}{set\_content\_disposition()}}
+{\footnotesize\ttfamily def aiohttp.\+payload.\+Payload.\+set\+\_\+content\+\_\+disposition (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{disptype,  }\item[{}]{quote\+\_\+fields = {\ttfamily True},  }\item[{}]{params }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets ``Content-Disposition`` header.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1payload_1_1_payload_a86046afc253ab3fef11df56e55248269}\label{classaiohttp_1_1payload_1_1_payload_a86046afc253ab3fef11df56e55248269}} 
+\index{aiohttp\+::payload\+::\+Payload@{aiohttp\+::payload\+::\+Payload}!size@{size}}
+\index{size@{size}!aiohttp\+::payload\+::\+Payload@{aiohttp\+::payload\+::\+Payload}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily def aiohttp.\+payload.\+Payload.\+size (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Size of the payload.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1payload_1_1_payload_ab20159ceaa9331365ba283028bf48da8}\label{classaiohttp_1_1payload_1_1_payload_ab20159ceaa9331365ba283028bf48da8}} 
+\index{aiohttp\+::payload\+::\+Payload@{aiohttp\+::payload\+::\+Payload}!write@{write}}
+\index{write@{write}!aiohttp\+::payload\+::\+Payload@{aiohttp\+::payload\+::\+Payload}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily def aiohttp.\+payload.\+Payload.\+write (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{writer }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write payload.
+
+writer is an AbstractStreamWriter instance:
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/payload.\+py\end{DoxyCompactItemize}

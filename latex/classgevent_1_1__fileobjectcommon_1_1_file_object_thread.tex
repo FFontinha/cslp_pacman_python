@@ -1,0 +1,67 @@
+\hypertarget{classgevent_1_1__fileobjectcommon_1_1_file_object_thread}{}\section{gevent.\+\_\+fileobjectcommon.\+File\+Object\+Thread Class Reference}
+\label{classgevent_1_1__fileobjectcommon_1_1_file_object_thread}\index{gevent.\+\_\+fileobjectcommon.\+File\+Object\+Thread@{gevent.\+\_\+fileobjectcommon.\+File\+Object\+Thread}}
+
+
+Inherits \hyperlink{classgevent_1_1__fileobjectcommon_1_1_file_object_base}{gevent.\+\_\+fileobjectcommon.\+File\+Object\+Base}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classgevent_1_1__fileobjectcommon_1_1_file_object_thread_ae43a8e09d2632ab8af16333ff40bef24}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, fobj, mode=None, bufsize=-\/1, close=True, threadpool=None, lock=True)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__fileobjectcommon_1_1_file_object_thread_a545813c91f135d9afd58c15681199a4d}\label{classgevent_1_1__fileobjectcommon_1_1_file_object_thread_a545813c91f135d9afd58c15681199a4d}} 
+def {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__fileobjectcommon_1_1_file_object_thread_a7bf5e1677fc5fcf3e1d671180389de2f}\label{classgevent_1_1__fileobjectcommon_1_1_file_object_thread_a7bf5e1677fc5fcf3e1d671180389de2f}} 
+def {\bfseries next} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__fileobjectcommon_1_1_file_object_thread_a629fe1642a67c4d25673c8b161aa64a4}\label{classgevent_1_1__fileobjectcommon_1_1_file_object_thread_a629fe1642a67c4d25673c8b161aa64a4}} 
+{\bfseries threadpool}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__fileobjectcommon_1_1_file_object_thread_a993af96d119c58ce2bb7cf4091590fc4}\label{classgevent_1_1__fileobjectcommon_1_1_file_object_thread_a993af96d119c58ce2bb7cf4091590fc4}} 
+{\bfseries lock}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__fileobjectcommon_1_1_file_object_thread_a478c4369bfc3babb2d5f37b9627cff79}\label{classgevent_1_1__fileobjectcommon_1_1_file_object_thread_a478c4369bfc3babb2d5f37b9627cff79}} 
+{\bfseries read1}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A file-like object wrapping another file-like object, performing all blocking
+operations on that object in a background thread.
+
+.. caution::
+    Attempting to change the threadpool or lock of an existing FileObjectThread
+    has undefined consequences.
+
+.. versionchanged:: 1.1b1
+   The file object is closed using the threadpool. Note that whether or
+   not this action is synchronous or asynchronous is not documented.\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgevent_1_1__fileobjectcommon_1_1_file_object_thread_ae43a8e09d2632ab8af16333ff40bef24}\label{classgevent_1_1__fileobjectcommon_1_1_file_object_thread_ae43a8e09d2632ab8af16333ff40bef24}} 
+\index{gevent\+::\+\_\+fileobjectcommon\+::\+File\+Object\+Thread@{gevent\+::\+\_\+fileobjectcommon\+::\+File\+Object\+Thread}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!gevent\+::\+\_\+fileobjectcommon\+::\+File\+Object\+Thread@{gevent\+::\+\_\+fileobjectcommon\+::\+File\+Object\+Thread}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def gevent.\+\_\+fileobjectcommon.\+File\+Object\+Thread.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fobj,  }\item[{}]{mode = {\ttfamily None},  }\item[{}]{bufsize = {\ttfamily -\/1},  }\item[{}]{close = {\ttfamily True},  }\item[{}]{threadpool = {\ttfamily None},  }\item[{}]{lock = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param fobj: The underlying file-like object to wrap, or an integer fileno
+   that will be pass to :func:`os.fdopen` along with *mode* and *bufsize*.
+:keyword bool lock: If True (the default) then all operations will
+   be performed one-by-one. Note that this does not guarantee that, if using
+   this file object from multiple threads/greenlets, operations will be performed
+   in any particular order, only that no two operations will be attempted at the
+   same time. You can also pass your own :class:`gevent.lock.Semaphore` to synchronize
+   file operations with an external resource.
+:keyword bool close: If True (the default) then when this object is closed,
+   the underlying object is closed as well.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/\+\_\+fileobjectcommon.\+py\end{DoxyCompactItemize}

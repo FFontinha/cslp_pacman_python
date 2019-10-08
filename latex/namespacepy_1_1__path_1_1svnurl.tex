@@ -1,0 +1,43 @@
+\hypertarget{namespacepy_1_1__path_1_1svnurl}{}\section{py.\+\_\+path.\+svnurl Namespace Reference}
+\label{namespacepy_1_1__path_1_1svnurl}\index{py.\+\_\+path.\+svnurl@{py.\+\_\+path.\+svnurl}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpy_1_1__path_1_1svnurl_1_1_info_svn_command}{Info\+Svn\+Command}
+\item 
+class \hyperlink{classpy_1_1__path_1_1svnurl_1_1_path_entry}{Path\+Entry}
+\item 
+class \hyperlink{classpy_1_1__path_1_1svnurl_1_1_svn_command_path}{Svn\+Command\+Path}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepy_1_1__path_1_1svnurl_ad056bf2b52547d0adb336fe95e32f3fa}{parse\+\_\+time\+\_\+with\+\_\+missing\+\_\+year} (timestr)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepy_1_1__path_1_1svnurl_a7c55a1eb25e62a669458a5d9dfe87e47}\label{namespacepy_1_1__path_1_1svnurl_a7c55a1eb25e62a669458a5d9dfe87e47}} 
+bool {\bfseries D\+E\+B\+UG} = False
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}module defining a subversion path object based on the external
+command 'svn'. This modules aims to work with svn 1.3 and higher
+but might also interact well with earlier versions.
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepy_1_1__path_1_1svnurl_ad056bf2b52547d0adb336fe95e32f3fa}\label{namespacepy_1_1__path_1_1svnurl_ad056bf2b52547d0adb336fe95e32f3fa}} 
+\index{py\+::\+\_\+path\+::svnurl@{py\+::\+\_\+path\+::svnurl}!parse\+\_\+time\+\_\+with\+\_\+missing\+\_\+year@{parse\+\_\+time\+\_\+with\+\_\+missing\+\_\+year}}
+\index{parse\+\_\+time\+\_\+with\+\_\+missing\+\_\+year@{parse\+\_\+time\+\_\+with\+\_\+missing\+\_\+year}!py\+::\+\_\+path\+::svnurl@{py\+::\+\_\+path\+::svnurl}}
+\subsubsection{\texorpdfstring{parse\+\_\+time\+\_\+with\+\_\+missing\+\_\+year()}{parse\_time\_with\_missing\_year()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+svnurl.\+parse\+\_\+time\+\_\+with\+\_\+missing\+\_\+year (\begin{DoxyParamCaption}\item[{}]{timestr }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}analyze the time part from a single line of "svn ls -v"
+the svn output doesn't show the year makes the 'timestr'
+ambigous.
+\end{DoxyVerb}
+ 

@@ -1,0 +1,75 @@
+\hypertarget{callbacks_8h}{}\section{venv/lib/python3.6/site-\/packages/gevent/libev/callbacks.h File Reference}
+\label{callbacks_8h}\index{venv/lib/python3.\+6/site-\/packages/gevent/libev/callbacks.\+h@{venv/lib/python3.\+6/site-\/packages/gevent/libev/callbacks.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{callbacks_8h_a7b0fd4652a85370a495b34e87708f73e}{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+CK}(W\+A\+T\+C\+H\+E\+R\+\_\+\+LC,  W\+A\+T\+C\+H\+E\+R\+\_\+\+T\+Y\+PE)~void gevent\+\_\+callback\+\_\+\#\#W\+A\+T\+C\+H\+E\+R\+\_\+\+LC(struct \hyperlink{structev__loop}{ev\+\_\+loop} $\ast$, void $\ast$, int);
+\item 
+\#define \hyperlink{callbacks_8h_a832a9e2dfe1a7fae6a1bf85559ff9f86}{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+S0}
+\item 
+\#define \hyperlink{callbacks_8h_a1f65af16a5a20c9b047442ef3db42525}{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+KS}~\hyperlink{callbacks_8h_a832a9e2dfe1a7fae6a1bf85559ff9f86}{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+S0}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{callbacks_8h_a1f65af16a5a20c9b047442ef3db42525}{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+KS} void \hyperlink{callbacks_8h_ae8bb79844b0b6b783a998492c4016f19}{gevent\+\_\+run\+\_\+callbacks} (struct \hyperlink{structev__loop}{ev\+\_\+loop} $\ast$, void $\ast$, int)
+\item 
+void \hyperlink{callbacks_8h_a4323e27efc9ad70727255178f7f13a39}{gevent\+\_\+call} (struct \hyperlink{struct_py_gevent_loop_object}{Py\+Gevent\+Loop\+Object} $\ast$loop, struct \hyperlink{struct_py_gevent_callback_object}{Py\+Gevent\+Callback\+Object} $\ast$cb)
+\item 
+void \hyperlink{callbacks_8h_a83718ce4069a734928d1b8536e0eddf1}{gevent\+\_\+periodic\+\_\+signal\+\_\+check} (struct \hyperlink{structev__loop}{ev\+\_\+loop} $\ast$, void $\ast$, int)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{callbacks_8h_a7b0fd4652a85370a495b34e87708f73e}\label{callbacks_8h_a7b0fd4652a85370a495b34e87708f73e}} 
+\index{callbacks.\+h@{callbacks.\+h}!D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+CK@{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+CK}}
+\index{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+CK@{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+CK}!callbacks.\+h@{callbacks.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+CK}{DEFINE\_CALLBACK}}
+{\footnotesize\ttfamily \#define D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+CK(\begin{DoxyParamCaption}\item[{}]{W\+A\+T\+C\+H\+E\+R\+\_\+\+LC,  }\item[{}]{W\+A\+T\+C\+H\+E\+R\+\_\+\+T\+Y\+PE }\end{DoxyParamCaption})~void gevent\+\_\+callback\+\_\+\#\#W\+A\+T\+C\+H\+E\+R\+\_\+\+LC(struct \hyperlink{structev__loop}{ev\+\_\+loop} $\ast$, void $\ast$, int);}
+
+\mbox{\Hypertarget{callbacks_8h_a1f65af16a5a20c9b047442ef3db42525}\label{callbacks_8h_a1f65af16a5a20c9b047442ef3db42525}} 
+\index{callbacks.\+h@{callbacks.\+h}!D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+KS@{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+KS}}
+\index{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+KS@{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+KS}!callbacks.\+h@{callbacks.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+KS}{DEFINE\_CALLBACKS}}
+{\footnotesize\ttfamily \#define D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+KS~\hyperlink{callbacks_8h_a832a9e2dfe1a7fae6a1bf85559ff9f86}{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+S0}}
+
+\mbox{\Hypertarget{callbacks_8h_a832a9e2dfe1a7fae6a1bf85559ff9f86}\label{callbacks_8h_a832a9e2dfe1a7fae6a1bf85559ff9f86}} 
+\index{callbacks.\+h@{callbacks.\+h}!D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+S0@{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+S0}}
+\index{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+S0@{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+S0}!callbacks.\+h@{callbacks.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+S0}{DEFINE\_CALLBACKS0}}
+{\footnotesize\ttfamily \#define D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+S0}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{callbacks_8h_a7b0fd4652a85370a495b34e87708f73e}{DEFINE\_CALLBACK}(io, IO);           \(\backslash\)
+    DEFINE\_CALLBACK(\hyperlink{namespacepygame_1_1examples_1_1vgrade_a672f075a3c5819807e1ab7113824aa78}{timer}, Timer);     \(\backslash\)
+    DEFINE\_CALLBACK(\hyperlink{namespacegevent_a4f81fc50ce55186f9ed9f291c8c1c345}{signal}, Signal);   \(\backslash\)
+    DEFINE\_CALLBACK(\hyperlink{namespacegevent_1_1hub_a5bb5e229a2284a64a870e9a049e4d221}{idle}, Idle);       \(\backslash\)
+    DEFINE\_CALLBACK(prepare, Prepare); \(\backslash\)
+    DEFINE\_CALLBACK(\hyperlink{namespacepy_1_1__code_1_1__assertionold_afb02e1654f4e41a2a518ce3bd6d48ef6}{check}, Check);     \(\backslash\)
+    DEFINE\_CALLBACK(\hyperlink{namespacegevent_1_1os_a7d22bcbe03e198e484217634c2611b7e}{fork}, Fork);       \(\backslash\)
+    DEFINE\_CALLBACK(async, Async);     \(\backslash\)
+    DEFINE\_CALLBACK(\hyperlink{structstat}{stat}, Stat);       \(\backslash\)
+    DEFINE\_CALLBACK(child, Child);
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{callbacks_8h_a4323e27efc9ad70727255178f7f13a39}\label{callbacks_8h_a4323e27efc9ad70727255178f7f13a39}} 
+\index{callbacks.\+h@{callbacks.\+h}!gevent\+\_\+call@{gevent\+\_\+call}}
+\index{gevent\+\_\+call@{gevent\+\_\+call}!callbacks.\+h@{callbacks.\+h}}
+\subsubsection{\texorpdfstring{gevent\+\_\+call()}{gevent\_call()}}
+{\footnotesize\ttfamily void gevent\+\_\+call (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_py_gevent_loop_object}{Py\+Gevent\+Loop\+Object} $\ast$}]{loop,  }\item[{struct \hyperlink{struct_py_gevent_callback_object}{Py\+Gevent\+Callback\+Object} $\ast$}]{cb }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{callbacks_8h_a83718ce4069a734928d1b8536e0eddf1}\label{callbacks_8h_a83718ce4069a734928d1b8536e0eddf1}} 
+\index{callbacks.\+h@{callbacks.\+h}!gevent\+\_\+periodic\+\_\+signal\+\_\+check@{gevent\+\_\+periodic\+\_\+signal\+\_\+check}}
+\index{gevent\+\_\+periodic\+\_\+signal\+\_\+check@{gevent\+\_\+periodic\+\_\+signal\+\_\+check}!callbacks.\+h@{callbacks.\+h}}
+\subsubsection{\texorpdfstring{gevent\+\_\+periodic\+\_\+signal\+\_\+check()}{gevent\_periodic\_signal\_check()}}
+{\footnotesize\ttfamily void gevent\+\_\+periodic\+\_\+signal\+\_\+check (\begin{DoxyParamCaption}\item[{struct \hyperlink{structev__loop}{ev\+\_\+loop} $\ast$}]{,  }\item[{void $\ast$}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{callbacks_8h_ae8bb79844b0b6b783a998492c4016f19}\label{callbacks_8h_ae8bb79844b0b6b783a998492c4016f19}} 
+\index{callbacks.\+h@{callbacks.\+h}!gevent\+\_\+run\+\_\+callbacks@{gevent\+\_\+run\+\_\+callbacks}}
+\index{gevent\+\_\+run\+\_\+callbacks@{gevent\+\_\+run\+\_\+callbacks}!callbacks.\+h@{callbacks.\+h}}
+\subsubsection{\texorpdfstring{gevent\+\_\+run\+\_\+callbacks()}{gevent\_run\_callbacks()}}
+{\footnotesize\ttfamily \hyperlink{callbacks_8h_a1f65af16a5a20c9b047442ef3db42525}{D\+E\+F\+I\+N\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+KS} void gevent\+\_\+run\+\_\+callbacks (\begin{DoxyParamCaption}\item[{struct \hyperlink{structev__loop}{ev\+\_\+loop} $\ast$}]{,  }\item[{void $\ast$}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+

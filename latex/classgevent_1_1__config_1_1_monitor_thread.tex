@@ -1,0 +1,66 @@
+\hypertarget{classgevent_1_1__config_1_1_monitor_thread}{}\section{gevent.\+\_\+config.\+Monitor\+Thread Class Reference}
+\label{classgevent_1_1__config_1_1_monitor_thread}\index{gevent.\+\_\+config.\+Monitor\+Thread@{gevent.\+\_\+config.\+Monitor\+Thread}}
+
+
+Monitoring settings All env keys should begin with G\+E\+V\+E\+N\+T\+\_\+\+M\+O\+N\+I\+T\+OR.  
+
+
+
+
+Inherits \hyperlink{classgevent_1_1__config_1_1_bool_setting_mixin}{gevent.\+\_\+config.\+Bool\+Setting\+Mixin}, and \hyperlink{classgevent_1_1__config_1_1_setting}{gevent.\+\_\+config.\+Setting}.
+
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_monitor_thread_a38e2b9959be73dc7d9ef24a0fcf628bb}\label{classgevent_1_1__config_1_1_monitor_thread_a38e2b9959be73dc7d9ef24a0fcf628bb}} 
+string {\bfseries name} = \textquotesingle{}monitor\+\_\+thread\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_monitor_thread_a56b61477490b09f5866cd39a4d36ad03}\label{classgevent_1_1__config_1_1_monitor_thread_a56b61477490b09f5866cd39a4d36ad03}} 
+string {\bfseries environment\+\_\+key} = \textquotesingle{}G\+E\+V\+E\+N\+T\+\_\+\+M\+O\+N\+I\+T\+O\+R\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+E\+N\+A\+B\+LE\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_monitor_thread_ac47d796fa756e065906e59c1c36be0a0}\label{classgevent_1_1__config_1_1_monitor_thread_ac47d796fa756e065906e59c1c36be0a0}} 
+bool {\bfseries default} = False
+\item 
+string {\bfseries desc}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Monitoring settings All env keys should begin with G\+E\+V\+E\+N\+T\+\_\+\+M\+O\+N\+I\+T\+OR. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_monitor_thread_aee95dd332101471a7376df85a83ef546}\label{classgevent_1_1__config_1_1_monitor_thread_aee95dd332101471a7376df85a83ef546}} 
+\index{gevent\+::\+\_\+config\+::\+Monitor\+Thread@{gevent\+::\+\_\+config\+::\+Monitor\+Thread}!desc@{desc}}
+\index{desc@{desc}!gevent\+::\+\_\+config\+::\+Monitor\+Thread@{gevent\+::\+\_\+config\+::\+Monitor\+Thread}}
+\subsubsection{\texorpdfstring{desc}{desc}}
+{\footnotesize\ttfamily string gevent.\+\_\+config.\+Monitor\+Thread.\+desc\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \textcolor{stringliteral}{"""\(\backslash\)}
+\textcolor{stringliteral}{Should each hub start a native OS thread to monitor}
+\textcolor{stringliteral}{for problems?}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{Such a thread will periodically check to see if the event loop}
+\textcolor{stringliteral}{is blocked for longer than `max\_blocking\_time`, producing output on}
+\textcolor{stringliteral}{the hub's exception stream (stderr by default) if it detects this condition.}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{If this setting is true, then this thread will be created}
+\textcolor{stringliteral}{the first time the hub is switched to,}
+\textcolor{stringliteral}{or you can call :meth:`gevent.hub.Hub.start\_periodic\_monitoring\_thread` at any}
+\textcolor{stringliteral}{time to create it (from the same thread that will run the hub). That function}
+\textcolor{stringliteral}{will return an instance of :class:`gevent.events.IPeriodicMonitorThread`}
+\textcolor{stringliteral}{to which you can add your own monitoring functions. That function}
+\textcolor{stringliteral}{also emits an event of :class:`gevent.events.PeriodicMonitorThreadStartedEvent`.}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{.. seealso:: `max\_blocking\_time`}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{.. versionadded:: 1.3b1}
+\textcolor{stringliteral}{"""}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/\+\_\+config.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,66 @@
+\hypertarget{namespacepy_1_1__path_1_1local}{}\section{py.\+\_\+path.\+local Namespace Reference}
+\label{namespacepy_1_1__path_1_1local}\index{py.\+\_\+path.\+local@{py.\+\_\+path.\+local}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpy_1_1__path_1_1local_1_1_local_path}{Local\+Path}
+\item 
+class \hyperlink{classpy_1_1__path_1_1local_1_1_posix_path}{Posix\+Path}
+\item 
+class \hyperlink{classpy_1_1__path_1_1local_1_1_stat}{Stat}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepy_1_1__path_1_1local_ac202eeb567de48befd17bbec395a1770}\label{namespacepy_1_1__path_1_1local_ac202eeb567de48befd17bbec395a1770}} 
+def {\bfseries map\+\_\+as\+\_\+list} (func, iter)
+\item 
+\mbox{\Hypertarget{namespacepy_1_1__path_1_1local_a999468be1dc434f0463b8c9ff219a615}\label{namespacepy_1_1__path_1_1local_a999468be1dc434f0463b8c9ff219a615}} 
+def {\bfseries getuserid} (user)
+\item 
+\mbox{\Hypertarget{namespacepy_1_1__path_1_1local_acf0d473ecda2ef56f80c136b94272e5c}\label{namespacepy_1_1__path_1_1local_acf0d473ecda2ef56f80c136b94272e5c}} 
+def {\bfseries getgroupid} (group)
+\item 
+def \hyperlink{namespacepy_1_1__path_1_1local_aff48f6647a92b496eb0a281e1227d202}{copymode} (src, dest)
+\item 
+def \hyperlink{namespacepy_1_1__path_1_1local_ad9c74f26f1e8066b942ae6ff27173be5}{copystat} (src, dest)
+\item 
+\mbox{\Hypertarget{namespacepy_1_1__path_1_1local_aec2fe4ee418dc0edb28969b4f452a4ad}\label{namespacepy_1_1__path_1_1local_aec2fe4ee418dc0edb28969b4f452a4ad}} 
+def {\bfseries copychunked} (src, dest)
+\item 
+\mbox{\Hypertarget{namespacepy_1_1__path_1_1local_a5f14354f85c45cceeb4ccf74ab13bc71}\label{namespacepy_1_1__path_1_1local_a5f14354f85c45cceeb4ccf74ab13bc71}} 
+def {\bfseries isimportable} (name)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepy_1_1__path_1_1local_ae30eae1d3b5940b1c7bf2346ad642517}\label{namespacepy_1_1__path_1_1local_ae30eae1d3b5940b1c7bf2346ad642517}} 
+{\bfseries map\+\_\+as\+\_\+list} = map
+\item 
+\mbox{\Hypertarget{namespacepy_1_1__path_1_1local_a907de214dc5aaa0d7c82451a20880f9c}\label{namespacepy_1_1__path_1_1local_a907de214dc5aaa0d7c82451a20880f9c}} 
+{\bfseries F\+S\+Base} = not iswin32 and \hyperlink{classpy_1_1__path_1_1local_1_1_posix_path}{Posix\+Path} or \hyperlink{classpy_1_1__path_1_1common_1_1_path_base}{common.\+Path\+Base}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}local path implementation.
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepy_1_1__path_1_1local_aff48f6647a92b496eb0a281e1227d202}\label{namespacepy_1_1__path_1_1local_aff48f6647a92b496eb0a281e1227d202}} 
+\index{py\+::\+\_\+path\+::local@{py\+::\+\_\+path\+::local}!copymode@{copymode}}
+\index{copymode@{copymode}!py\+::\+\_\+path\+::local@{py\+::\+\_\+path\+::local}}
+\subsubsection{\texorpdfstring{copymode()}{copymode()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+local.\+copymode (\begin{DoxyParamCaption}\item[{}]{src,  }\item[{}]{dest }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}copy permission from src to dst. \end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepy_1_1__path_1_1local_ad9c74f26f1e8066b942ae6ff27173be5}\label{namespacepy_1_1__path_1_1local_ad9c74f26f1e8066b942ae6ff27173be5}} 
+\index{py\+::\+\_\+path\+::local@{py\+::\+\_\+path\+::local}!copystat@{copystat}}
+\index{copystat@{copystat}!py\+::\+\_\+path\+::local@{py\+::\+\_\+path\+::local}}
+\subsubsection{\texorpdfstring{copystat()}{copystat()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+local.\+copystat (\begin{DoxyParamCaption}\item[{}]{src,  }\item[{}]{dest }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}copy permission,  last modification time,
+last access time, and flags from src to dst.\end{DoxyVerb}
+ 

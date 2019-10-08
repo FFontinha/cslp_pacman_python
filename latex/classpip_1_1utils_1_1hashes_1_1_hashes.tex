@@ -1,0 +1,78 @@
+\hypertarget{classpip_1_1utils_1_1hashes_1_1_hashes}{}\section{pip.\+utils.\+hashes.\+Hashes Class Reference}
+\label{classpip_1_1utils_1_1hashes_1_1_hashes}\index{pip.\+utils.\+hashes.\+Hashes@{pip.\+utils.\+hashes.\+Hashes}}
+
+
+Inherits object.
+
+
+
+Inherited by \hyperlink{classpip_1_1utils_1_1hashes_1_1_missing_hashes}{pip.\+utils.\+hashes.\+Missing\+Hashes}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpip_1_1utils_1_1hashes_1_1_hashes_adf03141c0e021ec0ba650fd3bddd9956}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, hashes=None)
+\item 
+def \hyperlink{classpip_1_1utils_1_1hashes_1_1_hashes_aad529788518d843ce7f27f4149610411}{check\+\_\+against\+\_\+chunks} (self, chunks)
+\item 
+def \hyperlink{classpip_1_1utils_1_1hashes_1_1_hashes_a5066a598d8a19f1f00f1255cfea6d522}{check\+\_\+against\+\_\+file} (self, file)
+\item 
+\mbox{\Hypertarget{classpip_1_1utils_1_1hashes_1_1_hashes_aa13f44776b535e91f204868d595b9bb3}\label{classpip_1_1utils_1_1hashes_1_1_hashes_aa13f44776b535e91f204868d595b9bb3}} 
+def {\bfseries check\+\_\+against\+\_\+path} (self, path)
+\item 
+def \hyperlink{classpip_1_1utils_1_1hashes_1_1_hashes_a029b6c565c89a8b11818d6da33fe4ee6}{\+\_\+\+\_\+nonzero\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1utils_1_1hashes_1_1_hashes_ac4e2d6e7604b3d28312aace52e784455}\label{classpip_1_1utils_1_1hashes_1_1_hashes_ac4e2d6e7604b3d28312aace52e784455}} 
+def {\bfseries \+\_\+\+\_\+bool\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A wrapper that builds multiple hashes at once and checks them against
+known-good values\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpip_1_1utils_1_1hashes_1_1_hashes_adf03141c0e021ec0ba650fd3bddd9956}\label{classpip_1_1utils_1_1hashes_1_1_hashes_adf03141c0e021ec0ba650fd3bddd9956}} 
+\index{pip\+::utils\+::hashes\+::\+Hashes@{pip\+::utils\+::hashes\+::\+Hashes}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pip\+::utils\+::hashes\+::\+Hashes@{pip\+::utils\+::hashes\+::\+Hashes}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pip.\+utils.\+hashes.\+Hashes.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{hashes = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param hashes: A dict of algorithm names pointing to lists of allowed
+    hex digests
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1utils_1_1hashes_1_1_hashes_a029b6c565c89a8b11818d6da33fe4ee6}\label{classpip_1_1utils_1_1hashes_1_1_hashes_a029b6c565c89a8b11818d6da33fe4ee6}} 
+\index{pip\+::utils\+::hashes\+::\+Hashes@{pip\+::utils\+::hashes\+::\+Hashes}!\+\_\+\+\_\+nonzero\+\_\+\+\_\+@{\+\_\+\+\_\+nonzero\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+nonzero\+\_\+\+\_\+@{\+\_\+\+\_\+nonzero\+\_\+\+\_\+}!pip\+::utils\+::hashes\+::\+Hashes@{pip\+::utils\+::hashes\+::\+Hashes}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+nonzero\+\_\+\+\_\+()}{\_\_nonzero\_\_()}}
+{\footnotesize\ttfamily def pip.\+utils.\+hashes.\+Hashes.\+\_\+\+\_\+nonzero\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether I know any known-good hashes.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1utils_1_1hashes_1_1_hashes_aad529788518d843ce7f27f4149610411}\label{classpip_1_1utils_1_1hashes_1_1_hashes_aad529788518d843ce7f27f4149610411}} 
+\index{pip\+::utils\+::hashes\+::\+Hashes@{pip\+::utils\+::hashes\+::\+Hashes}!check\+\_\+against\+\_\+chunks@{check\+\_\+against\+\_\+chunks}}
+\index{check\+\_\+against\+\_\+chunks@{check\+\_\+against\+\_\+chunks}!pip\+::utils\+::hashes\+::\+Hashes@{pip\+::utils\+::hashes\+::\+Hashes}}
+\subsubsection{\texorpdfstring{check\+\_\+against\+\_\+chunks()}{check\_against\_chunks()}}
+{\footnotesize\ttfamily def pip.\+utils.\+hashes.\+Hashes.\+check\+\_\+against\+\_\+chunks (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{chunks }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check good hashes against ones built from iterable of chunks of
+data.
+
+Raise HashMismatch if none match.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1utils_1_1hashes_1_1_hashes_a5066a598d8a19f1f00f1255cfea6d522}\label{classpip_1_1utils_1_1hashes_1_1_hashes_a5066a598d8a19f1f00f1255cfea6d522}} 
+\index{pip\+::utils\+::hashes\+::\+Hashes@{pip\+::utils\+::hashes\+::\+Hashes}!check\+\_\+against\+\_\+file@{check\+\_\+against\+\_\+file}}
+\index{check\+\_\+against\+\_\+file@{check\+\_\+against\+\_\+file}!pip\+::utils\+::hashes\+::\+Hashes@{pip\+::utils\+::hashes\+::\+Hashes}}
+\subsubsection{\texorpdfstring{check\+\_\+against\+\_\+file()}{check\_against\_file()}}
+{\footnotesize\ttfamily def pip.\+utils.\+hashes.\+Hashes.\+check\+\_\+against\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{file }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check good hashes against a file-like object
+
+Raise HashMismatch if none match.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pip/utils/hashes.\+py\end{DoxyCompactItemize}

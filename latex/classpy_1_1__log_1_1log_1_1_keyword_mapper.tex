@@ -1,0 +1,51 @@
+\hypertarget{classpy_1_1__log_1_1log_1_1_keyword_mapper}{}\section{py.\+\_\+log.\+log.\+Keyword\+Mapper Class Reference}
+\label{classpy_1_1__log_1_1log_1_1_keyword_mapper}\index{py.\+\_\+log.\+log.\+Keyword\+Mapper@{py.\+\_\+log.\+log.\+Keyword\+Mapper}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpy_1_1__log_1_1log_1_1_keyword_mapper_a3301687a6bf036c4baa2ed3f458af897}\label{classpy_1_1__log_1_1log_1_1_keyword_mapper_a3301687a6bf036c4baa2ed3f458af897}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpy_1_1__log_1_1log_1_1_keyword_mapper_aa8063c0d4a10f73fb3b9ae8c821a8e42}\label{classpy_1_1__log_1_1log_1_1_keyword_mapper_aa8063c0d4a10f73fb3b9ae8c821a8e42}} 
+def {\bfseries getstate} (self)
+\item 
+\mbox{\Hypertarget{classpy_1_1__log_1_1log_1_1_keyword_mapper_a80f10cfd3315c258dee9827fd75b4668}\label{classpy_1_1__log_1_1log_1_1_keyword_mapper_a80f10cfd3315c258dee9827fd75b4668}} 
+def {\bfseries setstate} (self, state)
+\item 
+def \hyperlink{classpy_1_1__log_1_1log_1_1_keyword_mapper_a51b85512739413d6104827b12f568c45}{getconsumer} (self, keywords)
+\item 
+def \hyperlink{classpy_1_1__log_1_1log_1_1_keyword_mapper_a048b870c1b47f5d5beede894bccb32e7}{setconsumer} (self, keywords, consumer)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpy_1_1__log_1_1log_1_1_keyword_mapper_a40e1d59a01dd782d222b5669372256a3}\label{classpy_1_1__log_1_1log_1_1_keyword_mapper_a40e1d59a01dd782d222b5669372256a3}} 
+{\bfseries keywords2consumer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpy_1_1__log_1_1log_1_1_keyword_mapper_a51b85512739413d6104827b12f568c45}\label{classpy_1_1__log_1_1log_1_1_keyword_mapper_a51b85512739413d6104827b12f568c45}} 
+\index{py\+::\+\_\+log\+::log\+::\+Keyword\+Mapper@{py\+::\+\_\+log\+::log\+::\+Keyword\+Mapper}!getconsumer@{getconsumer}}
+\index{getconsumer@{getconsumer}!py\+::\+\_\+log\+::log\+::\+Keyword\+Mapper@{py\+::\+\_\+log\+::log\+::\+Keyword\+Mapper}}
+\subsubsection{\texorpdfstring{getconsumer()}{getconsumer()}}
+{\footnotesize\ttfamily def py.\+\_\+log.\+log.\+Keyword\+Mapper.\+getconsumer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{keywords }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a consumer matching the given keywords.
+
+    tries to find the most suitable consumer by walking, starting from
+    the back, the list of keywords, the first consumer matching a
+    keyword is returned (falling back to py.log.default)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__log_1_1log_1_1_keyword_mapper_a048b870c1b47f5d5beede894bccb32e7}\label{classpy_1_1__log_1_1log_1_1_keyword_mapper_a048b870c1b47f5d5beede894bccb32e7}} 
+\index{py\+::\+\_\+log\+::log\+::\+Keyword\+Mapper@{py\+::\+\_\+log\+::log\+::\+Keyword\+Mapper}!setconsumer@{setconsumer}}
+\index{setconsumer@{setconsumer}!py\+::\+\_\+log\+::log\+::\+Keyword\+Mapper@{py\+::\+\_\+log\+::log\+::\+Keyword\+Mapper}}
+\subsubsection{\texorpdfstring{setconsumer()}{setconsumer()}}
+{\footnotesize\ttfamily def py.\+\_\+log.\+log.\+Keyword\+Mapper.\+setconsumer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{keywords,  }\item[{}]{consumer }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}set a consumer for a set of keywords. \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/py/\+\_\+log/log.\+py\end{DoxyCompactItemize}

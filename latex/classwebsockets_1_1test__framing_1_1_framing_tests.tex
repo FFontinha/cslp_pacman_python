@@ -1,0 +1,119 @@
+\hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests}{}\section{websockets.\+test\+\_\+framing.\+Framing\+Tests Class Reference}
+\label{classwebsockets_1_1test__framing_1_1_framing_tests}\index{websockets.\+test\+\_\+framing.\+Framing\+Tests@{websockets.\+test\+\_\+framing.\+Framing\+Tests}}
+
+
+Inherits Test\+Case.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_acfbe7e6c6a4c762ec4b1bb9f11d75e68}\label{classwebsockets_1_1test__framing_1_1_framing_tests_acfbe7e6c6a4c762ec4b1bb9f11d75e68}} 
+def {\bfseries set\+Up} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a2b1fc8c0d206ae63040477673ed1b04b}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a2b1fc8c0d206ae63040477673ed1b04b}} 
+def {\bfseries tear\+Down} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a497b4b9dd5986a2174fb164a73f14548}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a497b4b9dd5986a2174fb164a73f14548}} 
+def {\bfseries decode} (self, message, mask=False, max\+\_\+size=None, extensions=None)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a47f906a3e50869d636727c511fdc980a}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a47f906a3e50869d636727c511fdc980a}} 
+def {\bfseries encode} (self, frame, mask=False, extensions=None)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_adb5538eb65f57367d1d5ab56203785d1}\label{classwebsockets_1_1test__framing_1_1_framing_tests_adb5538eb65f57367d1d5ab56203785d1}} 
+def {\bfseries round\+\_\+trip} (self, message, expected, mask=False, extensions=None)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_af0c0e0bb2d1f522b6139309c289b9837}\label{classwebsockets_1_1test__framing_1_1_framing_tests_af0c0e0bb2d1f522b6139309c289b9837}} 
+def {\bfseries round\+\_\+trip\+\_\+close} (self, data, code, reason)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a1efff02d3e00940fa7dc9164e94f8137}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a1efff02d3e00940fa7dc9164e94f8137}} 
+def {\bfseries test\+\_\+text} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a3d2497ea6dd65d7edfa987efdddca7b0}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a3d2497ea6dd65d7edfa987efdddca7b0}} 
+def {\bfseries test\+\_\+text\+\_\+masked} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_af15366e43d0572f6516246b9027caf44}\label{classwebsockets_1_1test__framing_1_1_framing_tests_af15366e43d0572f6516246b9027caf44}} 
+def {\bfseries test\+\_\+binary} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a2ebc0ad5cc5284d9c6f5abd322d52574}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a2ebc0ad5cc5284d9c6f5abd322d52574}} 
+def {\bfseries test\+\_\+binary\+\_\+masked} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_afa98aa2037b6d3ca4ef6ceb3e60a5651}\label{classwebsockets_1_1test__framing_1_1_framing_tests_afa98aa2037b6d3ca4ef6ceb3e60a5651}} 
+def {\bfseries test\+\_\+non\+\_\+ascii\+\_\+text} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a7113ec302e375a4549cd62921560915e}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a7113ec302e375a4549cd62921560915e}} 
+def {\bfseries test\+\_\+non\+\_\+ascii\+\_\+text\+\_\+masked} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a18641e78e50d2f4bc11d1b86d86eb48a}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a18641e78e50d2f4bc11d1b86d86eb48a}} 
+def {\bfseries test\+\_\+close} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a514b0224baaca7aaafc520f56630a337}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a514b0224baaca7aaafc520f56630a337}} 
+def {\bfseries test\+\_\+ping} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a95ec6dbf35cd8935c115ed715cc931e8}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a95ec6dbf35cd8935c115ed715cc931e8}} 
+def {\bfseries test\+\_\+pong} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a8ddd0c30f6ff87dc90901710c8c6693b}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a8ddd0c30f6ff87dc90901710c8c6693b}} 
+def {\bfseries test\+\_\+long} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a5f80c85ccac0209f4339c4e442537778}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a5f80c85ccac0209f4339c4e442537778}} 
+def {\bfseries test\+\_\+very\+\_\+long} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a91c7a3249efcee4a27a8eb10c8e763d0}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a91c7a3249efcee4a27a8eb10c8e763d0}} 
+def {\bfseries test\+\_\+payload\+\_\+too\+\_\+big} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a61ad496829485a8931545261f204f388}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a61ad496829485a8931545261f204f388}} 
+def {\bfseries test\+\_\+bad\+\_\+reserved\+\_\+bits} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a9597008add633a095599b152a6cf65fa}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a9597008add633a095599b152a6cf65fa}} 
+def {\bfseries test\+\_\+good\+\_\+opcode} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_afabc650f162f9b37e8cbd523f787b2b0}\label{classwebsockets_1_1test__framing_1_1_framing_tests_afabc650f162f9b37e8cbd523f787b2b0}} 
+def {\bfseries test\+\_\+bad\+\_\+opcode} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a1332bb924dbb45d796e0f9faaa9014c9}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a1332bb924dbb45d796e0f9faaa9014c9}} 
+def {\bfseries test\+\_\+mask\+\_\+flag} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_aa3f4e7399165b0188bdf409f10f78b81}\label{classwebsockets_1_1test__framing_1_1_framing_tests_aa3f4e7399165b0188bdf409f10f78b81}} 
+def {\bfseries test\+\_\+control\+\_\+frame\+\_\+max\+\_\+length} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_ac46c1f471a385cf2911f87ef3ae1b19e}\label{classwebsockets_1_1test__framing_1_1_framing_tests_ac46c1f471a385cf2911f87ef3ae1b19e}} 
+def {\bfseries test\+\_\+encode\+\_\+data\+\_\+str} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a00e0d3b81bb1e86b878691df268981e0}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a00e0d3b81bb1e86b878691df268981e0}} 
+def {\bfseries test\+\_\+encode\+\_\+data\+\_\+bytes} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_aaa4dd69ce08ba4a9578eb7ae34459145}\label{classwebsockets_1_1test__framing_1_1_framing_tests_aaa4dd69ce08ba4a9578eb7ae34459145}} 
+def {\bfseries test\+\_\+encode\+\_\+data\+\_\+other} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_af69fb5edd656cf880c4b62fdc7caca1b}\label{classwebsockets_1_1test__framing_1_1_framing_tests_af69fb5edd656cf880c4b62fdc7caca1b}} 
+def {\bfseries test\+\_\+fragmented\+\_\+control\+\_\+frame} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a3d221029cce4e2df9552b3e7f03a9b1c}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a3d221029cce4e2df9552b3e7f03a9b1c}} 
+def {\bfseries test\+\_\+parse\+\_\+close\+\_\+and\+\_\+serialize\+\_\+close} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_aa30b6f5d68b3821d6488adfd1527862b}\label{classwebsockets_1_1test__framing_1_1_framing_tests_aa30b6f5d68b3821d6488adfd1527862b}} 
+def {\bfseries test\+\_\+parse\+\_\+close\+\_\+empty} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a9baf1af50b2427c12a502691743279b1}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a9baf1af50b2427c12a502691743279b1}} 
+def {\bfseries test\+\_\+parse\+\_\+close\+\_\+errors} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a7f4052476b9873ed940c1f7e5b357ebd}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a7f4052476b9873ed940c1f7e5b357ebd}} 
+def {\bfseries test\+\_\+serialize\+\_\+close\+\_\+errors} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_adf56e7504db707299f06eb9d8af693e1}\label{classwebsockets_1_1test__framing_1_1_framing_tests_adf56e7504db707299f06eb9d8af693e1}} 
+def {\bfseries test\+\_\+extensions} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_ae5acc52c0ba7e79d83b935a5d4d7fcb2}\label{classwebsockets_1_1test__framing_1_1_framing_tests_ae5acc52c0ba7e79d83b935a5d4d7fcb2}} 
+{\bfseries loop}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__framing_1_1_framing_tests_a3eb0f31dfb50393d855d50b5c4938968}\label{classwebsockets_1_1test__framing_1_1_framing_tests_a3eb0f31dfb50393d855d50b5c4938968}} 
+{\bfseries stream}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/websockets/test\+\_\+framing.\+py\end{DoxyCompactItemize}

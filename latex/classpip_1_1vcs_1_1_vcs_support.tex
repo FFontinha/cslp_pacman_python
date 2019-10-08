@@ -1,0 +1,61 @@
+\hypertarget{classpip_1_1vcs_1_1_vcs_support}{}\section{pip.\+vcs.\+Vcs\+Support Class Reference}
+\label{classpip_1_1vcs_1_1_vcs_support}\index{pip.\+vcs.\+Vcs\+Support@{pip.\+vcs.\+Vcs\+Support}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1vcs_1_1_vcs_support_ad149606eed3f38b467d9079004c48bf6}\label{classpip_1_1vcs_1_1_vcs_support_ad149606eed3f38b467d9079004c48bf6}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1vcs_1_1_vcs_support_a0696b8cbfb94e452f670ba6e25b5390e}\label{classpip_1_1vcs_1_1_vcs_support_a0696b8cbfb94e452f670ba6e25b5390e}} 
+def {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1vcs_1_1_vcs_support_a1e8e36827b5b4fed261efe4ca802d836}\label{classpip_1_1vcs_1_1_vcs_support_a1e8e36827b5b4fed261efe4ca802d836}} 
+def {\bfseries backends} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1vcs_1_1_vcs_support_a06431d2d80b178c5439022f8eb713df7}\label{classpip_1_1vcs_1_1_vcs_support_a06431d2d80b178c5439022f8eb713df7}} 
+def {\bfseries dirnames} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1vcs_1_1_vcs_support_a796c6619733d08fe0b22f663d56c9762}\label{classpip_1_1vcs_1_1_vcs_support_a796c6619733d08fe0b22f663d56c9762}} 
+def {\bfseries all\+\_\+schemes} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1vcs_1_1_vcs_support_ab41ae402607a3277c9a44abadc730a1e}\label{classpip_1_1vcs_1_1_vcs_support_ab41ae402607a3277c9a44abadc730a1e}} 
+def {\bfseries register} (self, cls)
+\item 
+\mbox{\Hypertarget{classpip_1_1vcs_1_1_vcs_support_ab00c34fcb3a773be4dc0a035d263ab84}\label{classpip_1_1vcs_1_1_vcs_support_ab00c34fcb3a773be4dc0a035d263ab84}} 
+def {\bfseries unregister} (self, cls=None, name=None)
+\item 
+def \hyperlink{classpip_1_1vcs_1_1_vcs_support_a6487ce924995420bae7582270c09a02a}{get\+\_\+backend\+\_\+name} (self, location)
+\item 
+\mbox{\Hypertarget{classpip_1_1vcs_1_1_vcs_support_a45e84d524ea75800ea88a6180175c73f}\label{classpip_1_1vcs_1_1_vcs_support_a45e84d524ea75800ea88a6180175c73f}} 
+def {\bfseries get\+\_\+backend} (self, name)
+\item 
+\mbox{\Hypertarget{classpip_1_1vcs_1_1_vcs_support_a9b18d97e1cadc1654e1191967a0bff22}\label{classpip_1_1vcs_1_1_vcs_support_a9b18d97e1cadc1654e1191967a0bff22}} 
+def {\bfseries get\+\_\+backend\+\_\+from\+\_\+location} (self, location)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1vcs_1_1_vcs_support_a51435198ebc5f15ff08722132f20cd2a}\label{classpip_1_1vcs_1_1_vcs_support_a51435198ebc5f15ff08722132f20cd2a}} 
+list {\bfseries schemes} = \mbox{[}\textquotesingle{}ssh\textquotesingle{}, \textquotesingle{}git\textquotesingle{}, \textquotesingle{}hg\textquotesingle{}, \textquotesingle{}bzr\textquotesingle{}, \textquotesingle{}sftp\textquotesingle{}, \textquotesingle{}svn\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1vcs_1_1_vcs_support_a6487ce924995420bae7582270c09a02a}\label{classpip_1_1vcs_1_1_vcs_support_a6487ce924995420bae7582270c09a02a}} 
+\index{pip\+::vcs\+::\+Vcs\+Support@{pip\+::vcs\+::\+Vcs\+Support}!get\+\_\+backend\+\_\+name@{get\+\_\+backend\+\_\+name}}
+\index{get\+\_\+backend\+\_\+name@{get\+\_\+backend\+\_\+name}!pip\+::vcs\+::\+Vcs\+Support@{pip\+::vcs\+::\+Vcs\+Support}}
+\subsubsection{\texorpdfstring{get\+\_\+backend\+\_\+name()}{get\_backend\_name()}}
+{\footnotesize\ttfamily def pip.\+vcs.\+Vcs\+Support.\+get\+\_\+backend\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{location }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the name of the version control backend if found at given
+location, e.g. vcs.get_backend_name('/path/to/vcs/checkout')
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pip/vcs/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

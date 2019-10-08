@@ -1,0 +1,136 @@
+\hypertarget{classpygame_1_1sprite_1_1_sprite}{}\section{pygame.\+sprite.\+Sprite Class Reference}
+\label{classpygame_1_1sprite_1_1_sprite}\index{pygame.\+sprite.\+Sprite@{pygame.\+sprite.\+Sprite}}
+
+
+Inherits object.
+
+
+
+Inherited by \hyperlink{classaliens_1_1_alien}{aliens.\+Alien}, \hyperlink{classaliens_1_1_bomb}{aliens.\+Bomb}, \hyperlink{classaliens_1_1_explosion}{aliens.\+Explosion}, \hyperlink{classaliens_1_1_player}{aliens.\+Player}, \hyperlink{classaliens_1_1_score}{aliens.\+Score}, \hyperlink{classaliens_1_1_shot}{aliens.\+Shot}, \hyperlink{classpygame_1_1examples_1_1aliens_1_1_alien}{pygame.\+examples.\+aliens.\+Alien}, \hyperlink{classpygame_1_1examples_1_1aliens_1_1_bomb}{pygame.\+examples.\+aliens.\+Bomb}, \hyperlink{classpygame_1_1examples_1_1aliens_1_1_explosion}{pygame.\+examples.\+aliens.\+Explosion}, \hyperlink{classpygame_1_1examples_1_1aliens_1_1_player}{pygame.\+examples.\+aliens.\+Player}, \hyperlink{classpygame_1_1examples_1_1aliens_1_1_score}{pygame.\+examples.\+aliens.\+Score}, \hyperlink{classpygame_1_1examples_1_1aliens_1_1_shot}{pygame.\+examples.\+aliens.\+Shot}, \hyperlink{classpygame_1_1examples_1_1chimp_1_1_chimp}{pygame.\+examples.\+chimp.\+Chimp}, \hyperlink{classpygame_1_1examples_1_1chimp_1_1_fist}{pygame.\+examples.\+chimp.\+Fist}, \hyperlink{classpygame_1_1sprite_1_1_dirty_sprite}{pygame.\+sprite.\+Dirty\+Sprite}, \hyperlink{classviewer_1_1_ghost}{viewer.\+Ghost}, and \hyperlink{classviewer_1_1_pac_man}{viewer.\+Pac\+Man}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygame_1_1sprite_1_1_sprite_a0f67e2dcad313276268e8195bb0a1ecc}\label{classpygame_1_1sprite_1_1_sprite_a0f67e2dcad313276268e8195bb0a1ecc}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{classpygame_1_1sprite_1_1_sprite_a737da7fd292c7463b925d512d0cb1ccf}{groups})
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_sprite_a9b368933bac409bcd4adfa0c2d18007a}{add} (self, \hyperlink{classpygame_1_1sprite_1_1_sprite_a737da7fd292c7463b925d512d0cb1ccf}{groups})
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_sprite_ad13c08925f3ae5869f6ae3c0575b8d34}{remove} (self, \hyperlink{classpygame_1_1sprite_1_1_sprite_a737da7fd292c7463b925d512d0cb1ccf}{groups})
+\item 
+\mbox{\Hypertarget{classpygame_1_1sprite_1_1_sprite_ae729842b89af205f095383e84c199698}\label{classpygame_1_1sprite_1_1_sprite_ae729842b89af205f095383e84c199698}} 
+def {\bfseries add\+\_\+internal} (self, group)
+\item 
+\mbox{\Hypertarget{classpygame_1_1sprite_1_1_sprite_a0af07c0acd1128ce271b58b97a1e5d8f}\label{classpygame_1_1sprite_1_1_sprite_a0af07c0acd1128ce271b58b97a1e5d8f}} 
+def {\bfseries remove\+\_\+internal} (self, group)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_sprite_adbe463fbe81302ca4f63535eb00e109d}{update} (self, args)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_sprite_adfb628d03641a767b2ade7347568dfe3}{kill} (self)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_sprite_a737da7fd292c7463b925d512d0cb1ccf}{groups} (self)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_sprite_a037be0ccbcd4f4fcefa857ea12fb50f5}{alive} (self)
+\item 
+\mbox{\Hypertarget{classpygame_1_1sprite_1_1_sprite_a395ac019eb244edeb02da29815ff5c00}\label{classpygame_1_1sprite_1_1_sprite_a395ac019eb244edeb02da29815ff5c00}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}simple base class for visible game objects
+
+pygame.sprite.Sprite(*groups): return Sprite
+
+The base class for visible game objects. Derived classes will want to
+override the Sprite.update() method and assign Sprite.image and Sprite.rect
+attributes.  The initializer can accept any number of Group instances that
+the Sprite will become a member of.
+
+When subclassing the Sprite class, be sure to call the base initializer
+before adding the Sprite to Groups.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygame_1_1sprite_1_1_sprite_a9b368933bac409bcd4adfa0c2d18007a}\label{classpygame_1_1sprite_1_1_sprite_a9b368933bac409bcd4adfa0c2d18007a}} 
+\index{pygame\+::sprite\+::\+Sprite@{pygame\+::sprite\+::\+Sprite}!add@{add}}
+\index{add@{add}!pygame\+::sprite\+::\+Sprite@{pygame\+::sprite\+::\+Sprite}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Sprite.\+add (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{groups }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}add the sprite to groups
+
+Sprite.add(*groups): return None
+
+Any number of Group instances can be passed as arguments. The
+Sprite will be added to the Groups it is not already a member of.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_sprite_a037be0ccbcd4f4fcefa857ea12fb50f5}\label{classpygame_1_1sprite_1_1_sprite_a037be0ccbcd4f4fcefa857ea12fb50f5}} 
+\index{pygame\+::sprite\+::\+Sprite@{pygame\+::sprite\+::\+Sprite}!alive@{alive}}
+\index{alive@{alive}!pygame\+::sprite\+::\+Sprite@{pygame\+::sprite\+::\+Sprite}}
+\subsubsection{\texorpdfstring{alive()}{alive()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Sprite.\+alive (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}does the sprite belong to any groups
+
+Sprite.alive(): return bool
+
+Returns True when the Sprite belongs to one or more Groups.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_sprite_a737da7fd292c7463b925d512d0cb1ccf}\label{classpygame_1_1sprite_1_1_sprite_a737da7fd292c7463b925d512d0cb1ccf}} 
+\index{pygame\+::sprite\+::\+Sprite@{pygame\+::sprite\+::\+Sprite}!groups@{groups}}
+\index{groups@{groups}!pygame\+::sprite\+::\+Sprite@{pygame\+::sprite\+::\+Sprite}}
+\subsubsection{\texorpdfstring{groups()}{groups()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Sprite.\+groups (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}list of Groups that contain this Sprite
+
+Sprite.groups(): return group_list
+
+Returns a list of all the Groups that contain this Sprite.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_sprite_adfb628d03641a767b2ade7347568dfe3}\label{classpygame_1_1sprite_1_1_sprite_adfb628d03641a767b2ade7347568dfe3}} 
+\index{pygame\+::sprite\+::\+Sprite@{pygame\+::sprite\+::\+Sprite}!kill@{kill}}
+\index{kill@{kill}!pygame\+::sprite\+::\+Sprite@{pygame\+::sprite\+::\+Sprite}}
+\subsubsection{\texorpdfstring{kill()}{kill()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Sprite.\+kill (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}remove the Sprite from all Groups
+
+Sprite.kill(): return None
+
+The Sprite is removed from all the Groups that contain it. This won't
+change anything about the state of the Sprite. It is possible to
+continue to use the Sprite after this method has been called, including
+adding it to Groups.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_sprite_ad13c08925f3ae5869f6ae3c0575b8d34}\label{classpygame_1_1sprite_1_1_sprite_ad13c08925f3ae5869f6ae3c0575b8d34}} 
+\index{pygame\+::sprite\+::\+Sprite@{pygame\+::sprite\+::\+Sprite}!remove@{remove}}
+\index{remove@{remove}!pygame\+::sprite\+::\+Sprite@{pygame\+::sprite\+::\+Sprite}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Sprite.\+remove (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{groups }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}remove the sprite from groups
+
+Sprite.remove(*groups): return None
+
+Any number of Group instances can be passed as arguments. The Sprite
+will be removed from the Groups it is currently a member of.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_sprite_adbe463fbe81302ca4f63535eb00e109d}\label{classpygame_1_1sprite_1_1_sprite_adbe463fbe81302ca4f63535eb00e109d}} 
+\index{pygame\+::sprite\+::\+Sprite@{pygame\+::sprite\+::\+Sprite}!update@{update}}
+\index{update@{update}!pygame\+::sprite\+::\+Sprite@{pygame\+::sprite\+::\+Sprite}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Sprite.\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}method to control sprite behavior
+
+Sprite.update(*args):
+
+The default implementation of this method does nothing; it's just a
+convenient "hook" that you can override. This method is called by
+Group.update() with whatever arguments you give it.
+
+There is no need to use this method if not using the convenience
+method by the same name in the Group class.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pygame/sprite.\+py\end{DoxyCompactItemize}

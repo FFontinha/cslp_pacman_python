@@ -1,0 +1,110 @@
+\hypertarget{namespace__pytest_1_1pytester}{}\section{\+\_\+pytest.\+pytester Namespace Reference}
+\label{namespace__pytest_1_1pytester}\index{\+\_\+pytest.\+pytester@{\+\_\+pytest.\+pytester}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class__pytest_1_1pytester_1_1_cwd_snapshot}{Cwd\+Snapshot}
+\item 
+class \hyperlink{class__pytest_1_1pytester_1_1_hook_recorder}{Hook\+Recorder}
+\item 
+class \hyperlink{class__pytest_1_1pytester_1_1_line_comp}{Line\+Comp}
+\item 
+class \hyperlink{class__pytest_1_1pytester_1_1_line_matcher}{Line\+Matcher}
+\item 
+class \hyperlink{class__pytest_1_1pytester_1_1_lsof_fd_leak_checker}{Lsof\+Fd\+Leak\+Checker}
+\item 
+class \hyperlink{class__pytest_1_1pytester_1_1_parsed_call}{Parsed\+Call}
+\item 
+class \hyperlink{class__pytest_1_1pytester_1_1_pytest_arg}{Pytest\+Arg}
+\item 
+class \hyperlink{class__pytest_1_1pytester_1_1_run_result}{Run\+Result}
+\item 
+class \hyperlink{class__pytest_1_1pytester_1_1_sys_modules_snapshot}{Sys\+Modules\+Snapshot}
+\item 
+class \hyperlink{class__pytest_1_1pytester_1_1_sys_paths_snapshot}{Sys\+Paths\+Snapshot}
+\item 
+class \hyperlink{class__pytest_1_1pytester_1_1_testdir}{Testdir}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1pytester_acdf5568edfdd73f588984ee0060992a3}\label{namespace__pytest_1_1pytester_acdf5568edfdd73f588984ee0060992a3}} 
+def {\bfseries pytest\+\_\+addoption} (parser)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1pytester_a8d8cd593de1d9941768b22bad8ca2534}\label{namespace__pytest_1_1pytester_a8d8cd593de1d9941768b22bad8ca2534}} 
+def {\bfseries pytest\+\_\+configure} (config)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1pytester_a4b07a5ab2664d710dbcf9eab7bd13556}\label{namespace__pytest_1_1pytester_a4b07a5ab2664d710dbcf9eab7bd13556}} 
+def {\bfseries getexecutable} (name, cache=\{\})
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1pytester_a4817139ef3593f858636b505df5f6445}\label{namespace__pytest_1_1pytester_a4817139ef3593f858636b505df5f6445}} 
+def {\bfseries anypython} (request)
+\item 
+def \hyperlink{namespace__pytest_1_1pytester_a409b7904819230c9816a7d70418a49b1}{get\+\_\+public\+\_\+names} (values)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1pytester_ac40633319b7e23a066a0eb30327e3e4a}\label{namespace__pytest_1_1pytester_ac40633319b7e23a066a0eb30327e3e4a}} 
+def {\bfseries linecomp} (request)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1pytester_a9bf7803555cc6bb06c0857899e6431ca}\label{namespace__pytest_1_1pytester_a9bf7803555cc6bb06c0857899e6431ca}} 
+def {\bfseries Line\+Matcher\+\_\+fixture} (request)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1pytester_a9801a09c32afedd91bb83ae64dc9df51}\label{namespace__pytest_1_1pytester_a9801a09c32afedd91bb83ae64dc9df51}} 
+def {\bfseries testdir} (request, tmpdir\+\_\+factory)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1pytester_ad3507bc53650a3b3f06acdcfb4d72105}\label{namespace__pytest_1_1pytester_ad3507bc53650a3b3f06acdcfb4d72105}} 
+def {\bfseries getdecoded} (out)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list {\bfseries I\+G\+N\+O\+R\+E\+\_\+\+P\+AM}
+\item 
+dictionary {\bfseries winpymap}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1pytester_ad3ffbf083aac60ebd8c3593a0b96895b}\label{namespace__pytest_1_1pytester_ad3ffbf083aac60ebd8c3593a0b96895b}} 
+{\bfseries rex\+\_\+outcome} = re.\+compile(r\char`\"{}(\textbackslash{}d+) (\mbox{[}\textbackslash{}w-\/\mbox{]}+)\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}(disabled by default) support for testing pytest and pytest plugins.\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1pytester_a409b7904819230c9816a7d70418a49b1}\label{namespace__pytest_1_1pytester_a409b7904819230c9816a7d70418a49b1}} 
+\index{\+\_\+pytest\+::pytester@{\+\_\+pytest\+::pytester}!get\+\_\+public\+\_\+names@{get\+\_\+public\+\_\+names}}
+\index{get\+\_\+public\+\_\+names@{get\+\_\+public\+\_\+names}!\+\_\+pytest\+::pytester@{\+\_\+pytest\+::pytester}}
+\subsubsection{\texorpdfstring{get\+\_\+public\+\_\+names()}{get\_public\_names()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+pytester.\+get\+\_\+public\+\_\+names (\begin{DoxyParamCaption}\item[{}]{values }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Only return names from iterator values without a leading underscore.\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1pytester_a69c958c6c5d66f0df3f8b6445f84328c}\label{namespace__pytest_1_1pytester_a69c958c6c5d66f0df3f8b6445f84328c}} 
+\index{\+\_\+pytest\+::pytester@{\+\_\+pytest\+::pytester}!I\+G\+N\+O\+R\+E\+\_\+\+P\+AM@{I\+G\+N\+O\+R\+E\+\_\+\+P\+AM}}
+\index{I\+G\+N\+O\+R\+E\+\_\+\+P\+AM@{I\+G\+N\+O\+R\+E\+\_\+\+P\+AM}!\+\_\+pytest\+::pytester@{\+\_\+pytest\+::pytester}}
+\subsubsection{\texorpdfstring{I\+G\+N\+O\+R\+E\+\_\+\+P\+AM}{IGNORE\_PAM}}
+{\footnotesize\ttfamily list \+\_\+pytest.\+pytester.\+I\+G\+N\+O\+R\+E\+\_\+\+P\+AM}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  [  \textcolor{comment}{# filenames added when obtaining details about the current user}
+2     \textcolor{stringliteral}{u"/var/lib/sss/mc/passwd"}
+3 ]
+\end{DoxyCode}
+\mbox{\Hypertarget{namespace__pytest_1_1pytester_af05ae72eb0be837167b0e67a11e4f2c7}\label{namespace__pytest_1_1pytester_af05ae72eb0be837167b0e67a11e4f2c7}} 
+\index{\+\_\+pytest\+::pytester@{\+\_\+pytest\+::pytester}!winpymap@{winpymap}}
+\index{winpymap@{winpymap}!\+\_\+pytest\+::pytester@{\+\_\+pytest\+::pytester}}
+\subsubsection{\texorpdfstring{winpymap}{winpymap}}
+{\footnotesize\ttfamily dictionary \+\_\+pytest.\+pytester.\+winpymap}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  \{
+2     \textcolor{stringliteral}{"python2.7"}: \textcolor{stringliteral}{r"C:\(\backslash\)Python27\(\backslash\)python.exe"},
+3     \textcolor{stringliteral}{"python3.4"}: \textcolor{stringliteral}{r"C:\(\backslash\)Python34\(\backslash\)python.exe"},
+4     \textcolor{stringliteral}{"python3.5"}: \textcolor{stringliteral}{r"C:\(\backslash\)Python35\(\backslash\)python.exe"},
+5     \textcolor{stringliteral}{"python3.6"}: \textcolor{stringliteral}{r"C:\(\backslash\)Python36\(\backslash\)python.exe"},
+6 \}
+\end{DoxyCode}

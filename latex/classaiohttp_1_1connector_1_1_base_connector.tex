@@ -1,0 +1,114 @@
+\hypertarget{classaiohttp_1_1connector_1_1_base_connector}{}\section{aiohttp.\+connector.\+Base\+Connector Class Reference}
+\label{classaiohttp_1_1connector_1_1_base_connector}\index{aiohttp.\+connector.\+Base\+Connector@{aiohttp.\+connector.\+Base\+Connector}}
+
+
+Inherited by \hyperlink{classaiohttp_1_1connector_1_1_t_c_p_connector}{aiohttp.\+connector.\+T\+C\+P\+Connector}, and \hyperlink{classaiohttp_1_1connector_1_1_unix_connector}{aiohttp.\+connector.\+Unix\+Connector}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a695e05484ed0f7f4e51e931af4d1ca01}\label{classaiohttp_1_1connector_1_1_base_connector_a695e05484ed0f7f4e51e931af4d1ca01}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, keepalive\+\_\+timeout=sentinel, \hyperlink{classaiohttp_1_1connector_1_1_base_connector_ae732f0e680ae1c5d35c57417a5cd9c4e}{force\+\_\+close}=False, \hyperlink{classaiohttp_1_1connector_1_1_base_connector_a9ae454fca119e032ccf66cb4745f4fbe}{limit}=100, \hyperlink{classaiohttp_1_1connector_1_1_base_connector_adce24e0088f2017dcc7338b65a708f04}{limit\+\_\+per\+\_\+host}=0, enable\+\_\+cleanup\+\_\+closed=False, loop=None)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a0f12418824e391d673b635def793739c}\label{classaiohttp_1_1connector_1_1_base_connector_a0f12418824e391d673b635def793739c}} 
+def {\bfseries \+\_\+\+\_\+del\+\_\+\+\_\+} (self, \+\_\+warnings=warnings)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a04b0dcb48eac3b43415e679a17e6f8e4}\label{classaiohttp_1_1connector_1_1_base_connector_a04b0dcb48eac3b43415e679a17e6f8e4}} 
+def {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a9bf75af92afa1d006180270224df45bd}\label{classaiohttp_1_1connector_1_1_base_connector_a9bf75af92afa1d006180270224df45bd}} 
+def {\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, exc)
+\item 
+def \hyperlink{classaiohttp_1_1connector_1_1_base_connector_ae732f0e680ae1c5d35c57417a5cd9c4e}{force\+\_\+close} (self)
+\item 
+def \hyperlink{classaiohttp_1_1connector_1_1_base_connector_a9ae454fca119e032ccf66cb4745f4fbe}{limit} (self)
+\item 
+def \hyperlink{classaiohttp_1_1connector_1_1_base_connector_adce24e0088f2017dcc7338b65a708f04}{limit\+\_\+per\+\_\+host} (self)
+\item 
+def \hyperlink{classaiohttp_1_1connector_1_1_base_connector_abee47311f998049bf175922c24941be0}{close} (self)
+\item 
+def \hyperlink{classaiohttp_1_1connector_1_1_base_connector_a25be9f73d8222bad85a80d99589ec531}{closed} (self)
+\item 
+def \hyperlink{classaiohttp_1_1connector_1_1_base_connector_adee1e99f0a32023d21997dcdee945489}{connect} (self, req, traces, timeout)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_aa9224b1e47b7f26f6ab64912d7927fe1}\label{classaiohttp_1_1connector_1_1_base_connector_aa9224b1e47b7f26f6ab64912d7927fe1}} 
+{\bfseries cookies}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Base connector class.
+
+keepalive_timeout - (optional) Keep-alive timeout.
+force_close - Set to True to force close and do reconnect
+    after each request (and between redirects).
+limit - The total number of simultaneous connections.
+limit_per_host - Number of simultaneous connections to one host.
+enable_cleanup_closed - Enables clean-up closed ssl transports.
+                        Disabled by default.
+loop - Optional event loop.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_abee47311f998049bf175922c24941be0}\label{classaiohttp_1_1connector_1_1_base_connector_abee47311f998049bf175922c24941be0}} 
+\index{aiohttp\+::connector\+::\+Base\+Connector@{aiohttp\+::connector\+::\+Base\+Connector}!close@{close}}
+\index{close@{close}!aiohttp\+::connector\+::\+Base\+Connector@{aiohttp\+::connector\+::\+Base\+Connector}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily def aiohttp.\+connector.\+Base\+Connector.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Close all opened transports.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a25be9f73d8222bad85a80d99589ec531}\label{classaiohttp_1_1connector_1_1_base_connector_a25be9f73d8222bad85a80d99589ec531}} 
+\index{aiohttp\+::connector\+::\+Base\+Connector@{aiohttp\+::connector\+::\+Base\+Connector}!closed@{closed}}
+\index{closed@{closed}!aiohttp\+::connector\+::\+Base\+Connector@{aiohttp\+::connector\+::\+Base\+Connector}}
+\subsubsection{\texorpdfstring{closed()}{closed()}}
+{\footnotesize\ttfamily def aiohttp.\+connector.\+Base\+Connector.\+closed (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Is connector closed.
+
+A readonly property.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_adee1e99f0a32023d21997dcdee945489}\label{classaiohttp_1_1connector_1_1_base_connector_adee1e99f0a32023d21997dcdee945489}} 
+\index{aiohttp\+::connector\+::\+Base\+Connector@{aiohttp\+::connector\+::\+Base\+Connector}!connect@{connect}}
+\index{connect@{connect}!aiohttp\+::connector\+::\+Base\+Connector@{aiohttp\+::connector\+::\+Base\+Connector}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily def aiohttp.\+connector.\+Base\+Connector.\+connect (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{req,  }\item[{}]{traces,  }\item[{}]{timeout }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get from pool or create new connection.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_ae732f0e680ae1c5d35c57417a5cd9c4e}\label{classaiohttp_1_1connector_1_1_base_connector_ae732f0e680ae1c5d35c57417a5cd9c4e}} 
+\index{aiohttp\+::connector\+::\+Base\+Connector@{aiohttp\+::connector\+::\+Base\+Connector}!force\+\_\+close@{force\+\_\+close}}
+\index{force\+\_\+close@{force\+\_\+close}!aiohttp\+::connector\+::\+Base\+Connector@{aiohttp\+::connector\+::\+Base\+Connector}}
+\subsubsection{\texorpdfstring{force\+\_\+close()}{force\_close()}}
+{\footnotesize\ttfamily def aiohttp.\+connector.\+Base\+Connector.\+force\+\_\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ultimately close connection on releasing if True.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a9ae454fca119e032ccf66cb4745f4fbe}\label{classaiohttp_1_1connector_1_1_base_connector_a9ae454fca119e032ccf66cb4745f4fbe}} 
+\index{aiohttp\+::connector\+::\+Base\+Connector@{aiohttp\+::connector\+::\+Base\+Connector}!limit@{limit}}
+\index{limit@{limit}!aiohttp\+::connector\+::\+Base\+Connector@{aiohttp\+::connector\+::\+Base\+Connector}}
+\subsubsection{\texorpdfstring{limit()}{limit()}}
+{\footnotesize\ttfamily def aiohttp.\+connector.\+Base\+Connector.\+limit (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The total number for simultaneous connections.
+
+If limit is 0 the connector has no limit.
+The default limit size is 100.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_adce24e0088f2017dcc7338b65a708f04}\label{classaiohttp_1_1connector_1_1_base_connector_adce24e0088f2017dcc7338b65a708f04}} 
+\index{aiohttp\+::connector\+::\+Base\+Connector@{aiohttp\+::connector\+::\+Base\+Connector}!limit\+\_\+per\+\_\+host@{limit\+\_\+per\+\_\+host}}
+\index{limit\+\_\+per\+\_\+host@{limit\+\_\+per\+\_\+host}!aiohttp\+::connector\+::\+Base\+Connector@{aiohttp\+::connector\+::\+Base\+Connector}}
+\subsubsection{\texorpdfstring{limit\+\_\+per\+\_\+host()}{limit\_per\_host()}}
+{\footnotesize\ttfamily def aiohttp.\+connector.\+Base\+Connector.\+limit\+\_\+per\+\_\+host (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The limit_per_host for simultaneous connections
+to the same endpoint.
+
+Endpoints are the same if they are have equal
+(host, port, is_ssl) triple.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/connector.\+py\end{DoxyCompactItemize}

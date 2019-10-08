@@ -1,0 +1,100 @@
+\hypertarget{classpy_1_1__code_1_1code_1_1_traceback}{}\section{py.\+\_\+code.\+code.\+Traceback Class Reference}
+\label{classpy_1_1__code_1_1code_1_1_traceback}\index{py.\+\_\+code.\+code.\+Traceback@{py.\+\_\+code.\+code.\+Traceback}}
+
+
+Inherits list.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpy_1_1__code_1_1code_1_1_traceback_aea2d1409a245794eca62d80884520590}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, tb)
+\item 
+def \hyperlink{classpy_1_1__code_1_1code_1_1_traceback_a71ca463717ecf011836e62ad25db4a73}{cut} (self, path=None, lineno=None, firstlineno=None, excludepath=None)
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_traceback_a249c44a92667062bfc6d67044489849b}\label{classpy_1_1__code_1_1code_1_1_traceback_a249c44a92667062bfc6d67044489849b}} 
+def {\bfseries \+\_\+\+\_\+getitem\+\_\+\+\_\+} (self, key)
+\item 
+def \hyperlink{classpy_1_1__code_1_1code_1_1_traceback_a07aee95114669d9e65fef873c163553c}{filter} (self, fn=lambda x\+:not x.\+ishidden())
+\item 
+def \hyperlink{classpy_1_1__code_1_1code_1_1_traceback_a9f0df5e06aa6de5e065fbc83c1efc7f8}{getcrashentry} (self)
+\item 
+def \hyperlink{classpy_1_1__code_1_1code_1_1_traceback_a282dee22b5c7c04e9be93bad6079b561}{recursionindex} (self)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_traceback_a1054c4d8486a88cf8e3c69d38798828c}\label{classpy_1_1__code_1_1code_1_1_traceback_a1054c4d8486a88cf8e3c69d38798828c}} 
+{\bfseries Entry} = \hyperlink{classpy_1_1__code_1_1code_1_1_traceback_entry}{Traceback\+Entry}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Traceback objects encapsulate and offer higher level
+    access to Traceback entries.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_traceback_aea2d1409a245794eca62d80884520590}\label{classpy_1_1__code_1_1code_1_1_traceback_aea2d1409a245794eca62d80884520590}} 
+\index{py\+::\+\_\+code\+::code\+::\+Traceback@{py\+::\+\_\+code\+::code\+::\+Traceback}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!py\+::\+\_\+code\+::code\+::\+Traceback@{py\+::\+\_\+code\+::code\+::\+Traceback}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+Traceback.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tb }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}initialize from given python traceback object. \end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_traceback_a71ca463717ecf011836e62ad25db4a73}\label{classpy_1_1__code_1_1code_1_1_traceback_a71ca463717ecf011836e62ad25db4a73}} 
+\index{py\+::\+\_\+code\+::code\+::\+Traceback@{py\+::\+\_\+code\+::code\+::\+Traceback}!cut@{cut}}
+\index{cut@{cut}!py\+::\+\_\+code\+::code\+::\+Traceback@{py\+::\+\_\+code\+::code\+::\+Traceback}}
+\subsubsection{\texorpdfstring{cut()}{cut()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+Traceback.\+cut (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path = {\ttfamily None},  }\item[{}]{lineno = {\ttfamily None},  }\item[{}]{firstlineno = {\ttfamily None},  }\item[{}]{excludepath = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a Traceback instance wrapping part of this Traceback
+
+    by provding any combination of path, lineno and firstlineno, the
+    first frame to start the to-be-returned traceback is determined
+
+    this allows cutting the first part of a Traceback instance e.g.
+    for formatting reasons (removing some uninteresting bits that deal
+    with handling of the exception/traceback)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_traceback_a07aee95114669d9e65fef873c163553c}\label{classpy_1_1__code_1_1code_1_1_traceback_a07aee95114669d9e65fef873c163553c}} 
+\index{py\+::\+\_\+code\+::code\+::\+Traceback@{py\+::\+\_\+code\+::code\+::\+Traceback}!filter@{filter}}
+\index{filter@{filter}!py\+::\+\_\+code\+::code\+::\+Traceback@{py\+::\+\_\+code\+::code\+::\+Traceback}}
+\subsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+Traceback.\+filter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fn = {\ttfamily lambda~x\+:~not~x.ishidden()} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a Traceback instance with certain items removed
+
+    fn is a function that gets a single argument, a TracebackItem
+    instance, and should return True when the item should be added
+    to the Traceback, False when not
+
+    by default this removes all the TracebackItems which are hidden
+    (see ishidden() above)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_traceback_a9f0df5e06aa6de5e065fbc83c1efc7f8}\label{classpy_1_1__code_1_1code_1_1_traceback_a9f0df5e06aa6de5e065fbc83c1efc7f8}} 
+\index{py\+::\+\_\+code\+::code\+::\+Traceback@{py\+::\+\_\+code\+::code\+::\+Traceback}!getcrashentry@{getcrashentry}}
+\index{getcrashentry@{getcrashentry}!py\+::\+\_\+code\+::code\+::\+Traceback@{py\+::\+\_\+code\+::code\+::\+Traceback}}
+\subsubsection{\texorpdfstring{getcrashentry()}{getcrashentry()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+Traceback.\+getcrashentry (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return last non-hidden traceback entry that lead
+to the exception of a traceback.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_traceback_a282dee22b5c7c04e9be93bad6079b561}\label{classpy_1_1__code_1_1code_1_1_traceback_a282dee22b5c7c04e9be93bad6079b561}} 
+\index{py\+::\+\_\+code\+::code\+::\+Traceback@{py\+::\+\_\+code\+::code\+::\+Traceback}!recursionindex@{recursionindex}}
+\index{recursionindex@{recursionindex}!py\+::\+\_\+code\+::code\+::\+Traceback@{py\+::\+\_\+code\+::code\+::\+Traceback}}
+\subsubsection{\texorpdfstring{recursionindex()}{recursionindex()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+Traceback.\+recursionindex (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return the index of the frame/TracebackItem where recursion
+    originates if appropriate, None if no recursion occurred
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/py/\+\_\+code/code.\+py\end{DoxyCompactItemize}

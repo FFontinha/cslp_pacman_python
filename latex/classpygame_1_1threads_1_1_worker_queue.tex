@@ -1,0 +1,69 @@
+\hypertarget{classpygame_1_1threads_1_1_worker_queue}{}\section{pygame.\+threads.\+Worker\+Queue Class Reference}
+\label{classpygame_1_1threads_1_1_worker_queue}\index{pygame.\+threads.\+Worker\+Queue@{pygame.\+threads.\+Worker\+Queue}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygame_1_1threads_1_1_worker_queue_a5daf638700e5503baa8aaeb777e264ee}\label{classpygame_1_1threads_1_1_worker_queue_a5daf638700e5503baa8aaeb777e264ee}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, num\+\_\+workers=20)
+\item 
+def \hyperlink{classpygame_1_1threads_1_1_worker_queue_ab3d602f127fb43f121cf3c7ced868a3f}{do} (self, f, args, kw\+Args)
+\item 
+def \hyperlink{classpygame_1_1threads_1_1_worker_queue_af53360f5b25ccabae9fda06bf2fc624d}{stop} (self)
+\item 
+def \hyperlink{classpygame_1_1threads_1_1_worker_queue_ab7bdb3c20aea724ab68d5dc1319d24d2}{threadloop} (self)
+\item 
+def \hyperlink{classpygame_1_1threads_1_1_worker_queue_a71960e68ef9c1f2b1499ab4f1b566da1}{wait} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygame_1_1threads_1_1_worker_queue_ad617da1bd46a2c57bfb547590476f906}\label{classpygame_1_1threads_1_1_worker_queue_ad617da1bd46a2c57bfb547590476f906}} 
+{\bfseries queue}
+\item 
+\mbox{\Hypertarget{classpygame_1_1threads_1_1_worker_queue_a793623d76ec49e74ce7ee92db129f362}\label{classpygame_1_1threads_1_1_worker_queue_a793623d76ec49e74ce7ee92db129f362}} 
+{\bfseries pool}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygame_1_1threads_1_1_worker_queue_ab3d602f127fb43f121cf3c7ced868a3f}\label{classpygame_1_1threads_1_1_worker_queue_ab3d602f127fb43f121cf3c7ced868a3f}} 
+\index{pygame\+::threads\+::\+Worker\+Queue@{pygame\+::threads\+::\+Worker\+Queue}!do@{do}}
+\index{do@{do}!pygame\+::threads\+::\+Worker\+Queue@{pygame\+::threads\+::\+Worker\+Queue}}
+\subsubsection{\texorpdfstring{do()}{do()}}
+{\footnotesize\ttfamily def pygame.\+threads.\+Worker\+Queue.\+do (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{f,  }\item[{}]{args,  }\item[{}]{kw\+Args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}puts a function on a queue for running later.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1threads_1_1_worker_queue_af53360f5b25ccabae9fda06bf2fc624d}\label{classpygame_1_1threads_1_1_worker_queue_af53360f5b25ccabae9fda06bf2fc624d}} 
+\index{pygame\+::threads\+::\+Worker\+Queue@{pygame\+::threads\+::\+Worker\+Queue}!stop@{stop}}
+\index{stop@{stop}!pygame\+::threads\+::\+Worker\+Queue@{pygame\+::threads\+::\+Worker\+Queue}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily def pygame.\+threads.\+Worker\+Queue.\+stop (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Stops the WorkerQueue, waits for all of the threads to finish up.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1threads_1_1_worker_queue_ab7bdb3c20aea724ab68d5dc1319d24d2}\label{classpygame_1_1threads_1_1_worker_queue_ab7bdb3c20aea724ab68d5dc1319d24d2}} 
+\index{pygame\+::threads\+::\+Worker\+Queue@{pygame\+::threads\+::\+Worker\+Queue}!threadloop@{threadloop}}
+\index{threadloop@{threadloop}!pygame\+::threads\+::\+Worker\+Queue@{pygame\+::threads\+::\+Worker\+Queue}}
+\subsubsection{\texorpdfstring{threadloop()}{threadloop()}}
+{\footnotesize\ttfamily def pygame.\+threads.\+Worker\+Queue.\+threadloop (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loops until all of the tasks are finished.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1threads_1_1_worker_queue_a71960e68ef9c1f2b1499ab4f1b566da1}\label{classpygame_1_1threads_1_1_worker_queue_a71960e68ef9c1f2b1499ab4f1b566da1}} 
+\index{pygame\+::threads\+::\+Worker\+Queue@{pygame\+::threads\+::\+Worker\+Queue}!wait@{wait}}
+\index{wait@{wait}!pygame\+::threads\+::\+Worker\+Queue@{pygame\+::threads\+::\+Worker\+Queue}}
+\subsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily def pygame.\+threads.\+Worker\+Queue.\+wait (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}waits until all tasks are complete.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pygame/threads/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

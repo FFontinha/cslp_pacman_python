@@ -1,0 +1,7 @@
+var namespacewebsockets_1_1extensions_1_1test__permessage__deflate =
+[
+    [ "ClientPerMessageDeflateFactoryTests", "classwebsockets_1_1extensions_1_1test__permessage__deflate_1_1_client_per_message_deflate_factory_tests.html", "classwebsockets_1_1extensions_1_1test__permessage__deflate_1_1_client_per_message_deflate_factory_tests" ],
+    [ "ExtensionTestsMixin", "classwebsockets_1_1extensions_1_1test__permessage__deflate_1_1_extension_tests_mixin.html", "classwebsockets_1_1extensions_1_1test__permessage__deflate_1_1_extension_tests_mixin" ],
+    [ "PerMessageDeflateTests", "classwebsockets_1_1extensions_1_1test__permessage__deflate_1_1_per_message_deflate_tests.html", "classwebsockets_1_1extensions_1_1test__permessage__deflate_1_1_per_message_deflate_tests" ],
+    [ "ServerPerMessageDeflateFactoryTests", "classwebsockets_1_1extensions_1_1test__permessage__deflate_1_1_server_per_message_deflate_factory_tests.html", "classwebsockets_1_1extensions_1_1test__permessage__deflate_1_1_server_per_message_deflate_factory_tests" ]
+];

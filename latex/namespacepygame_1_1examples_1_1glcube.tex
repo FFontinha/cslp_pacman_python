@@ -1,0 +1,90 @@
+\hypertarget{namespacepygame_1_1examples_1_1glcube}{}\section{pygame.\+examples.\+glcube Namespace Reference}
+\label{namespacepygame_1_1examples_1_1glcube}\index{pygame.\+examples.\+glcube@{pygame.\+examples.\+glcube}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1glcube_adb57ef6272333d9c61557a6d5f88990f}\label{namespacepygame_1_1examples_1_1glcube_adb57ef6272333d9c61557a6d5f88990f}} 
+def {\bfseries drawcube} ()
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1glcube_a259b74ed04506c2df529a0d42cb6f80f}\label{namespacepygame_1_1examples_1_1glcube_a259b74ed04506c2df529a0d42cb6f80f}} 
+def {\bfseries main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple {\bfseries C\+U\+B\+E\+\_\+\+P\+O\+I\+N\+TS}
+\item 
+tuple {\bfseries C\+U\+B\+E\+\_\+\+C\+O\+L\+O\+RS}
+\item 
+tuple {\bfseries C\+U\+B\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+V\+E\+R\+TS}
+\item 
+tuple {\bfseries C\+U\+B\+E\+\_\+\+E\+D\+G\+ES}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Draw a cube on the screen. every frame we orbit
+the camera around by a small amount and it appears
+the object is spinning. note i've setup some simple
+data structures here to represent a multicolored cube,
+we then go through a semi-unopimized loop to draw
+the cube points onto the screen. opengl does all the
+hard work for us. :]
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1glcube_aa943c0df07f2b1068bbad79785ee7af7}\label{namespacepygame_1_1examples_1_1glcube_aa943c0df07f2b1068bbad79785ee7af7}} 
+\index{pygame\+::examples\+::glcube@{pygame\+::examples\+::glcube}!C\+U\+B\+E\+\_\+\+C\+O\+L\+O\+RS@{C\+U\+B\+E\+\_\+\+C\+O\+L\+O\+RS}}
+\index{C\+U\+B\+E\+\_\+\+C\+O\+L\+O\+RS@{C\+U\+B\+E\+\_\+\+C\+O\+L\+O\+RS}!pygame\+::examples\+::glcube@{pygame\+::examples\+::glcube}}
+\subsubsection{\texorpdfstring{C\+U\+B\+E\+\_\+\+C\+O\+L\+O\+RS}{CUBE\_COLORS}}
+{\footnotesize\ttfamily tuple pygame.\+examples.\+glcube.\+C\+U\+B\+E\+\_\+\+C\+O\+L\+O\+RS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (
+2     (1, 0, 0), (1, 1, 0), (0, 1, 0), (0, 0, 0),
+3     (1, 0, 1), (1, 1, 1), (0, 0, 1), (0, 1, 1)
+4 )
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1glcube_a462fbebf3946c55c8355590f8b7bf7ff}\label{namespacepygame_1_1examples_1_1glcube_a462fbebf3946c55c8355590f8b7bf7ff}} 
+\index{pygame\+::examples\+::glcube@{pygame\+::examples\+::glcube}!C\+U\+B\+E\+\_\+\+E\+D\+G\+ES@{C\+U\+B\+E\+\_\+\+E\+D\+G\+ES}}
+\index{C\+U\+B\+E\+\_\+\+E\+D\+G\+ES@{C\+U\+B\+E\+\_\+\+E\+D\+G\+ES}!pygame\+::examples\+::glcube@{pygame\+::examples\+::glcube}}
+\subsubsection{\texorpdfstring{C\+U\+B\+E\+\_\+\+E\+D\+G\+ES}{CUBE\_EDGES}}
+{\footnotesize\ttfamily tuple pygame.\+examples.\+glcube.\+C\+U\+B\+E\+\_\+\+E\+D\+G\+ES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (
+2     (0,1), (0,3), (0,4), (2,1), (2,3), (2,7),
+3     (6,3), (6,4), (6,7), (5,1), (5,4), (5,7),
+4 )
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1glcube_a4c32e4419a9a713473a900b095e4a843}\label{namespacepygame_1_1examples_1_1glcube_a4c32e4419a9a713473a900b095e4a843}} 
+\index{pygame\+::examples\+::glcube@{pygame\+::examples\+::glcube}!C\+U\+B\+E\+\_\+\+P\+O\+I\+N\+TS@{C\+U\+B\+E\+\_\+\+P\+O\+I\+N\+TS}}
+\index{C\+U\+B\+E\+\_\+\+P\+O\+I\+N\+TS@{C\+U\+B\+E\+\_\+\+P\+O\+I\+N\+TS}!pygame\+::examples\+::glcube@{pygame\+::examples\+::glcube}}
+\subsubsection{\texorpdfstring{C\+U\+B\+E\+\_\+\+P\+O\+I\+N\+TS}{CUBE\_POINTS}}
+{\footnotesize\ttfamily tuple pygame.\+examples.\+glcube.\+C\+U\+B\+E\+\_\+\+P\+O\+I\+N\+TS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (
+2     (0.5, -0.5, -0.5),  (0.5, 0.5, -0.5),
+3     (-0.5, 0.5, -0.5),  (-0.5, -0.5, -0.5),
+4     (0.5, -0.5, 0.5),   (0.5, 0.5, 0.5),
+5     (-0.5, -0.5, 0.5),  (-0.5, 0.5, 0.5)
+6 )
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1glcube_adf6516e8f3ac7edce35104295f7a5d05}\label{namespacepygame_1_1examples_1_1glcube_adf6516e8f3ac7edce35104295f7a5d05}} 
+\index{pygame\+::examples\+::glcube@{pygame\+::examples\+::glcube}!C\+U\+B\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+V\+E\+R\+TS@{C\+U\+B\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+V\+E\+R\+TS}}
+\index{C\+U\+B\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+V\+E\+R\+TS@{C\+U\+B\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+V\+E\+R\+TS}!pygame\+::examples\+::glcube@{pygame\+::examples\+::glcube}}
+\subsubsection{\texorpdfstring{C\+U\+B\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+V\+E\+R\+TS}{CUBE\_QUAD\_VERTS}}
+{\footnotesize\ttfamily tuple pygame.\+examples.\+glcube.\+C\+U\+B\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+V\+E\+R\+TS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (
+2     (0, 1, 2, 3), (3, 2, 7, 6), (6, 7, 5, 4),
+3     (4, 5, 1, 0), (1, 5, 7, 2), (4, 0, 3, 6)
+4 )
+\end{DoxyCode}

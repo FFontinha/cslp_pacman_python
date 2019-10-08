@@ -1,0 +1,89 @@
+\hypertarget{classpygame_1_1midi_1_1_input}{}\section{pygame.\+midi.\+Input Class Reference}
+\label{classpygame_1_1midi_1_1_input}\index{pygame.\+midi.\+Input@{pygame.\+midi.\+Input}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpygame_1_1midi_1_1_input_a92be120cd0dc0d71f57204b0614f22e1}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, device\+\_\+id, buffer\+\_\+size=4096)
+\item 
+def \hyperlink{classpygame_1_1midi_1_1_input_a304ec0bb72449b749418786ea97e0256}{close} (self)
+\item 
+def \hyperlink{classpygame_1_1midi_1_1_input_ae815968ae5fcf52f9d86a6f9611bc2fa}{read} (self, num\+\_\+events)
+\item 
+def \hyperlink{classpygame_1_1midi_1_1_input_a4f4c04b798c914b0b469a78e79350908}{poll} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygame_1_1midi_1_1_input_a2a45fbd64dc3eeb2bd8f808e014d3eaa}\label{classpygame_1_1midi_1_1_input_a2a45fbd64dc3eeb2bd8f808e014d3eaa}} 
+{\bfseries device\+\_\+id}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Input is used to get midi input from midi devices.
+Input(device_id)
+Input(device_id, buffer_size)
+
+buffer_size - the number of input events to be buffered waiting to
+  be read using Input.read()
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygame_1_1midi_1_1_input_a92be120cd0dc0d71f57204b0614f22e1}\label{classpygame_1_1midi_1_1_input_a92be120cd0dc0d71f57204b0614f22e1}} 
+\index{pygame\+::midi\+::\+Input@{pygame\+::midi\+::\+Input}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pygame\+::midi\+::\+Input@{pygame\+::midi\+::\+Input}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygame.\+midi.\+Input.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{device\+\_\+id,  }\item[{}]{buffer\+\_\+size = {\ttfamily 4096} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The buffer_size specifies the number of input events to be buffered
+waiting to be read using Input.read().
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygame_1_1midi_1_1_input_a304ec0bb72449b749418786ea97e0256}\label{classpygame_1_1midi_1_1_input_a304ec0bb72449b749418786ea97e0256}} 
+\index{pygame\+::midi\+::\+Input@{pygame\+::midi\+::\+Input}!close@{close}}
+\index{close@{close}!pygame\+::midi\+::\+Input@{pygame\+::midi\+::\+Input}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily def pygame.\+midi.\+Input.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}closes a midi stream, flushing any pending buffers.
+Input.close(): return None
+
+PortMidi attempts to close open streams when the application
+exits -- this is particularly difficult under Windows.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1midi_1_1_input_a4f4c04b798c914b0b469a78e79350908}\label{classpygame_1_1midi_1_1_input_a4f4c04b798c914b0b469a78e79350908}} 
+\index{pygame\+::midi\+::\+Input@{pygame\+::midi\+::\+Input}!poll@{poll}}
+\index{poll@{poll}!pygame\+::midi\+::\+Input@{pygame\+::midi\+::\+Input}}
+\subsubsection{\texorpdfstring{poll()}{poll()}}
+{\footnotesize\ttfamily def pygame.\+midi.\+Input.\+poll (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}returns true if there's data, or false if not.
+Input.poll(): return Bool
+
+raises a MidiException on error.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1midi_1_1_input_ae815968ae5fcf52f9d86a6f9611bc2fa}\label{classpygame_1_1midi_1_1_input_ae815968ae5fcf52f9d86a6f9611bc2fa}} 
+\index{pygame\+::midi\+::\+Input@{pygame\+::midi\+::\+Input}!read@{read}}
+\index{read@{read}!pygame\+::midi\+::\+Input@{pygame\+::midi\+::\+Input}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily def pygame.\+midi.\+Input.\+read (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{num\+\_\+events }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}reads num_events midi events from the buffer.
+Input.read(num_events): return midi_event_list
+
+Reads from the Input buffer and gives back midi events.
+[[[status,data1,data2,data3],timestamp],
+ [[status,data1,data2,data3],timestamp],...]
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pygame/midi.\+py\end{DoxyCompactItemize}

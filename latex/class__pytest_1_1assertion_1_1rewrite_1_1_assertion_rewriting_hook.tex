@@ -1,0 +1,74 @@
+\hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook}{}\section{\+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriting\+Hook Class Reference}
+\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook}\index{\+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriting\+Hook@{\+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriting\+Hook}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_ad401304a2b2a6a0d0d495babb9a94ab2}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_ad401304a2b2a6a0d0d495babb9a94ab2}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, config)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a4bee77f19fc3451017426a42d0049113}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a4bee77f19fc3451017426a42d0049113}} 
+def {\bfseries set\+\_\+session} (self, session)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a3ba3ec97db9f26f1eaa159a1c6bbc5c8}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a3ba3ec97db9f26f1eaa159a1c6bbc5c8}} 
+def {\bfseries find\+\_\+module} (self, name, path=None)
+\item 
+def \hyperlink{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a49c937758dd2c23067a120cbbb34eb76}{mark\+\_\+rewrite} (self, names)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a184a0ea858babbfd9ae3d69cdd423d64}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a184a0ea858babbfd9ae3d69cdd423d64}} 
+def {\bfseries load\+\_\+module} (self, name)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a4f3204acea4ec4a7c04e89106a0fe71e}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a4f3204acea4ec4a7c04e89106a0fe71e}} 
+def {\bfseries is\+\_\+package} (self, name)
+\item 
+def \hyperlink{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a261402f25cf80500773045056b71ea5b}{get\+\_\+data} (self, pathname)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_abfb08bd8b0e4a113995f276a555bbe42}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_abfb08bd8b0e4a113995f276a555bbe42}} 
+{\bfseries config}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a87a2c98aaaa15f04f2f01e12cd63415c}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a87a2c98aaaa15f04f2f01e12cd63415c}} 
+{\bfseries fnpats}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_ad8b73d9bd739f7fa6fc13810179baff7}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_ad8b73d9bd739f7fa6fc13810179baff7}} 
+{\bfseries session}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a63858324999c5977d812d3a1f5d617bd}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a63858324999c5977d812d3a1f5d617bd}} 
+{\bfseries modules}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}PEP302 Import hook which rewrites asserts.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a261402f25cf80500773045056b71ea5b}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a261402f25cf80500773045056b71ea5b}} 
+\index{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriting\+Hook@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriting\+Hook}!get\+\_\+data@{get\+\_\+data}}
+\index{get\+\_\+data@{get\+\_\+data}!\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriting\+Hook@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriting\+Hook}}
+\subsubsection{\texorpdfstring{get\+\_\+data()}{get\_data()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriting\+Hook.\+get\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pathname }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Optional PEP302 get_data API.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a49c937758dd2c23067a120cbbb34eb76}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriting_hook_a49c937758dd2c23067a120cbbb34eb76}} 
+\index{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriting\+Hook@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriting\+Hook}!mark\+\_\+rewrite@{mark\+\_\+rewrite}}
+\index{mark\+\_\+rewrite@{mark\+\_\+rewrite}!\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriting\+Hook@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriting\+Hook}}
+\subsubsection{\texorpdfstring{mark\+\_\+rewrite()}{mark\_rewrite()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriting\+Hook.\+mark\+\_\+rewrite (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{names }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Mark import names as needing to be rewritten.
+
+The named module or package as well as any nested modules will
+be rewritten on import.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/assertion/rewrite.\+py\end{DoxyCompactItemize}

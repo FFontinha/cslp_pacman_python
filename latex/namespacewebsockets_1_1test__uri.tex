@@ -1,0 +1,62 @@
+\hypertarget{namespacewebsockets_1_1test__uri}{}\section{websockets.\+test\+\_\+uri Namespace Reference}
+\label{namespacewebsockets_1_1test__uri}\index{websockets.\+test\+\_\+uri@{websockets.\+test\+\_\+uri}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classwebsockets_1_1test__uri_1_1_u_r_i_tests}{U\+R\+I\+Tests}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \hyperlink{namespacewebsockets_1_1test__uri_a64a4573cdc520382b48bbdd783a09159}{V\+A\+L\+I\+D\+\_\+\+U\+R\+IS}
+\item 
+list \hyperlink{namespacewebsockets_1_1test__uri_abe6716efba293ba8bcbe7083569a078f}{I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+R\+IS}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacewebsockets_1_1test__uri_abe6716efba293ba8bcbe7083569a078f}\label{namespacewebsockets_1_1test__uri_abe6716efba293ba8bcbe7083569a078f}} 
+\index{websockets\+::test\+\_\+uri@{websockets\+::test\+\_\+uri}!I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+R\+IS@{I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+R\+IS}}
+\index{I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+R\+IS@{I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+R\+IS}!websockets\+::test\+\_\+uri@{websockets\+::test\+\_\+uri}}
+\subsubsection{\texorpdfstring{I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+R\+IS}{INVALID\_URIS}}
+{\footnotesize\ttfamily list websockets.\+test\+\_\+uri.\+I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+R\+IS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  [
+2     \textcolor{stringliteral}{'http://localhost/'},
+3     \textcolor{stringliteral}{'https://localhost/'},
+4     \textcolor{stringliteral}{'ws://localhost/path#fragment'},
+5 ]
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacewebsockets_1_1test__uri_a64a4573cdc520382b48bbdd783a09159}\label{namespacewebsockets_1_1test__uri_a64a4573cdc520382b48bbdd783a09159}} 
+\index{websockets\+::test\+\_\+uri@{websockets\+::test\+\_\+uri}!V\+A\+L\+I\+D\+\_\+\+U\+R\+IS@{V\+A\+L\+I\+D\+\_\+\+U\+R\+IS}}
+\index{V\+A\+L\+I\+D\+\_\+\+U\+R\+IS@{V\+A\+L\+I\+D\+\_\+\+U\+R\+IS}!websockets\+::test\+\_\+uri@{websockets\+::test\+\_\+uri}}
+\subsubsection{\texorpdfstring{V\+A\+L\+I\+D\+\_\+\+U\+R\+IS}{VALID\_URIS}}
+{\footnotesize\ttfamily list websockets.\+test\+\_\+uri.\+V\+A\+L\+I\+D\+\_\+\+U\+R\+IS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  [
+2     (
+3         \textcolor{stringliteral}{'ws://localhost/'},
+4         (\textcolor{keyword}{False}, \textcolor{stringliteral}{'localhost'}, 80, \textcolor{stringliteral}{'/'}, \textcolor{keywordtype}{None}),
+5     ),
+6     (
+7         \textcolor{stringliteral}{'wss://localhost/'},
+8         (\textcolor{keyword}{True}, \textcolor{stringliteral}{'localhost'}, 443, \textcolor{stringliteral}{'/'}, \textcolor{keywordtype}{None}),
+9     ),
+10     (
+11         \textcolor{stringliteral}{'ws://localhost/path?query'},
+12         (\textcolor{keyword}{False}, \textcolor{stringliteral}{'localhost'}, 80, \textcolor{stringliteral}{'/path?query'}, \textcolor{keywordtype}{None}),
+13     ),
+14     (
+15         \textcolor{stringliteral}{'WS://LOCALHOST/PATH?QUERY'},
+16         (\textcolor{keyword}{False}, \textcolor{stringliteral}{'localhost'}, 80, \textcolor{stringliteral}{'/PATH?QUERY'}, \textcolor{keywordtype}{None}),
+17     ),
+18     (
+19         \textcolor{stringliteral}{'ws://user:pass@localhost/'},
+20         (\textcolor{keyword}{False}, \textcolor{stringliteral}{'localhost'}, 80, \textcolor{stringliteral}{'/'}, (\textcolor{stringliteral}{'user'}, \textcolor{stringliteral}{'pass'})),
+21     ),
+22 ]
+\end{DoxyCode}

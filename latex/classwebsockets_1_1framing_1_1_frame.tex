@@ -1,0 +1,97 @@
+\hypertarget{classwebsockets_1_1framing_1_1_frame}{}\section{websockets.\+framing.\+Frame Class Reference}
+\label{classwebsockets_1_1framing_1_1_frame}\index{websockets.\+framing.\+Frame@{websockets.\+framing.\+Frame}}
+
+
+Inherits Frame\+Data.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1framing_1_1_frame_af53c73796977e78d274a58d4b2918535}\label{classwebsockets_1_1framing_1_1_frame_af53c73796977e78d274a58d4b2918535}} 
+def {\bfseries \+\_\+\+\_\+new\+\_\+\+\_\+} (cls, fin, opcode, data, rsv1=False, rsv2=False, rsv3=False)
+\item 
+def \hyperlink{classwebsockets_1_1framing_1_1_frame_ac6097dbf7626110e68e0c8b8e0211469}{read} (cls, reader, mask, max\+\_\+size=None, extensions=None)
+\item 
+def \hyperlink{classwebsockets_1_1framing_1_1_frame_a318a898942fe4545692eaf96da9983e9}{write} (frame, writer, mask, extensions=None)
+\item 
+def \hyperlink{classwebsockets_1_1framing_1_1_frame_ae92f454847a301ea56df1b8ca2df1cee}{check} (frame)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}WebSocket frame.
+
+* ``fin`` is the FIN bit
+* ``rsv1`` is the RSV1 bit
+* ``rsv2`` is the RSV2 bit
+* ``rsv3`` is the RSV3 bit
+* ``opcode`` is the opcode
+* ``data`` is the payload data
+
+Only these fields are needed by higher level code. The MASK bit, payload
+length and masking-key are handled on the fly by :meth:`read` and
+:meth:`write`.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classwebsockets_1_1framing_1_1_frame_ae92f454847a301ea56df1b8ca2df1cee}\label{classwebsockets_1_1framing_1_1_frame_ae92f454847a301ea56df1b8ca2df1cee}} 
+\index{websockets\+::framing\+::\+Frame@{websockets\+::framing\+::\+Frame}!check@{check}}
+\index{check@{check}!websockets\+::framing\+::\+Frame@{websockets\+::framing\+::\+Frame}}
+\subsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily def websockets.\+framing.\+Frame.\+check (\begin{DoxyParamCaption}\item[{}]{frame }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check that this frame contains acceptable values.
+
+Raise :exc:`~websockets.exceptions.WebSocketProtocolError` if this
+frame contains incorrect values.\end{DoxyVerb}
+ \mbox{\Hypertarget{classwebsockets_1_1framing_1_1_frame_ac6097dbf7626110e68e0c8b8e0211469}\label{classwebsockets_1_1framing_1_1_frame_ac6097dbf7626110e68e0c8b8e0211469}} 
+\index{websockets\+::framing\+::\+Frame@{websockets\+::framing\+::\+Frame}!read@{read}}
+\index{read@{read}!websockets\+::framing\+::\+Frame@{websockets\+::framing\+::\+Frame}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily def websockets.\+framing.\+Frame.\+read (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{reader,  }\item[{}]{mask,  }\item[{}]{max\+\_\+size = {\ttfamily None},  }\item[{}]{extensions = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read a WebSocket frame and return a :class:`Frame` object.
+
+``reader`` is a coroutine taking an integer argument and reading
+exactly this number of bytes, unless the end of file is reached.
+
+``mask`` is a :class:`bool` telling whether the frame should be masked
+i.e. whether the read happens on the server side.
+
+If ``max_size`` is set and the payload exceeds this size in bytes,
+:exc:`~websockets.exceptions.PayloadTooBig` is raised.
+
+If ``extensions`` is provided, it's a list of classes with an
+``decode()`` method that transform the frame and return a new frame.
+They are applied in reverse order.
+
+This function validates the frame before returning it and raises
+:exc:`~websockets.exceptions.WebSocketProtocolError` if it contains
+incorrect values.\end{DoxyVerb}
+ \mbox{\Hypertarget{classwebsockets_1_1framing_1_1_frame_a318a898942fe4545692eaf96da9983e9}\label{classwebsockets_1_1framing_1_1_frame_a318a898942fe4545692eaf96da9983e9}} 
+\index{websockets\+::framing\+::\+Frame@{websockets\+::framing\+::\+Frame}!write@{write}}
+\index{write@{write}!websockets\+::framing\+::\+Frame@{websockets\+::framing\+::\+Frame}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily def websockets.\+framing.\+Frame.\+write (\begin{DoxyParamCaption}\item[{}]{frame,  }\item[{}]{writer,  }\item[{}]{mask,  }\item[{}]{extensions = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write a WebSocket frame.
+
+``frame`` is the :class:`Frame` object to write.
+
+``writer`` is a function accepting bytes.
+
+``mask`` is a :class:`bool` telling whether the frame should be masked
+i.e. whether the write happens on the client side.
+
+If ``extensions`` is provided, it's a list of classes with an
+``encode()`` method that transform the frame and return a new frame.
+They are applied in order.
+
+This function validates the frame before sending it and raises
+:exc:`~websockets.exceptions.WebSocketProtocolError` if it contains
+incorrect values.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/websockets/framing.\+py\end{DoxyCompactItemize}

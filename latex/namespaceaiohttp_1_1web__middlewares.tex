@@ -1,0 +1,53 @@
+\hypertarget{namespaceaiohttp_1_1web__middlewares}{}\section{aiohttp.\+web\+\_\+middlewares Namespace Reference}
+\label{namespaceaiohttp_1_1web__middlewares}\index{aiohttp.\+web\+\_\+middlewares@{aiohttp.\+web\+\_\+middlewares}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceaiohttp_1_1web__middlewares_a0158d8af2c8f673053a943723fad70e1}{middleware} (f)
+\item 
+def \hyperlink{namespaceaiohttp_1_1web__middlewares_ab33bde11d99820669710909711b627f1}{normalize\+\_\+path\+\_\+middleware} (append\+\_\+slash=True, remove\+\_\+slash=False, merge\+\_\+slashes=True, redirect\+\_\+class=\hyperlink{classaiohttp_1_1web__exceptions_1_1_h_t_t_p_moved_permanently}{H\+T\+T\+P\+Moved\+Permanently})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceaiohttp_1_1web__middlewares_a0158d8af2c8f673053a943723fad70e1}\label{namespaceaiohttp_1_1web__middlewares_a0158d8af2c8f673053a943723fad70e1}} 
+\index{aiohttp\+::web\+\_\+middlewares@{aiohttp\+::web\+\_\+middlewares}!middleware@{middleware}}
+\index{middleware@{middleware}!aiohttp\+::web\+\_\+middlewares@{aiohttp\+::web\+\_\+middlewares}}
+\subsubsection{\texorpdfstring{middleware()}{middleware()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+middlewares.\+middleware (\begin{DoxyParamCaption}\item[{}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceaiohttp_1_1web__middlewares_ab33bde11d99820669710909711b627f1}\label{namespaceaiohttp_1_1web__middlewares_ab33bde11d99820669710909711b627f1}} 
+\index{aiohttp\+::web\+\_\+middlewares@{aiohttp\+::web\+\_\+middlewares}!normalize\+\_\+path\+\_\+middleware@{normalize\+\_\+path\+\_\+middleware}}
+\index{normalize\+\_\+path\+\_\+middleware@{normalize\+\_\+path\+\_\+middleware}!aiohttp\+::web\+\_\+middlewares@{aiohttp\+::web\+\_\+middlewares}}
+\subsubsection{\texorpdfstring{normalize\+\_\+path\+\_\+middleware()}{normalize\_path\_middleware()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+middlewares.\+normalize\+\_\+path\+\_\+middleware (\begin{DoxyParamCaption}\item[{}]{append\+\_\+slash = {\ttfamily True},  }\item[{}]{remove\+\_\+slash = {\ttfamily False},  }\item[{}]{merge\+\_\+slashes = {\ttfamily True},  }\item[{}]{redirect\+\_\+class = {\ttfamily \hyperlink{classaiohttp_1_1web__exceptions_1_1_h_t_t_p_moved_permanently}{H\+T\+T\+P\+Moved\+Permanently}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Middleware factory which produces a middleware that normalizes
+the path of a request. By normalizing it means:
+
+    - Add or remove a trailing slash to the path.
+    - Double slashes are replaced by one.
+
+The middleware returns as soon as it finds a path that resolves
+correctly. The order if both merge and append/remove are enabled is
+    1) merge slashes
+    2) append/remove slash
+    3) both merge slashes and append/remove slash.
+If the path resolves with at least one of those conditions, it will
+redirect to the new path.
+
+Only one of `append_slash` and `remove_slash` can be enabled. If both
+are `True` the factory will raise an assertion error
+
+If `append_slash` is `True` the middleware will append a slash when
+needed. If a resource is defined with trailing slash and the request
+comes without it, it will append it automatically.
+
+If `remove_slash` is `True`, `append_slash` must be `False`. When enabled
+the middleware will remove trailing slashes and redirect if the resource
+is defined
+
+If merge_slashes is True, merge multiple consecutive slashes in the
+path into one.
+\end{DoxyVerb}
+ 

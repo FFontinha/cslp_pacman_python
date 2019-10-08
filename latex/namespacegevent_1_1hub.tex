@@ -1,0 +1,207 @@
+\hypertarget{namespacegevent_1_1hub}{}\section{gevent.\+hub Namespace Reference}
+\label{namespacegevent_1_1hub}\index{gevent.\+hub@{gevent.\+hub}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgevent_1_1hub_1_1_hub}{Hub}
+\item 
+class \hyperlink{classgevent_1_1hub_1_1linkproxy}{linkproxy}
+\item 
+class \hyperlink{classgevent_1_1hub_1_1signal}{signal}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1hub_a4c863334efd5024caef0053418d24d3b}{spawn\+\_\+raw} (function, args, kwargs)
+\item 
+def \hyperlink{namespacegevent_1_1hub_adde072af231e1bac3f14955a7a0e0025}{sleep} (seconds=0, ref=True)
+\item 
+def \hyperlink{namespacegevent_1_1hub_a5bb5e229a2284a64a870e9a049e4d221}{idle} (priority=0)
+\item 
+def \hyperlink{namespacegevent_1_1hub_a9eeaa02acbf1c48cfa26dc84d245476a}{kill} (greenlet, exception=Greenlet\+Exit)
+\item 
+def \hyperlink{namespacegevent_1_1hub_a98badd351609faa2bd11b1ea5ee42e3c}{reinit} (hub=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacegevent_1_1hub_a5ed661434216439b7d4f2ca4c79fd94f}{wait} = \hyperlink{namespacegevent_1_1__hub__primitives_a670618f9da100eaaa5d2a7b80b746926}{\+\_\+hub\+\_\+primitives.\+wait\+\_\+on\+\_\+objects}
+\item 
+\hyperlink{namespacegevent_1_1hub_ac0495f7b4e74e001a73e04cb1f92978a}{iwait} = \hyperlink{namespacegevent_1_1__hub__primitives_ae5fd0efa38447d7a7a15f9218ae50c19}{\+\_\+hub\+\_\+primitives.\+iwait\+\_\+on\+\_\+objects}
+\item 
+\hyperlink{namespacegevent_1_1hub_a25afe960c9af2c46325de894129e1ed2}{get\+\_\+thread\+\_\+ident} = \+\_\+\+\_\+import\+\_\+\+\_\+(thread\+\_\+mod\+\_\+name).get\+\_\+ident
+\item 
+\hyperlink{namespacegevent_1_1hub_aed3ef3b0ddba2d582cc0b88e3ea2d48f}{M\+A\+I\+N\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+I\+D\+E\+NT} = \hyperlink{namespacegevent_1_1hub_a25afe960c9af2c46325de894129e1ed2}{get\+\_\+thread\+\_\+ident}()
+\item 
+\hyperlink{namespacegevent_1_1hub_aa8f1583d65977ad5d085a66b354a9485}{hub\+\_\+ident\+\_\+registry} = \hyperlink{classgevent_1_1__ident_1_1_ident_registry}{Ident\+Registry}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1hub_a5bb5e229a2284a64a870e9a049e4d221}\label{namespacegevent_1_1hub_a5bb5e229a2284a64a870e9a049e4d221}} 
+\index{gevent\+::hub@{gevent\+::hub}!idle@{idle}}
+\index{idle@{idle}!gevent\+::hub@{gevent\+::hub}}
+\subsubsection{\texorpdfstring{idle()}{idle()}}
+{\footnotesize\ttfamily def gevent.\+hub.\+idle (\begin{DoxyParamCaption}\item[{}]{priority = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Cause the calling greenlet to wait until the event loop is idle.
+
+Idle is defined as having no other events of the same or higher
+*priority* pending. That is, as long as sockets, timeouts or even
+signals of the same or higher priority are being processed, the loop
+is not idle.
+
+.. seealso:: :func:`sleep`
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1hub_a9eeaa02acbf1c48cfa26dc84d245476a}\label{namespacegevent_1_1hub_a9eeaa02acbf1c48cfa26dc84d245476a}} 
+\index{gevent\+::hub@{gevent\+::hub}!kill@{kill}}
+\index{kill@{kill}!gevent\+::hub@{gevent\+::hub}}
+\subsubsection{\texorpdfstring{kill()}{kill()}}
+{\footnotesize\ttfamily def gevent.\+hub.\+kill (\begin{DoxyParamCaption}\item[{}]{greenlet,  }\item[{}]{exception = {\ttfamily GreenletExit} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Kill greenlet asynchronously. The current greenlet is not unscheduled.
+
+.. note::
+
+    The method :meth:`Greenlet.kill` method does the same and
+    more (and the same caveats listed there apply here). However, the MAIN
+    greenlet - the one that exists initially - does not have a
+    ``kill()`` method, and neither do any created with :func:`spawn_raw`,
+    so you have to use this function.
+
+.. caution:: Use care when killing greenlets. If they are not prepared for
+   exceptions, this could result in corrupted state.
+
+.. versionchanged:: 1.1a2
+    If the ``greenlet`` has a :meth:`kill <Greenlet.kill>` method, calls it. This prevents a
+    greenlet from being switched to for the first time after it's been
+    killed but not yet executed.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1hub_a98badd351609faa2bd11b1ea5ee42e3c}\label{namespacegevent_1_1hub_a98badd351609faa2bd11b1ea5ee42e3c}} 
+\index{gevent\+::hub@{gevent\+::hub}!reinit@{reinit}}
+\index{reinit@{reinit}!gevent\+::hub@{gevent\+::hub}}
+\subsubsection{\texorpdfstring{reinit()}{reinit()}}
+{\footnotesize\ttfamily def gevent.\+hub.\+reinit (\begin{DoxyParamCaption}\item[{}]{hub = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}reinit() -> None
+
+Prepare the gevent hub to run in a new (forked) process.
+
+This should be called *immediately* after :func:`os.fork` in the
+child process. This is done automatically by
+:func:`gevent.os.fork` or if the :mod:`os` module has been
+monkey-patched. If this function is not called in a forked
+process, symptoms may include hanging of functions like
+:func:`socket.getaddrinfo`, and the hub's threadpool is unlikely
+to work.
+
+.. note:: Registered fork watchers may or may not run before
+   this function (and thus ``gevent.os.fork``) return. If they have
+   not run, they will run "soon", after an iteration of the event loop.
+   You can force this by inserting a few small (but non-zero) calls to :func:`sleep`
+   after fork returns. (As of gevent 1.1 and before, fork watchers will
+   not have run, but this may change in the future.)
+
+.. note:: This function may be removed in a future major release
+   if the fork process can be more smoothly managed.
+
+.. warning:: See remarks in :func:`gevent.os.fork` about greenlets
+   and event loop watchers in the child process.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1hub_adde072af231e1bac3f14955a7a0e0025}\label{namespacegevent_1_1hub_adde072af231e1bac3f14955a7a0e0025}} 
+\index{gevent\+::hub@{gevent\+::hub}!sleep@{sleep}}
+\index{sleep@{sleep}!gevent\+::hub@{gevent\+::hub}}
+\subsubsection{\texorpdfstring{sleep()}{sleep()}}
+{\footnotesize\ttfamily def gevent.\+hub.\+sleep (\begin{DoxyParamCaption}\item[{}]{seconds = {\ttfamily 0},  }\item[{}]{ref = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Put the current greenlet to sleep for at least *seconds*.
+
+*seconds* may be specified as an integer, or a float if fractional
+seconds are desired.
+
+.. tip:: In the current implementation, a value of 0 (the default)
+   means to yield execution to any other runnable greenlets, but
+   this greenlet may be scheduled again before the event loop
+   cycles (in an extreme case, a greenlet that repeatedly sleeps
+   with 0 can prevent greenlets that are ready to do I/O from
+   being scheduled for some (small) period of time); a value greater than
+   0, on the other hand, will delay running this greenlet until
+   the next iteration of the loop.
+
+If *ref* is False, the greenlet running ``sleep()`` will not prevent :func:`gevent.wait`
+from exiting.
+
+.. versionchanged:: 1.3a1
+   Sleeping with a value of 0 will now be bounded to approximately block the
+   loop for no longer than :func:`gevent.getswitchinterval`.
+
+.. seealso:: :func:`idle`
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1hub_a4c863334efd5024caef0053418d24d3b}\label{namespacegevent_1_1hub_a4c863334efd5024caef0053418d24d3b}} 
+\index{gevent\+::hub@{gevent\+::hub}!spawn\+\_\+raw@{spawn\+\_\+raw}}
+\index{spawn\+\_\+raw@{spawn\+\_\+raw}!gevent\+::hub@{gevent\+::hub}}
+\subsubsection{\texorpdfstring{spawn\+\_\+raw()}{spawn\_raw()}}
+{\footnotesize\ttfamily def gevent.\+hub.\+spawn\+\_\+raw (\begin{DoxyParamCaption}\item[{}]{function,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new :class:`greenlet.greenlet` object and schedule it to
+run ``function(*args, **kwargs)``.
+
+This returns a raw :class:`~greenlet.greenlet` which does not have all the useful
+methods that :class:`gevent.Greenlet` has. Typically, applications
+should prefer :func:`~gevent.spawn`, but this method may
+occasionally be useful as an optimization if there are many
+greenlets involved.
+
+.. versionchanged:: 1.1a3
+    Verify that ``function`` is callable, raising a TypeError if not. Previously,
+    the spawned greenlet would have failed the first time it was switched to.
+
+.. versionchanged:: 1.1b1
+   If *function* is not callable, immediately raise a :exc:`TypeError`
+   instead of spawning a greenlet that will raise an uncaught TypeError.
+
+.. versionchanged:: 1.1rc2
+    Accept keyword arguments for ``function`` as previously (incorrectly)
+    documented. Note that this may incur an additional expense.
+
+.. versionchanged:: 1.3a2
+   Populate the ``spawning_greenlet`` and ``spawn_tree_locals``
+   attributes of the returned greenlet.
+
+.. versionchanged:: 1.3b1
+   *Only* populate ``spawning_greenlet`` and ``spawn_tree_locals``
+   if ``GEVENT_TRACK_GREENLET_TREE`` is enabled (the default). If not enabled,
+   those attributes will not be set.\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1hub_a25afe960c9af2c46325de894129e1ed2}\label{namespacegevent_1_1hub_a25afe960c9af2c46325de894129e1ed2}} 
+\index{gevent\+::hub@{gevent\+::hub}!get\+\_\+thread\+\_\+ident@{get\+\_\+thread\+\_\+ident}}
+\index{get\+\_\+thread\+\_\+ident@{get\+\_\+thread\+\_\+ident}!gevent\+::hub@{gevent\+::hub}}
+\subsubsection{\texorpdfstring{get\+\_\+thread\+\_\+ident}{get\_thread\_ident}}
+{\footnotesize\ttfamily gevent.\+hub.\+get\+\_\+thread\+\_\+ident = \+\_\+\+\_\+import\+\_\+\+\_\+(thread\+\_\+mod\+\_\+name).get\+\_\+ident}
+
+\mbox{\Hypertarget{namespacegevent_1_1hub_aa8f1583d65977ad5d085a66b354a9485}\label{namespacegevent_1_1hub_aa8f1583d65977ad5d085a66b354a9485}} 
+\index{gevent\+::hub@{gevent\+::hub}!hub\+\_\+ident\+\_\+registry@{hub\+\_\+ident\+\_\+registry}}
+\index{hub\+\_\+ident\+\_\+registry@{hub\+\_\+ident\+\_\+registry}!gevent\+::hub@{gevent\+::hub}}
+\subsubsection{\texorpdfstring{hub\+\_\+ident\+\_\+registry}{hub\_ident\_registry}}
+{\footnotesize\ttfamily gevent.\+hub.\+hub\+\_\+ident\+\_\+registry = \hyperlink{classgevent_1_1__ident_1_1_ident_registry}{Ident\+Registry}()}
+
+\mbox{\Hypertarget{namespacegevent_1_1hub_ac0495f7b4e74e001a73e04cb1f92978a}\label{namespacegevent_1_1hub_ac0495f7b4e74e001a73e04cb1f92978a}} 
+\index{gevent\+::hub@{gevent\+::hub}!iwait@{iwait}}
+\index{iwait@{iwait}!gevent\+::hub@{gevent\+::hub}}
+\subsubsection{\texorpdfstring{iwait}{iwait}}
+{\footnotesize\ttfamily gevent.\+hub.\+iwait = \hyperlink{namespacegevent_1_1__hub__primitives_ae5fd0efa38447d7a7a15f9218ae50c19}{\+\_\+hub\+\_\+primitives.\+iwait\+\_\+on\+\_\+objects}}
+
+\mbox{\Hypertarget{namespacegevent_1_1hub_aed3ef3b0ddba2d582cc0b88e3ea2d48f}\label{namespacegevent_1_1hub_aed3ef3b0ddba2d582cc0b88e3ea2d48f}} 
+\index{gevent\+::hub@{gevent\+::hub}!M\+A\+I\+N\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+I\+D\+E\+NT@{M\+A\+I\+N\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+I\+D\+E\+NT}}
+\index{M\+A\+I\+N\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+I\+D\+E\+NT@{M\+A\+I\+N\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+I\+D\+E\+NT}!gevent\+::hub@{gevent\+::hub}}
+\subsubsection{\texorpdfstring{M\+A\+I\+N\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+I\+D\+E\+NT}{MAIN\_THREAD\_IDENT}}
+{\footnotesize\ttfamily gevent.\+hub.\+M\+A\+I\+N\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+I\+D\+E\+NT = \hyperlink{namespacegevent_1_1hub_a25afe960c9af2c46325de894129e1ed2}{get\+\_\+thread\+\_\+ident}()}
+
+\mbox{\Hypertarget{namespacegevent_1_1hub_a5ed661434216439b7d4f2ca4c79fd94f}\label{namespacegevent_1_1hub_a5ed661434216439b7d4f2ca4c79fd94f}} 
+\index{gevent\+::hub@{gevent\+::hub}!wait@{wait}}
+\index{wait@{wait}!gevent\+::hub@{gevent\+::hub}}
+\subsubsection{\texorpdfstring{wait}{wait}}
+{\footnotesize\ttfamily gevent.\+hub.\+wait = \hyperlink{namespacegevent_1_1__hub__primitives_a670618f9da100eaaa5d2a7b80b746926}{\+\_\+hub\+\_\+primitives.\+wait\+\_\+on\+\_\+objects}}
+

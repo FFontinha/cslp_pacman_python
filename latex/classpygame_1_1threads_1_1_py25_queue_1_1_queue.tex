@@ -1,0 +1,173 @@
+\hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue}{}\section{pygame.\+threads.\+Py25\+Queue.\+Queue Class Reference}
+\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue}\index{pygame.\+threads.\+Py25\+Queue.\+Queue@{pygame.\+threads.\+Py25\+Queue.\+Queue}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a862993ea96c2b43a1bc75e81fb0efbd3}\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a862993ea96c2b43a1bc75e81fb0efbd3}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, maxsize=0)
+\item 
+def \hyperlink{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a3782c6554b781ce5bb83a9aaaa34ef88}{task\+\_\+done} (self)
+\item 
+def \hyperlink{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a684afbc471faf948431e81f522fe3288}{join} (self)
+\item 
+def \hyperlink{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a52b9f05689a1763988cf9d703c247528}{qsize} (self)
+\item 
+def \hyperlink{classpygame_1_1threads_1_1_py25_queue_1_1_queue_aaf241b970bb013ab6e4eb8733a4a07a5}{empty} (self)
+\item 
+def \hyperlink{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a6f2dee535a3ee309c849e6d9485e1e7b}{full} (self)
+\item 
+def \hyperlink{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a08a34ad15e2d0e5badf8a6e3b2226c56}{put} (self, item, block=True, timeout=None)
+\item 
+def \hyperlink{classpygame_1_1threads_1_1_py25_queue_1_1_queue_ae0fb745e2e4e17fe2083a10eb47906f3}{put\+\_\+nowait} (self, item)
+\item 
+def \hyperlink{classpygame_1_1threads_1_1_py25_queue_1_1_queue_aac6f6190f4dc098936995bb560faedba}{get} (self, block=True, timeout=None)
+\item 
+def \hyperlink{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a2f78bfd6cdb4a12d8eb82418bc4d29f7}{get\+\_\+nowait} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a2fab0d22bfa9a021ecc13eadf3ffd5cc}\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a2fab0d22bfa9a021ecc13eadf3ffd5cc}} 
+{\bfseries mutex}
+\item 
+\mbox{\Hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a5312c45b4c8cc986689ce9229a977e41}\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a5312c45b4c8cc986689ce9229a977e41}} 
+{\bfseries not\+\_\+empty}
+\item 
+\mbox{\Hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a7ddd861e5124b85eee5d1b6a55738591}\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a7ddd861e5124b85eee5d1b6a55738591}} 
+{\bfseries not\+\_\+full}
+\item 
+\mbox{\Hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a839bb0382b2fd4a6cc4087fea05d4cd2}\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a839bb0382b2fd4a6cc4087fea05d4cd2}} 
+{\bfseries all\+\_\+tasks\+\_\+done}
+\item 
+\mbox{\Hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a92cb4062d73b33cb5928c5d70f3cc209}\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a92cb4062d73b33cb5928c5d70f3cc209}} 
+{\bfseries unfinished\+\_\+tasks}
+\item 
+\mbox{\Hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a68669d375bd85f56fbc13044db2c5a29}\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a68669d375bd85f56fbc13044db2c5a29}} 
+{\bfseries maxsize}
+\item 
+\mbox{\Hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue_ad6f8704920b805f306e41e2af035abe6}\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue_ad6f8704920b805f306e41e2af035abe6}} 
+{\bfseries queue}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Create a queue object with a given maximum size.
+
+If maxsize is <= 0, the queue size is infinite.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue_aaf241b970bb013ab6e4eb8733a4a07a5}\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue_aaf241b970bb013ab6e4eb8733a4a07a5}} 
+\index{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}!empty@{empty}}
+\index{empty@{empty}!pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily def pygame.\+threads.\+Py25\+Queue.\+Queue.\+empty (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the queue is empty, False otherwise (not reliable!).\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a6f2dee535a3ee309c849e6d9485e1e7b}\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a6f2dee535a3ee309c849e6d9485e1e7b}} 
+\index{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}!full@{full}}
+\index{full@{full}!pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{full()}{full()}}
+{\footnotesize\ttfamily def pygame.\+threads.\+Py25\+Queue.\+Queue.\+full (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the queue is full, False otherwise (not reliable!).\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue_aac6f6190f4dc098936995bb560faedba}\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue_aac6f6190f4dc098936995bb560faedba}} 
+\index{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}!get@{get}}
+\index{get@{get}!pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily def pygame.\+threads.\+Py25\+Queue.\+Queue.\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{block = {\ttfamily True},  }\item[{}]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove and return an item from the queue.
+
+If optional args 'block' is true and 'timeout' is None (the default),
+block if necessary until an item is available. If 'timeout' is
+a positive number, it blocks at most 'timeout' seconds and raises
+the Empty exception if no item was available within that time.
+Otherwise ('block' is false), return an item if one is immediately
+available, else raise the Empty exception ('timeout' is ignored
+in that case).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a2f78bfd6cdb4a12d8eb82418bc4d29f7}\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a2f78bfd6cdb4a12d8eb82418bc4d29f7}} 
+\index{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}!get\+\_\+nowait@{get\+\_\+nowait}}
+\index{get\+\_\+nowait@{get\+\_\+nowait}!pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{get\+\_\+nowait()}{get\_nowait()}}
+{\footnotesize\ttfamily def pygame.\+threads.\+Py25\+Queue.\+Queue.\+get\+\_\+nowait (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove and return an item from the queue without blocking.
+
+Only get an item if one is immediately available. Otherwise
+raise the Empty exception.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a684afbc471faf948431e81f522fe3288}\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a684afbc471faf948431e81f522fe3288}} 
+\index{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}!join@{join}}
+\index{join@{join}!pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{join()}{join()}}
+{\footnotesize\ttfamily def pygame.\+threads.\+Py25\+Queue.\+Queue.\+join (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Blocks until all items in the Queue have been gotten and processed.
+
+The count of unfinished tasks goes up whenever an item is added to the
+queue. The count goes down whenever a consumer thread calls task_done()
+to indicate the item was retrieved and all work on it is complete.
+
+When the count of unfinished tasks drops to zero, join() unblocks.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a08a34ad15e2d0e5badf8a6e3b2226c56}\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a08a34ad15e2d0e5badf8a6e3b2226c56}} 
+\index{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}!put@{put}}
+\index{put@{put}!pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily def pygame.\+threads.\+Py25\+Queue.\+Queue.\+put (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{item,  }\item[{}]{block = {\ttfamily True},  }\item[{}]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Put an item into the queue.
+
+If optional args 'block' is true and 'timeout' is None (the default),
+block if necessary until a free slot is available. If 'timeout' is
+a positive number, it blocks at most 'timeout' seconds and raises
+the Full exception if no free slot was available within that time.
+Otherwise ('block' is false), put an item on the queue if a free slot
+is immediately available, else raise the Full exception ('timeout'
+is ignored in that case).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue_ae0fb745e2e4e17fe2083a10eb47906f3}\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue_ae0fb745e2e4e17fe2083a10eb47906f3}} 
+\index{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}!put\+\_\+nowait@{put\+\_\+nowait}}
+\index{put\+\_\+nowait@{put\+\_\+nowait}!pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{put\+\_\+nowait()}{put\_nowait()}}
+{\footnotesize\ttfamily def pygame.\+threads.\+Py25\+Queue.\+Queue.\+put\+\_\+nowait (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{item }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Put an item into the queue without blocking.
+
+Only enqueue the item if a free slot is immediately available.
+Otherwise raise the Full exception.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a52b9f05689a1763988cf9d703c247528}\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a52b9f05689a1763988cf9d703c247528}} 
+\index{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}!qsize@{qsize}}
+\index{qsize@{qsize}!pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{qsize()}{qsize()}}
+{\footnotesize\ttfamily def pygame.\+threads.\+Py25\+Queue.\+Queue.\+qsize (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the approximate size of the queue (not reliable!).\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a3782c6554b781ce5bb83a9aaaa34ef88}\label{classpygame_1_1threads_1_1_py25_queue_1_1_queue_a3782c6554b781ce5bb83a9aaaa34ef88}} 
+\index{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}!task\+\_\+done@{task\+\_\+done}}
+\index{task\+\_\+done@{task\+\_\+done}!pygame\+::threads\+::\+Py25\+Queue\+::\+Queue@{pygame\+::threads\+::\+Py25\+Queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{task\+\_\+done()}{task\_done()}}
+{\footnotesize\ttfamily def pygame.\+threads.\+Py25\+Queue.\+Queue.\+task\+\_\+done (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Indicate that a formerly enqueued task is complete.
+
+Used by Queue consumer threads.  For each get() used to fetch a task,
+a subsequent call to task_done() tells the queue that the processing
+on the task is complete.
+
+If a join() is currently blocking, it will resume when all items
+have been processed (meaning that a task_done() call was received
+for every item that had been put() into the queue).
+
+Raises a ValueError if called more times than there were items
+placed in the queue.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pygame/threads/Py25\+Queue.\+py\end{DoxyCompactItemize}

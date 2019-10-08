@@ -1,0 +1,153 @@
+\hypertarget{classgevent_1_1pool_1_1_pool}{}\section{gevent.\+pool.\+Pool Class Reference}
+\label{classgevent_1_1pool_1_1_pool}\index{gevent.\+pool.\+Pool@{gevent.\+pool.\+Pool}}
+
+
+Inherits \hyperlink{classgevent_1_1pool_1_1_group}{gevent.\+pool.\+Group}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classgevent_1_1pool_1_1_pool_ab8f7535704e4be9d689c2f8cb8908363}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, size=None, greenlet\+\_\+class=None)
+\item 
+def \hyperlink{classgevent_1_1pool_1_1_pool_a3bb9b19f625d5a050491655c713dc785}{wait\+\_\+available} (self, timeout=None)
+\item 
+def \hyperlink{classgevent_1_1pool_1_1_pool_a1e557c08dca29d3aefa26737b8aa83e3}{full} (self)
+\item 
+def \hyperlink{classgevent_1_1pool_1_1_pool_a9da095e3393c66005b1db28402e377a5}{free\+\_\+count} (self)
+\item 
+def \hyperlink{classgevent_1_1pool_1_1_pool_a796a9ecd340aa63e7adbfbbf64aa811d}{start} (self, greenlet, args, kwargs)
+\item 
+def \hyperlink{classgevent_1_1pool_1_1_pool_a2037069f5c0d51a2b0ad368c888a7055}{add} (self, greenlet, blocking=True, timeout=None)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1pool_1_1_pool_ab6ce868bedbb5fd112f52f02b0b26b06}\label{classgevent_1_1pool_1_1_pool_ab6ce868bedbb5fd112f52f02b0b26b06}} 
+{\bfseries size}
+\item 
+\mbox{\Hypertarget{classgevent_1_1pool_1_1_pool_a0f195611e30fe17a4948d6efd428e353}\label{classgevent_1_1pool_1_1_pool_a0f195611e30fe17a4948d6efd428e353}} 
+{\bfseries greenlet\+\_\+class}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgevent_1_1pool_1_1_pool_ab8f7535704e4be9d689c2f8cb8908363}\label{classgevent_1_1pool_1_1_pool_ab8f7535704e4be9d689c2f8cb8908363}} 
+\index{gevent\+::pool\+::\+Pool@{gevent\+::pool\+::\+Pool}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!gevent\+::pool\+::\+Pool@{gevent\+::pool\+::\+Pool}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def gevent.\+pool.\+Pool.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{size = {\ttfamily None},  }\item[{}]{greenlet\+\_\+class = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new pool.
+
+A pool is like a group, but the maximum number of members
+is governed by the *size* parameter.
+
+:keyword int size: If given, this non-negative integer is the
+    maximum count of active greenlets that will be allowed in
+    this pool. A few values have special significance:
+
+    * ``None`` (the default) places no limit on the number of
+      greenlets. This is useful when you need to track, but not limit,
+      greenlets, as with :class:`gevent.pywsgi.WSGIServer`. A :class:`Group`
+      may be a more efficient way to achieve the same effect.
+    * ``0`` creates a pool that can never have any active greenlets. Attempting
+      to spawn in this pool will block forever. This is only useful
+      if an application uses :meth:`wait_available` with a timeout and checks
+      :meth:`free_count` before attempting to spawn.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1pool_1_1_pool_a2037069f5c0d51a2b0ad368c888a7055}\label{classgevent_1_1pool_1_1_pool_a2037069f5c0d51a2b0ad368c888a7055}} 
+\index{gevent\+::pool\+::\+Pool@{gevent\+::pool\+::\+Pool}!add@{add}}
+\index{add@{add}!gevent\+::pool\+::\+Pool@{gevent\+::pool\+::\+Pool}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily def gevent.\+pool.\+Pool.\+add (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{greenlet,  }\item[{}]{blocking = {\ttfamily True},  }\item[{}]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Begin tracking the given **unstarted** greenlet, possibly blocking
+until space is available.
+
+Usually you should call :meth:`start` to track and start the greenlet
+instead of using this lower-level method, or :meth:`spawn` to
+also create the greenlet.
+
+:keyword bool blocking: If True (the default), this function
+    will block until the pool has space or a timeout occurs.  If
+    False, this function will immediately raise a Timeout if the
+    pool is currently full.
+:keyword float timeout: The maximum number of seconds this
+    method will block, if ``blocking`` is True.  (Ignored if
+    ``blocking`` is False.)
+:raises PoolFull: if either ``blocking`` is False and the pool
+    was full, or if ``blocking`` is True and ``timeout`` was
+    exceeded.
+
+..  caution:: If the *greenlet* has already been started and
+    *blocking* is true, then the greenlet may run to completion
+    while the current greenlet blocks waiting to track it. This would
+    enable higher concurrency than desired.
+
+..  seealso:: :meth:`Group.add`
+
+..  versionchanged:: 1.3.0 Added the ``blocking`` and
+    ``timeout`` parameters.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1pool_1_1_pool_a9da095e3393c66005b1db28402e377a5}\label{classgevent_1_1pool_1_1_pool_a9da095e3393c66005b1db28402e377a5}} 
+\index{gevent\+::pool\+::\+Pool@{gevent\+::pool\+::\+Pool}!free\+\_\+count@{free\+\_\+count}}
+\index{free\+\_\+count@{free\+\_\+count}!gevent\+::pool\+::\+Pool@{gevent\+::pool\+::\+Pool}}
+\subsubsection{\texorpdfstring{free\+\_\+count()}{free\_count()}}
+{\footnotesize\ttfamily def gevent.\+pool.\+Pool.\+free\+\_\+count (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a number indicating *approximately* how many more members
+can be added to this pool.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1pool_1_1_pool_a1e557c08dca29d3aefa26737b8aa83e3}\label{classgevent_1_1pool_1_1_pool_a1e557c08dca29d3aefa26737b8aa83e3}} 
+\index{gevent\+::pool\+::\+Pool@{gevent\+::pool\+::\+Pool}!full@{full}}
+\index{full@{full}!gevent\+::pool\+::\+Pool@{gevent\+::pool\+::\+Pool}}
+\subsubsection{\texorpdfstring{full()}{full()}}
+{\footnotesize\ttfamily def gevent.\+pool.\+Pool.\+full (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a boolean indicating whether this pool is full, e.g. if
+:meth:`add` would block.
+
+:return: False if there is room for new members, True if there isn't.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1pool_1_1_pool_a796a9ecd340aa63e7adbfbbf64aa811d}\label{classgevent_1_1pool_1_1_pool_a796a9ecd340aa63e7adbfbbf64aa811d}} 
+\index{gevent\+::pool\+::\+Pool@{gevent\+::pool\+::\+Pool}!start@{start}}
+\index{start@{start}!gevent\+::pool\+::\+Pool@{gevent\+::pool\+::\+Pool}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily def gevent.\+pool.\+Pool.\+start (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{greenlet,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}start(greenlet, blocking=True, timeout=None) -> None
+
+Add the **unstarted** *greenlet* to the collection of greenlets
+this group is monitoring and then start it.
+
+Parameters are as for :meth:`add`.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1pool_1_1_pool_a3bb9b19f625d5a050491655c713dc785}\label{classgevent_1_1pool_1_1_pool_a3bb9b19f625d5a050491655c713dc785}} 
+\index{gevent\+::pool\+::\+Pool@{gevent\+::pool\+::\+Pool}!wait\+\_\+available@{wait\+\_\+available}}
+\index{wait\+\_\+available@{wait\+\_\+available}!gevent\+::pool\+::\+Pool@{gevent\+::pool\+::\+Pool}}
+\subsubsection{\texorpdfstring{wait\+\_\+available()}{wait\_available()}}
+{\footnotesize\ttfamily def gevent.\+pool.\+Pool.\+wait\+\_\+available (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wait until it's possible to spawn a greenlet in this pool.
+
+:param float timeout: If given, only wait the specified number
+    of seconds.
+
+.. warning:: If the pool was initialized with a size of 0, this
+   method will block forever unless a timeout is given.
+
+:return: A number indicating how many new greenlets can be put into
+   the pool without blocking.
+
+.. versionchanged:: 1.1a3
+    Added the ``timeout`` parameter.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/pool.\+py\end{DoxyCompactItemize}

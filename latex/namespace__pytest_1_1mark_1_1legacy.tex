@@ -1,0 +1,53 @@
+\hypertarget{namespace__pytest_1_1mark_1_1legacy}{}\section{\+\_\+pytest.\+mark.\+legacy Namespace Reference}
+\label{namespace__pytest_1_1mark_1_1legacy}\index{\+\_\+pytest.\+mark.\+legacy@{\+\_\+pytest.\+mark.\+legacy}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class__pytest_1_1mark_1_1legacy_1_1_keyword_mapping}{Keyword\+Mapping}
+\item 
+class \hyperlink{class__pytest_1_1mark_1_1legacy_1_1_mark_mapping}{Mark\+Mapping}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespace__pytest_1_1mark_1_1legacy_aebb420ac9ffedfce611e0d4a1f53bb4f}{matchmark} (colitem, markexpr)
+\item 
+def \hyperlink{namespace__pytest_1_1mark_1_1legacy_a6ecd9fada978a1d0bb67c5ccfad4bf2d}{matchkeyword} (colitem, keywordexpr)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1mark_1_1legacy_aafef3f6a6baf98473d382c629d7edeab}\label{namespace__pytest_1_1mark_1_1legacy_aafef3f6a6baf98473d382c629d7edeab}} 
+list {\bfseries python\+\_\+keywords\+\_\+allowed\+\_\+list} = \mbox{[}\char`\"{}or\char`\"{}, \char`\"{}and\char`\"{}, \char`\"{}not\char`\"{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}this is a place where we put datastructures used by legacy apis
+we hope ot remove
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1mark_1_1legacy_a6ecd9fada978a1d0bb67c5ccfad4bf2d}\label{namespace__pytest_1_1mark_1_1legacy_a6ecd9fada978a1d0bb67c5ccfad4bf2d}} 
+\index{\+\_\+pytest\+::mark\+::legacy@{\+\_\+pytest\+::mark\+::legacy}!matchkeyword@{matchkeyword}}
+\index{matchkeyword@{matchkeyword}!\+\_\+pytest\+::mark\+::legacy@{\+\_\+pytest\+::mark\+::legacy}}
+\subsubsection{\texorpdfstring{matchkeyword()}{matchkeyword()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+mark.\+legacy.\+matchkeyword (\begin{DoxyParamCaption}\item[{}]{colitem,  }\item[{}]{keywordexpr }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tries to match given keyword expression to given collector item.
+
+Will match on the name of colitem, including the names of its parents.
+Only matches names of items which are either a :class:`Class` or a
+:class:`Function`.
+Additionally, matches on names in the 'extra_keyword_matches' set of
+any item, as well as names directly assigned to test functions.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1mark_1_1legacy_aebb420ac9ffedfce611e0d4a1f53bb4f}\label{namespace__pytest_1_1mark_1_1legacy_aebb420ac9ffedfce611e0d4a1f53bb4f}} 
+\index{\+\_\+pytest\+::mark\+::legacy@{\+\_\+pytest\+::mark\+::legacy}!matchmark@{matchmark}}
+\index{matchmark@{matchmark}!\+\_\+pytest\+::mark\+::legacy@{\+\_\+pytest\+::mark\+::legacy}}
+\subsubsection{\texorpdfstring{matchmark()}{matchmark()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+mark.\+legacy.\+matchmark (\begin{DoxyParamCaption}\item[{}]{colitem,  }\item[{}]{markexpr }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tries to match on any marker names, attached to the given colitem.\end{DoxyVerb}
+ 

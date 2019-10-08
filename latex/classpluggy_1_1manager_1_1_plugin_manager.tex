@@ -1,0 +1,257 @@
+\hypertarget{classpluggy_1_1manager_1_1_plugin_manager}{}\section{pluggy.\+manager.\+Plugin\+Manager Class Reference}
+\label{classpluggy_1_1manager_1_1_plugin_manager}\index{pluggy.\+manager.\+Plugin\+Manager@{pluggy.\+manager.\+Plugin\+Manager}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_a43a417b7a5cdde67b91e5a08666f5ce0}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, project\+\_\+name, implprefix=None)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_ac62e9aa5f311b991f2e60eb44eebc991}{register} (self, plugin, name=None)
+\item 
+\mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_a7a1d9c509421c8fc2612f494cfe47d77}\label{classpluggy_1_1manager_1_1_plugin_manager_a7a1d9c509421c8fc2612f494cfe47d77}} 
+def {\bfseries parse\+\_\+hookimpl\+\_\+opts} (self, plugin, name)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_acd20d8caae1578e75475ab547d87f33e}{unregister} (self, plugin=None, name=None)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_a3e7953c3c105665df0b5f672858bc635}{set\+\_\+blocked} (self, name)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_a18e7a296d54664d49d3a3085aa54e99f}{is\+\_\+blocked} (self, name)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_a4dff3345289a96e3ca7e05f06bcda18e}{add\+\_\+hookspecs} (self, module\+\_\+or\+\_\+class)
+\item 
+\mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_ab1983fc17667fa45b60219ebd8ba588d}\label{classpluggy_1_1manager_1_1_plugin_manager_ab1983fc17667fa45b60219ebd8ba588d}} 
+def {\bfseries parse\+\_\+hookspec\+\_\+opts} (self, module\+\_\+or\+\_\+class, name)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_ae1913212826a600a1aed4b6f60f13106}{get\+\_\+plugins} (self)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_a42f02527adb6b90ec57f4ff3d6235a98}{is\+\_\+registered} (self, plugin)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_a362f59ef5ac6d91a00891a23dc51af6a}{get\+\_\+canonical\+\_\+name} (self, plugin)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_a06f6db97612dbde40933aa41c570ea46}{get\+\_\+plugin} (self, name)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_a9b10a6e7339d19ada0f2b2eff36e612d}{has\+\_\+plugin} (self, name)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_a46be59b9190e87a0d3007a13bd989f56}{get\+\_\+name} (self, plugin)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_a7d8054b9744509c85316f3d3611f35c4}{check\+\_\+pending} (self)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_a057411df662fe558e57be1b8ab394369}{load\+\_\+setuptools\+\_\+entrypoints} (self, entrypoint\+\_\+name)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_ade6b546451db9052096e13af1f002e75}{list\+\_\+plugin\+\_\+distinfo} (self)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_af49b57685654d86b409fbc4280f6bf10}{list\+\_\+name\+\_\+plugin} (self)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_a4a86b09e4c58368f6f0917fac70d439a}{get\+\_\+hookcallers} (self, plugin)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_ae4851e61bfbad4b55c2299e4efb57441}{add\+\_\+hookcall\+\_\+monitoring} (self, before, after)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_ad04e0ea4995ca3f7aa7b835cb888faeb}{enable\+\_\+tracing} (self)
+\item 
+def \hyperlink{classpluggy_1_1manager_1_1_plugin_manager_a100cd4b830d2446bc7893cd35f7270c5}{subset\+\_\+hook\+\_\+caller} (self, name, remove\+\_\+plugins)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_ab0f1422d921531d1369c6302244b568e}\label{classpluggy_1_1manager_1_1_plugin_manager_ab0f1422d921531d1369c6302244b568e}} 
+{\bfseries project\+\_\+name}
+\item 
+\mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_a47e064f24c90d3e5e7e6d700ebe09872}\label{classpluggy_1_1manager_1_1_plugin_manager_a47e064f24c90d3e5e7e6d700ebe09872}} 
+{\bfseries trace}
+\item 
+\mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_a46054d9c26595c7e77d5a8dd96c4b9dd}\label{classpluggy_1_1manager_1_1_plugin_manager_a46054d9c26595c7e77d5a8dd96c4b9dd}} 
+{\bfseries hook}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Core Pluginmanager class which manages registration
+of plugin objects and 1:N hook calling.
+
+You can register new hooks by calling ``add_hookspec(module_or_class)``.
+You can register plugin objects (which contain hooks) by calling
+``register(plugin)``.  The Pluginmanager is initialized with a
+prefix that is searched for in the names of the dict of registered
+plugin objects.
+
+For debugging purposes you can call ``enable_tracing()``
+which will subsequently send debug information to the trace helper.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_a43a417b7a5cdde67b91e5a08666f5ce0}\label{classpluggy_1_1manager_1_1_plugin_manager_a43a417b7a5cdde67b91e5a08666f5ce0}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{project\+\_\+name,  }\item[{}]{implprefix = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If ``implprefix`` is given implementation functions
+will be recognized if their name matches the implprefix. \end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_ae4851e61bfbad4b55c2299e4efb57441}\label{classpluggy_1_1manager_1_1_plugin_manager_ae4851e61bfbad4b55c2299e4efb57441}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!add\+\_\+hookcall\+\_\+monitoring@{add\+\_\+hookcall\+\_\+monitoring}}
+\index{add\+\_\+hookcall\+\_\+monitoring@{add\+\_\+hookcall\+\_\+monitoring}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{add\+\_\+hookcall\+\_\+monitoring()}{add\_hookcall\_monitoring()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+add\+\_\+hookcall\+\_\+monitoring (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{before,  }\item[{}]{after }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}add before/after tracing functions for all hooks
+and return an undo function which, when called,
+will remove the added tracers.
+
+``before(hook_name, hook_impls, kwargs)`` will be called ahead
+of all hook calls and receive a hookcaller instance, a list
+of HookImpl instances and the keyword arguments for the hook call.
+
+``after(outcome, hook_name, hook_impls, kwargs)`` receives the
+same arguments as ``before`` but also a :py:class:`_Result`` object
+which represents the result of the overall hook call.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_a4dff3345289a96e3ca7e05f06bcda18e}\label{classpluggy_1_1manager_1_1_plugin_manager_a4dff3345289a96e3ca7e05f06bcda18e}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!add\+\_\+hookspecs@{add\+\_\+hookspecs}}
+\index{add\+\_\+hookspecs@{add\+\_\+hookspecs}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{add\+\_\+hookspecs()}{add\_hookspecs()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+add\+\_\+hookspecs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{module\+\_\+or\+\_\+class }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}add new hook specifications defined in the given module_or_class.
+Functions are recognized if they have been decorated accordingly. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_a7d8054b9744509c85316f3d3611f35c4}\label{classpluggy_1_1manager_1_1_plugin_manager_a7d8054b9744509c85316f3d3611f35c4}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!check\+\_\+pending@{check\+\_\+pending}}
+\index{check\+\_\+pending@{check\+\_\+pending}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{check\+\_\+pending()}{check\_pending()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+check\+\_\+pending (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Verify that all hooks which have not been verified against
+a hook specification are optional, otherwise raise PluginValidationError\end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_ad04e0ea4995ca3f7aa7b835cb888faeb}\label{classpluggy_1_1manager_1_1_plugin_manager_ad04e0ea4995ca3f7aa7b835cb888faeb}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!enable\+\_\+tracing@{enable\+\_\+tracing}}
+\index{enable\+\_\+tracing@{enable\+\_\+tracing}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{enable\+\_\+tracing()}{enable\_tracing()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+enable\+\_\+tracing (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}enable tracing of hook calls and return an undo function. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_a362f59ef5ac6d91a00891a23dc51af6a}\label{classpluggy_1_1manager_1_1_plugin_manager_a362f59ef5ac6d91a00891a23dc51af6a}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!get\+\_\+canonical\+\_\+name@{get\+\_\+canonical\+\_\+name}}
+\index{get\+\_\+canonical\+\_\+name@{get\+\_\+canonical\+\_\+name}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{get\+\_\+canonical\+\_\+name()}{get\_canonical\_name()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+get\+\_\+canonical\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plugin }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return canonical name for a plugin object. Note that a plugin
+may be registered under a different name which was specified
+by the caller of register(plugin, name). To obtain the name
+of an registered plugin use ``get_name(plugin)`` instead.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_a4a86b09e4c58368f6f0917fac70d439a}\label{classpluggy_1_1manager_1_1_plugin_manager_a4a86b09e4c58368f6f0917fac70d439a}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!get\+\_\+hookcallers@{get\+\_\+hookcallers}}
+\index{get\+\_\+hookcallers@{get\+\_\+hookcallers}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{get\+\_\+hookcallers()}{get\_hookcallers()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+get\+\_\+hookcallers (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plugin }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}get all hook callers for the specified plugin. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_a46be59b9190e87a0d3007a13bd989f56}\label{classpluggy_1_1manager_1_1_plugin_manager_a46be59b9190e87a0d3007a13bd989f56}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!get\+\_\+name@{get\+\_\+name}}
+\index{get\+\_\+name@{get\+\_\+name}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{get\+\_\+name()}{get\_name()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+get\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plugin }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return name for registered plugin or None if not registered. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_a06f6db97612dbde40933aa41c570ea46}\label{classpluggy_1_1manager_1_1_plugin_manager_a06f6db97612dbde40933aa41c570ea46}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!get\+\_\+plugin@{get\+\_\+plugin}}
+\index{get\+\_\+plugin@{get\+\_\+plugin}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{get\+\_\+plugin()}{get\_plugin()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+get\+\_\+plugin (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a plugin or None for the given name. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_ae1913212826a600a1aed4b6f60f13106}\label{classpluggy_1_1manager_1_1_plugin_manager_ae1913212826a600a1aed4b6f60f13106}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!get\+\_\+plugins@{get\+\_\+plugins}}
+\index{get\+\_\+plugins@{get\+\_\+plugins}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{get\+\_\+plugins()}{get\_plugins()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+get\+\_\+plugins (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return the set of registered plugins. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_a9b10a6e7339d19ada0f2b2eff36e612d}\label{classpluggy_1_1manager_1_1_plugin_manager_a9b10a6e7339d19ada0f2b2eff36e612d}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!has\+\_\+plugin@{has\+\_\+plugin}}
+\index{has\+\_\+plugin@{has\+\_\+plugin}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{has\+\_\+plugin()}{has\_plugin()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+has\+\_\+plugin (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if a plugin with the given name is registered. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_a18e7a296d54664d49d3a3085aa54e99f}\label{classpluggy_1_1manager_1_1_plugin_manager_a18e7a296d54664d49d3a3085aa54e99f}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!is\+\_\+blocked@{is\+\_\+blocked}}
+\index{is\+\_\+blocked@{is\+\_\+blocked}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{is\+\_\+blocked()}{is\_blocked()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+is\+\_\+blocked (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return True if the name blogs registering plugins of that name. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_a42f02527adb6b90ec57f4ff3d6235a98}\label{classpluggy_1_1manager_1_1_plugin_manager_a42f02527adb6b90ec57f4ff3d6235a98}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!is\+\_\+registered@{is\+\_\+registered}}
+\index{is\+\_\+registered@{is\+\_\+registered}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{is\+\_\+registered()}{is\_registered()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+is\+\_\+registered (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plugin }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the plugin is already registered. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_af49b57685654d86b409fbc4280f6bf10}\label{classpluggy_1_1manager_1_1_plugin_manager_af49b57685654d86b409fbc4280f6bf10}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!list\+\_\+name\+\_\+plugin@{list\+\_\+name\+\_\+plugin}}
+\index{list\+\_\+name\+\_\+plugin@{list\+\_\+name\+\_\+plugin}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{list\+\_\+name\+\_\+plugin()}{list\_name\_plugin()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+list\+\_\+name\+\_\+plugin (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return list of name/plugin pairs. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_ade6b546451db9052096e13af1f002e75}\label{classpluggy_1_1manager_1_1_plugin_manager_ade6b546451db9052096e13af1f002e75}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!list\+\_\+plugin\+\_\+distinfo@{list\+\_\+plugin\+\_\+distinfo}}
+\index{list\+\_\+plugin\+\_\+distinfo@{list\+\_\+plugin\+\_\+distinfo}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{list\+\_\+plugin\+\_\+distinfo()}{list\_plugin\_distinfo()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+list\+\_\+plugin\+\_\+distinfo (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return list of distinfo/plugin tuples for all setuptools registered
+plugins. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_a057411df662fe558e57be1b8ab394369}\label{classpluggy_1_1manager_1_1_plugin_manager_a057411df662fe558e57be1b8ab394369}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!load\+\_\+setuptools\+\_\+entrypoints@{load\+\_\+setuptools\+\_\+entrypoints}}
+\index{load\+\_\+setuptools\+\_\+entrypoints@{load\+\_\+setuptools\+\_\+entrypoints}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{load\+\_\+setuptools\+\_\+entrypoints()}{load\_setuptools\_entrypoints()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+load\+\_\+setuptools\+\_\+entrypoints (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{entrypoint\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load modules from querying the specified setuptools entrypoint name.
+Return the number of loaded plugins. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_ac62e9aa5f311b991f2e60eb44eebc991}\label{classpluggy_1_1manager_1_1_plugin_manager_ac62e9aa5f311b991f2e60eb44eebc991}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!register@{register}}
+\index{register@{register}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+register (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plugin,  }\item[{}]{name = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a plugin and return its canonical name or None if the name
+is blocked from registering.  Raise a ValueError if the plugin is already
+registered. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_a3e7953c3c105665df0b5f672858bc635}\label{classpluggy_1_1manager_1_1_plugin_manager_a3e7953c3c105665df0b5f672858bc635}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!set\+\_\+blocked@{set\+\_\+blocked}}
+\index{set\+\_\+blocked@{set\+\_\+blocked}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+blocked()}{set\_blocked()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+set\+\_\+blocked (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}block registrations of the given name, unregister if already registered. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_a100cd4b830d2446bc7893cd35f7270c5}\label{classpluggy_1_1manager_1_1_plugin_manager_a100cd4b830d2446bc7893cd35f7270c5}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!subset\+\_\+hook\+\_\+caller@{subset\+\_\+hook\+\_\+caller}}
+\index{subset\+\_\+hook\+\_\+caller@{subset\+\_\+hook\+\_\+caller}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{subset\+\_\+hook\+\_\+caller()}{subset\_hook\_caller()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+subset\+\_\+hook\+\_\+caller (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{remove\+\_\+plugins }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new _HookCaller instance for the named method
+which manages calls to all registered plugins except the
+ones from remove_plugins. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpluggy_1_1manager_1_1_plugin_manager_acd20d8caae1578e75475ab547d87f33e}\label{classpluggy_1_1manager_1_1_plugin_manager_acd20d8caae1578e75475ab547d87f33e}} 
+\index{pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}!unregister@{unregister}}
+\index{unregister@{unregister}!pluggy\+::manager\+::\+Plugin\+Manager@{pluggy\+::manager\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{unregister()}{unregister()}}
+{\footnotesize\ttfamily def pluggy.\+manager.\+Plugin\+Manager.\+unregister (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plugin = {\ttfamily None},  }\item[{}]{name = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}unregister a plugin object and all its contained hook implementations
+from internal data structures. \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pluggy/manager.\+py\end{DoxyCompactItemize}

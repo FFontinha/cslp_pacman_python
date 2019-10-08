@@ -1,0 +1,141 @@
+\hypertarget{namespaceserver}{}\section{server Namespace Reference}
+\label{namespaceserver}\index{server@{server}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classserver_1_1_game__server}{Game\+\_\+server}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceserver_a005764c00126daf80eaacfcc2451946c}{level}
+\item 
+\hyperlink{namespaceserver_a4f8abe5e41727de7cb88d5f2a826cdcb}{D\+E\+B\+UG}
+\item 
+\hyperlink{namespaceserver_addb76dcb1b81da9cf62eb9849b07211a}{format}
+\item 
+\hyperlink{namespaceserver_a520e79a10b246384fddda4381139cb5c}{wslogger} = logging.\+get\+Logger(\textquotesingle{}websockets\textquotesingle{})
+\item 
+\hyperlink{namespaceserver_abfa1d56012bc320e4b26361390f6fc24}{logger} = logging.\+get\+Logger(\textquotesingle{}Server\textquotesingle{})
+\item 
+\hyperlink{namespaceserver_a5de7d96778fa1c69916ba414cbf5b5bd}{Player} = namedtuple(\textquotesingle{}Player\textquotesingle{}, \mbox{[}\textquotesingle{}name\textquotesingle{}, \textquotesingle{}ws\textquotesingle{}\mbox{]})
+\item 
+\hyperlink{namespaceserver_aadab40bc4bd88b83c559fbe658ef25fc}{parser} = argparse.\+Argument\+Parser()
+\item 
+\hyperlink{namespaceserver_a692f59b384dd93287c366eb7e7c0608b}{help}
+\item 
+\hyperlink{namespaceserver_a70ecbc33459e4c393ccddd6f1d1bcc04}{default}
+\item 
+\hyperlink{namespaceserver_a72aa2cd67bf6ea46a0eea394a62534a2}{type}
+\item 
+\hyperlink{namespaceserver_a803365d66cd8c1e68f7e41a1837a59f4}{int}
+\item 
+\hyperlink{namespaceserver_aea7e1efc19535ee9bab8400a812b43a9}{args} = parser.\+parse\+\_\+args()
+\item 
+\hyperlink{namespaceserver_a9eff316f9603d6931577e565c3afeee3}{g} = \hyperlink{classserver_1_1_game__server}{Game\+\_\+server}(args.\+map, args.\+ghosts, args.\+lives, args.\+timeout)
+\item 
+\hyperlink{namespaceserver_ab163e79d5204d92c409ff4961e7f530d}{game\+\_\+loop\+\_\+task} = asyncio.\+ensure\+\_\+future(g.\+mainloop())
+\item 
+\hyperlink{namespaceserver_a6a73b8acab3526375057956cf76a1036}{websocket\+\_\+server} = websockets.\+serve(g.\+incomming\+\_\+handler, args.\+bind, args.\+port)
+\item 
+\hyperlink{namespaceserver_ac09871606862ea18f9b00501a0844fd5}{loop} = asyncio.\+get\+\_\+event\+\_\+loop()
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceserver_aea7e1efc19535ee9bab8400a812b43a9}\label{namespaceserver_aea7e1efc19535ee9bab8400a812b43a9}} 
+\index{server@{server}!args@{args}}
+\index{args@{args}!server@{server}}
+\subsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily server.\+args = parser.\+parse\+\_\+args()}
+
+\mbox{\Hypertarget{namespaceserver_a4f8abe5e41727de7cb88d5f2a826cdcb}\label{namespaceserver_a4f8abe5e41727de7cb88d5f2a826cdcb}} 
+\index{server@{server}!D\+E\+B\+UG@{D\+E\+B\+UG}}
+\index{D\+E\+B\+UG@{D\+E\+B\+UG}!server@{server}}
+\subsubsection{\texorpdfstring{D\+E\+B\+UG}{DEBUG}}
+{\footnotesize\ttfamily server.\+D\+E\+B\+UG}
+
+\mbox{\Hypertarget{namespaceserver_a70ecbc33459e4c393ccddd6f1d1bcc04}\label{namespaceserver_a70ecbc33459e4c393ccddd6f1d1bcc04}} 
+\index{server@{server}!default@{default}}
+\index{default@{default}!server@{server}}
+\subsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily server.\+default}
+
+\mbox{\Hypertarget{namespaceserver_addb76dcb1b81da9cf62eb9849b07211a}\label{namespaceserver_addb76dcb1b81da9cf62eb9849b07211a}} 
+\index{server@{server}!format@{format}}
+\index{format@{format}!server@{server}}
+\subsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily server.\+format}
+
+\mbox{\Hypertarget{namespaceserver_a9eff316f9603d6931577e565c3afeee3}\label{namespaceserver_a9eff316f9603d6931577e565c3afeee3}} 
+\index{server@{server}!g@{g}}
+\index{g@{g}!server@{server}}
+\subsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily server.\+g = \hyperlink{classserver_1_1_game__server}{Game\+\_\+server}(args.\+map, args.\+ghosts, args.\+lives, args.\+timeout)}
+
+\mbox{\Hypertarget{namespaceserver_ab163e79d5204d92c409ff4961e7f530d}\label{namespaceserver_ab163e79d5204d92c409ff4961e7f530d}} 
+\index{server@{server}!game\+\_\+loop\+\_\+task@{game\+\_\+loop\+\_\+task}}
+\index{game\+\_\+loop\+\_\+task@{game\+\_\+loop\+\_\+task}!server@{server}}
+\subsubsection{\texorpdfstring{game\+\_\+loop\+\_\+task}{game\_loop\_task}}
+{\footnotesize\ttfamily server.\+game\+\_\+loop\+\_\+task = asyncio.\+ensure\+\_\+future(g.\+mainloop())}
+
+\mbox{\Hypertarget{namespaceserver_a692f59b384dd93287c366eb7e7c0608b}\label{namespaceserver_a692f59b384dd93287c366eb7e7c0608b}} 
+\index{server@{server}!help@{help}}
+\index{help@{help}!server@{server}}
+\subsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily server.\+help}
+
+\mbox{\Hypertarget{namespaceserver_a803365d66cd8c1e68f7e41a1837a59f4}\label{namespaceserver_a803365d66cd8c1e68f7e41a1837a59f4}} 
+\index{server@{server}!int@{int}}
+\index{int@{int}!server@{server}}
+\subsubsection{\texorpdfstring{int}{int}}
+{\footnotesize\ttfamily server.\+int}
+
+\mbox{\Hypertarget{namespaceserver_a005764c00126daf80eaacfcc2451946c}\label{namespaceserver_a005764c00126daf80eaacfcc2451946c}} 
+\index{server@{server}!level@{level}}
+\index{level@{level}!server@{server}}
+\subsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily server.\+level}
+
+\mbox{\Hypertarget{namespaceserver_abfa1d56012bc320e4b26361390f6fc24}\label{namespaceserver_abfa1d56012bc320e4b26361390f6fc24}} 
+\index{server@{server}!logger@{logger}}
+\index{logger@{logger}!server@{server}}
+\subsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily server.\+logger = logging.\+get\+Logger(\textquotesingle{}Server\textquotesingle{})}
+
+\mbox{\Hypertarget{namespaceserver_ac09871606862ea18f9b00501a0844fd5}\label{namespaceserver_ac09871606862ea18f9b00501a0844fd5}} 
+\index{server@{server}!loop@{loop}}
+\index{loop@{loop}!server@{server}}
+\subsubsection{\texorpdfstring{loop}{loop}}
+{\footnotesize\ttfamily server.\+loop = asyncio.\+get\+\_\+event\+\_\+loop()}
+
+\mbox{\Hypertarget{namespaceserver_aadab40bc4bd88b83c559fbe658ef25fc}\label{namespaceserver_aadab40bc4bd88b83c559fbe658ef25fc}} 
+\index{server@{server}!parser@{parser}}
+\index{parser@{parser}!server@{server}}
+\subsubsection{\texorpdfstring{parser}{parser}}
+{\footnotesize\ttfamily server.\+parser = argparse.\+Argument\+Parser()}
+
+\mbox{\Hypertarget{namespaceserver_a5de7d96778fa1c69916ba414cbf5b5bd}\label{namespaceserver_a5de7d96778fa1c69916ba414cbf5b5bd}} 
+\index{server@{server}!Player@{Player}}
+\index{Player@{Player}!server@{server}}
+\subsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily server.\+Player = namedtuple(\textquotesingle{}Player\textquotesingle{}, \mbox{[}\textquotesingle{}name\textquotesingle{}, \textquotesingle{}ws\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{namespaceserver_a72aa2cd67bf6ea46a0eea394a62534a2}\label{namespaceserver_a72aa2cd67bf6ea46a0eea394a62534a2}} 
+\index{server@{server}!type@{type}}
+\index{type@{type}!server@{server}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily server.\+type}
+
+\mbox{\Hypertarget{namespaceserver_a6a73b8acab3526375057956cf76a1036}\label{namespaceserver_a6a73b8acab3526375057956cf76a1036}} 
+\index{server@{server}!websocket\+\_\+server@{websocket\+\_\+server}}
+\index{websocket\+\_\+server@{websocket\+\_\+server}!server@{server}}
+\subsubsection{\texorpdfstring{websocket\+\_\+server}{websocket\_server}}
+{\footnotesize\ttfamily server.\+websocket\+\_\+server = websockets.\+serve(g.\+incomming\+\_\+handler, args.\+bind, args.\+port)}
+
+\mbox{\Hypertarget{namespaceserver_a520e79a10b246384fddda4381139cb5c}\label{namespaceserver_a520e79a10b246384fddda4381139cb5c}} 
+\index{server@{server}!wslogger@{wslogger}}
+\index{wslogger@{wslogger}!server@{server}}
+\subsubsection{\texorpdfstring{wslogger}{wslogger}}
+{\footnotesize\ttfamily server.\+wslogger = logging.\+get\+Logger(\textquotesingle{}websockets\textquotesingle{})}
+

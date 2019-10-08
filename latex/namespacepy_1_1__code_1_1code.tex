@@ -1,0 +1,111 @@
+\hypertarget{namespacepy_1_1__code_1_1code}{}\section{py.\+\_\+code.\+code Namespace Reference}
+\label{namespacepy_1_1__code_1_1code}\index{py.\+\_\+code.\+code@{py.\+\_\+code.\+code}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpy_1_1__code_1_1code_1_1_code}{Code}
+\item 
+class \hyperlink{classpy_1_1__code_1_1code_1_1_exception_info}{Exception\+Info}
+\item 
+class \hyperlink{classpy_1_1__code_1_1code_1_1_formatted_excinfo}{Formatted\+Excinfo}
+\item 
+class \hyperlink{classpy_1_1__code_1_1code_1_1_frame}{Frame}
+\item 
+class \hyperlink{classpy_1_1__code_1_1code_1_1_repr_entry}{Repr\+Entry}
+\item 
+class \hyperlink{classpy_1_1__code_1_1code_1_1_repr_entry_native}{Repr\+Entry\+Native}
+\item 
+class \hyperlink{classpy_1_1__code_1_1code_1_1_repr_exception_info}{Repr\+Exception\+Info}
+\item 
+class \hyperlink{classpy_1_1__code_1_1code_1_1_repr_file_location}{Repr\+File\+Location}
+\item 
+class \hyperlink{classpy_1_1__code_1_1code_1_1_repr_func_args}{Repr\+Func\+Args}
+\item 
+class \hyperlink{classpy_1_1__code_1_1code_1_1_repr_locals}{Repr\+Locals}
+\item 
+class \hyperlink{classpy_1_1__code_1_1code_1_1_repr_traceback}{Repr\+Traceback}
+\item 
+class \hyperlink{classpy_1_1__code_1_1code_1_1_repr_traceback_native}{Repr\+Traceback\+Native}
+\item 
+class \hyperlink{classpy_1_1__code_1_1code_1_1_terminal_repr}{Terminal\+Repr}
+\item 
+class \hyperlink{classpy_1_1__code_1_1code_1_1_traceback}{Traceback}
+\item 
+class \hyperlink{classpy_1_1__code_1_1code_1_1_traceback_entry}{Traceback\+Entry}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepy_1_1__code_1_1code_af43bd7196e3fba2c867062cd9e55f81d}{patch\+\_\+builtins} (assertion=True, compile=True)
+\item 
+def \hyperlink{namespacepy_1_1__code_1_1code_adda6031c220f85d45eaaf9066e69157b}{unpatch\+\_\+builtins} (assertion=True, compile=True)
+\item 
+def \hyperlink{namespacepy_1_1__code_1_1code_a3449e9c1a814b60ade9be91f59b524ca}{getrawcode} (obj, trycall=True)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacepy_1_1__code_1_1code_a8b110de86e73716ee564f8b84b462b30}{builtin\+\_\+repr} = repr
+\item 
+\hyperlink{namespacepy_1_1__code_1_1code_a380bb8eed21da20c4e4104a05947e230}{reprlib} = py.\+builtin.\+\_\+tryimport(\textquotesingle{}repr\textquotesingle{}, \textquotesingle{}reprlib\textquotesingle{})
+\item 
+\hyperlink{namespacepy_1_1__code_1_1code_ac976a81ad3d6cdd1f763d01c3b0b8fac}{co\+\_\+equal}
+\item 
+dictionary \hyperlink{namespacepy_1_1__code_1_1code_a7b0c58e407c3259902dd6ab9b9940514}{oldbuiltins} = \{\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepy_1_1__code_1_1code_a3449e9c1a814b60ade9be91f59b524ca}\label{namespacepy_1_1__code_1_1code_a3449e9c1a814b60ade9be91f59b524ca}} 
+\index{py\+::\+\_\+code\+::code@{py\+::\+\_\+code\+::code}!getrawcode@{getrawcode}}
+\index{getrawcode@{getrawcode}!py\+::\+\_\+code\+::code@{py\+::\+\_\+code\+::code}}
+\subsubsection{\texorpdfstring{getrawcode()}{getrawcode()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+getrawcode (\begin{DoxyParamCaption}\item[{}]{obj,  }\item[{}]{trycall = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return code object for given function. \end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepy_1_1__code_1_1code_af43bd7196e3fba2c867062cd9e55f81d}\label{namespacepy_1_1__code_1_1code_af43bd7196e3fba2c867062cd9e55f81d}} 
+\index{py\+::\+\_\+code\+::code@{py\+::\+\_\+code\+::code}!patch\+\_\+builtins@{patch\+\_\+builtins}}
+\index{patch\+\_\+builtins@{patch\+\_\+builtins}!py\+::\+\_\+code\+::code@{py\+::\+\_\+code\+::code}}
+\subsubsection{\texorpdfstring{patch\+\_\+builtins()}{patch\_builtins()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+patch\+\_\+builtins (\begin{DoxyParamCaption}\item[{}]{assertion = {\ttfamily True},  }\item[{}]{compile = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}put compile and AssertionError builtins to Python's builtins. \end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepy_1_1__code_1_1code_adda6031c220f85d45eaaf9066e69157b}\label{namespacepy_1_1__code_1_1code_adda6031c220f85d45eaaf9066e69157b}} 
+\index{py\+::\+\_\+code\+::code@{py\+::\+\_\+code\+::code}!unpatch\+\_\+builtins@{unpatch\+\_\+builtins}}
+\index{unpatch\+\_\+builtins@{unpatch\+\_\+builtins}!py\+::\+\_\+code\+::code@{py\+::\+\_\+code\+::code}}
+\subsubsection{\texorpdfstring{unpatch\+\_\+builtins()}{unpatch\_builtins()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+unpatch\+\_\+builtins (\begin{DoxyParamCaption}\item[{}]{assertion = {\ttfamily True},  }\item[{}]{compile = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}remove compile and AssertionError builtins from Python builtins. \end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepy_1_1__code_1_1code_a8b110de86e73716ee564f8b84b462b30}\label{namespacepy_1_1__code_1_1code_a8b110de86e73716ee564f8b84b462b30}} 
+\index{py\+::\+\_\+code\+::code@{py\+::\+\_\+code\+::code}!builtin\+\_\+repr@{builtin\+\_\+repr}}
+\index{builtin\+\_\+repr@{builtin\+\_\+repr}!py\+::\+\_\+code\+::code@{py\+::\+\_\+code\+::code}}
+\subsubsection{\texorpdfstring{builtin\+\_\+repr}{builtin\_repr}}
+{\footnotesize\ttfamily py.\+\_\+code.\+code.\+builtin\+\_\+repr = repr}
+
+\mbox{\Hypertarget{namespacepy_1_1__code_1_1code_ac976a81ad3d6cdd1f763d01c3b0b8fac}\label{namespacepy_1_1__code_1_1code_ac976a81ad3d6cdd1f763d01c3b0b8fac}} 
+\index{py\+::\+\_\+code\+::code@{py\+::\+\_\+code\+::code}!co\+\_\+equal@{co\+\_\+equal}}
+\index{co\+\_\+equal@{co\+\_\+equal}!py\+::\+\_\+code\+::code@{py\+::\+\_\+code\+::code}}
+\subsubsection{\texorpdfstring{co\+\_\+equal}{co\_equal}}
+{\footnotesize\ttfamily py.\+\_\+code.\+code.\+co\+\_\+equal}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  \hyperlink{namespacepygame_1_1cursors_a19f38a01d13e77f591209869d99d99e5}{compile}(\textcolor{stringliteral}{'\_\_recursioncache\_locals\_1 == \_\_recursioncache\_locals\_2'},
+2                    \textcolor{stringliteral}{'?'}, \textcolor{stringliteral}{'eval'})
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepy_1_1__code_1_1code_a7b0c58e407c3259902dd6ab9b9940514}\label{namespacepy_1_1__code_1_1code_a7b0c58e407c3259902dd6ab9b9940514}} 
+\index{py\+::\+\_\+code\+::code@{py\+::\+\_\+code\+::code}!oldbuiltins@{oldbuiltins}}
+\index{oldbuiltins@{oldbuiltins}!py\+::\+\_\+code\+::code@{py\+::\+\_\+code\+::code}}
+\subsubsection{\texorpdfstring{oldbuiltins}{oldbuiltins}}
+{\footnotesize\ttfamily dictionary py.\+\_\+code.\+code.\+oldbuiltins = \{\}}
+
+\mbox{\Hypertarget{namespacepy_1_1__code_1_1code_a380bb8eed21da20c4e4104a05947e230}\label{namespacepy_1_1__code_1_1code_a380bb8eed21da20c4e4104a05947e230}} 
+\index{py\+::\+\_\+code\+::code@{py\+::\+\_\+code\+::code}!reprlib@{reprlib}}
+\index{reprlib@{reprlib}!py\+::\+\_\+code\+::code@{py\+::\+\_\+code\+::code}}
+\subsubsection{\texorpdfstring{reprlib}{reprlib}}
+{\footnotesize\ttfamily py.\+\_\+code.\+code.\+reprlib = py.\+builtin.\+\_\+tryimport(\textquotesingle{}repr\textquotesingle{}, \textquotesingle{}reprlib\textquotesingle{})}
+

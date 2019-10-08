@@ -1,0 +1,43 @@
+\hypertarget{classgevent_1_1pywsgi_1_1_environ}{}\section{gevent.\+pywsgi.\+Environ Class Reference}
+\label{classgevent_1_1pywsgi_1_1_environ}\index{gevent.\+pywsgi.\+Environ@{gevent.\+pywsgi.\+Environ}}
+
+
+\hyperlink{classgevent_1_1pywsgi_1_1_environ}{Environ} classes.  
+
+
+
+
+Inherits dict.
+
+
+
+Inherited by \hyperlink{classgevent_1_1pywsgi_1_1_secure_environ}{gevent.\+pywsgi.\+Secure\+Environ}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1pywsgi_1_1_environ_a1a9b695b8fe5ecaeba065b1a809549d2}\label{classgevent_1_1pywsgi_1_1_environ_a1a9b695b8fe5ecaeba065b1a809549d2}} 
+def {\bfseries copy} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1pywsgi_1_1_environ_adb291ca19d2f74dcffc1c6eea20fbe86}\label{classgevent_1_1pywsgi_1_1_environ_adb291ca19d2f74dcffc1c6eea20fbe86}} 
+def {\bfseries iteritems} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1pywsgi_1_1_environ_ae27d0a708ffe24aa08536907bbd3268c}\label{classgevent_1_1pywsgi_1_1_environ_ae27d0a708ffe24aa08536907bbd3268c}} 
+def {\bfseries \+\_\+\+\_\+reduce\+\_\+ex\+\_\+\+\_\+} (self, proto)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classgevent_1_1pywsgi_1_1_environ}{Environ} classes. 
+
+These subclass dict. They could subclass collections.\+User\+Dict on 3.\+3+ and proxy to the underlying real dict to avoid a copy if we have to print them (on 2.\+7 it\textquotesingle{}s slightly more complicated to be an instance of collections.\+Mutable\+Mapping; User\+Dict.\+User\+Dict isn\textquotesingle{}t.) Then we could have either the \hyperlink{classgevent_1_1pywsgi_1_1_w_s_g_i_handler_a8337b61957f372c7a6cc62e57298d182}{W\+S\+G\+I\+Handler.\+get\+\_\+environ} or the W\+S\+G\+I\+Server.\+get\+\_\+environ return one of these proxies, and W\+S\+G\+I\+Handler.\+run\+\_\+application would know to access the {\ttfamily environ.\+data} attribute to be able to pass the {\itshape real} dict to the application (because P\+E\+P3333 requires no subclasses, only actual dict objects; wsgiref.\+validator and webob.\+Request both enforce this). This has the advantage of not being fragile if anybody else tries to print/log self.\+environ (and not requiring a copy). However, if there are any subclasses of Handler or Server, this could break if they don\textquotesingle{}t know to return this type.\begin{DoxyVerb}A base class that can be used for WSGI environment objects.
+
+Provisional API.
+
+.. versionadded:: 1.2a1
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/pywsgi.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,104 @@
+\hypertarget{classpy_1_1__code_1_1code_1_1_frame}{}\section{py.\+\_\+code.\+code.\+Frame Class Reference}
+\label{classpy_1_1__code_1_1code_1_1_frame}\index{py.\+\_\+code.\+code.\+Frame@{py.\+\_\+code.\+code.\+Frame}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_frame_ae40f65e128001557b7fdb81561b24e01}\label{classpy_1_1__code_1_1code_1_1_frame_ae40f65e128001557b7fdb81561b24e01}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, frame)
+\item 
+def \hyperlink{classpy_1_1__code_1_1code_1_1_frame_a94ebaef23b91092b348a7bcf56098fe7}{statement} (self)
+\item 
+def \hyperlink{classpy_1_1__code_1_1code_1_1_frame_a150310a7a1ef54e1dccd9e4366ab02bf}{eval} (self, code, vars)
+\item 
+def \hyperlink{classpy_1_1__code_1_1code_1_1_frame_a39b450ad358b486d79e789ed9f40f0c5}{exec\+\_\+} (self, code, vars)
+\item 
+def \hyperlink{classpy_1_1__code_1_1code_1_1_frame_aa063a5e1033603b0c6e6b753884536bd}{repr} (self, object)
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_frame_a9f442a9120f1374c3648196c6af34e7c}\label{classpy_1_1__code_1_1code_1_1_frame_a9f442a9120f1374c3648196c6af34e7c}} 
+def {\bfseries is\+\_\+true} (self, object)
+\item 
+def \hyperlink{classpy_1_1__code_1_1code_1_1_frame_a3d1533c08317c066291a7a7296675922}{getargs} (self, var=False)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_frame_ac50fbe47104237f5655837dd440b50df}\label{classpy_1_1__code_1_1code_1_1_frame_ac50fbe47104237f5655837dd440b50df}} 
+{\bfseries lineno}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_frame_ab7223d975a2258d8fdff2b921eda5721}\label{classpy_1_1__code_1_1code_1_1_frame_ab7223d975a2258d8fdff2b921eda5721}} 
+{\bfseries f\+\_\+globals}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_frame_a8cc632974d8bf9f630307c0a9cc762fb}\label{classpy_1_1__code_1_1code_1_1_frame_a8cc632974d8bf9f630307c0a9cc762fb}} 
+{\bfseries f\+\_\+locals}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_frame_a25193c5550e20b71d0b4410762160a76}\label{classpy_1_1__code_1_1code_1_1_frame_a25193c5550e20b71d0b4410762160a76}} 
+{\bfseries raw}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_frame_a7cae25e686b21c2eb8eab270bd17300b}\label{classpy_1_1__code_1_1code_1_1_frame_a7cae25e686b21c2eb8eab270bd17300b}} 
+{\bfseries code}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Wrapper around a Python frame holding f_locals and f_globals
+in which expressions can be evaluated.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_frame_a150310a7a1ef54e1dccd9e4366ab02bf}\label{classpy_1_1__code_1_1code_1_1_frame_a150310a7a1ef54e1dccd9e4366ab02bf}} 
+\index{py\+::\+\_\+code\+::code\+::\+Frame@{py\+::\+\_\+code\+::code\+::\+Frame}!eval@{eval}}
+\index{eval@{eval}!py\+::\+\_\+code\+::code\+::\+Frame@{py\+::\+\_\+code\+::code\+::\+Frame}}
+\subsubsection{\texorpdfstring{eval()}{eval()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+Frame.\+eval (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{code,  }\item[{}]{vars }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}evaluate 'code' in the frame
+
+    'vars' are optional additional local variables
+
+    returns the result of the evaluation
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_frame_a39b450ad358b486d79e789ed9f40f0c5}\label{classpy_1_1__code_1_1code_1_1_frame_a39b450ad358b486d79e789ed9f40f0c5}} 
+\index{py\+::\+\_\+code\+::code\+::\+Frame@{py\+::\+\_\+code\+::code\+::\+Frame}!exec\+\_\+@{exec\+\_\+}}
+\index{exec\+\_\+@{exec\+\_\+}!py\+::\+\_\+code\+::code\+::\+Frame@{py\+::\+\_\+code\+::code\+::\+Frame}}
+\subsubsection{\texorpdfstring{exec\+\_\+()}{exec\_()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+Frame.\+exec\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{code,  }\item[{}]{vars }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}exec 'code' in the frame
+
+    'vars' are optiona; additional local variables
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_frame_a3d1533c08317c066291a7a7296675922}\label{classpy_1_1__code_1_1code_1_1_frame_a3d1533c08317c066291a7a7296675922}} 
+\index{py\+::\+\_\+code\+::code\+::\+Frame@{py\+::\+\_\+code\+::code\+::\+Frame}!getargs@{getargs}}
+\index{getargs@{getargs}!py\+::\+\_\+code\+::code\+::\+Frame@{py\+::\+\_\+code\+::code\+::\+Frame}}
+\subsubsection{\texorpdfstring{getargs()}{getargs()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+Frame.\+getargs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{var = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a list of tuples (name, value) for all arguments
+
+    if 'var' is set True also include the variable and keyword
+    arguments when present
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_frame_aa063a5e1033603b0c6e6b753884536bd}\label{classpy_1_1__code_1_1code_1_1_frame_aa063a5e1033603b0c6e6b753884536bd}} 
+\index{py\+::\+\_\+code\+::code\+::\+Frame@{py\+::\+\_\+code\+::code\+::\+Frame}!repr@{repr}}
+\index{repr@{repr}!py\+::\+\_\+code\+::code\+::\+Frame@{py\+::\+\_\+code\+::code\+::\+Frame}}
+\subsubsection{\texorpdfstring{repr()}{repr()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+Frame.\+repr (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{object }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a 'safe' (non-recursive, one-line) string repr for 'object'
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_frame_a94ebaef23b91092b348a7bcf56098fe7}\label{classpy_1_1__code_1_1code_1_1_frame_a94ebaef23b91092b348a7bcf56098fe7}} 
+\index{py\+::\+\_\+code\+::code\+::\+Frame@{py\+::\+\_\+code\+::code\+::\+Frame}!statement@{statement}}
+\index{statement@{statement}!py\+::\+\_\+code\+::code\+::\+Frame@{py\+::\+\_\+code\+::code\+::\+Frame}}
+\subsubsection{\texorpdfstring{statement()}{statement()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+Frame.\+statement (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}statement this frame is at \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/py/\+\_\+code/code.\+py\end{DoxyCompactItemize}

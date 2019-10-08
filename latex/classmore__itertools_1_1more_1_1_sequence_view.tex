@@ -1,0 +1,55 @@
+\hypertarget{classmore__itertools_1_1more_1_1_sequence_view}{}\section{more\+\_\+itertools.\+more.\+Sequence\+View Class Reference}
+\label{classmore__itertools_1_1more_1_1_sequence_view}\index{more\+\_\+itertools.\+more.\+Sequence\+View@{more\+\_\+itertools.\+more.\+Sequence\+View}}
+
+
+Inherits Sequence.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmore__itertools_1_1more_1_1_sequence_view_a02621f6affd3ce27bdea5d280e9d1615}\label{classmore__itertools_1_1more_1_1_sequence_view_a02621f6affd3ce27bdea5d280e9d1615}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, target)
+\item 
+\mbox{\Hypertarget{classmore__itertools_1_1more_1_1_sequence_view_acf77727d13e1c1a801b71dc0459f1a5d}\label{classmore__itertools_1_1more_1_1_sequence_view_acf77727d13e1c1a801b71dc0459f1a5d}} 
+def {\bfseries \+\_\+\+\_\+getitem\+\_\+\+\_\+} (self, index)
+\item 
+\mbox{\Hypertarget{classmore__itertools_1_1more_1_1_sequence_view_afee6f4b4b8ff270ef141b1ea1f68fef2}\label{classmore__itertools_1_1more_1_1_sequence_view_afee6f4b4b8ff270ef141b1ea1f68fef2}} 
+def {\bfseries \+\_\+\+\_\+len\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classmore__itertools_1_1more_1_1_sequence_view_a33a43f23a8d10a217090642f6295db8f}\label{classmore__itertools_1_1more_1_1_sequence_view_a33a43f23a8d10a217090642f6295db8f}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Return a read-only view of the sequence object *target*.
+
+:class:`SequenceView` objects are analagous to Python's built-in
+"dictionary view" types. They provide a dynamic view of a sequence's items,
+meaning that when the sequence updates, so does the view.
+
+    >>> seq = ['0', '1', '2']
+    >>> view = SequenceView(seq)
+    >>> view
+    SequenceView(['0', '1', '2'])
+    >>> seq.append('3')
+    >>> view
+    SequenceView(['0', '1', '2', '3'])
+
+Sequence views support indexing, slicing, and length queries. They act
+like the underlying sequence, except they don't allow assignment:
+
+    >>> view[1]
+    '1'
+    >>> view[1:-1]
+    ['1', '2']
+    >>> len(view)
+    4
+
+Sequence views are useful as an alternative to copying, as they don't
+require (much) extra storage.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/more\+\_\+itertools/more.\+py\end{DoxyCompactItemize}

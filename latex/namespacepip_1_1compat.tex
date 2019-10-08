@@ -1,0 +1,98 @@
+\hypertarget{namespacepip_1_1compat}{}\section{pip.\+compat Namespace Reference}
+\label{namespacepip_1_1compat}\index{pip.\+compat@{pip.\+compat}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1compat_af0d20fba4f705800d8102243cdc5090a}\label{namespacepip_1_1compat_af0d20fba4f705800d8102243cdc5090a}} 
+def {\bfseries get\+\_\+stdlib} ()
+\item 
+\mbox{\Hypertarget{namespacepip_1_1compat_a17331f6b189d0d032bd9d6363996bc2b}\label{namespacepip_1_1compat_a17331f6b189d0d032bd9d6363996bc2b}} 
+def {\bfseries console\+\_\+to\+\_\+str} (s)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1compat_a0dafaf88b2029846650d7eec6b2ed0aa}\label{namespacepip_1_1compat_a0dafaf88b2029846650d7eec6b2ed0aa}} 
+def {\bfseries native\+\_\+str} (s, replace=False)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1compat_a9d12eab4510ace82241780d7d538f367}\label{namespacepip_1_1compat_a9d12eab4510ace82241780d7d538f367}} 
+def {\bfseries total\+\_\+seconds} (td)
+\item 
+def \hyperlink{namespacepip_1_1compat_a1239985da93ed3cf6f017c0d234c1bd2}{get\+\_\+path\+\_\+uid} (path)
+\item 
+def \hyperlink{namespacepip_1_1compat_a5e0a7eada370641692bafb5d19cd08a2}{expanduser} (path)
+\item 
+def \hyperlink{namespacepip_1_1compat_a73d4f009414127d4821c2ce3f7c362ae}{samefile} (file1, file2)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1compat_aa7b751d7d447893ef652d18330fa02e1}\label{namespacepip_1_1compat_aa7b751d7d447893ef652d18330fa02e1}} 
+{\bfseries ip\+\_\+address}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1compat_a51c0b48ac04d28004c9f5d08e79aad58}\label{namespacepip_1_1compat_a51c0b48ac04d28004c9f5d08e79aad58}} 
+{\bfseries ip\+\_\+network}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1compat_abbfe8d1703220250cd65b656527ac4cb}\label{namespacepip_1_1compat_abbfe8d1703220250cd65b656527ac4cb}} 
+bool {\bfseries uses\+\_\+pycache} = True
+\item 
+\mbox{\Hypertarget{namespacepip_1_1compat_ac3011d4ad9567584104e33b22d4e8e04}\label{namespacepip_1_1compat_ac3011d4ad9567584104e33b22d4e8e04}} 
+{\bfseries cache\+\_\+from\+\_\+source} = imp.\+cache\+\_\+from\+\_\+source
+\item 
+\mbox{\Hypertarget{namespacepip_1_1compat_a4d53caae375ba90f683d1e461e465046}\label{namespacepip_1_1compat_a4d53caae375ba90f683d1e461e465046}} 
+tuple {\bfseries stdlib\+\_\+pkgs} = (\textquotesingle{}python\textquotesingle{}, \textquotesingle{}wsgiref\textquotesingle{})
+\item 
+tuple {\bfseries W\+I\+N\+D\+O\+WS}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Stuff that differs in different Python versions and platform
+distributions.\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepip_1_1compat_a5e0a7eada370641692bafb5d19cd08a2}\label{namespacepip_1_1compat_a5e0a7eada370641692bafb5d19cd08a2}} 
+\index{pip\+::compat@{pip\+::compat}!expanduser@{expanduser}}
+\index{expanduser@{expanduser}!pip\+::compat@{pip\+::compat}}
+\subsubsection{\texorpdfstring{expanduser()}{expanduser()}}
+{\footnotesize\ttfamily def pip.\+compat.\+expanduser (\begin{DoxyParamCaption}\item[{}]{path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Expand ~ and ~user constructions.
+
+Includes a workaround for http://bugs.python.org/issue14768
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1compat_a1239985da93ed3cf6f017c0d234c1bd2}\label{namespacepip_1_1compat_a1239985da93ed3cf6f017c0d234c1bd2}} 
+\index{pip\+::compat@{pip\+::compat}!get\+\_\+path\+\_\+uid@{get\+\_\+path\+\_\+uid}}
+\index{get\+\_\+path\+\_\+uid@{get\+\_\+path\+\_\+uid}!pip\+::compat@{pip\+::compat}}
+\subsubsection{\texorpdfstring{get\+\_\+path\+\_\+uid()}{get\_path\_uid()}}
+{\footnotesize\ttfamily def pip.\+compat.\+get\+\_\+path\+\_\+uid (\begin{DoxyParamCaption}\item[{}]{path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return path's uid.
+
+Does not follow symlinks:
+    https://github.com/pypa/pip/pull/935#discussion_r5307003
+
+Placed this function in compat due to differences on AIX and
+Jython, that should eventually go away.
+
+:raises OSError: When path is a symlink or can't be read.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1compat_a73d4f009414127d4821c2ce3f7c362ae}\label{namespacepip_1_1compat_a73d4f009414127d4821c2ce3f7c362ae}} 
+\index{pip\+::compat@{pip\+::compat}!samefile@{samefile}}
+\index{samefile@{samefile}!pip\+::compat@{pip\+::compat}}
+\subsubsection{\texorpdfstring{samefile()}{samefile()}}
+{\footnotesize\ttfamily def pip.\+compat.\+samefile (\begin{DoxyParamCaption}\item[{}]{file1,  }\item[{}]{file2 }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Provide an alternative for os.path.samefile on Windows/Python2\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepip_1_1compat_a105f0bbd10e2a25e1ae4f89a42021a23}\label{namespacepip_1_1compat_a105f0bbd10e2a25e1ae4f89a42021a23}} 
+\index{pip\+::compat@{pip\+::compat}!W\+I\+N\+D\+O\+WS@{W\+I\+N\+D\+O\+WS}}
+\index{W\+I\+N\+D\+O\+WS@{W\+I\+N\+D\+O\+WS}!pip\+::compat@{pip\+::compat}}
+\subsubsection{\texorpdfstring{W\+I\+N\+D\+O\+WS}{WINDOWS}}
+{\footnotesize\ttfamily tuple pip.\+compat.\+W\+I\+N\+D\+O\+WS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (sys.platform.startswith(\textcolor{stringliteral}{"win"}) \textcolor{keywordflow}{or}
+2            (sys.platform == \textcolor{stringliteral}{'cli'} \textcolor{keywordflow}{and} os.name == \textcolor{stringliteral}{'nt'}))
+\end{DoxyCode}

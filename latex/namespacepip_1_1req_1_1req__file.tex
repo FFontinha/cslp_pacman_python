@@ -1,0 +1,190 @@
+\hypertarget{namespacepip_1_1req_1_1req__file}{}\section{pip.\+req.\+req\+\_\+file Namespace Reference}
+\label{namespacepip_1_1req_1_1req__file}\index{pip.\+req.\+req\+\_\+file@{pip.\+req.\+req\+\_\+file}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepip_1_1req_1_1req__file_a7600c5f923de1a1a46ad8541b9bd3084}{parse\+\_\+requirements} (filename, finder=None, comes\+\_\+from=None, options=None, session=None, constraint=False, wheel\+\_\+cache=None)
+\item 
+def \hyperlink{namespacepip_1_1req_1_1req__file_ac799b15c47125fbf6f77cf0d9ffbe772}{preprocess} (content, options)
+\item 
+def \hyperlink{namespacepip_1_1req_1_1req__file_ab31bf471d559b7e62eeefa77fe230dd2}{process\+\_\+line} (line, filename, line\+\_\+number, finder=None, comes\+\_\+from=None, options=None, session=None, wheel\+\_\+cache=None, constraint=False)
+\item 
+def \hyperlink{namespacepip_1_1req_1_1req__file_ac5064ff435fdfbb72795742c823172ba}{break\+\_\+args\+\_\+options} (line)
+\item 
+def \hyperlink{namespacepip_1_1req_1_1req__file_a2fd1f4a7059671471a6440d046283ac8}{build\+\_\+parser} ()
+\item 
+def \hyperlink{namespacepip_1_1req_1_1req__file_aea661e701d2523cfccf634f57ce1b5ff}{join\+\_\+lines} (lines\+\_\+enum)
+\item 
+def \hyperlink{namespacepip_1_1req_1_1req__file_a4f437b109d9611da9924cfcf8c081dc9}{ignore\+\_\+comments} (lines\+\_\+enum)
+\item 
+def \hyperlink{namespacepip_1_1req_1_1req__file_a71e94b4017adf080ca2de297a0e39d54}{skip\+\_\+regex} (lines\+\_\+enum, options)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1req_1_1req__file_a9f028e33de24f011056cc22578ec4ae0}\label{namespacepip_1_1req_1_1req__file_a9f028e33de24f011056cc22578ec4ae0}} 
+{\bfseries S\+C\+H\+E\+M\+E\+\_\+\+RE} = re.\+compile(r\textquotesingle{}$^\wedge$(http$\vert$https$\vert$file)\+:\textquotesingle{}, re.\+I)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1req_1_1req__file_a980aac20ad33f8e1b6ceaab9585c53d9}\label{namespacepip_1_1req_1_1req__file_a980aac20ad33f8e1b6ceaab9585c53d9}} 
+{\bfseries C\+O\+M\+M\+E\+N\+T\+\_\+\+RE} = re.\+compile(r\textquotesingle{}($^\wedge$$\vert$\textbackslash{}s)+\#.$\ast$\$\textquotesingle{})
+\item 
+list {\bfseries S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+O\+P\+T\+I\+O\+NS}
+\item 
+list {\bfseries S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+R\+EQ}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1req_1_1req__file_afa9498b576054c09cfd1194f8308bc3a}\label{namespacepip_1_1req_1_1req__file_afa9498b576054c09cfd1194f8308bc3a}} 
+list {\bfseries S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+R\+E\+Q\+\_\+\+D\+E\+ST} = \mbox{[}o().dest for o in S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+R\+EQ\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Requirements file parsing
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepip_1_1req_1_1req__file_ac5064ff435fdfbb72795742c823172ba}\label{namespacepip_1_1req_1_1req__file_ac5064ff435fdfbb72795742c823172ba}} 
+\index{pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}!break\+\_\+args\+\_\+options@{break\+\_\+args\+\_\+options}}
+\index{break\+\_\+args\+\_\+options@{break\+\_\+args\+\_\+options}!pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}}
+\subsubsection{\texorpdfstring{break\+\_\+args\+\_\+options()}{break\_args\_options()}}
+{\footnotesize\ttfamily def pip.\+req.\+req\+\_\+file.\+break\+\_\+args\+\_\+options (\begin{DoxyParamCaption}\item[{}]{line }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Break up the line into an args and options string.  We only want to shlex
+(and then optparse) the options, not the args.  args can contain markers
+which are corrupted by shlex.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1req_1_1req__file_a2fd1f4a7059671471a6440d046283ac8}\label{namespacepip_1_1req_1_1req__file_a2fd1f4a7059671471a6440d046283ac8}} 
+\index{pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}!build\+\_\+parser@{build\+\_\+parser}}
+\index{build\+\_\+parser@{build\+\_\+parser}!pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}}
+\subsubsection{\texorpdfstring{build\+\_\+parser()}{build\_parser()}}
+{\footnotesize\ttfamily def pip.\+req.\+req\+\_\+file.\+build\+\_\+parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a parser for parsing requirement lines
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1req_1_1req__file_a4f437b109d9611da9924cfcf8c081dc9}\label{namespacepip_1_1req_1_1req__file_a4f437b109d9611da9924cfcf8c081dc9}} 
+\index{pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}!ignore\+\_\+comments@{ignore\+\_\+comments}}
+\index{ignore\+\_\+comments@{ignore\+\_\+comments}!pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}}
+\subsubsection{\texorpdfstring{ignore\+\_\+comments()}{ignore\_comments()}}
+{\footnotesize\ttfamily def pip.\+req.\+req\+\_\+file.\+ignore\+\_\+comments (\begin{DoxyParamCaption}\item[{}]{lines\+\_\+enum }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Strips comments and filter empty lines.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1req_1_1req__file_aea661e701d2523cfccf634f57ce1b5ff}\label{namespacepip_1_1req_1_1req__file_aea661e701d2523cfccf634f57ce1b5ff}} 
+\index{pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}!join\+\_\+lines@{join\+\_\+lines}}
+\index{join\+\_\+lines@{join\+\_\+lines}!pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}}
+\subsubsection{\texorpdfstring{join\+\_\+lines()}{join\_lines()}}
+{\footnotesize\ttfamily def pip.\+req.\+req\+\_\+file.\+join\+\_\+lines (\begin{DoxyParamCaption}\item[{}]{lines\+\_\+enum }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Joins a line ending in '\' with the previous line (except when following
+comments).  The joined line takes on the index of the first line.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1req_1_1req__file_a7600c5f923de1a1a46ad8541b9bd3084}\label{namespacepip_1_1req_1_1req__file_a7600c5f923de1a1a46ad8541b9bd3084}} 
+\index{pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}!parse\+\_\+requirements@{parse\+\_\+requirements}}
+\index{parse\+\_\+requirements@{parse\+\_\+requirements}!pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}}
+\subsubsection{\texorpdfstring{parse\+\_\+requirements()}{parse\_requirements()}}
+{\footnotesize\ttfamily def pip.\+req.\+req\+\_\+file.\+parse\+\_\+requirements (\begin{DoxyParamCaption}\item[{}]{filename,  }\item[{}]{finder = {\ttfamily None},  }\item[{}]{comes\+\_\+from = {\ttfamily None},  }\item[{}]{options = {\ttfamily None},  }\item[{}]{session = {\ttfamily None},  }\item[{}]{constraint = {\ttfamily False},  }\item[{}]{wheel\+\_\+cache = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse a requirements file and yield InstallRequirement instances.
+
+:param filename:    Path or url of requirements file.
+:param finder:      Instance of pip.index.PackageFinder.
+:param comes_from:  Origin description of requirements.
+:param options:     cli options.
+:param session:     Instance of pip.download.PipSession.
+:param constraint:  If true, parsing a constraint file rather than
+    requirements file.
+:param wheel_cache: Instance of pip.wheel.WheelCache
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1req_1_1req__file_ac799b15c47125fbf6f77cf0d9ffbe772}\label{namespacepip_1_1req_1_1req__file_ac799b15c47125fbf6f77cf0d9ffbe772}} 
+\index{pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}!preprocess@{preprocess}}
+\index{preprocess@{preprocess}!pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}}
+\subsubsection{\texorpdfstring{preprocess()}{preprocess()}}
+{\footnotesize\ttfamily def pip.\+req.\+req\+\_\+file.\+preprocess (\begin{DoxyParamCaption}\item[{}]{content,  }\item[{}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Split, filter, and join lines, and return a line iterator
+
+:param content: the content of the requirements file
+:param options: cli options
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1req_1_1req__file_ab31bf471d559b7e62eeefa77fe230dd2}\label{namespacepip_1_1req_1_1req__file_ab31bf471d559b7e62eeefa77fe230dd2}} 
+\index{pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}!process\+\_\+line@{process\+\_\+line}}
+\index{process\+\_\+line@{process\+\_\+line}!pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}}
+\subsubsection{\texorpdfstring{process\+\_\+line()}{process\_line()}}
+{\footnotesize\ttfamily def pip.\+req.\+req\+\_\+file.\+process\+\_\+line (\begin{DoxyParamCaption}\item[{}]{line,  }\item[{}]{filename,  }\item[{}]{line\+\_\+number,  }\item[{}]{finder = {\ttfamily None},  }\item[{}]{comes\+\_\+from = {\ttfamily None},  }\item[{}]{options = {\ttfamily None},  }\item[{}]{session = {\ttfamily None},  }\item[{}]{wheel\+\_\+cache = {\ttfamily None},  }\item[{}]{constraint = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Process a single requirements line; This can result in creating/yielding
+requirements, or updating the finder.
+
+For lines that contain requirements, the only options that have an effect
+are from SUPPORTED_OPTIONS_REQ, and they are scoped to the
+requirement. Other options from SUPPORTED_OPTIONS may be present, but are
+ignored.
+
+For lines that do not contain requirements, the only options that have an
+effect are from SUPPORTED_OPTIONS. Options from SUPPORTED_OPTIONS_REQ may
+be present, but are ignored. These lines may contain multiple options
+(although our docs imply only one is supported), and all our parsed and
+affect the finder.
+
+:param constraint: If True, parsing a constraints file.
+:param options: OptionParser options that we may update
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1req_1_1req__file_a71e94b4017adf080ca2de297a0e39d54}\label{namespacepip_1_1req_1_1req__file_a71e94b4017adf080ca2de297a0e39d54}} 
+\index{pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}!skip\+\_\+regex@{skip\+\_\+regex}}
+\index{skip\+\_\+regex@{skip\+\_\+regex}!pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}}
+\subsubsection{\texorpdfstring{skip\+\_\+regex()}{skip\_regex()}}
+{\footnotesize\ttfamily def pip.\+req.\+req\+\_\+file.\+skip\+\_\+regex (\begin{DoxyParamCaption}\item[{}]{lines\+\_\+enum,  }\item[{}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Skip lines that match '--skip-requirements-regex' pattern
+
+Note: the regex pattern is only built once
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepip_1_1req_1_1req__file_ada542f178a89b18ec4cbc886f3ccf47b}\label{namespacepip_1_1req_1_1req__file_ada542f178a89b18ec4cbc886f3ccf47b}} 
+\index{pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}!S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+O\+P\+T\+I\+O\+NS@{S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+O\+P\+T\+I\+O\+NS}}
+\index{S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+O\+P\+T\+I\+O\+NS@{S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+O\+P\+T\+I\+O\+NS}!pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}}
+\subsubsection{\texorpdfstring{S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+O\+P\+T\+I\+O\+NS}{SUPPORTED\_OPTIONS}}
+{\footnotesize\ttfamily list pip.\+req.\+req\+\_\+file.\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+O\+P\+T\+I\+O\+NS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  [
+2     cmdoptions.constraints,
+3     cmdoptions.editable,
+4     cmdoptions.requirements,
+5     cmdoptions.no\_index,
+6     cmdoptions.index\_url,
+7     cmdoptions.find\_links,
+8     cmdoptions.extra\_index\_url,
+9     cmdoptions.allow\_external,
+10     cmdoptions.allow\_all\_external,
+11     cmdoptions.no\_allow\_external,
+12     cmdoptions.allow\_unsafe,
+13     cmdoptions.no\_allow\_unsafe,
+14     cmdoptions.use\_wheel,
+15     cmdoptions.no\_use\_wheel,
+16     cmdoptions.always\_unzip,
+17     cmdoptions.no\_binary,
+18     cmdoptions.only\_binary,
+19     cmdoptions.pre,
+20     cmdoptions.process\_dependency\_links,
+21     cmdoptions.trusted\_host,
+22     cmdoptions.require\_hashes,
+23 ]
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1req_1_1req__file_a59cbebe3bb8cd0fb74d0bb5804e04403}\label{namespacepip_1_1req_1_1req__file_a59cbebe3bb8cd0fb74d0bb5804e04403}} 
+\index{pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}!S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+R\+EQ@{S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+R\+EQ}}
+\index{S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+R\+EQ@{S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+R\+EQ}!pip\+::req\+::req\+\_\+file@{pip\+::req\+::req\+\_\+file}}
+\subsubsection{\texorpdfstring{S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+R\+EQ}{SUPPORTED\_OPTIONS\_REQ}}
+{\footnotesize\ttfamily list pip.\+req.\+req\+\_\+file.\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+O\+P\+T\+I\+O\+N\+S\+\_\+\+R\+EQ}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  [
+2     cmdoptions.install\_options,
+3     cmdoptions.global\_options,
+4     cmdoptions.hash,
+5 ]
+\end{DoxyCode}

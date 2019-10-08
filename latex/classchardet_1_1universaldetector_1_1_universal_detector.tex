@@ -1,0 +1,133 @@
+\hypertarget{classchardet_1_1universaldetector_1_1_universal_detector}{}\section{chardet.\+universaldetector.\+Universal\+Detector Class Reference}
+\label{classchardet_1_1universaldetector_1_1_universal_detector}\index{chardet.\+universaldetector.\+Universal\+Detector@{chardet.\+universaldetector.\+Universal\+Detector}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchardet_1_1universaldetector_1_1_universal_detector_a719a60d7ad9353b87154661d0c774119}\label{classchardet_1_1universaldetector_1_1_universal_detector_a719a60d7ad9353b87154661d0c774119}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, lang\+\_\+filter=Language\+Filter.\+A\+LL)
+\item 
+def \hyperlink{classchardet_1_1universaldetector_1_1_universal_detector_acb3d3ab019d663f32a612df4752b315d}{reset} (self)
+\item 
+def \hyperlink{classchardet_1_1universaldetector_1_1_universal_detector_a2d4e353e650db43bce8689fbb18464c5}{feed} (self, byte\+\_\+str)
+\item 
+def \hyperlink{classchardet_1_1universaldetector_1_1_universal_detector_ad90ae39690b24a154988a1dfacee0bf8}{close} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchardet_1_1universaldetector_1_1_universal_detector_af574226a668da064ee0cf231b9fd6ed3}\label{classchardet_1_1universaldetector_1_1_universal_detector_af574226a668da064ee0cf231b9fd6ed3}} 
+{\bfseries result}
+\item 
+\mbox{\Hypertarget{classchardet_1_1universaldetector_1_1_universal_detector_ada751a7fea51c68f050b6b925bf3bda1}\label{classchardet_1_1universaldetector_1_1_universal_detector_ada751a7fea51c68f050b6b925bf3bda1}} 
+{\bfseries done}
+\item 
+\mbox{\Hypertarget{classchardet_1_1universaldetector_1_1_universal_detector_a97169b50225e4141e6c32a9ea7d70eb0}\label{classchardet_1_1universaldetector_1_1_universal_detector_a97169b50225e4141e6c32a9ea7d70eb0}} 
+{\bfseries lang\+\_\+filter}
+\item 
+\mbox{\Hypertarget{classchardet_1_1universaldetector_1_1_universal_detector_a3e018d972dafcfe82ddd3c8c891eea77}\label{classchardet_1_1universaldetector_1_1_universal_detector_a3e018d972dafcfe82ddd3c8c891eea77}} 
+{\bfseries logger}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchardet_1_1universaldetector_1_1_universal_detector_a5d8319314b61ff7dbf18a3264e07b170}\label{classchardet_1_1universaldetector_1_1_universal_detector_a5d8319314b61ff7dbf18a3264e07b170}} 
+float {\bfseries M\+I\+N\+I\+M\+U\+M\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD} = 0.\+20
+\item 
+\mbox{\Hypertarget{classchardet_1_1universaldetector_1_1_universal_detector_afab402b836d993f85a0859cf2fa7865a}\label{classchardet_1_1universaldetector_1_1_universal_detector_afab402b836d993f85a0859cf2fa7865a}} 
+{\bfseries H\+I\+G\+H\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+E\+T\+E\+C\+T\+OR} = re.\+compile(b\textquotesingle{}\mbox{[}\textbackslash{}x80-\/\textbackslash{}x\+FF\mbox{]}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classchardet_1_1universaldetector_1_1_universal_detector_a0c20dd687b375833228853d93cb190d7}\label{classchardet_1_1universaldetector_1_1_universal_detector_a0c20dd687b375833228853d93cb190d7}} 
+{\bfseries E\+S\+C\+\_\+\+D\+E\+T\+E\+C\+T\+OR} = re.\+compile(b\textquotesingle{}(\textbackslash{}033$\vert$$\sim$\{)\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classchardet_1_1universaldetector_1_1_universal_detector_a96ace3fd0ad44466ed2418d22048bc3f}\label{classchardet_1_1universaldetector_1_1_universal_detector_a96ace3fd0ad44466ed2418d22048bc3f}} 
+{\bfseries W\+I\+N\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+E\+T\+E\+C\+T\+OR} = re.\+compile(b\textquotesingle{}\mbox{[}\textbackslash{}x80-\/\textbackslash{}x9F\mbox{]}\textquotesingle{})
+\item 
+dictionary {\bfseries I\+S\+O\+\_\+\+W\+I\+N\+\_\+\+M\+AP}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}The ``UniversalDetector`` class underlies the ``chardet.detect`` function
+and coordinates all of the different charset probers.
+
+To get a ``dict`` containing an encoding and its confidence, you can simply
+run:
+
+.. code::
+
+        u = UniversalDetector()
+        u.feed(some_bytes)
+        u.close()
+        detected = u.result\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classchardet_1_1universaldetector_1_1_universal_detector_ad90ae39690b24a154988a1dfacee0bf8}\label{classchardet_1_1universaldetector_1_1_universal_detector_ad90ae39690b24a154988a1dfacee0bf8}} 
+\index{chardet\+::universaldetector\+::\+Universal\+Detector@{chardet\+::universaldetector\+::\+Universal\+Detector}!close@{close}}
+\index{close@{close}!chardet\+::universaldetector\+::\+Universal\+Detector@{chardet\+::universaldetector\+::\+Universal\+Detector}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily def chardet.\+universaldetector.\+Universal\+Detector.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Stop analyzing the current document and come up with a final
+prediction.
+
+:returns:  The ``result`` attribute, a ``dict`` with the keys
+   `encoding`, `confidence`, and `language`.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classchardet_1_1universaldetector_1_1_universal_detector_a2d4e353e650db43bce8689fbb18464c5}\label{classchardet_1_1universaldetector_1_1_universal_detector_a2d4e353e650db43bce8689fbb18464c5}} 
+\index{chardet\+::universaldetector\+::\+Universal\+Detector@{chardet\+::universaldetector\+::\+Universal\+Detector}!feed@{feed}}
+\index{feed@{feed}!chardet\+::universaldetector\+::\+Universal\+Detector@{chardet\+::universaldetector\+::\+Universal\+Detector}}
+\subsubsection{\texorpdfstring{feed()}{feed()}}
+{\footnotesize\ttfamily def chardet.\+universaldetector.\+Universal\+Detector.\+feed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{byte\+\_\+str }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Takes a chunk of a document and feeds it through all of the relevant
+charset probers.
+
+After calling ``feed``, you can check the value of the ``done``
+attribute to see if you need to continue feeding the
+``UniversalDetector`` more data, or if it has made a prediction
+(in the ``result`` attribute).
+
+.. note::
+   You should always call ``close`` when you're done feeding in your
+   document if ``done`` is not already ``True``.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classchardet_1_1universaldetector_1_1_universal_detector_acb3d3ab019d663f32a612df4752b315d}\label{classchardet_1_1universaldetector_1_1_universal_detector_acb3d3ab019d663f32a612df4752b315d}} 
+\index{chardet\+::universaldetector\+::\+Universal\+Detector@{chardet\+::universaldetector\+::\+Universal\+Detector}!reset@{reset}}
+\index{reset@{reset}!chardet\+::universaldetector\+::\+Universal\+Detector@{chardet\+::universaldetector\+::\+Universal\+Detector}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def chardet.\+universaldetector.\+Universal\+Detector.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reset the UniversalDetector and all of its probers back to their
+initial states.  This is called by ``__init__``, so you only need to
+call this directly in between analyses of different documents.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classchardet_1_1universaldetector_1_1_universal_detector_aff957588843f12058233c7277021472b}\label{classchardet_1_1universaldetector_1_1_universal_detector_aff957588843f12058233c7277021472b}} 
+\index{chardet\+::universaldetector\+::\+Universal\+Detector@{chardet\+::universaldetector\+::\+Universal\+Detector}!I\+S\+O\+\_\+\+W\+I\+N\+\_\+\+M\+AP@{I\+S\+O\+\_\+\+W\+I\+N\+\_\+\+M\+AP}}
+\index{I\+S\+O\+\_\+\+W\+I\+N\+\_\+\+M\+AP@{I\+S\+O\+\_\+\+W\+I\+N\+\_\+\+M\+AP}!chardet\+::universaldetector\+::\+Universal\+Detector@{chardet\+::universaldetector\+::\+Universal\+Detector}}
+\subsubsection{\texorpdfstring{I\+S\+O\+\_\+\+W\+I\+N\+\_\+\+M\+AP}{ISO\_WIN\_MAP}}
+{\footnotesize\ttfamily dictionary chardet.\+universaldetector.\+Universal\+Detector.\+I\+S\+O\+\_\+\+W\+I\+N\+\_\+\+M\+AP\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \{\textcolor{stringliteral}{'iso-8859-1'}: \textcolor{stringliteral}{'Windows-1252'},
+                   \textcolor{stringliteral}{'iso-8859-2'}: \textcolor{stringliteral}{'Windows-1250'},
+                   \textcolor{stringliteral}{'iso-8859-5'}: \textcolor{stringliteral}{'Windows-1251'},
+                   \textcolor{stringliteral}{'iso-8859-6'}: \textcolor{stringliteral}{'Windows-1256'},
+                   \textcolor{stringliteral}{'iso-8859-7'}: \textcolor{stringliteral}{'Windows-1253'},
+                   \textcolor{stringliteral}{'iso-8859-8'}: \textcolor{stringliteral}{'Windows-1255'},
+                   \textcolor{stringliteral}{'iso-8859-9'}: \textcolor{stringliteral}{'Windows-1254'},
+                   \textcolor{stringliteral}{'iso-8859-13'}: \textcolor{stringliteral}{'Windows-1257'}\}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/chardet/universaldetector.\+py\end{DoxyCompactItemize}

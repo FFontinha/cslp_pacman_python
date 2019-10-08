@@ -1,0 +1,85 @@
+\hypertarget{namespace__pytest_1_1logging}{}\section{\+\_\+pytest.\+logging Namespace Reference}
+\label{namespace__pytest_1_1logging}\index{\+\_\+pytest.\+logging@{\+\_\+pytest.\+logging}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class__pytest_1_1logging_1_1___live_logging_stream_handler}{\+\_\+\+Live\+Logging\+Stream\+Handler}
+\item 
+class \hyperlink{class__pytest_1_1logging_1_1_colored_level_formatter}{Colored\+Level\+Formatter}
+\item 
+class \hyperlink{class__pytest_1_1logging_1_1_log_capture_fixture}{Log\+Capture\+Fixture}
+\item 
+class \hyperlink{class__pytest_1_1logging_1_1_log_capture_handler}{Log\+Capture\+Handler}
+\item 
+class \hyperlink{class__pytest_1_1logging_1_1_logging_plugin}{Logging\+Plugin}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1logging_a7f41502188bd4699578cc927ecfdd2bf}\label{namespace__pytest_1_1logging_a7f41502188bd4699578cc927ecfdd2bf}} 
+def {\bfseries get\+\_\+option\+\_\+ini} (config, names)
+\item 
+def \hyperlink{namespace__pytest_1_1logging_a7d11ed285b6542e63c42b1f27b49cefa}{pytest\+\_\+addoption} (parser)
+\item 
+def \hyperlink{namespace__pytest_1_1logging_af77c0229b1968dd8184ddb02082c9196}{catching\+\_\+logs} (handler, formatter=None, level=None)
+\item 
+def \hyperlink{namespace__pytest_1_1logging_ac711b2668a331a9ba457cb6ad56bda10}{caplog} (request)
+\item 
+def \hyperlink{namespace__pytest_1_1logging_a62922e3596d372c67b2278069d76b38c}{get\+\_\+actual\+\_\+log\+\_\+level} (config, setting\+\_\+names)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1logging_a671480ea5d1e4e78519d1f3086beb20f}\label{namespace__pytest_1_1logging_a671480ea5d1e4e78519d1f3086beb20f}} 
+def {\bfseries pytest\+\_\+configure} (config)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1logging_aac22081f033cb036baa5b9c8bf73c00b}\label{namespace__pytest_1_1logging_aac22081f033cb036baa5b9c8bf73c00b}} 
+string {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+O\+G\+\_\+\+F\+O\+R\+M\+AT} = \char`\"{}\%(filename)-\/25s \%(lineno)4d \%(levelname)-\/8s \%(message)s\char`\"{}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1logging_ab85524567b9f6a4cb5ff485a431b896c}\label{namespace__pytest_1_1logging_ab85524567b9f6a4cb5ff485a431b896c}} 
+string {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+O\+G\+\_\+\+D\+A\+T\+E\+\_\+\+F\+O\+R\+M\+AT} = \char`\"{}\%H\+:\%M\+:\%S\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Access and control log capturing. \end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1logging_ac711b2668a331a9ba457cb6ad56bda10}\label{namespace__pytest_1_1logging_ac711b2668a331a9ba457cb6ad56bda10}} 
+\index{\+\_\+pytest\+::logging@{\+\_\+pytest\+::logging}!caplog@{caplog}}
+\index{caplog@{caplog}!\+\_\+pytest\+::logging@{\+\_\+pytest\+::logging}}
+\subsubsection{\texorpdfstring{caplog()}{caplog()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+logging.\+caplog (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Access and control log capturing.
+
+Captured logs are available through the following methods::
+
+* caplog.text            -> string containing formatted log output
+* caplog.records         -> list of logging.LogRecord instances
+* caplog.record_tuples   -> list of (logger_name, level, message) tuples
+* caplog.clear()         -> clear captured records and formatted log output string
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1logging_af77c0229b1968dd8184ddb02082c9196}\label{namespace__pytest_1_1logging_af77c0229b1968dd8184ddb02082c9196}} 
+\index{\+\_\+pytest\+::logging@{\+\_\+pytest\+::logging}!catching\+\_\+logs@{catching\+\_\+logs}}
+\index{catching\+\_\+logs@{catching\+\_\+logs}!\+\_\+pytest\+::logging@{\+\_\+pytest\+::logging}}
+\subsubsection{\texorpdfstring{catching\+\_\+logs()}{catching\_logs()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+logging.\+catching\+\_\+logs (\begin{DoxyParamCaption}\item[{}]{handler,  }\item[{}]{formatter = {\ttfamily None},  }\item[{}]{level = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Context manager that prepares the whole logging machinery properly.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1logging_a62922e3596d372c67b2278069d76b38c}\label{namespace__pytest_1_1logging_a62922e3596d372c67b2278069d76b38c}} 
+\index{\+\_\+pytest\+::logging@{\+\_\+pytest\+::logging}!get\+\_\+actual\+\_\+log\+\_\+level@{get\+\_\+actual\+\_\+log\+\_\+level}}
+\index{get\+\_\+actual\+\_\+log\+\_\+level@{get\+\_\+actual\+\_\+log\+\_\+level}!\+\_\+pytest\+::logging@{\+\_\+pytest\+::logging}}
+\subsubsection{\texorpdfstring{get\+\_\+actual\+\_\+log\+\_\+level()}{get\_actual\_log\_level()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+logging.\+get\+\_\+actual\+\_\+log\+\_\+level (\begin{DoxyParamCaption}\item[{}]{config,  }\item[{}]{setting\+\_\+names }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the actual logging level.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1logging_a7d11ed285b6542e63c42b1f27b49cefa}\label{namespace__pytest_1_1logging_a7d11ed285b6542e63c42b1f27b49cefa}} 
+\index{\+\_\+pytest\+::logging@{\+\_\+pytest\+::logging}!pytest\+\_\+addoption@{pytest\+\_\+addoption}}
+\index{pytest\+\_\+addoption@{pytest\+\_\+addoption}!\+\_\+pytest\+::logging@{\+\_\+pytest\+::logging}}
+\subsubsection{\texorpdfstring{pytest\+\_\+addoption()}{pytest\_addoption()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+logging.\+pytest\+\_\+addoption (\begin{DoxyParamCaption}\item[{}]{parser }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add options to control log capturing.\end{DoxyVerb}
+ 

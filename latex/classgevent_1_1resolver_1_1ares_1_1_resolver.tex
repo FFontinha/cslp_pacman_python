@@ -1,0 +1,104 @@
+\hypertarget{classgevent_1_1resolver_1_1ares_1_1_resolver}{}\section{gevent.\+resolver.\+ares.\+Resolver Class Reference}
+\label{classgevent_1_1resolver_1_1ares_1_1_resolver}\index{gevent.\+resolver.\+ares.\+Resolver@{gevent.\+resolver.\+ares.\+Resolver}}
+
+
+Inherits Abstract\+Resolver.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1ares_1_1_resolver_a5814af380aeefe99e37768044dafb822}\label{classgevent_1_1resolver_1_1ares_1_1_resolver_a5814af380aeefe99e37768044dafb822}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, hub=None, use\+\_\+environ=True, kwargs)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1ares_1_1_resolver_a944bb5494f42b7799e8e90f06e6e7d36}\label{classgevent_1_1resolver_1_1ares_1_1_resolver_a944bb5494f42b7799e8e90f06e6e7d36}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1ares_1_1_resolver_a2bf4f4e89a326f56544b2739b8b40177}\label{classgevent_1_1resolver_1_1ares_1_1_resolver_a2bf4f4e89a326f56544b2739b8b40177}} 
+def {\bfseries close} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1ares_1_1_resolver_a58b0670af1981218c7c50ceb3e25af63}\label{classgevent_1_1resolver_1_1ares_1_1_resolver_a58b0670af1981218c7c50ceb3e25af63}} 
+def {\bfseries gethostbyname} (self, hostname, family=A\+F\+\_\+\+I\+N\+ET)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1ares_1_1_resolver_a1317415ae97b62cc3655fbb2a0693e4c}\label{classgevent_1_1resolver_1_1ares_1_1_resolver_a1317415ae97b62cc3655fbb2a0693e4c}} 
+def {\bfseries gethostbyname\+\_\+ex} (self, hostname, family=A\+F\+\_\+\+I\+N\+ET)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1ares_1_1_resolver_ae723587e02c6d10d5ad9451640845073}\label{classgevent_1_1resolver_1_1ares_1_1_resolver_ae723587e02c6d10d5ad9451640845073}} 
+def {\bfseries getaddrinfo} (self, host, port, family=0, socktype=0, proto=0, flags=0)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1ares_1_1_resolver_a78af6231bb6660526ac82d978e09db69}\label{classgevent_1_1resolver_1_1ares_1_1_resolver_a78af6231bb6660526ac82d978e09db69}} 
+def {\bfseries gethostbyaddr} (self, ip\+\_\+address)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1ares_1_1_resolver_ab02e6a425119b37de86876e95356efa2}\label{classgevent_1_1resolver_1_1ares_1_1_resolver_ab02e6a425119b37de86876e95356efa2}} 
+def {\bfseries getnameinfo} (self, sockaddr, flags)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1ares_1_1_resolver_ad1cc803916f6ca279b8c6bdd43d9f387}\label{classgevent_1_1resolver_1_1ares_1_1_resolver_ad1cc803916f6ca279b8c6bdd43d9f387}} 
+{\bfseries hub}
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1ares_1_1_resolver_adf0fd2700dcf2298cf60276bf8f27363}\label{classgevent_1_1resolver_1_1ares_1_1_resolver_adf0fd2700dcf2298cf60276bf8f27363}} 
+{\bfseries ares}
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1ares_1_1_resolver_a61b0404a64f5d6fc54d0387475f251ce}\label{classgevent_1_1resolver_1_1ares_1_1_resolver_a61b0404a64f5d6fc54d0387475f251ce}} 
+{\bfseries pid}
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1ares_1_1_resolver_ad1c5bcbad86b72b6887122fc35285de4}\label{classgevent_1_1resolver_1_1ares_1_1_resolver_ad1c5bcbad86b72b6887122fc35285de4}} 
+{\bfseries params}
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1ares_1_1_resolver_a68e667cbe3a91d069156c49f2297265a}\label{classgevent_1_1resolver_1_1ares_1_1_resolver_a68e667cbe3a91d069156c49f2297265a}} 
+{\bfseries fork\+\_\+watcher}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1ares_1_1_resolver_a39d87f85bd828464642757cd6503d5e4}\label{classgevent_1_1resolver_1_1ares_1_1_resolver_a39d87f85bd828464642757cd6503d5e4}} 
+{\bfseries ares\+\_\+class} = channel
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Implementation of the resolver API using the `c-ares`_ library.
+
+This implementation uses the c-ares library to handle name
+resolution. c-ares is natively asynchronous at the socket level
+and so integrates well into gevent's event loop.
+
+In comparison to :class:`gevent.resolver_thread.Resolver` (which
+delegates to the native system resolver), the implementation is
+much more complex. In addition, there have been reports of it not
+properly honoring certain system configurations (for example, the
+order in which IPv4 and IPv6 results are returned may not match
+the threaded resolver). However, because it does not use threads,
+it may scale better for applications that make many lookups.
+
+There are some known differences from the system resolver:
+
+- ``gethostbyname_ex`` and ``gethostbyaddr`` may return different
+  for the ``aliaslist`` tuple member. (Sometimes the same,
+  sometimes in a different order, sometimes a different alias
+  altogether.)
+- ``gethostbyname_ex`` may return the ``ipaddrlist`` in a different order.
+- ``getaddrinfo`` does not return ``SOCK_RAW`` results.
+- ``getaddrinfo`` may return results in a different order.
+- Handling of ``.local`` (mDNS) names may be different, even if they are listed in
+  the hosts file.
+- c-ares will not resolve ``broadcasthost``, even if listed in the hosts file.
+- This implementation may raise ``gaierror(4)`` where the system implementation would raise
+  ``herror(1)``.
+- The results for ``localhost`` may be different. In particular, some system
+  resolvers will return more results from ``getaddrinfo`` than c-ares does,
+  such as SOCK_DGRAM results, and c-ares may report more ips on a multi-homed
+  host.
+
+.. caution:: This module is considered extremely experimental on PyPy, and
+   due to its implementation in cython, it may be slower. It may also lead to
+   interpreter crashes.
+
+.. _c-ares: http://c-ares.haxx.se
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/resolver/ares.\+py\end{DoxyCompactItemize}

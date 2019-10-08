@@ -1,0 +1,38 @@
+\hypertarget{class__pytest_1_1mark_1_1structures_1_1_parameter_set}{}\section{\+\_\+pytest.\+mark.\+structures.\+Parameter\+Set Class Reference}
+\label{class__pytest_1_1mark_1_1structures_1_1_parameter_set}\index{\+\_\+pytest.\+mark.\+structures.\+Parameter\+Set@{\+\_\+pytest.\+mark.\+structures.\+Parameter\+Set}}
+
+
+Inherits namedtuple, values, marks, and id.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1mark_1_1structures_1_1_parameter_set_a044700232186fc4308654212e6327ad0}\label{class__pytest_1_1mark_1_1structures_1_1_parameter_set_a044700232186fc4308654212e6327ad0}} 
+def {\bfseries param} (cls, values, kw)
+\item 
+def \hyperlink{class__pytest_1_1mark_1_1structures_1_1_parameter_set_a31b83e11dbd42616b85f580dbde7f63b}{extract\+\_\+from} (cls, parameterset, belonging\+\_\+definition, legacy\+\_\+force\+\_\+tuple=False)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1mark_1_1structures_1_1_parameter_set_a31b83e11dbd42616b85f580dbde7f63b}\label{class__pytest_1_1mark_1_1structures_1_1_parameter_set_a31b83e11dbd42616b85f580dbde7f63b}} 
+\index{\+\_\+pytest\+::mark\+::structures\+::\+Parameter\+Set@{\+\_\+pytest\+::mark\+::structures\+::\+Parameter\+Set}!extract\+\_\+from@{extract\+\_\+from}}
+\index{extract\+\_\+from@{extract\+\_\+from}!\+\_\+pytest\+::mark\+::structures\+::\+Parameter\+Set@{\+\_\+pytest\+::mark\+::structures\+::\+Parameter\+Set}}
+\subsubsection{\texorpdfstring{extract\+\_\+from()}{extract\_from()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+mark.\+structures.\+Parameter\+Set.\+extract\+\_\+from (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{parameterset,  }\item[{}]{belonging\+\_\+definition,  }\item[{}]{legacy\+\_\+force\+\_\+tuple = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param parameterset:
+    a legacy style parameterset that may or may not be a tuple,
+    and may or may not be wrapped into a mess of mark objects
+
+:param legacy_force_tuple:
+    enforce tuple wrapping so single argument tuple values
+    don't get decomposed and break tests
+
+:param belonging_definition: the item that we will be extracting the parameters from.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/mark/structures.\+py\end{DoxyCompactItemize}

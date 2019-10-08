@@ -1,0 +1,310 @@
+\hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner}{}\section{pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner Namespace Reference}
+\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner}\index{pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner@{pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a77615b2c28ce697aa0e000a429ae03bb}{prepare\+\_\+test\+\_\+env} ()
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a8c554f36538099d997613efb39719e85}{exclude\+\_\+callback} (option, opt, value, parser)
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_ad000b73bd906940716d33735bdbad726}{combine\+\_\+results} (all\+\_\+results, t)
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a331b1fbb8ee9c161c08e0b455d122281}{get\+\_\+test\+\_\+results} (raw\+\_\+return)
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a0179af2728831a06f9f56da5723d7d02}{run\+\_\+test} (module, \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_aace67231de4b84a3b92334013269c6d2}{incomplete}=False, \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_ae8b8a8972b418fd0df5e91433bbef20b}{nosubprocess}=False, \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a84c34040546c62967b1fb2f26ebb78c2}{randomize}=False, \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a816e2393565b0aed1ad014591e5476d9}{exclude}=(\textquotesingle{}interactive\textquotesingle{},), \hyperlink{structbuffer}{buffer}=True)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a5b509e61959e6f1e41eeaae3237eb38a}{pkg\+\_\+dir} = os.\+path.\+split(os.\+path.\+split(os.\+path.\+abspath(\+\_\+\+\_\+file\+\_\+\+\_\+))\mbox{[}0\mbox{]})\mbox{[}0\mbox{]}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a4d3b7bfa03e6d642e73066cf08ae06e4}{parent\+\_\+dir}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_abf407e1f208c78677da60579f93abdbc}{pkg\+\_\+name}
+\item 
+tuple \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a35486a5db8f927155a3f2f949770e3d2}{is\+\_\+pygame\+\_\+pkg}
+\item 
+string \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a9413763242a446828295d1faff4f1602}{T\+A\+G\+\_\+\+P\+AT} = r\textquotesingle{}-\/?\mbox{[}a-\/zA-\/Z0-\/9\+\_\+\mbox{]}+\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Set the command line options. \end{DoxyCompactList}\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a44e3dd025592f6dee2b1d7becec61b17}{T\+A\+G\+\_\+\+RE} = re.\+compile(\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a9413763242a446828295d1faff4f1602}{T\+A\+G\+\_\+\+P\+AT})
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_ae4cb50fa276c5b0754a1187b9423b1dd}{E\+X\+C\+L\+U\+D\+E\+\_\+\+RE} = re.\+compile(\char`\"{}(\%s,?\textbackslash{}s$\ast$)+\$\char`\"{} \% (T\+A\+G\+\_\+\+P\+AT,))
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a0d72027203a14cf52d4f1687b8258f8e}{opt\+\_\+parser} = optparse.\+Option\+Parser()
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a525d5f7609073d69eb8b118e095fb5fd}{action}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_af12ce7b66e46019930502d3921ec7df4}{help}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a9df93b0979dda9fa7f42abaa9e2052f4}{type}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a881a3e9905ba2f13c5bf52a7d1336e20}{callback}
+\item 
+int \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_ae0aa2beb01951d6be214be077e21828b}{T\+I\+M\+E\+\_\+\+O\+UT} = 30
+\begin{DoxyCompactList}\small\item\em If an xxxx\+\_\+test.\+py takes longer than T\+I\+M\+E\+\_\+\+O\+UT seconds it will be killed This is only the default, can be over-\/ridden on command line. \end{DoxyCompactList}\item 
+string \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a7616f338f52ad3c9287a2fdfb259656d}{C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+\+T\+E\+M\+P\+L\+A\+TE}
+\begin{DoxyCompactList}\small\item\em Human readable output. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_add422730327ec974fc90e5a95401edb3}{R\+A\+N\+\_\+\+T\+E\+S\+T\+S\+\_\+\+D\+IV} = (70 $\ast$ \char`\"{}-\/\char`\"{}) + \char`\"{}\textbackslash{}n\+Ran\char`\"{}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_aae16f893e418cffca9c38850c877e0fe}{D\+O\+TS} = re.\+compile(\char`\"{}$^\wedge$(\mbox{[}F\+E.\mbox{]}$\ast$)\$\char`\"{}, re.\+M\+U\+L\+T\+I\+L\+I\+NE)
+\item 
+string \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a686d6f06078c62dfaaf43b182ebae734}{T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+S\+T\+A\+RT} = \char`\"{}$<$-\/-\/!! T\+E\+ST R\+E\+S\+U\+L\+TS S\+T\+A\+RT H\+E\+RE !!-\/-\/$>$\char`\"{}
+\item 
+string \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a57320713144abd91d672d83829eed7ef}{T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+E\+ND} = \char`\"{}$<$-\/-\/!! T\+E\+ST R\+E\+S\+U\+L\+TS E\+ND H\+E\+RE !!-\/-\/$>$\char`\"{}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a6e2c85b5f83f0dc7f28f67283a902448}{T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+RE} = re.\+compile(\+\_\+test\+\_\+re\+\_\+str, re.\+D\+O\+T\+A\+LL $\vert$ re.\+M)
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a586fba3f729e0e91f5e0530cf97cd858}{options}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_ad21d8227cd00eebc517b96434e7300a7}{args}
+\item 
+string \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a812a9e61da58e21d3084fe14c126a5b1}{run\+\_\+from} = \textquotesingle{}pygame.\+tests.\+go\textquotesingle{}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_aace67231de4b84a3b92334013269c6d2}{incomplete}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_ae8b8a8972b418fd0df5e91433bbef20b}{nosubprocess}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a84c34040546c62967b1fb2f26ebb78c2}{randomize}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a816e2393565b0aed1ad014591e5476d9}{exclude}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a71f20b66bf26ab22135148a6fc3fba3b}{buffer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_ad000b73bd906940716d33735bdbad726}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_ad000b73bd906940716d33735bdbad726}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!combine\+\_\+results@{combine\+\_\+results}}
+\index{combine\+\_\+results@{combine\+\_\+results}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{combine\+\_\+results()}{combine\_results()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+combine\+\_\+results (\begin{DoxyParamCaption}\item[{}]{all\+\_\+results,  }\item[{}]{t }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return pieced together results in a form fit for human consumption. Don't
+rely on results if  piecing together subprocessed  results (single process
+mode is fine). Was originally meant for that  purpose but was found to be
+unreliable.  See the dump option for reliable results.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a8c554f36538099d997613efb39719e85}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a8c554f36538099d997613efb39719e85}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!exclude\+\_\+callback@{exclude\+\_\+callback}}
+\index{exclude\+\_\+callback@{exclude\+\_\+callback}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{exclude\+\_\+callback()}{exclude\_callback()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+exclude\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{option,  }\item[{}]{opt,  }\item[{}]{value,  }\item[{}]{parser }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a331b1fbb8ee9c161c08e0b455d122281}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a331b1fbb8ee9c161c08e0b455d122281}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!get\+\_\+test\+\_\+results@{get\+\_\+test\+\_\+results}}
+\index{get\+\_\+test\+\_\+results@{get\+\_\+test\+\_\+results}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{get\+\_\+test\+\_\+results()}{get\_test\_results()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+get\+\_\+test\+\_\+results (\begin{DoxyParamCaption}\item[{}]{raw\+\_\+return }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a77615b2c28ce697aa0e000a429ae03bb}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a77615b2c28ce697aa0e000a429ae03bb}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!prepare\+\_\+test\+\_\+env@{prepare\+\_\+test\+\_\+env}}
+\index{prepare\+\_\+test\+\_\+env@{prepare\+\_\+test\+\_\+env}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{prepare\+\_\+test\+\_\+env()}{prepare\_test\_env()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+prepare\+\_\+test\+\_\+env (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a0179af2728831a06f9f56da5723d7d02}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a0179af2728831a06f9f56da5723d7d02}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!run\+\_\+test@{run\+\_\+test}}
+\index{run\+\_\+test@{run\+\_\+test}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{run\+\_\+test()}{run\_test()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+run\+\_\+test (\begin{DoxyParamCaption}\item[{}]{module,  }\item[{}]{incomplete = {\ttfamily False},  }\item[{}]{nosubprocess = {\ttfamily False},  }\item[{}]{randomize = {\ttfamily False},  }\item[{}]{exclude = {\ttfamily (\textquotesingle{}interactive\textquotesingle{},)},  }\item[{}]{buffer = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run a unit test module
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a525d5f7609073d69eb8b118e095fb5fd}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a525d5f7609073d69eb8b118e095fb5fd}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!action@{action}}
+\index{action@{action}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+action}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_ad21d8227cd00eebc517b96434e7300a7}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_ad21d8227cd00eebc517b96434e7300a7}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!args@{args}}
+\index{args@{args}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+args}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a71f20b66bf26ab22135148a6fc3fba3b}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a71f20b66bf26ab22135148a6fc3fba3b}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!buffer@{buffer}}
+\index{buffer@{buffer}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+buffer}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a881a3e9905ba2f13c5bf52a7d1336e20}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a881a3e9905ba2f13c5bf52a7d1336e20}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!callback@{callback}}
+\index{callback@{callback}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{callback}{callback}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+callback}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a7616f338f52ad3c9287a2fdfb259656d}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a7616f338f52ad3c9287a2fdfb259656d}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+\+T\+E\+M\+P\+L\+A\+TE@{C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+\+T\+E\+M\+P\+L\+A\+TE}}
+\index{C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+\+T\+E\+M\+P\+L\+A\+TE@{C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+\+T\+E\+M\+P\+L\+A\+TE}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+\+T\+E\+M\+P\+L\+A\+TE}{COMPLETE\_FAILURE\_TEMPLATE}}
+{\footnotesize\ttfamily string pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+\+T\+E\+M\+P\+L\+A\+TE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  \textcolor{stringliteral}{"""}
+2 \textcolor{stringliteral}{======================================================================}
+3 \textcolor{stringliteral}{ERROR: all\_tests\_for (%(module)s.AllTestCases)}
+4 \textcolor{stringliteral}{----------------------------------------------------------------------}
+5 \textcolor{stringliteral}{Traceback (most recent call last):}
+6 \textcolor{stringliteral}{  File "test/%(module)s.py", line 1, in all\_tests\_for}
+7 \textcolor{stringliteral}{subprocess completely failed with return code of %(return\_code)s}
+8 \textcolor{stringliteral}{cmd:          %(cmd)s}
+9 \textcolor{stringliteral}{test\_env:     %(test\_env)s}
+10 \textcolor{stringliteral}{working\_dir:  %(working\_dir)s}
+11 \textcolor{stringliteral}{return (first 10 and last 10 lines):}
+12 \textcolor{stringliteral}{%(raw\_return)s}
+13 \textcolor{stringliteral}{}
+14 \textcolor{stringliteral}{"""}
+\end{DoxyCode}
+
+
+Human readable output. 
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_aae16f893e418cffca9c38850c877e0fe}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_aae16f893e418cffca9c38850c877e0fe}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!D\+O\+TS@{D\+O\+TS}}
+\index{D\+O\+TS@{D\+O\+TS}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{D\+O\+TS}{DOTS}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+D\+O\+TS = re.\+compile(\char`\"{}$^\wedge$(\mbox{[}F\+E.\mbox{]}$\ast$)\$\char`\"{}, re.\+M\+U\+L\+T\+I\+L\+I\+NE)}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a816e2393565b0aed1ad014591e5476d9}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a816e2393565b0aed1ad014591e5476d9}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!exclude@{exclude}}
+\index{exclude@{exclude}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{exclude}{exclude}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+exclude}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_ae4cb50fa276c5b0754a1187b9423b1dd}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_ae4cb50fa276c5b0754a1187b9423b1dd}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!E\+X\+C\+L\+U\+D\+E\+\_\+\+RE@{E\+X\+C\+L\+U\+D\+E\+\_\+\+RE}}
+\index{E\+X\+C\+L\+U\+D\+E\+\_\+\+RE@{E\+X\+C\+L\+U\+D\+E\+\_\+\+RE}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{E\+X\+C\+L\+U\+D\+E\+\_\+\+RE}{EXCLUDE\_RE}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+E\+X\+C\+L\+U\+D\+E\+\_\+\+RE = re.\+compile(\char`\"{}(\%s,?\textbackslash{}s$\ast$)+\$\char`\"{} \% (T\+A\+G\+\_\+\+P\+AT,))}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_af12ce7b66e46019930502d3921ec7df4}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_af12ce7b66e46019930502d3921ec7df4}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!help@{help}}
+\index{help@{help}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+help}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_aace67231de4b84a3b92334013269c6d2}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_aace67231de4b84a3b92334013269c6d2}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!incomplete@{incomplete}}
+\index{incomplete@{incomplete}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{incomplete}{incomplete}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+incomplete}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a35486a5db8f927155a3f2f949770e3d2}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a35486a5db8f927155a3f2f949770e3d2}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!is\+\_\+pygame\+\_\+pkg@{is\+\_\+pygame\+\_\+pkg}}
+\index{is\+\_\+pygame\+\_\+pkg@{is\+\_\+pygame\+\_\+pkg}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{is\+\_\+pygame\+\_\+pkg}{is\_pygame\_pkg}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+is\+\_\+pygame\+\_\+pkg}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (pkg\_name == \textcolor{stringliteral}{'tests'} \textcolor{keywordflow}{and}
+2                      os.path.split(parent\_dir)[1] == \textcolor{stringliteral}{'pygame'})
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_ae8b8a8972b418fd0df5e91433bbef20b}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_ae8b8a8972b418fd0df5e91433bbef20b}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!nosubprocess@{nosubprocess}}
+\index{nosubprocess@{nosubprocess}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{nosubprocess}{nosubprocess}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+nosubprocess}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a0d72027203a14cf52d4f1687b8258f8e}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a0d72027203a14cf52d4f1687b8258f8e}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!opt\+\_\+parser@{opt\+\_\+parser}}
+\index{opt\+\_\+parser@{opt\+\_\+parser}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{opt\+\_\+parser}{opt\_parser}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+opt\+\_\+parser = optparse.\+Option\+Parser()}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a586fba3f729e0e91f5e0530cf97cd858}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a586fba3f729e0e91f5e0530cf97cd858}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!options@{options}}
+\index{options@{options}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{options}{options}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+options}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a4d3b7bfa03e6d642e73066cf08ae06e4}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a4d3b7bfa03e6d642e73066cf08ae06e4}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!parent\+\_\+dir@{parent\+\_\+dir}}
+\index{parent\+\_\+dir@{parent\+\_\+dir}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{parent\+\_\+dir}{parent\_dir}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+parent\+\_\+dir}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a5b509e61959e6f1e41eeaae3237eb38a}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a5b509e61959e6f1e41eeaae3237eb38a}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!pkg\+\_\+dir@{pkg\+\_\+dir}}
+\index{pkg\+\_\+dir@{pkg\+\_\+dir}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{pkg\+\_\+dir}{pkg\_dir}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+pkg\+\_\+dir = os.\+path.\+split(os.\+path.\+split(os.\+path.\+abspath(\+\_\+\+\_\+file\+\_\+\+\_\+))\mbox{[}0\mbox{]})\mbox{[}0\mbox{]}}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_abf407e1f208c78677da60579f93abdbc}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_abf407e1f208c78677da60579f93abdbc}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!pkg\+\_\+name@{pkg\+\_\+name}}
+\index{pkg\+\_\+name@{pkg\+\_\+name}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{pkg\+\_\+name}{pkg\_name}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+pkg\+\_\+name}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_add422730327ec974fc90e5a95401edb3}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_add422730327ec974fc90e5a95401edb3}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!R\+A\+N\+\_\+\+T\+E\+S\+T\+S\+\_\+\+D\+IV@{R\+A\+N\+\_\+\+T\+E\+S\+T\+S\+\_\+\+D\+IV}}
+\index{R\+A\+N\+\_\+\+T\+E\+S\+T\+S\+\_\+\+D\+IV@{R\+A\+N\+\_\+\+T\+E\+S\+T\+S\+\_\+\+D\+IV}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{R\+A\+N\+\_\+\+T\+E\+S\+T\+S\+\_\+\+D\+IV}{RAN\_TESTS\_DIV}}
+{\footnotesize\ttfamily tuple pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+R\+A\+N\+\_\+\+T\+E\+S\+T\+S\+\_\+\+D\+IV = (70 $\ast$ \char`\"{}-\/\char`\"{}) + \char`\"{}\textbackslash{}n\+Ran\char`\"{}}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a84c34040546c62967b1fb2f26ebb78c2}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a84c34040546c62967b1fb2f26ebb78c2}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!randomize@{randomize}}
+\index{randomize@{randomize}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{randomize}{randomize}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+randomize}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a812a9e61da58e21d3084fe14c126a5b1}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a812a9e61da58e21d3084fe14c126a5b1}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!run\+\_\+from@{run\+\_\+from}}
+\index{run\+\_\+from@{run\+\_\+from}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{run\+\_\+from}{run\_from}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+run\+\_\+from = \textquotesingle{}pygame.\+tests.\+go\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a9413763242a446828295d1faff4f1602}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a9413763242a446828295d1faff4f1602}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!T\+A\+G\+\_\+\+P\+AT@{T\+A\+G\+\_\+\+P\+AT}}
+\index{T\+A\+G\+\_\+\+P\+AT@{T\+A\+G\+\_\+\+P\+AT}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{T\+A\+G\+\_\+\+P\+AT}{TAG\_PAT}}
+{\footnotesize\ttfamily string pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+T\+A\+G\+\_\+\+P\+AT = r\textquotesingle{}-\/?\mbox{[}a-\/zA-\/Z0-\/9\+\_\+\mbox{]}+\textquotesingle{}}
+
+
+
+Set the command line options. 
+
+options are shared with \hyperlink{run__tests_8py}{run\+\_\+tests.\+py} so make sure not to conflict in time more will be added here \mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a44e3dd025592f6dee2b1d7becec61b17}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a44e3dd025592f6dee2b1d7becec61b17}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!T\+A\+G\+\_\+\+RE@{T\+A\+G\+\_\+\+RE}}
+\index{T\+A\+G\+\_\+\+RE@{T\+A\+G\+\_\+\+RE}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{T\+A\+G\+\_\+\+RE}{TAG\_RE}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+T\+A\+G\+\_\+\+RE = re.\+compile(\hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a9413763242a446828295d1faff4f1602}{T\+A\+G\+\_\+\+P\+AT})}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a57320713144abd91d672d83829eed7ef}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a57320713144abd91d672d83829eed7ef}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+E\+ND@{T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+E\+ND}}
+\index{T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+E\+ND@{T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+E\+ND}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+E\+ND}{TEST\_RESULTS\_END}}
+{\footnotesize\ttfamily string pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+E\+ND = \char`\"{}$<$-\/-\/!! T\+E\+ST R\+E\+S\+U\+L\+TS E\+ND H\+E\+RE !!-\/-\/$>$\char`\"{}}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a6e2c85b5f83f0dc7f28f67283a902448}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a6e2c85b5f83f0dc7f28f67283a902448}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+RE@{T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+RE}}
+\index{T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+RE@{T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+RE}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+RE}{TEST\_RESULTS\_RE}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+RE = re.\+compile(\+\_\+test\+\_\+re\+\_\+str, re.\+D\+O\+T\+A\+LL $\vert$ re.\+M)}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a686d6f06078c62dfaaf43b182ebae734}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a686d6f06078c62dfaaf43b182ebae734}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+S\+T\+A\+RT@{T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+S\+T\+A\+RT}}
+\index{T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+S\+T\+A\+RT@{T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+S\+T\+A\+RT}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+S\+T\+A\+RT}{TEST\_RESULTS\_START}}
+{\footnotesize\ttfamily string pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+S\+\_\+\+S\+T\+A\+RT = \char`\"{}$<$-\/-\/!! T\+E\+ST R\+E\+S\+U\+L\+TS S\+T\+A\+RT H\+E\+RE !!-\/-\/$>$\char`\"{}}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_ae0aa2beb01951d6be214be077e21828b}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_ae0aa2beb01951d6be214be077e21828b}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!T\+I\+M\+E\+\_\+\+O\+UT@{T\+I\+M\+E\+\_\+\+O\+UT}}
+\index{T\+I\+M\+E\+\_\+\+O\+UT@{T\+I\+M\+E\+\_\+\+O\+UT}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+\_\+\+O\+UT}{TIME\_OUT}}
+{\footnotesize\ttfamily int pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+T\+I\+M\+E\+\_\+\+O\+UT = 30}
+
+
+
+If an xxxx\+\_\+test.\+py takes longer than T\+I\+M\+E\+\_\+\+O\+UT seconds it will be killed This is only the default, can be over-\/ridden on command line. 
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a9df93b0979dda9fa7f42abaa9e2052f4}\label{namespacepygame_1_1tests_1_1test__utils_1_1test__runner_a9df93b0979dda9fa7f42abaa9e2052f4}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}!type@{type}}
+\index{type@{type}!pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner@{pygame\+::tests\+::test\+\_\+utils\+::test\+\_\+runner}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily pygame.\+tests.\+test\+\_\+utils.\+test\+\_\+runner.\+type}
+

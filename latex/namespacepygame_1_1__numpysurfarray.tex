@@ -1,0 +1,349 @@
+\hypertarget{namespacepygame_1_1__numpysurfarray}{}\section{pygame.\+\_\+numpysurfarray Namespace Reference}
+\label{namespacepygame_1_1__numpysurfarray}\index{pygame.\+\_\+numpysurfarray@{pygame.\+\_\+numpysurfarray}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepygame_1_1__numpysurfarray_ae2ebe8cbfe5560d24f9951ac1b0c0de0}{blit\+\_\+array} (surface, array)
+\item 
+def \hyperlink{namespacepygame_1_1__numpysurfarray_ade6efe65656cde78cfaff828f386e34c}{make\+\_\+surface} (array)
+\item 
+def \hyperlink{namespacepygame_1_1__numpysurfarray_a607b94c627bde5d92dad78c0598e4e16}{array2d} (surface)
+\item 
+def \hyperlink{namespacepygame_1_1__numpysurfarray_aa05d0ce24145776b0f0c87acbad2d1ff}{pixels2d} (surface)
+\item 
+def \hyperlink{namespacepygame_1_1__numpysurfarray_a386b3c0b773be2393e85debcd345e54e}{array3d} (surface)
+\item 
+def \hyperlink{namespacepygame_1_1__numpysurfarray_a317e54caca003290ff9e312bc9500b2a}{pixels3d} (surface)
+\item 
+def \hyperlink{namespacepygame_1_1__numpysurfarray_a3c85557facaa59435ab157a32dd6299a}{array\+\_\+alpha} (surface)
+\item 
+def \hyperlink{namespacepygame_1_1__numpysurfarray_a648f263161e021fa6f1fe4b2d2bd53f5}{pixels\+\_\+alpha} (surface)
+\item 
+def \hyperlink{namespacepygame_1_1__numpysurfarray_a5dc1c52039acb9e1734347069b3a8cce}{pixels\+\_\+red} (surface)
+\item 
+def \hyperlink{namespacepygame_1_1__numpysurfarray_a6ecb5f71f0bf8f5fd584c5a94ca2b418}{array\+\_\+red} (surface)
+\item 
+def \hyperlink{namespacepygame_1_1__numpysurfarray_a9e59718e0b42824bccf0827ff8c94469}{pixels\+\_\+green} (surface)
+\item 
+def \hyperlink{namespacepygame_1_1__numpysurfarray_aa3d72af99d6b9a7f2a1400b8aed22e20}{array\+\_\+green} (surface)
+\item 
+def \hyperlink{namespacepygame_1_1__numpysurfarray_a238bd95d18d3e5fb3efe3e09fdfa11c7}{pixels\+\_\+blue} (surface)
+\item 
+def \hyperlink{namespacepygame_1_1__numpysurfarray_ab76ee18e25cf0a3203c617ce6bc0f929}{array\+\_\+blue} (surface)
+\item 
+def \hyperlink{namespacepygame_1_1__numpysurfarray_adf2c05432071381051b0d4069fb53c53}{array\+\_\+colorkey} (surface)
+\item 
+def \hyperlink{namespacepygame_1_1__numpysurfarray_a04214dc9ffbf04b4192222c745873ec5}{map\+\_\+array} (surface, array)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \hyperlink{namespacepygame_1_1__numpysurfarray_a819bcca31525ef44e1b922e381542c7e}{numpy\+\_\+floats} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1__numpysurfarray_a607b94c627bde5d92dad78c0598e4e16}\label{namespacepygame_1_1__numpysurfarray_a607b94c627bde5d92dad78c0598e4e16}} 
+\index{pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}!array2d@{array2d}}
+\index{array2d@{array2d}!pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}}
+\subsubsection{\texorpdfstring{array2d()}{array2d()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysurfarray.\+array2d (\begin{DoxyParamCaption}\item[{}]{surface }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.numpyarray.array2d(Surface): return array
+
+copy pixels into a 2d array
+
+Copy the pixels from a Surface into a 2D array. The bit depth of the
+surface will control the size of the integer values, and will work
+for any type of pixel format.
+
+This function will temporarily lock the Surface as pixels are copied
+(see the Surface.lock - lock the Surface memory for pixel access
+method).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1__numpysurfarray_a386b3c0b773be2393e85debcd345e54e}\label{namespacepygame_1_1__numpysurfarray_a386b3c0b773be2393e85debcd345e54e}} 
+\index{pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}!array3d@{array3d}}
+\index{array3d@{array3d}!pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}}
+\subsubsection{\texorpdfstring{array3d()}{array3d()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysurfarray.\+array3d (\begin{DoxyParamCaption}\item[{}]{surface }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.numpyarray.array3d(Surface): return array
+
+copy pixels into a 3d array
+
+Copy the pixels from a Surface into a 3D array. The bit depth of the
+surface will control the size of the integer values, and will work
+for any type of pixel format.
+
+This function will temporarily lock the Surface as pixels are copied
+(see the Surface.lock - lock the Surface memory for pixel access
+method).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1__numpysurfarray_a3c85557facaa59435ab157a32dd6299a}\label{namespacepygame_1_1__numpysurfarray_a3c85557facaa59435ab157a32dd6299a}} 
+\index{pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}!array\+\_\+alpha@{array\+\_\+alpha}}
+\index{array\+\_\+alpha@{array\+\_\+alpha}!pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}}
+\subsubsection{\texorpdfstring{array\+\_\+alpha()}{array\_alpha()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysurfarray.\+array\+\_\+alpha (\begin{DoxyParamCaption}\item[{}]{surface }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.numpyarray.array_alpha(Surface): return array
+
+copy pixel alphas into a 2d array
+
+Copy the pixel alpha values (degree of transparency) from a Surface
+into a 2D array. This will work for any type of Surface
+format. Surfaces without a pixel alpha will return an array with all
+opaque values.
+
+This function will temporarily lock the Surface as pixels are copied
+(see the Surface.lock - lock the Surface memory for pixel access
+method).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1__numpysurfarray_ab76ee18e25cf0a3203c617ce6bc0f929}\label{namespacepygame_1_1__numpysurfarray_ab76ee18e25cf0a3203c617ce6bc0f929}} 
+\index{pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}!array\+\_\+blue@{array\+\_\+blue}}
+\index{array\+\_\+blue@{array\+\_\+blue}!pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}}
+\subsubsection{\texorpdfstring{array\+\_\+blue()}{array\_blue()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysurfarray.\+array\+\_\+blue (\begin{DoxyParamCaption}\item[{}]{surface }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.numpyarray.array_blue(Surface): return array
+
+copy pixel blue into a 2d array
+
+Copy the pixel blue values from a Surface into a 2D array. This will work
+for any type of Surface format.
+
+This function will temporarily lock the Surface as pixels are copied
+(see the Surface.lock - lock the Surface memory for pixel access
+method).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1__numpysurfarray_adf2c05432071381051b0d4069fb53c53}\label{namespacepygame_1_1__numpysurfarray_adf2c05432071381051b0d4069fb53c53}} 
+\index{pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}!array\+\_\+colorkey@{array\+\_\+colorkey}}
+\index{array\+\_\+colorkey@{array\+\_\+colorkey}!pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}}
+\subsubsection{\texorpdfstring{array\+\_\+colorkey()}{array\_colorkey()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysurfarray.\+array\+\_\+colorkey (\begin{DoxyParamCaption}\item[{}]{surface }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.numpyarray.array_colorkey(Surface): return array
+
+copy the colorkey values into a 2d array
+
+Create a new array with the colorkey transparency value from each
+pixel. If the pixel matches the colorkey it will be fully
+tranparent; otherwise it will be fully opaque.
+
+This will work on any type of Surface format. If the image has no
+colorkey a solid opaque array will be returned.
+
+This function will temporarily lock the Surface as pixels are
+copied.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1__numpysurfarray_aa3d72af99d6b9a7f2a1400b8aed22e20}\label{namespacepygame_1_1__numpysurfarray_aa3d72af99d6b9a7f2a1400b8aed22e20}} 
+\index{pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}!array\+\_\+green@{array\+\_\+green}}
+\index{array\+\_\+green@{array\+\_\+green}!pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}}
+\subsubsection{\texorpdfstring{array\+\_\+green()}{array\_green()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysurfarray.\+array\+\_\+green (\begin{DoxyParamCaption}\item[{}]{surface }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.numpyarray.array_green(Surface): return array
+
+copy pixel green into a 2d array
+
+Copy the pixel green values from a Surface into a 2D array. This will work
+for any type of Surface format.
+
+This function will temporarily lock the Surface as pixels are copied
+(see the Surface.lock - lock the Surface memory for pixel access
+method).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1__numpysurfarray_a6ecb5f71f0bf8f5fd584c5a94ca2b418}\label{namespacepygame_1_1__numpysurfarray_a6ecb5f71f0bf8f5fd584c5a94ca2b418}} 
+\index{pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}!array\+\_\+red@{array\+\_\+red}}
+\index{array\+\_\+red@{array\+\_\+red}!pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}}
+\subsubsection{\texorpdfstring{array\+\_\+red()}{array\_red()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysurfarray.\+array\+\_\+red (\begin{DoxyParamCaption}\item[{}]{surface }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.numpyarray.array_red(Surface): return array
+
+copy pixel red into a 2d array
+
+Copy the pixel red values from a Surface into a 2D array. This will work
+for any type of Surface format.
+
+This function will temporarily lock the Surface as pixels are copied
+(see the Surface.lock - lock the Surface memory for pixel access
+method).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1__numpysurfarray_ae2ebe8cbfe5560d24f9951ac1b0c0de0}\label{namespacepygame_1_1__numpysurfarray_ae2ebe8cbfe5560d24f9951ac1b0c0de0}} 
+\index{pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}!blit\+\_\+array@{blit\+\_\+array}}
+\index{blit\+\_\+array@{blit\+\_\+array}!pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}}
+\subsubsection{\texorpdfstring{blit\+\_\+array()}{blit\_array()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysurfarray.\+blit\+\_\+array (\begin{DoxyParamCaption}\item[{}]{surface,  }\item[{}]{array }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.surfarray.blit_array(Surface, array): return None
+
+Blit directly from a array values.
+
+Directly copy values from an array into a Surface. This is faster than
+converting the array into a Surface and blitting. The array must be the
+same dimensions as the Surface and will completely replace all pixel
+values. Only integer, ascii character and record arrays are accepted.
+
+This function will temporarily lock the Surface as the new values are
+copied.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1__numpysurfarray_ade6efe65656cde78cfaff828f386e34c}\label{namespacepygame_1_1__numpysurfarray_ade6efe65656cde78cfaff828f386e34c}} 
+\index{pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}!make\+\_\+surface@{make\+\_\+surface}}
+\index{make\+\_\+surface@{make\+\_\+surface}!pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}}
+\subsubsection{\texorpdfstring{make\+\_\+surface()}{make\_surface()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysurfarray.\+make\+\_\+surface (\begin{DoxyParamCaption}\item[{}]{array }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.surfarray.make_surface (array): return Surface
+
+Copy an array to a new surface.
+
+Create a new Surface that best resembles the data and format on the
+array. The array can be 2D or 3D with any sized integer values.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1__numpysurfarray_a04214dc9ffbf04b4192222c745873ec5}\label{namespacepygame_1_1__numpysurfarray_a04214dc9ffbf04b4192222c745873ec5}} 
+\index{pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}!map\+\_\+array@{map\+\_\+array}}
+\index{map\+\_\+array@{map\+\_\+array}!pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}}
+\subsubsection{\texorpdfstring{map\+\_\+array()}{map\_array()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysurfarray.\+map\+\_\+array (\begin{DoxyParamCaption}\item[{}]{surface,  }\item[{}]{array }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.numpyarray.map_array(Surface, array3d): return array2d
+
+map a 3d array into a 2d array
+
+Convert a 3D array into a 2D array. This will use the given Surface
+format to control the conversion.
+
+Note: arrays do not need to be 3D, as long as the minor axis has
+three elements giving the component colours, any array shape can be
+used (for example, a single colour can be mapped, or an array of
+colours). The array shape is limited to eleven dimensions maximum,
+including the three element minor axis.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1__numpysurfarray_aa05d0ce24145776b0f0c87acbad2d1ff}\label{namespacepygame_1_1__numpysurfarray_aa05d0ce24145776b0f0c87acbad2d1ff}} 
+\index{pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}!pixels2d@{pixels2d}}
+\index{pixels2d@{pixels2d}!pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}}
+\subsubsection{\texorpdfstring{pixels2d()}{pixels2d()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysurfarray.\+pixels2d (\begin{DoxyParamCaption}\item[{}]{surface }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.numpyarray.pixels2d(Surface): return array
+
+reference pixels into a 2d array
+
+Create a new 2D array that directly references the pixel values in a
+Surface. Any changes to the array will affect the pixels in the
+Surface. This is a fast operation since no data is copied.
+
+Pixels from a 24-bit Surface cannot be referenced, but all other
+Surface bit depths can.
+
+The Surface this references will remain locked for the lifetime of
+the array (see the Surface.lock - lock the Surface memory for pixel
+access method).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1__numpysurfarray_a317e54caca003290ff9e312bc9500b2a}\label{namespacepygame_1_1__numpysurfarray_a317e54caca003290ff9e312bc9500b2a}} 
+\index{pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}!pixels3d@{pixels3d}}
+\index{pixels3d@{pixels3d}!pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}}
+\subsubsection{\texorpdfstring{pixels3d()}{pixels3d()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysurfarray.\+pixels3d (\begin{DoxyParamCaption}\item[{}]{surface }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.numpyarray.pixels3d(Surface): return array
+
+reference pixels into a 3d array
+
+Create a new 3D array that directly references the pixel values in a
+Surface. Any changes to the array will affect the pixels in the
+Surface. This is a fast operation since no data is copied.
+
+This will only work on Surfaces that have 24-bit or 32-bit
+formats. Lower pixel formats cannot be referenced.
+
+The Surface this references will remain locked for the lifetime of
+the array (see the Surface.lock - lock the Surface memory for pixel
+access method).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1__numpysurfarray_a648f263161e021fa6f1fe4b2d2bd53f5}\label{namespacepygame_1_1__numpysurfarray_a648f263161e021fa6f1fe4b2d2bd53f5}} 
+\index{pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}!pixels\+\_\+alpha@{pixels\+\_\+alpha}}
+\index{pixels\+\_\+alpha@{pixels\+\_\+alpha}!pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}}
+\subsubsection{\texorpdfstring{pixels\+\_\+alpha()}{pixels\_alpha()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysurfarray.\+pixels\+\_\+alpha (\begin{DoxyParamCaption}\item[{}]{surface }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.numpyarray.pixels_alpha(Surface): return array
+
+reference pixel alphas into a 2d array
+
+Create a new 2D array that directly references the alpha values
+(degree of transparency) in a Surface. Any changes to the array will
+affect the pixels in the Surface. This is a fast operation since no
+data is copied.
+
+This can only work on 32-bit Surfaces with a per-pixel alpha value.
+
+The Surface this array references will remain locked for the
+lifetime of the array.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1__numpysurfarray_a238bd95d18d3e5fb3efe3e09fdfa11c7}\label{namespacepygame_1_1__numpysurfarray_a238bd95d18d3e5fb3efe3e09fdfa11c7}} 
+\index{pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}!pixels\+\_\+blue@{pixels\+\_\+blue}}
+\index{pixels\+\_\+blue@{pixels\+\_\+blue}!pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}}
+\subsubsection{\texorpdfstring{pixels\+\_\+blue()}{pixels\_blue()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysurfarray.\+pixels\+\_\+blue (\begin{DoxyParamCaption}\item[{}]{surface }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.surfarray.pixels_blue(Surface): return array
+
+Reference pixel blue into a 2d array.
+
+Create a new 2D array that directly references the blue values
+in a Surface. Any changes to the array will affect the pixels
+in the Surface. This is a fast operation since no data is copied.
+
+This can only work on 24-bit or 32-bit Surfaces.
+
+The Surface this array references will remain locked for the
+lifetime of the array.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1__numpysurfarray_a9e59718e0b42824bccf0827ff8c94469}\label{namespacepygame_1_1__numpysurfarray_a9e59718e0b42824bccf0827ff8c94469}} 
+\index{pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}!pixels\+\_\+green@{pixels\+\_\+green}}
+\index{pixels\+\_\+green@{pixels\+\_\+green}!pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}}
+\subsubsection{\texorpdfstring{pixels\+\_\+green()}{pixels\_green()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysurfarray.\+pixels\+\_\+green (\begin{DoxyParamCaption}\item[{}]{surface }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.surfarray.pixels_green(Surface): return array
+
+Reference pixel green into a 2d array.
+
+Create a new 2D array that directly references the green values
+in a Surface. Any changes to the array will affect the pixels
+in the Surface. This is a fast operation since no data is copied.
+
+This can only work on 24-bit or 32-bit Surfaces.
+
+The Surface this array references will remain locked for the
+lifetime of the array.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1__numpysurfarray_a5dc1c52039acb9e1734347069b3a8cce}\label{namespacepygame_1_1__numpysurfarray_a5dc1c52039acb9e1734347069b3a8cce}} 
+\index{pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}!pixels\+\_\+red@{pixels\+\_\+red}}
+\index{pixels\+\_\+red@{pixels\+\_\+red}!pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}}
+\subsubsection{\texorpdfstring{pixels\+\_\+red()}{pixels\_red()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysurfarray.\+pixels\+\_\+red (\begin{DoxyParamCaption}\item[{}]{surface }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.surfarray.pixels_red(Surface): return array
+
+Reference pixel red into a 2d array.
+
+Create a new 2D array that directly references the red values
+in a Surface. Any changes to the array will affect the pixels
+in the Surface. This is a fast operation since no data is copied.
+
+This can only work on 24-bit or 32-bit Surfaces.
+
+The Surface this array references will remain locked for the
+lifetime of the array.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1__numpysurfarray_a819bcca31525ef44e1b922e381542c7e}\label{namespacepygame_1_1__numpysurfarray_a819bcca31525ef44e1b922e381542c7e}} 
+\index{pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}!numpy\+\_\+floats@{numpy\+\_\+floats}}
+\index{numpy\+\_\+floats@{numpy\+\_\+floats}!pygame\+::\+\_\+numpysurfarray@{pygame\+::\+\_\+numpysurfarray}}
+\subsubsection{\texorpdfstring{numpy\+\_\+floats}{numpy\_floats}}
+{\footnotesize\ttfamily list pygame.\+\_\+numpysurfarray.\+numpy\+\_\+floats = \mbox{[}$\,$\mbox{]}}
+

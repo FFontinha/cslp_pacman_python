@@ -1,0 +1,76 @@
+\hypertarget{classgevent_1_1util_1_1assert__switches}{}\section{gevent.\+util.\+assert\+\_\+switches Class Reference}
+\label{classgevent_1_1util_1_1assert__switches}\index{gevent.\+util.\+assert\+\_\+switches@{gevent.\+util.\+assert\+\_\+switches}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1assert__switches_a464a2c7aa3eca80ca31f7753172193b5}\label{classgevent_1_1util_1_1assert__switches_a464a2c7aa3eca80ca31f7753172193b5}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, max\+\_\+blocking\+\_\+time=None, hub\+\_\+only=False)
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1assert__switches_af685d56b1374d9402c3d9e03e68a7871}\label{classgevent_1_1util_1_1assert__switches_af685d56b1374d9402c3d9e03e68a7871}} 
+def {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1assert__switches_a7297ddef7d16722b1d635388ca3a851d}\label{classgevent_1_1util_1_1assert__switches_a7297ddef7d16722b1d635388ca3a851d}} 
+def {\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, t, v, tb)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1assert__switches_ae2d1d06d1b23a6521d52b0121fff199e}\label{classgevent_1_1util_1_1assert__switches_ae2d1d06d1b23a6521d52b0121fff199e}} 
+{\bfseries max\+\_\+blocking\+\_\+time}
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1assert__switches_ab126ac6d4aad16351dcdf9b804b3831d}\label{classgevent_1_1util_1_1assert__switches_ab126ac6d4aad16351dcdf9b804b3831d}} 
+{\bfseries hub\+\_\+only}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1assert__switches_abd11019c381da44d6593624da17dd987}\label{classgevent_1_1util_1_1assert__switches_abd11019c381da44d6593624da17dd987}} 
+{\bfseries hub} = None
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1assert__switches_a4d41e3bea50d21da33bf18bc3b63e09c}\label{classgevent_1_1util_1_1assert__switches_a4d41e3bea50d21da33bf18bc3b63e09c}} 
+{\bfseries tracer} = None
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A context manager for ensuring a block of code switches greenlets.
+
+This performs a similar function as the :doc:`monitoring thread
+</monitoring>`, but the scope is limited to the body of the with
+statement. If the code within the body doesn't yield to the hub
+(and doesn't raise an exception), then upon exiting the
+context manager an :exc:`AssertionError` will be raised.
+
+This is useful in unit tests and for debugging purposes.
+
+:keyword float max_blocking_time: If given, the body is allowed
+    to block for up to this many fractional seconds before
+    an error is raised.
+:keyword bool hub_only: If True, then *max_blocking_time* only
+    refers to the amount of time spent between switches into the
+    hub. If False, then it refers to the maximum time between
+    *any* switches. If *max_blocking_time* is not given, has no
+    effect.
+
+Example::
+
+    # This will always raise an exception: nothing switched
+    with assert_switches():
+        pass
+
+    # This will never raise an exception; nothing switched,
+    # but it happened very fast
+    with assert_switches(max_blocking_time=1.0):
+        pass
+
+.. versionadded:: 1.3
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/util.\+py\end{DoxyCompactItemize}

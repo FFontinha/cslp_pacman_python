@@ -1,0 +1,131 @@
+\hypertarget{libev_8h}{}\section{venv/lib/python3.6/site-\/packages/gevent/libev/libev.h File Reference}
+\label{libev_8h}\index{venv/lib/python3.\+6/site-\/packages/gevent/libev/libev.\+h@{venv/lib/python3.\+6/site-\/packages/gevent/libev/libev.\+h}}
+{\ttfamily \#include \char`\"{}ev.\+c\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ev.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$signal.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{libev_8h_ad815cd681dca4eef83b559c2115be3f4}{gevent\+\_\+ev\+\_\+loop\+\_\+origflags}(loop)~-\/1
+\item 
+\#define \hyperlink{libev_8h_a2aea7756aae582222d88847e80a50371}{gevent\+\_\+ev\+\_\+loop\+\_\+sig\+\_\+pending}(loop)~-\/1
+\item 
+\#define \hyperlink{libev_8h_a26f54185fa3b2c3278e9f65ea5694634}{gevent\+\_\+ev\+\_\+loop\+\_\+backend\+\_\+fd}(loop)~-\/1
+\item 
+\#define \hyperlink{libev_8h_a8f3b5c6cc6d23b4709dc5a6c9dd5ce43}{gevent\+\_\+ev\+\_\+loop\+\_\+activecnt}(loop)~-\/1
+\item 
+\#define \hyperlink{libev_8h_a8b7110aa020f13533fe6c5de4309040b}{gevent\+\_\+ev\+\_\+loop\+\_\+sigfd}(loop)~-\/1
+\item 
+\#define \hyperlink{libev_8h_a2a070d4f03ad7b256da666f58165af07}{L\+I\+B\+E\+V\+\_\+\+E\+M\+B\+ED}~0
+\item 
+\#define \hyperlink{libev_8h_acbdd96b96289b8c270611e85e7b2274d}{E\+V\+\_\+\+U\+S\+E\+\_\+\+F\+L\+O\+OR}~-\/1
+\item 
+\#define \hyperlink{libev_8h_a13d464cbbc413a0c01973ad69800a804}{E\+V\+\_\+\+U\+S\+E\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+Y\+S\+C\+A\+LL}~-\/1
+\item 
+\#define \hyperlink{libev_8h_a9dec89f40c8030cc76402bc211ff9c71}{E\+V\+\_\+\+U\+S\+E\+\_\+\+R\+E\+A\+L\+T\+I\+ME}~-\/1
+\item 
+\#define \hyperlink{libev_8h_a7d1d30bb631a6238cb4228bf3a0ef48a}{E\+V\+\_\+\+U\+S\+E\+\_\+\+M\+O\+N\+O\+T\+O\+N\+IC}~-\/1
+\item 
+\#define \hyperlink{libev_8h_a597ef611a02bf6425a6f387c1cffc4d0}{E\+V\+\_\+\+U\+S\+E\+\_\+\+N\+A\+N\+O\+S\+L\+E\+EP}~-\/1
+\item 
+\#define \hyperlink{libev_8h_a654ec70b0414b50dca607655e791e33c}{E\+V\+\_\+\+U\+S\+E\+\_\+\+I\+N\+O\+T\+I\+FY}~-\/1
+\item 
+\#define \hyperlink{libev_8h_a84c19a1cea5e5d0540f3b82a99a3a95e}{E\+V\+\_\+\+U\+S\+E\+\_\+\+S\+I\+G\+N\+A\+L\+FD}~-\/1
+\item 
+\#define \hyperlink{libev_8h_a6216a9db77c97f5b5499abf858efb2ca}{E\+V\+\_\+\+U\+S\+E\+\_\+\+E\+V\+E\+N\+T\+FD}~-\/1
+\item 
+\#define \hyperlink{libev_8h_a3d136968c32dd0fa212bb757f66329be}{E\+V\+\_\+\+U\+S\+E\+\_\+4\+H\+E\+AP}~-\/1
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{libev_8h_a3d136968c32dd0fa212bb757f66329be}\label{libev_8h_a3d136968c32dd0fa212bb757f66329be}} 
+\index{libev.\+h@{libev.\+h}!E\+V\+\_\+\+U\+S\+E\+\_\+4\+H\+E\+AP@{E\+V\+\_\+\+U\+S\+E\+\_\+4\+H\+E\+AP}}
+\index{E\+V\+\_\+\+U\+S\+E\+\_\+4\+H\+E\+AP@{E\+V\+\_\+\+U\+S\+E\+\_\+4\+H\+E\+AP}!libev.\+h@{libev.\+h}}
+\subsubsection{\texorpdfstring{E\+V\+\_\+\+U\+S\+E\+\_\+4\+H\+E\+AP}{EV\_USE\_4HEAP}}
+{\footnotesize\ttfamily \#define E\+V\+\_\+\+U\+S\+E\+\_\+4\+H\+E\+AP~-\/1}
+
+\mbox{\Hypertarget{libev_8h_a13d464cbbc413a0c01973ad69800a804}\label{libev_8h_a13d464cbbc413a0c01973ad69800a804}} 
+\index{libev.\+h@{libev.\+h}!E\+V\+\_\+\+U\+S\+E\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+Y\+S\+C\+A\+LL@{E\+V\+\_\+\+U\+S\+E\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+Y\+S\+C\+A\+LL}}
+\index{E\+V\+\_\+\+U\+S\+E\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+Y\+S\+C\+A\+LL@{E\+V\+\_\+\+U\+S\+E\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+Y\+S\+C\+A\+LL}!libev.\+h@{libev.\+h}}
+\subsubsection{\texorpdfstring{E\+V\+\_\+\+U\+S\+E\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+Y\+S\+C\+A\+LL}{EV\_USE\_CLOCK\_SYSCALL}}
+{\footnotesize\ttfamily \#define E\+V\+\_\+\+U\+S\+E\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+Y\+S\+C\+A\+LL~-\/1}
+
+\mbox{\Hypertarget{libev_8h_a6216a9db77c97f5b5499abf858efb2ca}\label{libev_8h_a6216a9db77c97f5b5499abf858efb2ca}} 
+\index{libev.\+h@{libev.\+h}!E\+V\+\_\+\+U\+S\+E\+\_\+\+E\+V\+E\+N\+T\+FD@{E\+V\+\_\+\+U\+S\+E\+\_\+\+E\+V\+E\+N\+T\+FD}}
+\index{E\+V\+\_\+\+U\+S\+E\+\_\+\+E\+V\+E\+N\+T\+FD@{E\+V\+\_\+\+U\+S\+E\+\_\+\+E\+V\+E\+N\+T\+FD}!libev.\+h@{libev.\+h}}
+\subsubsection{\texorpdfstring{E\+V\+\_\+\+U\+S\+E\+\_\+\+E\+V\+E\+N\+T\+FD}{EV\_USE\_EVENTFD}}
+{\footnotesize\ttfamily \#define E\+V\+\_\+\+U\+S\+E\+\_\+\+E\+V\+E\+N\+T\+FD~-\/1}
+
+\mbox{\Hypertarget{libev_8h_acbdd96b96289b8c270611e85e7b2274d}\label{libev_8h_acbdd96b96289b8c270611e85e7b2274d}} 
+\index{libev.\+h@{libev.\+h}!E\+V\+\_\+\+U\+S\+E\+\_\+\+F\+L\+O\+OR@{E\+V\+\_\+\+U\+S\+E\+\_\+\+F\+L\+O\+OR}}
+\index{E\+V\+\_\+\+U\+S\+E\+\_\+\+F\+L\+O\+OR@{E\+V\+\_\+\+U\+S\+E\+\_\+\+F\+L\+O\+OR}!libev.\+h@{libev.\+h}}
+\subsubsection{\texorpdfstring{E\+V\+\_\+\+U\+S\+E\+\_\+\+F\+L\+O\+OR}{EV\_USE\_FLOOR}}
+{\footnotesize\ttfamily \#define E\+V\+\_\+\+U\+S\+E\+\_\+\+F\+L\+O\+OR~-\/1}
+
+\mbox{\Hypertarget{libev_8h_a654ec70b0414b50dca607655e791e33c}\label{libev_8h_a654ec70b0414b50dca607655e791e33c}} 
+\index{libev.\+h@{libev.\+h}!E\+V\+\_\+\+U\+S\+E\+\_\+\+I\+N\+O\+T\+I\+FY@{E\+V\+\_\+\+U\+S\+E\+\_\+\+I\+N\+O\+T\+I\+FY}}
+\index{E\+V\+\_\+\+U\+S\+E\+\_\+\+I\+N\+O\+T\+I\+FY@{E\+V\+\_\+\+U\+S\+E\+\_\+\+I\+N\+O\+T\+I\+FY}!libev.\+h@{libev.\+h}}
+\subsubsection{\texorpdfstring{E\+V\+\_\+\+U\+S\+E\+\_\+\+I\+N\+O\+T\+I\+FY}{EV\_USE\_INOTIFY}}
+{\footnotesize\ttfamily \#define E\+V\+\_\+\+U\+S\+E\+\_\+\+I\+N\+O\+T\+I\+FY~-\/1}
+
+\mbox{\Hypertarget{libev_8h_a7d1d30bb631a6238cb4228bf3a0ef48a}\label{libev_8h_a7d1d30bb631a6238cb4228bf3a0ef48a}} 
+\index{libev.\+h@{libev.\+h}!E\+V\+\_\+\+U\+S\+E\+\_\+\+M\+O\+N\+O\+T\+O\+N\+IC@{E\+V\+\_\+\+U\+S\+E\+\_\+\+M\+O\+N\+O\+T\+O\+N\+IC}}
+\index{E\+V\+\_\+\+U\+S\+E\+\_\+\+M\+O\+N\+O\+T\+O\+N\+IC@{E\+V\+\_\+\+U\+S\+E\+\_\+\+M\+O\+N\+O\+T\+O\+N\+IC}!libev.\+h@{libev.\+h}}
+\subsubsection{\texorpdfstring{E\+V\+\_\+\+U\+S\+E\+\_\+\+M\+O\+N\+O\+T\+O\+N\+IC}{EV\_USE\_MONOTONIC}}
+{\footnotesize\ttfamily \#define E\+V\+\_\+\+U\+S\+E\+\_\+\+M\+O\+N\+O\+T\+O\+N\+IC~-\/1}
+
+\mbox{\Hypertarget{libev_8h_a597ef611a02bf6425a6f387c1cffc4d0}\label{libev_8h_a597ef611a02bf6425a6f387c1cffc4d0}} 
+\index{libev.\+h@{libev.\+h}!E\+V\+\_\+\+U\+S\+E\+\_\+\+N\+A\+N\+O\+S\+L\+E\+EP@{E\+V\+\_\+\+U\+S\+E\+\_\+\+N\+A\+N\+O\+S\+L\+E\+EP}}
+\index{E\+V\+\_\+\+U\+S\+E\+\_\+\+N\+A\+N\+O\+S\+L\+E\+EP@{E\+V\+\_\+\+U\+S\+E\+\_\+\+N\+A\+N\+O\+S\+L\+E\+EP}!libev.\+h@{libev.\+h}}
+\subsubsection{\texorpdfstring{E\+V\+\_\+\+U\+S\+E\+\_\+\+N\+A\+N\+O\+S\+L\+E\+EP}{EV\_USE\_NANOSLEEP}}
+{\footnotesize\ttfamily \#define E\+V\+\_\+\+U\+S\+E\+\_\+\+N\+A\+N\+O\+S\+L\+E\+EP~-\/1}
+
+\mbox{\Hypertarget{libev_8h_a9dec89f40c8030cc76402bc211ff9c71}\label{libev_8h_a9dec89f40c8030cc76402bc211ff9c71}} 
+\index{libev.\+h@{libev.\+h}!E\+V\+\_\+\+U\+S\+E\+\_\+\+R\+E\+A\+L\+T\+I\+ME@{E\+V\+\_\+\+U\+S\+E\+\_\+\+R\+E\+A\+L\+T\+I\+ME}}
+\index{E\+V\+\_\+\+U\+S\+E\+\_\+\+R\+E\+A\+L\+T\+I\+ME@{E\+V\+\_\+\+U\+S\+E\+\_\+\+R\+E\+A\+L\+T\+I\+ME}!libev.\+h@{libev.\+h}}
+\subsubsection{\texorpdfstring{E\+V\+\_\+\+U\+S\+E\+\_\+\+R\+E\+A\+L\+T\+I\+ME}{EV\_USE\_REALTIME}}
+{\footnotesize\ttfamily \#define E\+V\+\_\+\+U\+S\+E\+\_\+\+R\+E\+A\+L\+T\+I\+ME~-\/1}
+
+\mbox{\Hypertarget{libev_8h_a84c19a1cea5e5d0540f3b82a99a3a95e}\label{libev_8h_a84c19a1cea5e5d0540f3b82a99a3a95e}} 
+\index{libev.\+h@{libev.\+h}!E\+V\+\_\+\+U\+S\+E\+\_\+\+S\+I\+G\+N\+A\+L\+FD@{E\+V\+\_\+\+U\+S\+E\+\_\+\+S\+I\+G\+N\+A\+L\+FD}}
+\index{E\+V\+\_\+\+U\+S\+E\+\_\+\+S\+I\+G\+N\+A\+L\+FD@{E\+V\+\_\+\+U\+S\+E\+\_\+\+S\+I\+G\+N\+A\+L\+FD}!libev.\+h@{libev.\+h}}
+\subsubsection{\texorpdfstring{E\+V\+\_\+\+U\+S\+E\+\_\+\+S\+I\+G\+N\+A\+L\+FD}{EV\_USE\_SIGNALFD}}
+{\footnotesize\ttfamily \#define E\+V\+\_\+\+U\+S\+E\+\_\+\+S\+I\+G\+N\+A\+L\+FD~-\/1}
+
+\mbox{\Hypertarget{libev_8h_a8f3b5c6cc6d23b4709dc5a6c9dd5ce43}\label{libev_8h_a8f3b5c6cc6d23b4709dc5a6c9dd5ce43}} 
+\index{libev.\+h@{libev.\+h}!gevent\+\_\+ev\+\_\+loop\+\_\+activecnt@{gevent\+\_\+ev\+\_\+loop\+\_\+activecnt}}
+\index{gevent\+\_\+ev\+\_\+loop\+\_\+activecnt@{gevent\+\_\+ev\+\_\+loop\+\_\+activecnt}!libev.\+h@{libev.\+h}}
+\subsubsection{\texorpdfstring{gevent\+\_\+ev\+\_\+loop\+\_\+activecnt}{gevent\_ev\_loop\_activecnt}}
+{\footnotesize\ttfamily \#define gevent\+\_\+ev\+\_\+loop\+\_\+activecnt(\begin{DoxyParamCaption}\item[{}]{loop }\end{DoxyParamCaption})~-\/1}
+
+\mbox{\Hypertarget{libev_8h_a26f54185fa3b2c3278e9f65ea5694634}\label{libev_8h_a26f54185fa3b2c3278e9f65ea5694634}} 
+\index{libev.\+h@{libev.\+h}!gevent\+\_\+ev\+\_\+loop\+\_\+backend\+\_\+fd@{gevent\+\_\+ev\+\_\+loop\+\_\+backend\+\_\+fd}}
+\index{gevent\+\_\+ev\+\_\+loop\+\_\+backend\+\_\+fd@{gevent\+\_\+ev\+\_\+loop\+\_\+backend\+\_\+fd}!libev.\+h@{libev.\+h}}
+\subsubsection{\texorpdfstring{gevent\+\_\+ev\+\_\+loop\+\_\+backend\+\_\+fd}{gevent\_ev\_loop\_backend\_fd}}
+{\footnotesize\ttfamily \#define gevent\+\_\+ev\+\_\+loop\+\_\+backend\+\_\+fd(\begin{DoxyParamCaption}\item[{}]{loop }\end{DoxyParamCaption})~-\/1}
+
+\mbox{\Hypertarget{libev_8h_ad815cd681dca4eef83b559c2115be3f4}\label{libev_8h_ad815cd681dca4eef83b559c2115be3f4}} 
+\index{libev.\+h@{libev.\+h}!gevent\+\_\+ev\+\_\+loop\+\_\+origflags@{gevent\+\_\+ev\+\_\+loop\+\_\+origflags}}
+\index{gevent\+\_\+ev\+\_\+loop\+\_\+origflags@{gevent\+\_\+ev\+\_\+loop\+\_\+origflags}!libev.\+h@{libev.\+h}}
+\subsubsection{\texorpdfstring{gevent\+\_\+ev\+\_\+loop\+\_\+origflags}{gevent\_ev\_loop\_origflags}}
+{\footnotesize\ttfamily \#define gevent\+\_\+ev\+\_\+loop\+\_\+origflags(\begin{DoxyParamCaption}\item[{}]{loop }\end{DoxyParamCaption})~-\/1}
+
+\mbox{\Hypertarget{libev_8h_a2aea7756aae582222d88847e80a50371}\label{libev_8h_a2aea7756aae582222d88847e80a50371}} 
+\index{libev.\+h@{libev.\+h}!gevent\+\_\+ev\+\_\+loop\+\_\+sig\+\_\+pending@{gevent\+\_\+ev\+\_\+loop\+\_\+sig\+\_\+pending}}
+\index{gevent\+\_\+ev\+\_\+loop\+\_\+sig\+\_\+pending@{gevent\+\_\+ev\+\_\+loop\+\_\+sig\+\_\+pending}!libev.\+h@{libev.\+h}}
+\subsubsection{\texorpdfstring{gevent\+\_\+ev\+\_\+loop\+\_\+sig\+\_\+pending}{gevent\_ev\_loop\_sig\_pending}}
+{\footnotesize\ttfamily \#define gevent\+\_\+ev\+\_\+loop\+\_\+sig\+\_\+pending(\begin{DoxyParamCaption}\item[{}]{loop }\end{DoxyParamCaption})~-\/1}
+
+\mbox{\Hypertarget{libev_8h_a8b7110aa020f13533fe6c5de4309040b}\label{libev_8h_a8b7110aa020f13533fe6c5de4309040b}} 
+\index{libev.\+h@{libev.\+h}!gevent\+\_\+ev\+\_\+loop\+\_\+sigfd@{gevent\+\_\+ev\+\_\+loop\+\_\+sigfd}}
+\index{gevent\+\_\+ev\+\_\+loop\+\_\+sigfd@{gevent\+\_\+ev\+\_\+loop\+\_\+sigfd}!libev.\+h@{libev.\+h}}
+\subsubsection{\texorpdfstring{gevent\+\_\+ev\+\_\+loop\+\_\+sigfd}{gevent\_ev\_loop\_sigfd}}
+{\footnotesize\ttfamily \#define gevent\+\_\+ev\+\_\+loop\+\_\+sigfd(\begin{DoxyParamCaption}\item[{}]{loop }\end{DoxyParamCaption})~-\/1}
+
+\mbox{\Hypertarget{libev_8h_a2a070d4f03ad7b256da666f58165af07}\label{libev_8h_a2a070d4f03ad7b256da666f58165af07}} 
+\index{libev.\+h@{libev.\+h}!L\+I\+B\+E\+V\+\_\+\+E\+M\+B\+ED@{L\+I\+B\+E\+V\+\_\+\+E\+M\+B\+ED}}
+\index{L\+I\+B\+E\+V\+\_\+\+E\+M\+B\+ED@{L\+I\+B\+E\+V\+\_\+\+E\+M\+B\+ED}!libev.\+h@{libev.\+h}}
+\subsubsection{\texorpdfstring{L\+I\+B\+E\+V\+\_\+\+E\+M\+B\+ED}{LIBEV\_EMBED}}
+{\footnotesize\ttfamily \#define L\+I\+B\+E\+V\+\_\+\+E\+M\+B\+ED~0}
+

@@ -1,0 +1,71 @@
+\hypertarget{namespacegevent_1_1__sslgte279}{}\section{gevent.\+\_\+sslgte279 Namespace Reference}
+\label{namespacegevent_1_1__sslgte279}\index{gevent.\+\_\+sslgte279@{gevent.\+\_\+sslgte279}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgevent_1_1__sslgte279_1_1_s_s_l_context}{S\+S\+L\+Context}
+\item 
+class \hyperlink{classgevent_1_1__sslgte279_1_1_s_s_l_socket}{S\+S\+L\+Socket}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1__sslgte279_a3b13b1f1795f96a3d30958d39dda5f4f}{create\+\_\+default\+\_\+context} (purpose=Purpose.\+S\+E\+R\+V\+E\+R\+\_\+\+A\+U\+TH, cafile=None, capath=None, cadata=None)
+\item 
+def \hyperlink{namespacegevent_1_1__sslgte279_affdbe49ecfb55ee9d3aa0bfd562b7ecf}{wrap\+\_\+socket} (sock, keyfile=None, certfile=None, server\+\_\+side=False, cert\+\_\+reqs=C\+E\+R\+T\+\_\+\+N\+O\+NE, ssl\+\_\+version=P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+S\+S\+Lv23, ca\+\_\+certs=None, do\+\_\+handshake\+\_\+on\+\_\+connect=True, suppress\+\_\+ragged\+\_\+eofs=True, ciphers=None)
+\item 
+def \hyperlink{namespacegevent_1_1__sslgte279_ac5f054164ee9c0ac0584e98c553bc656}{get\+\_\+server\+\_\+certificate} (addr, ssl\+\_\+version=P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+S\+S\+Lv23, ca\+\_\+certs=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacegevent_1_1__sslgte279_a533dbd6f25478242a5aea158a3c94a38}{orig\+\_\+\+S\+S\+L\+Context} = \+\_\+\+\_\+ssl\+\_\+\+\_\+.\+S\+S\+L\+Context
+\item 
+\hyperlink{namespacegevent_1_1__sslgte279_abe03f65ebcf73a43ea674931d80e3309}{timeout}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1__sslgte279_a3b13b1f1795f96a3d30958d39dda5f4f}\label{namespacegevent_1_1__sslgte279_a3b13b1f1795f96a3d30958d39dda5f4f}} 
+\index{gevent\+::\+\_\+sslgte279@{gevent\+::\+\_\+sslgte279}!create\+\_\+default\+\_\+context@{create\+\_\+default\+\_\+context}}
+\index{create\+\_\+default\+\_\+context@{create\+\_\+default\+\_\+context}!gevent\+::\+\_\+sslgte279@{gevent\+::\+\_\+sslgte279}}
+\subsubsection{\texorpdfstring{create\+\_\+default\+\_\+context()}{create\_default\_context()}}
+{\footnotesize\ttfamily def gevent.\+\_\+sslgte279.\+create\+\_\+default\+\_\+context (\begin{DoxyParamCaption}\item[{}]{purpose = {\ttfamily Purpose.SERVER\+\_\+AUTH},  }\item[{}]{cafile = {\ttfamily None},  }\item[{}]{capath = {\ttfamily None},  }\item[{}]{cadata = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a SSLContext object with default settings.
+
+NOTE: The protocol and settings may change anytime without prior
+      deprecation. The values represent a fair balance between maximum
+      compatibility and security.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__sslgte279_ac5f054164ee9c0ac0584e98c553bc656}\label{namespacegevent_1_1__sslgte279_ac5f054164ee9c0ac0584e98c553bc656}} 
+\index{gevent\+::\+\_\+sslgte279@{gevent\+::\+\_\+sslgte279}!get\+\_\+server\+\_\+certificate@{get\+\_\+server\+\_\+certificate}}
+\index{get\+\_\+server\+\_\+certificate@{get\+\_\+server\+\_\+certificate}!gevent\+::\+\_\+sslgte279@{gevent\+::\+\_\+sslgte279}}
+\subsubsection{\texorpdfstring{get\+\_\+server\+\_\+certificate()}{get\_server\_certificate()}}
+{\footnotesize\ttfamily def gevent.\+\_\+sslgte279.\+get\+\_\+server\+\_\+certificate (\begin{DoxyParamCaption}\item[{}]{addr,  }\item[{}]{ssl\+\_\+version = {\ttfamily PROTOCOL\+\_\+SSLv23},  }\item[{}]{ca\+\_\+certs = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve the certificate from the server at the specified address,
+and return it as a PEM-encoded string.
+If 'ca_certs' is specified, validate the server cert against it.
+If 'ssl_version' is specified, use it in the connection attempt.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__sslgte279_affdbe49ecfb55ee9d3aa0bfd562b7ecf}\label{namespacegevent_1_1__sslgte279_affdbe49ecfb55ee9d3aa0bfd562b7ecf}} 
+\index{gevent\+::\+\_\+sslgte279@{gevent\+::\+\_\+sslgte279}!wrap\+\_\+socket@{wrap\+\_\+socket}}
+\index{wrap\+\_\+socket@{wrap\+\_\+socket}!gevent\+::\+\_\+sslgte279@{gevent\+::\+\_\+sslgte279}}
+\subsubsection{\texorpdfstring{wrap\+\_\+socket()}{wrap\_socket()}}
+{\footnotesize\ttfamily def gevent.\+\_\+sslgte279.\+wrap\+\_\+socket (\begin{DoxyParamCaption}\item[{}]{sock,  }\item[{}]{keyfile = {\ttfamily None},  }\item[{}]{certfile = {\ttfamily None},  }\item[{}]{server\+\_\+side = {\ttfamily False},  }\item[{}]{cert\+\_\+reqs = {\ttfamily CERT\+\_\+NONE},  }\item[{}]{ssl\+\_\+version = {\ttfamily PROTOCOL\+\_\+SSLv23},  }\item[{}]{ca\+\_\+certs = {\ttfamily None},  }\item[{}]{do\+\_\+handshake\+\_\+on\+\_\+connect = {\ttfamily True},  }\item[{}]{suppress\+\_\+ragged\+\_\+eofs = {\ttfamily True},  }\item[{}]{ciphers = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1__sslgte279_a533dbd6f25478242a5aea158a3c94a38}\label{namespacegevent_1_1__sslgte279_a533dbd6f25478242a5aea158a3c94a38}} 
+\index{gevent\+::\+\_\+sslgte279@{gevent\+::\+\_\+sslgte279}!orig\+\_\+\+S\+S\+L\+Context@{orig\+\_\+\+S\+S\+L\+Context}}
+\index{orig\+\_\+\+S\+S\+L\+Context@{orig\+\_\+\+S\+S\+L\+Context}!gevent\+::\+\_\+sslgte279@{gevent\+::\+\_\+sslgte279}}
+\subsubsection{\texorpdfstring{orig\+\_\+\+S\+S\+L\+Context}{orig\_SSLContext}}
+{\footnotesize\ttfamily gevent.\+\_\+sslgte279.\+orig\+\_\+\+S\+S\+L\+Context = \+\_\+\+\_\+ssl\+\_\+\+\_\+.\+S\+S\+L\+Context}
+
+\mbox{\Hypertarget{namespacegevent_1_1__sslgte279_abe03f65ebcf73a43ea674931d80e3309}\label{namespacegevent_1_1__sslgte279_abe03f65ebcf73a43ea674931d80e3309}} 
+\index{gevent\+::\+\_\+sslgte279@{gevent\+::\+\_\+sslgte279}!timeout@{timeout}}
+\index{timeout@{timeout}!gevent\+::\+\_\+sslgte279@{gevent\+::\+\_\+sslgte279}}
+\subsubsection{\texorpdfstring{timeout}{timeout}}
+{\footnotesize\ttfamily gevent.\+\_\+sslgte279.\+timeout}
+

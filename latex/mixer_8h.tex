@@ -1,0 +1,143 @@
+\hypertarget{mixer_8h}{}\section{venv/include/site/python3.6/pygame/mixer.h File Reference}
+\label{mixer_8h}\index{venv/include/site/python3.\+6/pygame/mixer.\+h@{venv/include/site/python3.\+6/pygame/mixer.\+h}}
+{\ttfamily \#include $<$Python.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L\+\_\+mixer.\+h$>$}\newline
+{\ttfamily \#include $<$structmember.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_py_sound_object}{Py\+Sound\+Object}
+\item 
+struct \hyperlink{struct_py_channel_object}{Py\+Channel\+Object}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{mixer_8h_a0e36a8a4a5b6a5c04eaff4e6bd36b66f}{M\+I\+X\+E\+R\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK}()
+\item 
+\#define \hyperlink{mixer_8h_a95ca792f86679927c3834aee6437ddf5}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}~0
+\item 
+\#define \hyperlink{mixer_8h_a33def5bc8f281f95c8e88a771e78d270}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+N\+U\+M\+S\+L\+O\+TS}~7
+\item 
+\#define \hyperlink{mixer_8h_a9b522da348483953517c77fcdae06a4f}{Py\+Sound\+\_\+\+As\+Chunk}(x)~(((\hyperlink{struct_py_sound_object}{Py\+Sound\+Object}$\ast$)x)-\/$>$chunk)
+\item 
+\#define \hyperlink{mixer_8h_a24197edfa40fac471d9b9719d43976f1}{Py\+Channel\+\_\+\+As\+Int}(x)~(((\hyperlink{struct_py_channel_object}{Py\+Channel\+Object}$\ast$)x)-\/$>$chan)
+\item 
+\#define \hyperlink{mixer_8h_a5e6e9fbb3a9dc37b62136c9003f2b1d0}{Py\+Sound\+\_\+\+Check}(x)~((x)-\/$>$ob\+\_\+type == (Py\+Type\+Object$\ast$)Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}0\mbox{]})
+\item 
+\#define \hyperlink{mixer_8h_a6cdd91bcbfc63595fc4cad179e99623a}{Py\+Sound\+\_\+\+Type}~($\ast$(Py\+Type\+Object$\ast$)Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}0\mbox{]})
+\item 
+\#define \hyperlink{mixer_8h_a79b28378e02490bc5f488e555edeea86}{Py\+Sound\+\_\+\+New}~($\ast$(Py\+Object$\ast$($\ast$)(Mix\+\_\+\+Chunk$\ast$))Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}1\mbox{]})
+\item 
+\#define \hyperlink{mixer_8h_ab7ca2092c52e08014448f0089fa3152d}{Py\+Sound\+\_\+\+Play}~($\ast$(Py\+Object$\ast$($\ast$)(Py\+Object$\ast$, Py\+Object$\ast$))Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}2\mbox{]})
+\item 
+\#define \hyperlink{mixer_8h_a9898be5d602bd0f96927eb1449a83bd5}{Py\+Channel\+\_\+\+Check}(x)~((x)-\/$>$ob\+\_\+type == (Py\+Type\+Object$\ast$)Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}3\mbox{]})
+\item 
+\#define \hyperlink{mixer_8h_a5cc799880d9943124ff1641d8787f678}{Py\+Channel\+\_\+\+Type}~($\ast$(Py\+Type\+Object$\ast$)Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}3\mbox{]})
+\item 
+\#define \hyperlink{mixer_8h_a3220dcd663e8f21dc7c12ea5172df92c}{Py\+Channel\+\_\+\+New}~($\ast$(Py\+Object$\ast$($\ast$)(int))Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}4\mbox{]})
+\item 
+\#define \hyperlink{mixer_8h_a88816c07bf2767f7819f397fbc0890a7}{Py\+Mixer\+\_\+\+Auto\+Init}~($\ast$(Py\+Object$\ast$($\ast$)(Py\+Object$\ast$, Py\+Object$\ast$))Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}5\mbox{]})
+\item 
+\#define \hyperlink{mixer_8h_a8b70efdd187dcd4ba80d694ade649303}{Py\+Mixer\+\_\+\+Auto\+Quit}~($\ast$(void($\ast$)(void))Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}6\mbox{]})
+\item 
+\#define \hyperlink{mixer_8h_a66b7af67a2739f6f5fcd49ed3175d6a7}{import\+\_\+pygame\+\_\+mixer}()~\hyperlink{__pygame_8h_a97ba72dc608817ef953d8fefeeccc4f1}{\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}(mixer, M\+I\+X\+ER, Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mixer_8h_a66b7af67a2739f6f5fcd49ed3175d6a7}\label{mixer_8h_a66b7af67a2739f6f5fcd49ed3175d6a7}} 
+\index{mixer.\+h@{mixer.\+h}!import\+\_\+pygame\+\_\+mixer@{import\+\_\+pygame\+\_\+mixer}}
+\index{import\+\_\+pygame\+\_\+mixer@{import\+\_\+pygame\+\_\+mixer}!mixer.\+h@{mixer.\+h}}
+\subsubsection{\texorpdfstring{import\+\_\+pygame\+\_\+mixer}{import\_pygame\_mixer}}
+{\footnotesize\ttfamily \#define import\+\_\+pygame\+\_\+mixer(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\hyperlink{__pygame_8h_a97ba72dc608817ef953d8fefeeccc4f1}{\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}(mixer, M\+I\+X\+ER, Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI)}
+
+\mbox{\Hypertarget{mixer_8h_a0e36a8a4a5b6a5c04eaff4e6bd36b66f}\label{mixer_8h_a0e36a8a4a5b6a5c04eaff4e6bd36b66f}} 
+\index{mixer.\+h@{mixer.\+h}!M\+I\+X\+E\+R\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK@{M\+I\+X\+E\+R\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK}}
+\index{M\+I\+X\+E\+R\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK@{M\+I\+X\+E\+R\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK}!mixer.\+h@{mixer.\+h}}
+\subsubsection{\texorpdfstring{M\+I\+X\+E\+R\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK}{MIXER\_INIT\_CHECK}}
+{\footnotesize\ttfamily \#define M\+I\+X\+E\+R\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if}(!SDL\_WasInit(SDL\_INIT\_AUDIO)) \(\backslash\)
+        return \hyperlink{__pygame_8h_aa133c030761504a9ed589e590a98c269}{RAISE}(\hyperlink{__pygame_8h_ad80ae665421878ea243b8c23dfbf7d34}{PyExc\_SDLError}, \textcolor{stringliteral}{"mixer system not initialized"})
+\end{DoxyCode}
+\mbox{\Hypertarget{mixer_8h_a24197edfa40fac471d9b9719d43976f1}\label{mixer_8h_a24197edfa40fac471d9b9719d43976f1}} 
+\index{mixer.\+h@{mixer.\+h}!Py\+Channel\+\_\+\+As\+Int@{Py\+Channel\+\_\+\+As\+Int}}
+\index{Py\+Channel\+\_\+\+As\+Int@{Py\+Channel\+\_\+\+As\+Int}!mixer.\+h@{mixer.\+h}}
+\subsubsection{\texorpdfstring{Py\+Channel\+\_\+\+As\+Int}{PyChannel\_AsInt}}
+{\footnotesize\ttfamily \#define Py\+Channel\+\_\+\+As\+Int(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((\hyperlink{struct_py_channel_object}{Py\+Channel\+Object}$\ast$)x)-\/$>$chan)}
+
+\mbox{\Hypertarget{mixer_8h_a9898be5d602bd0f96927eb1449a83bd5}\label{mixer_8h_a9898be5d602bd0f96927eb1449a83bd5}} 
+\index{mixer.\+h@{mixer.\+h}!Py\+Channel\+\_\+\+Check@{Py\+Channel\+\_\+\+Check}}
+\index{Py\+Channel\+\_\+\+Check@{Py\+Channel\+\_\+\+Check}!mixer.\+h@{mixer.\+h}}
+\subsubsection{\texorpdfstring{Py\+Channel\+\_\+\+Check}{PyChannel\_Check}}
+{\footnotesize\ttfamily \#define Py\+Channel\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((x)-\/$>$ob\+\_\+type == (Py\+Type\+Object$\ast$)Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}3\mbox{]})}
+
+\mbox{\Hypertarget{mixer_8h_a3220dcd663e8f21dc7c12ea5172df92c}\label{mixer_8h_a3220dcd663e8f21dc7c12ea5172df92c}} 
+\index{mixer.\+h@{mixer.\+h}!Py\+Channel\+\_\+\+New@{Py\+Channel\+\_\+\+New}}
+\index{Py\+Channel\+\_\+\+New@{Py\+Channel\+\_\+\+New}!mixer.\+h@{mixer.\+h}}
+\subsubsection{\texorpdfstring{Py\+Channel\+\_\+\+New}{PyChannel\_New}}
+{\footnotesize\ttfamily \#define Py\+Channel\+\_\+\+New~($\ast$(Py\+Object$\ast$($\ast$)(int))Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}4\mbox{]})}
+
+\mbox{\Hypertarget{mixer_8h_a5cc799880d9943124ff1641d8787f678}\label{mixer_8h_a5cc799880d9943124ff1641d8787f678}} 
+\index{mixer.\+h@{mixer.\+h}!Py\+Channel\+\_\+\+Type@{Py\+Channel\+\_\+\+Type}}
+\index{Py\+Channel\+\_\+\+Type@{Py\+Channel\+\_\+\+Type}!mixer.\+h@{mixer.\+h}}
+\subsubsection{\texorpdfstring{Py\+Channel\+\_\+\+Type}{PyChannel\_Type}}
+{\footnotesize\ttfamily \#define Py\+Channel\+\_\+\+Type~($\ast$(Py\+Type\+Object$\ast$)Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}3\mbox{]})}
+
+\mbox{\Hypertarget{mixer_8h_a95ca792f86679927c3834aee6437ddf5}\label{mixer_8h_a95ca792f86679927c3834aee6437ddf5}} 
+\index{mixer.\+h@{mixer.\+h}!P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}
+\index{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}!mixer.\+h@{mixer.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}{PYGAMEAPI\_MIXER\_FIRSTSLOT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT~0}
+
+\mbox{\Hypertarget{mixer_8h_a33def5bc8f281f95c8e88a771e78d270}\label{mixer_8h_a33def5bc8f281f95c8e88a771e78d270}} 
+\index{mixer.\+h@{mixer.\+h}!P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+N\+U\+M\+S\+L\+O\+TS@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+N\+U\+M\+S\+L\+O\+TS}}
+\index{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+N\+U\+M\+S\+L\+O\+TS@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+N\+U\+M\+S\+L\+O\+TS}!mixer.\+h@{mixer.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+N\+U\+M\+S\+L\+O\+TS}{PYGAMEAPI\_MIXER\_NUMSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+I\+X\+E\+R\+\_\+\+N\+U\+M\+S\+L\+O\+TS~7}
+
+\mbox{\Hypertarget{mixer_8h_a88816c07bf2767f7819f397fbc0890a7}\label{mixer_8h_a88816c07bf2767f7819f397fbc0890a7}} 
+\index{mixer.\+h@{mixer.\+h}!Py\+Mixer\+\_\+\+Auto\+Init@{Py\+Mixer\+\_\+\+Auto\+Init}}
+\index{Py\+Mixer\+\_\+\+Auto\+Init@{Py\+Mixer\+\_\+\+Auto\+Init}!mixer.\+h@{mixer.\+h}}
+\subsubsection{\texorpdfstring{Py\+Mixer\+\_\+\+Auto\+Init}{PyMixer\_AutoInit}}
+{\footnotesize\ttfamily \#define Py\+Mixer\+\_\+\+Auto\+Init~($\ast$(Py\+Object$\ast$($\ast$)(Py\+Object$\ast$, Py\+Object$\ast$))Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}5\mbox{]})}
+
+\mbox{\Hypertarget{mixer_8h_a8b70efdd187dcd4ba80d694ade649303}\label{mixer_8h_a8b70efdd187dcd4ba80d694ade649303}} 
+\index{mixer.\+h@{mixer.\+h}!Py\+Mixer\+\_\+\+Auto\+Quit@{Py\+Mixer\+\_\+\+Auto\+Quit}}
+\index{Py\+Mixer\+\_\+\+Auto\+Quit@{Py\+Mixer\+\_\+\+Auto\+Quit}!mixer.\+h@{mixer.\+h}}
+\subsubsection{\texorpdfstring{Py\+Mixer\+\_\+\+Auto\+Quit}{PyMixer\_AutoQuit}}
+{\footnotesize\ttfamily \#define Py\+Mixer\+\_\+\+Auto\+Quit~($\ast$(void($\ast$)(void))Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}6\mbox{]})}
+
+\mbox{\Hypertarget{mixer_8h_a9b522da348483953517c77fcdae06a4f}\label{mixer_8h_a9b522da348483953517c77fcdae06a4f}} 
+\index{mixer.\+h@{mixer.\+h}!Py\+Sound\+\_\+\+As\+Chunk@{Py\+Sound\+\_\+\+As\+Chunk}}
+\index{Py\+Sound\+\_\+\+As\+Chunk@{Py\+Sound\+\_\+\+As\+Chunk}!mixer.\+h@{mixer.\+h}}
+\subsubsection{\texorpdfstring{Py\+Sound\+\_\+\+As\+Chunk}{PySound\_AsChunk}}
+{\footnotesize\ttfamily \#define Py\+Sound\+\_\+\+As\+Chunk(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((\hyperlink{struct_py_sound_object}{Py\+Sound\+Object}$\ast$)x)-\/$>$chunk)}
+
+\mbox{\Hypertarget{mixer_8h_a5e6e9fbb3a9dc37b62136c9003f2b1d0}\label{mixer_8h_a5e6e9fbb3a9dc37b62136c9003f2b1d0}} 
+\index{mixer.\+h@{mixer.\+h}!Py\+Sound\+\_\+\+Check@{Py\+Sound\+\_\+\+Check}}
+\index{Py\+Sound\+\_\+\+Check@{Py\+Sound\+\_\+\+Check}!mixer.\+h@{mixer.\+h}}
+\subsubsection{\texorpdfstring{Py\+Sound\+\_\+\+Check}{PySound\_Check}}
+{\footnotesize\ttfamily \#define Py\+Sound\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((x)-\/$>$ob\+\_\+type == (Py\+Type\+Object$\ast$)Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}0\mbox{]})}
+
+\mbox{\Hypertarget{mixer_8h_a79b28378e02490bc5f488e555edeea86}\label{mixer_8h_a79b28378e02490bc5f488e555edeea86}} 
+\index{mixer.\+h@{mixer.\+h}!Py\+Sound\+\_\+\+New@{Py\+Sound\+\_\+\+New}}
+\index{Py\+Sound\+\_\+\+New@{Py\+Sound\+\_\+\+New}!mixer.\+h@{mixer.\+h}}
+\subsubsection{\texorpdfstring{Py\+Sound\+\_\+\+New}{PySound\_New}}
+{\footnotesize\ttfamily \#define Py\+Sound\+\_\+\+New~($\ast$(Py\+Object$\ast$($\ast$)(Mix\+\_\+\+Chunk$\ast$))Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}1\mbox{]})}
+
+\mbox{\Hypertarget{mixer_8h_ab7ca2092c52e08014448f0089fa3152d}\label{mixer_8h_ab7ca2092c52e08014448f0089fa3152d}} 
+\index{mixer.\+h@{mixer.\+h}!Py\+Sound\+\_\+\+Play@{Py\+Sound\+\_\+\+Play}}
+\index{Py\+Sound\+\_\+\+Play@{Py\+Sound\+\_\+\+Play}!mixer.\+h@{mixer.\+h}}
+\subsubsection{\texorpdfstring{Py\+Sound\+\_\+\+Play}{PySound\_Play}}
+{\footnotesize\ttfamily \#define Py\+Sound\+\_\+\+Play~($\ast$(Py\+Object$\ast$($\ast$)(Py\+Object$\ast$, Py\+Object$\ast$))Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}2\mbox{]})}
+
+\mbox{\Hypertarget{mixer_8h_a6cdd91bcbfc63595fc4cad179e99623a}\label{mixer_8h_a6cdd91bcbfc63595fc4cad179e99623a}} 
+\index{mixer.\+h@{mixer.\+h}!Py\+Sound\+\_\+\+Type@{Py\+Sound\+\_\+\+Type}}
+\index{Py\+Sound\+\_\+\+Type@{Py\+Sound\+\_\+\+Type}!mixer.\+h@{mixer.\+h}}
+\subsubsection{\texorpdfstring{Py\+Sound\+\_\+\+Type}{PySound\_Type}}
+{\footnotesize\ttfamily \#define Py\+Sound\+\_\+\+Type~($\ast$(Py\+Type\+Object$\ast$)Py\+M\+I\+X\+E\+R\+\_\+\+C\+\_\+\+A\+PI\mbox{[}0\mbox{]})}
+

@@ -1,0 +1,196 @@
+\hypertarget{classgevent_1_1pool_1_1_group_mapping_mixin}{}\section{gevent.\+pool.\+Group\+Mapping\+Mixin Class Reference}
+\label{classgevent_1_1pool_1_1_group_mapping_mixin}\index{gevent.\+pool.\+Group\+Mapping\+Mixin@{gevent.\+pool.\+Group\+Mapping\+Mixin}}
+
+
+Inherits object.
+
+
+
+Inherited by \hyperlink{classgevent_1_1pool_1_1_group}{gevent.\+pool.\+Group}, and \hyperlink{classgevent_1_1threadpool_1_1_thread_pool}{gevent.\+threadpool.\+Thread\+Pool}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classgevent_1_1pool_1_1_group_mapping_mixin_aef5d85d8e23d7d009a47555e75040034}{spawn} (self, func, args, kwargs)
+\item 
+def \hyperlink{classgevent_1_1pool_1_1_group_mapping_mixin_a3c630e95bd357dadd9dc1e1ab86acc8f}{apply\+\_\+cb} (self, func, args=None, kwds=None, callback=None)
+\item 
+def \hyperlink{classgevent_1_1pool_1_1_group_mapping_mixin_a941dbbc427759802773477a43b800e6e}{apply\+\_\+async} (self, func, args=None, kwds=None, callback=None)
+\item 
+def \hyperlink{classgevent_1_1pool_1_1_group_mapping_mixin_a041583aabc35041a8e43ccde41e574a2}{apply} (self, func, args=None, kwds=None)
+\item 
+def \hyperlink{classgevent_1_1pool_1_1_group_mapping_mixin_ab98092e4962dda9badad51318f2a2112}{map} (self, func, iterable)
+\item 
+\mbox{\Hypertarget{classgevent_1_1pool_1_1_group_mapping_mixin_ab386743e92655a00cba1199588a072fa}\label{classgevent_1_1pool_1_1_group_mapping_mixin_ab386743e92655a00cba1199588a072fa}} 
+def {\bfseries map\+\_\+cb} (self, func, iterable, callback=None)
+\item 
+def \hyperlink{classgevent_1_1pool_1_1_group_mapping_mixin_a911ffc786f9671500b344a461d4527ba}{map\+\_\+async} (self, func, iterable, callback=None)
+\item 
+def \hyperlink{classgevent_1_1pool_1_1_group_mapping_mixin_a0c1b1d6ed667a020a99cc9c86fadf785}{imap} (self, func, iterables, kwargs)
+\item 
+def \hyperlink{classgevent_1_1pool_1_1_group_mapping_mixin_a2631d27e737e675bea211e4b5576325f}{imap\+\_\+unordered} (self, func, iterables, kwargs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1pool_1_1_group_mapping_mixin_a041583aabc35041a8e43ccde41e574a2}\label{classgevent_1_1pool_1_1_group_mapping_mixin_a041583aabc35041a8e43ccde41e574a2}} 
+\index{gevent\+::pool\+::\+Group\+Mapping\+Mixin@{gevent\+::pool\+::\+Group\+Mapping\+Mixin}!apply@{apply}}
+\index{apply@{apply}!gevent\+::pool\+::\+Group\+Mapping\+Mixin@{gevent\+::pool\+::\+Group\+Mapping\+Mixin}}
+\subsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily def gevent.\+pool.\+Group\+Mapping\+Mixin.\+apply (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func,  }\item[{}]{args = {\ttfamily None},  }\item[{}]{kwds = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Rough quivalent of the :func:`apply()` builtin function blocking until
+the result is ready and returning it.
+
+The ``func`` will *usually*, but not *always*, be run in a way
+that allows the current greenlet to switch out (for example,
+in a new greenlet or thread, depending on implementation). But
+if the current greenlet or thread is already one that was
+spawned by this pool, the pool may choose to immediately run
+the `func` synchronously.
+
+Any exception ``func`` raises will be propagated to the caller of ``apply`` (that is,
+this method will raise the exception that ``func`` raised).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1pool_1_1_group_mapping_mixin_a941dbbc427759802773477a43b800e6e}\label{classgevent_1_1pool_1_1_group_mapping_mixin_a941dbbc427759802773477a43b800e6e}} 
+\index{gevent\+::pool\+::\+Group\+Mapping\+Mixin@{gevent\+::pool\+::\+Group\+Mapping\+Mixin}!apply\+\_\+async@{apply\+\_\+async}}
+\index{apply\+\_\+async@{apply\+\_\+async}!gevent\+::pool\+::\+Group\+Mapping\+Mixin@{gevent\+::pool\+::\+Group\+Mapping\+Mixin}}
+\subsubsection{\texorpdfstring{apply\+\_\+async()}{apply\_async()}}
+{\footnotesize\ttfamily def gevent.\+pool.\+Group\+Mapping\+Mixin.\+apply\+\_\+async (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func,  }\item[{}]{args = {\ttfamily None},  }\item[{}]{kwds = {\ttfamily None},  }\item[{}]{callback = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A variant of the :meth:`apply` method which returns a :class:`~.Greenlet` object.
+
+When the returned greenlet gets to run, it *will* call :meth:`apply`,
+passing in *func*, *args* and *kwds*.
+
+If *callback* is specified, then it should be a callable which
+accepts a single argument. When the result becomes ready
+callback is applied to it (unless the call failed).
+
+This method will never block, even if this group is full (that is,
+even if :meth:`spawn` would block, this method will not).
+
+.. caution:: The returned greenlet may or may not be tracked
+   as part of this group, so :meth:`joining <join>` this group is
+   not a reliable way to wait for the results to be available or
+   for the returned greenlet to run; instead, join the returned
+   greenlet.
+
+.. tip:: Because :class:`~.ThreadPool` objects do not track greenlets, the returned
+   greenlet will never be a part of it. To reduce overhead and improve performance,
+   :class:`Group` and :class:`Pool` may choose to track the returned
+   greenlet. These are implementation details that may change.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1pool_1_1_group_mapping_mixin_a3c630e95bd357dadd9dc1e1ab86acc8f}\label{classgevent_1_1pool_1_1_group_mapping_mixin_a3c630e95bd357dadd9dc1e1ab86acc8f}} 
+\index{gevent\+::pool\+::\+Group\+Mapping\+Mixin@{gevent\+::pool\+::\+Group\+Mapping\+Mixin}!apply\+\_\+cb@{apply\+\_\+cb}}
+\index{apply\+\_\+cb@{apply\+\_\+cb}!gevent\+::pool\+::\+Group\+Mapping\+Mixin@{gevent\+::pool\+::\+Group\+Mapping\+Mixin}}
+\subsubsection{\texorpdfstring{apply\+\_\+cb()}{apply\_cb()}}
+{\footnotesize\ttfamily def gevent.\+pool.\+Group\+Mapping\+Mixin.\+apply\+\_\+cb (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func,  }\item[{}]{args = {\ttfamily None},  }\item[{}]{kwds = {\ttfamily None},  }\item[{}]{callback = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:meth:`apply` the given *func(\\*args, \\*\\*kwds)*, and, if a *callback* is given, run it with the
+results of *func* (unless an exception was raised.)
+
+The *callback* may be called synchronously or asynchronously. If called
+asynchronously, it will not be tracked by this group. (:class:`Group` and :class:`Pool`
+call it asynchronously in a new greenlet; :class:`~gevent.threadpool.ThreadPool` calls
+it synchronously in the current greenlet.)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1pool_1_1_group_mapping_mixin_a0c1b1d6ed667a020a99cc9c86fadf785}\label{classgevent_1_1pool_1_1_group_mapping_mixin_a0c1b1d6ed667a020a99cc9c86fadf785}} 
+\index{gevent\+::pool\+::\+Group\+Mapping\+Mixin@{gevent\+::pool\+::\+Group\+Mapping\+Mixin}!imap@{imap}}
+\index{imap@{imap}!gevent\+::pool\+::\+Group\+Mapping\+Mixin@{gevent\+::pool\+::\+Group\+Mapping\+Mixin}}
+\subsubsection{\texorpdfstring{imap()}{imap()}}
+{\footnotesize\ttfamily def gevent.\+pool.\+Group\+Mapping\+Mixin.\+imap (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func,  }\item[{}]{iterables,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}imap(func, *iterables, maxsize=None) -> iterable
+
+An equivalent of :func:`itertools.imap`, operating in parallel.
+The *func* is applied to each element yielded from each
+iterable in *iterables* in turn, collecting the result.
+
+If this object has a bound on the number of active greenlets it can
+contain (such as :class:`Pool`), then at most that number of tasks will operate
+in parallel.
+
+:keyword int maxsize: If given and not-None, specifies the maximum number of
+    finished results that will be allowed to accumulate awaiting the reader;
+    more than that number of results will cause map function greenlets to begin
+    to block. This is most useful if there is a great disparity in the speed of
+    the mapping code and the consumer and the results consume a great deal of resources.
+
+    .. note:: This is separate from any bound on the number of active parallel
+       tasks, though they may have some interaction (for example, limiting the
+       number of parallel tasks to the smallest bound).
+
+    .. note:: Using a bound is slightly more computationally expensive than not using a bound.
+
+    .. tip:: The :meth:`imap_unordered` method makes much better
+use of this parameter. Some additional, unspecified,
+number of objects may be required to be kept in memory
+to maintain order by this function.
+
+:return: An iterable object.
+
+.. versionchanged:: 1.1b3
+    Added the *maxsize* keyword parameter.
+.. versionchanged:: 1.1a1
+    Accept multiple *iterables* to iterate in parallel.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1pool_1_1_group_mapping_mixin_a2631d27e737e675bea211e4b5576325f}\label{classgevent_1_1pool_1_1_group_mapping_mixin_a2631d27e737e675bea211e4b5576325f}} 
+\index{gevent\+::pool\+::\+Group\+Mapping\+Mixin@{gevent\+::pool\+::\+Group\+Mapping\+Mixin}!imap\+\_\+unordered@{imap\+\_\+unordered}}
+\index{imap\+\_\+unordered@{imap\+\_\+unordered}!gevent\+::pool\+::\+Group\+Mapping\+Mixin@{gevent\+::pool\+::\+Group\+Mapping\+Mixin}}
+\subsubsection{\texorpdfstring{imap\+\_\+unordered()}{imap\_unordered()}}
+{\footnotesize\ttfamily def gevent.\+pool.\+Group\+Mapping\+Mixin.\+imap\+\_\+unordered (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func,  }\item[{}]{iterables,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}imap_unordered(func, *iterables, maxsize=None) -> iterable
+
+The same as :meth:`imap` except that the ordering of the results
+from the returned iterator should be considered in arbitrary
+order.
+
+This is lighter weight than :meth:`imap` and should be preferred if order
+doesn't matter.
+
+.. seealso:: :meth:`imap` for more details.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1pool_1_1_group_mapping_mixin_ab98092e4962dda9badad51318f2a2112}\label{classgevent_1_1pool_1_1_group_mapping_mixin_ab98092e4962dda9badad51318f2a2112}} 
+\index{gevent\+::pool\+::\+Group\+Mapping\+Mixin@{gevent\+::pool\+::\+Group\+Mapping\+Mixin}!map@{map}}
+\index{map@{map}!gevent\+::pool\+::\+Group\+Mapping\+Mixin@{gevent\+::pool\+::\+Group\+Mapping\+Mixin}}
+\subsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily def gevent.\+pool.\+Group\+Mapping\+Mixin.\+map (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func,  }\item[{}]{iterable }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list made by applying the *func* to each element of
+the iterable.
+
+.. seealso:: :meth:`imap`
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1pool_1_1_group_mapping_mixin_a911ffc786f9671500b344a461d4527ba}\label{classgevent_1_1pool_1_1_group_mapping_mixin_a911ffc786f9671500b344a461d4527ba}} 
+\index{gevent\+::pool\+::\+Group\+Mapping\+Mixin@{gevent\+::pool\+::\+Group\+Mapping\+Mixin}!map\+\_\+async@{map\+\_\+async}}
+\index{map\+\_\+async@{map\+\_\+async}!gevent\+::pool\+::\+Group\+Mapping\+Mixin@{gevent\+::pool\+::\+Group\+Mapping\+Mixin}}
+\subsubsection{\texorpdfstring{map\+\_\+async()}{map\_async()}}
+{\footnotesize\ttfamily def gevent.\+pool.\+Group\+Mapping\+Mixin.\+map\+\_\+async (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func,  }\item[{}]{iterable,  }\item[{}]{callback = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A variant of the map() method which returns a Greenlet object that is executing
+the map function.
+
+If callback is specified then it should be a callable which accepts a
+single argument.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1pool_1_1_group_mapping_mixin_aef5d85d8e23d7d009a47555e75040034}\label{classgevent_1_1pool_1_1_group_mapping_mixin_aef5d85d8e23d7d009a47555e75040034}} 
+\index{gevent\+::pool\+::\+Group\+Mapping\+Mixin@{gevent\+::pool\+::\+Group\+Mapping\+Mixin}!spawn@{spawn}}
+\index{spawn@{spawn}!gevent\+::pool\+::\+Group\+Mapping\+Mixin@{gevent\+::pool\+::\+Group\+Mapping\+Mixin}}
+\subsubsection{\texorpdfstring{spawn()}{spawn()}}
+{\footnotesize\ttfamily def gevent.\+pool.\+Group\+Mapping\+Mixin.\+spawn (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A function that runs *func* with *args* and *kwargs*, potentially
+asynchronously. Return a value with a ``get`` method that blocks
+until the results of func are available, and a ``rawlink`` method
+that calls a callback when the results are available.
+
+If this object has an upper bound on how many asyncronously executing
+tasks can exist, this method may block until a slot becomes available.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/pool.\+py\end{DoxyCompactItemize}

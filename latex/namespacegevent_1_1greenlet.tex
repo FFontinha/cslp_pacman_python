@@ -1,0 +1,71 @@
+\hypertarget{namespacegevent_1_1greenlet}{}\section{gevent.\+greenlet Namespace Reference}
+\label{namespacegevent_1_1greenlet}\index{gevent.\+greenlet@{gevent.\+greenlet}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgevent_1_1greenlet_1_1__dummy__event}{\+\_\+dummy\+\_\+event}
+\item 
+class \hyperlink{classgevent_1_1greenlet_1_1___frame}{\+\_\+\+Frame}
+\item 
+class \hyperlink{classgevent_1_1greenlet_1_1_failure_spawned_link}{Failure\+Spawned\+Link}
+\item 
+class \hyperlink{classgevent_1_1greenlet_1_1_greenlet}{Greenlet}
+\item 
+class \hyperlink{classgevent_1_1greenlet_1_1_spawned_link}{Spawned\+Link}
+\item 
+class \hyperlink{classgevent_1_1greenlet_1_1_success_spawned_link}{Success\+Spawned\+Link}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1greenlet_aa0aafeae4b59c0d3c72c3f6150b245ed}{joinall} (greenlets, timeout=None, raise\+\_\+error=False, count=None)
+\item 
+def \hyperlink{namespacegevent_1_1greenlet_a9dcac8b6723aad4f23d624e15c42f661}{killall} (greenlets, exception=Greenlet\+Exit, block=True, timeout=None)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1greenlet_aa0aafeae4b59c0d3c72c3f6150b245ed}\label{namespacegevent_1_1greenlet_aa0aafeae4b59c0d3c72c3f6150b245ed}} 
+\index{gevent\+::greenlet@{gevent\+::greenlet}!joinall@{joinall}}
+\index{joinall@{joinall}!gevent\+::greenlet@{gevent\+::greenlet}}
+\subsubsection{\texorpdfstring{joinall()}{joinall()}}
+{\footnotesize\ttfamily def gevent.\+greenlet.\+joinall (\begin{DoxyParamCaption}\item[{}]{greenlets,  }\item[{}]{timeout = {\ttfamily None},  }\item[{}]{raise\+\_\+error = {\ttfamily False},  }\item[{}]{count = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wait for the ``greenlets`` to finish.
+
+:param greenlets: A sequence (supporting :func:`len`) of greenlets to wait for.
+:keyword float timeout: If given, the maximum number of seconds to wait.
+:return: A sequence of the greenlets that finished before the timeout (if any)
+    expired.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1greenlet_a9dcac8b6723aad4f23d624e15c42f661}\label{namespacegevent_1_1greenlet_a9dcac8b6723aad4f23d624e15c42f661}} 
+\index{gevent\+::greenlet@{gevent\+::greenlet}!killall@{killall}}
+\index{killall@{killall}!gevent\+::greenlet@{gevent\+::greenlet}}
+\subsubsection{\texorpdfstring{killall()}{killall()}}
+{\footnotesize\ttfamily def gevent.\+greenlet.\+killall (\begin{DoxyParamCaption}\item[{}]{greenlets,  }\item[{}]{exception = {\ttfamily GreenletExit},  }\item[{}]{block = {\ttfamily True},  }\item[{}]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Forceably terminate all the ``greenlets`` by causing them to raise ``exception``.
+
+.. caution:: Use care when killing greenlets. If they are not prepared for exceptions,
+   this could result in corrupted state.
+
+:param greenlets: A **bounded** iterable of the non-None greenlets to terminate.
+   *All* the items in this iterable must be greenlets that belong to the same thread.
+:keyword exception: The exception to raise in the greenlets. By default this is
+    :class:`GreenletExit`.
+:keyword bool block: If True (the default) then this function only returns when all the
+    greenlets are dead; the current greenlet is unscheduled during that process.
+    If greenlets ignore the initial exception raised in them,
+    then they will be joined (with :func:`gevent.joinall`) and allowed to die naturally.
+    If False, this function returns immediately and greenlets will raise
+    the exception asynchronously.
+:keyword float timeout: A time in seconds to wait for greenlets to die. If given, it is
+    only honored when ``block`` is True.
+:raise Timeout: If blocking and a timeout is given that elapses before
+    all the greenlets are dead.
+
+.. versionchanged:: 1.1a2
+    *greenlets* can be any iterable of greenlets, like an iterator or a set.
+    Previously it had to be a list or tuple.
+\end{DoxyVerb}
+ 

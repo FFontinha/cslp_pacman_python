@@ -1,0 +1,73 @@
+\hypertarget{namespace__pytest_1_1nodes}{}\section{\+\_\+pytest.\+nodes Namespace Reference}
+\label{namespace__pytest_1_1nodes}\index{\+\_\+pytest.\+nodes@{\+\_\+pytest.\+nodes}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class__pytest_1_1nodes_1_1___compat_property}{\+\_\+\+Compat\+Property}
+\item 
+class \hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}
+\item 
+class \hyperlink{class__pytest_1_1nodes_1_1_file}{File}
+\item 
+class \hyperlink{class__pytest_1_1nodes_1_1_f_s_collector}{F\+S\+Collector}
+\item 
+class \hyperlink{class__pytest_1_1nodes_1_1_item}{Item}
+\item 
+class \hyperlink{class__pytest_1_1nodes_1_1_node}{Node}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespace__pytest_1_1nodes_a2501f3fe735e1e64eab91f16214d7b0e}{ischildnode} (baseid, nodeid)
+\item 
+def \hyperlink{namespace__pytest_1_1nodes_ac6dc8c7424d5ce289282190c7b58fbe5}{get\+\_\+fslocation\+\_\+from\+\_\+item} (item)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespace__pytest_1_1nodes_a8fae5009d6c6d1c154e378ad6e7af96d}{S\+EP} = \char`\"{}/\char`\"{}
+\item 
+\hyperlink{namespace__pytest_1_1nodes_abeecba510a599ffcbc83a7edcaa85d42}{tracebackcutdir} = py.\+path.\+local(\+\_\+pytest.\+\_\+\+\_\+file\+\_\+\+\_\+).dirpath()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1nodes_ac6dc8c7424d5ce289282190c7b58fbe5}\label{namespace__pytest_1_1nodes_ac6dc8c7424d5ce289282190c7b58fbe5}} 
+\index{\+\_\+pytest\+::nodes@{\+\_\+pytest\+::nodes}!get\+\_\+fslocation\+\_\+from\+\_\+item@{get\+\_\+fslocation\+\_\+from\+\_\+item}}
+\index{get\+\_\+fslocation\+\_\+from\+\_\+item@{get\+\_\+fslocation\+\_\+from\+\_\+item}!\+\_\+pytest\+::nodes@{\+\_\+pytest\+::nodes}}
+\subsubsection{\texorpdfstring{get\+\_\+fslocation\+\_\+from\+\_\+item()}{get\_fslocation\_from\_item()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+nodes.\+get\+\_\+fslocation\+\_\+from\+\_\+item (\begin{DoxyParamCaption}\item[{}]{item }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tries to extract the actual location from an item, depending on available attributes:
+
+* "fslocation": a pair (path, lineno)
+* "obj": a Python object that the item wraps.
+* "fspath": just a path
+
+:rtype: a tuple of (str|LocalPath, int) with filename and line number.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1nodes_a2501f3fe735e1e64eab91f16214d7b0e}\label{namespace__pytest_1_1nodes_a2501f3fe735e1e64eab91f16214d7b0e}} 
+\index{\+\_\+pytest\+::nodes@{\+\_\+pytest\+::nodes}!ischildnode@{ischildnode}}
+\index{ischildnode@{ischildnode}!\+\_\+pytest\+::nodes@{\+\_\+pytest\+::nodes}}
+\subsubsection{\texorpdfstring{ischildnode()}{ischildnode()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+nodes.\+ischildnode (\begin{DoxyParamCaption}\item[{}]{baseid,  }\item[{}]{nodeid }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the nodeid is a child node of the baseid.
+
+E.g. 'foo/bar::Baz::()' is a child of 'foo', 'foo/bar' and 'foo/bar::Baz', but not of 'foo/blorp'
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1nodes_a8fae5009d6c6d1c154e378ad6e7af96d}\label{namespace__pytest_1_1nodes_a8fae5009d6c6d1c154e378ad6e7af96d}} 
+\index{\+\_\+pytest\+::nodes@{\+\_\+pytest\+::nodes}!S\+EP@{S\+EP}}
+\index{S\+EP@{S\+EP}!\+\_\+pytest\+::nodes@{\+\_\+pytest\+::nodes}}
+\subsubsection{\texorpdfstring{S\+EP}{SEP}}
+{\footnotesize\ttfamily string \+\_\+pytest.\+nodes.\+S\+EP = \char`\"{}/\char`\"{}}
+
+\mbox{\Hypertarget{namespace__pytest_1_1nodes_abeecba510a599ffcbc83a7edcaa85d42}\label{namespace__pytest_1_1nodes_abeecba510a599ffcbc83a7edcaa85d42}} 
+\index{\+\_\+pytest\+::nodes@{\+\_\+pytest\+::nodes}!tracebackcutdir@{tracebackcutdir}}
+\index{tracebackcutdir@{tracebackcutdir}!\+\_\+pytest\+::nodes@{\+\_\+pytest\+::nodes}}
+\subsubsection{\texorpdfstring{tracebackcutdir}{tracebackcutdir}}
+{\footnotesize\ttfamily \+\_\+pytest.\+nodes.\+tracebackcutdir = py.\+path.\+local(\+\_\+pytest.\+\_\+\+\_\+file\+\_\+\+\_\+).dirpath()}
+

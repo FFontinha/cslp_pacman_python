@@ -1,0 +1,132 @@
+\hypertarget{namespacepip_1_1pep425tags}{}\section{pip.\+pep425tags Namespace Reference}
+\label{namespacepip_1_1pep425tags}\index{pip.\+pep425tags@{pip.\+pep425tags}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1pep425tags_a9bbdef970d9efa6a5567f8375bd56c66}\label{namespacepip_1_1pep425tags_a9bbdef970d9efa6a5567f8375bd56c66}} 
+def {\bfseries get\+\_\+config\+\_\+var} (var)
+\item 
+def \hyperlink{namespacepip_1_1pep425tags_a5728b64b870a5e696c67de254c167d62}{get\+\_\+abbr\+\_\+impl} ()
+\item 
+def \hyperlink{namespacepip_1_1pep425tags_a34bb0775cea16453eacb13c9f6c10d5d}{get\+\_\+impl\+\_\+ver} ()
+\item 
+def \hyperlink{namespacepip_1_1pep425tags_ab3a959a4b6cd0ecf4bd6668b8d394860}{get\+\_\+impl\+\_\+version\+\_\+info} ()
+\item 
+def \hyperlink{namespacepip_1_1pep425tags_ac3eee2c0d832af05428555a2da79e14c}{get\+\_\+impl\+\_\+tag} ()
+\item 
+def \hyperlink{namespacepip_1_1pep425tags_a6c08127e7266394e98a9a0d3ae411e37}{get\+\_\+flag} (var, fallback, expected=True, warn=True)
+\item 
+def \hyperlink{namespacepip_1_1pep425tags_a9eb1e9596e7d77559943f16182ba08d5}{get\+\_\+abi\+\_\+tag} ()
+\item 
+def \hyperlink{namespacepip_1_1pep425tags_ad671021e73547a714ef2da952dbffa4f}{get\+\_\+platform} ()
+\item 
+\mbox{\Hypertarget{namespacepip_1_1pep425tags_a1935aaf0790537ad83979af39b70142e}\label{namespacepip_1_1pep425tags_a1935aaf0790537ad83979af39b70142e}} 
+def {\bfseries is\+\_\+manylinux1\+\_\+compatible} ()
+\item 
+def \hyperlink{namespacepip_1_1pep425tags_adf0a925b9fa10bdc4ab0735112f3f679}{get\+\_\+darwin\+\_\+arches} (major, minor, machine)
+\item 
+def \hyperlink{namespacepip_1_1pep425tags_a4a5b16312b8aa61715a75c4b60b2f1b7}{get\+\_\+supported} (versions=None, noarch=False, platform=None, impl=None, abi=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1pep425tags_ad3131899e4e86309def1e3004912ae51}\label{namespacepip_1_1pep425tags_ad3131899e4e86309def1e3004912ae51}} 
+{\bfseries logger} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1pep425tags_a0f70be92e1b7842af9f6ee790f10c170}\label{namespacepip_1_1pep425tags_a0f70be92e1b7842af9f6ee790f10c170}} 
+def {\bfseries supported\+\_\+tags} = \hyperlink{namespacepip_1_1pep425tags_a4a5b16312b8aa61715a75c4b60b2f1b7}{get\+\_\+supported}()
+\item 
+\mbox{\Hypertarget{namespacepip_1_1pep425tags_a032e5a04768df97299781f547081f375}\label{namespacepip_1_1pep425tags_a032e5a04768df97299781f547081f375}} 
+def {\bfseries supported\+\_\+tags\+\_\+noarch} = \hyperlink{namespacepip_1_1pep425tags_a4a5b16312b8aa61715a75c4b60b2f1b7}{get\+\_\+supported}(noarch=True)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1pep425tags_ac39f34411a33b8f63383fc497dc5cc67}\label{namespacepip_1_1pep425tags_ac39f34411a33b8f63383fc497dc5cc67}} 
+def {\bfseries implementation\+\_\+tag} = \hyperlink{namespacepip_1_1pep425tags_ac3eee2c0d832af05428555a2da79e14c}{get\+\_\+impl\+\_\+tag}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Generate and work with PEP 425 Compatibility Tags.\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepip_1_1pep425tags_a5728b64b870a5e696c67de254c167d62}\label{namespacepip_1_1pep425tags_a5728b64b870a5e696c67de254c167d62}} 
+\index{pip\+::pep425tags@{pip\+::pep425tags}!get\+\_\+abbr\+\_\+impl@{get\+\_\+abbr\+\_\+impl}}
+\index{get\+\_\+abbr\+\_\+impl@{get\+\_\+abbr\+\_\+impl}!pip\+::pep425tags@{pip\+::pep425tags}}
+\subsubsection{\texorpdfstring{get\+\_\+abbr\+\_\+impl()}{get\_abbr\_impl()}}
+{\footnotesize\ttfamily def pip.\+pep425tags.\+get\+\_\+abbr\+\_\+impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return abbreviated implementation name.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1pep425tags_a9eb1e9596e7d77559943f16182ba08d5}\label{namespacepip_1_1pep425tags_a9eb1e9596e7d77559943f16182ba08d5}} 
+\index{pip\+::pep425tags@{pip\+::pep425tags}!get\+\_\+abi\+\_\+tag@{get\+\_\+abi\+\_\+tag}}
+\index{get\+\_\+abi\+\_\+tag@{get\+\_\+abi\+\_\+tag}!pip\+::pep425tags@{pip\+::pep425tags}}
+\subsubsection{\texorpdfstring{get\+\_\+abi\+\_\+tag()}{get\_abi\_tag()}}
+{\footnotesize\ttfamily def pip.\+pep425tags.\+get\+\_\+abi\+\_\+tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the ABI tag based on SOABI (if available) or emulate SOABI
+(CPython 2, PyPy).\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1pep425tags_adf0a925b9fa10bdc4ab0735112f3f679}\label{namespacepip_1_1pep425tags_adf0a925b9fa10bdc4ab0735112f3f679}} 
+\index{pip\+::pep425tags@{pip\+::pep425tags}!get\+\_\+darwin\+\_\+arches@{get\+\_\+darwin\+\_\+arches}}
+\index{get\+\_\+darwin\+\_\+arches@{get\+\_\+darwin\+\_\+arches}!pip\+::pep425tags@{pip\+::pep425tags}}
+\subsubsection{\texorpdfstring{get\+\_\+darwin\+\_\+arches()}{get\_darwin\_arches()}}
+{\footnotesize\ttfamily def pip.\+pep425tags.\+get\+\_\+darwin\+\_\+arches (\begin{DoxyParamCaption}\item[{}]{major,  }\item[{}]{minor,  }\item[{}]{machine }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of supported arches (including group arches) for
+the given major, minor and machine architecture of an macOS machine.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1pep425tags_a6c08127e7266394e98a9a0d3ae411e37}\label{namespacepip_1_1pep425tags_a6c08127e7266394e98a9a0d3ae411e37}} 
+\index{pip\+::pep425tags@{pip\+::pep425tags}!get\+\_\+flag@{get\+\_\+flag}}
+\index{get\+\_\+flag@{get\+\_\+flag}!pip\+::pep425tags@{pip\+::pep425tags}}
+\subsubsection{\texorpdfstring{get\+\_\+flag()}{get\_flag()}}
+{\footnotesize\ttfamily def pip.\+pep425tags.\+get\+\_\+flag (\begin{DoxyParamCaption}\item[{}]{var,  }\item[{}]{fallback,  }\item[{}]{expected = {\ttfamily True},  }\item[{}]{warn = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Use a fallback method for determining SOABI flags if the needed config
+var is unset or unavailable.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1pep425tags_ac3eee2c0d832af05428555a2da79e14c}\label{namespacepip_1_1pep425tags_ac3eee2c0d832af05428555a2da79e14c}} 
+\index{pip\+::pep425tags@{pip\+::pep425tags}!get\+\_\+impl\+\_\+tag@{get\+\_\+impl\+\_\+tag}}
+\index{get\+\_\+impl\+\_\+tag@{get\+\_\+impl\+\_\+tag}!pip\+::pep425tags@{pip\+::pep425tags}}
+\subsubsection{\texorpdfstring{get\+\_\+impl\+\_\+tag()}{get\_impl\_tag()}}
+{\footnotesize\ttfamily def pip.\+pep425tags.\+get\+\_\+impl\+\_\+tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the Tag for this specific implementation.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1pep425tags_a34bb0775cea16453eacb13c9f6c10d5d}\label{namespacepip_1_1pep425tags_a34bb0775cea16453eacb13c9f6c10d5d}} 
+\index{pip\+::pep425tags@{pip\+::pep425tags}!get\+\_\+impl\+\_\+ver@{get\+\_\+impl\+\_\+ver}}
+\index{get\+\_\+impl\+\_\+ver@{get\+\_\+impl\+\_\+ver}!pip\+::pep425tags@{pip\+::pep425tags}}
+\subsubsection{\texorpdfstring{get\+\_\+impl\+\_\+ver()}{get\_impl\_ver()}}
+{\footnotesize\ttfamily def pip.\+pep425tags.\+get\+\_\+impl\+\_\+ver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return implementation version.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1pep425tags_ab3a959a4b6cd0ecf4bd6668b8d394860}\label{namespacepip_1_1pep425tags_ab3a959a4b6cd0ecf4bd6668b8d394860}} 
+\index{pip\+::pep425tags@{pip\+::pep425tags}!get\+\_\+impl\+\_\+version\+\_\+info@{get\+\_\+impl\+\_\+version\+\_\+info}}
+\index{get\+\_\+impl\+\_\+version\+\_\+info@{get\+\_\+impl\+\_\+version\+\_\+info}!pip\+::pep425tags@{pip\+::pep425tags}}
+\subsubsection{\texorpdfstring{get\+\_\+impl\+\_\+version\+\_\+info()}{get\_impl\_version\_info()}}
+{\footnotesize\ttfamily def pip.\+pep425tags.\+get\+\_\+impl\+\_\+version\+\_\+info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return sys.version_info-like tuple for use in decrementing the minor
+version.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1pep425tags_ad671021e73547a714ef2da952dbffa4f}\label{namespacepip_1_1pep425tags_ad671021e73547a714ef2da952dbffa4f}} 
+\index{pip\+::pep425tags@{pip\+::pep425tags}!get\+\_\+platform@{get\+\_\+platform}}
+\index{get\+\_\+platform@{get\+\_\+platform}!pip\+::pep425tags@{pip\+::pep425tags}}
+\subsubsection{\texorpdfstring{get\+\_\+platform()}{get\_platform()}}
+{\footnotesize\ttfamily def pip.\+pep425tags.\+get\+\_\+platform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return our platform name 'win32', 'linux_x86_64'\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1pep425tags_a4a5b16312b8aa61715a75c4b60b2f1b7}\label{namespacepip_1_1pep425tags_a4a5b16312b8aa61715a75c4b60b2f1b7}} 
+\index{pip\+::pep425tags@{pip\+::pep425tags}!get\+\_\+supported@{get\+\_\+supported}}
+\index{get\+\_\+supported@{get\+\_\+supported}!pip\+::pep425tags@{pip\+::pep425tags}}
+\subsubsection{\texorpdfstring{get\+\_\+supported()}{get\_supported()}}
+{\footnotesize\ttfamily def pip.\+pep425tags.\+get\+\_\+supported (\begin{DoxyParamCaption}\item[{}]{versions = {\ttfamily None},  }\item[{}]{noarch = {\ttfamily False},  }\item[{}]{platform = {\ttfamily None},  }\item[{}]{impl = {\ttfamily None},  }\item[{}]{abi = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of supported tags for each version specified in
+`versions`.
+
+:param versions: a list of string versions, of the form ["33", "32"],
+    or None. The first version will be assumed to support our ABI.
+:param platform: specify the exact platform you want valid
+    tags for, or None. If None, use the local system platform.
+:param impl: specify the exact implementation you want valid
+    tags for, or None. If None, use the local interpreter impl.
+:param abi: specify the exact abi you want valid
+    tags for, or None. If None, use the local interpreter abi.
+\end{DoxyVerb}
+ 

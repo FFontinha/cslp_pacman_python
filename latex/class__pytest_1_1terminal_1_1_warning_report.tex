@@ -1,0 +1,55 @@
+\hypertarget{class__pytest_1_1terminal_1_1_warning_report}{}\section{\+\_\+pytest.\+terminal.\+Warning\+Report Class Reference}
+\label{class__pytest_1_1terminal_1_1_warning_report}\index{\+\_\+pytest.\+terminal.\+Warning\+Report@{\+\_\+pytest.\+terminal.\+Warning\+Report}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{class__pytest_1_1terminal_1_1_warning_report_a8ae5226649cc0aef231e6e61602a440c}{get\+\_\+location} (self, config)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1terminal_1_1_warning_report_aa8246d2d6c1f62354a1ab4c41bc9eb56}\label{class__pytest_1_1terminal_1_1_warning_report_aa8246d2d6c1f62354a1ab4c41bc9eb56}} 
+{\bfseries message} = attr.\+ib()
+\item 
+\mbox{\Hypertarget{class__pytest_1_1terminal_1_1_warning_report_a413f1dc4fcd66e7eaf9506c230508632}\label{class__pytest_1_1terminal_1_1_warning_report_a413f1dc4fcd66e7eaf9506c230508632}} 
+{\bfseries nodeid} = attr.\+ib(default=None)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1terminal_1_1_warning_report_a28445a21e91dcd873fe191ca48a29d40}\label{class__pytest_1_1terminal_1_1_warning_report_a28445a21e91dcd873fe191ca48a29d40}} 
+{\bfseries fslocation} = attr.\+ib(default=None)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1terminal_1_1_warning_report_a161ec17af7dc5d1b43749ac6d107a36a}\label{class__pytest_1_1terminal_1_1_warning_report_a161ec17af7dc5d1b43749ac6d107a36a}} 
+{\bfseries legacy} = attr.\+ib(default=False)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Simple structure to hold warnings information captured by ``pytest_logwarning`` and ``pytest_warning_captured``.
+
+:ivar str message: user friendly message about the warning
+:ivar str|None nodeid: node id that generated the warning (see ``get_location``).
+:ivar tuple|py.path.local fslocation:
+    file system location of the source of the warning (see ``get_location``).
+
+:ivar bool legacy: if this warning report was generated from the deprecated ``pytest_logwarning`` hook.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1terminal_1_1_warning_report_a8ae5226649cc0aef231e6e61602a440c}\label{class__pytest_1_1terminal_1_1_warning_report_a8ae5226649cc0aef231e6e61602a440c}} 
+\index{\+\_\+pytest\+::terminal\+::\+Warning\+Report@{\+\_\+pytest\+::terminal\+::\+Warning\+Report}!get\+\_\+location@{get\+\_\+location}}
+\index{get\+\_\+location@{get\+\_\+location}!\+\_\+pytest\+::terminal\+::\+Warning\+Report@{\+\_\+pytest\+::terminal\+::\+Warning\+Report}}
+\subsubsection{\texorpdfstring{get\+\_\+location()}{get\_location()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+terminal.\+Warning\+Report.\+get\+\_\+location (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{config }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the more user-friendly information about the location
+of a warning, or None.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/terminal.\+py\end{DoxyCompactItemize}

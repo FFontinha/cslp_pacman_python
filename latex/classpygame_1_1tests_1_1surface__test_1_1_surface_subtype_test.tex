@@ -1,0 +1,82 @@
+\hypertarget{classpygame_1_1tests_1_1surface__test_1_1_surface_subtype_test}{}\section{pygame.\+tests.\+surface\+\_\+test.\+Surface\+Subtype\+Test Class Reference}
+\label{classpygame_1_1tests_1_1surface__test_1_1_surface_subtype_test}\index{pygame.\+tests.\+surface\+\_\+test.\+Surface\+Subtype\+Test@{pygame.\+tests.\+surface\+\_\+test.\+Surface\+Subtype\+Test}}
+
+
+Inherits Test\+Case.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpygame_1_1tests_1_1surface__test_1_1_surface_subtype_test_1_1_my_surface}{My\+Surface}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpygame_1_1tests_1_1surface__test_1_1_surface_subtype_test_ab7de3c2fd97612dd92a417d44b0b88f2}{test\+\_\+copy} (self)
+\item 
+def \hyperlink{classpygame_1_1tests_1_1surface__test_1_1_surface_subtype_test_af1d178775f22e1a04aaf2900c7f9f266}{test\+\_\+convert} (self)
+\item 
+def \hyperlink{classpygame_1_1tests_1_1surface__test_1_1_surface_subtype_test_af045573706beb7fbefabbf6493818025}{test\+\_\+convert\+\_\+alpha} (self)
+\item 
+def \hyperlink{classpygame_1_1tests_1_1surface__test_1_1_surface_subtype_test_ae79bff683e2fd610bb550d2d4e242bf4}{test\+\_\+subsurface} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Issue #280: Methods that return a new Surface preserve subclasses\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygame_1_1tests_1_1surface__test_1_1_surface_subtype_test_af1d178775f22e1a04aaf2900c7f9f266}\label{classpygame_1_1tests_1_1surface__test_1_1_surface_subtype_test_af1d178775f22e1a04aaf2900c7f9f266}} 
+\index{pygame\+::tests\+::surface\+\_\+test\+::\+Surface\+Subtype\+Test@{pygame\+::tests\+::surface\+\_\+test\+::\+Surface\+Subtype\+Test}!test\+\_\+convert@{test\+\_\+convert}}
+\index{test\+\_\+convert@{test\+\_\+convert}!pygame\+::tests\+::surface\+\_\+test\+::\+Surface\+Subtype\+Test@{pygame\+::tests\+::surface\+\_\+test\+::\+Surface\+Subtype\+Test}}
+\subsubsection{\texorpdfstring{test\+\_\+convert()}{test\_convert()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+surface\+\_\+test.\+Surface\+Subtype\+Test.\+test\+\_\+convert (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ensure method convert() preserves the surface's class
+
+When Surface is subclassed, the inherited convert() method will return
+instances of the subclass. Non Surface fields are omitted, however.
+This includes instance attributes.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1tests_1_1surface__test_1_1_surface_subtype_test_af045573706beb7fbefabbf6493818025}\label{classpygame_1_1tests_1_1surface__test_1_1_surface_subtype_test_af045573706beb7fbefabbf6493818025}} 
+\index{pygame\+::tests\+::surface\+\_\+test\+::\+Surface\+Subtype\+Test@{pygame\+::tests\+::surface\+\_\+test\+::\+Surface\+Subtype\+Test}!test\+\_\+convert\+\_\+alpha@{test\+\_\+convert\+\_\+alpha}}
+\index{test\+\_\+convert\+\_\+alpha@{test\+\_\+convert\+\_\+alpha}!pygame\+::tests\+::surface\+\_\+test\+::\+Surface\+Subtype\+Test@{pygame\+::tests\+::surface\+\_\+test\+::\+Surface\+Subtype\+Test}}
+\subsubsection{\texorpdfstring{test\+\_\+convert\+\_\+alpha()}{test\_convert\_alpha()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+surface\+\_\+test.\+Surface\+Subtype\+Test.\+test\+\_\+convert\+\_\+alpha (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ensure method convert_alpha() preserves the surface's class
+
+When Surface is subclassed, the inherited convert_alpha() method will
+return instances of the subclass. Non Surface fields are omitted,
+however. This includes instance attributes.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1tests_1_1surface__test_1_1_surface_subtype_test_ab7de3c2fd97612dd92a417d44b0b88f2}\label{classpygame_1_1tests_1_1surface__test_1_1_surface_subtype_test_ab7de3c2fd97612dd92a417d44b0b88f2}} 
+\index{pygame\+::tests\+::surface\+\_\+test\+::\+Surface\+Subtype\+Test@{pygame\+::tests\+::surface\+\_\+test\+::\+Surface\+Subtype\+Test}!test\+\_\+copy@{test\+\_\+copy}}
+\index{test\+\_\+copy@{test\+\_\+copy}!pygame\+::tests\+::surface\+\_\+test\+::\+Surface\+Subtype\+Test@{pygame\+::tests\+::surface\+\_\+test\+::\+Surface\+Subtype\+Test}}
+\subsubsection{\texorpdfstring{test\+\_\+copy()}{test\_copy()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+surface\+\_\+test.\+Surface\+Subtype\+Test.\+test\+\_\+copy (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ensure method copy() preserves the surface's class
+
+When Surface is subclassed, the inherited copy() method will return
+instances of the subclass. Non Surface fields are uncopied, however.
+This includes instance attributes.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1tests_1_1surface__test_1_1_surface_subtype_test_ae79bff683e2fd610bb550d2d4e242bf4}\label{classpygame_1_1tests_1_1surface__test_1_1_surface_subtype_test_ae79bff683e2fd610bb550d2d4e242bf4}} 
+\index{pygame\+::tests\+::surface\+\_\+test\+::\+Surface\+Subtype\+Test@{pygame\+::tests\+::surface\+\_\+test\+::\+Surface\+Subtype\+Test}!test\+\_\+subsurface@{test\+\_\+subsurface}}
+\index{test\+\_\+subsurface@{test\+\_\+subsurface}!pygame\+::tests\+::surface\+\_\+test\+::\+Surface\+Subtype\+Test@{pygame\+::tests\+::surface\+\_\+test\+::\+Surface\+Subtype\+Test}}
+\subsubsection{\texorpdfstring{test\+\_\+subsurface()}{test\_subsurface()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+surface\+\_\+test.\+Surface\+Subtype\+Test.\+test\+\_\+subsurface (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ensure method subsurface() preserves the surface's class
+
+When Surface is subclassed, the inherited subsurface() method will
+return instances of the subclass. Non Surface fields are uncopied,
+however. This includes instance attributes.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pygame/tests/surface\+\_\+test.\+py\end{DoxyCompactItemize}

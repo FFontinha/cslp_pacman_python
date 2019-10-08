@@ -1,0 +1,100 @@
+\hypertarget{class__pytest_1_1__code_1_1code_1_1_traceback}{}\section{\+\_\+pytest.\+\_\+code.\+code.\+Traceback Class Reference}
+\label{class__pytest_1_1__code_1_1code_1_1_traceback}\index{\+\_\+pytest.\+\_\+code.\+code.\+Traceback@{\+\_\+pytest.\+\_\+code.\+code.\+Traceback}}
+
+
+Inherits list.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_traceback_a10c70617f1844bc6651929956d3d2bac}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, tb, excinfo=None)
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_traceback_a52d37e5e48af0efad4340a6be1b906f2}{cut} (self, path=None, lineno=None, firstlineno=None, excludepath=None)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_traceback_ab137410e84a38eedd3d9caf79286899d}\label{class__pytest_1_1__code_1_1code_1_1_traceback_ab137410e84a38eedd3d9caf79286899d}} 
+def {\bfseries \+\_\+\+\_\+getitem\+\_\+\+\_\+} (self, key)
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_traceback_a60858123598ead711a5b6ca046a21c0a}{filter} (self, fn=lambda x\+:not x.\+ishidden())
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_traceback_ab8f83d3614989f22fcd2ec680554d516}{getcrashentry} (self)
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_traceback_a22bcd0c12c4313b424601ec1e4d1a7df}{recursionindex} (self)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_traceback_a9d13b25d16aac7e3ff17f69d46715cb7}\label{class__pytest_1_1__code_1_1code_1_1_traceback_a9d13b25d16aac7e3ff17f69d46715cb7}} 
+{\bfseries Entry} = \hyperlink{class__pytest_1_1__code_1_1code_1_1_traceback_entry}{Traceback\+Entry}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Traceback objects encapsulate and offer higher level
+    access to Traceback entries.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_traceback_a10c70617f1844bc6651929956d3d2bac}\label{class__pytest_1_1__code_1_1code_1_1_traceback_a10c70617f1844bc6651929956d3d2bac}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Traceback.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tb,  }\item[{}]{excinfo = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}initialize from given python traceback object and ExceptionInfo \end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_traceback_a52d37e5e48af0efad4340a6be1b906f2}\label{class__pytest_1_1__code_1_1code_1_1_traceback_a52d37e5e48af0efad4340a6be1b906f2}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback}!cut@{cut}}
+\index{cut@{cut}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback}}
+\subsubsection{\texorpdfstring{cut()}{cut()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Traceback.\+cut (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path = {\ttfamily None},  }\item[{}]{lineno = {\ttfamily None},  }\item[{}]{firstlineno = {\ttfamily None},  }\item[{}]{excludepath = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a Traceback instance wrapping part of this Traceback
+
+    by provding any combination of path, lineno and firstlineno, the
+    first frame to start the to-be-returned traceback is determined
+
+    this allows cutting the first part of a Traceback instance e.g.
+    for formatting reasons (removing some uninteresting bits that deal
+    with handling of the exception/traceback)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_traceback_a60858123598ead711a5b6ca046a21c0a}\label{class__pytest_1_1__code_1_1code_1_1_traceback_a60858123598ead711a5b6ca046a21c0a}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback}!filter@{filter}}
+\index{filter@{filter}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback}}
+\subsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Traceback.\+filter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fn = {\ttfamily lambda~x\+:~not~x.ishidden()} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a Traceback instance with certain items removed
+
+    fn is a function that gets a single argument, a TracebackEntry
+    instance, and should return True when the item should be added
+    to the Traceback, False when not
+
+    by default this removes all the TracebackEntries which are hidden
+    (see ishidden() above)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_traceback_ab8f83d3614989f22fcd2ec680554d516}\label{class__pytest_1_1__code_1_1code_1_1_traceback_ab8f83d3614989f22fcd2ec680554d516}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback}!getcrashentry@{getcrashentry}}
+\index{getcrashentry@{getcrashentry}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback}}
+\subsubsection{\texorpdfstring{getcrashentry()}{getcrashentry()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Traceback.\+getcrashentry (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return last non-hidden traceback entry that lead
+to the exception of a traceback.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_traceback_a22bcd0c12c4313b424601ec1e4d1a7df}\label{class__pytest_1_1__code_1_1code_1_1_traceback_a22bcd0c12c4313b424601ec1e4d1a7df}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback}!recursionindex@{recursionindex}}
+\index{recursionindex@{recursionindex}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Traceback}}
+\subsubsection{\texorpdfstring{recursionindex()}{recursionindex()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Traceback.\+recursionindex (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return the index of the frame/TracebackEntry where recursion
+    originates if appropriate, None if no recursion occurred
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/\+\_\+code/code.\+py\end{DoxyCompactItemize}

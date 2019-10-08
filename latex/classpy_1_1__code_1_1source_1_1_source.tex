@@ -1,0 +1,139 @@
+\hypertarget{classpy_1_1__code_1_1source_1_1_source}{}\section{py.\+\_\+code.\+source.\+Source Class Reference}
+\label{classpy_1_1__code_1_1source_1_1_source}\index{py.\+\_\+code.\+source.\+Source@{py.\+\_\+code.\+source.\+Source}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1source_1_1_source_abf62c397b9921b006f16bdc2133e43e7}\label{classpy_1_1__code_1_1source_1_1_source_abf62c397b9921b006f16bdc2133e43e7}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, parts, kwargs)
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1source_1_1_source_a380af9160b9770853449bf79e99ad88b}\label{classpy_1_1__code_1_1source_1_1_source_a380af9160b9770853449bf79e99ad88b}} 
+def {\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1source_1_1_source_a7d0a0d96323d7c76b9c90cabdb64629a}\label{classpy_1_1__code_1_1source_1_1_source_a7d0a0d96323d7c76b9c90cabdb64629a}} 
+def {\bfseries \+\_\+\+\_\+getitem\+\_\+\+\_\+} (self, key)
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1source_1_1_source_a4bf4c4321aef46319928f40b54f9b719}\label{classpy_1_1__code_1_1source_1_1_source_a4bf4c4321aef46319928f40b54f9b719}} 
+def {\bfseries \+\_\+\+\_\+len\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1source_1_1_source_a46296cd755a69be8f8455f72fca27fbb}\label{classpy_1_1__code_1_1source_1_1_source_a46296cd755a69be8f8455f72fca27fbb}} 
+def {\bfseries \+\_\+\+\_\+getslice\+\_\+\+\_\+} (self, start, end)
+\item 
+def \hyperlink{classpy_1_1__code_1_1source_1_1_source_ac9490124c30cb66e50bb7e87dbdd029e}{strip} (self)
+\item 
+def \hyperlink{classpy_1_1__code_1_1source_1_1_source_aa8a2ff562a48539bf3e57203b0e4373a}{putaround} (self, before=\textquotesingle{}\textquotesingle{}, after=\textquotesingle{}\textquotesingle{}, \hyperlink{classpy_1_1__code_1_1source_1_1_source_ae22bab7210f429aa4bd5dcc862169673}{indent}=\textquotesingle{} \textquotesingle{} $\ast$4)
+\item 
+def \hyperlink{classpy_1_1__code_1_1source_1_1_source_ae22bab7210f429aa4bd5dcc862169673}{indent} (self, indent=\textquotesingle{} \textquotesingle{} $\ast$4)
+\item 
+def \hyperlink{classpy_1_1__code_1_1source_1_1_source_aa21e0a21d02287db4a00be9f35a8fd40}{getstatement} (self, lineno, assertion=False)
+\item 
+def \hyperlink{classpy_1_1__code_1_1source_1_1_source_a957302d50eeb4bda3d0a231e95b92066}{getstatementrange} (self, lineno, assertion=False)
+\item 
+def \hyperlink{classpy_1_1__code_1_1source_1_1_source_a523b7291071984a47617c6c3329d2332}{deindent} (self, offset=None)
+\item 
+def \hyperlink{classpy_1_1__code_1_1source_1_1_source_a0512b77cc19bbbf387c55eafe89b39bf}{isparseable} (self, \hyperlink{classpy_1_1__code_1_1source_1_1_source_a523b7291071984a47617c6c3329d2332}{deindent}=True)
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1source_1_1_source_a20d6791e021412a3c00d41d1f1977669}\label{classpy_1_1__code_1_1source_1_1_source_a20d6791e021412a3c00d41d1f1977669}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classpy_1_1__code_1_1source_1_1_source_a48b92e89ad7873f768254dadd10092c4}{compile} (self, filename=None, mode=\textquotesingle{}exec\textquotesingle{}, flag=generators.\+compiler\+\_\+flag, dont\+\_\+inherit=0, \+\_\+genframe=None)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1source_1_1_source_a2b7a1d7dd53552fa324a7e4d658d1185}\label{classpy_1_1__code_1_1source_1_1_source_a2b7a1d7dd53552fa324a7e4d658d1185}} 
+{\bfseries lines}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}a immutable object holding a source code fragment,
+    possibly deindenting it.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpy_1_1__code_1_1source_1_1_source_a48b92e89ad7873f768254dadd10092c4}\label{classpy_1_1__code_1_1source_1_1_source_a48b92e89ad7873f768254dadd10092c4}} 
+\index{py\+::\+\_\+code\+::source\+::\+Source@{py\+::\+\_\+code\+::source\+::\+Source}!compile@{compile}}
+\index{compile@{compile}!py\+::\+\_\+code\+::source\+::\+Source@{py\+::\+\_\+code\+::source\+::\+Source}}
+\subsubsection{\texorpdfstring{compile()}{compile()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+source.\+Source.\+compile (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename = {\ttfamily None},  }\item[{}]{mode = {\ttfamily \textquotesingle{}exec\textquotesingle{}},  }\item[{}]{flag = {\ttfamily generators.compiler\+\_\+flag},  }\item[{}]{dont\+\_\+inherit = {\ttfamily 0},  }\item[{}]{\+\_\+genframe = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return compiled code object. if filename is None
+    invent an artificial filename which displays
+    the source/line position of the caller frame.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1source_1_1_source_a523b7291071984a47617c6c3329d2332}\label{classpy_1_1__code_1_1source_1_1_source_a523b7291071984a47617c6c3329d2332}} 
+\index{py\+::\+\_\+code\+::source\+::\+Source@{py\+::\+\_\+code\+::source\+::\+Source}!deindent@{deindent}}
+\index{deindent@{deindent}!py\+::\+\_\+code\+::source\+::\+Source@{py\+::\+\_\+code\+::source\+::\+Source}}
+\subsubsection{\texorpdfstring{deindent()}{deindent()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+source.\+Source.\+deindent (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{offset = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a new source object deindented by offset.
+    If offset is None then guess an indentation offset from
+    the first non-blank line.  Subsequent lines which have a
+    lower indentation offset will be copied verbatim as
+    they are assumed to be part of multilines.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1source_1_1_source_aa21e0a21d02287db4a00be9f35a8fd40}\label{classpy_1_1__code_1_1source_1_1_source_aa21e0a21d02287db4a00be9f35a8fd40}} 
+\index{py\+::\+\_\+code\+::source\+::\+Source@{py\+::\+\_\+code\+::source\+::\+Source}!getstatement@{getstatement}}
+\index{getstatement@{getstatement}!py\+::\+\_\+code\+::source\+::\+Source@{py\+::\+\_\+code\+::source\+::\+Source}}
+\subsubsection{\texorpdfstring{getstatement()}{getstatement()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+source.\+Source.\+getstatement (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{lineno,  }\item[{}]{assertion = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return Source statement which contains the
+    given linenumber (counted from 0).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1source_1_1_source_a957302d50eeb4bda3d0a231e95b92066}\label{classpy_1_1__code_1_1source_1_1_source_a957302d50eeb4bda3d0a231e95b92066}} 
+\index{py\+::\+\_\+code\+::source\+::\+Source@{py\+::\+\_\+code\+::source\+::\+Source}!getstatementrange@{getstatementrange}}
+\index{getstatementrange@{getstatementrange}!py\+::\+\_\+code\+::source\+::\+Source@{py\+::\+\_\+code\+::source\+::\+Source}}
+\subsubsection{\texorpdfstring{getstatementrange()}{getstatementrange()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+source.\+Source.\+getstatementrange (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{lineno,  }\item[{}]{assertion = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return (start, end) tuple which spans the minimal
+    statement region which containing the given lineno.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1source_1_1_source_ae22bab7210f429aa4bd5dcc862169673}\label{classpy_1_1__code_1_1source_1_1_source_ae22bab7210f429aa4bd5dcc862169673}} 
+\index{py\+::\+\_\+code\+::source\+::\+Source@{py\+::\+\_\+code\+::source\+::\+Source}!indent@{indent}}
+\index{indent@{indent}!py\+::\+\_\+code\+::source\+::\+Source@{py\+::\+\_\+code\+::source\+::\+Source}}
+\subsubsection{\texorpdfstring{indent()}{indent()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+source.\+Source.\+indent (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{indent = {\ttfamily \textquotesingle{}~\textquotesingle{}~$\ast$~4} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a copy of the source object with
+    all lines indented by the given indent-string.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1source_1_1_source_a0512b77cc19bbbf387c55eafe89b39bf}\label{classpy_1_1__code_1_1source_1_1_source_a0512b77cc19bbbf387c55eafe89b39bf}} 
+\index{py\+::\+\_\+code\+::source\+::\+Source@{py\+::\+\_\+code\+::source\+::\+Source}!isparseable@{isparseable}}
+\index{isparseable@{isparseable}!py\+::\+\_\+code\+::source\+::\+Source@{py\+::\+\_\+code\+::source\+::\+Source}}
+\subsubsection{\texorpdfstring{isparseable()}{isparseable()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+source.\+Source.\+isparseable (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{deindent = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return True if source is parseable, heuristically
+    deindenting it by default.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1source_1_1_source_aa8a2ff562a48539bf3e57203b0e4373a}\label{classpy_1_1__code_1_1source_1_1_source_aa8a2ff562a48539bf3e57203b0e4373a}} 
+\index{py\+::\+\_\+code\+::source\+::\+Source@{py\+::\+\_\+code\+::source\+::\+Source}!putaround@{putaround}}
+\index{putaround@{putaround}!py\+::\+\_\+code\+::source\+::\+Source@{py\+::\+\_\+code\+::source\+::\+Source}}
+\subsubsection{\texorpdfstring{putaround()}{putaround()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+source.\+Source.\+putaround (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{before = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{after = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{indent = {\ttfamily \textquotesingle{}~\textquotesingle{}~$\ast$~4} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a copy of the source object with
+    'before' and 'after' wrapped around it.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1source_1_1_source_ac9490124c30cb66e50bb7e87dbdd029e}\label{classpy_1_1__code_1_1source_1_1_source_ac9490124c30cb66e50bb7e87dbdd029e}} 
+\index{py\+::\+\_\+code\+::source\+::\+Source@{py\+::\+\_\+code\+::source\+::\+Source}!strip@{strip}}
+\index{strip@{strip}!py\+::\+\_\+code\+::source\+::\+Source@{py\+::\+\_\+code\+::source\+::\+Source}}
+\subsubsection{\texorpdfstring{strip()}{strip()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+source.\+Source.\+strip (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return new source object with trailing
+    and leading blank lines removed.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/py/\+\_\+code/source.\+py\end{DoxyCompactItemize}

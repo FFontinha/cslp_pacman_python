@@ -1,0 +1,87 @@
+\hypertarget{namespacepip_1_1commands}{}\section{pip.\+commands Namespace Reference}
+\label{namespacepip_1_1commands}\index{pip.\+commands@{pip.\+commands}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepip_1_1commands_ae39a8b6d0749edb37df29219a2225246}{get\+\_\+summaries} (ordered=True)
+\item 
+def \hyperlink{namespacepip_1_1commands_aa808d9413492b934afbb388391441a83}{get\+\_\+similar\+\_\+commands} (name)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dictionary {\bfseries commands\+\_\+dict}
+\item 
+list {\bfseries commands\+\_\+order}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Package containing all pip commands
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepip_1_1commands_aa808d9413492b934afbb388391441a83}\label{namespacepip_1_1commands_aa808d9413492b934afbb388391441a83}} 
+\index{pip\+::commands@{pip\+::commands}!get\+\_\+similar\+\_\+commands@{get\+\_\+similar\+\_\+commands}}
+\index{get\+\_\+similar\+\_\+commands@{get\+\_\+similar\+\_\+commands}!pip\+::commands@{pip\+::commands}}
+\subsubsection{\texorpdfstring{get\+\_\+similar\+\_\+commands()}{get\_similar\_commands()}}
+{\footnotesize\ttfamily def pip.\+commands.\+get\+\_\+similar\+\_\+commands (\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Command name auto-correct.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1commands_ae39a8b6d0749edb37df29219a2225246}\label{namespacepip_1_1commands_ae39a8b6d0749edb37df29219a2225246}} 
+\index{pip\+::commands@{pip\+::commands}!get\+\_\+summaries@{get\+\_\+summaries}}
+\index{get\+\_\+summaries@{get\+\_\+summaries}!pip\+::commands@{pip\+::commands}}
+\subsubsection{\texorpdfstring{get\+\_\+summaries()}{get\_summaries()}}
+{\footnotesize\ttfamily def pip.\+commands.\+get\+\_\+summaries (\begin{DoxyParamCaption}\item[{}]{ordered = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Yields sorted (command name, command summary) tuples.\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepip_1_1commands_abdfcfe4fe28aa0e9a57adf653463e19d}\label{namespacepip_1_1commands_abdfcfe4fe28aa0e9a57adf653463e19d}} 
+\index{pip\+::commands@{pip\+::commands}!commands\+\_\+dict@{commands\+\_\+dict}}
+\index{commands\+\_\+dict@{commands\+\_\+dict}!pip\+::commands@{pip\+::commands}}
+\subsubsection{\texorpdfstring{commands\+\_\+dict}{commands\_dict}}
+{\footnotesize\ttfamily dictionary pip.\+commands.\+commands\+\_\+dict}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  \{
+2     CompletionCommand.name: CompletionCommand,
+3     FreezeCommand.name: FreezeCommand,
+4     HashCommand.name: HashCommand,
+5     HelpCommand.name: HelpCommand,
+6     SearchCommand.name: SearchCommand,
+7     ShowCommand.name: ShowCommand,
+8     InstallCommand.name: InstallCommand,
+9     UninstallCommand.name: UninstallCommand,
+10     DownloadCommand.name: DownloadCommand,
+11     ListCommand.name: ListCommand,
+12     CheckCommand.name: CheckCommand,
+13     WheelCommand.name: WheelCommand,
+14 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1commands_ae15a32dbe7607bb28041e940fd0e9107}\label{namespacepip_1_1commands_ae15a32dbe7607bb28041e940fd0e9107}} 
+\index{pip\+::commands@{pip\+::commands}!commands\+\_\+order@{commands\+\_\+order}}
+\index{commands\+\_\+order@{commands\+\_\+order}!pip\+::commands@{pip\+::commands}}
+\subsubsection{\texorpdfstring{commands\+\_\+order}{commands\_order}}
+{\footnotesize\ttfamily list pip.\+commands.\+commands\+\_\+order}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  [
+2     InstallCommand,
+3     DownloadCommand,
+4     UninstallCommand,
+5     FreezeCommand,
+6     ListCommand,
+7     ShowCommand,
+8     CheckCommand,
+9     SearchCommand,
+10     WheelCommand,
+11     HashCommand,
+12     CompletionCommand,
+13     HelpCommand,
+14 ]
+\end{DoxyCode}

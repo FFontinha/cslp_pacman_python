@@ -1,0 +1,94 @@
+\hypertarget{classaiohttp_1_1multipart_1_1_multipart_reader}{}\section{aiohttp.\+multipart.\+Multipart\+Reader Class Reference}
+\label{classaiohttp_1_1multipart_1_1_multipart_reader}\index{aiohttp.\+multipart.\+Multipart\+Reader@{aiohttp.\+multipart.\+Multipart\+Reader}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_reader_a7301e401e7745ecfbd13cbc085d48c1e}\label{classaiohttp_1_1multipart_1_1_multipart_reader_a7301e401e7745ecfbd13cbc085d48c1e}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, headers, content)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_reader_ac5d119e14bfbd7f7c51f680e33406d58}\label{classaiohttp_1_1multipart_1_1_multipart_reader_ac5d119e14bfbd7f7c51f680e33406d58}} 
+def {\bfseries \+\_\+\+\_\+aiter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_reader_aafa61271a36d2ab023e71ff3a57797d9}\label{classaiohttp_1_1multipart_1_1_multipart_reader_aafa61271a36d2ab023e71ff3a57797d9}} 
+def {\bfseries \+\_\+\+\_\+anext\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_multipart_reader_adeb42b01a2a905a13d8a48b775ab6486}{from\+\_\+response} (cls, response)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_multipart_reader_adc70dd5611b009b09ab56627ad98d82a}{at\+\_\+eof} (self)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_multipart_reader_a297a2f1437b363df63a412cd05772f6a}{next} (self)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_multipart_reader_ad42d61b96afe9308b45609f5bd208dc7}{release} (self)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_multipart_reader_a5f631b0d766c974c7c5c52285cb4f396}{fetch\+\_\+next\+\_\+part} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_reader_a1f656f4a7ad1746fac8bb9f435229e66}\label{classaiohttp_1_1multipart_1_1_multipart_reader_a1f656f4a7ad1746fac8bb9f435229e66}} 
+{\bfseries headers}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_reader_a9b008866000a804da0846b3a15eb73e4}\label{classaiohttp_1_1multipart_1_1_multipart_reader_a9b008866000a804da0846b3a15eb73e4}} 
+{\bfseries response\+\_\+wrapper\+\_\+cls} = \hyperlink{classaiohttp_1_1multipart_1_1_multipart_response_wrapper}{Multipart\+Response\+Wrapper}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_reader_ad4479fdfd49351cb11a6efa3c9798ffe}\label{classaiohttp_1_1multipart_1_1_multipart_reader_ad4479fdfd49351cb11a6efa3c9798ffe}} 
+{\bfseries multipart\+\_\+reader\+\_\+cls} = None
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_reader_a3b49e4800d16fdcc577bfa3143f831ea}\label{classaiohttp_1_1multipart_1_1_multipart_reader_a3b49e4800d16fdcc577bfa3143f831ea}} 
+{\bfseries part\+\_\+reader\+\_\+cls} = \hyperlink{classaiohttp_1_1multipart_1_1_body_part_reader}{Body\+Part\+Reader}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Multipart body reader.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_reader_adc70dd5611b009b09ab56627ad98d82a}\label{classaiohttp_1_1multipart_1_1_multipart_reader_adc70dd5611b009b09ab56627ad98d82a}} 
+\index{aiohttp\+::multipart\+::\+Multipart\+Reader@{aiohttp\+::multipart\+::\+Multipart\+Reader}!at\+\_\+eof@{at\+\_\+eof}}
+\index{at\+\_\+eof@{at\+\_\+eof}!aiohttp\+::multipart\+::\+Multipart\+Reader@{aiohttp\+::multipart\+::\+Multipart\+Reader}}
+\subsubsection{\texorpdfstring{at\+\_\+eof()}{at\_eof()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Multipart\+Reader.\+at\+\_\+eof (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns True if the final boundary was reached or
+False otherwise.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_reader_a5f631b0d766c974c7c5c52285cb4f396}\label{classaiohttp_1_1multipart_1_1_multipart_reader_a5f631b0d766c974c7c5c52285cb4f396}} 
+\index{aiohttp\+::multipart\+::\+Multipart\+Reader@{aiohttp\+::multipart\+::\+Multipart\+Reader}!fetch\+\_\+next\+\_\+part@{fetch\+\_\+next\+\_\+part}}
+\index{fetch\+\_\+next\+\_\+part@{fetch\+\_\+next\+\_\+part}!aiohttp\+::multipart\+::\+Multipart\+Reader@{aiohttp\+::multipart\+::\+Multipart\+Reader}}
+\subsubsection{\texorpdfstring{fetch\+\_\+next\+\_\+part()}{fetch\_next\_part()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Multipart\+Reader.\+fetch\+\_\+next\+\_\+part (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the next body part reader.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_reader_adeb42b01a2a905a13d8a48b775ab6486}\label{classaiohttp_1_1multipart_1_1_multipart_reader_adeb42b01a2a905a13d8a48b775ab6486}} 
+\index{aiohttp\+::multipart\+::\+Multipart\+Reader@{aiohttp\+::multipart\+::\+Multipart\+Reader}!from\+\_\+response@{from\+\_\+response}}
+\index{from\+\_\+response@{from\+\_\+response}!aiohttp\+::multipart\+::\+Multipart\+Reader@{aiohttp\+::multipart\+::\+Multipart\+Reader}}
+\subsubsection{\texorpdfstring{from\+\_\+response()}{from\_response()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Multipart\+Reader.\+from\+\_\+response (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{response }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructs reader instance from HTTP response.
+
+:param response: :class:`~aiohttp.client.ClientResponse` instance
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_reader_a297a2f1437b363df63a412cd05772f6a}\label{classaiohttp_1_1multipart_1_1_multipart_reader_a297a2f1437b363df63a412cd05772f6a}} 
+\index{aiohttp\+::multipart\+::\+Multipart\+Reader@{aiohttp\+::multipart\+::\+Multipart\+Reader}!next@{next}}
+\index{next@{next}!aiohttp\+::multipart\+::\+Multipart\+Reader@{aiohttp\+::multipart\+::\+Multipart\+Reader}}
+\subsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Multipart\+Reader.\+next (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Emits the next multipart body part.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_reader_ad42d61b96afe9308b45609f5bd208dc7}\label{classaiohttp_1_1multipart_1_1_multipart_reader_ad42d61b96afe9308b45609f5bd208dc7}} 
+\index{aiohttp\+::multipart\+::\+Multipart\+Reader@{aiohttp\+::multipart\+::\+Multipart\+Reader}!release@{release}}
+\index{release@{release}!aiohttp\+::multipart\+::\+Multipart\+Reader@{aiohttp\+::multipart\+::\+Multipart\+Reader}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Multipart\+Reader.\+release (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reads all the body parts to the void till the final boundary.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/multipart.\+py\end{DoxyCompactItemize}

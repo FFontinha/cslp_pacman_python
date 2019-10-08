@@ -1,0 +1,136 @@
+\hypertarget{namespaceattr_1_1__funcs}{}\section{attr.\+\_\+funcs Namespace Reference}
+\label{namespaceattr_1_1__funcs}\index{attr.\+\_\+funcs@{attr.\+\_\+funcs}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceattr_1_1__funcs_a323456eb598a510b152f620a690a5610}{asdict} (inst, recurse=True, filter=None, dict\+\_\+factory=dict, retain\+\_\+collection\+\_\+types=False)
+\item 
+def \hyperlink{namespaceattr_1_1__funcs_a6166d0c652fbc7bed26aafb6f92b0b76}{astuple} (inst, recurse=True, filter=None, tuple\+\_\+factory=tuple, retain\+\_\+collection\+\_\+types=False)
+\item 
+def \hyperlink{namespaceattr_1_1__funcs_adbd5a4d35a456dd0c65876b5d01bf1cd}{has} (cls)
+\item 
+def \hyperlink{namespaceattr_1_1__funcs_a269a7a69e7aa34b7b39169c7025cbd5a}{assoc} (inst, changes)
+\item 
+def \hyperlink{namespaceattr_1_1__funcs_ad12e058dede1261831b7d9ce3e0e17f5}{evolve} (inst, changes)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceattr_1_1__funcs_a323456eb598a510b152f620a690a5610}\label{namespaceattr_1_1__funcs_a323456eb598a510b152f620a690a5610}} 
+\index{attr\+::\+\_\+funcs@{attr\+::\+\_\+funcs}!asdict@{asdict}}
+\index{asdict@{asdict}!attr\+::\+\_\+funcs@{attr\+::\+\_\+funcs}}
+\subsubsection{\texorpdfstring{asdict()}{asdict()}}
+{\footnotesize\ttfamily def attr.\+\_\+funcs.\+asdict (\begin{DoxyParamCaption}\item[{}]{inst,  }\item[{}]{recurse = {\ttfamily True},  }\item[{}]{filter = {\ttfamily None},  }\item[{}]{dict\+\_\+factory = {\ttfamily dict},  }\item[{}]{retain\+\_\+collection\+\_\+types = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the ``attrs`` attribute values of *inst* as a dict.
+
+Optionally recurse into other ``attrs``-decorated classes.
+
+:param inst: Instance of an ``attrs``-decorated class.
+:param bool recurse: Recurse into classes that are also
+    ``attrs``-decorated.
+:param callable filter: A callable whose return code determines whether an
+    attribute or element is included (``True``) or dropped (``False``).  Is
+    called with the :class:`attr.Attribute` as the first argument and the
+    value as the second argument.
+:param callable dict_factory: A callable to produce dictionaries from.  For
+    example, to produce ordered dictionaries instead of normal Python
+    dictionaries, pass in ``collections.OrderedDict``.
+:param bool retain_collection_types: Do not convert to ``list`` when
+    encountering an attribute whose type is ``tuple`` or ``set``.  Only
+    meaningful if ``recurse`` is ``True``.
+
+:rtype: return type of *dict_factory*
+
+:raise attr.exceptions.NotAnAttrsClassError: If *cls* is not an ``attrs``
+    class.
+
+..  versionadded:: 16.0.0 *dict_factory*
+..  versionadded:: 16.1.0 *retain_collection_types*
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceattr_1_1__funcs_a269a7a69e7aa34b7b39169c7025cbd5a}\label{namespaceattr_1_1__funcs_a269a7a69e7aa34b7b39169c7025cbd5a}} 
+\index{attr\+::\+\_\+funcs@{attr\+::\+\_\+funcs}!assoc@{assoc}}
+\index{assoc@{assoc}!attr\+::\+\_\+funcs@{attr\+::\+\_\+funcs}}
+\subsubsection{\texorpdfstring{assoc()}{assoc()}}
+{\footnotesize\ttfamily def attr.\+\_\+funcs.\+assoc (\begin{DoxyParamCaption}\item[{}]{inst,  }\item[{}]{changes }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Copy *inst* and apply *changes*.
+
+:param inst: Instance of a class with ``attrs`` attributes.
+:param changes: Keyword changes in the new copy.
+
+:return: A copy of inst with *changes* incorporated.
+
+:raise attr.exceptions.AttrsAttributeNotFoundError: If *attr_name* couldn't
+    be found on *cls*.
+:raise attr.exceptions.NotAnAttrsClassError: If *cls* is not an ``attrs``
+    class.
+
+..  deprecated:: 17.1.0
+    Use :func:`evolve` instead.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceattr_1_1__funcs_a6166d0c652fbc7bed26aafb6f92b0b76}\label{namespaceattr_1_1__funcs_a6166d0c652fbc7bed26aafb6f92b0b76}} 
+\index{attr\+::\+\_\+funcs@{attr\+::\+\_\+funcs}!astuple@{astuple}}
+\index{astuple@{astuple}!attr\+::\+\_\+funcs@{attr\+::\+\_\+funcs}}
+\subsubsection{\texorpdfstring{astuple()}{astuple()}}
+{\footnotesize\ttfamily def attr.\+\_\+funcs.\+astuple (\begin{DoxyParamCaption}\item[{}]{inst,  }\item[{}]{recurse = {\ttfamily True},  }\item[{}]{filter = {\ttfamily None},  }\item[{}]{tuple\+\_\+factory = {\ttfamily tuple},  }\item[{}]{retain\+\_\+collection\+\_\+types = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the ``attrs`` attribute values of *inst* as a tuple.
+
+Optionally recurse into other ``attrs``-decorated classes.
+
+:param inst: Instance of an ``attrs``-decorated class.
+:param bool recurse: Recurse into classes that are also
+    ``attrs``-decorated.
+:param callable filter: A callable whose return code determines whether an
+    attribute or element is included (``True``) or dropped (``False``).  Is
+    called with the :class:`attr.Attribute` as the first argument and the
+    value as the second argument.
+:param callable tuple_factory: A callable to produce tuples from.  For
+    example, to produce lists instead of tuples.
+:param bool retain_collection_types: Do not convert to ``list``
+    or ``dict`` when encountering an attribute which type is
+    ``tuple``, ``dict`` or ``set``.  Only meaningful if ``recurse`` is
+    ``True``.
+
+:rtype: return type of *tuple_factory*
+
+:raise attr.exceptions.NotAnAttrsClassError: If *cls* is not an ``attrs``
+    class.
+
+..  versionadded:: 16.2.0
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceattr_1_1__funcs_ad12e058dede1261831b7d9ce3e0e17f5}\label{namespaceattr_1_1__funcs_ad12e058dede1261831b7d9ce3e0e17f5}} 
+\index{attr\+::\+\_\+funcs@{attr\+::\+\_\+funcs}!evolve@{evolve}}
+\index{evolve@{evolve}!attr\+::\+\_\+funcs@{attr\+::\+\_\+funcs}}
+\subsubsection{\texorpdfstring{evolve()}{evolve()}}
+{\footnotesize\ttfamily def attr.\+\_\+funcs.\+evolve (\begin{DoxyParamCaption}\item[{}]{inst,  }\item[{}]{changes }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new instance, based on *inst* with *changes* applied.
+
+:param inst: Instance of a class with ``attrs`` attributes.
+:param changes: Keyword changes in the new copy.
+
+:return: A copy of inst with *changes* incorporated.
+
+:raise TypeError: If *attr_name* couldn't be found in the class
+    ``__init__``.
+:raise attr.exceptions.NotAnAttrsClassError: If *cls* is not an ``attrs``
+    class.
+
+..  versionadded:: 17.1.0
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceattr_1_1__funcs_adbd5a4d35a456dd0c65876b5d01bf1cd}\label{namespaceattr_1_1__funcs_adbd5a4d35a456dd0c65876b5d01bf1cd}} 
+\index{attr\+::\+\_\+funcs@{attr\+::\+\_\+funcs}!has@{has}}
+\index{has@{has}!attr\+::\+\_\+funcs@{attr\+::\+\_\+funcs}}
+\subsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily def attr.\+\_\+funcs.\+has (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check whether *cls* is a class with ``attrs`` attributes.
+
+:param type cls: Class to introspect.
+:raise TypeError: If *cls* is not a class.
+
+:rtype: :class:`bool`
+\end{DoxyVerb}
+ 

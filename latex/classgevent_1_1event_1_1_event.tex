@@ -1,0 +1,115 @@
+\hypertarget{classgevent_1_1event_1_1_event}{}\section{gevent.\+event.\+Event Class Reference}
+\label{classgevent_1_1event_1_1_event}\index{gevent.\+event.\+Event@{gevent.\+event.\+Event}}
+
+
+Inherits \hyperlink{classgevent_1_1event_1_1___abstract_linkable}{gevent.\+event.\+\_\+\+Abstract\+Linkable}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1event_1_1_event_ae6f4be04924a16ac036f063c17c8a053}\label{classgevent_1_1event_1_1_event_ae6f4be04924a16ac036f063c17c8a053}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1event_1_1_event_a8b9bfb797c0eae276d09184a7b57ba17}\label{classgevent_1_1event_1_1_event_a8b9bfb797c0eae276d09184a7b57ba17}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classgevent_1_1event_1_1_event_a5e28557387cbec46930dba5b29469360}{is\+\_\+set} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1event_1_1_event_a1eb9928dbad4b48b9cdd27bfa1dcdf9e}\label{classgevent_1_1event_1_1_event_a1eb9928dbad4b48b9cdd27bfa1dcdf9e}} 
+def {\bfseries is\+Set} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1event_1_1_event_a71bdb71ef55c1ccc53b5ddbaeff6c0c5}\label{classgevent_1_1event_1_1_event_a71bdb71ef55c1ccc53b5ddbaeff6c0c5}} 
+def {\bfseries ready} (self)
+\item 
+def \hyperlink{classgevent_1_1event_1_1_event_aa5efca322b515fc7d3f63421c5d306f2}{set} (self)
+\item 
+def \hyperlink{classgevent_1_1event_1_1_event_a45c1c24e6a87f2595c7e6c3276a55ec4}{clear} (self)
+\item 
+def \hyperlink{classgevent_1_1event_1_1_event_a43ae57bb509c35b4d91491b8caea3378}{wait} (self, timeout=None)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A synchronization primitive that allows one greenlet to wake up one or more others.
+It has the same interface as :class:`threading.Event` but works across greenlets.
+
+An event object manages an internal flag that can be set to true with the
+:meth:`set` method and reset to false with the :meth:`clear` method. The :meth:`wait` method
+blocks until the flag is true.
+
+.. note::
+    The order and timing in which waiting greenlets are awakened is not determined.
+    As an implementation note, in gevent 1.1 and 1.0, waiting greenlets are awakened in a
+    undetermined order sometime *after* the current greenlet yields to the event loop. Other greenlets
+    (those not waiting to be awakened) may run between the current greenlet yielding and
+    the waiting greenlets being awakened. These details may change in the future.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1event_1_1_event_a45c1c24e6a87f2595c7e6c3276a55ec4}\label{classgevent_1_1event_1_1_event_a45c1c24e6a87f2595c7e6c3276a55ec4}} 
+\index{gevent\+::event\+::\+Event@{gevent\+::event\+::\+Event}!clear@{clear}}
+\index{clear@{clear}!gevent\+::event\+::\+Event@{gevent\+::event\+::\+Event}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily def gevent.\+event.\+Event.\+clear (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reset the internal flag to false.
+
+Subsequently, threads calling :meth:`wait` will block until
+:meth:`set` is called to set the internal flag to true again.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1event_1_1_event_a5e28557387cbec46930dba5b29469360}\label{classgevent_1_1event_1_1_event_a5e28557387cbec46930dba5b29469360}} 
+\index{gevent\+::event\+::\+Event@{gevent\+::event\+::\+Event}!is\+\_\+set@{is\+\_\+set}}
+\index{is\+\_\+set@{is\+\_\+set}!gevent\+::event\+::\+Event@{gevent\+::event\+::\+Event}}
+\subsubsection{\texorpdfstring{is\+\_\+set()}{is\_set()}}
+{\footnotesize\ttfamily def gevent.\+event.\+Event.\+is\+\_\+set (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return true if and only if the internal flag is true.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1event_1_1_event_aa5efca322b515fc7d3f63421c5d306f2}\label{classgevent_1_1event_1_1_event_aa5efca322b515fc7d3f63421c5d306f2}} 
+\index{gevent\+::event\+::\+Event@{gevent\+::event\+::\+Event}!set@{set}}
+\index{set@{set}!gevent\+::event\+::\+Event@{gevent\+::event\+::\+Event}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily def gevent.\+event.\+Event.\+set (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the internal flag to true.
+
+All greenlets waiting for it to become true are awakened in
+some order at some time in the future. Greenlets that call
+:meth:`wait` once the flag is true will not block at all
+(until :meth:`clear` is called).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1event_1_1_event_a43ae57bb509c35b4d91491b8caea3378}\label{classgevent_1_1event_1_1_event_a43ae57bb509c35b4d91491b8caea3378}} 
+\index{gevent\+::event\+::\+Event@{gevent\+::event\+::\+Event}!wait@{wait}}
+\index{wait@{wait}!gevent\+::event\+::\+Event@{gevent\+::event\+::\+Event}}
+\subsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily def gevent.\+event.\+Event.\+wait (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Block until the internal flag is true.
+
+If the internal flag is true on entry, return immediately. Otherwise,
+block until another thread (greenlet) calls :meth:`set` to set the flag to true,
+or until the optional timeout occurs.
+
+When the *timeout* argument is present and not ``None``, it should be a
+floating point number specifying a timeout for the operation in seconds
+(or fractions thereof).
+
+:return: This method returns true if and only if the internal flag has been set to
+    true, either before the wait call or after the wait starts, so it will
+    always return ``True`` except if a timeout is given and the operation
+    times out.
+
+.. versionchanged:: 1.1
+    The return value represents the flag during the elapsed wait, not
+    just after it elapses. This solves a race condition if one greenlet
+    sets and then clears the flag without switching, while other greenlets
+    are waiting. When the waiters wake up, this will return True; previously,
+    they would still wake up, but the return value would be False. This is most
+    noticeable when the *timeout* is present.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/event.\+py\end{DoxyCompactItemize}

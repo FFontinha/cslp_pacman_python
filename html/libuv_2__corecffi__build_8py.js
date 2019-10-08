@@ -1,0 +1,27 @@
+var libuv_2__corecffi__build_8py =
+[
+    [ "_add_library", "libuv_2__corecffi__build_8py.html#a1c0d84e71347219b0bff251892f29f73", null ],
+    [ "_define_macro", "libuv_2__corecffi__build_8py.html#af21c2470aa06c8d60d342ffe8301c1b2", null ],
+    [ "_libuv_source", "libuv_2__corecffi__build_8py.html#ab3bfc37e8cc78fb8b758fe72eb82e495", null ],
+    [ "read_source", "libuv_2__corecffi__build_8py.html#a5007ffb4f61622e7371beac58144b5b3", null ],
+    [ "st_nlink_type", "libuv_2__corecffi__build_8py.html#a70997cce9707dc9f6195fc320a2e7359", null ],
+    [ "system_bits", "libuv_2__corecffi__build_8py.html#a7633cfe158a9ff138c7aed70661bc1f7", null ],
+    [ "__all__", "libuv_2__corecffi__build_8py.html#af5f67a137e7a7fba584b31733427c063", null ],
+    [ "_cdef", "libuv_2__corecffi__build_8py.html#accfd9d9b83b5273105b66fef2ad857ba", null ],
+    [ "_source", "libuv_2__corecffi__build_8py.html#ab04b5422ab4b1f7b574492587db3ec1d", null ],
+    [ "_void_pointer_as_integer", "libuv_2__corecffi__build_8py.html#a54b95d284bee08a15d09336ad0d5fc3d", null ],
+    [ "define_macros", "libuv_2__corecffi__build_8py.html#a38302fecb43e628bdd6c8b9c91738cb0", null ],
+    [ "depends", "libuv_2__corecffi__build_8py.html#ab817377a29f35a07c1756c94dbb4ad31", null ],
+    [ "ffi", "libuv_2__corecffi__build_8py.html#a4bb1b8330f479edbb77d00f554cabae4", null ],
+    [ "include_dirs", "libuv_2__corecffi__build_8py.html#ae4afbe676b5468d2fcff9cba69d37e8e", null ],
+    [ "libraries", "libuv_2__corecffi__build_8py.html#abb686ede3f6f8387d750a91bf343f46e", null ],
+    [ "libuv_dir", "libuv_2__corecffi__build_8py.html#a8a8816442c32f7739091f9d27a742707", null ],
+    [ "LIBUV_INCLUDE_DIRS", "libuv_2__corecffi__build_8py.html#a365fd82718cbe869e92a3b470777e428", null ],
+    [ "LIBUV_LIBRARIES", "libuv_2__corecffi__build_8py.html#a102afd2d44f57a582bf4b675f7633b6d", null ],
+    [ "LIBUV_MACROS", "libuv_2__corecffi__build_8py.html#a65dab17a04f92f77fe5dab25b7fc0a4b", null ],
+    [ "LIBUV_SOURCES", "libuv_2__corecffi__build_8py.html#a0419d4ae6f61877c656f35a2537109ce", null ],
+    [ "setup_py_dir", "libuv_2__corecffi__build_8py.html#a89415d476f2dadbcfd1af5bf86001bef", null ],
+    [ "sources", "libuv_2__corecffi__build_8py.html#aa3a01e87d7c459be08041774472cb09c", null ],
+    [ "thisdir", "libuv_2__corecffi__build_8py.html#ac98ff08f1ed6cc8b007ec1911960c90f", null ],
+    [ "WIN", "libuv_2__corecffi__build_8py.html#a2ec910473aa5ebc6912ef9ab9a5e9d19", null ]
+];

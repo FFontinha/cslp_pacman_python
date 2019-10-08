@@ -1,0 +1,83 @@
+\hypertarget{namespaceaiohttp_1_1client}{}\section{aiohttp.\+client Namespace Reference}
+\label{namespaceaiohttp_1_1client}\index{aiohttp.\+client@{aiohttp.\+client}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classaiohttp_1_1client_1_1___base_request_context_manager}{\+\_\+\+Base\+Request\+Context\+Manager}
+\item 
+class \hyperlink{classaiohttp_1_1client_1_1___request_context_manager}{\+\_\+\+Request\+Context\+Manager}
+\item 
+class \hyperlink{classaiohttp_1_1client_1_1___session_request_context_manager}{\+\_\+\+Session\+Request\+Context\+Manager}
+\item 
+class \hyperlink{classaiohttp_1_1client_1_1___w_s_request_context_manager}{\+\_\+\+W\+S\+Request\+Context\+Manager}
+\item 
+class \hyperlink{classaiohttp_1_1client_1_1_client_session}{Client\+Session}
+\item 
+class \hyperlink{classaiohttp_1_1client_1_1_client_timeout}{Client\+Timeout}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceaiohttp_1_1client_ab0f1d0a5569ca9cc2986e7e43380c049}{request} (method, url, params=None, data=None, json=None, headers=None, skip\+\_\+auto\+\_\+headers=None, cookies=None, auth=None, allow\+\_\+redirects=True, max\+\_\+redirects=10, version=http.\+Http\+Version11, compress=None, chunked=None, expect100=False, connector=None, loop=None, read\+\_\+until\+\_\+eof=True, proxy=None, proxy\+\_\+auth=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1client_ad581b3b167bb0890b7c121cc3f579f7d}\label{namespaceaiohttp_1_1client_ad581b3b167bb0890b7c121cc3f579f7d}} 
+{\bfseries frozen}
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1client_a90d6973ce7853fef04691d60eb176356}\label{namespaceaiohttp_1_1client_a90d6973ce7853fef04691d60eb176356}} 
+{\bfseries True}
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1client_aba5717f3d9d62ebdf08046173dee44b7}\label{namespaceaiohttp_1_1client_aba5717f3d9d62ebdf08046173dee44b7}} 
+{\bfseries slots}
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1client_a88c1fd64213b45acd682fb67d539a202}\label{namespaceaiohttp_1_1client_a88c1fd64213b45acd682fb67d539a202}} 
+{\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+M\+E\+O\+UT} = \hyperlink{classaiohttp_1_1client_1_1_client_timeout}{Client\+Timeout}(total=5$\ast$60)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}HTTP Client for asyncio.\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceaiohttp_1_1client_ab0f1d0a5569ca9cc2986e7e43380c049}\label{namespaceaiohttp_1_1client_ab0f1d0a5569ca9cc2986e7e43380c049}} 
+\index{aiohttp\+::client@{aiohttp\+::client}!request@{request}}
+\index{request@{request}!aiohttp\+::client@{aiohttp\+::client}}
+\subsubsection{\texorpdfstring{request()}{request()}}
+{\footnotesize\ttfamily def aiohttp.\+client.\+request (\begin{DoxyParamCaption}\item[{}]{method,  }\item[{}]{url,  }\item[{}]{params = {\ttfamily None},  }\item[{}]{data = {\ttfamily None},  }\item[{}]{json = {\ttfamily None},  }\item[{}]{headers = {\ttfamily None},  }\item[{}]{skip\+\_\+auto\+\_\+headers = {\ttfamily None},  }\item[{}]{cookies = {\ttfamily None},  }\item[{}]{auth = {\ttfamily None},  }\item[{}]{allow\+\_\+redirects = {\ttfamily True},  }\item[{}]{max\+\_\+redirects = {\ttfamily 10},  }\item[{}]{version = {\ttfamily http.HttpVersion11},  }\item[{}]{compress = {\ttfamily None},  }\item[{}]{chunked = {\ttfamily None},  }\item[{}]{expect100 = {\ttfamily False},  }\item[{}]{connector = {\ttfamily None},  }\item[{}]{loop = {\ttfamily None},  }\item[{}]{read\+\_\+until\+\_\+eof = {\ttfamily True},  }\item[{}]{proxy = {\ttfamily None},  }\item[{}]{proxy\+\_\+auth = {\ttfamily None},  }\item[{}]{\+\_\+\+Session\+Request\+Context\+Manager }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructs and sends a request. Returns response object.
+method - HTTP method
+url - request url
+params - (optional) Dictionary or bytes to be sent in the query
+  string of the new request
+data - (optional) Dictionary, bytes, or file-like object to
+  send in the body of the request
+json - (optional) Any json compatibile python object
+headers - (optional) Dictionary of HTTP Headers to send with
+  the request
+cookies - (optional) Dict object to send with the request
+auth - (optional) BasicAuth named tuple represent HTTP Basic Auth
+auth - aiohttp.helpers.BasicAuth
+allow_redirects - (optional) If set to False, do not follow
+  redirects
+version - Request HTTP version.
+compress - Set to True if request has to be compressed
+   with deflate encoding.
+chunked - Set to chunk size for chunked transfer encoding.
+expect100 - Expect 100-continue response from server.
+connector - BaseConnector sub-class instance to support
+   connection pooling.
+read_until_eof - Read response until eof if response
+   does not have Content-Length header.
+loop - Optional event loop.
+Usage::
+  >>> import aiohttp
+  >>> resp = await aiohttp.request('GET', 'http://python.org/')
+  >>> resp
+  <ClientResponse(python.org/) [200]>
+  >>> data = await resp.read()
+\end{DoxyVerb}
+ 

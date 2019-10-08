@@ -1,0 +1,113 @@
+\hypertarget{corecext_8h}{}\section{venv/lib/python3.6/site-\/packages/gevent/libev/corecext.h File Reference}
+\label{corecext_8h}\index{venv/lib/python3.\+6/site-\/packages/gevent/libev/corecext.\+h@{venv/lib/python3.\+6/site-\/packages/gevent/libev/corecext.\+h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_py_gevent_callback_object}{Py\+Gevent\+Callback\+Object}
+\item 
+struct \hyperlink{struct_py_gevent_loop_object}{Py\+Gevent\+Loop\+Object}
+\item 
+struct \hyperlink{struct_py_gevent_watcher_object}{Py\+Gevent\+Watcher\+Object}
+\item 
+struct \hyperlink{struct_py_gevent_i_o_object}{Py\+Gevent\+I\+O\+Object}
+\item 
+struct \hyperlink{struct_py_gevent_timer_object}{Py\+Gevent\+Timer\+Object}
+\item 
+struct \hyperlink{struct_py_gevent_signal_object}{Py\+Gevent\+Signal\+Object}
+\item 
+struct \hyperlink{struct_py_gevent_idle_object}{Py\+Gevent\+Idle\+Object}
+\item 
+struct \hyperlink{struct_py_gevent_prepare_object}{Py\+Gevent\+Prepare\+Object}
+\item 
+struct \hyperlink{struct_py_gevent_check_object}{Py\+Gevent\+Check\+Object}
+\item 
+struct \hyperlink{struct_py_gevent_fork_object}{Py\+Gevent\+Fork\+Object}
+\item 
+struct \hyperlink{struct_py_gevent_async_object}{Py\+Gevent\+Async\+Object}
+\item 
+struct \hyperlink{struct_py_gevent_child_object}{Py\+Gevent\+Child\+Object}
+\item 
+struct \hyperlink{struct_py_gevent_stat_object}{Py\+Gevent\+Stat\+Object}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{corecext_8h_a1f8c53f8bf2de248911af7d6094febf1}{\+\_\+\+\_\+\+P\+Y\+X\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C}~extern
+\item 
+\#define \hyperlink{corecext_8h_af2b192857f7ae31192e330e3fe6bc1d9}{D\+L\+\_\+\+I\+M\+P\+O\+RT}(\+\_\+T)~\+\_\+T
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{corecext_8h_a1f8c53f8bf2de248911af7d6094febf1}{\+\_\+\+\_\+\+P\+Y\+X\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C} \hyperlink{corecext_8h_a4cec24d2c253b1ffd5f3354c928fab7e}{D\+L\+\_\+\+I\+M\+P\+O\+RT} (Py\+Type\+Object) Py\+Gevent\+Callback\+\_\+\+Type
+\item 
+\hyperlink{corecext_8h_a1f8c53f8bf2de248911af7d6094febf1}{\+\_\+\+\_\+\+P\+Y\+X\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C} void \hyperlink{corecext_8h_a04e95ee22e7b00c04ec08def92b2397c}{gevent\+\_\+handle\+\_\+error} (struct \hyperlink{struct_py_gevent_loop_object}{Py\+Gevent\+Loop\+Object} $\ast$, Py\+Object $\ast$)
+\item 
+\hyperlink{corecext_8h_a1f8c53f8bf2de248911af7d6094febf1}{\+\_\+\+\_\+\+P\+Y\+X\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C} Py\+Object $\ast$ \hyperlink{corecext_8h_a1a1584a11fb56d13aadab8843d16ea77}{gevent\+\_\+loop\+\_\+run\+\_\+callbacks} (struct \hyperlink{struct_py_gevent_loop_object}{Py\+Gevent\+Loop\+Object} $\ast$)
+\item 
+Py\+M\+O\+D\+I\+N\+I\+T\+\_\+\+F\+U\+NC \hyperlink{corecext_8h_a5469a37d8667b83fc1e32d9811e31542}{initcorecext} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{corecext_8h_a1f8c53f8bf2de248911af7d6094febf1}{\+\_\+\+\_\+\+P\+Y\+X\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C} Py\+Object $\ast$ \hyperlink{corecext_8h_a34ca85c7939b1d9e6111e7afd52a46b7}{G\+E\+V\+E\+N\+T\+\_\+\+C\+O\+R\+E\+\_\+\+E\+V\+E\+N\+TS}
+\item 
+\hyperlink{corecext_8h_a1f8c53f8bf2de248911af7d6094febf1}{\+\_\+\+\_\+\+P\+Y\+X\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C} Py\+Object $\ast$ \hyperlink{corecext_8h_ae79b15e6d071ab460e4670fb92165321}{\+\_\+empty\+\_\+tuple}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{corecext_8h_a1f8c53f8bf2de248911af7d6094febf1}\label{corecext_8h_a1f8c53f8bf2de248911af7d6094febf1}} 
+\index{corecext.\+h@{corecext.\+h}!\+\_\+\+\_\+\+P\+Y\+X\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C@{\+\_\+\+\_\+\+P\+Y\+X\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C}}
+\index{\+\_\+\+\_\+\+P\+Y\+X\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C@{\+\_\+\+\_\+\+P\+Y\+X\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C}!corecext.\+h@{corecext.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+P\+Y\+X\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C}{\_\_PYX\_EXTERN\_C}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+P\+Y\+X\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C~extern}
+
+\mbox{\Hypertarget{corecext_8h_af2b192857f7ae31192e330e3fe6bc1d9}\label{corecext_8h_af2b192857f7ae31192e330e3fe6bc1d9}} 
+\index{corecext.\+h@{corecext.\+h}!D\+L\+\_\+\+I\+M\+P\+O\+RT@{D\+L\+\_\+\+I\+M\+P\+O\+RT}}
+\index{D\+L\+\_\+\+I\+M\+P\+O\+RT@{D\+L\+\_\+\+I\+M\+P\+O\+RT}!corecext.\+h@{corecext.\+h}}
+\subsubsection{\texorpdfstring{D\+L\+\_\+\+I\+M\+P\+O\+RT}{DL\_IMPORT}}
+{\footnotesize\ttfamily \#define D\+L\+\_\+\+I\+M\+P\+O\+RT(\begin{DoxyParamCaption}\item[{}]{\+\_\+T }\end{DoxyParamCaption})~\+\_\+T}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{corecext_8h_a4cec24d2c253b1ffd5f3354c928fab7e}\label{corecext_8h_a4cec24d2c253b1ffd5f3354c928fab7e}} 
+\index{corecext.\+h@{corecext.\+h}!D\+L\+\_\+\+I\+M\+P\+O\+RT@{D\+L\+\_\+\+I\+M\+P\+O\+RT}}
+\index{D\+L\+\_\+\+I\+M\+P\+O\+RT@{D\+L\+\_\+\+I\+M\+P\+O\+RT}!corecext.\+h@{corecext.\+h}}
+\subsubsection{\texorpdfstring{D\+L\+\_\+\+I\+M\+P\+O\+R\+T()}{DL\_IMPORT()}}
+{\footnotesize\ttfamily \hyperlink{corecext_8h_a1f8c53f8bf2de248911af7d6094febf1}{\+\_\+\+\_\+\+P\+Y\+X\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C} D\+L\+\_\+\+I\+M\+P\+O\+RT (\begin{DoxyParamCaption}\item[{Py\+Type\+Object}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{corecext_8h_a04e95ee22e7b00c04ec08def92b2397c}\label{corecext_8h_a04e95ee22e7b00c04ec08def92b2397c}} 
+\index{corecext.\+h@{corecext.\+h}!gevent\+\_\+handle\+\_\+error@{gevent\+\_\+handle\+\_\+error}}
+\index{gevent\+\_\+handle\+\_\+error@{gevent\+\_\+handle\+\_\+error}!corecext.\+h@{corecext.\+h}}
+\subsubsection{\texorpdfstring{gevent\+\_\+handle\+\_\+error()}{gevent\_handle\_error()}}
+{\footnotesize\ttfamily \hyperlink{corecext_8h_a1f8c53f8bf2de248911af7d6094febf1}{\+\_\+\+\_\+\+P\+Y\+X\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C} void gevent\+\_\+handle\+\_\+error (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_py_gevent_loop_object}{Py\+Gevent\+Loop\+Object} $\ast$}]{,  }\item[{Py\+Object $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{corecext_8h_a1a1584a11fb56d13aadab8843d16ea77}\label{corecext_8h_a1a1584a11fb56d13aadab8843d16ea77}} 
+\index{corecext.\+h@{corecext.\+h}!gevent\+\_\+loop\+\_\+run\+\_\+callbacks@{gevent\+\_\+loop\+\_\+run\+\_\+callbacks}}
+\index{gevent\+\_\+loop\+\_\+run\+\_\+callbacks@{gevent\+\_\+loop\+\_\+run\+\_\+callbacks}!corecext.\+h@{corecext.\+h}}
+\subsubsection{\texorpdfstring{gevent\+\_\+loop\+\_\+run\+\_\+callbacks()}{gevent\_loop\_run\_callbacks()}}
+{\footnotesize\ttfamily \hyperlink{corecext_8h_a1f8c53f8bf2de248911af7d6094febf1}{\+\_\+\+\_\+\+P\+Y\+X\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C} Py\+Object$\ast$ gevent\+\_\+loop\+\_\+run\+\_\+callbacks (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_py_gevent_loop_object}{Py\+Gevent\+Loop\+Object} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{corecext_8h_a5469a37d8667b83fc1e32d9811e31542}\label{corecext_8h_a5469a37d8667b83fc1e32d9811e31542}} 
+\index{corecext.\+h@{corecext.\+h}!initcorecext@{initcorecext}}
+\index{initcorecext@{initcorecext}!corecext.\+h@{corecext.\+h}}
+\subsubsection{\texorpdfstring{initcorecext()}{initcorecext()}}
+{\footnotesize\ttfamily Py\+M\+O\+D\+I\+N\+I\+T\+\_\+\+F\+U\+NC initcorecext (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{corecext_8h_ae79b15e6d071ab460e4670fb92165321}\label{corecext_8h_ae79b15e6d071ab460e4670fb92165321}} 
+\index{corecext.\+h@{corecext.\+h}!\+\_\+empty\+\_\+tuple@{\+\_\+empty\+\_\+tuple}}
+\index{\+\_\+empty\+\_\+tuple@{\+\_\+empty\+\_\+tuple}!corecext.\+h@{corecext.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+empty\+\_\+tuple}{\_empty\_tuple}}
+{\footnotesize\ttfamily \hyperlink{corecext_8h_a1f8c53f8bf2de248911af7d6094febf1}{\+\_\+\+\_\+\+P\+Y\+X\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C} Py\+Object$\ast$ \+\_\+empty\+\_\+tuple}
+
+\mbox{\Hypertarget{corecext_8h_a34ca85c7939b1d9e6111e7afd52a46b7}\label{corecext_8h_a34ca85c7939b1d9e6111e7afd52a46b7}} 
+\index{corecext.\+h@{corecext.\+h}!G\+E\+V\+E\+N\+T\+\_\+\+C\+O\+R\+E\+\_\+\+E\+V\+E\+N\+TS@{G\+E\+V\+E\+N\+T\+\_\+\+C\+O\+R\+E\+\_\+\+E\+V\+E\+N\+TS}}
+\index{G\+E\+V\+E\+N\+T\+\_\+\+C\+O\+R\+E\+\_\+\+E\+V\+E\+N\+TS@{G\+E\+V\+E\+N\+T\+\_\+\+C\+O\+R\+E\+\_\+\+E\+V\+E\+N\+TS}!corecext.\+h@{corecext.\+h}}
+\subsubsection{\texorpdfstring{G\+E\+V\+E\+N\+T\+\_\+\+C\+O\+R\+E\+\_\+\+E\+V\+E\+N\+TS}{GEVENT\_CORE\_EVENTS}}
+{\footnotesize\ttfamily \hyperlink{corecext_8h_a1f8c53f8bf2de248911af7d6094febf1}{\+\_\+\+\_\+\+P\+Y\+X\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C} Py\+Object$\ast$ G\+E\+V\+E\+N\+T\+\_\+\+C\+O\+R\+E\+\_\+\+E\+V\+E\+N\+TS}
+

@@ -1,0 +1,68 @@
+\hypertarget{classgevent_1_1resolver_1_1thread_1_1_resolver}{}\section{gevent.\+resolver.\+thread.\+Resolver Class Reference}
+\label{classgevent_1_1resolver_1_1thread_1_1_resolver}\index{gevent.\+resolver.\+thread.\+Resolver@{gevent.\+resolver.\+thread.\+Resolver}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1thread_1_1_resolver_ae050ab8dfd724996cbc64c016052ff63}\label{classgevent_1_1resolver_1_1thread_1_1_resolver_ae050ab8dfd724996cbc64c016052ff63}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, hub=None)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1thread_1_1_resolver_a5ef24d6a1315a8646d0e9255905cdd5c}\label{classgevent_1_1resolver_1_1thread_1_1_resolver_a5ef24d6a1315a8646d0e9255905cdd5c}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1thread_1_1_resolver_abd7d75ed4eb812740b6c70c265ddbcdc}\label{classgevent_1_1resolver_1_1thread_1_1_resolver_abd7d75ed4eb812740b6c70c265ddbcdc}} 
+def {\bfseries close} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1thread_1_1_resolver_a411a65c5a725a8db30f9d260242521f7}\label{classgevent_1_1resolver_1_1thread_1_1_resolver_a411a65c5a725a8db30f9d260242521f7}} 
+def {\bfseries gethostbyname} (self, args)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1thread_1_1_resolver_a01a92d62c56e293f66dd435a0c326db5}\label{classgevent_1_1resolver_1_1thread_1_1_resolver_a01a92d62c56e293f66dd435a0c326db5}} 
+def {\bfseries gethostbyname\+\_\+ex} (self, args)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1thread_1_1_resolver_a1a41a37e6644b09abe0cbe2dd063d4b6}\label{classgevent_1_1resolver_1_1thread_1_1_resolver_a1a41a37e6644b09abe0cbe2dd063d4b6}} 
+def {\bfseries getaddrinfo} (self, args, kwargs)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1thread_1_1_resolver_a64f995b00eebdd7ce5c7463b050cba9b}\label{classgevent_1_1resolver_1_1thread_1_1_resolver_a64f995b00eebdd7ce5c7463b050cba9b}} 
+def {\bfseries gethostbyaddr} (self, args, kwargs)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1thread_1_1_resolver_a6617aea84b3e89bda7ca2abe7621f8cb}\label{classgevent_1_1resolver_1_1thread_1_1_resolver_a6617aea84b3e89bda7ca2abe7621f8cb}} 
+def {\bfseries getnameinfo} (self, args, kwargs)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1thread_1_1_resolver_abcb803c2d9b887901ec5c020bdcd44d9}\label{classgevent_1_1resolver_1_1thread_1_1_resolver_abcb803c2d9b887901ec5c020bdcd44d9}} 
+{\bfseries pool}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Implementation of the resolver API using native threads and native resolution
+functions.
+
+Using the native resolution mechanisms ensures the highest
+compatibility with what a non-gevent program would return
+including good support for platform specific configuration
+mechanisms. The use of native (non-greenlet) threads ensures that
+a caller doesn't block other greenlets.
+
+This implementation also has the benefit of being very simple in comparison to
+:class:`gevent.resolver_ares.Resolver`.
+
+.. tip::
+
+    Most users find this resolver to be quite reliable in a
+    properly monkey-patched environment. However, there have been
+    some reports of long delays, slow performance or even hangs,
+    particularly in long-lived programs that make many, many DNS
+    requests. If you suspect that may be happening to you, try the
+    dnspython or ares resolver (and submit a bug report).
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/resolver/thread.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,272 @@
+\hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter}{}\section{\+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriter Class Reference}
+\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter}\index{\+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriter@{\+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriter}}
+
+
+Inherits Node\+Visitor.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_af00df4e9525f9c2ccf2c842a514fe8ef}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_af00df4e9525f9c2ccf2c842a514fe8ef}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, module\+\_\+path, config)
+\item 
+def \hyperlink{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_ae3af02a0f2a2a4dc3812d0c9736b0958}{run} (self, mod)
+\item 
+def \hyperlink{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a3b2edef663dfd4b70f608c876ff06cd1}{variable} (self)
+\item 
+def \hyperlink{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a32a752e2c6a3748a2c701a460f671d8b}{assign} (self, expr)
+\item 
+def \hyperlink{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a115cbcd335312fac5f39d14e768e9b71}{display} (self, expr)
+\item 
+def \hyperlink{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_abfe3e9f58002edf47120a8f222152b89}{helper} (self, name, args)
+\item 
+def \hyperlink{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_aaf1c368a66668ade9977460b52cf41e2}{builtin} (self, name)
+\item 
+def \hyperlink{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_abe59ee2dd8de8ed7c02ca4aa40a7e4cd}{explanation\+\_\+param} (self, expr)
+\item 
+def \hyperlink{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a590937da24b0c7344679f33cad4ac77f}{push\+\_\+format\+\_\+context} (self)
+\item 
+def \hyperlink{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a233ad0b2eb99b5f9be2e0d4d8f32ab6a}{pop\+\_\+format\+\_\+context} (self, expl\+\_\+expr)
+\item 
+def \hyperlink{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a4efdb985010e6af5f1db60c55f52cf3f}{generic\+\_\+visit} (self, node)
+\item 
+def \hyperlink{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_aa8e3f63864cd72d566e775077ea64202}{visit\+\_\+\+Assert} (self, assert\+\_\+)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_ac451fa55487180bd2e3364af114c315a}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_ac451fa55487180bd2e3364af114c315a}} 
+def {\bfseries visit\+\_\+\+Name} (self, name)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a3f0bbbe84fa13cf8efeee5526f01df11}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a3f0bbbe84fa13cf8efeee5526f01df11}} 
+def {\bfseries visit\+\_\+\+Bool\+Op} (self, boolop)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_aeecd10428943df121f97d99de1991e27}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_aeecd10428943df121f97d99de1991e27}} 
+def {\bfseries visit\+\_\+\+Unary\+Op} (self, unary)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a57164ff8351a528b4094094ef2255397}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a57164ff8351a528b4094094ef2255397}} 
+def {\bfseries visit\+\_\+\+Bin\+Op} (self, binop)
+\item 
+def \hyperlink{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a7f0d51a7cfa01a996bbbfb91c1e0440b}{visit\+\_\+\+Call\+\_\+35} (self, call)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_ab8a797edc0019c872ee51ebb90c64db8}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_ab8a797edc0019c872ee51ebb90c64db8}} 
+def {\bfseries visit\+\_\+\+Starred} (self, starred)
+\item 
+def \hyperlink{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a111e1e9e7559394c7e61e6d020cdca47}{visit\+\_\+\+Call\+\_\+legacy} (self, call)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a076b7f7ce68dc445af662b7a80602ebc}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a076b7f7ce68dc445af662b7a80602ebc}} 
+def {\bfseries visit\+\_\+\+Attribute} (self, attr)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_abeb72d994a4ebfe50557b78ea3ea7641}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_abeb72d994a4ebfe50557b78ea3ea7641}} 
+def {\bfseries visit\+\_\+\+Compare} (self, comp)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a4a0808afd89a25e6e1a9b7c34c04dc43}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a4a0808afd89a25e6e1a9b7c34c04dc43}} 
+def {\bfseries is\+\_\+rewrite\+\_\+disabled} (docstring)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a5b55088c28687afd1de3ef91ae41b381}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a5b55088c28687afd1de3ef91ae41b381}} 
+{\bfseries module\+\_\+path}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a30a27019505d615bb9bab0a3d7d4ef77}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a30a27019505d615bb9bab0a3d7d4ef77}} 
+{\bfseries config}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_af6408ae2d94dbdbb81212040e63eafba}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_af6408ae2d94dbdbb81212040e63eafba}} 
+{\bfseries explanation\+\_\+specifiers}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_abe60af5d2cb9a504b00688111296b49e}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_abe60af5d2cb9a504b00688111296b49e}} 
+{\bfseries statements}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_af8e1c6173a3094c36f66a7002768fd28}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_af8e1c6173a3094c36f66a7002768fd28}} 
+{\bfseries variables}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a7a6b22d03d00e57ddbaf5df92199d886}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a7a6b22d03d00e57ddbaf5df92199d886}} 
+{\bfseries variable\+\_\+counter}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a0c33eaac94202ec17119a17f82e41c47}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a0c33eaac94202ec17119a17f82e41c47}} 
+{\bfseries stack}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a699e0dd12e73f082c924f1c0a9d5eccc}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a699e0dd12e73f082c924f1c0a9d5eccc}} 
+{\bfseries on\+\_\+failure}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a44845a80cc1ef1cfa8e6074c8d67e85e}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a44845a80cc1ef1cfa8e6074c8d67e85e}} 
+def {\bfseries visit\+\_\+\+Call} = \hyperlink{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a7f0d51a7cfa01a996bbbfb91c1e0440b}{visit\+\_\+\+Call\+\_\+35}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Assertion rewriting implementation.
+
+The main entrypoint is to call .run() with an ast.Module instance,
+this will then find all the assert statements and rewrite them to
+provide intermediate values and a detailed assertion error.  See
+http://pybites.blogspot.be/2011/07/behind-scenes-of-pytests-new-assertion.html
+for an overview of how this works.
+
+The entry point here is .run() which will iterate over all the
+statements in an ast.Module and for each ast.Assert statement it
+finds call .visit() with it.  Then .visit_Assert() takes over and
+is responsible for creating new ast statements to replace the
+original assert statement: it rewrites the test of an assertion
+to provide intermediate values and replace it with an if statement
+which raises an assertion error with a detailed explanation in
+case the expression is false.
+
+For this .visit_Assert() uses the visitor pattern to visit all the
+AST nodes of the ast.Assert.test field, each visit call returning
+an AST node and the corresponding explanation string.  During this
+state is kept in several instance attributes:
+
+:statements: All the AST statements which will replace the assert
+   statement.
+
+:variables: This is populated by .variable() with each variable
+   used by the statements so that they can all be set to None at
+   the end of the statements.
+
+:variable_counter: Counter to create new unique variables needed
+   by statements.  Variables are created using .variable() and
+   have the form of "@py_assert0".
+
+:on_failure: The AST statements which will be executed if the
+   assertion test fails.  This is the code which will construct
+   the failure message and raises the AssertionError.
+
+:explanation_specifiers: A dict filled by .explanation_param()
+   with %-formatting placeholders and their corresponding
+   expressions to use in the building of an assertion message.
+   This is used by .pop_format_context() to build a message.
+
+:stack: A stack of the explanation_specifiers dicts maintained by
+   .push_format_context() and .pop_format_context() which allows
+   to build another %-formatted string while already building one.
+
+This state is reset on every new assert statement visited and used
+by the other visitors.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a32a752e2c6a3748a2c701a460f671d8b}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a32a752e2c6a3748a2c701a460f671d8b}} 
+\index{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}!assign@{assign}}
+\index{assign@{assign}!\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}}
+\subsubsection{\texorpdfstring{assign()}{assign()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriter.\+assign (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{expr }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Give *expr* a name.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_aaf1c368a66668ade9977460b52cf41e2}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_aaf1c368a66668ade9977460b52cf41e2}} 
+\index{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}!builtin@{builtin}}
+\index{builtin@{builtin}!\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}}
+\subsubsection{\texorpdfstring{builtin()}{builtin()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriter.\+builtin (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the builtin called *name*.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a115cbcd335312fac5f39d14e768e9b71}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a115cbcd335312fac5f39d14e768e9b71}} 
+\index{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}!display@{display}}
+\index{display@{display}!\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriter.\+display (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{expr }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call py.io.saferepr on the expression.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_abe59ee2dd8de8ed7c02ca4aa40a7e4cd}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_abe59ee2dd8de8ed7c02ca4aa40a7e4cd}} 
+\index{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}!explanation\+\_\+param@{explanation\+\_\+param}}
+\index{explanation\+\_\+param@{explanation\+\_\+param}!\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}}
+\subsubsection{\texorpdfstring{explanation\+\_\+param()}{explanation\_param()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriter.\+explanation\+\_\+param (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{expr }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new named %-formatting placeholder for expr.
+
+This creates a %-formatting placeholder for expr in the
+current formatting context, e.g. ``%(py0)s``.  The placeholder
+and expr are placed in the current format context so that it
+can be used on the next call to .pop_format_context().\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a4efdb985010e6af5f1db60c55f52cf3f}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a4efdb985010e6af5f1db60c55f52cf3f}} 
+\index{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}!generic\+\_\+visit@{generic\+\_\+visit}}
+\index{generic\+\_\+visit@{generic\+\_\+visit}!\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}}
+\subsubsection{\texorpdfstring{generic\+\_\+visit()}{generic\_visit()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriter.\+generic\+\_\+visit (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{node }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handle expressions we don't have custom code for.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_abfe3e9f58002edf47120a8f222152b89}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_abfe3e9f58002edf47120a8f222152b89}} 
+\index{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}!helper@{helper}}
+\index{helper@{helper}!\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}}
+\subsubsection{\texorpdfstring{helper()}{helper()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriter.\+helper (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call a helper in this module.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a233ad0b2eb99b5f9be2e0d4d8f32ab6a}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a233ad0b2eb99b5f9be2e0d4d8f32ab6a}} 
+\index{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}!pop\+\_\+format\+\_\+context@{pop\+\_\+format\+\_\+context}}
+\index{pop\+\_\+format\+\_\+context@{pop\+\_\+format\+\_\+context}!\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}}
+\subsubsection{\texorpdfstring{pop\+\_\+format\+\_\+context()}{pop\_format\_context()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriter.\+pop\+\_\+format\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{expl\+\_\+expr }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Format the %-formatted string with current format context.
+
+The expl_expr should be an ast.Str instance constructed from
+the %-placeholders created by .explanation_param().  This will
+add the required code to format said string to .on_failure and
+return the ast.Name instance of the formatted string.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a590937da24b0c7344679f33cad4ac77f}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a590937da24b0c7344679f33cad4ac77f}} 
+\index{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}!push\+\_\+format\+\_\+context@{push\+\_\+format\+\_\+context}}
+\index{push\+\_\+format\+\_\+context@{push\+\_\+format\+\_\+context}!\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}}
+\subsubsection{\texorpdfstring{push\+\_\+format\+\_\+context()}{push\_format\_context()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriter.\+push\+\_\+format\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new formatting context.
+
+The format context is used for when an explanation wants to
+have a variable value formatted in the assertion message.  In
+this case the value required can be added using
+.explanation_param().  Finally .pop_format_context() is used
+to format a string of %-formatted values as added by
+.explanation_param().\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_ae3af02a0f2a2a4dc3812d0c9736b0958}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_ae3af02a0f2a2a4dc3812d0c9736b0958}} 
+\index{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}!run@{run}}
+\index{run@{run}!\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriter.\+run (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{mod }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Find all assert statements in *mod* and rewrite them.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a3b2edef663dfd4b70f608c876ff06cd1}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a3b2edef663dfd4b70f608c876ff06cd1}} 
+\index{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}!variable@{variable}}
+\index{variable@{variable}!\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}}
+\subsubsection{\texorpdfstring{variable()}{variable()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriter.\+variable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a new variable.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_aa8e3f63864cd72d566e775077ea64202}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_aa8e3f63864cd72d566e775077ea64202}} 
+\index{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}!visit\+\_\+\+Assert@{visit\+\_\+\+Assert}}
+\index{visit\+\_\+\+Assert@{visit\+\_\+\+Assert}!\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}}
+\subsubsection{\texorpdfstring{visit\+\_\+\+Assert()}{visit\_Assert()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriter.\+visit\+\_\+\+Assert (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{assert\+\_\+ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the AST statements to replace the ast.Assert instance.
+
+This rewrites the test of an assertion to provide
+intermediate values and replace it with an if statement which
+raises an assertion error with a detailed explanation in case
+the expression is false.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a7f0d51a7cfa01a996bbbfb91c1e0440b}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a7f0d51a7cfa01a996bbbfb91c1e0440b}} 
+\index{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}!visit\+\_\+\+Call\+\_\+35@{visit\+\_\+\+Call\+\_\+35}}
+\index{visit\+\_\+\+Call\+\_\+35@{visit\+\_\+\+Call\+\_\+35}!\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}}
+\subsubsection{\texorpdfstring{visit\+\_\+\+Call\+\_\+35()}{visit\_Call\_35()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriter.\+visit\+\_\+\+Call\+\_\+35 (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{call }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}visit `ast.Call` nodes on Python3.5 and after
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a111e1e9e7559394c7e61e6d020cdca47}\label{class__pytest_1_1assertion_1_1rewrite_1_1_assertion_rewriter_a111e1e9e7559394c7e61e6d020cdca47}} 
+\index{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}!visit\+\_\+\+Call\+\_\+legacy@{visit\+\_\+\+Call\+\_\+legacy}}
+\index{visit\+\_\+\+Call\+\_\+legacy@{visit\+\_\+\+Call\+\_\+legacy}!\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter@{\+\_\+pytest\+::assertion\+::rewrite\+::\+Assertion\+Rewriter}}
+\subsubsection{\texorpdfstring{visit\+\_\+\+Call\+\_\+legacy()}{visit\_Call\_legacy()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+rewrite.\+Assertion\+Rewriter.\+visit\+\_\+\+Call\+\_\+legacy (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{call }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}visit `ast.Call nodes on 3.4 and below`
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/assertion/rewrite.\+py\end{DoxyCompactItemize}

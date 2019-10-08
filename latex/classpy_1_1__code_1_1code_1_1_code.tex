@@ -1,0 +1,88 @@
+\hypertarget{classpy_1_1__code_1_1code_1_1_code}{}\section{py.\+\_\+code.\+code.\+Code Class Reference}
+\label{classpy_1_1__code_1_1code_1_1_code}\index{py.\+\_\+code.\+code.\+Code@{py.\+\_\+code.\+code.\+Code}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_code_a2462806852c199245d2bbe7fe81e970e}\label{classpy_1_1__code_1_1code_1_1_code_a2462806852c199245d2bbe7fe81e970e}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, rawcode)
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_code_ab8095d8639a40f7a0e6ac406aeb4d174}\label{classpy_1_1__code_1_1code_1_1_code_ab8095d8639a40f7a0e6ac406aeb4d174}} 
+def {\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_code_a641bfe6b27f3419c4b810515106d35f5}\label{classpy_1_1__code_1_1code_1_1_code_a641bfe6b27f3419c4b810515106d35f5}} 
+def {\bfseries \+\_\+\+\_\+ne\+\_\+\+\_\+} (self, other)
+\item 
+def \hyperlink{classpy_1_1__code_1_1code_1_1_code_a84e26981617ad90d0fe872b367058f29}{path} (self)
+\item 
+def \hyperlink{classpy_1_1__code_1_1code_1_1_code_ac0021a93e7f7438bbba8389ba07cc37b}{fullsource} (self)
+\item 
+def \hyperlink{classpy_1_1__code_1_1code_1_1_code_a9edbde33c7061882644a27dae8fb3441}{source} (self)
+\item 
+def \hyperlink{classpy_1_1__code_1_1code_1_1_code_ae3526891049d1b433a3e86b8fe03077c}{getargs} (self, var=False)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_code_a7a407e337741efee158726ae779515e0}\label{classpy_1_1__code_1_1code_1_1_code_a7a407e337741efee158726ae779515e0}} 
+{\bfseries filename}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_code_ad4ddde48727516833877dbdeec0fa384}\label{classpy_1_1__code_1_1code_1_1_code_ad4ddde48727516833877dbdeec0fa384}} 
+{\bfseries firstlineno}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_code_a77c32a3d6839205a0760ba92ef54d2dc}\label{classpy_1_1__code_1_1code_1_1_code_a77c32a3d6839205a0760ba92ef54d2dc}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_code_a95984941853983c1c67bfb463aeff170}\label{classpy_1_1__code_1_1code_1_1_code_a95984941853983c1c67bfb463aeff170}} 
+{\bfseries raw}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}wrapper around Python code objects \end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_code_ac0021a93e7f7438bbba8389ba07cc37b}\label{classpy_1_1__code_1_1code_1_1_code_ac0021a93e7f7438bbba8389ba07cc37b}} 
+\index{py\+::\+\_\+code\+::code\+::\+Code@{py\+::\+\_\+code\+::code\+::\+Code}!fullsource@{fullsource}}
+\index{fullsource@{fullsource}!py\+::\+\_\+code\+::code\+::\+Code@{py\+::\+\_\+code\+::code\+::\+Code}}
+\subsubsection{\texorpdfstring{fullsource()}{fullsource()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+Code.\+fullsource (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a py.code.Source object for the full source file of the code
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_code_ae3526891049d1b433a3e86b8fe03077c}\label{classpy_1_1__code_1_1code_1_1_code_ae3526891049d1b433a3e86b8fe03077c}} 
+\index{py\+::\+\_\+code\+::code\+::\+Code@{py\+::\+\_\+code\+::code\+::\+Code}!getargs@{getargs}}
+\index{getargs@{getargs}!py\+::\+\_\+code\+::code\+::\+Code@{py\+::\+\_\+code\+::code\+::\+Code}}
+\subsubsection{\texorpdfstring{getargs()}{getargs()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+Code.\+getargs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{var = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a tuple with the argument names for the code object
+
+    if 'var' is set True also return the names of the variable and
+    keyword arguments when present
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_code_a84e26981617ad90d0fe872b367058f29}\label{classpy_1_1__code_1_1code_1_1_code_a84e26981617ad90d0fe872b367058f29}} 
+\index{py\+::\+\_\+code\+::code\+::\+Code@{py\+::\+\_\+code\+::code\+::\+Code}!path@{path}}
+\index{path@{path}!py\+::\+\_\+code\+::code\+::\+Code@{py\+::\+\_\+code\+::code\+::\+Code}}
+\subsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+Code.\+path (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a path object pointing to source code (note that it
+might not point to an actually existing file). \end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_code_a9edbde33c7061882644a27dae8fb3441}\label{classpy_1_1__code_1_1code_1_1_code_a9edbde33c7061882644a27dae8fb3441}} 
+\index{py\+::\+\_\+code\+::code\+::\+Code@{py\+::\+\_\+code\+::code\+::\+Code}!source@{source}}
+\index{source@{source}!py\+::\+\_\+code\+::code\+::\+Code@{py\+::\+\_\+code\+::code\+::\+Code}}
+\subsubsection{\texorpdfstring{source()}{source()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+Code.\+source (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a py.code.Source object for the code object's source only
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/py/\+\_\+code/code.\+py\end{DoxyCompactItemize}

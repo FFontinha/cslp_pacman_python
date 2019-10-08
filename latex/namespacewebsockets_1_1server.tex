@@ -1,0 +1,50 @@
+\hypertarget{namespacewebsockets_1_1server}{}\section{websockets.\+server Namespace Reference}
+\label{namespacewebsockets_1_1server}\index{websockets.\+server@{websockets.\+server}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classwebsockets_1_1server_1_1_serve}{Serve}
+\item 
+class \hyperlink{classwebsockets_1_1server_1_1_web_socket_server}{Web\+Socket\+Server}
+\item 
+class \hyperlink{classwebsockets_1_1server_1_1_web_socket_server_protocol}{Web\+Socket\+Server\+Protocol}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacewebsockets_1_1server_a87c4bd8b9d6a51924dcb6acdad9db174}{unix\+\_\+serve} (ws\+\_\+handler, path, kwargs)
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1server_a8798ba30b4746584755b6f9e40da7beb}\label{namespacewebsockets_1_1server_a8798ba30b4746584755b6f9e40da7beb}} 
+def {\bfseries serve} (args, kwds)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1server_a8da2b6864f11c2d32b3e67f529653a43}\label{namespacewebsockets_1_1server_a8da2b6864f11c2d32b3e67f529653a43}} 
+{\bfseries logger}
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1server_a48e58e13634c5531b6308499865aa45c}\label{namespacewebsockets_1_1server_a48e58e13634c5531b6308499865aa45c}} 
+{\bfseries serve}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}The :mod:`websockets.server` module defines a simple WebSocket server API.\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacewebsockets_1_1server_a87c4bd8b9d6a51924dcb6acdad9db174}\label{namespacewebsockets_1_1server_a87c4bd8b9d6a51924dcb6acdad9db174}} 
+\index{websockets\+::server@{websockets\+::server}!unix\+\_\+serve@{unix\+\_\+serve}}
+\index{unix\+\_\+serve@{unix\+\_\+serve}!websockets\+::server@{websockets\+::server}}
+\subsubsection{\texorpdfstring{unix\+\_\+serve()}{unix\_serve()}}
+{\footnotesize\ttfamily def websockets.\+server.\+unix\+\_\+serve (\begin{DoxyParamCaption}\item[{}]{ws\+\_\+handler,  }\item[{}]{path,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Similar to :func:`serve()`, but for listening on Unix sockets.
+
+This function calls the event loop's
+:meth:`~asyncio.AbstractEventLoop.create_unix_server` method.
+
+It is only available on Unix.
+
+It's useful for deploying a server behind a reverse proxy such as nginx.\end{DoxyVerb}
+ 

@@ -1,0 +1,69 @@
+\hypertarget{classgevent_1_1__config_1_1_resolver}{}\section{gevent.\+\_\+config.\+Resolver Class Reference}
+\label{classgevent_1_1__config_1_1_resolver}\index{gevent.\+\_\+config.\+Resolver@{gevent.\+\_\+config.\+Resolver}}
+
+
+Inherits \hyperlink{classgevent_1_1__config_1_1_importable_setting}{gevent.\+\_\+config.\+Importable\+Setting}, and \hyperlink{classgevent_1_1__config_1_1_setting}{gevent.\+\_\+config.\+Setting}.
+
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries desc}
+\item 
+list {\bfseries default}
+\item 
+dictionary {\bfseries shortname\+\_\+map}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_resolver_acaf85b0f710a05863992ae6d8fc9e445}\label{classgevent_1_1__config_1_1_resolver_acaf85b0f710a05863992ae6d8fc9e445}} 
+\index{gevent\+::\+\_\+config\+::\+Resolver@{gevent\+::\+\_\+config\+::\+Resolver}!default@{default}}
+\index{default@{default}!gevent\+::\+\_\+config\+::\+Resolver@{gevent\+::\+\_\+config\+::\+Resolver}}
+\subsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily list gevent.\+\_\+config.\+Resolver.\+default\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  [
+        \textcolor{stringliteral}{'thread'},
+        \textcolor{stringliteral}{'dnspython'},
+        \textcolor{stringliteral}{'ares'},
+        \textcolor{stringliteral}{'block'},
+    ]
+\end{DoxyCode}
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_resolver_af6fc314a5e0a4a9ed756a33f154f0cae}\label{classgevent_1_1__config_1_1_resolver_af6fc314a5e0a4a9ed756a33f154f0cae}} 
+\index{gevent\+::\+\_\+config\+::\+Resolver@{gevent\+::\+\_\+config\+::\+Resolver}!desc@{desc}}
+\index{desc@{desc}!gevent\+::\+\_\+config\+::\+Resolver@{gevent\+::\+\_\+config\+::\+Resolver}}
+\subsubsection{\texorpdfstring{desc}{desc}}
+{\footnotesize\ttfamily string gevent.\+\_\+config.\+Resolver.\+desc\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \textcolor{stringliteral}{"""\(\backslash\)}
+\textcolor{stringliteral}{The callable that will be used to create}
+\textcolor{stringliteral}{:attr:`gevent.hub.Hub.resolver`.}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{See :doc:`dns` for more information.}
+\textcolor{stringliteral}{"""}
+\end{DoxyCode}
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_resolver_a203528f1698dc7e9ea19a2d9671243da}\label{classgevent_1_1__config_1_1_resolver_a203528f1698dc7e9ea19a2d9671243da}} 
+\index{gevent\+::\+\_\+config\+::\+Resolver@{gevent\+::\+\_\+config\+::\+Resolver}!shortname\+\_\+map@{shortname\+\_\+map}}
+\index{shortname\+\_\+map@{shortname\+\_\+map}!gevent\+::\+\_\+config\+::\+Resolver@{gevent\+::\+\_\+config\+::\+Resolver}}
+\subsubsection{\texorpdfstring{shortname\+\_\+map}{shortname\_map}}
+{\footnotesize\ttfamily dictionary gevent.\+\_\+config.\+Resolver.\+shortname\+\_\+map\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \{
+        \textcolor{stringliteral}{'ares'}: \textcolor{stringliteral}{'gevent.resolver.ares.Resolver'},
+        \textcolor{stringliteral}{'thread'}: \textcolor{stringliteral}{'gevent.resolver.thread.Resolver'},
+        \textcolor{stringliteral}{'block'}: \textcolor{stringliteral}{'gevent.resolver.blocking.Resolver'},
+        \textcolor{stringliteral}{'dnspython'}: \textcolor{stringliteral}{'gevent.resolver.dnspython.Resolver'},
+    \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/\+\_\+config.\+py\end{DoxyCompactItemize}

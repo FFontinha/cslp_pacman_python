@@ -1,0 +1,26 @@
+var classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher =
+[
+    [ "__init__", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#af907e3bdad1787c8f4e0ac72cbdc7c63", null ],
+    [ "__contains__", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#ac0419f1b51624fd0a23d2997ba4f8eb5", null ],
+    [ "__getitem__", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#a9737b9d966cc22c7d68845ee6bf07a1f", null ],
+    [ "__iter__", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#ab2e3bd973d03a97c7cf22e484257b669", null ],
+    [ "__len__", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#a8fe220695c81acbb1e48dd3ccaae0087", null ],
+    [ "add_delete", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#afda3249df3f47a4fcf13df279de849cf", null ],
+    [ "add_get", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#abf5734aafaab163d20b158b6ecdc8d30", null ],
+    [ "add_head", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#a41bfa58768e2eaa444f528e299f9a492", null ],
+    [ "add_options", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#aa9593de4416fde65adfb837d9ef065b0", null ],
+    [ "add_patch", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#ade00fe669cb2cdb2c837738d249f2728", null ],
+    [ "add_post", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#a92d640428f9b884450075b2495f75812", null ],
+    [ "add_put", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#a9a7a70995b6863953d4d185abc9d3354", null ],
+    [ "add_resource", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#af0b5574b77cbaf41af756b39d2283bb7", null ],
+    [ "add_route", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#a4aa429a2b1e792e521c436feea911c68", null ],
+    [ "add_routes", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#aa55ccedb52f2221f8a7b0b9bd1a6e33e", null ],
+    [ "add_static", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#a51881bea91cd64ead8bd9717ba0b96ed", null ],
+    [ "add_view", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#a7cde1ed170743d73305dc54c19b87509", null ],
+    [ "freeze", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#aea19609481bba2157d5c7a8b7a4d96c7", null ],
+    [ "named_resources", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#a85315f6df67def4a39cad2586ca07846", null ],
+    [ "register_resource", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#a603ef3499bd5d728c75a576d9d7e5cdc", null ],
+    [ "resolve", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#af1507f4d483ee5987340a1bd3d18cf03", null ],
+    [ "resources", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#a6f47dfd19cc20ec0a70a158179ce7dfb", null ],
+    [ "routes", "classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher.html#ae2e69e2a4a7dcd14d5e23782a01ea825", null ]
+];

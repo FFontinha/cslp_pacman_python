@@ -1,0 +1,106 @@
+\hypertarget{namespace__pytest_1_1outcomes}{}\section{\+\_\+pytest.\+outcomes Namespace Reference}
+\label{namespace__pytest_1_1outcomes}\index{\+\_\+pytest.\+outcomes@{\+\_\+pytest.\+outcomes}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class__pytest_1_1outcomes_1_1_exit}{Exit}
+\item 
+class \hyperlink{class__pytest_1_1outcomes_1_1_failed}{Failed}
+\item 
+class \hyperlink{class__pytest_1_1outcomes_1_1_outcome_exception}{Outcome\+Exception}
+\item 
+class \hyperlink{class__pytest_1_1outcomes_1_1_skipped}{Skipped}
+\item 
+class \hyperlink{class__pytest_1_1outcomes_1_1_x_failed}{X\+Failed}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespace__pytest_1_1outcomes_a80a3d7119b0e373d1a2b53ebf248a094}{exit} (msg)
+\item 
+def \hyperlink{namespace__pytest_1_1outcomes_a0866db5a141b016319ad83acc9febc06}{skip} (msg=\char`\"{}\char`\"{}, kwargs)
+\item 
+def \hyperlink{namespace__pytest_1_1outcomes_aea7cd78ad2dc857366fae4d25d05f02b}{fail} (msg=\char`\"{}\char`\"{}, pytrace=True)
+\item 
+def \hyperlink{namespace__pytest_1_1outcomes_a361095ab4d4b94436fbdf2663384f485}{xfail} (reason=\char`\"{}\char`\"{})
+\item 
+def \hyperlink{namespace__pytest_1_1outcomes_ad806324628e36473b1c76d4cb1948fc8}{importorskip} (modname, minversion=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1outcomes_a39222e93e981edb7fbba0267b8ef6032}\label{namespace__pytest_1_1outcomes_a39222e93e981edb7fbba0267b8ef6032}} 
+tuple {\bfseries T\+E\+S\+T\+\_\+\+O\+U\+T\+C\+O\+ME} = (\hyperlink{class__pytest_1_1outcomes_1_1_outcome_exception}{Outcome\+Exception}, Exception)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}exception classes and constants handling test outcomes
+as well as functions creating them
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1outcomes_a80a3d7119b0e373d1a2b53ebf248a094}\label{namespace__pytest_1_1outcomes_a80a3d7119b0e373d1a2b53ebf248a094}} 
+\index{\+\_\+pytest\+::outcomes@{\+\_\+pytest\+::outcomes}!exit@{exit}}
+\index{exit@{exit}!\+\_\+pytest\+::outcomes@{\+\_\+pytest\+::outcomes}}
+\subsubsection{\texorpdfstring{exit()}{exit()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+outcomes.\+exit (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}exit testing process as if KeyboardInterrupt was triggered. \end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1outcomes_aea7cd78ad2dc857366fae4d25d05f02b}\label{namespace__pytest_1_1outcomes_aea7cd78ad2dc857366fae4d25d05f02b}} 
+\index{\+\_\+pytest\+::outcomes@{\+\_\+pytest\+::outcomes}!fail@{fail}}
+\index{fail@{fail}!\+\_\+pytest\+::outcomes@{\+\_\+pytest\+::outcomes}}
+\subsubsection{\texorpdfstring{fail()}{fail()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+outcomes.\+fail (\begin{DoxyParamCaption}\item[{}]{msg = {\ttfamily \char`\"{}\char`\"{}},  }\item[{}]{pytrace = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Explicitly fail an executing test with the given message.
+
+:param str msg: the message to show the user as reason for the failure.
+:param bool pytrace: if false the msg represents the full failure information and no
+    python traceback will be reported.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1outcomes_ad806324628e36473b1c76d4cb1948fc8}\label{namespace__pytest_1_1outcomes_ad806324628e36473b1c76d4cb1948fc8}} 
+\index{\+\_\+pytest\+::outcomes@{\+\_\+pytest\+::outcomes}!importorskip@{importorskip}}
+\index{importorskip@{importorskip}!\+\_\+pytest\+::outcomes@{\+\_\+pytest\+::outcomes}}
+\subsubsection{\texorpdfstring{importorskip()}{importorskip()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+outcomes.\+importorskip (\begin{DoxyParamCaption}\item[{}]{modname,  }\item[{}]{minversion = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return imported module if it has at least "minversion" as its
+__version__ attribute.  If no minversion is specified the a skip
+is only triggered if the module can not be imported.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1outcomes_a0866db5a141b016319ad83acc9febc06}\label{namespace__pytest_1_1outcomes_a0866db5a141b016319ad83acc9febc06}} 
+\index{\+\_\+pytest\+::outcomes@{\+\_\+pytest\+::outcomes}!skip@{skip}}
+\index{skip@{skip}!\+\_\+pytest\+::outcomes@{\+\_\+pytest\+::outcomes}}
+\subsubsection{\texorpdfstring{skip()}{skip()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+outcomes.\+skip (\begin{DoxyParamCaption}\item[{}]{msg = {\ttfamily \char`\"{}\char`\"{}},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Skip an executing test with the given message.
+
+This function should be called only during testing (setup, call or teardown) or
+during collection by using the ``allow_module_level`` flag.
+
+:kwarg bool allow_module_level: allows this function to be called at
+    module level, skipping the rest of the module. Default to False.
+
+.. note::
+    It is better to use the :ref:`pytest.mark.skipif ref` marker when possible to declare a test to be
+    skipped under certain conditions like mismatching platforms or
+    dependencies.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1outcomes_a361095ab4d4b94436fbdf2663384f485}\label{namespace__pytest_1_1outcomes_a361095ab4d4b94436fbdf2663384f485}} 
+\index{\+\_\+pytest\+::outcomes@{\+\_\+pytest\+::outcomes}!xfail@{xfail}}
+\index{xfail@{xfail}!\+\_\+pytest\+::outcomes@{\+\_\+pytest\+::outcomes}}
+\subsubsection{\texorpdfstring{xfail()}{xfail()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+outcomes.\+xfail (\begin{DoxyParamCaption}\item[{}]{reason = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Imperatively xfail an executing test or setup functions with the given reason.
+
+This function should be called only during testing (setup, call or teardown).
+
+.. note::
+    It is better to use the :ref:`pytest.mark.xfail ref` marker when possible to declare a test to be
+    xfailed under certain conditions like known bugs or missing features.
+\end{DoxyVerb}
+ 

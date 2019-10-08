@@ -1,0 +1,214 @@
+\hypertarget{namespacegevent_1_1__socketcommon}{}\section{gevent.\+\_\+socketcommon Namespace Reference}
+\label{namespacegevent_1_1__socketcommon}\index{gevent.\+\_\+socketcommon@{gevent.\+\_\+socketcommon}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgevent_1_1__socketcommon_1_1cancel__wait__ex}{cancel\+\_\+wait\+\_\+ex}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1__socketcommon_a93106cd28e74e4e80dfd3f9d74661ee9}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{namespacegevent_1_1__socketcommon_afa0b81d7e394944cf3c3401619b81b97}{cancel\+\_\+wait} (watcher, error=\hyperlink{classgevent_1_1__socketcommon_1_1cancel__wait__ex}{cancel\+\_\+wait\+\_\+ex})
+\item 
+def \hyperlink{namespacegevent_1_1__socketcommon_a2ee0bbc0ffce8551ebdb2359e4c34f32}{gethostbyname} (hostname)
+\item 
+def \hyperlink{namespacegevent_1_1__socketcommon_a9200bf7e6fcf07e5a4303eb2d92b3c95}{gethostbyname\+\_\+ex} (hostname)
+\item 
+def \hyperlink{namespacegevent_1_1__socketcommon_aba53a9d7d131e2932c207022978aa824}{getaddrinfo} (host, port, family=0, socktype=0, proto=0, flags=0)
+\item 
+def \hyperlink{namespacegevent_1_1__socketcommon_a9fc88bc23729e5962781f8a89b11016a}{gethostbyaddr} (ip\+\_\+address)
+\item 
+def \hyperlink{namespacegevent_1_1__socketcommon_a5ad90a103e5f6ff1d4bc8a46321cb519}{getnameinfo} (sockaddr, flags)
+\item 
+def \hyperlink{namespacegevent_1_1__socketcommon_a9cc84a90b58f69fdb4b378af2c174a40}{getfqdn} (name=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespacegevent_1_1__socketcommon_a739532b032ab532cbb360dd0d30a1229}{is\+\_\+windows} = \textquotesingle{}win32\textquotesingle{}
+\item 
+string \hyperlink{namespacegevent_1_1__socketcommon_a96117f85d3a16cc13e3359932cc75bed}{is\+\_\+macos} = \textquotesingle{}darwin\textquotesingle{}
+\item 
+\hyperlink{namespacegevent_1_1__socketcommon_a641e38024afabb842e9d5fa8e28f03fc}{E\+A\+G\+A\+IN} = E\+W\+O\+U\+L\+D\+B\+L\+O\+CK
+\item 
+int \hyperlink{namespacegevent_1_1__socketcommon_ad9e6b2543a0f63d03b9414e0cc671e67}{E\+B\+A\+DF} = 9
+\item 
+tuple \hyperlink{namespacegevent_1_1__socketcommon_a65633bdfc515a3e0dcdd1d57efd3e6d9}{G\+S\+E\+N\+D\+A\+G\+A\+IN} = (E\+W\+O\+U\+L\+D\+B\+L\+O\+CK,)
+\item 
+\hyperlink{namespacegevent_1_1__socketcommon_afab16c412595601b1fcaab485b8e826c}{wait} = \hyperlink{namespacegevent_1_1__hub__primitives_ae484b73e4c293e8788d5857165c2e230}{\+\_\+hub\+\_\+primitives.\+wait\+\_\+on\+\_\+watcher}
+\item 
+\hyperlink{namespacegevent_1_1__socketcommon_ace429b82f733b0a970f3748aed0a9cde}{wait\+\_\+read} = \+\_\+hub\+\_\+primitives.\+wait\+\_\+read
+\item 
+\hyperlink{namespacegevent_1_1__socketcommon_a8cfd99a64597c3b76fc45edc9ba6711e}{wait\+\_\+write} = \+\_\+hub\+\_\+primitives.\+wait\+\_\+write
+\item 
+\hyperlink{namespacegevent_1_1__socketcommon_ae5cd9e8f537c5048349e0475775a2ce5}{wait\+\_\+readwrite} = \+\_\+hub\+\_\+primitives.\+wait\+\_\+readwrite
+\item 
+def \hyperlink{namespacegevent_1_1__socketcommon_abadc1a71ac7e1c3552c362f380b398cd}{d} = getaddrinfo.\+\_\+\+\_\+doc\+\_\+\+\_\+
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1__socketcommon_a93106cd28e74e4e80dfd3f9d74661ee9}\label{namespacegevent_1_1__socketcommon_a93106cd28e74e4e80dfd3f9d74661ee9}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def gevent.\+\_\+socketcommon.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegevent_1_1__socketcommon_afa0b81d7e394944cf3c3401619b81b97}\label{namespacegevent_1_1__socketcommon_afa0b81d7e394944cf3c3401619b81b97}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!cancel\+\_\+wait@{cancel\+\_\+wait}}
+\index{cancel\+\_\+wait@{cancel\+\_\+wait}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{cancel\+\_\+wait()}{cancel\_wait()}}
+{\footnotesize\ttfamily def gevent.\+\_\+socketcommon.\+cancel\+\_\+wait (\begin{DoxyParamCaption}\item[{}]{watcher,  }\item[{}]{error = {\ttfamily \hyperlink{classgevent_1_1__socketcommon_1_1cancel__wait__ex}{cancel\+\_\+wait\+\_\+ex}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}See :meth:`gevent.hub.Hub.cancel_wait`\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__socketcommon_aba53a9d7d131e2932c207022978aa824}\label{namespacegevent_1_1__socketcommon_aba53a9d7d131e2932c207022978aa824}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!getaddrinfo@{getaddrinfo}}
+\index{getaddrinfo@{getaddrinfo}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{getaddrinfo()}{getaddrinfo()}}
+{\footnotesize\ttfamily def gevent.\+\_\+socketcommon.\+getaddrinfo (\begin{DoxyParamCaption}\item[{}]{host,  }\item[{}]{port,  }\item[{}]{family = {\ttfamily 0},  }\item[{}]{socktype = {\ttfamily 0},  }\item[{}]{proto = {\ttfamily 0},  }\item[{}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolve host and port into list of address info entries.
+
+Translate the host/port argument into a sequence of 5-tuples that contain
+all the necessary arguments for creating a socket connected to that service.
+host is a domain name, a string representation of an IPv4/v6 address or
+None. port is a string service name such as 'http', a numeric port number or
+None. By passing None as the value of host and port, you can pass NULL to
+the underlying C API.
+
+The family, type and proto arguments can be optionally specified in order to
+narrow the list of addresses returned. Passing zero as a value for each of
+these arguments selects the full range of results.
+
+.. seealso:: :doc:`/dns`
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__socketcommon_a9cc84a90b58f69fdb4b378af2c174a40}\label{namespacegevent_1_1__socketcommon_a9cc84a90b58f69fdb4b378af2c174a40}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!getfqdn@{getfqdn}}
+\index{getfqdn@{getfqdn}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{getfqdn()}{getfqdn()}}
+{\footnotesize\ttfamily def gevent.\+\_\+socketcommon.\+getfqdn (\begin{DoxyParamCaption}\item[{}]{name = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get fully qualified domain name from name.
+
+An empty argument is interpreted as meaning the local host.
+
+First the hostname returned by gethostbyaddr() is checked, then
+possibly existing aliases. In case no FQDN is available, hostname
+from gethostname() is returned.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__socketcommon_a9fc88bc23729e5962781f8a89b11016a}\label{namespacegevent_1_1__socketcommon_a9fc88bc23729e5962781f8a89b11016a}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!gethostbyaddr@{gethostbyaddr}}
+\index{gethostbyaddr@{gethostbyaddr}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{gethostbyaddr()}{gethostbyaddr()}}
+{\footnotesize\ttfamily def gevent.\+\_\+socketcommon.\+gethostbyaddr (\begin{DoxyParamCaption}\item[{}]{ip\+\_\+address }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}gethostbyaddr(ip_address) -> (name, aliaslist, addresslist)
+
+Return the true host name, a list of aliases, and a list of IP addresses,
+for a host.  The host argument is a string giving a host name or IP number.
+
+.. seealso:: :doc:`/dns`
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__socketcommon_a2ee0bbc0ffce8551ebdb2359e4c34f32}\label{namespacegevent_1_1__socketcommon_a2ee0bbc0ffce8551ebdb2359e4c34f32}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!gethostbyname@{gethostbyname}}
+\index{gethostbyname@{gethostbyname}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{gethostbyname()}{gethostbyname()}}
+{\footnotesize\ttfamily def gevent.\+\_\+socketcommon.\+gethostbyname (\begin{DoxyParamCaption}\item[{}]{hostname }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}gethostbyname(host) -> address
+
+Return the IP address (a string of the form '255.255.255.255') for a host.
+
+.. seealso:: :doc:`/dns`
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__socketcommon_a9200bf7e6fcf07e5a4303eb2d92b3c95}\label{namespacegevent_1_1__socketcommon_a9200bf7e6fcf07e5a4303eb2d92b3c95}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!gethostbyname\+\_\+ex@{gethostbyname\+\_\+ex}}
+\index{gethostbyname\+\_\+ex@{gethostbyname\+\_\+ex}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{gethostbyname\+\_\+ex()}{gethostbyname\_ex()}}
+{\footnotesize\ttfamily def gevent.\+\_\+socketcommon.\+gethostbyname\+\_\+ex (\begin{DoxyParamCaption}\item[{}]{hostname }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}gethostbyname_ex(host) -> (name, aliaslist, addresslist)
+
+Return the true host name, a list of aliases, and a list of IP addresses,
+for a host.  The host argument is a string giving a host name or IP number.
+Resolve host and port into list of address info entries.
+
+.. seealso:: :doc:`/dns`
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__socketcommon_a5ad90a103e5f6ff1d4bc8a46321cb519}\label{namespacegevent_1_1__socketcommon_a5ad90a103e5f6ff1d4bc8a46321cb519}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!getnameinfo@{getnameinfo}}
+\index{getnameinfo@{getnameinfo}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{getnameinfo()}{getnameinfo()}}
+{\footnotesize\ttfamily def gevent.\+\_\+socketcommon.\+getnameinfo (\begin{DoxyParamCaption}\item[{}]{sockaddr,  }\item[{}]{flags }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}getnameinfo(sockaddr, flags) -> (host, port)
+
+Get host and port for a sockaddr.
+
+.. seealso:: :doc:`/dns`
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1__socketcommon_abadc1a71ac7e1c3552c362f380b398cd}\label{namespacegevent_1_1__socketcommon_abadc1a71ac7e1c3552c362f380b398cd}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!d@{d}}
+\index{d@{d}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily def gevent.\+\_\+socketcommon.\+d = getaddrinfo.\+\_\+\+\_\+doc\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{namespacegevent_1_1__socketcommon_a641e38024afabb842e9d5fa8e28f03fc}\label{namespacegevent_1_1__socketcommon_a641e38024afabb842e9d5fa8e28f03fc}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!E\+A\+G\+A\+IN@{E\+A\+G\+A\+IN}}
+\index{E\+A\+G\+A\+IN@{E\+A\+G\+A\+IN}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{E\+A\+G\+A\+IN}{EAGAIN}}
+{\footnotesize\ttfamily gevent.\+\_\+socketcommon.\+E\+A\+G\+A\+IN = E\+W\+O\+U\+L\+D\+B\+L\+O\+CK}
+
+\mbox{\Hypertarget{namespacegevent_1_1__socketcommon_ad9e6b2543a0f63d03b9414e0cc671e67}\label{namespacegevent_1_1__socketcommon_ad9e6b2543a0f63d03b9414e0cc671e67}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!E\+B\+A\+DF@{E\+B\+A\+DF}}
+\index{E\+B\+A\+DF@{E\+B\+A\+DF}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{E\+B\+A\+DF}{EBADF}}
+{\footnotesize\ttfamily int gevent.\+\_\+socketcommon.\+E\+B\+A\+DF = 9}
+
+\mbox{\Hypertarget{namespacegevent_1_1__socketcommon_a65633bdfc515a3e0dcdd1d57efd3e6d9}\label{namespacegevent_1_1__socketcommon_a65633bdfc515a3e0dcdd1d57efd3e6d9}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!G\+S\+E\+N\+D\+A\+G\+A\+IN@{G\+S\+E\+N\+D\+A\+G\+A\+IN}}
+\index{G\+S\+E\+N\+D\+A\+G\+A\+IN@{G\+S\+E\+N\+D\+A\+G\+A\+IN}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{G\+S\+E\+N\+D\+A\+G\+A\+IN}{GSENDAGAIN}}
+{\footnotesize\ttfamily tuple gevent.\+\_\+socketcommon.\+G\+S\+E\+N\+D\+A\+G\+A\+IN = (E\+W\+O\+U\+L\+D\+B\+L\+O\+CK,)}
+
+\mbox{\Hypertarget{namespacegevent_1_1__socketcommon_a96117f85d3a16cc13e3359932cc75bed}\label{namespacegevent_1_1__socketcommon_a96117f85d3a16cc13e3359932cc75bed}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!is\+\_\+macos@{is\+\_\+macos}}
+\index{is\+\_\+macos@{is\+\_\+macos}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{is\+\_\+macos}{is\_macos}}
+{\footnotesize\ttfamily string gevent.\+\_\+socketcommon.\+is\+\_\+macos = \textquotesingle{}darwin\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacegevent_1_1__socketcommon_a739532b032ab532cbb360dd0d30a1229}\label{namespacegevent_1_1__socketcommon_a739532b032ab532cbb360dd0d30a1229}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!is\+\_\+windows@{is\+\_\+windows}}
+\index{is\+\_\+windows@{is\+\_\+windows}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{is\+\_\+windows}{is\_windows}}
+{\footnotesize\ttfamily string gevent.\+\_\+socketcommon.\+is\+\_\+windows = \textquotesingle{}win32\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacegevent_1_1__socketcommon_afab16c412595601b1fcaab485b8e826c}\label{namespacegevent_1_1__socketcommon_afab16c412595601b1fcaab485b8e826c}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!wait@{wait}}
+\index{wait@{wait}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{wait}{wait}}
+{\footnotesize\ttfamily gevent.\+\_\+socketcommon.\+wait = \hyperlink{namespacegevent_1_1__hub__primitives_ae484b73e4c293e8788d5857165c2e230}{\+\_\+hub\+\_\+primitives.\+wait\+\_\+on\+\_\+watcher}}
+
+\mbox{\Hypertarget{namespacegevent_1_1__socketcommon_ace429b82f733b0a970f3748aed0a9cde}\label{namespacegevent_1_1__socketcommon_ace429b82f733b0a970f3748aed0a9cde}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!wait\+\_\+read@{wait\+\_\+read}}
+\index{wait\+\_\+read@{wait\+\_\+read}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{wait\+\_\+read}{wait\_read}}
+{\footnotesize\ttfamily gevent.\+\_\+socketcommon.\+wait\+\_\+read = \+\_\+hub\+\_\+primitives.\+wait\+\_\+read}
+
+\mbox{\Hypertarget{namespacegevent_1_1__socketcommon_ae5cd9e8f537c5048349e0475775a2ce5}\label{namespacegevent_1_1__socketcommon_ae5cd9e8f537c5048349e0475775a2ce5}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!wait\+\_\+readwrite@{wait\+\_\+readwrite}}
+\index{wait\+\_\+readwrite@{wait\+\_\+readwrite}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{wait\+\_\+readwrite}{wait\_readwrite}}
+{\footnotesize\ttfamily gevent.\+\_\+socketcommon.\+wait\+\_\+readwrite = \+\_\+hub\+\_\+primitives.\+wait\+\_\+readwrite}
+
+\mbox{\Hypertarget{namespacegevent_1_1__socketcommon_a8cfd99a64597c3b76fc45edc9ba6711e}\label{namespacegevent_1_1__socketcommon_a8cfd99a64597c3b76fc45edc9ba6711e}} 
+\index{gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}!wait\+\_\+write@{wait\+\_\+write}}
+\index{wait\+\_\+write@{wait\+\_\+write}!gevent\+::\+\_\+socketcommon@{gevent\+::\+\_\+socketcommon}}
+\subsubsection{\texorpdfstring{wait\+\_\+write}{wait\_write}}
+{\footnotesize\ttfamily gevent.\+\_\+socketcommon.\+wait\+\_\+write = \+\_\+hub\+\_\+primitives.\+wait\+\_\+write}
+

@@ -1,0 +1,70 @@
+\hypertarget{class__pytest_1_1nodes_1_1_item}{}\section{\+\_\+pytest.\+nodes.\+Item Class Reference}
+\label{class__pytest_1_1nodes_1_1_item}\index{\+\_\+pytest.\+nodes.\+Item@{\+\_\+pytest.\+nodes.\+Item}}
+
+
+Inherits \hyperlink{class__pytest_1_1nodes_1_1_node}{\+\_\+pytest.\+nodes.\+Node}.
+
+
+
+Inherited by \hyperlink{class__pytest_1_1doctest_1_1_doctest_item}{\+\_\+pytest.\+doctest.\+Doctest\+Item}, and \hyperlink{class__pytest_1_1python_1_1_function}{\+\_\+pytest.\+python.\+Function}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_item_a79dea2788fe1654da6a3efdcd0d69122}\label{class__pytest_1_1nodes_1_1_item_a79dea2788fe1654da6a3efdcd0d69122}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, name, parent=None, config=None, session=None, \hyperlink{class__pytest_1_1nodes_1_1_node_a02f18acbfaf1f9d8ba9b6c1346dc6217}{nodeid}=None)
+\item 
+def \hyperlink{class__pytest_1_1nodes_1_1_item_a0e615159d77a322c8ac4c69bd1b443dc}{add\+\_\+report\+\_\+section} (self, when, key, content)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_item_ab85ef001dd492e34d3103f0d958af076}\label{class__pytest_1_1nodes_1_1_item_ab85ef001dd492e34d3103f0d958af076}} 
+def {\bfseries reportinfo} (self)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_item_aba36ee71a12b12ef76b4be81422c641c}\label{class__pytest_1_1nodes_1_1_item_aba36ee71a12b12ef76b4be81422c641c}} 
+def {\bfseries location} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_item_ab3e092148955d28d88a4350ed24fce4f}\label{class__pytest_1_1nodes_1_1_item_ab3e092148955d28d88a4350ed24fce4f}} 
+{\bfseries user\+\_\+properties}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_item_a328f0ad97df9237daa9ef4ca6b0b7319}\label{class__pytest_1_1nodes_1_1_item_a328f0ad97df9237daa9ef4ca6b0b7319}} 
+{\bfseries nextitem} = None
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}a basic test invocation item. Note that for a single function
+there might be multiple test invocation items.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_item_a0e615159d77a322c8ac4c69bd1b443dc}\label{class__pytest_1_1nodes_1_1_item_a0e615159d77a322c8ac4c69bd1b443dc}} 
+\index{\+\_\+pytest\+::nodes\+::\+Item@{\+\_\+pytest\+::nodes\+::\+Item}!add\+\_\+report\+\_\+section@{add\+\_\+report\+\_\+section}}
+\index{add\+\_\+report\+\_\+section@{add\+\_\+report\+\_\+section}!\+\_\+pytest\+::nodes\+::\+Item@{\+\_\+pytest\+::nodes\+::\+Item}}
+\subsubsection{\texorpdfstring{add\+\_\+report\+\_\+section()}{add\_report\_section()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+nodes.\+Item.\+add\+\_\+report\+\_\+section (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{when,  }\item[{}]{key,  }\item[{}]{content }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a new report section, similar to what's done internally to add stdout and
+stderr captured output::
+
+    item.add_report_section("call", "stdout", "report section contents")
+
+:param str when:
+    One of the possible capture states, ``"setup"``, ``"call"``, ``"teardown"``.
+:param str key:
+    Name of the section, can be customized at will. Pytest uses ``"stdout"`` and
+    ``"stderr"`` internally.
+
+:param str content:
+    The full contents as a string.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/nodes.\+py\end{DoxyCompactItemize}

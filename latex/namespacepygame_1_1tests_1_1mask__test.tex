@@ -1,0 +1,92 @@
+\hypertarget{namespacepygame_1_1tests_1_1mask__test}{}\section{pygame.\+tests.\+mask\+\_\+test Namespace Reference}
+\label{namespacepygame_1_1tests_1_1mask__test}\index{pygame.\+tests.\+mask\+\_\+test@{pygame.\+tests.\+mask\+\_\+test}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpygame_1_1tests_1_1mask__test_1_1_mask_module_test}{Mask\+Module\+Test}
+\item 
+class \hyperlink{classpygame_1_1tests_1_1mask__test_1_1_mask_type_test}{Mask\+Type\+Test}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1mask__test_adaa7ea77381e6d5927f3cee6d896ce07}{random\+\_\+mask} (size=(100, 100))
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1mask__test_a3a26e566abd32ac042670407f459b57b}{mask\+From\+Surface} (surface, threshold=127)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1mask__test_a1694a9551bd179da91cce7f3b135d558}{pkg\+\_\+dir} = os.\+path.\+split(os.\+path.\+abspath(\+\_\+\+\_\+file\+\_\+\+\_\+))\mbox{[}0\mbox{]}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1mask__test_a3dda8dae37fc5548320463a180cc1ff4}{parent\+\_\+dir}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1mask__test_a3f729fc17e584f7a093ba7b4ef1a57e5}{pkg\+\_\+name}
+\item 
+tuple \hyperlink{namespacepygame_1_1tests_1_1mask__test_a4e4e9c35953c74406708411dd8c103e2}{is\+\_\+pygame\+\_\+pkg}
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1mask__test_a918806351c5eb8b82fc4f3dccc2fe32e}{mask\+\_\+from\+\_\+surface} = \hyperlink{namespacepygame_1_1tests_1_1mask__test_a3a26e566abd32ac042670407f459b57b}{mask\+From\+Surface}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1mask__test_af918d60df301633353be32e254f43d51}{surf} = \hyperlink{namespacepygame_af987790424fd0631c88919974993d66e}{pygame.\+Surface}((70,70), S\+R\+C\+A\+L\+P\+HA, 32)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1mask__test_a3a26e566abd32ac042670407f459b57b}\label{namespacepygame_1_1tests_1_1mask__test_a3a26e566abd32ac042670407f459b57b}} 
+\index{pygame\+::tests\+::mask\+\_\+test@{pygame\+::tests\+::mask\+\_\+test}!mask\+From\+Surface@{mask\+From\+Surface}}
+\index{mask\+From\+Surface@{mask\+From\+Surface}!pygame\+::tests\+::mask\+\_\+test@{pygame\+::tests\+::mask\+\_\+test}}
+\subsubsection{\texorpdfstring{mask\+From\+Surface()}{maskFromSurface()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+mask\+\_\+test.\+mask\+From\+Surface (\begin{DoxyParamCaption}\item[{}]{surface,  }\item[{}]{threshold = {\ttfamily 127} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1mask__test_adaa7ea77381e6d5927f3cee6d896ce07}\label{namespacepygame_1_1tests_1_1mask__test_adaa7ea77381e6d5927f3cee6d896ce07}} 
+\index{pygame\+::tests\+::mask\+\_\+test@{pygame\+::tests\+::mask\+\_\+test}!random\+\_\+mask@{random\+\_\+mask}}
+\index{random\+\_\+mask@{random\+\_\+mask}!pygame\+::tests\+::mask\+\_\+test@{pygame\+::tests\+::mask\+\_\+test}}
+\subsubsection{\texorpdfstring{random\+\_\+mask()}{random\_mask()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+mask\+\_\+test.\+random\+\_\+mask (\begin{DoxyParamCaption}\item[{}]{size = {\ttfamily (100,100)} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}random_mask(size=(100,100)): return Mask
+Create a mask of the given size, with roughly half the bits set at random.\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1mask__test_a4e4e9c35953c74406708411dd8c103e2}\label{namespacepygame_1_1tests_1_1mask__test_a4e4e9c35953c74406708411dd8c103e2}} 
+\index{pygame\+::tests\+::mask\+\_\+test@{pygame\+::tests\+::mask\+\_\+test}!is\+\_\+pygame\+\_\+pkg@{is\+\_\+pygame\+\_\+pkg}}
+\index{is\+\_\+pygame\+\_\+pkg@{is\+\_\+pygame\+\_\+pkg}!pygame\+::tests\+::mask\+\_\+test@{pygame\+::tests\+::mask\+\_\+test}}
+\subsubsection{\texorpdfstring{is\+\_\+pygame\+\_\+pkg}{is\_pygame\_pkg}}
+{\footnotesize\ttfamily pygame.\+tests.\+mask\+\_\+test.\+is\+\_\+pygame\+\_\+pkg}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (pkg\_name == \textcolor{stringliteral}{'tests'} \textcolor{keywordflow}{and}
+2                      os.path.split(parent\_dir)[1] == \textcolor{stringliteral}{'pygame'})
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1mask__test_a918806351c5eb8b82fc4f3dccc2fe32e}\label{namespacepygame_1_1tests_1_1mask__test_a918806351c5eb8b82fc4f3dccc2fe32e}} 
+\index{pygame\+::tests\+::mask\+\_\+test@{pygame\+::tests\+::mask\+\_\+test}!mask\+\_\+from\+\_\+surface@{mask\+\_\+from\+\_\+surface}}
+\index{mask\+\_\+from\+\_\+surface@{mask\+\_\+from\+\_\+surface}!pygame\+::tests\+::mask\+\_\+test@{pygame\+::tests\+::mask\+\_\+test}}
+\subsubsection{\texorpdfstring{mask\+\_\+from\+\_\+surface}{mask\_from\_surface}}
+{\footnotesize\ttfamily def pygame.\+tests.\+mask\+\_\+test.\+mask\+\_\+from\+\_\+surface = \hyperlink{namespacepygame_1_1tests_1_1mask__test_a3a26e566abd32ac042670407f459b57b}{mask\+From\+Surface}}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1mask__test_a3dda8dae37fc5548320463a180cc1ff4}\label{namespacepygame_1_1tests_1_1mask__test_a3dda8dae37fc5548320463a180cc1ff4}} 
+\index{pygame\+::tests\+::mask\+\_\+test@{pygame\+::tests\+::mask\+\_\+test}!parent\+\_\+dir@{parent\+\_\+dir}}
+\index{parent\+\_\+dir@{parent\+\_\+dir}!pygame\+::tests\+::mask\+\_\+test@{pygame\+::tests\+::mask\+\_\+test}}
+\subsubsection{\texorpdfstring{parent\+\_\+dir}{parent\_dir}}
+{\footnotesize\ttfamily pygame.\+tests.\+mask\+\_\+test.\+parent\+\_\+dir}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1mask__test_a1694a9551bd179da91cce7f3b135d558}\label{namespacepygame_1_1tests_1_1mask__test_a1694a9551bd179da91cce7f3b135d558}} 
+\index{pygame\+::tests\+::mask\+\_\+test@{pygame\+::tests\+::mask\+\_\+test}!pkg\+\_\+dir@{pkg\+\_\+dir}}
+\index{pkg\+\_\+dir@{pkg\+\_\+dir}!pygame\+::tests\+::mask\+\_\+test@{pygame\+::tests\+::mask\+\_\+test}}
+\subsubsection{\texorpdfstring{pkg\+\_\+dir}{pkg\_dir}}
+{\footnotesize\ttfamily pygame.\+tests.\+mask\+\_\+test.\+pkg\+\_\+dir = os.\+path.\+split(os.\+path.\+abspath(\+\_\+\+\_\+file\+\_\+\+\_\+))\mbox{[}0\mbox{]}}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1mask__test_a3f729fc17e584f7a093ba7b4ef1a57e5}\label{namespacepygame_1_1tests_1_1mask__test_a3f729fc17e584f7a093ba7b4ef1a57e5}} 
+\index{pygame\+::tests\+::mask\+\_\+test@{pygame\+::tests\+::mask\+\_\+test}!pkg\+\_\+name@{pkg\+\_\+name}}
+\index{pkg\+\_\+name@{pkg\+\_\+name}!pygame\+::tests\+::mask\+\_\+test@{pygame\+::tests\+::mask\+\_\+test}}
+\subsubsection{\texorpdfstring{pkg\+\_\+name}{pkg\_name}}
+{\footnotesize\ttfamily pygame.\+tests.\+mask\+\_\+test.\+pkg\+\_\+name}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1mask__test_af918d60df301633353be32e254f43d51}\label{namespacepygame_1_1tests_1_1mask__test_af918d60df301633353be32e254f43d51}} 
+\index{pygame\+::tests\+::mask\+\_\+test@{pygame\+::tests\+::mask\+\_\+test}!surf@{surf}}
+\index{surf@{surf}!pygame\+::tests\+::mask\+\_\+test@{pygame\+::tests\+::mask\+\_\+test}}
+\subsubsection{\texorpdfstring{surf}{surf}}
+{\footnotesize\ttfamily pygame.\+tests.\+mask\+\_\+test.\+surf = \hyperlink{namespacepygame_af987790424fd0631c88919974993d66e}{pygame.\+Surface}((70,70), S\+R\+C\+A\+L\+P\+HA, 32)}
+

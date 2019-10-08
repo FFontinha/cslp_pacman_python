@@ -1,0 +1,282 @@
+\hypertarget{classpygame_1_1sprite_1_1_layered_updates}{}\section{pygame.\+sprite.\+Layered\+Updates Class Reference}
+\label{classpygame_1_1sprite_1_1_layered_updates}\index{pygame.\+sprite.\+Layered\+Updates@{pygame.\+sprite.\+Layered\+Updates}}
+
+
+Inherits \hyperlink{classpygame_1_1sprite_1_1_abstract_group}{pygame.\+sprite.\+Abstract\+Group}.
+
+
+
+Inherited by \hyperlink{classpygame_1_1sprite_1_1_layered_dirty}{pygame.\+sprite.\+Layered\+Dirty}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_aa398d6d3b6903d8a5a47b756fb9172e1}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{classpygame_1_1sprite_1_1_layered_updates_a882f93b671aae75a92a8512e8cbbb61d}{sprites}, kwargs)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_a44b2d26ee1704a97a9367f60954f703d}{add\+\_\+internal} (self, sprite, layer=None)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_afd75d3284641e9ff987c21994b350fed}{add} (self, \hyperlink{classpygame_1_1sprite_1_1_layered_updates_a882f93b671aae75a92a8512e8cbbb61d}{sprites}, kwargs)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_af7e25a22639a30a8686f660866fd406e}{remove\+\_\+internal} (self, sprite)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_a882f93b671aae75a92a8512e8cbbb61d}{sprites} (self)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_ac6343a93db51cf00cea51a406aef9573}{draw} (self, surface)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_afbbf762f942018fb1eee8d42df5c4124}{get\+\_\+sprites\+\_\+at} (self, pos)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_ae073cc5bfd5bc8cc40c0c5b2445214ac}{get\+\_\+sprite} (self, idx)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_a5aa0b60731bd14f90548aeeb956a4cf3}{remove\+\_\+sprites\+\_\+of\+\_\+layer} (self, layer\+\_\+nr)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_a81b70d20662914e45995c60d6a13a4a2}{layers} (self)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_abf1df6b1a5ed9593d8c8d984105e3c56}{change\+\_\+layer} (self, sprite, new\+\_\+layer)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_ab6d708ad4ba770ff7df5b6ec3150eb57}{get\+\_\+layer\+\_\+of\+\_\+sprite} (self, sprite)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_aa85256f739f6c0386e94b026a561c993}{get\+\_\+top\+\_\+layer} (self)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_a51f426f8ba99b455db930e772a073731}{get\+\_\+bottom\+\_\+layer} (self)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_a452915ddad3c4fea5b0bc6beaf0eba87}{move\+\_\+to\+\_\+front} (self, sprite)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_a6c1655db5c38ff9ca1f5dc1b27f9f1d5}{move\+\_\+to\+\_\+back} (self, sprite)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_ab9fbda5abb958feddcad849b76d5f2e4}{get\+\_\+top\+\_\+sprite} (self)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_ae9b67ca3a02b00f64c4efd5a708d9c19}{get\+\_\+sprites\+\_\+from\+\_\+layer} (self, layer)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1_layered_updates_a62b4dec222019c47c925401f71ea733b}{switch\+\_\+layer} (self, layer1\+\_\+nr, layer2\+\_\+nr)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_a461a9ab40f56b47298a82e07c9fa3414}\label{classpygame_1_1sprite_1_1_layered_updates_a461a9ab40f56b47298a82e07c9fa3414}} 
+{\bfseries lostsprites}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}LayeredUpdates Group handles layers, which are drawn like OrderedUpdates
+
+pygame.sprite.LayeredUpdates(*spites, **kwargs): return LayeredUpdates
+
+This group is fully compatible with pygame.sprite.Sprite.
+New in pygame 1.8.0\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_aa398d6d3b6903d8a5a47b756fb9172e1}\label{classpygame_1_1sprite_1_1_layered_updates_aa398d6d3b6903d8a5a47b756fb9172e1}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sprites,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}initialize an instance of LayeredUpdates with the given attributes
+
+You can set the default layer through kwargs using 'default_layer'
+and an integer for the layer. The default layer is 0.
+
+If the sprite you add has an attribute _layer, then that layer will be
+used. If **kwarg contains 'layer', then the passed sprites will be
+added to that layer (overriding the sprite._layer attribute). If
+neither the sprite nor **kwarg has a 'layer', then the default layer is
+used to add the sprites.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_afd75d3284641e9ff987c21994b350fed}\label{classpygame_1_1sprite_1_1_layered_updates_afd75d3284641e9ff987c21994b350fed}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!add@{add}}
+\index{add@{add}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+add (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sprites,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}add a sprite or sequence of sprites to a group
+
+LayeredUpdates.add(*sprites, **kwargs): return None
+
+If the sprite you add has an attribute _layer, then that layer will be
+used. If **kwarg contains 'layer', then the passed sprites will be
+added to that layer (overriding the sprite._layer attribute). If
+neither the sprite nor **kwarg has a 'layer', then the default layer is
+used to add the sprites.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_a44b2d26ee1704a97a9367f60954f703d}\label{classpygame_1_1sprite_1_1_layered_updates_a44b2d26ee1704a97a9367f60954f703d}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!add\+\_\+internal@{add\+\_\+internal}}
+\index{add\+\_\+internal@{add\+\_\+internal}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{add\+\_\+internal()}{add\_internal()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+add\+\_\+internal (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sprite,  }\item[{}]{layer = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Do not use this method directly.
+
+It is used by the group to add a sprite internally.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_abf1df6b1a5ed9593d8c8d984105e3c56}\label{classpygame_1_1sprite_1_1_layered_updates_abf1df6b1a5ed9593d8c8d984105e3c56}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!change\+\_\+layer@{change\+\_\+layer}}
+\index{change\+\_\+layer@{change\+\_\+layer}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{change\+\_\+layer()}{change\_layer()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+change\+\_\+layer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sprite,  }\item[{}]{new\+\_\+layer }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}change the layer of the sprite
+
+LayeredUpdates.change_layer(sprite, new_layer): return None
+
+The sprite must have been added to the renderer already. This is not
+checked.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_ac6343a93db51cf00cea51a406aef9573}\label{classpygame_1_1sprite_1_1_layered_updates_ac6343a93db51cf00cea51a406aef9573}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!draw@{draw}}
+\index{draw@{draw}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+draw (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{surface }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}draw all sprites in the right order onto the passed surface
+
+LayeredUpdates.draw(surface): return Rect_list\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_a51f426f8ba99b455db930e772a073731}\label{classpygame_1_1sprite_1_1_layered_updates_a51f426f8ba99b455db930e772a073731}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!get\+\_\+bottom\+\_\+layer@{get\+\_\+bottom\+\_\+layer}}
+\index{get\+\_\+bottom\+\_\+layer@{get\+\_\+bottom\+\_\+layer}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{get\+\_\+bottom\+\_\+layer()}{get\_bottom\_layer()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+get\+\_\+bottom\+\_\+layer (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return the bottom layer
+
+LayeredUpdates.get_bottom_layer(): return layer\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_ab6d708ad4ba770ff7df5b6ec3150eb57}\label{classpygame_1_1sprite_1_1_layered_updates_ab6d708ad4ba770ff7df5b6ec3150eb57}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!get\+\_\+layer\+\_\+of\+\_\+sprite@{get\+\_\+layer\+\_\+of\+\_\+sprite}}
+\index{get\+\_\+layer\+\_\+of\+\_\+sprite@{get\+\_\+layer\+\_\+of\+\_\+sprite}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{get\+\_\+layer\+\_\+of\+\_\+sprite()}{get\_layer\_of\_sprite()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+get\+\_\+layer\+\_\+of\+\_\+sprite (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sprite }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return the layer that sprite is currently in
+
+If the sprite is not found, then it will return the default layer.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_ae073cc5bfd5bc8cc40c0c5b2445214ac}\label{classpygame_1_1sprite_1_1_layered_updates_ae073cc5bfd5bc8cc40c0c5b2445214ac}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!get\+\_\+sprite@{get\+\_\+sprite}}
+\index{get\+\_\+sprite@{get\+\_\+sprite}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{get\+\_\+sprite()}{get\_sprite()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+get\+\_\+sprite (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{idx }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return the sprite at the index idx from the groups sprites
+
+LayeredUpdates.get_sprite(idx): return sprite
+
+Raises IndexOutOfBounds if the idx is not within range.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_afbbf762f942018fb1eee8d42df5c4124}\label{classpygame_1_1sprite_1_1_layered_updates_afbbf762f942018fb1eee8d42df5c4124}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!get\+\_\+sprites\+\_\+at@{get\+\_\+sprites\+\_\+at}}
+\index{get\+\_\+sprites\+\_\+at@{get\+\_\+sprites\+\_\+at}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{get\+\_\+sprites\+\_\+at()}{get\_sprites\_at()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+get\+\_\+sprites\+\_\+at (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pos }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a list with all sprites at that position
+
+LayeredUpdates.get_sprites_at(pos): return colliding_sprites
+
+Bottom sprites are listed first; the top ones are listed last.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_ae9b67ca3a02b00f64c4efd5a708d9c19}\label{classpygame_1_1sprite_1_1_layered_updates_ae9b67ca3a02b00f64c4efd5a708d9c19}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!get\+\_\+sprites\+\_\+from\+\_\+layer@{get\+\_\+sprites\+\_\+from\+\_\+layer}}
+\index{get\+\_\+sprites\+\_\+from\+\_\+layer@{get\+\_\+sprites\+\_\+from\+\_\+layer}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{get\+\_\+sprites\+\_\+from\+\_\+layer()}{get\_sprites\_from\_layer()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+get\+\_\+sprites\+\_\+from\+\_\+layer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{layer }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return all sprites from a layer ordered as they where added
+
+LayeredUpdates.get_sprites_from_layer(layer): return sprites
+
+Returns all sprites from a layer. The sprites are ordered in the
+sequence that they where added. (The sprites are not removed from the
+layer.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_aa85256f739f6c0386e94b026a561c993}\label{classpygame_1_1sprite_1_1_layered_updates_aa85256f739f6c0386e94b026a561c993}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!get\+\_\+top\+\_\+layer@{get\+\_\+top\+\_\+layer}}
+\index{get\+\_\+top\+\_\+layer@{get\+\_\+top\+\_\+layer}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{get\+\_\+top\+\_\+layer()}{get\_top\_layer()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+get\+\_\+top\+\_\+layer (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return the top layer
+
+LayeredUpdates.get_top_layer(): return layer\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_ab9fbda5abb958feddcad849b76d5f2e4}\label{classpygame_1_1sprite_1_1_layered_updates_ab9fbda5abb958feddcad849b76d5f2e4}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!get\+\_\+top\+\_\+sprite@{get\+\_\+top\+\_\+sprite}}
+\index{get\+\_\+top\+\_\+sprite@{get\+\_\+top\+\_\+sprite}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{get\+\_\+top\+\_\+sprite()}{get\_top\_sprite()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+get\+\_\+top\+\_\+sprite (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return the topmost sprite
+
+LayeredUpdates.get_top_sprite(): return Sprite\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_a81b70d20662914e45995c60d6a13a4a2}\label{classpygame_1_1sprite_1_1_layered_updates_a81b70d20662914e45995c60d6a13a4a2}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!layers@{layers}}
+\index{layers@{layers}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{layers()}{layers()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+layers (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a list of unique defined layers defined.
+
+LayeredUpdates.layers(): return layers\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_a6c1655db5c38ff9ca1f5dc1b27f9f1d5}\label{classpygame_1_1sprite_1_1_layered_updates_a6c1655db5c38ff9ca1f5dc1b27f9f1d5}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!move\+\_\+to\+\_\+back@{move\+\_\+to\+\_\+back}}
+\index{move\+\_\+to\+\_\+back@{move\+\_\+to\+\_\+back}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{move\+\_\+to\+\_\+back()}{move\_to\_back()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+move\+\_\+to\+\_\+back (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sprite }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}move the sprite to the bottom layer
+
+LayeredUpdates.move_to_back(sprite): return None
+
+Moves the sprite to the bottom layer by moving it to a new layer below
+the current bottom layer.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_a452915ddad3c4fea5b0bc6beaf0eba87}\label{classpygame_1_1sprite_1_1_layered_updates_a452915ddad3c4fea5b0bc6beaf0eba87}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!move\+\_\+to\+\_\+front@{move\+\_\+to\+\_\+front}}
+\index{move\+\_\+to\+\_\+front@{move\+\_\+to\+\_\+front}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{move\+\_\+to\+\_\+front()}{move\_to\_front()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+move\+\_\+to\+\_\+front (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sprite }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}bring the sprite to front layer
+
+LayeredUpdates.move_to_front(sprite): return None
+
+Brings the sprite to front by changing the sprite layer to the top-most
+layer. The sprite is added at the end of the list of sprites in that
+top-most layer.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_af7e25a22639a30a8686f660866fd406e}\label{classpygame_1_1sprite_1_1_layered_updates_af7e25a22639a30a8686f660866fd406e}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!remove\+\_\+internal@{remove\+\_\+internal}}
+\index{remove\+\_\+internal@{remove\+\_\+internal}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{remove\+\_\+internal()}{remove\_internal()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+remove\+\_\+internal (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sprite }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Do not use this method directly.
+
+The group uses it to add a sprite.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_a5aa0b60731bd14f90548aeeb956a4cf3}\label{classpygame_1_1sprite_1_1_layered_updates_a5aa0b60731bd14f90548aeeb956a4cf3}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!remove\+\_\+sprites\+\_\+of\+\_\+layer@{remove\+\_\+sprites\+\_\+of\+\_\+layer}}
+\index{remove\+\_\+sprites\+\_\+of\+\_\+layer@{remove\+\_\+sprites\+\_\+of\+\_\+layer}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{remove\+\_\+sprites\+\_\+of\+\_\+layer()}{remove\_sprites\_of\_layer()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+remove\+\_\+sprites\+\_\+of\+\_\+layer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{layer\+\_\+nr }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}remove all sprites from a layer and return them as a list
+
+LayeredUpdates.remove_sprites_of_layer(layer_nr): return sprites\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_a882f93b671aae75a92a8512e8cbbb61d}\label{classpygame_1_1sprite_1_1_layered_updates_a882f93b671aae75a92a8512e8cbbb61d}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!sprites@{sprites}}
+\index{sprites@{sprites}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{sprites()}{sprites()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+sprites (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a ordered list of sprites (first back, last top).
+
+LayeredUpdates.sprites(): return sprites\end{DoxyVerb}
+ \mbox{\Hypertarget{classpygame_1_1sprite_1_1_layered_updates_a62b4dec222019c47c925401f71ea733b}\label{classpygame_1_1sprite_1_1_layered_updates_a62b4dec222019c47c925401f71ea733b}} 
+\index{pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}!switch\+\_\+layer@{switch\+\_\+layer}}
+\index{switch\+\_\+layer@{switch\+\_\+layer}!pygame\+::sprite\+::\+Layered\+Updates@{pygame\+::sprite\+::\+Layered\+Updates}}
+\subsubsection{\texorpdfstring{switch\+\_\+layer()}{switch\_layer()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+Layered\+Updates.\+switch\+\_\+layer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{layer1\+\_\+nr,  }\item[{}]{layer2\+\_\+nr }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}switch the sprites from layer1_nr to layer2_nr
+
+LayeredUpdates.switch_layer(layer1_nr, layer2_nr): return None
+
+The layers number must exist. This method does not check for the
+existence of the given layers.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pygame/sprite.\+py\end{DoxyCompactItemize}

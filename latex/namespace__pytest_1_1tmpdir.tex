@@ -1,0 +1,75 @@
+\hypertarget{namespace__pytest_1_1tmpdir}{}\section{\+\_\+pytest.\+tmpdir Namespace Reference}
+\label{namespace__pytest_1_1tmpdir}\index{\+\_\+pytest.\+tmpdir@{\+\_\+pytest.\+tmpdir}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class__pytest_1_1tmpdir_1_1_tempdir_factory}{Tempdir\+Factory}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespace__pytest_1_1tmpdir_a80baa4aa8cdd5cd6281045ca35cea7f5}{get\+\_\+user} ()
+\item 
+def \hyperlink{namespace__pytest_1_1tmpdir_aa9a6001be9c67be1e73b9efd97b15ab6}{pytest\+\_\+configure} (config)
+\item 
+def \hyperlink{namespace__pytest_1_1tmpdir_aaeb6f2c894e9b7f25d475f96a8d1d247}{tmpdir\+\_\+factory} (request)
+\item 
+def \hyperlink{namespace__pytest_1_1tmpdir_ad998371dbf1bf308a2fc1b20b5367ed6}{tmpdir} (request, \hyperlink{namespace__pytest_1_1tmpdir_aaeb6f2c894e9b7f25d475f96a8d1d247}{tmpdir\+\_\+factory})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1tmpdir_aa642e5204699bbaa9740f11d28219783}\label{namespace__pytest_1_1tmpdir_aa642e5204699bbaa9740f11d28219783}} 
+{\bfseries Tempdir\+Handler} = \hyperlink{class__pytest_1_1tmpdir_1_1_tempdir_factory}{Tempdir\+Factory}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}support for providing temporary directories to test functions.  \end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1tmpdir_a80baa4aa8cdd5cd6281045ca35cea7f5}\label{namespace__pytest_1_1tmpdir_a80baa4aa8cdd5cd6281045ca35cea7f5}} 
+\index{\+\_\+pytest\+::tmpdir@{\+\_\+pytest\+::tmpdir}!get\+\_\+user@{get\+\_\+user}}
+\index{get\+\_\+user@{get\+\_\+user}!\+\_\+pytest\+::tmpdir@{\+\_\+pytest\+::tmpdir}}
+\subsubsection{\texorpdfstring{get\+\_\+user()}{get\_user()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+tmpdir.\+get\+\_\+user (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the current user name, or None if getuser() does not work
+in the current environment (see #1010).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1tmpdir_aa9a6001be9c67be1e73b9efd97b15ab6}\label{namespace__pytest_1_1tmpdir_aa9a6001be9c67be1e73b9efd97b15ab6}} 
+\index{\+\_\+pytest\+::tmpdir@{\+\_\+pytest\+::tmpdir}!pytest\+\_\+configure@{pytest\+\_\+configure}}
+\index{pytest\+\_\+configure@{pytest\+\_\+configure}!\+\_\+pytest\+::tmpdir@{\+\_\+pytest\+::tmpdir}}
+\subsubsection{\texorpdfstring{pytest\+\_\+configure()}{pytest\_configure()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+tmpdir.\+pytest\+\_\+configure (\begin{DoxyParamCaption}\item[{}]{config }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a TempdirFactory and attach it to the config object.
+
+This is to comply with existing plugins which expect the handler to be
+available at pytest_configure time, but ideally should be moved entirely
+to the tmpdir_factory session fixture.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1tmpdir_ad998371dbf1bf308a2fc1b20b5367ed6}\label{namespace__pytest_1_1tmpdir_ad998371dbf1bf308a2fc1b20b5367ed6}} 
+\index{\+\_\+pytest\+::tmpdir@{\+\_\+pytest\+::tmpdir}!tmpdir@{tmpdir}}
+\index{tmpdir@{tmpdir}!\+\_\+pytest\+::tmpdir@{\+\_\+pytest\+::tmpdir}}
+\subsubsection{\texorpdfstring{tmpdir()}{tmpdir()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+tmpdir.\+tmpdir (\begin{DoxyParamCaption}\item[{}]{request,  }\item[{}]{tmpdir\+\_\+factory }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a temporary directory path object
+which is unique to each test function invocation,
+created as a sub directory of the base temporary
+directory.  The returned object is a `py.path.local`_
+path object.
+
+.. _`py.path.local`: https://py.readthedocs.io/en/latest/path.html
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1tmpdir_aaeb6f2c894e9b7f25d475f96a8d1d247}\label{namespace__pytest_1_1tmpdir_aaeb6f2c894e9b7f25d475f96a8d1d247}} 
+\index{\+\_\+pytest\+::tmpdir@{\+\_\+pytest\+::tmpdir}!tmpdir\+\_\+factory@{tmpdir\+\_\+factory}}
+\index{tmpdir\+\_\+factory@{tmpdir\+\_\+factory}!\+\_\+pytest\+::tmpdir@{\+\_\+pytest\+::tmpdir}}
+\subsubsection{\texorpdfstring{tmpdir\+\_\+factory()}{tmpdir\_factory()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+tmpdir.\+tmpdir\+\_\+factory (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a TempdirFactory instance for the test session.
+\end{DoxyVerb}
+ 

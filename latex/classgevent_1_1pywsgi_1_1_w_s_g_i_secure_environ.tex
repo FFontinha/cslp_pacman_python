@@ -1,0 +1,38 @@
+\hypertarget{classgevent_1_1pywsgi_1_1_w_s_g_i_secure_environ}{}\section{gevent.\+pywsgi.\+W\+S\+G\+I\+Secure\+Environ Class Reference}
+\label{classgevent_1_1pywsgi_1_1_w_s_g_i_secure_environ}\index{gevent.\+pywsgi.\+W\+S\+G\+I\+Secure\+Environ@{gevent.\+pywsgi.\+W\+S\+G\+I\+Secure\+Environ}}
+
+
+Inherits \hyperlink{classgevent_1_1pywsgi_1_1_secure_environ}{gevent.\+pywsgi.\+Secure\+Environ}.
+
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1pywsgi_1_1_w_s_g_i_secure_environ_a4b90eda73a68bdf385ed343d543318d1}\label{classgevent_1_1pywsgi_1_1_w_s_g_i_secure_environ_a4b90eda73a68bdf385ed343d543318d1}} 
+tuple {\bfseries default\+\_\+whitelist\+\_\+keys} = (\textquotesingle{}R\+E\+M\+O\+T\+E\+\_\+\+A\+D\+DR\textquotesingle{}, \textquotesingle{}R\+E\+M\+O\+T\+E\+\_\+\+P\+O\+RT\textquotesingle{}, \textquotesingle{}H\+T\+T\+P\+\_\+\+H\+O\+ST\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classgevent_1_1pywsgi_1_1_w_s_g_i_secure_environ_aa999a69d264eae1f70ecabb24d09ae74}\label{classgevent_1_1pywsgi_1_1_w_s_g_i_secure_environ_aa999a69d264eae1f70ecabb24d09ae74}} 
+bool {\bfseries default\+\_\+print\+\_\+masked\+\_\+keys} = False
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Specializes the default list of whitelisted keys to a few
+common WSGI variables.
+
+Example::
+
+   >>> environ = WSGISecureEnviron(REMOTE_ADDR='::1', HTTP_AUTHORIZATION='secret')
+   >>> environ
+   {'REMOTE_ADDR': '::1', (hidden keys: 1)}
+   >>> import pprint
+   >>> pprint.pprint(environ)
+   {'REMOTE_ADDR': '::1', (hidden keys: 1)}
+   >>> print(pprint.pformat(environ))
+   {'REMOTE_ADDR': '::1', (hidden keys: 1)}
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/pywsgi.\+py\end{DoxyCompactItemize}

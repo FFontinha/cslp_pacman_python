@@ -1,0 +1,43 @@
+\hypertarget{classaiohttp_1_1signals_1_1_signal}{}\section{aiohttp.\+signals.\+Signal Class Reference}
+\label{classaiohttp_1_1signals_1_1_signal}\index{aiohttp.\+signals.\+Signal@{aiohttp.\+signals.\+Signal}}
+
+
+Inherits \hyperlink{classaiohttp_1_1frozenlist_1_1_frozen_list}{aiohttp.\+frozenlist.\+Frozen\+List}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1signals_1_1_signal_af30b76142f8cb55e82f344a312f9d5f9}\label{classaiohttp_1_1signals_1_1_signal_af30b76142f8cb55e82f344a312f9d5f9}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, owner)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1signals_1_1_signal_a64d7e1383b91cff2a8848d81d4bf1e90}\label{classaiohttp_1_1signals_1_1_signal_a64d7e1383b91cff2a8848d81d4bf1e90}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classaiohttp_1_1signals_1_1_signal_ac6231f8b2af6c8ab08c1babaa6627038}{send} (self, args, kwargs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Coroutine-based signal implementation.
+
+To connect a callback to a signal, use any list method.
+
+Signals are fired using the send() coroutine, which takes named
+arguments.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1signals_1_1_signal_ac6231f8b2af6c8ab08c1babaa6627038}\label{classaiohttp_1_1signals_1_1_signal_ac6231f8b2af6c8ab08c1babaa6627038}} 
+\index{aiohttp\+::signals\+::\+Signal@{aiohttp\+::signals\+::\+Signal}!send@{send}}
+\index{send@{send}!aiohttp\+::signals\+::\+Signal@{aiohttp\+::signals\+::\+Signal}}
+\subsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily def aiohttp.\+signals.\+Signal.\+send (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sends data to all registered receivers.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/signals.\+py\end{DoxyCompactItemize}

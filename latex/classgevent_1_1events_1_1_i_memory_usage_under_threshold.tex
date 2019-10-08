@@ -1,0 +1,52 @@
+\hypertarget{classgevent_1_1events_1_1_i_memory_usage_under_threshold}{}\section{gevent.\+events.\+I\+Memory\+Usage\+Under\+Threshold Class Reference}
+\label{classgevent_1_1events_1_1_i_memory_usage_under_threshold}\index{gevent.\+events.\+I\+Memory\+Usage\+Under\+Threshold@{gevent.\+events.\+I\+Memory\+Usage\+Under\+Threshold}}
+
+
+Inherits \hyperlink{classgevent_1_1__util_1_1_interface}{gevent.\+\_\+util.\+Interface}.
+
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1events_1_1_i_memory_usage_under_threshold_a1d297362fa56e6de2d1069282a2cbe34}\label{classgevent_1_1events_1_1_i_memory_usage_under_threshold_a1d297362fa56e6de2d1069282a2cbe34}} 
+{\bfseries mem\+\_\+usage} = Attribute(\char`\"{}The current process memory usage, in bytes.\char`\"{})
+\item 
+\mbox{\Hypertarget{classgevent_1_1events_1_1_i_memory_usage_under_threshold_af09952811e206decada60942b41b6b8a}\label{classgevent_1_1events_1_1_i_memory_usage_under_threshold_af09952811e206decada60942b41b6b8a}} 
+{\bfseries max\+\_\+allowed} = Attribute(\char`\"{}The maximum allowed memory usage, in bytes.\char`\"{})
+\item 
+{\bfseries max\+\_\+memory\+\_\+usage}
+\item 
+\mbox{\Hypertarget{classgevent_1_1events_1_1_i_memory_usage_under_threshold_ae2acab445a2b7ed855a316d06459adb1}\label{classgevent_1_1events_1_1_i_memory_usage_under_threshold_ae2acab445a2b7ed855a316d06459adb1}} 
+{\bfseries memory\+\_\+info} = Attribute(\char`\"{}The tuple of memory usage stats return by psutil.\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}The event emitted when the memory usage drops below the
+threshold after having previously been above it.
+
+This event is emitted only the first time memory usage is detected
+to be below the threshold after having previously been above it.
+If memory usage climbs again, a `IMemoryUsageThresholdExceeded`
+event will be broadcast, and then this event could be broadcast again.
+
+This event is emitted in the monitor thread.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgevent_1_1events_1_1_i_memory_usage_under_threshold_af49d484b8adc0afaa9d819c9a00b7848}\label{classgevent_1_1events_1_1_i_memory_usage_under_threshold_af49d484b8adc0afaa9d819c9a00b7848}} 
+\index{gevent\+::events\+::\+I\+Memory\+Usage\+Under\+Threshold@{gevent\+::events\+::\+I\+Memory\+Usage\+Under\+Threshold}!max\+\_\+memory\+\_\+usage@{max\+\_\+memory\+\_\+usage}}
+\index{max\+\_\+memory\+\_\+usage@{max\+\_\+memory\+\_\+usage}!gevent\+::events\+::\+I\+Memory\+Usage\+Under\+Threshold@{gevent\+::events\+::\+I\+Memory\+Usage\+Under\+Threshold}}
+\subsubsection{\texorpdfstring{max\+\_\+memory\+\_\+usage}{max\_memory\_usage}}
+{\footnotesize\ttfamily gevent.\+events.\+I\+Memory\+Usage\+Under\+Threshold.\+max\+\_\+memory\+\_\+usage\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  Attribute(\textcolor{stringliteral}{"The memory usage that caused the previous "}
+                                 \textcolor{stringliteral}{"IMemoryUsageThresholdExceeded event."})
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/events.\+py\end{DoxyCompactItemize}

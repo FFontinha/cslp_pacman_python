@@ -1,0 +1,61 @@
+\hypertarget{classchardet_1_1codingstatemachine_1_1_coding_state_machine}{}\section{chardet.\+codingstatemachine.\+Coding\+State\+Machine Class Reference}
+\label{classchardet_1_1codingstatemachine_1_1_coding_state_machine}\index{chardet.\+codingstatemachine.\+Coding\+State\+Machine@{chardet.\+codingstatemachine.\+Coding\+State\+Machine}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchardet_1_1codingstatemachine_1_1_coding_state_machine_a59e1c4c967eac2d003aafb0045dbdf6b}\label{classchardet_1_1codingstatemachine_1_1_coding_state_machine_a59e1c4c967eac2d003aafb0045dbdf6b}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, sm)
+\item 
+\mbox{\Hypertarget{classchardet_1_1codingstatemachine_1_1_coding_state_machine_a6f1e43203a7e71e356e9df387da7ad58}\label{classchardet_1_1codingstatemachine_1_1_coding_state_machine_a6f1e43203a7e71e356e9df387da7ad58}} 
+def {\bfseries reset} (self)
+\item 
+\mbox{\Hypertarget{classchardet_1_1codingstatemachine_1_1_coding_state_machine_a544e5fe74ccdf5a73dfc64998f6dfc7a}\label{classchardet_1_1codingstatemachine_1_1_coding_state_machine_a544e5fe74ccdf5a73dfc64998f6dfc7a}} 
+def {\bfseries next\+\_\+state} (self, c)
+\item 
+\mbox{\Hypertarget{classchardet_1_1codingstatemachine_1_1_coding_state_machine_a9209522272a6c7c03ec340110d2e6834}\label{classchardet_1_1codingstatemachine_1_1_coding_state_machine_a9209522272a6c7c03ec340110d2e6834}} 
+def {\bfseries get\+\_\+current\+\_\+charlen} (self)
+\item 
+\mbox{\Hypertarget{classchardet_1_1codingstatemachine_1_1_coding_state_machine_a546243994068a9dc115e60fa4094fc6c}\label{classchardet_1_1codingstatemachine_1_1_coding_state_machine_a546243994068a9dc115e60fa4094fc6c}} 
+def {\bfseries get\+\_\+coding\+\_\+state\+\_\+machine} (self)
+\item 
+\mbox{\Hypertarget{classchardet_1_1codingstatemachine_1_1_coding_state_machine_a8af2015a972d500149d509c1ef3cdf2b}\label{classchardet_1_1codingstatemachine_1_1_coding_state_machine_a8af2015a972d500149d509c1ef3cdf2b}} 
+def {\bfseries language} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchardet_1_1codingstatemachine_1_1_coding_state_machine_acfcd9270346ae96890c015a313c78876}\label{classchardet_1_1codingstatemachine_1_1_coding_state_machine_acfcd9270346ae96890c015a313c78876}} 
+{\bfseries logger}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A state machine to verify a byte sequence for a particular encoding. For
+each byte the detector receives, it will feed that byte to every active
+state machine available, one byte at a time. The state machine changes its
+state based on its previous state and the byte it receives. There are 3
+states in a state machine that are of interest to an auto-detector:
+
+START state: This is the state to start with, or a legal byte sequence
+             (i.e. a valid code point) for character has been identified.
+
+ME state:  This indicates that the state machine identified a byte sequence
+           that is specific to the charset it is designed for and that
+           there is no other possible encoding which can contain this byte
+           sequence. This will to lead to an immediate positive answer for
+           the detector.
+
+ERROR state: This indicates the state machine identified an illegal byte
+             sequence for that encoding. This will lead to an immediate
+             negative answer for this encoding. Detector will exclude this
+             encoding from consideration from here on.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/chardet/codingstatemachine.\+py\end{DoxyCompactItemize}

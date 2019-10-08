@@ -1,0 +1,164 @@
+\hypertarget{namespacepygame_1_1examples_1_1midi}{}\section{pygame.\+examples.\+midi Namespace Reference}
+\label{namespacepygame_1_1examples_1_1midi}\index{pygame.\+examples.\+midi@{pygame.\+examples.\+midi}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpygame_1_1examples_1_1midi_1_1_keyboard}{Keyboard}
+\item 
+class \hyperlink{classpygame_1_1examples_1_1midi_1_1_null_key}{Null\+Key}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1midi_af8914c37d9e995d87c98f145e2a6970b}\label{namespacepygame_1_1examples_1_1midi_af8914c37d9e995d87c98f145e2a6970b}} 
+def {\bfseries print\+\_\+device\+\_\+info} ()
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1midi_a38bf0ebea900aec74c20b8e3cb0b2fae}\label{namespacepygame_1_1examples_1_1midi_a38bf0ebea900aec74c20b8e3cb0b2fae}} 
+def {\bfseries input\+\_\+main} (device\+\_\+id=None)
+\item 
+def \hyperlink{namespacepygame_1_1examples_1_1midi_ae161dbc463946f041f8f1c0cb2676e0b}{output\+\_\+main} (device\+\_\+id=None)
+\item 
+def \hyperlink{namespacepygame_1_1examples_1_1midi_a749f20282593918b41853e2d9e43d765}{make\+\_\+key\+\_\+mapping} (key\+\_\+list, start\+\_\+note)
+\item 
+def \hyperlink{namespacepygame_1_1examples_1_1midi_a6847638ad406203f6e1595bc910326d0}{key\+\_\+class} (updates, image\+\_\+strip, image\+\_\+rects, \hyperlink{namespacepygame_1_1examples_1_1midi_a6f297edb18a87cbad5dffd2cab7903f7}{is\+\_\+white\+\_\+key}=True)
+\item 
+def \hyperlink{namespacepygame_1_1examples_1_1midi_a033e6692a39db20d70c604209f388e02}{key\+\_\+images} ()
+\item 
+def \hyperlink{namespacepygame_1_1examples_1_1midi_aad53e9f7989680c93ad32887ca7f833a}{fill\+\_\+region} (regions, note, rect, cutoff)
+\item 
+def \hyperlink{namespacepygame_1_1examples_1_1midi_a6f297edb18a87cbad5dffd2cab7903f7}{is\+\_\+white\+\_\+key} (note)
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1midi_a1c3d79b16a584a495262c0577f0b143e}\label{namespacepygame_1_1examples_1_1midi_a1c3d79b16a584a495262c0577f0b143e}} 
+def {\bfseries usage} ()
+\item 
+def \hyperlink{namespacepygame_1_1examples_1_1midi_adaa61334b0feded68d7da651d0045d63}{main} (mode=\textquotesingle{}output\textquotesingle{}, device\+\_\+id=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1midi_a1be5979893d6285a4b0ccd3aaf58ff8c}\label{namespacepygame_1_1examples_1_1midi_a1be5979893d6285a4b0ccd3aaf58ff8c}} 
+{\bfseries null\+\_\+key} = \hyperlink{classpygame_1_1examples_1_1midi_1_1_null_key}{Null\+Key}()
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1midi_a493900274328f230d03446380d993b84}\label{namespacepygame_1_1examples_1_1midi_a493900274328f230d03446380d993b84}} 
+{\bfseries device\+\_\+id} = int( sys.\+argv\mbox{[}-\/1\mbox{]} )
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1midi_a7ace96fd60c2acc03a77371af110b399}\label{namespacepygame_1_1examples_1_1midi_a7ace96fd60c2acc03a77371af110b399}} 
+{\bfseries rect}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Contains an example of midi input, and a separate example of midi output.
+
+By default it runs the output example.
+python midi.py --output
+python midi.py --input\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1midi_aad53e9f7989680c93ad32887ca7f833a}\label{namespacepygame_1_1examples_1_1midi_aad53e9f7989680c93ad32887ca7f833a}} 
+\index{pygame\+::examples\+::midi@{pygame\+::examples\+::midi}!fill\+\_\+region@{fill\+\_\+region}}
+\index{fill\+\_\+region@{fill\+\_\+region}!pygame\+::examples\+::midi@{pygame\+::examples\+::midi}}
+\subsubsection{\texorpdfstring{fill\+\_\+region()}{fill\_region()}}
+{\footnotesize\ttfamily def pygame.\+examples.\+midi.\+fill\+\_\+region (\begin{DoxyParamCaption}\item[{}]{regions,  }\item[{}]{note,  }\item[{}]{rect,  }\item[{}]{cutoff }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Fill the region defined by rect with a (note, velocity, 0) color
+
+The velocity varies from a small value at the top of the region to
+127 at the bottom. The vertical region 0 to cutoff is split into
+three parts, with velocities 42, 84 and 127. Everything below cutoff
+has velocity 127.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1examples_1_1midi_a6f297edb18a87cbad5dffd2cab7903f7}\label{namespacepygame_1_1examples_1_1midi_a6f297edb18a87cbad5dffd2cab7903f7}} 
+\index{pygame\+::examples\+::midi@{pygame\+::examples\+::midi}!is\+\_\+white\+\_\+key@{is\+\_\+white\+\_\+key}}
+\index{is\+\_\+white\+\_\+key@{is\+\_\+white\+\_\+key}!pygame\+::examples\+::midi@{pygame\+::examples\+::midi}}
+\subsubsection{\texorpdfstring{is\+\_\+white\+\_\+key()}{is\_white\_key()}}
+{\footnotesize\ttfamily def pygame.\+examples.\+midi.\+is\+\_\+white\+\_\+key (\begin{DoxyParamCaption}\item[{}]{note }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}True if note is represented by a white key\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1examples_1_1midi_a6847638ad406203f6e1595bc910326d0}\label{namespacepygame_1_1examples_1_1midi_a6847638ad406203f6e1595bc910326d0}} 
+\index{pygame\+::examples\+::midi@{pygame\+::examples\+::midi}!key\+\_\+class@{key\+\_\+class}}
+\index{key\+\_\+class@{key\+\_\+class}!pygame\+::examples\+::midi@{pygame\+::examples\+::midi}}
+\subsubsection{\texorpdfstring{key\+\_\+class()}{key\_class()}}
+{\footnotesize\ttfamily def pygame.\+examples.\+midi.\+key\+\_\+class (\begin{DoxyParamCaption}\item[{}]{updates,  }\item[{}]{image\+\_\+strip,  }\item[{}]{image\+\_\+rects,  }\item[{}]{is\+\_\+white\+\_\+key = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a keyboard key widget class
+
+Arguments:
+updates - a set into which a key instance adds itself if it needs
+    redrawing.
+image_strip - The surface containing the images of all key states.
+image_rects - A list of Rects giving the regions within image_strip that
+    are relevant to this key class.
+is_white_key (default True) - Set false if this is a black key.
+
+This function automates the creation of a key widget class for the
+three basic key types. A key has two basic states, up or down (
+depressed). Corresponding up and down images are drawn for each
+of these two states. But to give the illusion of depth, a key
+may have shadows cast upon it by the adjacent keys to its right.
+These shadows change depending on the up/down state of the key and
+its neighbors. So a key may support multiple images and states
+depending on the shadows. A key type is determined by the length
+of image_rects and the value of is_white.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1examples_1_1midi_a033e6692a39db20d70c604209f388e02}\label{namespacepygame_1_1examples_1_1midi_a033e6692a39db20d70c604209f388e02}} 
+\index{pygame\+::examples\+::midi@{pygame\+::examples\+::midi}!key\+\_\+images@{key\+\_\+images}}
+\index{key\+\_\+images@{key\+\_\+images}!pygame\+::examples\+::midi@{pygame\+::examples\+::midi}}
+\subsubsection{\texorpdfstring{key\+\_\+images()}{key\_images()}}
+{\footnotesize\ttfamily def pygame.\+examples.\+midi.\+key\+\_\+images (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a keyboard keys image strip and a mapping of image locations
+
+The return tuple is a surface and a dictionary of rects mapped to key
+type.
+
+This function encapsulates the constants relevant to the keyboard image
+file. There are five key types. One is the black key. The other four
+white keys are determined by the proximity of the black keys. The plain
+white key has no black key adjacent to it. A white-left and white-right
+key has a black key to the left or right of it respectively. A white-center
+key has a black key on both sides. A key may have up to six related
+images depending on the state of adjacent keys to its right.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1examples_1_1midi_adaa61334b0feded68d7da651d0045d63}\label{namespacepygame_1_1examples_1_1midi_adaa61334b0feded68d7da651d0045d63}} 
+\index{pygame\+::examples\+::midi@{pygame\+::examples\+::midi}!main@{main}}
+\index{main@{main}!pygame\+::examples\+::midi@{pygame\+::examples\+::midi}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def pygame.\+examples.\+midi.\+main (\begin{DoxyParamCaption}\item[{}]{mode = {\ttfamily \textquotesingle{}output\textquotesingle{}},  }\item[{}]{device\+\_\+id = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run a Midi example
+
+Arguments:
+mode - if 'output' run a midi keyboard output example
+          'input' run a midi event logger input example
+          'list' list available midi devices
+       (default 'output')
+device_id - midi device number; if None then use the default midi input or
+            output device for the system\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1examples_1_1midi_a749f20282593918b41853e2d9e43d765}\label{namespacepygame_1_1examples_1_1midi_a749f20282593918b41853e2d9e43d765}} 
+\index{pygame\+::examples\+::midi@{pygame\+::examples\+::midi}!make\+\_\+key\+\_\+mapping@{make\+\_\+key\+\_\+mapping}}
+\index{make\+\_\+key\+\_\+mapping@{make\+\_\+key\+\_\+mapping}!pygame\+::examples\+::midi@{pygame\+::examples\+::midi}}
+\subsubsection{\texorpdfstring{make\+\_\+key\+\_\+mapping()}{make\_key\_mapping()}}
+{\footnotesize\ttfamily def pygame.\+examples.\+midi.\+make\+\_\+key\+\_\+mapping (\begin{DoxyParamCaption}\item[{}]{key\+\_\+list,  }\item[{}]{start\+\_\+note }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a dictionary of (note, velocity) by computer keyboard key code\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1examples_1_1midi_ae161dbc463946f041f8f1c0cb2676e0b}\label{namespacepygame_1_1examples_1_1midi_ae161dbc463946f041f8f1c0cb2676e0b}} 
+\index{pygame\+::examples\+::midi@{pygame\+::examples\+::midi}!output\+\_\+main@{output\+\_\+main}}
+\index{output\+\_\+main@{output\+\_\+main}!pygame\+::examples\+::midi@{pygame\+::examples\+::midi}}
+\subsubsection{\texorpdfstring{output\+\_\+main()}{output\_main()}}
+{\footnotesize\ttfamily def pygame.\+examples.\+midi.\+output\+\_\+main (\begin{DoxyParamCaption}\item[{}]{device\+\_\+id = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Execute a musical keyboard example for the Church Organ instrument
+
+This is a piano keyboard example, with a two octave keyboard, starting at
+note F3. Left mouse down over a key starts a note, left up stops it. The
+notes are also mapped to the computer keyboard keys, assuming an American
+English PC keyboard (sorry everyone else, but I don't know if I can map to
+absolute key position instead of value.) The white keys are on the second
+row, TAB to BACKSLASH, starting with note F3. The black keys map to the top
+row, '1' to BACKSPACE, starting with F#3. 'r' is middle C. Close the
+window or press ESCAPE to quit the program. Key velocity (note
+amplitude) varies vertically on the keyboard image, with minimum velocity
+at the top of a key and maximum velocity at bottom.
+
+Default Midi output, no device_id given, is to the default output device
+for the computer.\end{DoxyVerb}
+ 

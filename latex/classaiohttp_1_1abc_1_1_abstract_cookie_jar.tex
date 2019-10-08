@@ -1,0 +1,64 @@
+\hypertarget{classaiohttp_1_1abc_1_1_abstract_cookie_jar}{}\section{aiohttp.\+abc.\+Abstract\+Cookie\+Jar Class Reference}
+\label{classaiohttp_1_1abc_1_1_abstract_cookie_jar}\index{aiohttp.\+abc.\+Abstract\+Cookie\+Jar@{aiohttp.\+abc.\+Abstract\+Cookie\+Jar}}
+
+
+Inherits Sized, and Iterable.
+
+
+
+Inherited by \hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar}{aiohttp.\+cookiejar.\+Cookie\+Jar}, and \hyperlink{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar}{aiohttp.\+cookiejar.\+Dummy\+Cookie\+Jar}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a73bb8df478d8f8991bb6021d44fdeda0}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, loop=None)
+\item 
+def \hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a37eabb01e12bee6de52511f1112a883e}{clear} (self)
+\item 
+def \hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a0d992539787adb16027c9e959c8e699b}{update\+\_\+cookies} (self, cookies, response\+\_\+url=None)
+\item 
+def \hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a70ff587a4f911792e5ffa6e147f544b2}{filter\+\_\+cookies} (self, request\+\_\+url)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Abstract Cookie Jar.\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a73bb8df478d8f8991bb6021d44fdeda0}\label{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a73bb8df478d8f8991bb6021d44fdeda0}} 
+\index{aiohttp\+::abc\+::\+Abstract\+Cookie\+Jar@{aiohttp\+::abc\+::\+Abstract\+Cookie\+Jar}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!aiohttp\+::abc\+::\+Abstract\+Cookie\+Jar@{aiohttp\+::abc\+::\+Abstract\+Cookie\+Jar}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def aiohttp.\+abc.\+Abstract\+Cookie\+Jar.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{loop = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Abstract Cookie Jar.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a37eabb01e12bee6de52511f1112a883e}\label{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a37eabb01e12bee6de52511f1112a883e}} 
+\index{aiohttp\+::abc\+::\+Abstract\+Cookie\+Jar@{aiohttp\+::abc\+::\+Abstract\+Cookie\+Jar}!clear@{clear}}
+\index{clear@{clear}!aiohttp\+::abc\+::\+Abstract\+Cookie\+Jar@{aiohttp\+::abc\+::\+Abstract\+Cookie\+Jar}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily def aiohttp.\+abc.\+Abstract\+Cookie\+Jar.\+clear (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clear all cookies.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a70ff587a4f911792e5ffa6e147f544b2}\label{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a70ff587a4f911792e5ffa6e147f544b2}} 
+\index{aiohttp\+::abc\+::\+Abstract\+Cookie\+Jar@{aiohttp\+::abc\+::\+Abstract\+Cookie\+Jar}!filter\+\_\+cookies@{filter\+\_\+cookies}}
+\index{filter\+\_\+cookies@{filter\+\_\+cookies}!aiohttp\+::abc\+::\+Abstract\+Cookie\+Jar@{aiohttp\+::abc\+::\+Abstract\+Cookie\+Jar}}
+\subsubsection{\texorpdfstring{filter\+\_\+cookies()}{filter\_cookies()}}
+{\footnotesize\ttfamily def aiohttp.\+abc.\+Abstract\+Cookie\+Jar.\+filter\+\_\+cookies (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request\+\_\+url }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the jar's cookies filtered by their attributes.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a0d992539787adb16027c9e959c8e699b}\label{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a0d992539787adb16027c9e959c8e699b}} 
+\index{aiohttp\+::abc\+::\+Abstract\+Cookie\+Jar@{aiohttp\+::abc\+::\+Abstract\+Cookie\+Jar}!update\+\_\+cookies@{update\+\_\+cookies}}
+\index{update\+\_\+cookies@{update\+\_\+cookies}!aiohttp\+::abc\+::\+Abstract\+Cookie\+Jar@{aiohttp\+::abc\+::\+Abstract\+Cookie\+Jar}}
+\subsubsection{\texorpdfstring{update\+\_\+cookies()}{update\_cookies()}}
+{\footnotesize\ttfamily def aiohttp.\+abc.\+Abstract\+Cookie\+Jar.\+update\+\_\+cookies (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cookies,  }\item[{}]{response\+\_\+url = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update cookies.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/abc.\+py\end{DoxyCompactItemize}

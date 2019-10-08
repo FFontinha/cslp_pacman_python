@@ -1,0 +1,121 @@
+\hypertarget{namespaceattr_1_1validators}{}\section{attr.\+validators Namespace Reference}
+\label{namespaceattr_1_1validators}\index{attr.\+validators@{attr.\+validators}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classattr_1_1validators_1_1___instance_of_validator}{\+\_\+\+Instance\+Of\+Validator}
+\item 
+class \hyperlink{classattr_1_1validators_1_1___in_validator}{\+\_\+\+In\+Validator}
+\item 
+class \hyperlink{classattr_1_1validators_1_1___optional_validator}{\+\_\+\+Optional\+Validator}
+\item 
+class \hyperlink{classattr_1_1validators_1_1___provides_validator}{\+\_\+\+Provides\+Validator}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceattr_1_1validators_afb2ed7b7c580c1c23a2614e689c6b8ca}{instance\+\_\+of} (type)
+\item 
+def \hyperlink{namespaceattr_1_1validators_ab2a6c8a57857a955868028ae1c74595a}{provides} (interface)
+\item 
+def \hyperlink{namespaceattr_1_1validators_a16d222bb733631cf016c1e47f96d838c}{optional} (validator)
+\item 
+def \hyperlink{namespaceattr_1_1validators_ac9b231e7f5f70770d16101e73635934e}{in\+\_\+} (options)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceattr_1_1validators_a4069e1f07a178929f378b9147da0f3ed}\label{namespaceattr_1_1validators_a4069e1f07a178929f378b9147da0f3ed}} 
+{\bfseries repr}
+\item 
+\mbox{\Hypertarget{namespaceattr_1_1validators_ab037f397d327a849a088df327de0909f}\label{namespaceattr_1_1validators_ab037f397d327a849a088df327de0909f}} 
+{\bfseries False}
+\item 
+\mbox{\Hypertarget{namespaceattr_1_1validators_addf1d308937debd0471b4604ea6e924f}\label{namespaceattr_1_1validators_addf1d308937debd0471b4604ea6e924f}} 
+{\bfseries slots}
+\item 
+\mbox{\Hypertarget{namespaceattr_1_1validators_aebd43c74052e92f3b52a26b5bea440a4}\label{namespaceattr_1_1validators_aebd43c74052e92f3b52a26b5bea440a4}} 
+{\bfseries True}
+\item 
+\mbox{\Hypertarget{namespaceattr_1_1validators_af753c568bd92ed832c0bb06df5ec3e27}\label{namespaceattr_1_1validators_af753c568bd92ed832c0bb06df5ec3e27}} 
+{\bfseries hash}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Commonly useful validators.
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceattr_1_1validators_ac9b231e7f5f70770d16101e73635934e}\label{namespaceattr_1_1validators_ac9b231e7f5f70770d16101e73635934e}} 
+\index{attr\+::validators@{attr\+::validators}!in\+\_\+@{in\+\_\+}}
+\index{in\+\_\+@{in\+\_\+}!attr\+::validators@{attr\+::validators}}
+\subsubsection{\texorpdfstring{in\+\_\+()}{in\_()}}
+{\footnotesize\ttfamily def attr.\+validators.\+in\+\_\+ (\begin{DoxyParamCaption}\item[{}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A validator that raises a :exc:`ValueError` if the initializer is called
+with a value that does not belong in the options provided.  The check is
+performed using ``value in options``.
+
+:param options: Allowed options.
+:type options: list, tuple, :class:`enum.Enum`, ...
+
+:raises ValueError: With a human readable error message, the attribute (of
+   type :class:`attr.Attribute`), the expected options, and the value it
+   got.
+
+.. versionadded:: 17.1.0
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceattr_1_1validators_afb2ed7b7c580c1c23a2614e689c6b8ca}\label{namespaceattr_1_1validators_afb2ed7b7c580c1c23a2614e689c6b8ca}} 
+\index{attr\+::validators@{attr\+::validators}!instance\+\_\+of@{instance\+\_\+of}}
+\index{instance\+\_\+of@{instance\+\_\+of}!attr\+::validators@{attr\+::validators}}
+\subsubsection{\texorpdfstring{instance\+\_\+of()}{instance\_of()}}
+{\footnotesize\ttfamily def attr.\+validators.\+instance\+\_\+of (\begin{DoxyParamCaption}\item[{}]{type }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A validator that raises a :exc:`TypeError` if the initializer is called
+with a wrong type for this particular attribute (checks are performed using
+:func:`isinstance` therefore it's also valid to pass a tuple of types).
+
+:param type: The type to check for.
+:type type: type or tuple of types
+
+:raises TypeError: With a human readable error message, the attribute
+    (of type :class:`attr.Attribute`), the expected type, and the value it
+    got.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceattr_1_1validators_a16d222bb733631cf016c1e47f96d838c}\label{namespaceattr_1_1validators_a16d222bb733631cf016c1e47f96d838c}} 
+\index{attr\+::validators@{attr\+::validators}!optional@{optional}}
+\index{optional@{optional}!attr\+::validators@{attr\+::validators}}
+\subsubsection{\texorpdfstring{optional()}{optional()}}
+{\footnotesize\ttfamily def attr.\+validators.\+optional (\begin{DoxyParamCaption}\item[{}]{validator }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A validator that makes an attribute optional.  An optional attribute is one
+which can be set to ``None`` in addition to satisfying the requirements of
+the sub-validator.
+
+:param validator: A validator (or a list of validators) that is used for
+    non-``None`` values.
+:type validator: callable or :class:`list` of callables.
+
+.. versionadded:: 15.1.0
+.. versionchanged:: 17.1.0 *validator* can be a list of validators.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceattr_1_1validators_ab2a6c8a57857a955868028ae1c74595a}\label{namespaceattr_1_1validators_ab2a6c8a57857a955868028ae1c74595a}} 
+\index{attr\+::validators@{attr\+::validators}!provides@{provides}}
+\index{provides@{provides}!attr\+::validators@{attr\+::validators}}
+\subsubsection{\texorpdfstring{provides()}{provides()}}
+{\footnotesize\ttfamily def attr.\+validators.\+provides (\begin{DoxyParamCaption}\item[{}]{interface }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A validator that raises a :exc:`TypeError` if the initializer is called
+with an object that does not provide the requested *interface* (checks are
+performed using ``interface.providedBy(value)`` (see `zope.interface
+<https://zopeinterface.readthedocs.io/en/latest/>`_).
+
+:param zope.interface.Interface interface: The interface to check for.
+
+:raises TypeError: With a human readable error message, the attribute
+    (of type :class:`attr.Attribute`), the expected interface, and the
+    value it got.
+\end{DoxyVerb}
+ 

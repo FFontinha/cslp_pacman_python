@@ -1,0 +1,94 @@
+\hypertarget{class__pytest_1_1reports_1_1_base_report}{}\section{\+\_\+pytest.\+reports.\+Base\+Report Class Reference}
+\label{class__pytest_1_1reports_1_1_base_report}\index{\+\_\+pytest.\+reports.\+Base\+Report@{\+\_\+pytest.\+reports.\+Base\+Report}}
+
+
+Inherits object.
+
+
+
+Inherited by \hyperlink{class__pytest_1_1reports_1_1_collect_report}{\+\_\+pytest.\+reports.\+Collect\+Report}, \hyperlink{class__pytest_1_1reports_1_1_teardown_error_report}{\+\_\+pytest.\+reports.\+Teardown\+Error\+Report}, and \hyperlink{class__pytest_1_1reports_1_1_test_report}{\+\_\+pytest.\+reports.\+Test\+Report}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1reports_1_1_base_report_acd7f35339e48e24341f19cee459772e9}\label{class__pytest_1_1reports_1_1_base_report_acd7f35339e48e24341f19cee459772e9}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, kw)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1reports_1_1_base_report_ab4c4bc622f454dad96e8b6140cc9ee43}\label{class__pytest_1_1reports_1_1_base_report_ab4c4bc622f454dad96e8b6140cc9ee43}} 
+def {\bfseries toterminal} (self, out)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1reports_1_1_base_report_aa178862a6d5c21f897ae8f65503fa37c}\label{class__pytest_1_1reports_1_1_base_report_aa178862a6d5c21f897ae8f65503fa37c}} 
+def {\bfseries get\+\_\+sections} (self, prefix)
+\item 
+def \hyperlink{class__pytest_1_1reports_1_1_base_report_ab2a286761e9256f3204d1246bfe43866}{longreprtext} (self)
+\item 
+def \hyperlink{class__pytest_1_1reports_1_1_base_report_a1c08aee6793feac67390e36cf3d183fb}{caplog} (self)
+\item 
+def \hyperlink{class__pytest_1_1reports_1_1_base_report_a10da4e85e2bc5d828d92fa11160273a1}{capstdout} (self)
+\item 
+def \hyperlink{class__pytest_1_1reports_1_1_base_report_af64206622f73f444e79e96cb5918499f}{capstderr} (self)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1reports_1_1_base_report_a8e154f5fcf105a210bc09114c1ebb9f9}\label{class__pytest_1_1reports_1_1_base_report_a8e154f5fcf105a210bc09114c1ebb9f9}} 
+def {\bfseries fspath} (self)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1reports_1_1_base_report_a6fbd6fbd2dbdc7cb64c760209c3e5e7d}\label{class__pytest_1_1reports_1_1_base_report_a6fbd6fbd2dbdc7cb64c760209c3e5e7d}} 
+{\bfseries passed} = property(lambda x\+: x.\+outcome == \char`\"{}passed\char`\"{})
+\item 
+\mbox{\Hypertarget{class__pytest_1_1reports_1_1_base_report_a19b73bc49eef4454bd96397c787a1122}\label{class__pytest_1_1reports_1_1_base_report_a19b73bc49eef4454bd96397c787a1122}} 
+{\bfseries failed} = property(lambda x\+: x.\+outcome == \char`\"{}failed\char`\"{})
+\item 
+\mbox{\Hypertarget{class__pytest_1_1reports_1_1_base_report_a26b9f729a4572b1b07b53366337a99b1}\label{class__pytest_1_1reports_1_1_base_report_a26b9f729a4572b1b07b53366337a99b1}} 
+{\bfseries skipped} = property(lambda x\+: x.\+outcome == \char`\"{}skipped\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1reports_1_1_base_report_a1c08aee6793feac67390e36cf3d183fb}\label{class__pytest_1_1reports_1_1_base_report_a1c08aee6793feac67390e36cf3d183fb}} 
+\index{\+\_\+pytest\+::reports\+::\+Base\+Report@{\+\_\+pytest\+::reports\+::\+Base\+Report}!caplog@{caplog}}
+\index{caplog@{caplog}!\+\_\+pytest\+::reports\+::\+Base\+Report@{\+\_\+pytest\+::reports\+::\+Base\+Report}}
+\subsubsection{\texorpdfstring{caplog()}{caplog()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+reports.\+Base\+Report.\+caplog (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return captured log lines, if log capturing is enabled
+
+.. versionadded:: 3.5
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1reports_1_1_base_report_af64206622f73f444e79e96cb5918499f}\label{class__pytest_1_1reports_1_1_base_report_af64206622f73f444e79e96cb5918499f}} 
+\index{\+\_\+pytest\+::reports\+::\+Base\+Report@{\+\_\+pytest\+::reports\+::\+Base\+Report}!capstderr@{capstderr}}
+\index{capstderr@{capstderr}!\+\_\+pytest\+::reports\+::\+Base\+Report@{\+\_\+pytest\+::reports\+::\+Base\+Report}}
+\subsubsection{\texorpdfstring{capstderr()}{capstderr()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+reports.\+Base\+Report.\+capstderr (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return captured text from stderr, if capturing is enabled
+
+.. versionadded:: 3.0
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1reports_1_1_base_report_a10da4e85e2bc5d828d92fa11160273a1}\label{class__pytest_1_1reports_1_1_base_report_a10da4e85e2bc5d828d92fa11160273a1}} 
+\index{\+\_\+pytest\+::reports\+::\+Base\+Report@{\+\_\+pytest\+::reports\+::\+Base\+Report}!capstdout@{capstdout}}
+\index{capstdout@{capstdout}!\+\_\+pytest\+::reports\+::\+Base\+Report@{\+\_\+pytest\+::reports\+::\+Base\+Report}}
+\subsubsection{\texorpdfstring{capstdout()}{capstdout()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+reports.\+Base\+Report.\+capstdout (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return captured text from stdout, if capturing is enabled
+
+.. versionadded:: 3.0
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1reports_1_1_base_report_ab2a286761e9256f3204d1246bfe43866}\label{class__pytest_1_1reports_1_1_base_report_ab2a286761e9256f3204d1246bfe43866}} 
+\index{\+\_\+pytest\+::reports\+::\+Base\+Report@{\+\_\+pytest\+::reports\+::\+Base\+Report}!longreprtext@{longreprtext}}
+\index{longreprtext@{longreprtext}!\+\_\+pytest\+::reports\+::\+Base\+Report@{\+\_\+pytest\+::reports\+::\+Base\+Report}}
+\subsubsection{\texorpdfstring{longreprtext()}{longreprtext()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+reports.\+Base\+Report.\+longreprtext (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read-only property that returns the full string representation
+of ``longrepr``.
+
+.. versionadded:: 3.0
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/reports.\+py\end{DoxyCompactItemize}

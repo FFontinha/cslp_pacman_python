@@ -1,0 +1,28 @@
+var classpluggy_1_1manager_1_1_plugin_manager =
+[
+    [ "__init__", "classpluggy_1_1manager_1_1_plugin_manager.html#a43a417b7a5cdde67b91e5a08666f5ce0", null ],
+    [ "add_hookcall_monitoring", "classpluggy_1_1manager_1_1_plugin_manager.html#ae4851e61bfbad4b55c2299e4efb57441", null ],
+    [ "add_hookspecs", "classpluggy_1_1manager_1_1_plugin_manager.html#a4dff3345289a96e3ca7e05f06bcda18e", null ],
+    [ "check_pending", "classpluggy_1_1manager_1_1_plugin_manager.html#a7d8054b9744509c85316f3d3611f35c4", null ],
+    [ "enable_tracing", "classpluggy_1_1manager_1_1_plugin_manager.html#ad04e0ea4995ca3f7aa7b835cb888faeb", null ],
+    [ "get_canonical_name", "classpluggy_1_1manager_1_1_plugin_manager.html#a362f59ef5ac6d91a00891a23dc51af6a", null ],
+    [ "get_hookcallers", "classpluggy_1_1manager_1_1_plugin_manager.html#a4a86b09e4c58368f6f0917fac70d439a", null ],
+    [ "get_name", "classpluggy_1_1manager_1_1_plugin_manager.html#a46be59b9190e87a0d3007a13bd989f56", null ],
+    [ "get_plugin", "classpluggy_1_1manager_1_1_plugin_manager.html#a06f6db97612dbde40933aa41c570ea46", null ],
+    [ "get_plugins", "classpluggy_1_1manager_1_1_plugin_manager.html#ae1913212826a600a1aed4b6f60f13106", null ],
+    [ "has_plugin", "classpluggy_1_1manager_1_1_plugin_manager.html#a9b10a6e7339d19ada0f2b2eff36e612d", null ],
+    [ "is_blocked", "classpluggy_1_1manager_1_1_plugin_manager.html#a18e7a296d54664d49d3a3085aa54e99f", null ],
+    [ "is_registered", "classpluggy_1_1manager_1_1_plugin_manager.html#a42f02527adb6b90ec57f4ff3d6235a98", null ],
+    [ "list_name_plugin", "classpluggy_1_1manager_1_1_plugin_manager.html#af49b57685654d86b409fbc4280f6bf10", null ],
+    [ "list_plugin_distinfo", "classpluggy_1_1manager_1_1_plugin_manager.html#ade6b546451db9052096e13af1f002e75", null ],
+    [ "load_setuptools_entrypoints", "classpluggy_1_1manager_1_1_plugin_manager.html#a057411df662fe558e57be1b8ab394369", null ],
+    [ "parse_hookimpl_opts", "classpluggy_1_1manager_1_1_plugin_manager.html#a7a1d9c509421c8fc2612f494cfe47d77", null ],
+    [ "parse_hookspec_opts", "classpluggy_1_1manager_1_1_plugin_manager.html#ab1983fc17667fa45b60219ebd8ba588d", null ],
+    [ "register", "classpluggy_1_1manager_1_1_plugin_manager.html#ac62e9aa5f311b991f2e60eb44eebc991", null ],
+    [ "set_blocked", "classpluggy_1_1manager_1_1_plugin_manager.html#a3e7953c3c105665df0b5f672858bc635", null ],
+    [ "subset_hook_caller", "classpluggy_1_1manager_1_1_plugin_manager.html#a100cd4b830d2446bc7893cd35f7270c5", null ],
+    [ "unregister", "classpluggy_1_1manager_1_1_plugin_manager.html#acd20d8caae1578e75475ab547d87f33e", null ],
+    [ "hook", "classpluggy_1_1manager_1_1_plugin_manager.html#a46054d9c26595c7e77d5a8dd96c4b9dd", null ],
+    [ "project_name", "classpluggy_1_1manager_1_1_plugin_manager.html#ab0f1422d921531d1369c6302244b568e", null ],
+    [ "trace", "classpluggy_1_1manager_1_1_plugin_manager.html#a47e064f24c90d3e5e7e6d700ebe09872", null ]
+];

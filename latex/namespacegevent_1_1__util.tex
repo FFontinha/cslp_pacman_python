@@ -1,0 +1,111 @@
+\hypertarget{namespacegevent_1_1__util}{}\section{gevent.\+\_\+util Namespace Reference}
+\label{namespacegevent_1_1__util}\index{gevent.\+\_\+util@{gevent.\+\_\+util}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE}
+\item 
+class \hyperlink{classgevent_1_1__util_1_1_interface}{Interface}
+\item 
+class \hyperlink{classgevent_1_1__util_1_1_lazy}{Lazy}
+\item 
+class \hyperlink{classgevent_1_1__util_1_1readproperty}{readproperty}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1__util_a84388abb8007bba4ac72f0bc1eee09d8}{copy\+\_\+globals} (source, globs, only\+\_\+names=None, ignore\+\_\+missing\+\_\+names=False, names\+\_\+to\+\_\+ignore=(), dunder\+\_\+names\+\_\+to\+\_\+keep=(\textquotesingle{}\+\_\+\+\_\+implements\+\_\+\+\_\+\textquotesingle{}, \textquotesingle{}\+\_\+\+\_\+all\+\_\+\+\_\+\textquotesingle{}, \textquotesingle{}\+\_\+\+\_\+imports\+\_\+\+\_\+\textquotesingle{}), cleanup\+\_\+globs=True)
+\item 
+def \hyperlink{namespacegevent_1_1__util_ac0783dd92855b27c01bdd8b204f5abbd}{import\+\_\+c\+\_\+accel} (globs, cname)
+\item 
+def \hyperlink{namespacegevent_1_1__util_a79e0064c3ee2539fa1b95eb55b69a7c3}{gmctime} ()
+\item 
+def \hyperlink{namespacegevent_1_1__util_a121bd451a484928258a7fea1f9960223}{implementer} (\+\_\+iface)
+\item 
+def \hyperlink{namespacegevent_1_1__util_a5adf631bc83884e0b9073c856e2fe07d}{Attribute} (s)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacegevent_1_1__util_a231456433d7274d08f3c446f53133abb}{Interface} = \hyperlink{classgevent_1_1__util_1_1_interface}{Interface}
+\item 
+def \hyperlink{namespacegevent_1_1__util_a8b453b4274318a8f654fbbcf666000df}{implementer} = implementer
+\item 
+def \hyperlink{namespacegevent_1_1__util_a26eb10e4b3e847eca144e5288d204fec}{Attribute} = Attribute
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1__util_a5adf631bc83884e0b9073c856e2fe07d}\label{namespacegevent_1_1__util_a5adf631bc83884e0b9073c856e2fe07d}} 
+\index{gevent\+::\+\_\+util@{gevent\+::\+\_\+util}!Attribute@{Attribute}}
+\index{Attribute@{Attribute}!gevent\+::\+\_\+util@{gevent\+::\+\_\+util}}
+\subsubsection{\texorpdfstring{Attribute()}{Attribute()}}
+{\footnotesize\ttfamily def gevent.\+\_\+util.\+Attribute (\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegevent_1_1__util_a84388abb8007bba4ac72f0bc1eee09d8}\label{namespacegevent_1_1__util_a84388abb8007bba4ac72f0bc1eee09d8}} 
+\index{gevent\+::\+\_\+util@{gevent\+::\+\_\+util}!copy\+\_\+globals@{copy\+\_\+globals}}
+\index{copy\+\_\+globals@{copy\+\_\+globals}!gevent\+::\+\_\+util@{gevent\+::\+\_\+util}}
+\subsubsection{\texorpdfstring{copy\+\_\+globals()}{copy\_globals()}}
+{\footnotesize\ttfamily def gevent.\+\_\+util.\+copy\+\_\+globals (\begin{DoxyParamCaption}\item[{}]{source,  }\item[{}]{globs,  }\item[{}]{only\+\_\+names = {\ttfamily None},  }\item[{}]{ignore\+\_\+missing\+\_\+names = {\ttfamily False},  }\item[{}]{names\+\_\+to\+\_\+ignore = {\ttfamily ()},  }\item[{}]{dunder\+\_\+names\+\_\+to\+\_\+keep = {\ttfamily (\textquotesingle{}\+\_\+\+\_\+implements\+\_\+\+\_\+\textquotesingle{},~\textquotesingle{}\+\_\+\+\_\+all\+\_\+\+\_\+\textquotesingle{},~\textquotesingle{}\+\_\+\+\_\+imports\+\_\+\+\_\+\textquotesingle{})},  }\item[{}]{cleanup\+\_\+globs = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Copy attributes defined in ``source.__dict__`` to the dictionary
+in globs (which should be the caller's :func:`globals`).
+
+Names that start with ``__`` are ignored (unless they are in
+*dunder_names_to_keep*). Anything found in *names_to_ignore* is
+also ignored.
+
+If *only_names* is given, only those attributes will be
+considered. In this case, *ignore_missing_names* says whether or
+not to raise an :exc:`AttributeError` if one of those names can't
+be found.
+
+If *cleanup_globs* has a true value, then common things imported but
+not used at runtime are removed, including this function.
+
+Returns a list of the names copied; this should be assigned to ``__imports__``.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__util_a79e0064c3ee2539fa1b95eb55b69a7c3}\label{namespacegevent_1_1__util_a79e0064c3ee2539fa1b95eb55b69a7c3}} 
+\index{gevent\+::\+\_\+util@{gevent\+::\+\_\+util}!gmctime@{gmctime}}
+\index{gmctime@{gmctime}!gevent\+::\+\_\+util@{gevent\+::\+\_\+util}}
+\subsubsection{\texorpdfstring{gmctime()}{gmctime()}}
+{\footnotesize\ttfamily def gevent.\+\_\+util.\+gmctime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the current time as a string in RFC3339 format.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__util_a121bd451a484928258a7fea1f9960223}\label{namespacegevent_1_1__util_a121bd451a484928258a7fea1f9960223}} 
+\index{gevent\+::\+\_\+util@{gevent\+::\+\_\+util}!implementer@{implementer}}
+\index{implementer@{implementer}!gevent\+::\+\_\+util@{gevent\+::\+\_\+util}}
+\subsubsection{\texorpdfstring{implementer()}{implementer()}}
+{\footnotesize\ttfamily def gevent.\+\_\+util.\+implementer (\begin{DoxyParamCaption}\item[{}]{\+\_\+iface }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegevent_1_1__util_ac0783dd92855b27c01bdd8b204f5abbd}\label{namespacegevent_1_1__util_ac0783dd92855b27c01bdd8b204f5abbd}} 
+\index{gevent\+::\+\_\+util@{gevent\+::\+\_\+util}!import\+\_\+c\+\_\+accel@{import\+\_\+c\+\_\+accel}}
+\index{import\+\_\+c\+\_\+accel@{import\+\_\+c\+\_\+accel}!gevent\+::\+\_\+util@{gevent\+::\+\_\+util}}
+\subsubsection{\texorpdfstring{import\+\_\+c\+\_\+accel()}{import\_c\_accel()}}
+{\footnotesize\ttfamily def gevent.\+\_\+util.\+import\+\_\+c\+\_\+accel (\begin{DoxyParamCaption}\item[{}]{globs,  }\item[{}]{cname }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Import the C-accelerator for the __name__
+and copy its globals.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1__util_a26eb10e4b3e847eca144e5288d204fec}\label{namespacegevent_1_1__util_a26eb10e4b3e847eca144e5288d204fec}} 
+\index{gevent\+::\+\_\+util@{gevent\+::\+\_\+util}!Attribute@{Attribute}}
+\index{Attribute@{Attribute}!gevent\+::\+\_\+util@{gevent\+::\+\_\+util}}
+\subsubsection{\texorpdfstring{Attribute}{Attribute}}
+{\footnotesize\ttfamily def gevent.\+\_\+util.\+Attribute = Attribute}
+
+\mbox{\Hypertarget{namespacegevent_1_1__util_a8b453b4274318a8f654fbbcf666000df}\label{namespacegevent_1_1__util_a8b453b4274318a8f654fbbcf666000df}} 
+\index{gevent\+::\+\_\+util@{gevent\+::\+\_\+util}!implementer@{implementer}}
+\index{implementer@{implementer}!gevent\+::\+\_\+util@{gevent\+::\+\_\+util}}
+\subsubsection{\texorpdfstring{implementer}{implementer}}
+{\footnotesize\ttfamily def gevent.\+\_\+util.\+implementer = implementer}
+
+\mbox{\Hypertarget{namespacegevent_1_1__util_a231456433d7274d08f3c446f53133abb}\label{namespacegevent_1_1__util_a231456433d7274d08f3c446f53133abb}} 
+\index{gevent\+::\+\_\+util@{gevent\+::\+\_\+util}!Interface@{Interface}}
+\index{Interface@{Interface}!gevent\+::\+\_\+util@{gevent\+::\+\_\+util}}
+\subsubsection{\texorpdfstring{Interface}{Interface}}
+{\footnotesize\ttfamily \hyperlink{classgevent_1_1__util_1_1_interface}{gevent.\+\_\+util.\+Interface} = \hyperlink{classgevent_1_1__util_1_1_interface}{Interface}}
+

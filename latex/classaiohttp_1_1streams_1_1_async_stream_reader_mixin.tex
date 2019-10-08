@@ -1,0 +1,50 @@
+\hypertarget{classaiohttp_1_1streams_1_1_async_stream_reader_mixin}{}\section{aiohttp.\+streams.\+Async\+Stream\+Reader\+Mixin Class Reference}
+\label{classaiohttp_1_1streams_1_1_async_stream_reader_mixin}\index{aiohttp.\+streams.\+Async\+Stream\+Reader\+Mixin@{aiohttp.\+streams.\+Async\+Stream\+Reader\+Mixin}}
+
+
+Inherited by \hyperlink{classaiohttp_1_1streams_1_1_empty_stream_reader}{aiohttp.\+streams.\+Empty\+Stream\+Reader}, and \hyperlink{classaiohttp_1_1streams_1_1_stream_reader}{aiohttp.\+streams.\+Stream\+Reader}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1streams_1_1_async_stream_reader_mixin_a7754a951d6a3f229d1edfbb425926e0d}\label{classaiohttp_1_1streams_1_1_async_stream_reader_mixin_a7754a951d6a3f229d1edfbb425926e0d}} 
+def {\bfseries \+\_\+\+\_\+aiter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1streams_1_1_async_stream_reader_mixin_a5f1cd542c2742272e87b306cb36a205e}\label{classaiohttp_1_1streams_1_1_async_stream_reader_mixin_a5f1cd542c2742272e87b306cb36a205e}} 
+def {\bfseries iter\+\_\+chunked}
+\item 
+def \hyperlink{classaiohttp_1_1streams_1_1_async_stream_reader_mixin_aed2e21b22adde13e76119adcd2073bcf}{iter\+\_\+any} (self)
+\item 
+def \hyperlink{classaiohttp_1_1streams_1_1_async_stream_reader_mixin_a2eeaa27b3924bfdaf7a3d0a5cfcc2ea6}{iter\+\_\+chunks} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1streams_1_1_async_stream_reader_mixin_aed2e21b22adde13e76119adcd2073bcf}\label{classaiohttp_1_1streams_1_1_async_stream_reader_mixin_aed2e21b22adde13e76119adcd2073bcf}} 
+\index{aiohttp\+::streams\+::\+Async\+Stream\+Reader\+Mixin@{aiohttp\+::streams\+::\+Async\+Stream\+Reader\+Mixin}!iter\+\_\+any@{iter\+\_\+any}}
+\index{iter\+\_\+any@{iter\+\_\+any}!aiohttp\+::streams\+::\+Async\+Stream\+Reader\+Mixin@{aiohttp\+::streams\+::\+Async\+Stream\+Reader\+Mixin}}
+\subsubsection{\texorpdfstring{iter\+\_\+any()}{iter\_any()}}
+{\footnotesize\ttfamily def aiohttp.\+streams.\+Async\+Stream\+Reader\+Mixin.\+iter\+\_\+any (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{Async\+Stream\+Iterator }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns an asynchronous iterator that yields all the available
+data as soon as it is received
+
+Python-3.5 available for Python 3.5+ only
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1streams_1_1_async_stream_reader_mixin_a2eeaa27b3924bfdaf7a3d0a5cfcc2ea6}\label{classaiohttp_1_1streams_1_1_async_stream_reader_mixin_a2eeaa27b3924bfdaf7a3d0a5cfcc2ea6}} 
+\index{aiohttp\+::streams\+::\+Async\+Stream\+Reader\+Mixin@{aiohttp\+::streams\+::\+Async\+Stream\+Reader\+Mixin}!iter\+\_\+chunks@{iter\+\_\+chunks}}
+\index{iter\+\_\+chunks@{iter\+\_\+chunks}!aiohttp\+::streams\+::\+Async\+Stream\+Reader\+Mixin@{aiohttp\+::streams\+::\+Async\+Stream\+Reader\+Mixin}}
+\subsubsection{\texorpdfstring{iter\+\_\+chunks()}{iter\_chunks()}}
+{\footnotesize\ttfamily def aiohttp.\+streams.\+Async\+Stream\+Reader\+Mixin.\+iter\+\_\+chunks (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{Chunk\+Tuple\+Async\+Stream\+Iterator }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns an asynchronous iterator that yields chunks of data
+as they are received by the server. The yielded objects are tuples
+of (bytes, bool) as returned by the StreamReader.readchunk method.
+
+Python-3.5 available for Python 3.5+ only
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/streams.\+py\end{DoxyCompactItemize}

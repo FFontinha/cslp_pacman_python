@@ -1,0 +1,85 @@
+\hypertarget{classatomicwrites_1_1_atomic_writer}{}\section{atomicwrites.\+Atomic\+Writer Class Reference}
+\label{classatomicwrites_1_1_atomic_writer}\index{atomicwrites.\+Atomic\+Writer@{atomicwrites.\+Atomic\+Writer}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classatomicwrites_1_1_atomic_writer_a9409795de1045fa4a45f54340c41a83c}\label{classatomicwrites_1_1_atomic_writer_a9409795de1045fa4a45f54340c41a83c}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, path, mode=D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+O\+DE, overwrite=False, open\+\_\+kwargs)
+\item 
+def \hyperlink{classatomicwrites_1_1_atomic_writer_ae9b0015caff3120e250c8cef66611cba}{open} (self)
+\item 
+def \hyperlink{classatomicwrites_1_1_atomic_writer_a768498001368a8888aca92b41a13320c}{get\+\_\+fileobject} (self, dir=None, kwargs)
+\item 
+def \hyperlink{classatomicwrites_1_1_atomic_writer_aea0847148c50cefc9bde2de35b4b146f}{sync} (self, f)
+\item 
+def \hyperlink{classatomicwrites_1_1_atomic_writer_a195872e768f238078a5d83cbfd484333}{commit} (self, f)
+\item 
+def \hyperlink{classatomicwrites_1_1_atomic_writer_ac8281b30b809292b03c8c403dea8d4c6}{rollback} (self, f)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A helper class for performing atomic writes. Usage::
+
+    with AtomicWriter(path).open() as f:
+        f.write(...)
+
+:param path: The destination filepath. May or may not exist.
+:param mode: The filemode for the temporary file. This defaults to `wb` in
+    Python 2 and `w` in Python 3.
+:param overwrite: If set to false, an error is raised if ``path`` exists.
+    Errors are only raised after the file has been written to.  Either way,
+    the operation is atomic.
+
+If you need further control over the exact behavior, you are encouraged to
+subclass.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classatomicwrites_1_1_atomic_writer_a195872e768f238078a5d83cbfd484333}\label{classatomicwrites_1_1_atomic_writer_a195872e768f238078a5d83cbfd484333}} 
+\index{atomicwrites\+::\+Atomic\+Writer@{atomicwrites\+::\+Atomic\+Writer}!commit@{commit}}
+\index{commit@{commit}!atomicwrites\+::\+Atomic\+Writer@{atomicwrites\+::\+Atomic\+Writer}}
+\subsubsection{\texorpdfstring{commit()}{commit()}}
+{\footnotesize\ttfamily def atomicwrites.\+Atomic\+Writer.\+commit (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{f }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Move the temporary file to the target location.\end{DoxyVerb}
+ \mbox{\Hypertarget{classatomicwrites_1_1_atomic_writer_a768498001368a8888aca92b41a13320c}\label{classatomicwrites_1_1_atomic_writer_a768498001368a8888aca92b41a13320c}} 
+\index{atomicwrites\+::\+Atomic\+Writer@{atomicwrites\+::\+Atomic\+Writer}!get\+\_\+fileobject@{get\+\_\+fileobject}}
+\index{get\+\_\+fileobject@{get\+\_\+fileobject}!atomicwrites\+::\+Atomic\+Writer@{atomicwrites\+::\+Atomic\+Writer}}
+\subsubsection{\texorpdfstring{get\+\_\+fileobject()}{get\_fileobject()}}
+{\footnotesize\ttfamily def atomicwrites.\+Atomic\+Writer.\+get\+\_\+fileobject (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dir = {\ttfamily None},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the temporary file to use.\end{DoxyVerb}
+ \mbox{\Hypertarget{classatomicwrites_1_1_atomic_writer_ae9b0015caff3120e250c8cef66611cba}\label{classatomicwrites_1_1_atomic_writer_ae9b0015caff3120e250c8cef66611cba}} 
+\index{atomicwrites\+::\+Atomic\+Writer@{atomicwrites\+::\+Atomic\+Writer}!open@{open}}
+\index{open@{open}!atomicwrites\+::\+Atomic\+Writer@{atomicwrites\+::\+Atomic\+Writer}}
+\subsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily def atomicwrites.\+Atomic\+Writer.\+open (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Open the temporary file.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classatomicwrites_1_1_atomic_writer_ac8281b30b809292b03c8c403dea8d4c6}\label{classatomicwrites_1_1_atomic_writer_ac8281b30b809292b03c8c403dea8d4c6}} 
+\index{atomicwrites\+::\+Atomic\+Writer@{atomicwrites\+::\+Atomic\+Writer}!rollback@{rollback}}
+\index{rollback@{rollback}!atomicwrites\+::\+Atomic\+Writer@{atomicwrites\+::\+Atomic\+Writer}}
+\subsubsection{\texorpdfstring{rollback()}{rollback()}}
+{\footnotesize\ttfamily def atomicwrites.\+Atomic\+Writer.\+rollback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{f }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clean up all temporary resources.\end{DoxyVerb}
+ \mbox{\Hypertarget{classatomicwrites_1_1_atomic_writer_aea0847148c50cefc9bde2de35b4b146f}\label{classatomicwrites_1_1_atomic_writer_aea0847148c50cefc9bde2de35b4b146f}} 
+\index{atomicwrites\+::\+Atomic\+Writer@{atomicwrites\+::\+Atomic\+Writer}!sync@{sync}}
+\index{sync@{sync}!atomicwrites\+::\+Atomic\+Writer@{atomicwrites\+::\+Atomic\+Writer}}
+\subsubsection{\texorpdfstring{sync()}{sync()}}
+{\footnotesize\ttfamily def atomicwrites.\+Atomic\+Writer.\+sync (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{f }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}responsible for clearing as many file caches as possible before
+commit\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/atomicwrites/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

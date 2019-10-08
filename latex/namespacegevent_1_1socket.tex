@@ -1,0 +1,58 @@
+\hypertarget{namespacegevent_1_1socket}{}\section{gevent.\+socket Namespace Reference}
+\label{namespacegevent_1_1socket}\index{gevent.\+socket@{gevent.\+socket}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgevent_1_1socket_1_1error}{error}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1socket_ae9e275f44ef03a2a34bf7d2e339b7fa5}{getfqdn} (args)
+\item 
+def \hyperlink{namespacegevent_1_1socket_a4779a15abebff9edb10cf68d1a4a0dcf}{create\+\_\+connection} (address, timeout=\+\_\+\+G\+L\+O\+B\+A\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+M\+E\+O\+UT, source\+\_\+address=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacegevent_1_1socket_adf1c14efa060acbfd56cde8ad6ff2f51}{only\+\_\+names}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1socket_a4779a15abebff9edb10cf68d1a4a0dcf}\label{namespacegevent_1_1socket_a4779a15abebff9edb10cf68d1a4a0dcf}} 
+\index{gevent\+::socket@{gevent\+::socket}!create\+\_\+connection@{create\+\_\+connection}}
+\index{create\+\_\+connection@{create\+\_\+connection}!gevent\+::socket@{gevent\+::socket}}
+\subsubsection{\texorpdfstring{create\+\_\+connection()}{create\_connection()}}
+{\footnotesize\ttfamily def gevent.\+socket.\+create\+\_\+connection (\begin{DoxyParamCaption}\item[{}]{address,  }\item[{}]{timeout = {\ttfamily \+\_\+GLOBAL\+\_\+DEFAULT\+\_\+TIMEOUT},  }\item[{}]{source\+\_\+address = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}create_connection(address, timeout=None, source_address=None) -> socket
+
+Connect to *address* and return the :class:`gevent.socket.socket`
+object.
+
+Convenience function. Connect to *address* (a 2-tuple ``(host,
+port)``) and return the socket object. Passing the optional
+*timeout* parameter will set the timeout on the socket instance
+before attempting to connect. If no *timeout* is supplied, the
+global default timeout setting returned by
+:func:`getdefaulttimeout` is used. If *source_address* is set it
+must be a tuple of (host, port) for the socket to bind as a source
+address before making the connection. A host of '' or port 0 tells
+the OS to use the default.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1socket_ae9e275f44ef03a2a34bf7d2e339b7fa5}\label{namespacegevent_1_1socket_ae9e275f44ef03a2a34bf7d2e339b7fa5}} 
+\index{gevent\+::socket@{gevent\+::socket}!getfqdn@{getfqdn}}
+\index{getfqdn@{getfqdn}!gevent\+::socket@{gevent\+::socket}}
+\subsubsection{\texorpdfstring{getfqdn()}{getfqdn()}}
+{\footnotesize\ttfamily def gevent.\+socket.\+getfqdn (\begin{DoxyParamCaption}\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1socket_adf1c14efa060acbfd56cde8ad6ff2f51}\label{namespacegevent_1_1socket_adf1c14efa060acbfd56cde8ad6ff2f51}} 
+\index{gevent\+::socket@{gevent\+::socket}!only\+\_\+names@{only\+\_\+names}}
+\index{only\+\_\+names@{only\+\_\+names}!gevent\+::socket@{gevent\+::socket}}
+\subsubsection{\texorpdfstring{only\+\_\+names}{only\_names}}
+{\footnotesize\ttfamily gevent.\+socket.\+only\+\_\+names}
+

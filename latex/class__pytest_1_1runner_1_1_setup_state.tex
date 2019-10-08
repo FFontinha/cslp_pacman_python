@@ -1,0 +1,58 @@
+\hypertarget{class__pytest_1_1runner_1_1_setup_state}{}\section{\+\_\+pytest.\+runner.\+Setup\+State Class Reference}
+\label{class__pytest_1_1runner_1_1_setup_state}\index{\+\_\+pytest.\+runner.\+Setup\+State@{\+\_\+pytest.\+runner.\+Setup\+State}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1runner_1_1_setup_state_a0aed981e017d3f4df00e3766ab7fcd57}\label{class__pytest_1_1runner_1_1_setup_state_a0aed981e017d3f4df00e3766ab7fcd57}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{class__pytest_1_1runner_1_1_setup_state_aff0e87dd54e8ea40931e49a54dd95295}{addfinalizer} (self, finalizer, colitem)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1runner_1_1_setup_state_af7e0f1596858f057efafe094ab0d345b}\label{class__pytest_1_1runner_1_1_setup_state_af7e0f1596858f057efafe094ab0d345b}} 
+def {\bfseries teardown\+\_\+all} (self)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1runner_1_1_setup_state_a260918310cbd9621b7fd6a953f77407c}\label{class__pytest_1_1runner_1_1_setup_state_a260918310cbd9621b7fd6a953f77407c}} 
+def {\bfseries teardown\+\_\+exact} (self, item, nextitem)
+\item 
+def \hyperlink{class__pytest_1_1runner_1_1_setup_state_a1620131dc4ab5a7186039ac330acc846}{prepare} (self, colitem)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1runner_1_1_setup_state_a8a12df156923e7d68a3a741d34eb30c6}\label{class__pytest_1_1runner_1_1_setup_state_a8a12df156923e7d68a3a741d34eb30c6}} 
+{\bfseries stack}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}shared state for setting up/tearing down test items or collectors. \end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1runner_1_1_setup_state_aff0e87dd54e8ea40931e49a54dd95295}\label{class__pytest_1_1runner_1_1_setup_state_aff0e87dd54e8ea40931e49a54dd95295}} 
+\index{\+\_\+pytest\+::runner\+::\+Setup\+State@{\+\_\+pytest\+::runner\+::\+Setup\+State}!addfinalizer@{addfinalizer}}
+\index{addfinalizer@{addfinalizer}!\+\_\+pytest\+::runner\+::\+Setup\+State@{\+\_\+pytest\+::runner\+::\+Setup\+State}}
+\subsubsection{\texorpdfstring{addfinalizer()}{addfinalizer()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+runner.\+Setup\+State.\+addfinalizer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{finalizer,  }\item[{}]{colitem }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}attach a finalizer to the given colitem.
+if colitem is None, this will add a finalizer that
+is called at the end of teardown_all().
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1runner_1_1_setup_state_a1620131dc4ab5a7186039ac330acc846}\label{class__pytest_1_1runner_1_1_setup_state_a1620131dc4ab5a7186039ac330acc846}} 
+\index{\+\_\+pytest\+::runner\+::\+Setup\+State@{\+\_\+pytest\+::runner\+::\+Setup\+State}!prepare@{prepare}}
+\index{prepare@{prepare}!\+\_\+pytest\+::runner\+::\+Setup\+State@{\+\_\+pytest\+::runner\+::\+Setup\+State}}
+\subsubsection{\texorpdfstring{prepare()}{prepare()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+runner.\+Setup\+State.\+prepare (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{colitem }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}setup objects along the collector chain to the test-method
+    and teardown previously setup objects.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/runner.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,96 @@
+\hypertarget{classchardet_1_1chardistribution_1_1_char_distribution_analysis}{}\section{chardet.\+chardistribution.\+Char\+Distribution\+Analysis Class Reference}
+\label{classchardet_1_1chardistribution_1_1_char_distribution_analysis}\index{chardet.\+chardistribution.\+Char\+Distribution\+Analysis@{chardet.\+chardistribution.\+Char\+Distribution\+Analysis}}
+
+
+B\+E\+G\+IN L\+I\+C\+E\+N\+SE B\+L\+O\+CK \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\# The Original Code is Mozilla Communicator client code.  
+
+
+
+
+Inherits object.
+
+
+
+Inherited by \hyperlink{classchardet_1_1chardistribution_1_1_big5_distribution_analysis}{chardet.\+chardistribution.\+Big5\+Distribution\+Analysis}, \hyperlink{classchardet_1_1chardistribution_1_1_e_u_c_j_p_distribution_analysis}{chardet.\+chardistribution.\+E\+U\+C\+J\+P\+Distribution\+Analysis}, \hyperlink{classchardet_1_1chardistribution_1_1_e_u_c_k_r_distribution_analysis}{chardet.\+chardistribution.\+E\+U\+C\+K\+R\+Distribution\+Analysis}, \hyperlink{classchardet_1_1chardistribution_1_1_e_u_c_t_w_distribution_analysis}{chardet.\+chardistribution.\+E\+U\+C\+T\+W\+Distribution\+Analysis}, \hyperlink{classchardet_1_1chardistribution_1_1_g_b2312_distribution_analysis}{chardet.\+chardistribution.\+G\+B2312\+Distribution\+Analysis}, and \hyperlink{classchardet_1_1chardistribution_1_1_s_j_i_s_distribution_analysis}{chardet.\+chardistribution.\+S\+J\+I\+S\+Distribution\+Analysis}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchardet_1_1chardistribution_1_1_char_distribution_analysis_ae54b726dfef56ef5983e7b27352c41ac}\label{classchardet_1_1chardistribution_1_1_char_distribution_analysis_ae54b726dfef56ef5983e7b27352c41ac}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classchardet_1_1chardistribution_1_1_char_distribution_analysis_a6f355660d4bc601766471b20d79dcee9}{reset} (self)
+\item 
+def \hyperlink{classchardet_1_1chardistribution_1_1_char_distribution_analysis_a406ad518b489485f9a21f2cce386cb7d}{feed} (self, char, char\+\_\+len)
+\item 
+def \hyperlink{classchardet_1_1chardistribution_1_1_char_distribution_analysis_a8b424ad3e45aaeb46e48a3e49ec5f535}{get\+\_\+confidence} (self)
+\item 
+\mbox{\Hypertarget{classchardet_1_1chardistribution_1_1_char_distribution_analysis_aa54842185d6159787abe93f2c76a4c06}\label{classchardet_1_1chardistribution_1_1_char_distribution_analysis_aa54842185d6159787abe93f2c76a4c06}} 
+def {\bfseries got\+\_\+enough\+\_\+data} (self)
+\item 
+\mbox{\Hypertarget{classchardet_1_1chardistribution_1_1_char_distribution_analysis_a13812f625525c1c5f7b0637d437a65bc}\label{classchardet_1_1chardistribution_1_1_char_distribution_analysis_a13812f625525c1c5f7b0637d437a65bc}} 
+def {\bfseries get\+\_\+order} (self, byte\+\_\+str)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchardet_1_1chardistribution_1_1_char_distribution_analysis_a07d70edd94d24dfc1d32690f07c11905}\label{classchardet_1_1chardistribution_1_1_char_distribution_analysis_a07d70edd94d24dfc1d32690f07c11905}} 
+{\bfseries typical\+\_\+distribution\+\_\+ratio}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classchardet_1_1chardistribution_1_1_char_distribution_analysis_acfdd118e04ed94d8c9a9456c3680acaf}\label{classchardet_1_1chardistribution_1_1_char_distribution_analysis_acfdd118e04ed94d8c9a9456c3680acaf}} 
+int {\bfseries E\+N\+O\+U\+G\+H\+\_\+\+D\+A\+T\+A\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD} = 1024
+\item 
+\mbox{\Hypertarget{classchardet_1_1chardistribution_1_1_char_distribution_analysis_a77a4be5552b0e22260c31139d9871b96}\label{classchardet_1_1chardistribution_1_1_char_distribution_analysis_a77a4be5552b0e22260c31139d9871b96}} 
+float {\bfseries S\+U\+R\+E\+\_\+\+Y\+ES} = 0.\+99
+\item 
+\mbox{\Hypertarget{classchardet_1_1chardistribution_1_1_char_distribution_analysis_a2629fe4082846312187c86f86fd25b33}\label{classchardet_1_1chardistribution_1_1_char_distribution_analysis_a2629fe4082846312187c86f86fd25b33}} 
+float {\bfseries S\+U\+R\+E\+\_\+\+NO} = 0.\+01
+\item 
+\mbox{\Hypertarget{classchardet_1_1chardistribution_1_1_char_distribution_analysis_aad2dbd55f1ea34c0b22f777690f84fc9}\label{classchardet_1_1chardistribution_1_1_char_distribution_analysis_aad2dbd55f1ea34c0b22f777690f84fc9}} 
+int {\bfseries M\+I\+N\+I\+M\+U\+M\+\_\+\+D\+A\+T\+A\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD} = 3
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+B\+E\+G\+IN L\+I\+C\+E\+N\+SE B\+L\+O\+CK \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\# The Original Code is Mozilla Communicator client code. 
+
+The Initial Developer of the Original Code is Netscape Communications Corporation. Portions created by the Initial Developer are Copyright (C) 1998 the Initial Developer. All Rights Reserved.
+
+Contributor(s)\+: Mark Pilgrim -\/ port to Python
+
+This library is free software; you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation; either version 2.\+1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-\/1301 U\+SA E\+ND L\+I\+C\+E\+N\+SE B\+L\+O\+CK \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\# 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classchardet_1_1chardistribution_1_1_char_distribution_analysis_a406ad518b489485f9a21f2cce386cb7d}\label{classchardet_1_1chardistribution_1_1_char_distribution_analysis_a406ad518b489485f9a21f2cce386cb7d}} 
+\index{chardet\+::chardistribution\+::\+Char\+Distribution\+Analysis@{chardet\+::chardistribution\+::\+Char\+Distribution\+Analysis}!feed@{feed}}
+\index{feed@{feed}!chardet\+::chardistribution\+::\+Char\+Distribution\+Analysis@{chardet\+::chardistribution\+::\+Char\+Distribution\+Analysis}}
+\subsubsection{\texorpdfstring{feed()}{feed()}}
+{\footnotesize\ttfamily def chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+feed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{char,  }\item[{}]{char\+\_\+len }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}feed a character with known length\end{DoxyVerb}
+ \mbox{\Hypertarget{classchardet_1_1chardistribution_1_1_char_distribution_analysis_a8b424ad3e45aaeb46e48a3e49ec5f535}\label{classchardet_1_1chardistribution_1_1_char_distribution_analysis_a8b424ad3e45aaeb46e48a3e49ec5f535}} 
+\index{chardet\+::chardistribution\+::\+Char\+Distribution\+Analysis@{chardet\+::chardistribution\+::\+Char\+Distribution\+Analysis}!get\+\_\+confidence@{get\+\_\+confidence}}
+\index{get\+\_\+confidence@{get\+\_\+confidence}!chardet\+::chardistribution\+::\+Char\+Distribution\+Analysis@{chardet\+::chardistribution\+::\+Char\+Distribution\+Analysis}}
+\subsubsection{\texorpdfstring{get\+\_\+confidence()}{get\_confidence()}}
+{\footnotesize\ttfamily def chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+get\+\_\+confidence (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return confidence based on existing data\end{DoxyVerb}
+ \mbox{\Hypertarget{classchardet_1_1chardistribution_1_1_char_distribution_analysis_a6f355660d4bc601766471b20d79dcee9}\label{classchardet_1_1chardistribution_1_1_char_distribution_analysis_a6f355660d4bc601766471b20d79dcee9}} 
+\index{chardet\+::chardistribution\+::\+Char\+Distribution\+Analysis@{chardet\+::chardistribution\+::\+Char\+Distribution\+Analysis}!reset@{reset}}
+\index{reset@{reset}!chardet\+::chardistribution\+::\+Char\+Distribution\+Analysis@{chardet\+::chardistribution\+::\+Char\+Distribution\+Analysis}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}reset analyser, clear any state\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/chardet/chardistribution.\+py\end{DoxyCompactItemize}

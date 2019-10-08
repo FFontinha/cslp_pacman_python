@@ -1,0 +1,110 @@
+\hypertarget{namespacegevent_1_1__imap}{}\section{gevent.\+\_\+imap Namespace Reference}
+\label{namespacegevent_1_1__imap}\index{gevent.\+\_\+imap@{gevent.\+\_\+imap}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgevent_1_1__imap_1_1_failure}{Failure}
+\item 
+class \hyperlink{classgevent_1_1__imap_1_1_i_map}{I\+Map}
+\item 
+class \hyperlink{classgevent_1_1__imap_1_1_i_map_unordered}{I\+Map\+Unordered}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1__imap_a23ed08242c1a42c9b63c3158b16ca39d}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{namespacegevent_1_1__imap_a9a45f9a6a77a5a28042a1a9ffab1f2b8}{func}, \hyperlink{namespacegevent_1_1__imap_a81e72d61564a5c5b650434bd91ed11df}{iterable}, \hyperlink{namespacegevent_1_1__imap_a253b93eb8883154fa0bb9c2986251b7e}{spawn}, maxsize=None, \+\_\+zipped=False)
+\item 
+def \hyperlink{namespacegevent_1_1__imap_aa5389dec98803ddefb976f4bed762064}{\+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{namespacegevent_1_1__imap_a11758ba47c470e87f6833e4f71e94186}{\+\_\+\+\_\+next\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1__imap_a4b3f8365f1f048be6e852755c0091b50}{next} = \hyperlink{namespacegevent_1_1__imap_a11758ba47c470e87f6833e4f71e94186}{\+\_\+\+\_\+next\+\_\+\+\_\+}
+\item 
+\hyperlink{namespacegevent_1_1__imap_a253b93eb8883154fa0bb9c2986251b7e}{spawn}
+\item 
+\hyperlink{namespacegevent_1_1__imap_a9a45f9a6a77a5a28042a1a9ffab1f2b8}{func}
+\item 
+\hyperlink{namespacegevent_1_1__imap_a81e72d61564a5c5b650434bd91ed11df}{iterable}
+\item 
+\hyperlink{namespacegevent_1_1__imap_a907dea8d9c9e5938226d0b103986e7e9}{queue}
+\item 
+\hyperlink{namespacegevent_1_1__imap_ab41540c06ef262540bb8225016a24fe1}{finished}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1__imap_a23ed08242c1a42c9b63c3158b16ca39d}\label{namespacegevent_1_1__imap_a23ed08242c1a42c9b63c3158b16ca39d}} 
+\index{gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def gevent.\+\_\+imap.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func,  }\item[{}]{iterable,  }\item[{}]{spawn,  }\item[{}]{maxsize = {\ttfamily None},  }\item[{}]{\+\_\+zipped = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}At iterator of map results.
+\end{DoxyVerb}
+\begin{DoxyVerb}An iterator that.
+
+:param callable spawn: The function we use to create new greenlets.
+:keyword int maxsize: If given and not-None, specifies the maximum number of
+    finished results that will be allowed to accumulated awaiting the reader;
+    more than that number of results will cause map function greenlets to begin
+    to block. This is most useful is there is a great disparity in the speed of
+    the mapping code and the consumer and the results consume a great deal of resources.
+    Using a bound is more computationally expensive than not using a bound.
+
+.. versionchanged:: 1.1b3
+    Added the *maxsize* parameter.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__imap_aa5389dec98803ddefb976f4bed762064}\label{namespacegevent_1_1__imap_aa5389dec98803ddefb976f4bed762064}} 
+\index{gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}!\+\_\+\+\_\+iter\+\_\+\+\_\+@{\+\_\+\+\_\+iter\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+iter\+\_\+\+\_\+@{\+\_\+\+\_\+iter\+\_\+\+\_\+}!gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+iter\+\_\+\+\_\+()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily def gevent.\+\_\+imap.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegevent_1_1__imap_a11758ba47c470e87f6833e4f71e94186}\label{namespacegevent_1_1__imap_a11758ba47c470e87f6833e4f71e94186}} 
+\index{gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}!\+\_\+\+\_\+next\+\_\+\+\_\+@{\+\_\+\+\_\+next\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+next\+\_\+\+\_\+@{\+\_\+\+\_\+next\+\_\+\+\_\+}!gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+next\+\_\+\+\_\+()}{\_\_next\_\_()}}
+{\footnotesize\ttfamily def gevent.\+\_\+imap.\+\_\+\+\_\+next\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1__imap_ab41540c06ef262540bb8225016a24fe1}\label{namespacegevent_1_1__imap_ab41540c06ef262540bb8225016a24fe1}} 
+\index{gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}!finished@{finished}}
+\index{finished@{finished}!gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}}
+\subsubsection{\texorpdfstring{finished}{finished}}
+{\footnotesize\ttfamily gevent.\+\_\+imap.\+finished}
+
+\mbox{\Hypertarget{namespacegevent_1_1__imap_a9a45f9a6a77a5a28042a1a9ffab1f2b8}\label{namespacegevent_1_1__imap_a9a45f9a6a77a5a28042a1a9ffab1f2b8}} 
+\index{gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}!func@{func}}
+\index{func@{func}!gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}}
+\subsubsection{\texorpdfstring{func}{func}}
+{\footnotesize\ttfamily gevent.\+\_\+imap.\+func}
+
+\mbox{\Hypertarget{namespacegevent_1_1__imap_a81e72d61564a5c5b650434bd91ed11df}\label{namespacegevent_1_1__imap_a81e72d61564a5c5b650434bd91ed11df}} 
+\index{gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}!iterable@{iterable}}
+\index{iterable@{iterable}!gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}}
+\subsubsection{\texorpdfstring{iterable}{iterable}}
+{\footnotesize\ttfamily gevent.\+\_\+imap.\+iterable}
+
+\mbox{\Hypertarget{namespacegevent_1_1__imap_a4b3f8365f1f048be6e852755c0091b50}\label{namespacegevent_1_1__imap_a4b3f8365f1f048be6e852755c0091b50}} 
+\index{gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}!next@{next}}
+\index{next@{next}!gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}}
+\subsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily def gevent.\+\_\+imap.\+next = \hyperlink{namespacegevent_1_1__imap_a11758ba47c470e87f6833e4f71e94186}{\+\_\+\+\_\+next\+\_\+\+\_\+}}
+
+\mbox{\Hypertarget{namespacegevent_1_1__imap_a907dea8d9c9e5938226d0b103986e7e9}\label{namespacegevent_1_1__imap_a907dea8d9c9e5938226d0b103986e7e9}} 
+\index{gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}!queue@{queue}}
+\index{queue@{queue}!gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}}
+\subsubsection{\texorpdfstring{queue}{queue}}
+{\footnotesize\ttfamily gevent.\+\_\+imap.\+queue}
+
+\mbox{\Hypertarget{namespacegevent_1_1__imap_a253b93eb8883154fa0bb9c2986251b7e}\label{namespacegevent_1_1__imap_a253b93eb8883154fa0bb9c2986251b7e}} 
+\index{gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}!spawn@{spawn}}
+\index{spawn@{spawn}!gevent\+::\+\_\+imap@{gevent\+::\+\_\+imap}}
+\subsubsection{\texorpdfstring{spawn}{spawn}}
+{\footnotesize\ttfamily gevent.\+\_\+imap.\+spawn}
+

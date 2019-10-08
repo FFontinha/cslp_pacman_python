@@ -1,0 +1,25 @@
+\hypertarget{classpy_1_1__path_1_1cacheutil_1_1_buildcost_access_cache}{}\section{py.\+\_\+path.\+cacheutil.\+Buildcost\+Access\+Cache Class Reference}
+\label{classpy_1_1__path_1_1cacheutil_1_1_buildcost_access_cache}\index{py.\+\_\+path.\+cacheutil.\+Buildcost\+Access\+Cache@{py.\+\_\+path.\+cacheutil.\+Buildcost\+Access\+Cache}}
+
+
+Inherits \hyperlink{classpy_1_1__path_1_1cacheutil_1_1_basic_cache}{py.\+\_\+path.\+cacheutil.\+Basic\+Cache}.
+
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A BuildTime/Access-counting cache implementation.
+    the weight of a value is computed as the product of
+
+        num-accesses-of-a-value * time-to-build-the-value
+
+    The values with the least such weights are evicted
+    if the cache maxentries threshold is superceded.
+    For implementation flexibility more than one object
+    might be evicted at a time.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/py/\+\_\+path/cacheutil.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,71 @@
+\hypertarget{classwebsockets_1_1client_1_1_connect}{}\section{websockets.\+client.\+Connect Class Reference}
+\label{classwebsockets_1_1client_1_1_connect}\index{websockets.\+client.\+Connect@{websockets.\+client.\+Connect}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1client_1_1_connect_a76300198bef802d95f98f77c6a6580c7}\label{classwebsockets_1_1client_1_1_connect_a76300198bef802d95f98f77c6a6580c7}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, uri, create\+\_\+protocol=None, timeout=10, max\+\_\+size=2 $\ast$$\ast$20, max\+\_\+queue=2 $\ast$$\ast$5, read\+\_\+limit=2 $\ast$$\ast$16, write\+\_\+limit=2 $\ast$$\ast$16, loop=None, legacy\+\_\+recv=False, klass=None, origin=None, extensions=None, subprotocols=None, extra\+\_\+headers=None, compression=\textquotesingle{}deflate\textquotesingle{}, kwds)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1client_1_1_connect_a6d057a7ab4ee4aeebdf9161363c30c96}\label{classwebsockets_1_1client_1_1_connect_a6d057a7ab4ee4aeebdf9161363c30c96}} 
+def {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1client_1_1_connect_a0fde59935f5c67bb4e658318eb58c08d}\label{classwebsockets_1_1client_1_1_connect_a0fde59935f5c67bb4e658318eb58c08d}} 
+{\bfseries ws\+\_\+client}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Connect to the WebSocket server at the given ``uri``.
+
+:func:`connect` returns an awaitable. Awaiting it yields an instance of
+:class:`WebSocketClientProtocol` which can then be used to send and
+receive messages.
+
+On Python ≥ 3.5.1, :func:`connect` can be used as a asynchronous context
+manager. In that case, the connection is closed when exiting the context.
+
+:func:`connect` is a wrapper around the event loop's
+:meth:`~asyncio.BaseEventLoop.create_connection` method. Unknown keyword
+arguments are passed to :meth:`~asyncio.BaseEventLoop.create_connection`.
+
+For example, you can set the ``ssl`` keyword argument to a
+:class:`~ssl.SSLContext` to enforce some TLS settings. When connecting to
+a ``wss://`` URI, if this argument isn't provided explicitly, it's set to
+``True``, which means Python's default :class:`~ssl.SSLContext` is used.
+
+The behavior of the ``timeout``, ``max_size``, and ``max_queue``,
+``read_limit``, and ``write_limit`` optional arguments is described in the
+documentation of :class:`~websockets.protocol.WebSocketCommonProtocol`.
+
+The ``create_protocol`` parameter allows customizing the asyncio protocol
+that manages the connection. It should be a callable or class accepting
+the same arguments as :class:`WebSocketClientProtocol` and returning a
+:class:`WebSocketClientProtocol` instance. It defaults to
+:class:`WebSocketClientProtocol`.
+
+:func:`connect` also accepts the following optional arguments:
+
+* ``origin`` sets the Origin HTTP header
+* ``extensions`` is a list of supported extensions in order of
+  decreasing preference
+* ``subprotocols`` is a list of supported subprotocols in order of
+  decreasing preference
+* ``extra_headers`` sets additional HTTP request headers – it can be a
+  :class:`~websockets.http.Headers` instance, a
+  :class:`~collections.abc.Mapping`, or an iterable of ``(name, value)``
+  pairs
+* ``compression`` is a shortcut to configure compression extensions;
+  by default it enables the "permessage-deflate" extension; set it to
+  ``None`` to disable compression
+
+:func:`connect` raises :exc:`~websockets.uri.InvalidURI` if ``uri`` is
+invalid and :exc:`~websockets.handshake.InvalidHandshake` if the opening
+handshake fails.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/websockets/client.\+py\end{DoxyCompactItemize}

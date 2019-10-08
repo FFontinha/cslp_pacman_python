@@ -1,0 +1,60 @@
+\hypertarget{classpygame_1_1sprite_1_1collide__rect__ratio}{}\section{pygame.\+sprite.\+collide\+\_\+rect\+\_\+ratio Class Reference}
+\label{classpygame_1_1sprite_1_1collide__rect__ratio}\index{pygame.\+sprite.\+collide\+\_\+rect\+\_\+ratio@{pygame.\+sprite.\+collide\+\_\+rect\+\_\+ratio}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1collide__rect__ratio_a9545012c865757c2745d5dbfb304c9a8}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, ratio)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1collide__rect__ratio_a22ec6617fbedeafe60940938592dc3ee}{\+\_\+\+\_\+call\+\_\+\+\_\+} (self, left, right)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygame_1_1sprite_1_1collide__rect__ratio_ad92a437054ce0d9d593dcd0e67108421}\label{classpygame_1_1sprite_1_1collide__rect__ratio_ad92a437054ce0d9d593dcd0e67108421}} 
+{\bfseries ratio}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A callable class that checks for collisions using scaled rects
+
+The class checks for collisions between two sprites using a scaled version
+of the sprites' rects. Is created with a ratio; the instance is then
+intended to be passed as a collided callback function to the *collide
+functions.
+
+New in pygame 1.8.1\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygame_1_1sprite_1_1collide__rect__ratio_a9545012c865757c2745d5dbfb304c9a8}\label{classpygame_1_1sprite_1_1collide__rect__ratio_a9545012c865757c2745d5dbfb304c9a8}} 
+\index{pygame\+::sprite\+::collide\+\_\+rect\+\_\+ratio@{pygame\+::sprite\+::collide\+\_\+rect\+\_\+ratio}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pygame\+::sprite\+::collide\+\_\+rect\+\_\+ratio@{pygame\+::sprite\+::collide\+\_\+rect\+\_\+ratio}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+collide\+\_\+rect\+\_\+ratio.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ratio }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}create a new collide_rect_ratio callable
+
+Ratio is expected to be a floating point value used to scale
+the underlying sprite rect before checking for collisions.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygame_1_1sprite_1_1collide__rect__ratio_a22ec6617fbedeafe60940938592dc3ee}\label{classpygame_1_1sprite_1_1collide__rect__ratio_a22ec6617fbedeafe60940938592dc3ee}} 
+\index{pygame\+::sprite\+::collide\+\_\+rect\+\_\+ratio@{pygame\+::sprite\+::collide\+\_\+rect\+\_\+ratio}!\+\_\+\+\_\+call\+\_\+\+\_\+@{\+\_\+\+\_\+call\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+call\+\_\+\+\_\+@{\+\_\+\+\_\+call\+\_\+\+\_\+}!pygame\+::sprite\+::collide\+\_\+rect\+\_\+ratio@{pygame\+::sprite\+::collide\+\_\+rect\+\_\+ratio}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+call\+\_\+\+\_\+()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+collide\+\_\+rect\+\_\+ratio.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{left,  }\item[{}]{right }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}detect collision between two sprites using scaled rects
+
+pygame.sprite.collide_rect_ratio(ratio)(left, right): return bool
+
+Tests for collision between two sprites. Uses the pygame.Rect
+colliderect function to calculate the collision after scaling the rects
+by the stored ratio. Sprites must have "rect" attributes.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pygame/sprite.\+py\end{DoxyCompactItemize}

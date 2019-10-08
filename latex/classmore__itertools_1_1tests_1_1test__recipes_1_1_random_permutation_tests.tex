@@ -1,0 +1,49 @@
+\hypertarget{classmore__itertools_1_1tests_1_1test__recipes_1_1_random_permutation_tests}{}\section{more\+\_\+itertools.\+tests.\+test\+\_\+recipes.\+Random\+Permutation\+Tests Class Reference}
+\label{classmore__itertools_1_1tests_1_1test__recipes_1_1_random_permutation_tests}\index{more\+\_\+itertools.\+tests.\+test\+\_\+recipes.\+Random\+Permutation\+Tests@{more\+\_\+itertools.\+tests.\+test\+\_\+recipes.\+Random\+Permutation\+Tests}}
+
+
+Inherits Test\+Case.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmore__itertools_1_1tests_1_1test__recipes_1_1_random_permutation_tests_a2204797a7f8f81cd8d5bf8fb621e5400}{test\+\_\+full\+\_\+permutation} (self)
+\item 
+def \hyperlink{classmore__itertools_1_1tests_1_1test__recipes_1_1_random_permutation_tests_a7bde91b775e55e70ccfc03ddf8af9557}{test\+\_\+partial\+\_\+permutation} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Tests for ``random_permutation()``\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmore__itertools_1_1tests_1_1test__recipes_1_1_random_permutation_tests_a2204797a7f8f81cd8d5bf8fb621e5400}\label{classmore__itertools_1_1tests_1_1test__recipes_1_1_random_permutation_tests_a2204797a7f8f81cd8d5bf8fb621e5400}} 
+\index{more\+\_\+itertools\+::tests\+::test\+\_\+recipes\+::\+Random\+Permutation\+Tests@{more\+\_\+itertools\+::tests\+::test\+\_\+recipes\+::\+Random\+Permutation\+Tests}!test\+\_\+full\+\_\+permutation@{test\+\_\+full\+\_\+permutation}}
+\index{test\+\_\+full\+\_\+permutation@{test\+\_\+full\+\_\+permutation}!more\+\_\+itertools\+::tests\+::test\+\_\+recipes\+::\+Random\+Permutation\+Tests@{more\+\_\+itertools\+::tests\+::test\+\_\+recipes\+::\+Random\+Permutation\+Tests}}
+\subsubsection{\texorpdfstring{test\+\_\+full\+\_\+permutation()}{test\_full\_permutation()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+tests.\+test\+\_\+recipes.\+Random\+Permutation\+Tests.\+test\+\_\+full\+\_\+permutation (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}ensure every item from the iterable is returned in a new ordering
+
+15 elements have a 1 in 1.3 * 10e12 of appearing in sorted order, so
+we fix a seed value just to be sure.\end{DoxyVerb}
+ \mbox{\Hypertarget{classmore__itertools_1_1tests_1_1test__recipes_1_1_random_permutation_tests_a7bde91b775e55e70ccfc03ddf8af9557}\label{classmore__itertools_1_1tests_1_1test__recipes_1_1_random_permutation_tests_a7bde91b775e55e70ccfc03ddf8af9557}} 
+\index{more\+\_\+itertools\+::tests\+::test\+\_\+recipes\+::\+Random\+Permutation\+Tests@{more\+\_\+itertools\+::tests\+::test\+\_\+recipes\+::\+Random\+Permutation\+Tests}!test\+\_\+partial\+\_\+permutation@{test\+\_\+partial\+\_\+permutation}}
+\index{test\+\_\+partial\+\_\+permutation@{test\+\_\+partial\+\_\+permutation}!more\+\_\+itertools\+::tests\+::test\+\_\+recipes\+::\+Random\+Permutation\+Tests@{more\+\_\+itertools\+::tests\+::test\+\_\+recipes\+::\+Random\+Permutation\+Tests}}
+\subsubsection{\texorpdfstring{test\+\_\+partial\+\_\+permutation()}{test\_partial\_permutation()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+tests.\+test\+\_\+recipes.\+Random\+Permutation\+Tests.\+test\+\_\+partial\+\_\+permutation (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}ensure all returned items are from the iterable, that the returned
+permutation is of the desired length, and that all items eventually
+get returned.
+
+Sampling 100 permutations of length 5 from a set of 15 leaves a
+(2/3)^100 chance that an item will not be chosen. Multiplied by 15
+items, there is a 1 in 2.6e16 chance that at least 1 item will not
+show up in the resulting output. Using a random seed will fix that.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/more\+\_\+itertools/tests/test\+\_\+recipes.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,126 @@
+\hypertarget{class__pytest_1_1config_1_1argparsing_1_1_parser}{}\section{\+\_\+pytest.\+config.\+argparsing.\+Parser Class Reference}
+\label{class__pytest_1_1config_1_1argparsing_1_1_parser}\index{\+\_\+pytest.\+config.\+argparsing.\+Parser@{\+\_\+pytest.\+config.\+argparsing.\+Parser}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1argparsing_1_1_parser_a6299e5bfcddcdf5977f5bd2b285aad0f}\label{class__pytest_1_1config_1_1argparsing_1_1_parser_a6299e5bfcddcdf5977f5bd2b285aad0f}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, usage=None, processopt=None)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1argparsing_1_1_parser_a27743d7db2ce5b5f1446d0a9a1b32646}\label{class__pytest_1_1config_1_1argparsing_1_1_parser_a27743d7db2ce5b5f1446d0a9a1b32646}} 
+def {\bfseries processoption} (self, option)
+\item 
+def \hyperlink{class__pytest_1_1config_1_1argparsing_1_1_parser_ad886d8d67ef88b3fb6b730a1d3a89499}{getgroup} (self, name, description=\char`\"{}\char`\"{}, after=None)
+\item 
+def \hyperlink{class__pytest_1_1config_1_1argparsing_1_1_parser_a8b9a087d79364eb84f17bd2bd5098c96}{addoption} (self, opts, attrs)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1argparsing_1_1_parser_acc460b506950649135e768195df911e5}\label{class__pytest_1_1config_1_1argparsing_1_1_parser_acc460b506950649135e768195df911e5}} 
+def {\bfseries parse} (self, args, namespace=None)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1argparsing_1_1_parser_a56d2c51cdbfdbde04a496d554af5a5af}\label{class__pytest_1_1config_1_1argparsing_1_1_parser_a56d2c51cdbfdbde04a496d554af5a5af}} 
+def {\bfseries parse\+\_\+setoption} (self, args, option, namespace=None)
+\item 
+def \hyperlink{class__pytest_1_1config_1_1argparsing_1_1_parser_a470e379f33643965fe9a019c319c10d8}{parse\+\_\+known\+\_\+args} (self, args, namespace=None)
+\item 
+def \hyperlink{class__pytest_1_1config_1_1argparsing_1_1_parser_a6ea809dfa8c13b61eec15e553aba3517}{parse\+\_\+known\+\_\+and\+\_\+unknown\+\_\+args} (self, args, namespace=None)
+\item 
+def \hyperlink{class__pytest_1_1config_1_1argparsing_1_1_parser_a5896682707d2ca72364b05c1d7a99cec}{addini} (self, name, help, type=None, default=None)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1argparsing_1_1_parser_a6587a6ba41866671ad2f1b20028975d8}\label{class__pytest_1_1config_1_1argparsing_1_1_parser_a6587a6ba41866671ad2f1b20028975d8}} 
+{\bfseries extra\+\_\+info}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1argparsing_1_1_parser_aa02693a90885e25415ddfde9807aa5ec}\label{class__pytest_1_1config_1_1argparsing_1_1_parser_aa02693a90885e25415ddfde9807aa5ec}} 
+{\bfseries optparser}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Parser for command line arguments and ini-file values.
+
+:ivar extra_info: dict of generic param -> value to display in case
+    there's an error processing the command line arguments.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1config_1_1argparsing_1_1_parser_a5896682707d2ca72364b05c1d7a99cec}\label{class__pytest_1_1config_1_1argparsing_1_1_parser_a5896682707d2ca72364b05c1d7a99cec}} 
+\index{\+\_\+pytest\+::config\+::argparsing\+::\+Parser@{\+\_\+pytest\+::config\+::argparsing\+::\+Parser}!addini@{addini}}
+\index{addini@{addini}!\+\_\+pytest\+::config\+::argparsing\+::\+Parser@{\+\_\+pytest\+::config\+::argparsing\+::\+Parser}}
+\subsubsection{\texorpdfstring{addini()}{addini()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+config.\+argparsing.\+Parser.\+addini (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{help,  }\item[{}]{type = {\ttfamily None},  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}register an ini-file option.
+
+:name: name of the ini-variable
+:type: type of the variable, can be ``pathlist``, ``args``, ``linelist``
+       or ``bool``.
+:default: default value if no ini-file option exists but is queried.
+
+The value of ini-variables can be retrieved via a call to
+:py:func:`config.getini(name) <_pytest.config.Config.getini>`.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1config_1_1argparsing_1_1_parser_a8b9a087d79364eb84f17bd2bd5098c96}\label{class__pytest_1_1config_1_1argparsing_1_1_parser_a8b9a087d79364eb84f17bd2bd5098c96}} 
+\index{\+\_\+pytest\+::config\+::argparsing\+::\+Parser@{\+\_\+pytest\+::config\+::argparsing\+::\+Parser}!addoption@{addoption}}
+\index{addoption@{addoption}!\+\_\+pytest\+::config\+::argparsing\+::\+Parser@{\+\_\+pytest\+::config\+::argparsing\+::\+Parser}}
+\subsubsection{\texorpdfstring{addoption()}{addoption()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+config.\+argparsing.\+Parser.\+addoption (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{opts,  }\item[{}]{attrs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}register a command line option.
+
+:opts: option names, can be short or long options.
+:attrs: same attributes which the ``add_option()`` function of the
+   `argparse library
+   <http://docs.python.org/2/library/argparse.html>`_
+   accepts.
+
+After command line parsing options are available on the pytest config
+object via ``config.option.NAME`` where ``NAME`` is usually set
+by passing a ``dest`` attribute, for example
+``addoption("--long", dest="NAME", ...)``.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1config_1_1argparsing_1_1_parser_ad886d8d67ef88b3fb6b730a1d3a89499}\label{class__pytest_1_1config_1_1argparsing_1_1_parser_ad886d8d67ef88b3fb6b730a1d3a89499}} 
+\index{\+\_\+pytest\+::config\+::argparsing\+::\+Parser@{\+\_\+pytest\+::config\+::argparsing\+::\+Parser}!getgroup@{getgroup}}
+\index{getgroup@{getgroup}!\+\_\+pytest\+::config\+::argparsing\+::\+Parser@{\+\_\+pytest\+::config\+::argparsing\+::\+Parser}}
+\subsubsection{\texorpdfstring{getgroup()}{getgroup()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+config.\+argparsing.\+Parser.\+getgroup (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{description = {\ttfamily \char`\"{}\char`\"{}},  }\item[{}]{after = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}get (or create) a named option Group.
+
+:name: name of the option group.
+:description: long description for --help output.
+:after: name of other group, used for ordering --help output.
+
+The returned group object has an ``addoption`` method with the same
+signature as :py:func:`parser.addoption
+<_pytest.config.Parser.addoption>` but will be shown in the
+respective group in the output of ``pytest. --help``.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1config_1_1argparsing_1_1_parser_a6ea809dfa8c13b61eec15e553aba3517}\label{class__pytest_1_1config_1_1argparsing_1_1_parser_a6ea809dfa8c13b61eec15e553aba3517}} 
+\index{\+\_\+pytest\+::config\+::argparsing\+::\+Parser@{\+\_\+pytest\+::config\+::argparsing\+::\+Parser}!parse\+\_\+known\+\_\+and\+\_\+unknown\+\_\+args@{parse\+\_\+known\+\_\+and\+\_\+unknown\+\_\+args}}
+\index{parse\+\_\+known\+\_\+and\+\_\+unknown\+\_\+args@{parse\+\_\+known\+\_\+and\+\_\+unknown\+\_\+args}!\+\_\+pytest\+::config\+::argparsing\+::\+Parser@{\+\_\+pytest\+::config\+::argparsing\+::\+Parser}}
+\subsubsection{\texorpdfstring{parse\+\_\+known\+\_\+and\+\_\+unknown\+\_\+args()}{parse\_known\_and\_unknown\_args()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+config.\+argparsing.\+Parser.\+parse\+\_\+known\+\_\+and\+\_\+unknown\+\_\+args (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args,  }\item[{}]{namespace = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}parses and returns a namespace object with known arguments, and
+the remaining arguments unknown at this point.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1config_1_1argparsing_1_1_parser_a470e379f33643965fe9a019c319c10d8}\label{class__pytest_1_1config_1_1argparsing_1_1_parser_a470e379f33643965fe9a019c319c10d8}} 
+\index{\+\_\+pytest\+::config\+::argparsing\+::\+Parser@{\+\_\+pytest\+::config\+::argparsing\+::\+Parser}!parse\+\_\+known\+\_\+args@{parse\+\_\+known\+\_\+args}}
+\index{parse\+\_\+known\+\_\+args@{parse\+\_\+known\+\_\+args}!\+\_\+pytest\+::config\+::argparsing\+::\+Parser@{\+\_\+pytest\+::config\+::argparsing\+::\+Parser}}
+\subsubsection{\texorpdfstring{parse\+\_\+known\+\_\+args()}{parse\_known\_args()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+config.\+argparsing.\+Parser.\+parse\+\_\+known\+\_\+args (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args,  }\item[{}]{namespace = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}parses and returns a namespace object with known arguments at this
+point.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/config/argparsing.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,66 @@
+\hypertarget{classpip_1_1commands_1_1wheel_1_1_wheel_command}{}\section{pip.\+commands.\+wheel.\+Wheel\+Command Class Reference}
+\label{classpip_1_1commands_1_1wheel_1_1_wheel_command}\index{pip.\+commands.\+wheel.\+Wheel\+Command@{pip.\+commands.\+wheel.\+Wheel\+Command}}
+
+
+Inherits \hyperlink{classpip_1_1basecommand_1_1_requirement_command}{pip.\+basecommand.\+Requirement\+Command}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1commands_1_1wheel_1_1_wheel_command_a1ee7f8f54b879cac04028bdfe0dfe264}\label{classpip_1_1commands_1_1wheel_1_1_wheel_command_a1ee7f8f54b879cac04028bdfe0dfe264}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, args, kw)
+\item 
+\mbox{\Hypertarget{classpip_1_1commands_1_1wheel_1_1_wheel_command_abda51d32f037ca7458274263c76c1355}\label{classpip_1_1commands_1_1wheel_1_1_wheel_command_abda51d32f037ca7458274263c76c1355}} 
+def {\bfseries check\+\_\+required\+\_\+packages} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1commands_1_1wheel_1_1_wheel_command_a296ef735988331c8f6a842717f04420d}\label{classpip_1_1commands_1_1wheel_1_1_wheel_command_a296ef735988331c8f6a842717f04420d}} 
+def {\bfseries run} (self, options, args)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1commands_1_1wheel_1_1_wheel_command_ad7d3e527ccf2ab9d17966bc0744fa8e5}\label{classpip_1_1commands_1_1wheel_1_1_wheel_command_ad7d3e527ccf2ab9d17966bc0744fa8e5}} 
+string {\bfseries name} = \textquotesingle{}wheel\textquotesingle{}
+\item 
+string {\bfseries usage}
+\item 
+\mbox{\Hypertarget{classpip_1_1commands_1_1wheel_1_1_wheel_command_a600ad908ed76e2d738a0e512bdc40c33}\label{classpip_1_1commands_1_1wheel_1_1_wheel_command_a600ad908ed76e2d738a0e512bdc40c33}} 
+string {\bfseries summary} = \textquotesingle{}Build wheels from your requirements.\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Build Wheel archives for your requirements and dependencies.
+
+Wheel is a built-package format, and offers the advantage of not
+recompiling your software during every install. For more details, see the
+wheel docs: https://wheel.readthedocs.io/en/latest/
+
+Requirements: setuptools>=0.8, and wheel.
+
+'pip wheel' uses the bdist_wheel setuptools extension from the wheel
+package to build individual wheels.\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpip_1_1commands_1_1wheel_1_1_wheel_command_ae27437b66402e740b325333f2b5cfb78}\label{classpip_1_1commands_1_1wheel_1_1_wheel_command_ae27437b66402e740b325333f2b5cfb78}} 
+\index{pip\+::commands\+::wheel\+::\+Wheel\+Command@{pip\+::commands\+::wheel\+::\+Wheel\+Command}!usage@{usage}}
+\index{usage@{usage}!pip\+::commands\+::wheel\+::\+Wheel\+Command@{pip\+::commands\+::wheel\+::\+Wheel\+Command}}
+\subsubsection{\texorpdfstring{usage}{usage}}
+{\footnotesize\ttfamily string pip.\+commands.\+wheel.\+Wheel\+Command.\+usage\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \textcolor{stringliteral}{"""}
+\textcolor{stringliteral}{  %prog [options] <requirement specifier> ...}
+\textcolor{stringliteral}{  %prog [options] -r <requirements file> ...}
+\textcolor{stringliteral}{  %prog [options] [-e] <vcs project url> ...}
+\textcolor{stringliteral}{  %prog [options] [-e] <local project path> ...}
+\textcolor{stringliteral}{  %prog [options] <archive url/path> ..."""}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pip/commands/wheel.\+py\end{DoxyCompactItemize}

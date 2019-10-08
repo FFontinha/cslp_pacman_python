@@ -1,0 +1,57 @@
+\hypertarget{namespacepygame_1_1tests}{}\section{pygame.\+tests Namespace Reference}
+\label{namespacepygame_1_1tests}\index{pygame.\+tests@{pygame.\+tests}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacepygame_1_1tests_1_1____main____}{\+\_\+\+\_\+main\+\_\+\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1tests_adcaa7d58b42f4898d1e097d857720745}\label{namespacepygame_1_1tests_adcaa7d58b42f4898d1e097d857720745}} 
+{\bfseries pkg\+\_\+dir} = os.\+path.\+split(os.\+path.\+abspath(\+\_\+\+\_\+file\+\_\+\+\_\+))\mbox{[}0\mbox{]}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1tests_a47e8705787a06f4b6ac14201cc98c120}\label{namespacepygame_1_1tests_a47e8705787a06f4b6ac14201cc98c120}} 
+{\bfseries parent\+\_\+dir}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1tests_aa2d5abfa1d0340e216cb025575c8f39b}\label{namespacepygame_1_1tests_aa2d5abfa1d0340e216cb025575c8f39b}} 
+{\bfseries pkg\+\_\+name}
+\item 
+tuple {\bfseries is\+\_\+pygame\+\_\+pkg}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Pygame unit test suite package
+
+Exports function run()
+
+A quick way to run the test suite package from the command line
+is by importing the go submodule:
+
+python -m "import pygame.tests" [<test options>]
+
+Command line option --help displays a usage message. Available options
+correspond to the pygame.tests.run arguments.
+
+The xxxx_test submodules of the tests package are unit test suites for
+individual parts of Pygame. Each can also be run as a main program. This is
+useful if the test, such as cdrom_test, is interactive.
+
+For Pygame development the test suite can be run from a Pygame distribution
+root directory using run_tests.py. Alternately, test/__main__.py can be run
+directly.\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1tests_ad35a392765f70b61cc33622ed48fa83f}\label{namespacepygame_1_1tests_ad35a392765f70b61cc33622ed48fa83f}} 
+\index{pygame\+::tests@{pygame\+::tests}!is\+\_\+pygame\+\_\+pkg@{is\+\_\+pygame\+\_\+pkg}}
+\index{is\+\_\+pygame\+\_\+pkg@{is\+\_\+pygame\+\_\+pkg}!pygame\+::tests@{pygame\+::tests}}
+\subsubsection{\texorpdfstring{is\+\_\+pygame\+\_\+pkg}{is\_pygame\_pkg}}
+{\footnotesize\ttfamily tuple pygame.\+tests.\+is\+\_\+pygame\+\_\+pkg}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (pkg\_name == \textcolor{stringliteral}{'tests'} \textcolor{keywordflow}{and}
+2                      os.path.split(parent\_dir)[1] == \textcolor{stringliteral}{'pygame'})
+\end{DoxyCode}

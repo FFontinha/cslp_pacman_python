@@ -1,0 +1,86 @@
+\hypertarget{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set}{}\section{pip.\+req.\+req\+\_\+uninstall.\+Uninstall\+Path\+Set Class Reference}
+\label{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set}\index{pip.\+req.\+req\+\_\+uninstall.\+Uninstall\+Path\+Set@{pip.\+req.\+req\+\_\+uninstall.\+Uninstall\+Path\+Set}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a9875997c6e86b1c934b5860ff0195266}\label{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a9875997c6e86b1c934b5860ff0195266}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, dist)
+\item 
+\mbox{\Hypertarget{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a5dc9701f07416fc0a0339298644ab9b9}\label{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a5dc9701f07416fc0a0339298644ab9b9}} 
+def {\bfseries add} (self, path)
+\item 
+\mbox{\Hypertarget{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a4e0c9effe7b1b3ecc727d9fec06ee25a}\label{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a4e0c9effe7b1b3ecc727d9fec06ee25a}} 
+def {\bfseries add\+\_\+pth} (self, pth\+\_\+file, entry)
+\item 
+def \hyperlink{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a25323acc546b28ca2a8ee8719c733c3d}{compact} (self, paths)
+\item 
+def \hyperlink{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_af085c6d453dc2e63a6f1752239a91a0f}{remove} (self, auto\+\_\+confirm=False)
+\item 
+def \hyperlink{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a127cedc2e28d75e6e66e240e7be39500}{rollback} (self)
+\item 
+def \hyperlink{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a73103147982dceec014e66072c4cf611}{commit} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_aba2783f9a42fdb8e9cb8a963e7d7e7e8}\label{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_aba2783f9a42fdb8e9cb8a963e7d7e7e8}} 
+{\bfseries paths}
+\item 
+\mbox{\Hypertarget{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a0d168185491bbfaf9c90f749c5ca1883}\label{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a0d168185491bbfaf9c90f749c5ca1883}} 
+{\bfseries pth}
+\item 
+\mbox{\Hypertarget{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a5a760ee5ca2eaf0d2d36515bb4761d12}\label{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a5a760ee5ca2eaf0d2d36515bb4761d12}} 
+{\bfseries dist}
+\item 
+\mbox{\Hypertarget{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_afcc931f72c340826193ff81b940170ab}\label{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_afcc931f72c340826193ff81b940170ab}} 
+{\bfseries save\+\_\+dir}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A set of file paths to be removed in the uninstallation of a
+requirement.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a73103147982dceec014e66072c4cf611}\label{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a73103147982dceec014e66072c4cf611}} 
+\index{pip\+::req\+::req\+\_\+uninstall\+::\+Uninstall\+Path\+Set@{pip\+::req\+::req\+\_\+uninstall\+::\+Uninstall\+Path\+Set}!commit@{commit}}
+\index{commit@{commit}!pip\+::req\+::req\+\_\+uninstall\+::\+Uninstall\+Path\+Set@{pip\+::req\+::req\+\_\+uninstall\+::\+Uninstall\+Path\+Set}}
+\subsubsection{\texorpdfstring{commit()}{commit()}}
+{\footnotesize\ttfamily def pip.\+req.\+req\+\_\+uninstall.\+Uninstall\+Path\+Set.\+commit (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove temporary save dir: rollback will no longer be possible.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a25323acc546b28ca2a8ee8719c733c3d}\label{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a25323acc546b28ca2a8ee8719c733c3d}} 
+\index{pip\+::req\+::req\+\_\+uninstall\+::\+Uninstall\+Path\+Set@{pip\+::req\+::req\+\_\+uninstall\+::\+Uninstall\+Path\+Set}!compact@{compact}}
+\index{compact@{compact}!pip\+::req\+::req\+\_\+uninstall\+::\+Uninstall\+Path\+Set@{pip\+::req\+::req\+\_\+uninstall\+::\+Uninstall\+Path\+Set}}
+\subsubsection{\texorpdfstring{compact()}{compact()}}
+{\footnotesize\ttfamily def pip.\+req.\+req\+\_\+uninstall.\+Uninstall\+Path\+Set.\+compact (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{paths }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compact a path set to contain the minimal number of paths
+necessary to contain all paths in the set. If /a/path/ and
+/a/path/to/a/file.txt are both in the set, leave only the
+shorter path.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_af085c6d453dc2e63a6f1752239a91a0f}\label{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_af085c6d453dc2e63a6f1752239a91a0f}} 
+\index{pip\+::req\+::req\+\_\+uninstall\+::\+Uninstall\+Path\+Set@{pip\+::req\+::req\+\_\+uninstall\+::\+Uninstall\+Path\+Set}!remove@{remove}}
+\index{remove@{remove}!pip\+::req\+::req\+\_\+uninstall\+::\+Uninstall\+Path\+Set@{pip\+::req\+::req\+\_\+uninstall\+::\+Uninstall\+Path\+Set}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily def pip.\+req.\+req\+\_\+uninstall.\+Uninstall\+Path\+Set.\+remove (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{auto\+\_\+confirm = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove paths in ``self.paths`` with confirmation (unless
+``auto_confirm`` is True).\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a127cedc2e28d75e6e66e240e7be39500}\label{classpip_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a127cedc2e28d75e6e66e240e7be39500}} 
+\index{pip\+::req\+::req\+\_\+uninstall\+::\+Uninstall\+Path\+Set@{pip\+::req\+::req\+\_\+uninstall\+::\+Uninstall\+Path\+Set}!rollback@{rollback}}
+\index{rollback@{rollback}!pip\+::req\+::req\+\_\+uninstall\+::\+Uninstall\+Path\+Set@{pip\+::req\+::req\+\_\+uninstall\+::\+Uninstall\+Path\+Set}}
+\subsubsection{\texorpdfstring{rollback()}{rollback()}}
+{\footnotesize\ttfamily def pip.\+req.\+req\+\_\+uninstall.\+Uninstall\+Path\+Set.\+rollback (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Rollback the changes previously made by remove().\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pip/req/req\+\_\+uninstall.\+py\end{DoxyCompactItemize}

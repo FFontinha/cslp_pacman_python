@@ -1,0 +1,263 @@
+\hypertarget{namespaceviewer}{}\section{viewer Namespace Reference}
+\label{namespaceviewer}\index{viewer@{viewer}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classviewer_1_1_game_over}{Game\+Over}
+\item 
+class \hyperlink{classviewer_1_1_ghost}{Ghost}
+\item 
+class \hyperlink{classviewer_1_1_pac_man}{Pac\+Man}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceviewer_a0826d04cc7d687880b5319be8eb7cd43}{messages\+\_\+handler} (\hyperlink{namespaceviewer_aa3b7314e33c7838d36b05e751690ea1b}{ws\+\_\+path}, queue)
+\item 
+def \hyperlink{namespaceviewer_abc882e9f90b892fa6984e88c1a387920}{clear\+\_\+callback} (surf, rect)
+\item 
+def \hyperlink{namespaceviewer_aa2b64260b485ecd3de1ef871b30cb966}{scale} (pos)
+\item 
+def \hyperlink{namespaceviewer_a1907ec5a9737fd37e3d6401cedfe3c86}{draw\+\_\+background} (mapa, S\+C\+R\+E\+EN)
+\item 
+def \hyperlink{namespaceviewer_a9907b06131a30cefdda3202aa498e6b6}{draw\+\_\+wall} (S\+C\+R\+E\+EN, x, y)
+\item 
+def \hyperlink{namespaceviewer_a2d2685c19dd8912cb8999147b8774a39}{draw\+\_\+energy} (S\+C\+R\+E\+EN, x, y, boost=False)
+\item 
+def \hyperlink{namespaceviewer_ad78eceb6648e8eadcdcb58cf7d161dfb}{draw\+\_\+info} (S\+C\+R\+E\+EN, text, pos)
+\item 
+def \hyperlink{namespaceviewer_a4e02ea07dd7149a5b5afcffb300c14aa}{main\+\_\+loop} (\hyperlink{namespaceviewer_a1f452bb9e64e242ae0cf6089e85cf1ca}{q})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceviewer_ae5293c9bdae639c8c4c58c076722d755}{level}
+\item 
+\hyperlink{namespaceviewer_a7a420ec0e1bb58775b845f32c4674daa}{logger} = logging.\+get\+Logger(\textquotesingle{}websockets\textquotesingle{})
+\item 
+dictionary \hyperlink{namespaceviewer_a3bd33705051ffc40b5bfd35e243ae0ac}{P\+A\+C\+M\+AN} = \{\textquotesingle{}up\textquotesingle{}\+: (24, 72), \textquotesingle{}left\textquotesingle{}\+: (0, 72), \textquotesingle{}down\textquotesingle{}\+: (120, 72), \textquotesingle{}right\textquotesingle{}\+: (96, 72)\}
+\item 
+dictionary \hyperlink{namespaceviewer_a49becc796180fd2036cad73589a3cfcc}{R\+E\+D\+\_\+\+G\+H\+O\+ST} = \{\textquotesingle{}up\textquotesingle{}\+: (168, 144), \textquotesingle{}left\textquotesingle{}\+: (96, 144), \textquotesingle{}down\textquotesingle{}\+: (48, 144), \textquotesingle{}right\textquotesingle{}\+: (0, 144)\}
+\item 
+dictionary \hyperlink{namespaceviewer_abe62d2acf5d0c83805fa210e5e88eca2}{P\+I\+N\+K\+\_\+\+G\+H\+O\+ST} = \{\textquotesingle{}up\textquotesingle{}\+: (168, 192), \textquotesingle{}left\textquotesingle{}\+: (96, 192), \textquotesingle{}down\textquotesingle{}\+: (48, 192), \textquotesingle{}right\textquotesingle{}\+: (0, 192)\}
+\item 
+dictionary \hyperlink{namespaceviewer_a8dd3905e87c1c9dfdb99de2c99d24bd8}{O\+R\+A\+N\+G\+E\+\_\+\+G\+H\+O\+ST} = \{\textquotesingle{}up\textquotesingle{}\+: (168, 216), \textquotesingle{}left\textquotesingle{}\+: (96, 216), \textquotesingle{}down\textquotesingle{}\+: (48, 216), \textquotesingle{}right\textquotesingle{}\+: (0, 216)\}
+\item 
+dictionary \hyperlink{namespaceviewer_a597b296be3b6c09a7759a6b15e8691d2}{B\+L\+U\+E\+\_\+\+G\+H\+O\+ST} = \{\textquotesingle{}up\textquotesingle{}\+: (8$\ast$24+168, 192), \textquotesingle{}left\textquotesingle{}\+: (8$\ast$24+96, 192), \textquotesingle{}down\textquotesingle{}\+: (8$\ast$24+48, 192), \textquotesingle{}right\textquotesingle{}\+: (8$\ast$24+0, 192)\}
+\item 
+list \hyperlink{namespaceviewer_acf3b118d8806b60e75950eb17c346ff7}{G\+H\+O\+S\+TS} = \mbox{[}\hyperlink{namespaceviewer_a49becc796180fd2036cad73589a3cfcc}{R\+E\+D\+\_\+\+G\+H\+O\+ST}, \hyperlink{namespaceviewer_abe62d2acf5d0c83805fa210e5e88eca2}{P\+I\+N\+K\+\_\+\+G\+H\+O\+ST}, \hyperlink{namespaceviewer_a8dd3905e87c1c9dfdb99de2c99d24bd8}{O\+R\+A\+N\+G\+E\+\_\+\+G\+H\+O\+ST}, \hyperlink{namespaceviewer_a597b296be3b6c09a7759a6b15e8691d2}{B\+L\+U\+E\+\_\+\+G\+H\+O\+ST}\mbox{]}
+\item 
+\hyperlink{namespaceviewer_ad9bf277fee851c5eadd676fe6f1a24e8}{int} \hyperlink{namespaceviewer_a3086f1a9ab26e199f7f0b53f1fd0443f}{C\+H\+A\+R\+\_\+\+L\+E\+N\+G\+TH} = 26
+\item 
+\hyperlink{namespaceviewer_ad9bf277fee851c5eadd676fe6f1a24e8}{int} \hyperlink{namespaceviewer_ae24d498ff64ab3cc41406c591e58c0dd}{C\+H\+A\+R\+\_\+\+S\+I\+ZE} = \hyperlink{namespaceviewer_a3086f1a9ab26e199f7f0b53f1fd0443f}{C\+H\+A\+R\+\_\+\+L\+E\+N\+G\+TH}, \hyperlink{namespaceviewer_a3086f1a9ab26e199f7f0b53f1fd0443f}{C\+H\+A\+R\+\_\+\+L\+E\+N\+G\+TH}
+\item 
+\hyperlink{namespaceviewer_ad9bf277fee851c5eadd676fe6f1a24e8}{int} \hyperlink{namespaceviewer_ad5e2ff3c34674b67764a31dc0ba5a1c4}{E\+N\+E\+R\+G\+Y\+\_\+\+R\+A\+D\+I\+US} = 4
+\item 
+\hyperlink{namespaceviewer_ad9bf277fee851c5eadd676fe6f1a24e8}{int} \hyperlink{namespaceviewer_ab4d3ff3e9dd13bedd3897c4871c927ad}{B\+O\+O\+S\+T\+\_\+\+R\+A\+D\+I\+US} = 8
+\item 
+\hyperlink{namespaceviewer_a33982a3fdf16022861ad8227ed375a3f}{S\+C\+A\+LE} = None
+\item 
+\hyperlink{namespaceviewer_a40cdbd0d97e7e53fe61800e7e504e763}{parser} = argparse.\+Argument\+Parser()
+\item 
+\hyperlink{namespaceviewer_a4519b0a4a06be2d506044dbada863c7e}{help}
+\item 
+\hyperlink{namespaceviewer_af9634fd9573f0f29bdd7856c3b61decc}{default}
+\item 
+\hyperlink{namespaceviewer_aae395bb4d0ce7a287019769e4ed6e603}{type}
+\item 
+\hyperlink{namespaceviewer_ad9bf277fee851c5eadd676fe6f1a24e8}{int}
+\item 
+\hyperlink{namespaceviewer_ae4c74d58aa55cd0c26a4f9113529f1bf}{args} = parser.\+parse\+\_\+args()
+\item 
+\hyperlink{namespaceviewer_a660bbde5965f91becad747868e409c6c}{L\+O\+OP} = asyncio.\+get\+\_\+event\+\_\+loop()
+\item 
+\hyperlink{namespaceviewer_a1f452bb9e64e242ae0cf6089e85cf1ca}{q} = asyncio.\+Queue()
+\item 
+string \hyperlink{namespaceviewer_aa3b7314e33c7838d36b05e751690ea1b}{ws\+\_\+path} = \textquotesingle{}ws\+://\{\}\+:\{\}/viewer\textquotesingle{}.format(args.\+server, args.\+port)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceviewer_abc882e9f90b892fa6984e88c1a387920}\label{namespaceviewer_abc882e9f90b892fa6984e88c1a387920}} 
+\index{viewer@{viewer}!clear\+\_\+callback@{clear\+\_\+callback}}
+\index{clear\+\_\+callback@{clear\+\_\+callback}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{clear\+\_\+callback()}{clear\_callback()}}
+{\footnotesize\ttfamily def viewer.\+clear\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{surf,  }\item[{}]{rect }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceviewer_a1907ec5a9737fd37e3d6401cedfe3c86}\label{namespaceviewer_a1907ec5a9737fd37e3d6401cedfe3c86}} 
+\index{viewer@{viewer}!draw\+\_\+background@{draw\+\_\+background}}
+\index{draw\+\_\+background@{draw\+\_\+background}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{draw\+\_\+background()}{draw\_background()}}
+{\footnotesize\ttfamily def viewer.\+draw\+\_\+background (\begin{DoxyParamCaption}\item[{}]{mapa,  }\item[{}]{S\+C\+R\+E\+EN }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceviewer_a2d2685c19dd8912cb8999147b8774a39}\label{namespaceviewer_a2d2685c19dd8912cb8999147b8774a39}} 
+\index{viewer@{viewer}!draw\+\_\+energy@{draw\+\_\+energy}}
+\index{draw\+\_\+energy@{draw\+\_\+energy}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{draw\+\_\+energy()}{draw\_energy()}}
+{\footnotesize\ttfamily def viewer.\+draw\+\_\+energy (\begin{DoxyParamCaption}\item[{}]{S\+C\+R\+E\+EN,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{boost = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceviewer_ad78eceb6648e8eadcdcb58cf7d161dfb}\label{namespaceviewer_ad78eceb6648e8eadcdcb58cf7d161dfb}} 
+\index{viewer@{viewer}!draw\+\_\+info@{draw\+\_\+info}}
+\index{draw\+\_\+info@{draw\+\_\+info}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{draw\+\_\+info()}{draw\_info()}}
+{\footnotesize\ttfamily def viewer.\+draw\+\_\+info (\begin{DoxyParamCaption}\item[{}]{S\+C\+R\+E\+EN,  }\item[{}]{text,  }\item[{}]{pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceviewer_a9907b06131a30cefdda3202aa498e6b6}\label{namespaceviewer_a9907b06131a30cefdda3202aa498e6b6}} 
+\index{viewer@{viewer}!draw\+\_\+wall@{draw\+\_\+wall}}
+\index{draw\+\_\+wall@{draw\+\_\+wall}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{draw\+\_\+wall()}{draw\_wall()}}
+{\footnotesize\ttfamily def viewer.\+draw\+\_\+wall (\begin{DoxyParamCaption}\item[{}]{S\+C\+R\+E\+EN,  }\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceviewer_a4e02ea07dd7149a5b5afcffb300c14aa}\label{namespaceviewer_a4e02ea07dd7149a5b5afcffb300c14aa}} 
+\index{viewer@{viewer}!main\+\_\+loop@{main\+\_\+loop}}
+\index{main\+\_\+loop@{main\+\_\+loop}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{main\+\_\+loop()}{main\_loop()}}
+{\footnotesize\ttfamily def viewer.\+main\+\_\+loop (\begin{DoxyParamCaption}\item[{}]{q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceviewer_a0826d04cc7d687880b5319be8eb7cd43}\label{namespaceviewer_a0826d04cc7d687880b5319be8eb7cd43}} 
+\index{viewer@{viewer}!messages\+\_\+handler@{messages\+\_\+handler}}
+\index{messages\+\_\+handler@{messages\+\_\+handler}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{messages\+\_\+handler()}{messages\_handler()}}
+{\footnotesize\ttfamily def viewer.\+messages\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{ws\+\_\+path,  }\item[{}]{queue }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceviewer_aa2b64260b485ecd3de1ef871b30cb966}\label{namespaceviewer_aa2b64260b485ecd3de1ef871b30cb966}} 
+\index{viewer@{viewer}!scale@{scale}}
+\index{scale@{scale}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily def viewer.\+scale (\begin{DoxyParamCaption}\item[{}]{pos }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceviewer_ae4c74d58aa55cd0c26a4f9113529f1bf}\label{namespaceviewer_ae4c74d58aa55cd0c26a4f9113529f1bf}} 
+\index{viewer@{viewer}!args@{args}}
+\index{args@{args}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily viewer.\+args = parser.\+parse\+\_\+args()}
+
+\mbox{\Hypertarget{namespaceviewer_a597b296be3b6c09a7759a6b15e8691d2}\label{namespaceviewer_a597b296be3b6c09a7759a6b15e8691d2}} 
+\index{viewer@{viewer}!B\+L\+U\+E\+\_\+\+G\+H\+O\+ST@{B\+L\+U\+E\+\_\+\+G\+H\+O\+ST}}
+\index{B\+L\+U\+E\+\_\+\+G\+H\+O\+ST@{B\+L\+U\+E\+\_\+\+G\+H\+O\+ST}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{B\+L\+U\+E\+\_\+\+G\+H\+O\+ST}{BLUE\_GHOST}}
+{\footnotesize\ttfamily dictionary viewer.\+B\+L\+U\+E\+\_\+\+G\+H\+O\+ST = \{\textquotesingle{}up\textquotesingle{}\+: (8$\ast$24+168, 192), \textquotesingle{}left\textquotesingle{}\+: (8$\ast$24+96, 192), \textquotesingle{}down\textquotesingle{}\+: (8$\ast$24+48, 192), \textquotesingle{}right\textquotesingle{}\+: (8$\ast$24+0, 192)\}}
+
+\mbox{\Hypertarget{namespaceviewer_ab4d3ff3e9dd13bedd3897c4871c927ad}\label{namespaceviewer_ab4d3ff3e9dd13bedd3897c4871c927ad}} 
+\index{viewer@{viewer}!B\+O\+O\+S\+T\+\_\+\+R\+A\+D\+I\+US@{B\+O\+O\+S\+T\+\_\+\+R\+A\+D\+I\+US}}
+\index{B\+O\+O\+S\+T\+\_\+\+R\+A\+D\+I\+US@{B\+O\+O\+S\+T\+\_\+\+R\+A\+D\+I\+US}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{B\+O\+O\+S\+T\+\_\+\+R\+A\+D\+I\+US}{BOOST\_RADIUS}}
+{\footnotesize\ttfamily \hyperlink{namespaceviewer_ad9bf277fee851c5eadd676fe6f1a24e8}{int} viewer.\+B\+O\+O\+S\+T\+\_\+\+R\+A\+D\+I\+US = 8}
+
+\mbox{\Hypertarget{namespaceviewer_a3086f1a9ab26e199f7f0b53f1fd0443f}\label{namespaceviewer_a3086f1a9ab26e199f7f0b53f1fd0443f}} 
+\index{viewer@{viewer}!C\+H\+A\+R\+\_\+\+L\+E\+N\+G\+TH@{C\+H\+A\+R\+\_\+\+L\+E\+N\+G\+TH}}
+\index{C\+H\+A\+R\+\_\+\+L\+E\+N\+G\+TH@{C\+H\+A\+R\+\_\+\+L\+E\+N\+G\+TH}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{C\+H\+A\+R\+\_\+\+L\+E\+N\+G\+TH}{CHAR\_LENGTH}}
+{\footnotesize\ttfamily \hyperlink{namespaceviewer_ad9bf277fee851c5eadd676fe6f1a24e8}{int} viewer.\+C\+H\+A\+R\+\_\+\+L\+E\+N\+G\+TH = 26}
+
+\mbox{\Hypertarget{namespaceviewer_ae24d498ff64ab3cc41406c591e58c0dd}\label{namespaceviewer_ae24d498ff64ab3cc41406c591e58c0dd}} 
+\index{viewer@{viewer}!C\+H\+A\+R\+\_\+\+S\+I\+ZE@{C\+H\+A\+R\+\_\+\+S\+I\+ZE}}
+\index{C\+H\+A\+R\+\_\+\+S\+I\+ZE@{C\+H\+A\+R\+\_\+\+S\+I\+ZE}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{C\+H\+A\+R\+\_\+\+S\+I\+ZE}{CHAR\_SIZE}}
+{\footnotesize\ttfamily \hyperlink{namespaceviewer_ad9bf277fee851c5eadd676fe6f1a24e8}{int} viewer.\+C\+H\+A\+R\+\_\+\+S\+I\+ZE = \hyperlink{namespaceviewer_a3086f1a9ab26e199f7f0b53f1fd0443f}{C\+H\+A\+R\+\_\+\+L\+E\+N\+G\+TH}, \hyperlink{namespaceviewer_a3086f1a9ab26e199f7f0b53f1fd0443f}{C\+H\+A\+R\+\_\+\+L\+E\+N\+G\+TH}}
+
+\mbox{\Hypertarget{namespaceviewer_af9634fd9573f0f29bdd7856c3b61decc}\label{namespaceviewer_af9634fd9573f0f29bdd7856c3b61decc}} 
+\index{viewer@{viewer}!default@{default}}
+\index{default@{default}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily viewer.\+default}
+
+\mbox{\Hypertarget{namespaceviewer_ad5e2ff3c34674b67764a31dc0ba5a1c4}\label{namespaceviewer_ad5e2ff3c34674b67764a31dc0ba5a1c4}} 
+\index{viewer@{viewer}!E\+N\+E\+R\+G\+Y\+\_\+\+R\+A\+D\+I\+US@{E\+N\+E\+R\+G\+Y\+\_\+\+R\+A\+D\+I\+US}}
+\index{E\+N\+E\+R\+G\+Y\+\_\+\+R\+A\+D\+I\+US@{E\+N\+E\+R\+G\+Y\+\_\+\+R\+A\+D\+I\+US}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{E\+N\+E\+R\+G\+Y\+\_\+\+R\+A\+D\+I\+US}{ENERGY\_RADIUS}}
+{\footnotesize\ttfamily \hyperlink{namespaceviewer_ad9bf277fee851c5eadd676fe6f1a24e8}{int} viewer.\+E\+N\+E\+R\+G\+Y\+\_\+\+R\+A\+D\+I\+US = 4}
+
+\mbox{\Hypertarget{namespaceviewer_acf3b118d8806b60e75950eb17c346ff7}\label{namespaceviewer_acf3b118d8806b60e75950eb17c346ff7}} 
+\index{viewer@{viewer}!G\+H\+O\+S\+TS@{G\+H\+O\+S\+TS}}
+\index{G\+H\+O\+S\+TS@{G\+H\+O\+S\+TS}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{G\+H\+O\+S\+TS}{GHOSTS}}
+{\footnotesize\ttfamily list viewer.\+G\+H\+O\+S\+TS = \mbox{[}\hyperlink{namespaceviewer_a49becc796180fd2036cad73589a3cfcc}{R\+E\+D\+\_\+\+G\+H\+O\+ST}, \hyperlink{namespaceviewer_abe62d2acf5d0c83805fa210e5e88eca2}{P\+I\+N\+K\+\_\+\+G\+H\+O\+ST}, \hyperlink{namespaceviewer_a8dd3905e87c1c9dfdb99de2c99d24bd8}{O\+R\+A\+N\+G\+E\+\_\+\+G\+H\+O\+ST}, \hyperlink{namespaceviewer_a597b296be3b6c09a7759a6b15e8691d2}{B\+L\+U\+E\+\_\+\+G\+H\+O\+ST}\mbox{]}}
+
+\mbox{\Hypertarget{namespaceviewer_a4519b0a4a06be2d506044dbada863c7e}\label{namespaceviewer_a4519b0a4a06be2d506044dbada863c7e}} 
+\index{viewer@{viewer}!help@{help}}
+\index{help@{help}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily viewer.\+help}
+
+\mbox{\Hypertarget{namespaceviewer_ad9bf277fee851c5eadd676fe6f1a24e8}\label{namespaceviewer_ad9bf277fee851c5eadd676fe6f1a24e8}} 
+\index{viewer@{viewer}!int@{int}}
+\index{int@{int}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{int}{int}}
+{\footnotesize\ttfamily viewer.\+int}
+
+\mbox{\Hypertarget{namespaceviewer_ae5293c9bdae639c8c4c58c076722d755}\label{namespaceviewer_ae5293c9bdae639c8c4c58c076722d755}} 
+\index{viewer@{viewer}!level@{level}}
+\index{level@{level}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily viewer.\+level}
+
+\mbox{\Hypertarget{namespaceviewer_a7a420ec0e1bb58775b845f32c4674daa}\label{namespaceviewer_a7a420ec0e1bb58775b845f32c4674daa}} 
+\index{viewer@{viewer}!logger@{logger}}
+\index{logger@{logger}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily viewer.\+logger = logging.\+get\+Logger(\textquotesingle{}websockets\textquotesingle{})}
+
+\mbox{\Hypertarget{namespaceviewer_a660bbde5965f91becad747868e409c6c}\label{namespaceviewer_a660bbde5965f91becad747868e409c6c}} 
+\index{viewer@{viewer}!L\+O\+OP@{L\+O\+OP}}
+\index{L\+O\+OP@{L\+O\+OP}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{L\+O\+OP}{LOOP}}
+{\footnotesize\ttfamily viewer.\+L\+O\+OP = asyncio.\+get\+\_\+event\+\_\+loop()}
+
+\mbox{\Hypertarget{namespaceviewer_a8dd3905e87c1c9dfdb99de2c99d24bd8}\label{namespaceviewer_a8dd3905e87c1c9dfdb99de2c99d24bd8}} 
+\index{viewer@{viewer}!O\+R\+A\+N\+G\+E\+\_\+\+G\+H\+O\+ST@{O\+R\+A\+N\+G\+E\+\_\+\+G\+H\+O\+ST}}
+\index{O\+R\+A\+N\+G\+E\+\_\+\+G\+H\+O\+ST@{O\+R\+A\+N\+G\+E\+\_\+\+G\+H\+O\+ST}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{O\+R\+A\+N\+G\+E\+\_\+\+G\+H\+O\+ST}{ORANGE\_GHOST}}
+{\footnotesize\ttfamily dictionary viewer.\+O\+R\+A\+N\+G\+E\+\_\+\+G\+H\+O\+ST = \{\textquotesingle{}up\textquotesingle{}\+: (168, 216), \textquotesingle{}left\textquotesingle{}\+: (96, 216), \textquotesingle{}down\textquotesingle{}\+: (48, 216), \textquotesingle{}right\textquotesingle{}\+: (0, 216)\}}
+
+\mbox{\Hypertarget{namespaceviewer_a3bd33705051ffc40b5bfd35e243ae0ac}\label{namespaceviewer_a3bd33705051ffc40b5bfd35e243ae0ac}} 
+\index{viewer@{viewer}!P\+A\+C\+M\+AN@{P\+A\+C\+M\+AN}}
+\index{P\+A\+C\+M\+AN@{P\+A\+C\+M\+AN}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{P\+A\+C\+M\+AN}{PACMAN}}
+{\footnotesize\ttfamily dictionary viewer.\+P\+A\+C\+M\+AN = \{\textquotesingle{}up\textquotesingle{}\+: (24, 72), \textquotesingle{}left\textquotesingle{}\+: (0, 72), \textquotesingle{}down\textquotesingle{}\+: (120, 72), \textquotesingle{}right\textquotesingle{}\+: (96, 72)\}}
+
+\mbox{\Hypertarget{namespaceviewer_a40cdbd0d97e7e53fe61800e7e504e763}\label{namespaceviewer_a40cdbd0d97e7e53fe61800e7e504e763}} 
+\index{viewer@{viewer}!parser@{parser}}
+\index{parser@{parser}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{parser}{parser}}
+{\footnotesize\ttfamily viewer.\+parser = argparse.\+Argument\+Parser()}
+
+\mbox{\Hypertarget{namespaceviewer_abe62d2acf5d0c83805fa210e5e88eca2}\label{namespaceviewer_abe62d2acf5d0c83805fa210e5e88eca2}} 
+\index{viewer@{viewer}!P\+I\+N\+K\+\_\+\+G\+H\+O\+ST@{P\+I\+N\+K\+\_\+\+G\+H\+O\+ST}}
+\index{P\+I\+N\+K\+\_\+\+G\+H\+O\+ST@{P\+I\+N\+K\+\_\+\+G\+H\+O\+ST}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{P\+I\+N\+K\+\_\+\+G\+H\+O\+ST}{PINK\_GHOST}}
+{\footnotesize\ttfamily dictionary viewer.\+P\+I\+N\+K\+\_\+\+G\+H\+O\+ST = \{\textquotesingle{}up\textquotesingle{}\+: (168, 192), \textquotesingle{}left\textquotesingle{}\+: (96, 192), \textquotesingle{}down\textquotesingle{}\+: (48, 192), \textquotesingle{}right\textquotesingle{}\+: (0, 192)\}}
+
+\mbox{\Hypertarget{namespaceviewer_a1f452bb9e64e242ae0cf6089e85cf1ca}\label{namespaceviewer_a1f452bb9e64e242ae0cf6089e85cf1ca}} 
+\index{viewer@{viewer}!q@{q}}
+\index{q@{q}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{q}{q}}
+{\footnotesize\ttfamily viewer.\+q = asyncio.\+Queue()}
+
+\mbox{\Hypertarget{namespaceviewer_a49becc796180fd2036cad73589a3cfcc}\label{namespaceviewer_a49becc796180fd2036cad73589a3cfcc}} 
+\index{viewer@{viewer}!R\+E\+D\+\_\+\+G\+H\+O\+ST@{R\+E\+D\+\_\+\+G\+H\+O\+ST}}
+\index{R\+E\+D\+\_\+\+G\+H\+O\+ST@{R\+E\+D\+\_\+\+G\+H\+O\+ST}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{R\+E\+D\+\_\+\+G\+H\+O\+ST}{RED\_GHOST}}
+{\footnotesize\ttfamily dictionary viewer.\+R\+E\+D\+\_\+\+G\+H\+O\+ST = \{\textquotesingle{}up\textquotesingle{}\+: (168, 144), \textquotesingle{}left\textquotesingle{}\+: (96, 144), \textquotesingle{}down\textquotesingle{}\+: (48, 144), \textquotesingle{}right\textquotesingle{}\+: (0, 144)\}}
+
+\mbox{\Hypertarget{namespaceviewer_a33982a3fdf16022861ad8227ed375a3f}\label{namespaceviewer_a33982a3fdf16022861ad8227ed375a3f}} 
+\index{viewer@{viewer}!S\+C\+A\+LE@{S\+C\+A\+LE}}
+\index{S\+C\+A\+LE@{S\+C\+A\+LE}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{S\+C\+A\+LE}{SCALE}}
+{\footnotesize\ttfamily def viewer.\+S\+C\+A\+LE = None}
+
+\mbox{\Hypertarget{namespaceviewer_aae395bb4d0ce7a287019769e4ed6e603}\label{namespaceviewer_aae395bb4d0ce7a287019769e4ed6e603}} 
+\index{viewer@{viewer}!type@{type}}
+\index{type@{type}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily viewer.\+type}
+
+\mbox{\Hypertarget{namespaceviewer_aa3b7314e33c7838d36b05e751690ea1b}\label{namespaceviewer_aa3b7314e33c7838d36b05e751690ea1b}} 
+\index{viewer@{viewer}!ws\+\_\+path@{ws\+\_\+path}}
+\index{ws\+\_\+path@{ws\+\_\+path}!viewer@{viewer}}
+\subsubsection{\texorpdfstring{ws\+\_\+path}{ws\_path}}
+{\footnotesize\ttfamily string viewer.\+ws\+\_\+path = \textquotesingle{}ws\+://\{\}\+:\{\}/viewer\textquotesingle{}.format(args.\+server, args.\+port)}
+

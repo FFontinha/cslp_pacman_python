@@ -1,0 +1,63 @@
+\hypertarget{namespacepygame_1_1ftfont}{}\section{pygame.\+ftfont Namespace Reference}
+\label{namespacepygame_1_1ftfont}\index{pygame.\+ftfont@{pygame.\+ftfont}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpygame_1_1ftfont_1_1_font}{Font}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepygame_1_1ftfont_a0e836cc8e76fc482a4d0f5b187b4dd31}{get\+\_\+init} ()
+\item 
+def \hyperlink{namespacepygame_1_1ftfont_a1e2a89b4d0dfdbaee9aadb6b2293c5c5}{Sys\+Font} (name, size, bold=0, italic=0, constructor=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1ftfont_a985c280ffaf90d929036dd6fc23dc72d}\label{namespacepygame_1_1ftfont_a985c280ffaf90d929036dd6fc23dc72d}} 
+{\bfseries Font\+Type} = \hyperlink{classpygame_1_1ftfont_1_1_font}{Font}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}pygame module for loading and rendering fonts (freetype alternative)\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1ftfont_a0e836cc8e76fc482a4d0f5b187b4dd31}\label{namespacepygame_1_1ftfont_a0e836cc8e76fc482a4d0f5b187b4dd31}} 
+\index{pygame\+::ftfont@{pygame\+::ftfont}!get\+\_\+init@{get\+\_\+init}}
+\index{get\+\_\+init@{get\+\_\+init}!pygame\+::ftfont@{pygame\+::ftfont}}
+\subsubsection{\texorpdfstring{get\+\_\+init()}{get\_init()}}
+{\footnotesize\ttfamily def pygame.\+ftfont.\+get\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}get_init() -> bool
+   true if the font module is initialized\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1ftfont_a1e2a89b4d0dfdbaee9aadb6b2293c5c5}\label{namespacepygame_1_1ftfont_a1e2a89b4d0dfdbaee9aadb6b2293c5c5}} 
+\index{pygame\+::ftfont@{pygame\+::ftfont}!Sys\+Font@{Sys\+Font}}
+\index{Sys\+Font@{Sys\+Font}!pygame\+::ftfont@{pygame\+::ftfont}}
+\subsubsection{\texorpdfstring{Sys\+Font()}{SysFont()}}
+{\footnotesize\ttfamily def pygame.\+ftfont.\+Sys\+Font (\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{size,  }\item[{}]{bold = {\ttfamily 0},  }\item[{}]{italic = {\ttfamily 0},  }\item[{}]{constructor = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.ftfont.SysFont(name, size, bold=False, italic=False, constructor=None) -> Font
+   create a pygame Font from system font resources (freetype alternative)
+
+   This will search the system fonts for the given font
+   name. You can also enable bold or italic styles, and
+   the appropriate system font will be selected if available.
+
+   This will always return a valid Font object, and will
+   fallback on the builtin pygame font if the given font
+   is not found.
+
+   Name can also be a comma separated list of names, in
+   which case set of names will be searched in order. Pygame
+   uses a small set of common font aliases, if the specific
+   font you ask for is not available, a reasonable alternative
+   may be used.
+
+   if optional contructor is provided, it must be a function with
+   signature constructor(fontpath, size, bold, italic) which returns
+   a Font instance. If None, a pygame.ftfont.Font object is created.
+\end{DoxyVerb}
+ 

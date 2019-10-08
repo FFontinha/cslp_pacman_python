@@ -1,0 +1,47 @@
+\hypertarget{namespacewebsockets_1_1uri}{}\section{websockets.\+uri Namespace Reference}
+\label{namespacewebsockets_1_1uri}\index{websockets.\+uri@{websockets.\+uri}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacewebsockets_1_1uri_abc2223b9dcef8e93c5d8bc5d705d434a}{parse\+\_\+uri} (uri)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Web\+Socket\+U\+RI}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}The :mod:`websockets.uri` module implements parsing of WebSocket URIs
+according to `section 3 of RFC 6455`_.
+
+.. _section 3 of RFC 6455: http://tools.ietf.org/html/rfc6455#section-3\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacewebsockets_1_1uri_abc2223b9dcef8e93c5d8bc5d705d434a}\label{namespacewebsockets_1_1uri_abc2223b9dcef8e93c5d8bc5d705d434a}} 
+\index{websockets\+::uri@{websockets\+::uri}!parse\+\_\+uri@{parse\+\_\+uri}}
+\index{parse\+\_\+uri@{parse\+\_\+uri}!websockets\+::uri@{websockets\+::uri}}
+\subsubsection{\texorpdfstring{parse\+\_\+uri()}{parse\_uri()}}
+{\footnotesize\ttfamily def websockets.\+uri.\+parse\+\_\+uri (\begin{DoxyParamCaption}\item[{}]{uri }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function parses and validates a WebSocket URI.
+
+If the URI is valid, it returns a :class:`WebSocketURI`.
+
+Otherwise it raises an :exc:`~websockets.exceptions.InvalidURI` exception.\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacewebsockets_1_1uri_a03868e2a55279756aef3de8dfc4c743c}\label{namespacewebsockets_1_1uri_a03868e2a55279756aef3de8dfc4c743c}} 
+\index{websockets\+::uri@{websockets\+::uri}!Web\+Socket\+U\+RI@{Web\+Socket\+U\+RI}}
+\index{Web\+Socket\+U\+RI@{Web\+Socket\+U\+RI}!websockets\+::uri@{websockets\+::uri}}
+\subsubsection{\texorpdfstring{Web\+Socket\+U\+RI}{WebSocketURI}}
+{\footnotesize\ttfamily websockets.\+uri.\+Web\+Socket\+U\+RI}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  collections.namedtuple(
+2     \textcolor{stringliteral}{'WebSocketURI'}, [\textcolor{stringliteral}{'secure'}, \textcolor{stringliteral}{'host'}, \textcolor{stringliteral}{'port'}, \textcolor{stringliteral}{'resource\_name'}, \textcolor{stringliteral}{'user\_info'}])
+\end{DoxyCode}

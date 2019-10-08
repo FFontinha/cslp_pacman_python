@@ -1,0 +1,103 @@
+\hypertarget{namespacepygame_1_1threads}{}\section{pygame.\+threads Namespace Reference}
+\label{namespacepygame_1_1threads}\index{pygame.\+threads@{pygame.\+threads}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacepygame_1_1threads_1_1_py25_queue}{Py25\+Queue}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpygame_1_1threads_1_1_func_result}{Func\+Result}
+\item 
+class \hyperlink{classpygame_1_1threads_1_1_worker_queue}{Worker\+Queue}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepygame_1_1threads_ae46d2018611d92c7aaed2a910a68d334}{init} (number\+\_\+of\+\_\+workers=0)
+\item 
+def \hyperlink{namespacepygame_1_1threads_a68b34d829709c92a3a928a6c523c26d3}{quit} ()
+\item 
+def \hyperlink{namespacepygame_1_1threads_af5a9cff0c554b4f8b31b1ee47e616213}{benchmark\+\_\+workers} (a\+\_\+bench\+\_\+func=None, the\+\_\+data=None)
+\item 
+def \hyperlink{namespacepygame_1_1threads_a970354d230ca56169d26606be8997346}{tmap} (f, seq\+\_\+args, num\+\_\+workers=20, worker\+\_\+queue=None, wait=True, stop\+\_\+on\+\_\+error=True)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1threads_a1c2180d4c7b0bc5753a2b128e7db59ef}\label{namespacepygame_1_1threads_a1c2180d4c7b0bc5753a2b128e7db59ef}} 
+{\bfseries Thread} = threading.\+Thread
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1threads_a4dfae11edb5f99b75da15ef625aa491a}\label{namespacepygame_1_1threads_a4dfae11edb5f99b75da15ef625aa491a}} 
+{\bfseries S\+T\+OP} = object()
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1threads_a8a5a5f2774bfd092691f0d7428f0d698}\label{namespacepygame_1_1threads_a8a5a5f2774bfd092691f0d7428f0d698}} 
+{\bfseries F\+I\+N\+I\+SH} = object()
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1threads_a72b06c890749e6b15de24315d9682f05}\label{namespacepygame_1_1threads_a72b06c890749e6b15de24315d9682f05}} 
+int {\bfseries M\+A\+X\+\_\+\+W\+O\+R\+K\+E\+R\+S\+\_\+\+T\+O\+\_\+\+T\+E\+ST} = 64
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}* Experimental *
+
+Like the map function, but can use a pool of threads.
+
+Really easy to use threads.  eg.  tmap(f, alist)
+
+If you know how to use the map function, you can use threads.
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1threads_af5a9cff0c554b4f8b31b1ee47e616213}\label{namespacepygame_1_1threads_af5a9cff0c554b4f8b31b1ee47e616213}} 
+\index{pygame\+::threads@{pygame\+::threads}!benchmark\+\_\+workers@{benchmark\+\_\+workers}}
+\index{benchmark\+\_\+workers@{benchmark\+\_\+workers}!pygame\+::threads@{pygame\+::threads}}
+\subsubsection{\texorpdfstring{benchmark\+\_\+workers()}{benchmark\_workers()}}
+{\footnotesize\ttfamily def pygame.\+threads.\+benchmark\+\_\+workers (\begin{DoxyParamCaption}\item[{}]{a\+\_\+bench\+\_\+func = {\ttfamily None},  }\item[{}]{the\+\_\+data = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}does a little test to see if workers are at all faster.
+    Returns the number of workers which works best.
+    Takes a little bit of time to run, so you should only really call
+      it once.
+    You can pass in benchmark data, and functions if you want.
+    a_bench_func - f(data)
+    the_data - data to work on.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1threads_ae46d2018611d92c7aaed2a910a68d334}\label{namespacepygame_1_1threads_ae46d2018611d92c7aaed2a910a68d334}} 
+\index{pygame\+::threads@{pygame\+::threads}!init@{init}}
+\index{init@{init}!pygame\+::threads@{pygame\+::threads}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily def pygame.\+threads.\+init (\begin{DoxyParamCaption}\item[{}]{number\+\_\+of\+\_\+workers = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Does a little test to see if threading is worth it.
+      Sets up a global worker queue if it's worth it.
+
+    Calling init() is not required, but is generally better to do.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1threads_a68b34d829709c92a3a928a6c523c26d3}\label{namespacepygame_1_1threads_a68b34d829709c92a3a928a6c523c26d3}} 
+\index{pygame\+::threads@{pygame\+::threads}!quit@{quit}}
+\index{quit@{quit}!pygame\+::threads@{pygame\+::threads}}
+\subsubsection{\texorpdfstring{quit()}{quit()}}
+{\footnotesize\ttfamily def pygame.\+threads.\+quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}cleans up everything.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1threads_a970354d230ca56169d26606be8997346}\label{namespacepygame_1_1threads_a970354d230ca56169d26606be8997346}} 
+\index{pygame\+::threads@{pygame\+::threads}!tmap@{tmap}}
+\index{tmap@{tmap}!pygame\+::threads@{pygame\+::threads}}
+\subsubsection{\texorpdfstring{tmap()}{tmap()}}
+{\footnotesize\ttfamily def pygame.\+threads.\+tmap (\begin{DoxyParamCaption}\item[{}]{f,  }\item[{}]{seq\+\_\+args,  }\item[{}]{num\+\_\+workers = {\ttfamily 20},  }\item[{}]{worker\+\_\+queue = {\ttfamily None},  }\item[{}]{wait = {\ttfamily True},  }\item[{}]{stop\+\_\+on\+\_\+error = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}like map, but uses a thread pool to execute.
+    num_workers - the number of worker threads that will be used.  If pool
+                    is passed in, then the num_workers arg is ignored.
+    worker_queue - you can optionally pass in an existing WorkerQueue.
+    wait - True means that the results are returned when everything is finished.
+           False means that we return the [worker_queue, results] right away instead. 
+           results, is returned as a list of FuncResult instances.
+    stop_on_error - 
+\end{DoxyVerb}
+ 

@@ -1,0 +1,102 @@
+\hypertarget{class__pytest_1_1fixtures_1_1_fixture_manager}{}\section{\+\_\+pytest.\+fixtures.\+Fixture\+Manager Class Reference}
+\label{class__pytest_1_1fixtures_1_1_fixture_manager}\index{\+\_\+pytest.\+fixtures.\+Fixture\+Manager@{\+\_\+pytest.\+fixtures.\+Fixture\+Manager}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_manager_a24db0c6c1cb28e6e75f510843accd4e2}\label{class__pytest_1_1fixtures_1_1_fixture_manager_a24db0c6c1cb28e6e75f510843accd4e2}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, session)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_manager_a52bbd48459828c7ba98e53601e5ae03d}\label{class__pytest_1_1fixtures_1_1_fixture_manager_a52bbd48459828c7ba98e53601e5ae03d}} 
+def {\bfseries getfixtureinfo} (self, node, func, cls, funcargs=True)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_manager_a053e6ffcdd672085c62e6fcbb0a03f06}\label{class__pytest_1_1fixtures_1_1_fixture_manager_a053e6ffcdd672085c62e6fcbb0a03f06}} 
+def {\bfseries pytest\+\_\+plugin\+\_\+registered} (self, plugin)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_manager_ab8ee0904e9f0e442e933deb94322d233}\label{class__pytest_1_1fixtures_1_1_fixture_manager_ab8ee0904e9f0e442e933deb94322d233}} 
+def {\bfseries getfixtureclosure} (self, fixturenames, parentnode)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_manager_ae7a03db3af43b86b13630283ebb556fe}\label{class__pytest_1_1fixtures_1_1_fixture_manager_ae7a03db3af43b86b13630283ebb556fe}} 
+def {\bfseries pytest\+\_\+generate\+\_\+tests} (self, metafunc)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_manager_a2a9f3475c7c5a0f6bb8c200b3205c123}\label{class__pytest_1_1fixtures_1_1_fixture_manager_a2a9f3475c7c5a0f6bb8c200b3205c123}} 
+def {\bfseries pytest\+\_\+collection\+\_\+modifyitems} (self, items)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_manager_a92b7f8f90c78c935f50d6cff851cdd81}\label{class__pytest_1_1fixtures_1_1_fixture_manager_a92b7f8f90c78c935f50d6cff851cdd81}} 
+def {\bfseries parsefactories} (self, node\+\_\+or\+\_\+obj, nodeid=N\+O\+T\+S\+ET, unittest=False)
+\item 
+def \hyperlink{class__pytest_1_1fixtures_1_1_fixture_manager_a723def2e14db66ba209fe4071bfddeed}{getfixturedefs} (self, argname, nodeid)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_manager_a80b11e3ef5e3e5f6c78aefd4ced98bb6}\label{class__pytest_1_1fixtures_1_1_fixture_manager_a80b11e3ef5e3e5f6c78aefd4ced98bb6}} 
+{\bfseries session}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_manager_aaeceaee280d7f90b89563168a5de180c}\label{class__pytest_1_1fixtures_1_1_fixture_manager_aaeceaee280d7f90b89563168a5de180c}} 
+{\bfseries config}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_manager_a4e11d94e67e0d5c284f6e8a604960af8}\label{class__pytest_1_1fixtures_1_1_fixture_manager_a4e11d94e67e0d5c284f6e8a604960af8}} 
+{\bfseries Fixture\+Lookup\+Error} = \hyperlink{class__pytest_1_1fixtures_1_1_fixture_lookup_error}{Fixture\+Lookup\+Error}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_manager_a2d6bbe5abd4525efdf6b2b1d4d15f908}\label{class__pytest_1_1fixtures_1_1_fixture_manager_a2d6bbe5abd4525efdf6b2b1d4d15f908}} 
+{\bfseries Fixture\+Lookup\+Error\+Repr} = \hyperlink{class__pytest_1_1fixtures_1_1_fixture_lookup_error_repr}{Fixture\+Lookup\+Error\+Repr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}pytest fixtures definitions and information is stored and managed
+from this class.
+
+During collection fm.parsefactories() is called multiple times to parse
+fixture function definitions into FixtureDef objects and internal
+data structures.
+
+During collection of test functions, metafunc-mechanics instantiate
+a FuncFixtureInfo object which is cached per node/func-name.
+This FuncFixtureInfo object is later retrieved by Function nodes
+which themselves offer a fixturenames attribute.
+
+The FuncFixtureInfo object holds information about fixtures and FixtureDefs
+relevant for a particular function.  An initial list of fixtures is
+assembled like this:
+
+- ini-defined usefixtures
+- autouse-marked fixtures along the collection chain up from the function
+- usefixtures markers at module/class/function level
+- test function funcargs
+
+Subsequently the funcfixtureinfo.fixturenames attribute is computed
+as the closure of the fixtures needed to setup the initial fixtures,
+i. e. fixtures needed by fixture functions themselves are appended
+to the fixturenames list.
+
+Upon the test-setup phases all fixturenames are instantiated, retrieved
+by a lookup of their FuncFixtureInfo.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_manager_a723def2e14db66ba209fe4071bfddeed}\label{class__pytest_1_1fixtures_1_1_fixture_manager_a723def2e14db66ba209fe4071bfddeed}} 
+\index{\+\_\+pytest\+::fixtures\+::\+Fixture\+Manager@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Manager}!getfixturedefs@{getfixturedefs}}
+\index{getfixturedefs@{getfixturedefs}!\+\_\+pytest\+::fixtures\+::\+Fixture\+Manager@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Manager}}
+\subsubsection{\texorpdfstring{getfixturedefs()}{getfixturedefs()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+Fixture\+Manager.\+getfixturedefs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{argname,  }\item[{}]{nodeid }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets a list of fixtures which are applicable to the given node id.
+
+:param str argname: name of the fixture to search for
+:param str nodeid: full node id of the requesting test.
+:return: list[FixtureDef]
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/fixtures.\+py\end{DoxyCompactItemize}

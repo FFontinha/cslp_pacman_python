@@ -1,0 +1,59 @@
+\hypertarget{classaiohttp_1_1abc_1_1_abstract_router}{}\section{aiohttp.\+abc.\+Abstract\+Router Class Reference}
+\label{classaiohttp_1_1abc_1_1_abstract_router}\index{aiohttp.\+abc.\+Abstract\+Router@{aiohttp.\+abc.\+Abstract\+Router}}
+
+
+Inherits A\+BC.
+
+
+
+Inherited by \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher}{aiohttp.\+web\+\_\+urldispatcher.\+Url\+Dispatcher}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1abc_1_1_abstract_router_aecb194211a31b7286b12461e2997dfcb}\label{classaiohttp_1_1abc_1_1_abstract_router_aecb194211a31b7286b12461e2997dfcb}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classaiohttp_1_1abc_1_1_abstract_router_a4617de1de36ba4396682fe5c072e2ccc}{post\+\_\+init} (self, app)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1abc_1_1_abstract_router_abc826a9e59d1d2db478bfc0cca708f39}\label{classaiohttp_1_1abc_1_1_abstract_router_abc826a9e59d1d2db478bfc0cca708f39}} 
+def {\bfseries frozen} (self)
+\item 
+def \hyperlink{classaiohttp_1_1abc_1_1_abstract_router_a0cca560179ccce34ca27d563d1043630}{freeze} (self)
+\item 
+def \hyperlink{classaiohttp_1_1abc_1_1_abstract_router_a50eaa0cfafcd573b9d60a2a59ba0e00e}{resolve} (self, request)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1abc_1_1_abstract_router_a0cca560179ccce34ca27d563d1043630}\label{classaiohttp_1_1abc_1_1_abstract_router_a0cca560179ccce34ca27d563d1043630}} 
+\index{aiohttp\+::abc\+::\+Abstract\+Router@{aiohttp\+::abc\+::\+Abstract\+Router}!freeze@{freeze}}
+\index{freeze@{freeze}!aiohttp\+::abc\+::\+Abstract\+Router@{aiohttp\+::abc\+::\+Abstract\+Router}}
+\subsubsection{\texorpdfstring{freeze()}{freeze()}}
+{\footnotesize\ttfamily def aiohttp.\+abc.\+Abstract\+Router.\+freeze (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Freeze router.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1abc_1_1_abstract_router_a4617de1de36ba4396682fe5c072e2ccc}\label{classaiohttp_1_1abc_1_1_abstract_router_a4617de1de36ba4396682fe5c072e2ccc}} 
+\index{aiohttp\+::abc\+::\+Abstract\+Router@{aiohttp\+::abc\+::\+Abstract\+Router}!post\+\_\+init@{post\+\_\+init}}
+\index{post\+\_\+init@{post\+\_\+init}!aiohttp\+::abc\+::\+Abstract\+Router@{aiohttp\+::abc\+::\+Abstract\+Router}}
+\subsubsection{\texorpdfstring{post\+\_\+init()}{post\_init()}}
+{\footnotesize\ttfamily def aiohttp.\+abc.\+Abstract\+Router.\+post\+\_\+init (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{app }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Post init stage.
+
+Not an abstract method for sake of backward compatibility,
+but if the router wants to be aware of the application
+it can override this.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1abc_1_1_abstract_router_a50eaa0cfafcd573b9d60a2a59ba0e00e}\label{classaiohttp_1_1abc_1_1_abstract_router_a50eaa0cfafcd573b9d60a2a59ba0e00e}} 
+\index{aiohttp\+::abc\+::\+Abstract\+Router@{aiohttp\+::abc\+::\+Abstract\+Router}!resolve@{resolve}}
+\index{resolve@{resolve}!aiohttp\+::abc\+::\+Abstract\+Router@{aiohttp\+::abc\+::\+Abstract\+Router}}
+\subsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily def aiohttp.\+abc.\+Abstract\+Router.\+resolve (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return MATCH_INFO for given request\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/abc.\+py\end{DoxyCompactItemize}

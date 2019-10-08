@@ -1,0 +1,59 @@
+\hypertarget{classpy_1_1__io_1_1capture_1_1_capture}{}\section{py.\+\_\+io.\+capture.\+Capture Class Reference}
+\label{classpy_1_1__io_1_1capture_1_1_capture}\index{py.\+\_\+io.\+capture.\+Capture@{py.\+\_\+io.\+capture.\+Capture}}
+
+
+Inherits object.
+
+
+
+Inherited by \hyperlink{classpy_1_1__io_1_1capture_1_1_std_capture}{py.\+\_\+io.\+capture.\+Std\+Capture}, and \hyperlink{classpy_1_1__io_1_1capture_1_1_std_capture_f_d}{py.\+\_\+io.\+capture.\+Std\+Capture\+FD}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpy_1_1__io_1_1capture_1_1_capture_a9913c2f9434963bf6a441d9bc5c97128}{call} (cls, func, args, kwargs)
+\item 
+def \hyperlink{classpy_1_1__io_1_1capture_1_1_capture_a99e7e674860c89df28cf6e69f21d980b}{reset} (self)
+\item 
+def \hyperlink{classpy_1_1__io_1_1capture_1_1_capture_a132a04942f64cf541807c290ddedc644}{suspend} (self)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpy_1_1__io_1_1capture_1_1_capture_a6460b36d8687a469cf616afa7fca6440}\label{classpy_1_1__io_1_1capture_1_1_capture_a6460b36d8687a469cf616afa7fca6440}} 
+{\bfseries call} = classmethod(call)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpy_1_1__io_1_1capture_1_1_capture_a9913c2f9434963bf6a441d9bc5c97128}\label{classpy_1_1__io_1_1capture_1_1_capture_a9913c2f9434963bf6a441d9bc5c97128}} 
+\index{py\+::\+\_\+io\+::capture\+::\+Capture@{py\+::\+\_\+io\+::capture\+::\+Capture}!call@{call}}
+\index{call@{call}!py\+::\+\_\+io\+::capture\+::\+Capture@{py\+::\+\_\+io\+::capture\+::\+Capture}}
+\subsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily def py.\+\_\+io.\+capture.\+Capture.\+call (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{func,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a (res, out, err) tuple where
+    out and err represent the output/error output
+    during function execution.
+    call the given function with args/kwargs
+    and capture output/error during its execution.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__io_1_1capture_1_1_capture_a99e7e674860c89df28cf6e69f21d980b}\label{classpy_1_1__io_1_1capture_1_1_capture_a99e7e674860c89df28cf6e69f21d980b}} 
+\index{py\+::\+\_\+io\+::capture\+::\+Capture@{py\+::\+\_\+io\+::capture\+::\+Capture}!reset@{reset}}
+\index{reset@{reset}!py\+::\+\_\+io\+::capture\+::\+Capture@{py\+::\+\_\+io\+::capture\+::\+Capture}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def py.\+\_\+io.\+capture.\+Capture.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}reset sys.stdout/stderr and return captured output as strings. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__io_1_1capture_1_1_capture_a132a04942f64cf541807c290ddedc644}\label{classpy_1_1__io_1_1capture_1_1_capture_a132a04942f64cf541807c290ddedc644}} 
+\index{py\+::\+\_\+io\+::capture\+::\+Capture@{py\+::\+\_\+io\+::capture\+::\+Capture}!suspend@{suspend}}
+\index{suspend@{suspend}!py\+::\+\_\+io\+::capture\+::\+Capture@{py\+::\+\_\+io\+::capture\+::\+Capture}}
+\subsubsection{\texorpdfstring{suspend()}{suspend()}}
+{\footnotesize\ttfamily def py.\+\_\+io.\+capture.\+Capture.\+suspend (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return current snapshot captures, memorize tempfiles. \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/py/\+\_\+io/capture.\+py\end{DoxyCompactItemize}

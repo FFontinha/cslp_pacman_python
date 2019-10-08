@@ -1,0 +1,91 @@
+\hypertarget{class__pytest_1_1recwarn_1_1_warnings_recorder}{}\section{\+\_\+pytest.\+recwarn.\+Warnings\+Recorder Class Reference}
+\label{class__pytest_1_1recwarn_1_1_warnings_recorder}\index{\+\_\+pytest.\+recwarn.\+Warnings\+Recorder@{\+\_\+pytest.\+recwarn.\+Warnings\+Recorder}}
+
+
+Inherits catch\+\_\+warnings.
+
+
+
+Inherited by \hyperlink{class__pytest_1_1recwarn_1_1_warnings_checker}{\+\_\+pytest.\+recwarn.\+Warnings\+Checker}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1recwarn_1_1_warnings_recorder_a6298abdd268aacdfa57ae3a5c4e94c26}\label{class__pytest_1_1recwarn_1_1_warnings_recorder_a6298abdd268aacdfa57ae3a5c4e94c26}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{class__pytest_1_1recwarn_1_1_warnings_recorder_a8cf30d19a6cdb33f515acf608735f71b}{list} (self)
+\item 
+def \hyperlink{class__pytest_1_1recwarn_1_1_warnings_recorder_a5c3b828c65d948db1b525cdfdaa62d1f}{\+\_\+\+\_\+getitem\+\_\+\+\_\+} (self, i)
+\item 
+def \hyperlink{class__pytest_1_1recwarn_1_1_warnings_recorder_aeb8a121aa32a98c792c1a38a59862f80}{\+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{class__pytest_1_1recwarn_1_1_warnings_recorder_a0fc8ac5c8aab697ebd34a0efd255ae66}{\+\_\+\+\_\+len\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{class__pytest_1_1recwarn_1_1_warnings_recorder_ad217d042063980c4c7893e27f082a5d2}{pop} (self, cls=Warning)
+\item 
+def \hyperlink{class__pytest_1_1recwarn_1_1_warnings_recorder_a9494a4fc99b851ac383a78589b89abde}{clear} (self)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1recwarn_1_1_warnings_recorder_ab8e007efceedeba563e5714802adc5d4}\label{class__pytest_1_1recwarn_1_1_warnings_recorder_ab8e007efceedeba563e5714802adc5d4}} 
+def {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1recwarn_1_1_warnings_recorder_a746d04275bace23bc94c4f7e1ee28d2b}\label{class__pytest_1_1recwarn_1_1_warnings_recorder_a746d04275bace23bc94c4f7e1ee28d2b}} 
+def {\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, exc\+\_\+info)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A context manager to record raised warnings.
+
+Adapted from `warnings.catch_warnings`.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1recwarn_1_1_warnings_recorder_a5c3b828c65d948db1b525cdfdaa62d1f}\label{class__pytest_1_1recwarn_1_1_warnings_recorder_a5c3b828c65d948db1b525cdfdaa62d1f}} 
+\index{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder@{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder}!\+\_\+\+\_\+getitem\+\_\+\+\_\+@{\+\_\+\+\_\+getitem\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+getitem\+\_\+\+\_\+@{\+\_\+\+\_\+getitem\+\_\+\+\_\+}!\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder@{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+getitem\+\_\+\+\_\+()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+recwarn.\+Warnings\+Recorder.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{i }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a recorded warning by index.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1recwarn_1_1_warnings_recorder_aeb8a121aa32a98c792c1a38a59862f80}\label{class__pytest_1_1recwarn_1_1_warnings_recorder_aeb8a121aa32a98c792c1a38a59862f80}} 
+\index{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder@{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder}!\+\_\+\+\_\+iter\+\_\+\+\_\+@{\+\_\+\+\_\+iter\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+iter\+\_\+\+\_\+@{\+\_\+\+\_\+iter\+\_\+\+\_\+}!\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder@{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+iter\+\_\+\+\_\+()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+recwarn.\+Warnings\+Recorder.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterate through the recorded warnings.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1recwarn_1_1_warnings_recorder_a0fc8ac5c8aab697ebd34a0efd255ae66}\label{class__pytest_1_1recwarn_1_1_warnings_recorder_a0fc8ac5c8aab697ebd34a0efd255ae66}} 
+\index{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder@{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder}!\+\_\+\+\_\+len\+\_\+\+\_\+@{\+\_\+\+\_\+len\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+len\+\_\+\+\_\+@{\+\_\+\+\_\+len\+\_\+\+\_\+}!\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder@{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+len\+\_\+\+\_\+()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+recwarn.\+Warnings\+Recorder.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The number of recorded warnings.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1recwarn_1_1_warnings_recorder_a9494a4fc99b851ac383a78589b89abde}\label{class__pytest_1_1recwarn_1_1_warnings_recorder_a9494a4fc99b851ac383a78589b89abde}} 
+\index{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder@{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder}!clear@{clear}}
+\index{clear@{clear}!\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder@{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+recwarn.\+Warnings\+Recorder.\+clear (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clear the list of recorded warnings.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1recwarn_1_1_warnings_recorder_a8cf30d19a6cdb33f515acf608735f71b}\label{class__pytest_1_1recwarn_1_1_warnings_recorder_a8cf30d19a6cdb33f515acf608735f71b}} 
+\index{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder@{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder}!list@{list}}
+\index{list@{list}!\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder@{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder}}
+\subsubsection{\texorpdfstring{list()}{list()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+recwarn.\+Warnings\+Recorder.\+list (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The list of recorded warnings.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1recwarn_1_1_warnings_recorder_ad217d042063980c4c7893e27f082a5d2}\label{class__pytest_1_1recwarn_1_1_warnings_recorder_ad217d042063980c4c7893e27f082a5d2}} 
+\index{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder@{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder}!pop@{pop}}
+\index{pop@{pop}!\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder@{\+\_\+pytest\+::recwarn\+::\+Warnings\+Recorder}}
+\subsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+recwarn.\+Warnings\+Recorder.\+pop (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cls = {\ttfamily Warning} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Pop the first recorded warning, raise exception if not exists.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/recwarn.\+py\end{DoxyCompactItemize}

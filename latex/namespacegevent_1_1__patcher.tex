@@ -1,0 +1,57 @@
+\hypertarget{namespacegevent_1_1__patcher}{}\section{gevent.\+\_\+patcher Namespace Reference}
+\label{namespacegevent_1_1__patcher}\index{gevent.\+\_\+patcher@{gevent.\+\_\+patcher}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgevent_1_1__patcher_1_1___sys_modules_patcher}{\+\_\+\+Sys\+Modules\+Patcher}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1__patcher_ace08ff5809237ce00d7d3ee28f479d81}{import\+\_\+patched} (module\+\_\+name)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dictionary \hyperlink{namespacegevent_1_1__patcher_ab66571021c8a310fda9de5b9e4a2d204}{M\+A\+P\+P\+I\+NG}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1__patcher_ace08ff5809237ce00d7d3ee28f479d81}\label{namespacegevent_1_1__patcher_ace08ff5809237ce00d7d3ee28f479d81}} 
+\index{gevent\+::\+\_\+patcher@{gevent\+::\+\_\+patcher}!import\+\_\+patched@{import\+\_\+patched}}
+\index{import\+\_\+patched@{import\+\_\+patched}!gevent\+::\+\_\+patcher@{gevent\+::\+\_\+patcher}}
+\subsubsection{\texorpdfstring{import\+\_\+patched()}{import\_patched()}}
+{\footnotesize\ttfamily def gevent.\+\_\+patcher.\+import\+\_\+patched (\begin{DoxyParamCaption}\item[{}]{module\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Import *module_name* with gevent monkey-patches active,
+and return the greened module.
+
+Any sub-modules that were imported by the package are also
+saved.\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1__patcher_ab66571021c8a310fda9de5b9e4a2d204}\label{namespacegevent_1_1__patcher_ab66571021c8a310fda9de5b9e4a2d204}} 
+\index{gevent\+::\+\_\+patcher@{gevent\+::\+\_\+patcher}!M\+A\+P\+P\+I\+NG@{M\+A\+P\+P\+I\+NG}}
+\index{M\+A\+P\+P\+I\+NG@{M\+A\+P\+P\+I\+NG}!gevent\+::\+\_\+patcher@{gevent\+::\+\_\+patcher}}
+\subsubsection{\texorpdfstring{M\+A\+P\+P\+I\+NG}{MAPPING}}
+{\footnotesize\ttfamily dictionary gevent.\+\_\+patcher.\+M\+A\+P\+P\+I\+NG}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  \{
+2     \textcolor{stringliteral}{'gevent.local'}: \textcolor{stringliteral}{'\_threading\_local'},
+3     \textcolor{stringliteral}{'gevent.socket'}: \textcolor{stringliteral}{'socket'},
+4     \textcolor{stringliteral}{'gevent.select'}: \textcolor{stringliteral}{'select'},
+5     \textcolor{stringliteral}{'gevent.ssl'}: \textcolor{stringliteral}{'ssl'},
+6     \textcolor{stringliteral}{'gevent.thread'}: \textcolor{stringliteral}{'\_thread'} \textcolor{keywordflow}{if} PY3 \textcolor{keywordflow}{else} \textcolor{stringliteral}{'thread'},
+7     \textcolor{stringliteral}{'gevent.subprocess'}: \textcolor{stringliteral}{'subprocess'},
+8     \textcolor{stringliteral}{'gevent.os'}: \textcolor{stringliteral}{'os'},
+9     \textcolor{stringliteral}{'gevent.threading'}: \textcolor{stringliteral}{'threading'},
+10     \textcolor{stringliteral}{'gevent.builtins'}: \textcolor{stringliteral}{'builtins'} \textcolor{keywordflow}{if} PY3 \textcolor{keywordflow}{else} \textcolor{stringliteral}{'\_\_builtin\_\_'},
+11     \textcolor{stringliteral}{'gevent.signal'}: \textcolor{stringliteral}{'signal'},
+12     \textcolor{stringliteral}{'gevent.time'}: \textcolor{stringliteral}{'time'},
+13     \textcolor{stringliteral}{'gevent.queue'}: \textcolor{stringliteral}{'queue'} \textcolor{keywordflow}{if} PY3 \textcolor{keywordflow}{else} \textcolor{stringliteral}{'Queue'},
+14 \}
+\end{DoxyCode}

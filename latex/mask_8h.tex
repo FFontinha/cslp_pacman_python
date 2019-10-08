@@ -1,0 +1,71 @@
+\hypertarget{mask_8h}{}\section{venv/include/site/python3.6/pygame/mask.h File Reference}
+\label{mask_8h}\index{venv/include/site/python3.\+6/pygame/mask.\+h@{venv/include/site/python3.\+6/pygame/mask.\+h}}
+{\ttfamily \#include $<$Python.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}bitmask.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_py_mask_object}{Py\+Mask\+Object}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{mask_8h_a2bcb819c125cc465d49f11735ba17c48}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+S\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}~0
+\item 
+\#define \hyperlink{mask_8h_a6a42cad699fbd8e6f169c68ff07e85e3}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+S\+K\+\_\+\+N\+U\+M\+S\+L\+O\+TS}~1
+\item 
+\#define \hyperlink{mask_8h_ae353fb06021df3a7641ec6f49d44d2ac}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+L\+O\+C\+A\+L\+\_\+\+E\+N\+T\+RY}~\char`\"{}\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI\char`\"{}
+\item 
+\#define \hyperlink{mask_8h_aac9640dbf9f887ccb719871248a42c69}{Py\+Mask\+\_\+\+As\+Bitmap}(x)~(((\hyperlink{struct_py_mask_object}{Py\+Mask\+Object}$\ast$)x)-\/$>$mask)
+\item 
+\#define \hyperlink{mask_8h_a5290dcbe5479df664593cbf3508b1dec}{Py\+Mask\+\_\+\+Type}~($\ast$(Py\+Type\+Object$\ast$)Py\+M\+A\+S\+K\+\_\+\+C\+\_\+\+A\+PI\mbox{[}0\mbox{]})
+\item 
+\#define \hyperlink{mask_8h_afe4369d825455e3cee759b749a33d33b}{Py\+Mask\+\_\+\+Check}(x)~((x)-\/$>$ob\+\_\+type == \&\hyperlink{mask_8h_a5290dcbe5479df664593cbf3508b1dec}{Py\+Mask\+\_\+\+Type})
+\item 
+\#define \hyperlink{mask_8h_a516f47386f6f5cfba9338bdbbdfabae2}{import\+\_\+pygame\+\_\+mask}()~\hyperlink{__pygame_8h_a97ba72dc608817ef953d8fefeeccc4f1}{\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}(mask, M\+A\+SK, Py\+M\+A\+S\+K\+\_\+\+C\+\_\+\+A\+PI)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mask_8h_a516f47386f6f5cfba9338bdbbdfabae2}\label{mask_8h_a516f47386f6f5cfba9338bdbbdfabae2}} 
+\index{mask.\+h@{mask.\+h}!import\+\_\+pygame\+\_\+mask@{import\+\_\+pygame\+\_\+mask}}
+\index{import\+\_\+pygame\+\_\+mask@{import\+\_\+pygame\+\_\+mask}!mask.\+h@{mask.\+h}}
+\subsubsection{\texorpdfstring{import\+\_\+pygame\+\_\+mask}{import\_pygame\_mask}}
+{\footnotesize\ttfamily \#define import\+\_\+pygame\+\_\+mask(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\hyperlink{__pygame_8h_a97ba72dc608817ef953d8fefeeccc4f1}{\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}(mask, M\+A\+SK, Py\+M\+A\+S\+K\+\_\+\+C\+\_\+\+A\+PI)}
+
+\mbox{\Hypertarget{mask_8h_ae353fb06021df3a7641ec6f49d44d2ac}\label{mask_8h_ae353fb06021df3a7641ec6f49d44d2ac}} 
+\index{mask.\+h@{mask.\+h}!P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+L\+O\+C\+A\+L\+\_\+\+E\+N\+T\+RY@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+L\+O\+C\+A\+L\+\_\+\+E\+N\+T\+RY}}
+\index{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+L\+O\+C\+A\+L\+\_\+\+E\+N\+T\+RY@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+L\+O\+C\+A\+L\+\_\+\+E\+N\+T\+RY}!mask.\+h@{mask.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+L\+O\+C\+A\+L\+\_\+\+E\+N\+T\+RY}{PYGAMEAPI\_LOCAL\_ENTRY}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+L\+O\+C\+A\+L\+\_\+\+E\+N\+T\+RY~\char`\"{}\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+C\+\_\+\+A\+PI\char`\"{}}
+
+\mbox{\Hypertarget{mask_8h_a2bcb819c125cc465d49f11735ba17c48}\label{mask_8h_a2bcb819c125cc465d49f11735ba17c48}} 
+\index{mask.\+h@{mask.\+h}!P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+S\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+S\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}
+\index{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+S\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+S\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}!mask.\+h@{mask.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+S\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}{PYGAMEAPI\_MASK\_FIRSTSLOT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+S\+K\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT~0}
+
+\mbox{\Hypertarget{mask_8h_a6a42cad699fbd8e6f169c68ff07e85e3}\label{mask_8h_a6a42cad699fbd8e6f169c68ff07e85e3}} 
+\index{mask.\+h@{mask.\+h}!P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+S\+K\+\_\+\+N\+U\+M\+S\+L\+O\+TS@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+S\+K\+\_\+\+N\+U\+M\+S\+L\+O\+TS}}
+\index{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+S\+K\+\_\+\+N\+U\+M\+S\+L\+O\+TS@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+S\+K\+\_\+\+N\+U\+M\+S\+L\+O\+TS}!mask.\+h@{mask.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+S\+K\+\_\+\+N\+U\+M\+S\+L\+O\+TS}{PYGAMEAPI\_MASK\_NUMSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+M\+A\+S\+K\+\_\+\+N\+U\+M\+S\+L\+O\+TS~1}
+
+\mbox{\Hypertarget{mask_8h_aac9640dbf9f887ccb719871248a42c69}\label{mask_8h_aac9640dbf9f887ccb719871248a42c69}} 
+\index{mask.\+h@{mask.\+h}!Py\+Mask\+\_\+\+As\+Bitmap@{Py\+Mask\+\_\+\+As\+Bitmap}}
+\index{Py\+Mask\+\_\+\+As\+Bitmap@{Py\+Mask\+\_\+\+As\+Bitmap}!mask.\+h@{mask.\+h}}
+\subsubsection{\texorpdfstring{Py\+Mask\+\_\+\+As\+Bitmap}{PyMask\_AsBitmap}}
+{\footnotesize\ttfamily \#define Py\+Mask\+\_\+\+As\+Bitmap(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((\hyperlink{struct_py_mask_object}{Py\+Mask\+Object}$\ast$)x)-\/$>$mask)}
+
+\mbox{\Hypertarget{mask_8h_afe4369d825455e3cee759b749a33d33b}\label{mask_8h_afe4369d825455e3cee759b749a33d33b}} 
+\index{mask.\+h@{mask.\+h}!Py\+Mask\+\_\+\+Check@{Py\+Mask\+\_\+\+Check}}
+\index{Py\+Mask\+\_\+\+Check@{Py\+Mask\+\_\+\+Check}!mask.\+h@{mask.\+h}}
+\subsubsection{\texorpdfstring{Py\+Mask\+\_\+\+Check}{PyMask\_Check}}
+{\footnotesize\ttfamily \#define Py\+Mask\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((x)-\/$>$ob\+\_\+type == \&\hyperlink{mask_8h_a5290dcbe5479df664593cbf3508b1dec}{Py\+Mask\+\_\+\+Type})}
+
+\mbox{\Hypertarget{mask_8h_a5290dcbe5479df664593cbf3508b1dec}\label{mask_8h_a5290dcbe5479df664593cbf3508b1dec}} 
+\index{mask.\+h@{mask.\+h}!Py\+Mask\+\_\+\+Type@{Py\+Mask\+\_\+\+Type}}
+\index{Py\+Mask\+\_\+\+Type@{Py\+Mask\+\_\+\+Type}!mask.\+h@{mask.\+h}}
+\subsubsection{\texorpdfstring{Py\+Mask\+\_\+\+Type}{PyMask\_Type}}
+{\footnotesize\ttfamily \#define Py\+Mask\+\_\+\+Type~($\ast$(Py\+Type\+Object$\ast$)Py\+M\+A\+S\+K\+\_\+\+C\+\_\+\+A\+PI\mbox{[}0\mbox{]})}
+

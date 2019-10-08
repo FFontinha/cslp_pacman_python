@@ -1,0 +1,131 @@
+\hypertarget{namespacepip_1_1wheel}{}\section{pip.\+wheel Namespace Reference}
+\label{namespacepip_1_1wheel}\index{pip.\+wheel@{pip.\+wheel}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpip_1_1wheel_1_1_wheel}{Wheel}
+\item 
+class \hyperlink{classpip_1_1wheel_1_1_wheel_builder}{Wheel\+Builder}
+\item 
+class \hyperlink{classpip_1_1wheel_1_1_wheel_cache}{Wheel\+Cache}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1wheel_a9bfcdaefde0bb0e8511e85af5dac1a45}\label{namespacepip_1_1wheel_a9bfcdaefde0bb0e8511e85af5dac1a45}} 
+def {\bfseries cached\+\_\+wheel} (cache\+\_\+dir, link, format\+\_\+control, package\+\_\+name)
+\item 
+def \hyperlink{namespacepip_1_1wheel_a9a0d61b894cb798929ca0187950e30fe}{rehash} (path, algo=\textquotesingle{}sha256\textquotesingle{}, blocksize=1$<$$<$ 20)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1wheel_acc0e6d9244775e3aa07c6e25e0516449}\label{namespacepip_1_1wheel_acc0e6d9244775e3aa07c6e25e0516449}} 
+def {\bfseries open\+\_\+for\+\_\+csv} (name, mode)
+\item 
+def \hyperlink{namespacepip_1_1wheel_a599a39423d9d0b31026681b5715446b8}{fix\+\_\+script} (path)
+\item 
+def \hyperlink{namespacepip_1_1wheel_acc591f6768fbe320deb0417b1163f43f}{root\+\_\+is\+\_\+purelib} (name, wheeldir)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1wheel_a9be696d657b7656d25318798472119a1}\label{namespacepip_1_1wheel_a9be696d657b7656d25318798472119a1}} 
+def {\bfseries get\+\_\+entrypoints} (filename)
+\item 
+def \hyperlink{namespacepip_1_1wheel_a922fc81dd2fead488599fcb9aa3bd810}{move\+\_\+wheel\+\_\+files} (name, req, wheeldir, user=False, home=None, root=None, pycompile=True, scheme=None, isolated=False, prefix=None)
+\item 
+def \hyperlink{namespacepip_1_1wheel_a43b1d222c327f5a2fd315a497ab74c44}{uninstallation\+\_\+paths} (dist)
+\item 
+def \hyperlink{namespacepip_1_1wheel_a73536b9b31527a08e3b7933fb6ccc7c3}{wheel\+\_\+version} (source\+\_\+dir)
+\item 
+def \hyperlink{namespacepip_1_1wheel_a4f43de549d71ed87fd2c9e19756bc3cd}{check\+\_\+compatibility} (version, name)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1wheel_afda302095a55044a3451b41a2318f4fc}\label{namespacepip_1_1wheel_afda302095a55044a3451b41a2318f4fc}} 
+string {\bfseries wheel\+\_\+ext} = \textquotesingle{}.whl\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1wheel_ae2a371a19c9cf3d2f943391c6bc2fae0}\label{namespacepip_1_1wheel_ae2a371a19c9cf3d2f943391c6bc2fae0}} 
+tuple {\bfseries V\+E\+R\+S\+I\+O\+N\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+LE} = (1, 0)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1wheel_a3f5d6e3cde1fa3fd718949a4f99c3ef5}\label{namespacepip_1_1wheel_a3f5d6e3cde1fa3fd718949a4f99c3ef5}} 
+{\bfseries logger} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1wheel_a391ca1aa2ed1e22282d7353aea34645b}\label{namespacepip_1_1wheel_a391ca1aa2ed1e22282d7353aea34645b}} 
+{\bfseries dist\+\_\+info\+\_\+re} = re.\+compile(, re.\+V\+E\+R\+B\+O\+SE)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Support for installing and building the "wheel" binary package format.
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepip_1_1wheel_a4f43de549d71ed87fd2c9e19756bc3cd}\label{namespacepip_1_1wheel_a4f43de549d71ed87fd2c9e19756bc3cd}} 
+\index{pip\+::wheel@{pip\+::wheel}!check\+\_\+compatibility@{check\+\_\+compatibility}}
+\index{check\+\_\+compatibility@{check\+\_\+compatibility}!pip\+::wheel@{pip\+::wheel}}
+\subsubsection{\texorpdfstring{check\+\_\+compatibility()}{check\_compatibility()}}
+{\footnotesize\ttfamily def pip.\+wheel.\+check\+\_\+compatibility (\begin{DoxyParamCaption}\item[{}]{version,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Raises errors or warns if called with an incompatible Wheel-Version.
+
+Pip should refuse to install a Wheel-Version that's a major series
+ahead of what it's compatible with (e.g 2.0 > 1.1); and warn when
+installing a version only minor version ahead (e.g 1.2 > 1.1).
+
+version: a 2-tuple representing a Wheel-Version (Major, Minor)
+name: name of wheel or package to raise exception about
+
+:raises UnsupportedWheel: when an incompatible Wheel-Version is given
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1wheel_a599a39423d9d0b31026681b5715446b8}\label{namespacepip_1_1wheel_a599a39423d9d0b31026681b5715446b8}} 
+\index{pip\+::wheel@{pip\+::wheel}!fix\+\_\+script@{fix\+\_\+script}}
+\index{fix\+\_\+script@{fix\+\_\+script}!pip\+::wheel@{pip\+::wheel}}
+\subsubsection{\texorpdfstring{fix\+\_\+script()}{fix\_script()}}
+{\footnotesize\ttfamily def pip.\+wheel.\+fix\+\_\+script (\begin{DoxyParamCaption}\item[{}]{path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Replace #!python with #!/path/to/python
+Return True if file was changed.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1wheel_a922fc81dd2fead488599fcb9aa3bd810}\label{namespacepip_1_1wheel_a922fc81dd2fead488599fcb9aa3bd810}} 
+\index{pip\+::wheel@{pip\+::wheel}!move\+\_\+wheel\+\_\+files@{move\+\_\+wheel\+\_\+files}}
+\index{move\+\_\+wheel\+\_\+files@{move\+\_\+wheel\+\_\+files}!pip\+::wheel@{pip\+::wheel}}
+\subsubsection{\texorpdfstring{move\+\_\+wheel\+\_\+files()}{move\_wheel\_files()}}
+{\footnotesize\ttfamily def pip.\+wheel.\+move\+\_\+wheel\+\_\+files (\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{req,  }\item[{}]{wheeldir,  }\item[{}]{user = {\ttfamily False},  }\item[{}]{home = {\ttfamily None},  }\item[{}]{root = {\ttfamily None},  }\item[{}]{pycompile = {\ttfamily True},  }\item[{}]{scheme = {\ttfamily None},  }\item[{}]{isolated = {\ttfamily False},  }\item[{}]{prefix = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Install a wheel\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1wheel_a9a0d61b894cb798929ca0187950e30fe}\label{namespacepip_1_1wheel_a9a0d61b894cb798929ca0187950e30fe}} 
+\index{pip\+::wheel@{pip\+::wheel}!rehash@{rehash}}
+\index{rehash@{rehash}!pip\+::wheel@{pip\+::wheel}}
+\subsubsection{\texorpdfstring{rehash()}{rehash()}}
+{\footnotesize\ttfamily def pip.\+wheel.\+rehash (\begin{DoxyParamCaption}\item[{}]{path,  }\item[{}]{algo = {\ttfamily \textquotesingle{}sha256\textquotesingle{}},  }\item[{}]{blocksize = {\ttfamily 1~$<$$<$~20} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return (hash, length) for path using hashlib.new(algo)\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1wheel_acc591f6768fbe320deb0417b1163f43f}\label{namespacepip_1_1wheel_acc591f6768fbe320deb0417b1163f43f}} 
+\index{pip\+::wheel@{pip\+::wheel}!root\+\_\+is\+\_\+purelib@{root\+\_\+is\+\_\+purelib}}
+\index{root\+\_\+is\+\_\+purelib@{root\+\_\+is\+\_\+purelib}!pip\+::wheel@{pip\+::wheel}}
+\subsubsection{\texorpdfstring{root\+\_\+is\+\_\+purelib()}{root\_is\_purelib()}}
+{\footnotesize\ttfamily def pip.\+wheel.\+root\+\_\+is\+\_\+purelib (\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{wheeldir }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the extracted wheel in wheeldir should go into purelib.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1wheel_a43b1d222c327f5a2fd315a497ab74c44}\label{namespacepip_1_1wheel_a43b1d222c327f5a2fd315a497ab74c44}} 
+\index{pip\+::wheel@{pip\+::wheel}!uninstallation\+\_\+paths@{uninstallation\+\_\+paths}}
+\index{uninstallation\+\_\+paths@{uninstallation\+\_\+paths}!pip\+::wheel@{pip\+::wheel}}
+\subsubsection{\texorpdfstring{uninstallation\+\_\+paths()}{uninstallation\_paths()}}
+{\footnotesize\ttfamily def pip.\+wheel.\+uninstallation\+\_\+paths (\begin{DoxyParamCaption}\item[{}]{dist }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Yield all the uninstallation paths for dist based on RECORD-without-.pyc
+
+Yield paths to all the files in RECORD. For each .py file in RECORD, add
+the .pyc in the same directory.
+
+UninstallPathSet.add() takes care of the __pycache__ .pyc.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1wheel_a73536b9b31527a08e3b7933fb6ccc7c3}\label{namespacepip_1_1wheel_a73536b9b31527a08e3b7933fb6ccc7c3}} 
+\index{pip\+::wheel@{pip\+::wheel}!wheel\+\_\+version@{wheel\+\_\+version}}
+\index{wheel\+\_\+version@{wheel\+\_\+version}!pip\+::wheel@{pip\+::wheel}}
+\subsubsection{\texorpdfstring{wheel\+\_\+version()}{wheel\_version()}}
+{\footnotesize\ttfamily def pip.\+wheel.\+wheel\+\_\+version (\begin{DoxyParamCaption}\item[{}]{source\+\_\+dir }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the Wheel-Version of an extracted wheel, if possible.
+
+Otherwise, return False if we couldn't parse / extract it.
+\end{DoxyVerb}
+ 

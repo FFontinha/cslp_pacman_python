@@ -1,0 +1,268 @@
+\hypertarget{class__pytest_1_1nodes_1_1_node}{}\section{\+\_\+pytest.\+nodes.\+Node Class Reference}
+\label{class__pytest_1_1nodes_1_1_node}\index{\+\_\+pytest.\+nodes.\+Node@{\+\_\+pytest.\+nodes.\+Node}}
+
+
+Inherits object.
+
+
+
+Inherited by \hyperlink{class__pytest_1_1nodes_1_1_collector}{\+\_\+pytest.\+nodes.\+Collector}, and \hyperlink{class__pytest_1_1nodes_1_1_item}{\+\_\+pytest.\+nodes.\+Item}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_aafb9483e9eb0ad8f46d179c115a5d958}\label{class__pytest_1_1nodes_1_1_node_aafb9483e9eb0ad8f46d179c115a5d958}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, name, parent=None, config=None, session=None, fspath=None, \hyperlink{class__pytest_1_1nodes_1_1_node_a02f18acbfaf1f9d8ba9b6c1346dc6217}{nodeid}=None)
+\item 
+def \hyperlink{class__pytest_1_1nodes_1_1_node_a33620824e3aa925412302590d53ea608}{ihook} (self)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_aa3bb8cb374a5ea883ce30b1c13c09e73}\label{class__pytest_1_1nodes_1_1_node_aa3bb8cb374a5ea883ce30b1c13c09e73}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{class__pytest_1_1nodes_1_1_node_ab3e0c36e81b150fed632bbcec28cef45}{warn} (self, \+\_\+code\+\_\+or\+\_\+warning=None, message=None, code=None)
+\item 
+def \hyperlink{class__pytest_1_1nodes_1_1_node_a02f18acbfaf1f9d8ba9b6c1346dc6217}{nodeid} (self)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a1c0eb35d68b3b192a5cd5fb9e72a9839}\label{class__pytest_1_1nodes_1_1_node_a1c0eb35d68b3b192a5cd5fb9e72a9839}} 
+def {\bfseries \+\_\+\+\_\+hash\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a577d9d44cca3919f05f38914bc88072a}\label{class__pytest_1_1nodes_1_1_node_a577d9d44cca3919f05f38914bc88072a}} 
+def {\bfseries setup} (self)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_ac035104c125eec514a24252a5aa6cabc}\label{class__pytest_1_1nodes_1_1_node_ac035104c125eec514a24252a5aa6cabc}} 
+def {\bfseries teardown} (self)
+\item 
+def \hyperlink{class__pytest_1_1nodes_1_1_node_ae0847320698244a5c0a872d4aa19a618}{listchain} (self)
+\item 
+def \hyperlink{class__pytest_1_1nodes_1_1_node_a1d28d2a0ab91d7845025435ff7d3ff7c}{add\+\_\+marker} (self, marker, append=True)
+\item 
+def \hyperlink{class__pytest_1_1nodes_1_1_node_a6907ee44236e82a68ac370c11a48171a}{iter\+\_\+markers} (self, name=None)
+\item 
+def \hyperlink{class__pytest_1_1nodes_1_1_node_a141c959ae7dbfde9b8de55e11f841ed7}{iter\+\_\+markers\+\_\+with\+\_\+node} (self, name=None)
+\item 
+def \hyperlink{class__pytest_1_1nodes_1_1_node_ae23b659185aada70e62911d02763decc}{get\+\_\+closest\+\_\+marker} (self, name, default=None)
+\item 
+def \hyperlink{class__pytest_1_1nodes_1_1_node_ae2b2c85b2d9fabc5f96c1b992774e5c9}{get\+\_\+marker} (self, name)
+\item 
+def \hyperlink{class__pytest_1_1nodes_1_1_node_abd89ec1da759bf88a82025cf125a7b14}{listextrakeywords} (self)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a063cd9ec814d49e7569757375c756eb7}\label{class__pytest_1_1nodes_1_1_node_a063cd9ec814d49e7569757375c756eb7}} 
+def {\bfseries listnames} (self)
+\item 
+def \hyperlink{class__pytest_1_1nodes_1_1_node_a7cd4d492cfe9587ec3e2115a3aba47f5}{addfinalizer} (self, fin)
+\item 
+def \hyperlink{class__pytest_1_1nodes_1_1_node_a229a78c0bd7a10e8acebe1fe037d2a91}{getparent} (self, cls)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_aff0a9d7507a8c2e9bbf9775b1b923bd0}\label{class__pytest_1_1nodes_1_1_node_aff0a9d7507a8c2e9bbf9775b1b923bd0}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a55433d45ce825f07844cd7c121d72285}\label{class__pytest_1_1nodes_1_1_node_a55433d45ce825f07844cd7c121d72285}} 
+{\bfseries parent}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a7a9a764ca0de48a094445686e95cfdc8}\label{class__pytest_1_1nodes_1_1_node_a7a9a764ca0de48a094445686e95cfdc8}} 
+{\bfseries config}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a85aed6e3d915e6895e25c34f23f1d793}\label{class__pytest_1_1nodes_1_1_node_a85aed6e3d915e6895e25c34f23f1d793}} 
+{\bfseries session}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a555b9aaa16272517c9f40a316efabc92}\label{class__pytest_1_1nodes_1_1_node_a555b9aaa16272517c9f40a316efabc92}} 
+{\bfseries fspath}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a862bc00b72fdf2a52ed87e50a92095e7}\label{class__pytest_1_1nodes_1_1_node_a862bc00b72fdf2a52ed87e50a92095e7}} 
+{\bfseries keywords}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_aefeceae44c5a05980e6b49ed4d30c352}\label{class__pytest_1_1nodes_1_1_node_aefeceae44c5a05980e6b49ed4d30c352}} 
+{\bfseries own\+\_\+markers}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a6faebba3aa9694892f3e28344a3191de}\label{class__pytest_1_1nodes_1_1_node_a6faebba3aa9694892f3e28344a3191de}} 
+{\bfseries extra\+\_\+keyword\+\_\+matches}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a40bd06c6e1a49573e350ba16cd266e76}\label{class__pytest_1_1nodes_1_1_node_a40bd06c6e1a49573e350ba16cd266e76}} 
+{\bfseries Module} = \hyperlink{class__pytest_1_1nodes_1_1___compat_property}{\+\_\+\+Compat\+Property}(\char`\"{}Module\char`\"{})
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_ac161f6053c726abebf80548d9e0aa779}\label{class__pytest_1_1nodes_1_1_node_ac161f6053c726abebf80548d9e0aa779}} 
+{\bfseries Class} = \hyperlink{class__pytest_1_1nodes_1_1___compat_property}{\+\_\+\+Compat\+Property}(\char`\"{}Class\char`\"{})
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_aa8300980788f94564063d90a01731158}\label{class__pytest_1_1nodes_1_1_node_aa8300980788f94564063d90a01731158}} 
+{\bfseries Instance} = \hyperlink{class__pytest_1_1nodes_1_1___compat_property}{\+\_\+\+Compat\+Property}(\char`\"{}Instance\char`\"{})
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a0a518e7f01a7190579cffcb8ff436123}\label{class__pytest_1_1nodes_1_1_node_a0a518e7f01a7190579cffcb8ff436123}} 
+{\bfseries Function} = \hyperlink{class__pytest_1_1nodes_1_1___compat_property}{\+\_\+\+Compat\+Property}(\char`\"{}Function\char`\"{})
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_aac7101301844db34fe43a862ce5bdb37}\label{class__pytest_1_1nodes_1_1_node_aac7101301844db34fe43a862ce5bdb37}} 
+{\bfseries File} = \hyperlink{class__pytest_1_1nodes_1_1___compat_property}{\+\_\+\+Compat\+Property}(\char`\"{}File\char`\"{})
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a8e86b66d35b951d2b8623001265fbd21}\label{class__pytest_1_1nodes_1_1_node_a8e86b66d35b951d2b8623001265fbd21}} 
+{\bfseries Item} = \hyperlink{class__pytest_1_1nodes_1_1___compat_property}{\+\_\+\+Compat\+Property}(\char`\"{}Item\char`\"{})
+\item 
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a664450415da34b3bccd19cbc3ee8863e}\label{class__pytest_1_1nodes_1_1_node_a664450415da34b3bccd19cbc3ee8863e}} 
+def {\bfseries repr\+\_\+failure} = \+\_\+repr\+\_\+failure\+\_\+py
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}base class for Collector and Item the test collection tree.
+Collector subclasses have children, Items are terminal nodes.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a1d28d2a0ab91d7845025435ff7d3ff7c}\label{class__pytest_1_1nodes_1_1_node_a1d28d2a0ab91d7845025435ff7d3ff7c}} 
+\index{\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}!add\+\_\+marker@{add\+\_\+marker}}
+\index{add\+\_\+marker@{add\+\_\+marker}!\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}}
+\subsubsection{\texorpdfstring{add\+\_\+marker()}{add\_marker()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+nodes.\+Node.\+add\+\_\+marker (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{marker,  }\item[{}]{append = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}dynamically add a marker object to the node.
+
+:type marker: ``str`` or ``pytest.mark.*``  object
+:param marker:
+    ``append=True`` whether to append the marker,
+    if ``False`` insert at position ``0``.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a7cd4d492cfe9587ec3e2115a3aba47f5}\label{class__pytest_1_1nodes_1_1_node_a7cd4d492cfe9587ec3e2115a3aba47f5}} 
+\index{\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}!addfinalizer@{addfinalizer}}
+\index{addfinalizer@{addfinalizer}!\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}}
+\subsubsection{\texorpdfstring{addfinalizer()}{addfinalizer()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+nodes.\+Node.\+addfinalizer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fin }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}register a function to be called when this node is finalized.
+
+This method can only be called when this node is active
+in a setup chain, for example during self.setup().
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_ae23b659185aada70e62911d02763decc}\label{class__pytest_1_1nodes_1_1_node_ae23b659185aada70e62911d02763decc}} 
+\index{\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}!get\+\_\+closest\+\_\+marker@{get\+\_\+closest\+\_\+marker}}
+\index{get\+\_\+closest\+\_\+marker@{get\+\_\+closest\+\_\+marker}!\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}}
+\subsubsection{\texorpdfstring{get\+\_\+closest\+\_\+marker()}{get\_closest\_marker()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+nodes.\+Node.\+get\+\_\+closest\+\_\+marker (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return the first marker matching the name, from closest (for example function) to farther level (for example
+module level).
+
+:param default: fallback return value of no marker was found
+:param name: name to filter by
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_ae2b2c85b2d9fabc5f96c1b992774e5c9}\label{class__pytest_1_1nodes_1_1_node_ae2b2c85b2d9fabc5f96c1b992774e5c9}} 
+\index{\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}!get\+\_\+marker@{get\+\_\+marker}}
+\index{get\+\_\+marker@{get\+\_\+marker}!\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}}
+\subsubsection{\texorpdfstring{get\+\_\+marker()}{get\_marker()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+nodes.\+Node.\+get\+\_\+marker (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}get a marker object from this node or None if
+the node doesn't have a marker with that name.
+
+.. deprecated:: 3.6
+    This function has been deprecated in favor of
+    :meth:`Node.get_closest_marker <_pytest.nodes.Node.get_closest_marker>` and
+    :meth:`Node.iter_markers <_pytest.nodes.Node.iter_markers>`, see :ref:`update marker code`
+    for more details.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a229a78c0bd7a10e8acebe1fe037d2a91}\label{class__pytest_1_1nodes_1_1_node_a229a78c0bd7a10e8acebe1fe037d2a91}} 
+\index{\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}!getparent@{getparent}}
+\index{getparent@{getparent}!\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}}
+\subsubsection{\texorpdfstring{getparent()}{getparent()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+nodes.\+Node.\+getparent (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cls }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}get the next parent node (including ourself)
+which is an instance of the given class\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a33620824e3aa925412302590d53ea608}\label{class__pytest_1_1nodes_1_1_node_a33620824e3aa925412302590d53ea608}} 
+\index{\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}!ihook@{ihook}}
+\index{ihook@{ihook}!\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}}
+\subsubsection{\texorpdfstring{ihook()}{ihook()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+nodes.\+Node.\+ihook (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}fspath sensitive hook proxy used to call pytest hooks\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a6907ee44236e82a68ac370c11a48171a}\label{class__pytest_1_1nodes_1_1_node_a6907ee44236e82a68ac370c11a48171a}} 
+\index{\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}!iter\+\_\+markers@{iter\+\_\+markers}}
+\index{iter\+\_\+markers@{iter\+\_\+markers}!\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}}
+\subsubsection{\texorpdfstring{iter\+\_\+markers()}{iter\_markers()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+nodes.\+Node.\+iter\+\_\+markers (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param name: if given, filter the results by the name attribute
+
+iterate over all markers of the node
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a141c959ae7dbfde9b8de55e11f841ed7}\label{class__pytest_1_1nodes_1_1_node_a141c959ae7dbfde9b8de55e11f841ed7}} 
+\index{\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}!iter\+\_\+markers\+\_\+with\+\_\+node@{iter\+\_\+markers\+\_\+with\+\_\+node}}
+\index{iter\+\_\+markers\+\_\+with\+\_\+node@{iter\+\_\+markers\+\_\+with\+\_\+node}!\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}}
+\subsubsection{\texorpdfstring{iter\+\_\+markers\+\_\+with\+\_\+node()}{iter\_markers\_with\_node()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+nodes.\+Node.\+iter\+\_\+markers\+\_\+with\+\_\+node (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param name: if given, filter the results by the name attribute
+
+iterate over all markers of the node
+returns sequence of tuples (node, mark)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_ae0847320698244a5c0a872d4aa19a618}\label{class__pytest_1_1nodes_1_1_node_ae0847320698244a5c0a872d4aa19a618}} 
+\index{\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}!listchain@{listchain}}
+\index{listchain@{listchain}!\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}}
+\subsubsection{\texorpdfstring{listchain()}{listchain()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+nodes.\+Node.\+listchain (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return list of all parent collectors up to self,
+    starting from root of collection tree. \end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_abd89ec1da759bf88a82025cf125a7b14}\label{class__pytest_1_1nodes_1_1_node_abd89ec1da759bf88a82025cf125a7b14}} 
+\index{\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}!listextrakeywords@{listextrakeywords}}
+\index{listextrakeywords@{listextrakeywords}!\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}}
+\subsubsection{\texorpdfstring{listextrakeywords()}{listextrakeywords()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+nodes.\+Node.\+listextrakeywords (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a set of all extra keywords in self and any parents.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_a02f18acbfaf1f9d8ba9b6c1346dc6217}\label{class__pytest_1_1nodes_1_1_node_a02f18acbfaf1f9d8ba9b6c1346dc6217}} 
+\index{\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}!nodeid@{nodeid}}
+\index{nodeid@{nodeid}!\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}}
+\subsubsection{\texorpdfstring{nodeid()}{nodeid()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+nodes.\+Node.\+nodeid (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}a ::-separated string denoting its collection tree address. \end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1nodes_1_1_node_ab3e0c36e81b150fed632bbcec28cef45}\label{class__pytest_1_1nodes_1_1_node_ab3e0c36e81b150fed632bbcec28cef45}} 
+\index{\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}!warn@{warn}}
+\index{warn@{warn}!\+\_\+pytest\+::nodes\+::\+Node@{\+\_\+pytest\+::nodes\+::\+Node}}
+\subsubsection{\texorpdfstring{warn()}{warn()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+nodes.\+Node.\+warn (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{\+\_\+code\+\_\+or\+\_\+warning = {\ttfamily None},  }\item[{}]{message = {\ttfamily None},  }\item[{}]{code = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Issue a warning for this item.
+
+Warnings will be displayed after the test session, unless explicitly suppressed.
+
+This can be called in two forms:
+
+**Warning instance**
+
+This was introduced in pytest 3.8 and uses the standard warning mechanism to issue warnings.
+
+.. code-block:: python
+
+    node.warn(PytestWarning("some message"))
+
+The warning instance must be a subclass of :class:`pytest.PytestWarning`.
+
+**code/message (deprecated)**
+
+This form was used in pytest prior to 3.8 and is considered deprecated. Using this form will emit another
+warning about the deprecation:
+
+.. code-block:: python
+
+    node.warn("CI", "some message")
+
+:param Union[Warning,str] _code_or_warning:
+    warning instance or warning code (legacy). This parameter receives an underscore for backward
+    compatibility with the legacy code/message form, and will be replaced for something
+    more usual when the legacy form is removed.
+
+:param Union[str,None] message: message to display when called in the legacy form.
+:param str code: code for the warning, in legacy form when using keyword arguments.
+:return:
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/nodes.\+py\end{DoxyCompactItemize}

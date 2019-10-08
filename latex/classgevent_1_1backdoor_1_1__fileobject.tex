@@ -1,0 +1,53 @@
+\hypertarget{classgevent_1_1backdoor_1_1__fileobject}{}\section{gevent.\+backdoor.\+\_\+fileobject Class Reference}
+\label{classgevent_1_1backdoor_1_1__fileobject}\index{gevent.\+backdoor.\+\_\+fileobject@{gevent.\+backdoor.\+\_\+fileobject}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1backdoor_1_1__fileobject_af4ba2a94908de0a43c89725e87783b50}\label{classgevent_1_1backdoor_1_1__fileobject_af4ba2a94908de0a43c89725e87783b50}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, sock, fobj, stderr)
+\item 
+\mbox{\Hypertarget{classgevent_1_1backdoor_1_1__fileobject_af9ad034a47152294526e47df314be65e}\label{classgevent_1_1backdoor_1_1__fileobject_af9ad034a47152294526e47df314be65e}} 
+def {\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, name)
+\item 
+\mbox{\Hypertarget{classgevent_1_1backdoor_1_1__fileobject_a662c60042aeb70e5503da9476e295219}\label{classgevent_1_1backdoor_1_1__fileobject_a662c60042aeb70e5503da9476e295219}} 
+def {\bfseries close} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1backdoor_1_1__fileobject_a38100d1e007a5ba11e67efaa1cf951b5}\label{classgevent_1_1backdoor_1_1__fileobject_a38100d1e007a5ba11e67efaa1cf951b5}} 
+def {\bfseries write} (self, data)
+\item 
+\mbox{\Hypertarget{classgevent_1_1backdoor_1_1__fileobject_acc9f551036315ed18cd4764f645e90ea}\label{classgevent_1_1backdoor_1_1__fileobject_acc9f551036315ed18cd4764f645e90ea}} 
+def {\bfseries isatty} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1backdoor_1_1__fileobject_a3be7b7a197b698f6b22d232cbbd37fbc}\label{classgevent_1_1backdoor_1_1__fileobject_a3be7b7a197b698f6b22d232cbbd37fbc}} 
+def {\bfseries flush} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1backdoor_1_1__fileobject_a0ae10658d347578588aff484ab198e7d}\label{classgevent_1_1backdoor_1_1__fileobject_a0ae10658d347578588aff484ab198e7d}} 
+def {\bfseries readline} (self, a)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1backdoor_1_1__fileobject_ae2103806d986d9b8af189aeca12143fe}\label{classgevent_1_1backdoor_1_1__fileobject_ae2103806d986d9b8af189aeca12143fe}} 
+{\bfseries stderr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A file-like object that wraps the result of socket.makefile (composition
+instead of inheritance lets us work identically under CPython and PyPy).
+
+We write directly to the socket, avoiding the buffering that the text-oriented
+makefile would want to do (otherwise we'd be at the mercy of waiting on a
+flush() to get called for the remote user to see data); this beats putting
+the file in binary mode and translating everywhere with a non-default
+encoding.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/backdoor.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,78 @@
+\hypertarget{classgevent_1_1select_1_1poll}{}\section{gevent.\+select.\+poll Class Reference}
+\label{classgevent_1_1select_1_1poll}\index{gevent.\+select.\+poll@{gevent.\+select.\+poll}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1select_1_1poll_aa57bb6ca46315d462b37a6af858b53b3}\label{classgevent_1_1select_1_1poll_aa57bb6ca46315d462b37a6af858b53b3}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1select_1_1poll_abe9ce1c1e33875fdfc6204f51c3b9e34}\label{classgevent_1_1select_1_1poll_abe9ce1c1e33875fdfc6204f51c3b9e34}} 
+def {\bfseries register} (self, fd, eventmask=\hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE})
+\item 
+\mbox{\Hypertarget{classgevent_1_1select_1_1poll_aa4c435ed2f6f4dbe27854907a3e83c63}\label{classgevent_1_1select_1_1poll_aa4c435ed2f6f4dbe27854907a3e83c63}} 
+def {\bfseries modify} (self, fd, eventmask)
+\item 
+def \hyperlink{classgevent_1_1select_1_1poll_af70f7d5747b1e8750dc9ad6e3173ecdf}{poll} (self, timeout=None)
+\item 
+def \hyperlink{classgevent_1_1select_1_1poll_a5aecc5148e5d2f45dc2a6bda4804c135}{unregister} (self, fd)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1select_1_1poll_a0c3f1bdef0601ac16e5c075033c29585}\label{classgevent_1_1select_1_1poll_a0c3f1bdef0601ac16e5c075033c29585}} 
+{\bfseries fds}
+\item 
+\mbox{\Hypertarget{classgevent_1_1select_1_1poll_a25b362e2d273c69239c6cbbeddc36a66}\label{classgevent_1_1select_1_1poll_a25b362e2d273c69239c6cbbeddc36a66}} 
+{\bfseries loop}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}An implementation of :class:`select.poll` that blocks only the current greenlet.
+
+.. caution:: ``POLLPRI`` data is not supported.
+
+.. versionadded:: 1.1b1
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgevent_1_1select_1_1poll_af70f7d5747b1e8750dc9ad6e3173ecdf}\label{classgevent_1_1select_1_1poll_af70f7d5747b1e8750dc9ad6e3173ecdf}} 
+\index{gevent\+::select\+::poll@{gevent\+::select\+::poll}!poll@{poll}}
+\index{poll@{poll}!gevent\+::select\+::poll@{gevent\+::select\+::poll}}
+\subsubsection{\texorpdfstring{poll()}{poll()}}
+{\footnotesize\ttfamily def gevent.\+select.\+poll.\+poll (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}poll the registered fds.
+
+.. versionchanged:: 1.2a1
+   File descriptors that are closed are reported with POLLNVAL.
+
+.. versionchanged:: 1.3a2
+   Under libuv, interpret *timeout* values less than 0 the same as *None*,
+   i.e., block. This was always the case with libev.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1select_1_1poll_a5aecc5148e5d2f45dc2a6bda4804c135}\label{classgevent_1_1select_1_1poll_a5aecc5148e5d2f45dc2a6bda4804c135}} 
+\index{gevent\+::select\+::poll@{gevent\+::select\+::poll}!unregister@{unregister}}
+\index{unregister@{unregister}!gevent\+::select\+::poll@{gevent\+::select\+::poll}}
+\subsubsection{\texorpdfstring{unregister()}{unregister()}}
+{\footnotesize\ttfamily def gevent.\+select.\+poll.\+unregister (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fd }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Unregister the *fd*.
+
+.. versionchanged:: 1.2a1
+   Raise a `KeyError` if *fd* was not registered, like the standard
+   library. Previously gevent did nothing.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/select.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,59 @@
+\hypertarget{namespacegevent_1_1__ssl2}{}\section{gevent.\+\_\+ssl2 Namespace Reference}
+\label{namespacegevent_1_1__ssl2}\index{gevent.\+\_\+ssl2@{gevent.\+\_\+ssl2}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgevent_1_1__ssl2_1_1_s_s_l_socket}{S\+S\+L\+Socket}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1__ssl2_a448e3f7533be4db8be282f333c2d219d}{wrap\+\_\+socket} (sock, keyfile=None, certfile=None, server\+\_\+side=False, cert\+\_\+reqs=C\+E\+R\+T\+\_\+\+N\+O\+NE, ssl\+\_\+version=P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+S\+S\+Lv23, ca\+\_\+certs=None, do\+\_\+handshake\+\_\+on\+\_\+connect=True, suppress\+\_\+ragged\+\_\+eofs=True, ciphers=None)
+\item 
+def \hyperlink{namespacegevent_1_1__ssl2_ab18006831d4481e988ad6e71c28f38d0}{get\+\_\+server\+\_\+certificate} (addr, ssl\+\_\+version=P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+S\+S\+Lv23, ca\+\_\+certs=None)
+\item 
+def \hyperlink{namespacegevent_1_1__ssl2_a0ad7441640c76bee50fb20baedbb028f}{sslwrap\+\_\+simple} (sock, keyfile=None, certfile=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacegevent_1_1__ssl2_ac56a33594c8daf3628f92051f1cf0c53}{timeout}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1__ssl2_ab18006831d4481e988ad6e71c28f38d0}\label{namespacegevent_1_1__ssl2_ab18006831d4481e988ad6e71c28f38d0}} 
+\index{gevent\+::\+\_\+ssl2@{gevent\+::\+\_\+ssl2}!get\+\_\+server\+\_\+certificate@{get\+\_\+server\+\_\+certificate}}
+\index{get\+\_\+server\+\_\+certificate@{get\+\_\+server\+\_\+certificate}!gevent\+::\+\_\+ssl2@{gevent\+::\+\_\+ssl2}}
+\subsubsection{\texorpdfstring{get\+\_\+server\+\_\+certificate()}{get\_server\_certificate()}}
+{\footnotesize\ttfamily def gevent.\+\_\+ssl2.\+get\+\_\+server\+\_\+certificate (\begin{DoxyParamCaption}\item[{}]{addr,  }\item[{}]{ssl\+\_\+version = {\ttfamily PROTOCOL\+\_\+SSLv23},  }\item[{}]{ca\+\_\+certs = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve the certificate from the server at the specified address,
+and return it as a PEM-encoded string.
+If 'ca_certs' is specified, validate the server cert against it.
+If 'ssl_version' is specified, use it in the connection attempt.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__ssl2_a0ad7441640c76bee50fb20baedbb028f}\label{namespacegevent_1_1__ssl2_a0ad7441640c76bee50fb20baedbb028f}} 
+\index{gevent\+::\+\_\+ssl2@{gevent\+::\+\_\+ssl2}!sslwrap\+\_\+simple@{sslwrap\+\_\+simple}}
+\index{sslwrap\+\_\+simple@{sslwrap\+\_\+simple}!gevent\+::\+\_\+ssl2@{gevent\+::\+\_\+ssl2}}
+\subsubsection{\texorpdfstring{sslwrap\+\_\+simple()}{sslwrap\_simple()}}
+{\footnotesize\ttfamily def gevent.\+\_\+ssl2.\+sslwrap\+\_\+simple (\begin{DoxyParamCaption}\item[{}]{sock,  }\item[{}]{keyfile = {\ttfamily None},  }\item[{}]{certfile = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A replacement for the old socket.ssl function.  Designed
+for compatibility with Python 2.5 and earlier.  Will disappear in
+Python 3.0.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__ssl2_a448e3f7533be4db8be282f333c2d219d}\label{namespacegevent_1_1__ssl2_a448e3f7533be4db8be282f333c2d219d}} 
+\index{gevent\+::\+\_\+ssl2@{gevent\+::\+\_\+ssl2}!wrap\+\_\+socket@{wrap\+\_\+socket}}
+\index{wrap\+\_\+socket@{wrap\+\_\+socket}!gevent\+::\+\_\+ssl2@{gevent\+::\+\_\+ssl2}}
+\subsubsection{\texorpdfstring{wrap\+\_\+socket()}{wrap\_socket()}}
+{\footnotesize\ttfamily def gevent.\+\_\+ssl2.\+wrap\+\_\+socket (\begin{DoxyParamCaption}\item[{}]{sock,  }\item[{}]{keyfile = {\ttfamily None},  }\item[{}]{certfile = {\ttfamily None},  }\item[{}]{server\+\_\+side = {\ttfamily False},  }\item[{}]{cert\+\_\+reqs = {\ttfamily CERT\+\_\+NONE},  }\item[{}]{ssl\+\_\+version = {\ttfamily PROTOCOL\+\_\+SSLv23},  }\item[{}]{ca\+\_\+certs = {\ttfamily None},  }\item[{}]{do\+\_\+handshake\+\_\+on\+\_\+connect = {\ttfamily True},  }\item[{}]{suppress\+\_\+ragged\+\_\+eofs = {\ttfamily True},  }\item[{}]{ciphers = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new :class:`SSLSocket` instance.\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1__ssl2_ac56a33594c8daf3628f92051f1cf0c53}\label{namespacegevent_1_1__ssl2_ac56a33594c8daf3628f92051f1cf0c53}} 
+\index{gevent\+::\+\_\+ssl2@{gevent\+::\+\_\+ssl2}!timeout@{timeout}}
+\index{timeout@{timeout}!gevent\+::\+\_\+ssl2@{gevent\+::\+\_\+ssl2}}
+\subsubsection{\texorpdfstring{timeout}{timeout}}
+{\footnotesize\ttfamily gevent.\+\_\+ssl2.\+timeout}
+

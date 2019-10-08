@@ -1,0 +1,189 @@
+\hypertarget{namespacepip_1_1cmdoptions}{}\section{pip.\+cmdoptions Namespace Reference}
+\label{namespacepip_1_1cmdoptions}\index{pip.\+cmdoptions@{pip.\+cmdoptions}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepip_1_1cmdoptions_a4933ebcd6ce60db8d069607901312dd7}{make\+\_\+option\+\_\+group} (group, parser)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1cmdoptions_a4e4656b9503c3bff3e638f5698b059e8}\label{namespacepip_1_1cmdoptions_a4e4656b9503c3bff3e638f5698b059e8}} 
+def {\bfseries resolve\+\_\+wheel\+\_\+no\+\_\+use\+\_\+binary} (options)
+\item 
+def \hyperlink{namespacepip_1_1cmdoptions_afcf275e5a138ede6ea6a569ff211aded}{check\+\_\+install\+\_\+build\+\_\+global} (options, check\+\_\+options=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacepip_1_1cmdoptions_aecd6fe12bddb7700267409378e3f1bc6}{help\+\_\+}
+\begin{DoxyCompactList}\small\item\em options \# \end{DoxyCompactList}\item 
+{\bfseries isolated\+\_\+mode}
+\item 
+{\bfseries require\+\_\+virtualenv}
+\item 
+{\bfseries verbose}
+\item 
+{\bfseries version}
+\item 
+{\bfseries quiet}
+\item 
+{\bfseries log}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}shared options and groups
+
+The principle here is to define options once, but *not* instantiate them
+globally. One reason being that options with action='append' can carry state
+between parses. pip parses general options twice internally, and shouldn't
+pass on state. To be consistent, all options will follow this design.\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepip_1_1cmdoptions_afcf275e5a138ede6ea6a569ff211aded}\label{namespacepip_1_1cmdoptions_afcf275e5a138ede6ea6a569ff211aded}} 
+\index{pip\+::cmdoptions@{pip\+::cmdoptions}!check\+\_\+install\+\_\+build\+\_\+global@{check\+\_\+install\+\_\+build\+\_\+global}}
+\index{check\+\_\+install\+\_\+build\+\_\+global@{check\+\_\+install\+\_\+build\+\_\+global}!pip\+::cmdoptions@{pip\+::cmdoptions}}
+\subsubsection{\texorpdfstring{check\+\_\+install\+\_\+build\+\_\+global()}{check\_install\_build\_global()}}
+{\footnotesize\ttfamily def pip.\+cmdoptions.\+check\+\_\+install\+\_\+build\+\_\+global (\begin{DoxyParamCaption}\item[{}]{options,  }\item[{}]{check\+\_\+options = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Disable wheels if per-setup.py call options are set.
+
+:param options: The OptionParser options to update.
+:param check_options: The options to check, if not supplied defaults to
+    options.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1cmdoptions_a4933ebcd6ce60db8d069607901312dd7}\label{namespacepip_1_1cmdoptions_a4933ebcd6ce60db8d069607901312dd7}} 
+\index{pip\+::cmdoptions@{pip\+::cmdoptions}!make\+\_\+option\+\_\+group@{make\+\_\+option\+\_\+group}}
+\index{make\+\_\+option\+\_\+group@{make\+\_\+option\+\_\+group}!pip\+::cmdoptions@{pip\+::cmdoptions}}
+\subsubsection{\texorpdfstring{make\+\_\+option\+\_\+group()}{make\_option\_group()}}
+{\footnotesize\ttfamily def pip.\+cmdoptions.\+make\+\_\+option\+\_\+group (\begin{DoxyParamCaption}\item[{}]{group,  }\item[{}]{parser }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an OptionGroup object
+group  -- assumed to be dict with 'name' and 'options' keys
+parser -- an optparse Parser
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepip_1_1cmdoptions_aecd6fe12bddb7700267409378e3f1bc6}\label{namespacepip_1_1cmdoptions_aecd6fe12bddb7700267409378e3f1bc6}} 
+\index{pip\+::cmdoptions@{pip\+::cmdoptions}!help\+\_\+@{help\+\_\+}}
+\index{help\+\_\+@{help\+\_\+}!pip\+::cmdoptions@{pip\+::cmdoptions}}
+\subsubsection{\texorpdfstring{help\+\_\+}{help\_}}
+{\footnotesize\ttfamily pip.\+cmdoptions.\+help\+\_\+}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  partial(
+2     Option,
+3     \textcolor{stringliteral}{'-h'}, \textcolor{stringliteral}{'--help'},
+4     dest=\textcolor{stringliteral}{'help'},
+5     action=\textcolor{stringliteral}{'help'},
+6     help=\textcolor{stringliteral}{'Show help.'})
+\end{DoxyCode}
+
+
+options \# 
+
+\mbox{\Hypertarget{namespacepip_1_1cmdoptions_a7d1cbf6fac2153496a9f1ab9f882391b}\label{namespacepip_1_1cmdoptions_a7d1cbf6fac2153496a9f1ab9f882391b}} 
+\index{pip\+::cmdoptions@{pip\+::cmdoptions}!isolated\+\_\+mode@{isolated\+\_\+mode}}
+\index{isolated\+\_\+mode@{isolated\+\_\+mode}!pip\+::cmdoptions@{pip\+::cmdoptions}}
+\subsubsection{\texorpdfstring{isolated\+\_\+mode}{isolated\_mode}}
+{\footnotesize\ttfamily pip.\+cmdoptions.\+isolated\+\_\+mode}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  partial(
+2     Option,
+3     \textcolor{stringliteral}{"--isolated"},
+4     dest=\textcolor{stringliteral}{"isolated\_mode"},
+5     action=\textcolor{stringliteral}{"store\_true"},
+6     default=\textcolor{keyword}{False},
+7     help=(
+8         \textcolor{stringliteral}{"Run pip in an isolated mode, ignoring environment variables and user "}
+9         \textcolor{stringliteral}{"configuration."}
+10     ),
+11 )
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1cmdoptions_a1b6e4dc17d4b074a0b509299d44d6f4f}\label{namespacepip_1_1cmdoptions_a1b6e4dc17d4b074a0b509299d44d6f4f}} 
+\index{pip\+::cmdoptions@{pip\+::cmdoptions}!log@{log}}
+\index{log@{log}!pip\+::cmdoptions@{pip\+::cmdoptions}}
+\subsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily pip.\+cmdoptions.\+log}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  partial(
+2     Option,
+3     \textcolor{stringliteral}{"--log"}, \textcolor{stringliteral}{"--log-file"}, \textcolor{stringliteral}{"--local-log"},
+4     dest=\textcolor{stringliteral}{"log"},
+5     metavar=\textcolor{stringliteral}{"path"},
+6     help=\textcolor{stringliteral}{"Path to a verbose appending log."}
+7 )
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1cmdoptions_a73fbc99c76e32b52230a2614565b79f7}\label{namespacepip_1_1cmdoptions_a73fbc99c76e32b52230a2614565b79f7}} 
+\index{pip\+::cmdoptions@{pip\+::cmdoptions}!quiet@{quiet}}
+\index{quiet@{quiet}!pip\+::cmdoptions@{pip\+::cmdoptions}}
+\subsubsection{\texorpdfstring{quiet}{quiet}}
+{\footnotesize\ttfamily pip.\+cmdoptions.\+quiet}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  partial(
+2     Option,
+3     \textcolor{stringliteral}{'-q'}, \textcolor{stringliteral}{'--quiet'},
+4     dest=\textcolor{stringliteral}{'quiet'},
+5     action=\textcolor{stringliteral}{'count'},
+6     default=0,
+7     help=(\textcolor{stringliteral}{'Give less output. Option is additive, and can be used up to 3'}
+8           \textcolor{stringliteral}{' times (corresponding to WARNING, ERROR, and CRITICAL logging'}
+9           \textcolor{stringliteral}{' levels).'})
+10 )
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1cmdoptions_aa7e739a12d818b9aaa9f3771b05cba0c}\label{namespacepip_1_1cmdoptions_aa7e739a12d818b9aaa9f3771b05cba0c}} 
+\index{pip\+::cmdoptions@{pip\+::cmdoptions}!require\+\_\+virtualenv@{require\+\_\+virtualenv}}
+\index{require\+\_\+virtualenv@{require\+\_\+virtualenv}!pip\+::cmdoptions@{pip\+::cmdoptions}}
+\subsubsection{\texorpdfstring{require\+\_\+virtualenv}{require\_virtualenv}}
+{\footnotesize\ttfamily pip.\+cmdoptions.\+require\+\_\+virtualenv}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  partial(
+2     Option,
+3     \textcolor{comment}{# Run only if inside a virtualenv, bail if not.}
+4     \textcolor{stringliteral}{'--require-virtualenv'}, \textcolor{stringliteral}{'--require-venv'},
+5     dest=\textcolor{stringliteral}{'require\_venv'},
+6     action=\textcolor{stringliteral}{'store\_true'},
+7     default=\textcolor{keyword}{False},
+8     help=SUPPRESS\_HELP)
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1cmdoptions_a571cf3fd897e4144f1f3fff1e586f8bf}\label{namespacepip_1_1cmdoptions_a571cf3fd897e4144f1f3fff1e586f8bf}} 
+\index{pip\+::cmdoptions@{pip\+::cmdoptions}!verbose@{verbose}}
+\index{verbose@{verbose}!pip\+::cmdoptions@{pip\+::cmdoptions}}
+\subsubsection{\texorpdfstring{verbose}{verbose}}
+{\footnotesize\ttfamily pip.\+cmdoptions.\+verbose}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  partial(
+2     Option,
+3     \textcolor{stringliteral}{'-v'}, \textcolor{stringliteral}{'--verbose'},
+4     dest=\textcolor{stringliteral}{'verbose'},
+5     action=\textcolor{stringliteral}{'count'},
+6     default=0,
+7     help=\textcolor{stringliteral}{'Give more output. Option is additive, and can be used up to 3 times.'}
+8 )
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1cmdoptions_ad58e65e658b9115f6c082d4506cea1a5}\label{namespacepip_1_1cmdoptions_ad58e65e658b9115f6c082d4506cea1a5}} 
+\index{pip\+::cmdoptions@{pip\+::cmdoptions}!version@{version}}
+\index{version@{version}!pip\+::cmdoptions@{pip\+::cmdoptions}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily pip.\+cmdoptions.\+version}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  partial(
+2     Option,
+3     \textcolor{stringliteral}{'-V'}, \textcolor{stringliteral}{'--version'},
+4     dest=\textcolor{stringliteral}{'version'},
+5     action=\textcolor{stringliteral}{'store\_true'},
+6     help=\textcolor{stringliteral}{'Show version and exit.'})
+\end{DoxyCode}

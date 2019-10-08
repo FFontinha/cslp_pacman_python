@@ -1,0 +1,86 @@
+\hypertarget{classmore__itertools_1_1more_1_1seekable}{}\section{more\+\_\+itertools.\+more.\+seekable Class Reference}
+\label{classmore__itertools_1_1more_1_1seekable}\index{more\+\_\+itertools.\+more.\+seekable@{more\+\_\+itertools.\+more.\+seekable}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmore__itertools_1_1more_1_1seekable_a90b67cb6fa3335dcabbd9cbb362255ee}\label{classmore__itertools_1_1more_1_1seekable_a90b67cb6fa3335dcabbd9cbb362255ee}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, iterable)
+\item 
+\mbox{\Hypertarget{classmore__itertools_1_1more_1_1seekable_a6c990b24f2289600f6b7e17dd0ec323d}\label{classmore__itertools_1_1more_1_1seekable_a6c990b24f2289600f6b7e17dd0ec323d}} 
+def {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classmore__itertools_1_1more_1_1seekable_aeaa88e3867e050897503488edffabcbe}\label{classmore__itertools_1_1more_1_1seekable_aeaa88e3867e050897503488edffabcbe}} 
+def {\bfseries \+\_\+\+\_\+next\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classmore__itertools_1_1more_1_1seekable_a1aaa89c5313198dd0c83d0486c00602d}\label{classmore__itertools_1_1more_1_1seekable_a1aaa89c5313198dd0c83d0486c00602d}} 
+def {\bfseries elements} (self)
+\item 
+\mbox{\Hypertarget{classmore__itertools_1_1more_1_1seekable_af55f741bc7010441bec76fdac6b35cc3}\label{classmore__itertools_1_1more_1_1seekable_af55f741bc7010441bec76fdac6b35cc3}} 
+def {\bfseries seek} (self, index)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmore__itertools_1_1more_1_1seekable_a8cf943f5e74581093ad1fb3fa44cac3b}\label{classmore__itertools_1_1more_1_1seekable_a8cf943f5e74581093ad1fb3fa44cac3b}} 
+def {\bfseries next} = \+\_\+\+\_\+next\+\_\+\+\_\+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Wrap an iterator to allow for seeking backward and forward. This
+progressively caches the items in the source iterable so they can be
+re-visited.
+
+Call :meth:`seek` with an index to seek to that position in the source
+iterable.
+
+To "reset" an iterator, seek to ``0``:
+
+    >>> from itertools import count
+    >>> it = seekable((str(n) for n in count()))
+    >>> next(it), next(it), next(it)
+    ('0', '1', '2')
+    >>> it.seek(0)
+    >>> next(it), next(it), next(it)
+    ('0', '1', '2')
+    >>> next(it)
+    '3'
+
+You can also seek forward:
+
+    >>> it = seekable((str(n) for n in range(20)))
+    >>> it.seek(10)
+    >>> next(it)
+    '10'
+    >>> it.seek(20)  # Seeking past the end of the source isn't a problem
+    >>> list(it)
+    []
+    >>> it.seek(0)  # Resetting works even after hitting the end
+    >>> next(it), next(it), next(it)
+    ('0', '1', '2')
+
+The cache grows as the source iterable progresses, so beware of wrapping
+very large or infinite iterables.
+
+You may view the contents of the cache with the :meth:`elements` method.
+That returns a :class:`SequenceView`, a view that updates automatically:
+
+    >>> it = seekable((str(n) for n in range(10)))
+    >>> next(it), next(it), next(it)
+    ('0', '1', '2')
+    >>> elements = it.elements()
+    >>> elements
+    SequenceView(['0', '1', '2'])
+    >>> next(it)
+    '3'
+    >>> elements
+    SequenceView(['0', '1', '2', '3'])\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/more\+\_\+itertools/more.\+py\end{DoxyCompactItemize}

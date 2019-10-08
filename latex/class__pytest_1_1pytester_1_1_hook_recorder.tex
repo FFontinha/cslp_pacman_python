@@ -1,0 +1,78 @@
+\hypertarget{class__pytest_1_1pytester_1_1_hook_recorder}{}\section{\+\_\+pytest.\+pytester.\+Hook\+Recorder Class Reference}
+\label{class__pytest_1_1pytester_1_1_hook_recorder}\index{\+\_\+pytest.\+pytester.\+Hook\+Recorder@{\+\_\+pytest.\+pytester.\+Hook\+Recorder}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a62538aa2dec55443a6fa5e6087beabee}\label{class__pytest_1_1pytester_1_1_hook_recorder_a62538aa2dec55443a6fa5e6087beabee}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, pluginmanager)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_ab4bb292bc68f8ab083214e668a0ab59f}\label{class__pytest_1_1pytester_1_1_hook_recorder_ab4bb292bc68f8ab083214e668a0ab59f}} 
+def {\bfseries finish\+\_\+recording} (self)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a0bddc80a82bcacdc87a44919ac088989}\label{class__pytest_1_1pytester_1_1_hook_recorder_a0bddc80a82bcacdc87a44919ac088989}} 
+def {\bfseries getcalls} (self, names)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_af3bd788bf6cc845db6228bd4902d3eed}\label{class__pytest_1_1pytester_1_1_hook_recorder_af3bd788bf6cc845db6228bd4902d3eed}} 
+def {\bfseries assert\+\_\+contains} (self, entries)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a4f606db051997363036eb89e276ab588}\label{class__pytest_1_1pytester_1_1_hook_recorder_a4f606db051997363036eb89e276ab588}} 
+def {\bfseries popcall} (self, name)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a1be41dcdfa6d4a1564545b23a0af9074}\label{class__pytest_1_1pytester_1_1_hook_recorder_a1be41dcdfa6d4a1564545b23a0af9074}} 
+def {\bfseries getcall} (self, name)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_ad0b08fea43f01459ad3c56ba5f6445c7}\label{class__pytest_1_1pytester_1_1_hook_recorder_ad0b08fea43f01459ad3c56ba5f6445c7}} 
+def {\bfseries getreports} (self, names=\char`\"{}pytest\+\_\+runtest\+\_\+logreport pytest\+\_\+collectreport\char`\"{})
+\item 
+def \hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_ac2cd71da5aceb43cf6d57b14429e92a9}{matchreport} (self, inamepart=\char`\"{}\char`\"{}, names=\char`\"{}pytest\+\_\+runtest\+\_\+logreport pytest\+\_\+collectreport\char`\"{}, when=None)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_aaf87db60783e68043be5a1712f75ecd5}\label{class__pytest_1_1pytester_1_1_hook_recorder_aaf87db60783e68043be5a1712f75ecd5}} 
+def {\bfseries getfailures} (self, names=\char`\"{}pytest\+\_\+runtest\+\_\+logreport pytest\+\_\+collectreport\char`\"{})
+\item 
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a6cac0d813de3d017d25d0ca8767a3ffd}\label{class__pytest_1_1pytester_1_1_hook_recorder_a6cac0d813de3d017d25d0ca8767a3ffd}} 
+def {\bfseries getfailedcollections} (self)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a6d80d77df1d65143a5280171ccd5abf7}\label{class__pytest_1_1pytester_1_1_hook_recorder_a6d80d77df1d65143a5280171ccd5abf7}} 
+def {\bfseries listoutcomes} (self)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_aebc69324fab4490998b8bc40d568c1e9}\label{class__pytest_1_1pytester_1_1_hook_recorder_aebc69324fab4490998b8bc40d568c1e9}} 
+def {\bfseries countoutcomes} (self)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_adfbd61d73e4f358c38f24f7a5a7c866b}\label{class__pytest_1_1pytester_1_1_hook_recorder_adfbd61d73e4f358c38f24f7a5a7c866b}} 
+def {\bfseries assertoutcome} (self, passed=0, skipped=0, failed=0)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a4205cb0c6397d8919c00a26c0fa71892}\label{class__pytest_1_1pytester_1_1_hook_recorder_a4205cb0c6397d8919c00a26c0fa71892}} 
+def {\bfseries clear} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a5a120ecf53edbc3ffe607bb4bc6238d4}\label{class__pytest_1_1pytester_1_1_hook_recorder_a5a120ecf53edbc3ffe607bb4bc6238d4}} 
+{\bfseries calls}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Record all hooks called in a plugin manager.
+
+This wraps all the hook calls in the plugin manager, recording each call
+before propagating the normal calls.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_ac2cd71da5aceb43cf6d57b14429e92a9}\label{class__pytest_1_1pytester_1_1_hook_recorder_ac2cd71da5aceb43cf6d57b14429e92a9}} 
+\index{\+\_\+pytest\+::pytester\+::\+Hook\+Recorder@{\+\_\+pytest\+::pytester\+::\+Hook\+Recorder}!matchreport@{matchreport}}
+\index{matchreport@{matchreport}!\+\_\+pytest\+::pytester\+::\+Hook\+Recorder@{\+\_\+pytest\+::pytester\+::\+Hook\+Recorder}}
+\subsubsection{\texorpdfstring{matchreport()}{matchreport()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+matchreport (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{inamepart = {\ttfamily \char`\"{}\char`\"{}},  }\item[{}]{names = {\ttfamily \char`\"{}pytest\+\_\+runtest\+\_\+logreport~pytest\+\_\+collectreport\char`\"{}},  }\item[{}]{when = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a testreport whose dotted import path matches\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/pytester.\+py\end{DoxyCompactItemize}

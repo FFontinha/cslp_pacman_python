@@ -1,0 +1,66 @@
+\hypertarget{namespacegevent_1_1select}{}\section{gevent.\+select Namespace Reference}
+\label{namespacegevent_1_1select}\index{gevent.\+select@{gevent.\+select}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgevent_1_1select_1_1poll}{poll}
+\item 
+class \hyperlink{classgevent_1_1select_1_1_poll_result}{Poll\+Result}
+\item 
+class \hyperlink{classgevent_1_1select_1_1_select_result}{Select\+Result}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1select_a0ae62b44096d88ce75c2173a7f8b647d}{get\+\_\+fileno} (obj)
+\item 
+def \hyperlink{namespacegevent_1_1select_aa001b4b6ecde28467c1e0c9329d8418d}{select} (rlist, wlist, xlist, timeout=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacegevent_1_1select_ad7314893f8d66c09953f9beb27f30056}{original\+\_\+poll} = None
+\item 
+\hyperlink{namespacegevent_1_1select_a08385e621115d5284edb3890ea2a82af}{error} = \+\_\+\+\_\+select\+\_\+\+\_\+.\+error
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1select_a0ae62b44096d88ce75c2173a7f8b647d}\label{namespacegevent_1_1select_a0ae62b44096d88ce75c2173a7f8b647d}} 
+\index{gevent\+::select@{gevent\+::select}!get\+\_\+fileno@{get\+\_\+fileno}}
+\index{get\+\_\+fileno@{get\+\_\+fileno}!gevent\+::select@{gevent\+::select}}
+\subsubsection{\texorpdfstring{get\+\_\+fileno()}{get\_fileno()}}
+{\footnotesize\ttfamily def gevent.\+select.\+get\+\_\+fileno (\begin{DoxyParamCaption}\item[{}]{obj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegevent_1_1select_aa001b4b6ecde28467c1e0c9329d8418d}\label{namespacegevent_1_1select_aa001b4b6ecde28467c1e0c9329d8418d}} 
+\index{gevent\+::select@{gevent\+::select}!select@{select}}
+\index{select@{select}!gevent\+::select@{gevent\+::select}}
+\subsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily def gevent.\+select.\+select (\begin{DoxyParamCaption}\item[{}]{rlist,  }\item[{}]{wlist,  }\item[{}]{xlist,  }\item[{}]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}An implementation of :meth:`select.select` that blocks only the current greenlet.
+
+.. caution:: *xlist* is ignored.
+
+.. versionchanged:: 1.2a1
+   Raise a :exc:`ValueError` if timeout is negative. This matches Python 3's
+   behaviour (Python 2 would raise a ``select.error``). Previously gevent had
+   undefined behaviour.
+.. versionchanged:: 1.2a1
+   Raise an exception if any of the file descriptors are invalid.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1select_a08385e621115d5284edb3890ea2a82af}\label{namespacegevent_1_1select_a08385e621115d5284edb3890ea2a82af}} 
+\index{gevent\+::select@{gevent\+::select}!error@{error}}
+\index{error@{error}!gevent\+::select@{gevent\+::select}}
+\subsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily gevent.\+select.\+error = \+\_\+\+\_\+select\+\_\+\+\_\+.\+error}
+
+\mbox{\Hypertarget{namespacegevent_1_1select_ad7314893f8d66c09953f9beb27f30056}\label{namespacegevent_1_1select_ad7314893f8d66c09953f9beb27f30056}} 
+\index{gevent\+::select@{gevent\+::select}!original\+\_\+poll@{original\+\_\+poll}}
+\index{original\+\_\+poll@{original\+\_\+poll}!gevent\+::select@{gevent\+::select}}
+\subsubsection{\texorpdfstring{original\+\_\+poll}{original\_poll}}
+{\footnotesize\ttfamily gevent.\+select.\+original\+\_\+poll = None}
+

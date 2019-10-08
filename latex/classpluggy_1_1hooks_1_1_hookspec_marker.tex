@@ -1,0 +1,54 @@
+\hypertarget{classpluggy_1_1hooks_1_1_hookspec_marker}{}\section{pluggy.\+hooks.\+Hookspec\+Marker Class Reference}
+\label{classpluggy_1_1hooks_1_1_hookspec_marker}\index{pluggy.\+hooks.\+Hookspec\+Marker@{pluggy.\+hooks.\+Hookspec\+Marker}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpluggy_1_1hooks_1_1_hookspec_marker_ae73762a434e776871fef8cae699dae85}\label{classpluggy_1_1hooks_1_1_hookspec_marker_ae73762a434e776871fef8cae699dae85}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, project\+\_\+name)
+\item 
+def \hyperlink{classpluggy_1_1hooks_1_1_hookspec_marker_a63b0aeafb61ab27cdf526979102f02ea}{\+\_\+\+\_\+call\+\_\+\+\_\+} (self, function=None, firstresult=False, historic=False, warn\+\_\+on\+\_\+impl=None)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpluggy_1_1hooks_1_1_hookspec_marker_afc4f9316ff36f3ddc6485b3f7fa224f7}\label{classpluggy_1_1hooks_1_1_hookspec_marker_afc4f9316ff36f3ddc6485b3f7fa224f7}} 
+{\bfseries project\+\_\+name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Decorator helper class for marking functions as hook specifications.
+
+You can instantiate it with a project_name to get a decorator.
+Calling PluginManager.add_hookspecs later will discover all marked functions
+if the PluginManager uses the same project_name.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpluggy_1_1hooks_1_1_hookspec_marker_a63b0aeafb61ab27cdf526979102f02ea}\label{classpluggy_1_1hooks_1_1_hookspec_marker_a63b0aeafb61ab27cdf526979102f02ea}} 
+\index{pluggy\+::hooks\+::\+Hookspec\+Marker@{pluggy\+::hooks\+::\+Hookspec\+Marker}!\+\_\+\+\_\+call\+\_\+\+\_\+@{\+\_\+\+\_\+call\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+call\+\_\+\+\_\+@{\+\_\+\+\_\+call\+\_\+\+\_\+}!pluggy\+::hooks\+::\+Hookspec\+Marker@{pluggy\+::hooks\+::\+Hookspec\+Marker}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+call\+\_\+\+\_\+()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily def pluggy.\+hooks.\+Hookspec\+Marker.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{function = {\ttfamily None},  }\item[{}]{firstresult = {\ttfamily False},  }\item[{}]{historic = {\ttfamily False},  }\item[{}]{warn\+\_\+on\+\_\+impl = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}if passed a function, directly sets attributes on the function
+which will make it discoverable to add_hookspecs().  If passed no
+function, returns a decorator which can be applied to a function
+later using the attributes supplied.
+
+If firstresult is True the 1:N hook call (N being the number of registered
+hook implementation functions) will stop at I<=N when the I'th function
+returns a non-None result.
+
+If historic is True calls to a hook will be memorized and replayed
+on later registered plugins.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pluggy/hooks.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,24 @@
+\hypertarget{classgevent_1_1queue_1_1_priority_queue}{}\section{gevent.\+queue.\+Priority\+Queue Class Reference}
+\label{classgevent_1_1queue_1_1_priority_queue}\index{gevent.\+queue.\+Priority\+Queue@{gevent.\+queue.\+Priority\+Queue}}
+
+
+Inherits \hyperlink{classgevent_1_1queue_1_1_queue}{gevent.\+queue.\+Queue}.
+
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A subclass of :class:`Queue` that retrieves entries in priority order (lowest first).
+
+Entries are typically tuples of the form: ``(priority number, data)``.
+
+.. versionchanged:: 1.2a1
+   Any *items* given to the constructor will now be passed through
+   :func:`heapq.heapify` to ensure the invariants of this class hold.
+   Previously it was just assumed that they were already a heap.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/queue.\+py\end{DoxyCompactItemize}

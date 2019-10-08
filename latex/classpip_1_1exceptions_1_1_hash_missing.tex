@@ -1,0 +1,68 @@
+\hypertarget{classpip_1_1exceptions_1_1_hash_missing}{}\section{pip.\+exceptions.\+Hash\+Missing Class Reference}
+\label{classpip_1_1exceptions_1_1_hash_missing}\index{pip.\+exceptions.\+Hash\+Missing@{pip.\+exceptions.\+Hash\+Missing}}
+
+
+Inherits \hyperlink{classpip_1_1exceptions_1_1_hash_error}{pip.\+exceptions.\+Hash\+Error}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpip_1_1exceptions_1_1_hash_missing_a317e8e9bca79a2c1a07e7dc3ff717870}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, gotten\+\_\+hash)
+\item 
+\mbox{\Hypertarget{classpip_1_1exceptions_1_1_hash_missing_aa4fe1f671a4b060124d88330a70e113f}\label{classpip_1_1exceptions_1_1_hash_missing_aa4fe1f671a4b060124d88330a70e113f}} 
+def {\bfseries body} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1exceptions_1_1_hash_missing_a13504a1a3e5fd2ea70c84a441e1a3d00}\label{classpip_1_1exceptions_1_1_hash_missing_a13504a1a3e5fd2ea70c84a441e1a3d00}} 
+{\bfseries gotten\+\_\+hash}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1exceptions_1_1_hash_missing_a7afd5f5cc60a1911ea123b57de51cb94}\label{classpip_1_1exceptions_1_1_hash_missing_a7afd5f5cc60a1911ea123b57de51cb94}} 
+int {\bfseries order} = 2
+\item 
+tuple {\bfseries head}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A hash was needed for a requirement but is absent.\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpip_1_1exceptions_1_1_hash_missing_a317e8e9bca79a2c1a07e7dc3ff717870}\label{classpip_1_1exceptions_1_1_hash_missing_a317e8e9bca79a2c1a07e7dc3ff717870}} 
+\index{pip\+::exceptions\+::\+Hash\+Missing@{pip\+::exceptions\+::\+Hash\+Missing}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pip\+::exceptions\+::\+Hash\+Missing@{pip\+::exceptions\+::\+Hash\+Missing}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pip.\+exceptions.\+Hash\+Missing.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{gotten\+\_\+hash }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param gotten_hash: The hash of the (possibly malicious) archive we
+    just downloaded
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpip_1_1exceptions_1_1_hash_missing_a406ea252f4f34a191a618533c0257e00}\label{classpip_1_1exceptions_1_1_hash_missing_a406ea252f4f34a191a618533c0257e00}} 
+\index{pip\+::exceptions\+::\+Hash\+Missing@{pip\+::exceptions\+::\+Hash\+Missing}!head@{head}}
+\index{head@{head}!pip\+::exceptions\+::\+Hash\+Missing@{pip\+::exceptions\+::\+Hash\+Missing}}
+\subsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily tuple pip.\+exceptions.\+Hash\+Missing.\+head\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  (\textcolor{stringliteral}{'Hashes are required in --require-hashes mode, but they are '}
+            \textcolor{stringliteral}{'missing from some requirements. Here is a list of those '}
+            \textcolor{stringliteral}{'requirements along with the hashes their downloaded archives '}
+            \textcolor{stringliteral}{'actually had. Add lines like these to your requirements files to '}
+            \textcolor{stringliteral}{'prevent tampering. (If you did not enable --require-hashes '}
+            \textcolor{stringliteral}{'manually, note that it turns on automatically when any package '}
+            \textcolor{stringliteral}{'has a hash.)'})
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pip/exceptions.\+py\end{DoxyCompactItemize}

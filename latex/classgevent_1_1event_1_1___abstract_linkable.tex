@@ -1,0 +1,55 @@
+\hypertarget{classgevent_1_1event_1_1___abstract_linkable}{}\section{gevent.\+event.\+\_\+\+Abstract\+Linkable Class Reference}
+\label{classgevent_1_1event_1_1___abstract_linkable}\index{gevent.\+event.\+\_\+\+Abstract\+Linkable@{gevent.\+event.\+\_\+\+Abstract\+Linkable}}
+
+
+Inherits object.
+
+
+
+Inherited by \hyperlink{classgevent_1_1event_1_1_async_result}{gevent.\+event.\+Async\+Result}, and \hyperlink{classgevent_1_1event_1_1_event}{gevent.\+event.\+Event}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1event_1_1___abstract_linkable_a3b214e070535aa635dab766d2ce1ea2e}\label{classgevent_1_1event_1_1___abstract_linkable_a3b214e070535aa635dab766d2ce1ea2e}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1event_1_1___abstract_linkable_aba8fb70b44f472d40dfa9cdf47789f0c}\label{classgevent_1_1event_1_1___abstract_linkable_aba8fb70b44f472d40dfa9cdf47789f0c}} 
+def {\bfseries ready} (self)
+\item 
+def \hyperlink{classgevent_1_1event_1_1___abstract_linkable_a30fd21fc344136be3f3229d9778df4f2}{rawlink} (self, callback)
+\item 
+def \hyperlink{classgevent_1_1event_1_1___abstract_linkable_a8c8ef1a25db923dbb45ba89110268bef}{unlink} (self, callback)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1event_1_1___abstract_linkable_a05c61c3a0ccd8f8ab94a1bc17b97caf9}\label{classgevent_1_1event_1_1___abstract_linkable_a05c61c3a0ccd8f8ab94a1bc17b97caf9}} 
+{\bfseries hub}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1event_1_1___abstract_linkable_a30fd21fc344136be3f3229d9778df4f2}\label{classgevent_1_1event_1_1___abstract_linkable_a30fd21fc344136be3f3229d9778df4f2}} 
+\index{gevent\+::event\+::\+\_\+\+Abstract\+Linkable@{gevent\+::event\+::\+\_\+\+Abstract\+Linkable}!rawlink@{rawlink}}
+\index{rawlink@{rawlink}!gevent\+::event\+::\+\_\+\+Abstract\+Linkable@{gevent\+::event\+::\+\_\+\+Abstract\+Linkable}}
+\subsubsection{\texorpdfstring{rawlink()}{rawlink()}}
+{\footnotesize\ttfamily def gevent.\+event.\+\_\+\+Abstract\+Linkable.\+rawlink (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{callback }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a callback to call when this object is ready.
+
+*callback* will be called in the :class:`Hub <gevent.hub.Hub>`, so it must not use blocking gevent API.
+*callback* will be passed one argument: this instance.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1event_1_1___abstract_linkable_a8c8ef1a25db923dbb45ba89110268bef}\label{classgevent_1_1event_1_1___abstract_linkable_a8c8ef1a25db923dbb45ba89110268bef}} 
+\index{gevent\+::event\+::\+\_\+\+Abstract\+Linkable@{gevent\+::event\+::\+\_\+\+Abstract\+Linkable}!unlink@{unlink}}
+\index{unlink@{unlink}!gevent\+::event\+::\+\_\+\+Abstract\+Linkable@{gevent\+::event\+::\+\_\+\+Abstract\+Linkable}}
+\subsubsection{\texorpdfstring{unlink()}{unlink()}}
+{\footnotesize\ttfamily def gevent.\+event.\+\_\+\+Abstract\+Linkable.\+unlink (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{callback }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove the callback set by :meth:`rawlink`\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/event.\+py\end{DoxyCompactItemize}

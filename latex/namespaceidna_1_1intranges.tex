@@ -1,0 +1,40 @@
+\hypertarget{namespaceidna_1_1intranges}{}\section{idna.\+intranges Namespace Reference}
+\label{namespaceidna_1_1intranges}\index{idna.\+intranges@{idna.\+intranges}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceidna_1_1intranges_afe9a6330ae836d03ecd3d9459adfabde}{intranges\+\_\+from\+\_\+list} (list\+\_\+)
+\item 
+def \hyperlink{namespaceidna_1_1intranges_a1260bdea3db80426aa918554f869857c}{intranges\+\_\+contain} (int\+\_\+, ranges)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Given a list of integers, made up of (hopefully) a small number of long runs
+of consecutive integers, compute a representation of the form
+((start1, end1), (start2, end2) ...). Then answer the question "was x present
+in the original list?" in time O(log(# runs)).
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceidna_1_1intranges_a1260bdea3db80426aa918554f869857c}\label{namespaceidna_1_1intranges_a1260bdea3db80426aa918554f869857c}} 
+\index{idna\+::intranges@{idna\+::intranges}!intranges\+\_\+contain@{intranges\+\_\+contain}}
+\index{intranges\+\_\+contain@{intranges\+\_\+contain}!idna\+::intranges@{idna\+::intranges}}
+\subsubsection{\texorpdfstring{intranges\+\_\+contain()}{intranges\_contain()}}
+{\footnotesize\ttfamily def idna.\+intranges.\+intranges\+\_\+contain (\begin{DoxyParamCaption}\item[{}]{int\+\_\+,  }\item[{}]{ranges }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine if `int_` falls into one of the ranges in `ranges`.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceidna_1_1intranges_afe9a6330ae836d03ecd3d9459adfabde}\label{namespaceidna_1_1intranges_afe9a6330ae836d03ecd3d9459adfabde}} 
+\index{idna\+::intranges@{idna\+::intranges}!intranges\+\_\+from\+\_\+list@{intranges\+\_\+from\+\_\+list}}
+\index{intranges\+\_\+from\+\_\+list@{intranges\+\_\+from\+\_\+list}!idna\+::intranges@{idna\+::intranges}}
+\subsubsection{\texorpdfstring{intranges\+\_\+from\+\_\+list()}{intranges\_from\_list()}}
+{\footnotesize\ttfamily def idna.\+intranges.\+intranges\+\_\+from\+\_\+list (\begin{DoxyParamCaption}\item[{}]{list\+\_\+ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Represent a list of integers as a sequence of ranges:
+((start_0, end_0), (start_1, end_1), ...), such that the original
+integers are exactly those x such that start_i <= x < end_i for some i.
+
+Ranges are encoded as single integers (start << 32 | end), not as tuples.
+\end{DoxyVerb}
+ 

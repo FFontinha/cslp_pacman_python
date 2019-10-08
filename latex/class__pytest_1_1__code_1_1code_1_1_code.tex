@@ -1,0 +1,88 @@
+\hypertarget{class__pytest_1_1__code_1_1code_1_1_code}{}\section{\+\_\+pytest.\+\_\+code.\+code.\+Code Class Reference}
+\label{class__pytest_1_1__code_1_1code_1_1_code}\index{\+\_\+pytest.\+\_\+code.\+code.\+Code@{\+\_\+pytest.\+\_\+code.\+code.\+Code}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_code_a855d0ce0a318ac6522a22c495722004d}\label{class__pytest_1_1__code_1_1code_1_1_code_a855d0ce0a318ac6522a22c495722004d}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, rawcode)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_code_a64e1a3e03bdc51f8cf5e66fa6438e854}\label{class__pytest_1_1__code_1_1code_1_1_code_a64e1a3e03bdc51f8cf5e66fa6438e854}} 
+def {\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_code_a98444ac294cb46c7a00b896f101399bc}\label{class__pytest_1_1__code_1_1code_1_1_code_a98444ac294cb46c7a00b896f101399bc}} 
+def {\bfseries \+\_\+\+\_\+ne\+\_\+\+\_\+} (self, other)
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_code_a026b60b74a3205adcfc8216f1ba5d1f9}{path} (self)
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_code_a9e8e8b252337ba9d050e0fe2546d2d0c}{fullsource} (self)
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_code_ac44c9a145c7636c7c90bb394fe75dce9}{source} (self)
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_code_a6c188b13651220697432afc00f320f18}{getargs} (self, var=False)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_code_ad155c86f7f8f466fae728b1e493f70f2}\label{class__pytest_1_1__code_1_1code_1_1_code_ad155c86f7f8f466fae728b1e493f70f2}} 
+{\bfseries filename}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_code_a453efdca142ae4f960e223868978cf2a}\label{class__pytest_1_1__code_1_1code_1_1_code_a453efdca142ae4f960e223868978cf2a}} 
+{\bfseries firstlineno}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_code_a07f777a5149cb777a1df98b65682d3b7}\label{class__pytest_1_1__code_1_1code_1_1_code_a07f777a5149cb777a1df98b65682d3b7}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_code_aa1d1e148283a5f5efc6a61d96a8b686b}\label{class__pytest_1_1__code_1_1code_1_1_code_aa1d1e148283a5f5efc6a61d96a8b686b}} 
+{\bfseries raw}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}wrapper around Python code objects \end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_code_a9e8e8b252337ba9d050e0fe2546d2d0c}\label{class__pytest_1_1__code_1_1code_1_1_code_a9e8e8b252337ba9d050e0fe2546d2d0c}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Code@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Code}!fullsource@{fullsource}}
+\index{fullsource@{fullsource}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Code@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Code}}
+\subsubsection{\texorpdfstring{fullsource()}{fullsource()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Code.\+fullsource (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a _pytest._code.Source object for the full source file of the code
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_code_a6c188b13651220697432afc00f320f18}\label{class__pytest_1_1__code_1_1code_1_1_code_a6c188b13651220697432afc00f320f18}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Code@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Code}!getargs@{getargs}}
+\index{getargs@{getargs}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Code@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Code}}
+\subsubsection{\texorpdfstring{getargs()}{getargs()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Code.\+getargs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{var = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a tuple with the argument names for the code object
+
+    if 'var' is set True also return the names of the variable and
+    keyword arguments when present
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_code_a026b60b74a3205adcfc8216f1ba5d1f9}\label{class__pytest_1_1__code_1_1code_1_1_code_a026b60b74a3205adcfc8216f1ba5d1f9}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Code@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Code}!path@{path}}
+\index{path@{path}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Code@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Code}}
+\subsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Code.\+path (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a path object pointing to source code (note that it
+might not point to an actually existing file). \end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_code_ac44c9a145c7636c7c90bb394fe75dce9}\label{class__pytest_1_1__code_1_1code_1_1_code_ac44c9a145c7636c7c90bb394fe75dce9}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Code@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Code}!source@{source}}
+\index{source@{source}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Code@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Code}}
+\subsubsection{\texorpdfstring{source()}{source()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Code.\+source (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a _pytest._code.Source object for the code object's source only
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/\+\_\+code/code.\+py\end{DoxyCompactItemize}

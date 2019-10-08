@@ -1,0 +1,54 @@
+\hypertarget{namespaceattr_1_1converters}{}\section{attr.\+converters Namespace Reference}
+\label{namespaceattr_1_1converters}\index{attr.\+converters@{attr.\+converters}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceattr_1_1converters_a9573ca901d271a4af620f1d12ee9c63c}{optional} (converter)
+\item 
+def \hyperlink{namespaceattr_1_1converters_aa708a6d8d7f55febe6e6c9635adc06e5}{default\+\_\+if\+\_\+none} (default=N\+O\+T\+H\+I\+NG, factory=None)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Commonly useful converters.
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceattr_1_1converters_aa708a6d8d7f55febe6e6c9635adc06e5}\label{namespaceattr_1_1converters_aa708a6d8d7f55febe6e6c9635adc06e5}} 
+\index{attr\+::converters@{attr\+::converters}!default\+\_\+if\+\_\+none@{default\+\_\+if\+\_\+none}}
+\index{default\+\_\+if\+\_\+none@{default\+\_\+if\+\_\+none}!attr\+::converters@{attr\+::converters}}
+\subsubsection{\texorpdfstring{default\+\_\+if\+\_\+none()}{default\_if\_none()}}
+{\footnotesize\ttfamily def attr.\+converters.\+default\+\_\+if\+\_\+none (\begin{DoxyParamCaption}\item[{}]{default = {\ttfamily NOTHING},  }\item[{}]{factory = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A converter that allows to replace ``None`` values by *default* or the
+result of *factory*.
+
+:param default: Value to be used if ``None`` is passed. Passing an instance
+   of :class:`attr.Factory` is supported, however the ``takes_self`` option
+   is *not*.
+:param callable factory: A callable that takes not parameters whose result
+   is used if ``None`` is passed.
+
+:raises TypeError: If **neither** *default* or *factory* is passed.
+:raises TypeError: If **both** *default* and *factory* are passed.
+:raises ValueError: If an instance of :class:`attr.Factory` is passed with
+   ``takes_self=True``.
+
+.. versionadded:: 18.2.0
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceattr_1_1converters_a9573ca901d271a4af620f1d12ee9c63c}\label{namespaceattr_1_1converters_a9573ca901d271a4af620f1d12ee9c63c}} 
+\index{attr\+::converters@{attr\+::converters}!optional@{optional}}
+\index{optional@{optional}!attr\+::converters@{attr\+::converters}}
+\subsubsection{\texorpdfstring{optional()}{optional()}}
+{\footnotesize\ttfamily def attr.\+converters.\+optional (\begin{DoxyParamCaption}\item[{}]{converter }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A converter that allows an attribute to be optional. An optional attribute
+is one which can be set to ``None``.
+
+:param callable converter: the converter that is used for non-``None``
+    values.
+
+.. versionadded:: 17.1.0
+\end{DoxyVerb}
+ 

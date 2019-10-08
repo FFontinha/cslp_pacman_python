@@ -1,0 +1,90 @@
+\hypertarget{classaiohttp_1_1abc_1_1_abstract_match_info}{}\section{aiohttp.\+abc.\+Abstract\+Match\+Info Class Reference}
+\label{classaiohttp_1_1abc_1_1_abstract_match_info}\index{aiohttp.\+abc.\+Abstract\+Match\+Info@{aiohttp.\+abc.\+Abstract\+Match\+Info}}
+
+
+Inherits A\+BC.
+
+
+
+Inherited by \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_url_mapping_match_info}{aiohttp.\+web\+\_\+urldispatcher.\+Url\+Mapping\+Match\+Info}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classaiohttp_1_1abc_1_1_abstract_match_info_a8d3796bc66efcfd82706a4f1cdcfceb6}{handler} (self, request)
+\item 
+def \hyperlink{classaiohttp_1_1abc_1_1_abstract_match_info_a3361b132ccb23e2c6c4016e368da4a3d}{expect\+\_\+handler} (self, request)
+\item 
+def \hyperlink{classaiohttp_1_1abc_1_1_abstract_match_info_a9b27b04d6696d44230149af3fd67c5a1}{http\+\_\+exception} (self)
+\item 
+def \hyperlink{classaiohttp_1_1abc_1_1_abstract_match_info_ae16c1f2ce6842e837aa05e1f73ba7b01}{get\+\_\+info} (self)
+\item 
+def \hyperlink{classaiohttp_1_1abc_1_1_abstract_match_info_aaef04591d8ebaf5eb23cdd3e81e96eae}{apps} (self)
+\item 
+def \hyperlink{classaiohttp_1_1abc_1_1_abstract_match_info_a1ce568a10ec8122596c0accc07181441}{add\+\_\+app} (self, app)
+\item 
+def \hyperlink{classaiohttp_1_1abc_1_1_abstract_match_info_a338f4d0997396d71c708f2c27a29d334}{freeze} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1abc_1_1_abstract_match_info_a1ce568a10ec8122596c0accc07181441}\label{classaiohttp_1_1abc_1_1_abstract_match_info_a1ce568a10ec8122596c0accc07181441}} 
+\index{aiohttp\+::abc\+::\+Abstract\+Match\+Info@{aiohttp\+::abc\+::\+Abstract\+Match\+Info}!add\+\_\+app@{add\+\_\+app}}
+\index{add\+\_\+app@{add\+\_\+app}!aiohttp\+::abc\+::\+Abstract\+Match\+Info@{aiohttp\+::abc\+::\+Abstract\+Match\+Info}}
+\subsubsection{\texorpdfstring{add\+\_\+app()}{add\_app()}}
+{\footnotesize\ttfamily def aiohttp.\+abc.\+Abstract\+Match\+Info.\+add\+\_\+app (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{app }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add application to the nested apps stack.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1abc_1_1_abstract_match_info_aaef04591d8ebaf5eb23cdd3e81e96eae}\label{classaiohttp_1_1abc_1_1_abstract_match_info_aaef04591d8ebaf5eb23cdd3e81e96eae}} 
+\index{aiohttp\+::abc\+::\+Abstract\+Match\+Info@{aiohttp\+::abc\+::\+Abstract\+Match\+Info}!apps@{apps}}
+\index{apps@{apps}!aiohttp\+::abc\+::\+Abstract\+Match\+Info@{aiohttp\+::abc\+::\+Abstract\+Match\+Info}}
+\subsubsection{\texorpdfstring{apps()}{apps()}}
+{\footnotesize\ttfamily def aiohttp.\+abc.\+Abstract\+Match\+Info.\+apps (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Stack of nested applications.
+
+Top level application is left-most element.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1abc_1_1_abstract_match_info_a3361b132ccb23e2c6c4016e368da4a3d}\label{classaiohttp_1_1abc_1_1_abstract_match_info_a3361b132ccb23e2c6c4016e368da4a3d}} 
+\index{aiohttp\+::abc\+::\+Abstract\+Match\+Info@{aiohttp\+::abc\+::\+Abstract\+Match\+Info}!expect\+\_\+handler@{expect\+\_\+handler}}
+\index{expect\+\_\+handler@{expect\+\_\+handler}!aiohttp\+::abc\+::\+Abstract\+Match\+Info@{aiohttp\+::abc\+::\+Abstract\+Match\+Info}}
+\subsubsection{\texorpdfstring{expect\+\_\+handler()}{expect\_handler()}}
+{\footnotesize\ttfamily def aiohttp.\+abc.\+Abstract\+Match\+Info.\+expect\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Expect handler for 100-continue processing\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1abc_1_1_abstract_match_info_a338f4d0997396d71c708f2c27a29d334}\label{classaiohttp_1_1abc_1_1_abstract_match_info_a338f4d0997396d71c708f2c27a29d334}} 
+\index{aiohttp\+::abc\+::\+Abstract\+Match\+Info@{aiohttp\+::abc\+::\+Abstract\+Match\+Info}!freeze@{freeze}}
+\index{freeze@{freeze}!aiohttp\+::abc\+::\+Abstract\+Match\+Info@{aiohttp\+::abc\+::\+Abstract\+Match\+Info}}
+\subsubsection{\texorpdfstring{freeze()}{freeze()}}
+{\footnotesize\ttfamily def aiohttp.\+abc.\+Abstract\+Match\+Info.\+freeze (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Freeze the match info.
+
+The method is called after route resolution.
+
+After the call .add_app() is forbidden.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1abc_1_1_abstract_match_info_ae16c1f2ce6842e837aa05e1f73ba7b01}\label{classaiohttp_1_1abc_1_1_abstract_match_info_ae16c1f2ce6842e837aa05e1f73ba7b01}} 
+\index{aiohttp\+::abc\+::\+Abstract\+Match\+Info@{aiohttp\+::abc\+::\+Abstract\+Match\+Info}!get\+\_\+info@{get\+\_\+info}}
+\index{get\+\_\+info@{get\+\_\+info}!aiohttp\+::abc\+::\+Abstract\+Match\+Info@{aiohttp\+::abc\+::\+Abstract\+Match\+Info}}
+\subsubsection{\texorpdfstring{get\+\_\+info()}{get\_info()}}
+{\footnotesize\ttfamily def aiohttp.\+abc.\+Abstract\+Match\+Info.\+get\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a dict with additional info useful for introspection\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1abc_1_1_abstract_match_info_a8d3796bc66efcfd82706a4f1cdcfceb6}\label{classaiohttp_1_1abc_1_1_abstract_match_info_a8d3796bc66efcfd82706a4f1cdcfceb6}} 
+\index{aiohttp\+::abc\+::\+Abstract\+Match\+Info@{aiohttp\+::abc\+::\+Abstract\+Match\+Info}!handler@{handler}}
+\index{handler@{handler}!aiohttp\+::abc\+::\+Abstract\+Match\+Info@{aiohttp\+::abc\+::\+Abstract\+Match\+Info}}
+\subsubsection{\texorpdfstring{handler()}{handler()}}
+{\footnotesize\ttfamily def aiohttp.\+abc.\+Abstract\+Match\+Info.\+handler (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Execute matched request handler\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1abc_1_1_abstract_match_info_a9b27b04d6696d44230149af3fd67c5a1}\label{classaiohttp_1_1abc_1_1_abstract_match_info_a9b27b04d6696d44230149af3fd67c5a1}} 
+\index{aiohttp\+::abc\+::\+Abstract\+Match\+Info@{aiohttp\+::abc\+::\+Abstract\+Match\+Info}!http\+\_\+exception@{http\+\_\+exception}}
+\index{http\+\_\+exception@{http\+\_\+exception}!aiohttp\+::abc\+::\+Abstract\+Match\+Info@{aiohttp\+::abc\+::\+Abstract\+Match\+Info}}
+\subsubsection{\texorpdfstring{http\+\_\+exception()}{http\_exception()}}
+{\footnotesize\ttfamily def aiohttp.\+abc.\+Abstract\+Match\+Info.\+http\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}HTTPException instance raised on router's resolving, or None\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/abc.\+py\end{DoxyCompactItemize}

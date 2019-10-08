@@ -1,0 +1,53 @@
+\hypertarget{namespacepygame_1_1examples_1_1scrap__clipboard}{}\section{pygame.\+examples.\+scrap\+\_\+clipboard Namespace Reference}
+\label{namespacepygame_1_1examples_1_1scrap__clipboard}\index{pygame.\+examples.\+scrap\+\_\+clipboard@{pygame.\+examples.\+scrap\+\_\+clipboard}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scrap__clipboard_a509abaf8dc871eb3ee1a73b687a7446e}\label{namespacepygame_1_1examples_1_1scrap__clipboard_a509abaf8dc871eb3ee1a73b687a7446e}} 
+def {\bfseries usage} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scrap__clipboard_ab179e940d6d2c9c897db62cd3720c650}\label{namespacepygame_1_1examples_1_1scrap__clipboard_ab179e940d6d2c9c897db62cd3720c650}} 
+{\bfseries Bytes\+IO} = pygame.\+compat.\+get\+\_\+\+Bytes\+IO()
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scrap__clipboard_a83922f4a7ec8ca62c990a4b38640ca24}\label{namespacepygame_1_1examples_1_1scrap__clipboard_a83922f4a7ec8ca62c990a4b38640ca24}} 
+{\bfseries main\+\_\+dir} = os.\+path.\+split(os.\+path.\+abspath(\+\_\+\+\_\+file\+\_\+\+\_\+))\mbox{[}0\mbox{]}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scrap__clipboard_ada7a263d0533505269d2294513e124e2}\label{namespacepygame_1_1examples_1_1scrap__clipboard_ada7a263d0533505269d2294513e124e2}} 
+{\bfseries screen} = pygame.\+display.\+set\+\_\+mode ((200, 200))
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scrap__clipboard_a495c6245af08a818c39e4c23ae1309ae}\label{namespacepygame_1_1examples_1_1scrap__clipboard_a495c6245af08a818c39e4c23ae1309ae}} 
+{\bfseries c} = pygame.\+time.\+Clock ()
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scrap__clipboard_a9aa67bf37904e26069529db35834e48a}\label{namespacepygame_1_1examples_1_1scrap__clipboard_a9aa67bf37904e26069529db35834e48a}} 
+bool {\bfseries going} = True
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scrap__clipboard_a21ec4a820db331779f6a105c5b47870e}\label{namespacepygame_1_1examples_1_1scrap__clipboard_a21ec4a820db331779f6a105c5b47870e}} 
+{\bfseries r} = scrap.\+get (t)
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scrap__clipboard_ad42582fed303b50cb474af223ddf0356}\label{namespacepygame_1_1examples_1_1scrap__clipboard_ad42582fed303b50cb474af223ddf0356}} 
+{\bfseries namehint} = t.\+split(\char`\"{}/\char`\"{})\mbox{[}1\mbox{]}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scrap__clipboard_a34160ba413f2594f81801c6d982f9ae3}\label{namespacepygame_1_1examples_1_1scrap__clipboard_a34160ba413f2594f81801c6d982f9ae3}} 
+{\bfseries f} = Bytes\+IO(r)
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scrap__clipboard_a30df83e92c40b8b3b19dcb8cab427868}\label{namespacepygame_1_1examples_1_1scrap__clipboard_a30df83e92c40b8b3b19dcb8cab427868}} 
+{\bfseries loaded\+\_\+surf} = pygame.\+image.\+load(f, \char`\"{}.\char`\"{} + namehint)
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scrap__clipboard_a35b38c41c54b34b3b00cce06c3874723}\label{namespacepygame_1_1examples_1_1scrap__clipboard_a35b38c41c54b34b3b00cce06c3874723}} 
+{\bfseries types} = scrap.\+get\+\_\+types ()
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scrap__clipboard_a380210ab1cdb084e843c65dbf1995012}\label{namespacepygame_1_1examples_1_1scrap__clipboard_a380210ab1cdb084e843c65dbf1995012}} 
+{\bfseries fp} = open (os.\+path.\+join(main\+\_\+dir, \textquotesingle{}data\textquotesingle{}, \textquotesingle{}liquid.\+bmp\textquotesingle{}), \textquotesingle{}rb\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scrap__clipboard_a7ff41ca07ea13e77df57fc9d93882a9e}\label{namespacepygame_1_1examples_1_1scrap__clipboard_a7ff41ca07ea13e77df57fc9d93882a9e}} 
+{\bfseries buf} = fp.\+read ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Demonstrates the clipboard capabilities of pygame.
+\end{DoxyVerb}
+ 

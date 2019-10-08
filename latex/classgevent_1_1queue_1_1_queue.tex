@@ -1,0 +1,240 @@
+\hypertarget{classgevent_1_1queue_1_1_queue}{}\section{gevent.\+queue.\+Queue Class Reference}
+\label{classgevent_1_1queue_1_1_queue}\index{gevent.\+queue.\+Queue@{gevent.\+queue.\+Queue}}
+
+
+Inherits object.
+
+
+
+Inherited by \hyperlink{classgevent_1_1queue_1_1_joinable_queue}{gevent.\+queue.\+Joinable\+Queue}, \hyperlink{classgevent_1_1queue_1_1_lifo_queue}{gevent.\+queue.\+Lifo\+Queue}, \hyperlink{classgevent_1_1queue_1_1_priority_queue}{gevent.\+queue.\+Priority\+Queue}, and \hyperlink{classgevent_1_1queue_1_1_unbound_queue}{gevent.\+queue.\+Unbound\+Queue}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a451b7167f20d7474e7a0b7423cffcf34}\label{classgevent_1_1queue_1_1_queue_a451b7167f20d7474e7a0b7423cffcf34}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, maxsize=None, items=(), \+\_\+warn\+\_\+depth=2)
+\item 
+\mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_aaeec0d774d6bd75872c7d5e265800806}\label{classgevent_1_1queue_1_1_queue_aaeec0d774d6bd75872c7d5e265800806}} 
+def {\bfseries maxsize} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_ac66adc6e2119e153be24d4032a0b9747}\label{classgevent_1_1queue_1_1_queue_ac66adc6e2119e153be24d4032a0b9747}} 
+def {\bfseries maxsize} (self, nv)
+\item 
+\mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a70c350976e7cf60237bfe37f1bfef8d3}\label{classgevent_1_1queue_1_1_queue_a70c350976e7cf60237bfe37f1bfef8d3}} 
+def {\bfseries copy} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a8bb4a45a6d0f23ee752e28167e5b288e}\label{classgevent_1_1queue_1_1_queue_a8bb4a45a6d0f23ee752e28167e5b288e}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a4c389d0ea2f87f4de71459ddf2e23b8c}\label{classgevent_1_1queue_1_1_queue_a4c389d0ea2f87f4de71459ddf2e23b8c}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classgevent_1_1queue_1_1_queue_a84c2f7fb732602fa1233026865a958df}{qsize} (self)
+\item 
+def \hyperlink{classgevent_1_1queue_1_1_queue_a1b2a3b67717cdb6fd8200c751d30d14a}{\+\_\+\+\_\+len\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classgevent_1_1queue_1_1_queue_a43c38488ce8958ca9ae2b6117c1b22ed}{\+\_\+\+\_\+bool\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a3fc76e29fd77d7261317560ff1566a4f}\label{classgevent_1_1queue_1_1_queue_a3fc76e29fd77d7261317560ff1566a4f}} 
+def {\bfseries \+\_\+\+\_\+nonzero\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classgevent_1_1queue_1_1_queue_a1534373d379168ae9408af6b632df285}{empty} (self)
+\item 
+def \hyperlink{classgevent_1_1queue_1_1_queue_a064875ef1eac4c3a222340e8feb34b60}{full} (self)
+\item 
+def \hyperlink{classgevent_1_1queue_1_1_queue_a75f86f125b819bd44599d45e826d9eed}{put} (self, item, block=True, timeout=None)
+\item 
+def \hyperlink{classgevent_1_1queue_1_1_queue_a0b820188057f94b37752fff18e6b21b8}{put\+\_\+nowait} (self, item)
+\item 
+def \hyperlink{classgevent_1_1queue_1_1_queue_a27dec76bb19989ba472c90d481b242e1}{get} (self, block=True, timeout=None)
+\item 
+def \hyperlink{classgevent_1_1queue_1_1_queue_af9b599f2a0608b43dd44d5ecff686c7c}{get\+\_\+nowait} (self)
+\item 
+def \hyperlink{classgevent_1_1queue_1_1_queue_a2591ab626ece2864d87f303ed58d967f}{peek} (self, block=True, timeout=None)
+\item 
+def \hyperlink{classgevent_1_1queue_1_1_queue_a90000a6a594083340c1123f84f4615ce}{peek\+\_\+nowait} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_ace4830f30380cca42d9ca773cd2fb3a6}\label{classgevent_1_1queue_1_1_queue_ace4830f30380cca42d9ca773cd2fb3a6}} 
+def {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_ab6ce782ab61b39abdeddcda907505162}\label{classgevent_1_1queue_1_1_queue_ab6ce782ab61b39abdeddcda907505162}} 
+def {\bfseries \+\_\+\+\_\+next\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a9c1d1a2a6350a39af6041b2a64c94dce}\label{classgevent_1_1queue_1_1_queue_a9c1d1a2a6350a39af6041b2a64c94dce}} 
+{\bfseries getters}
+\item 
+\mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a5ea76376297989e90fdb47b592357cc8}\label{classgevent_1_1queue_1_1_queue_a5ea76376297989e90fdb47b592357cc8}} 
+{\bfseries putters}
+\item 
+\mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_acab8fbb4e3dbfa5bc5cbc72c15c7f1f4}\label{classgevent_1_1queue_1_1_queue_acab8fbb4e3dbfa5bc5cbc72c15c7f1f4}} 
+{\bfseries hub}
+\item 
+\mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a52c2aa05bacb8cd7e3fe5a8f85643551}\label{classgevent_1_1queue_1_1_queue_a52c2aa05bacb8cd7e3fe5a8f85643551}} 
+{\bfseries queue}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_aefb02f774ed4cdf1a57bddcfdc23f7ba}\label{classgevent_1_1queue_1_1_queue_aefb02f774ed4cdf1a57bddcfdc23f7ba}} 
+def {\bfseries next} = \+\_\+\+\_\+next\+\_\+\+\_\+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Create a queue object with a given maximum size.
+
+If *maxsize* is less than or equal to zero or ``None``, the queue
+size is infinite.
+
+Queues have a ``len`` equal to the number of items in them (the :meth:`qsize`),
+but in a boolean context they are always True.
+
+.. versionchanged:: 1.1b3
+   Queues now support :func:`len`; it behaves the same as :meth:`qsize`.
+.. versionchanged:: 1.1b3
+   Multiple greenlets that block on a call to :meth:`put` for a full queue
+   will now be awakened to put their items into the queue in the order in which
+   they arrived. Likewise, multiple greenlets that block on a call to :meth:`get` for
+   an empty queue will now receive items in the order in which they blocked. An
+   implementation quirk under CPython *usually* ensured this was roughly the case
+   previously anyway, but that wasn't the case for PyPy.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a43c38488ce8958ca9ae2b6117c1b22ed}\label{classgevent_1_1queue_1_1_queue_a43c38488ce8958ca9ae2b6117c1b22ed}} 
+\index{gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}!\+\_\+\+\_\+bool\+\_\+\+\_\+@{\+\_\+\+\_\+bool\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+bool\+\_\+\+\_\+@{\+\_\+\+\_\+bool\+\_\+\+\_\+}!gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+bool\+\_\+\+\_\+()}{\_\_bool\_\_()}}
+{\footnotesize\ttfamily def gevent.\+queue.\+Queue.\+\_\+\+\_\+bool\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A queue object is always True.
+
+.. versionadded: 1.1b3
+
+   Now that queues support len(), they need to implement ``__bool__``
+   to return True for backwards compatibility.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a1b2a3b67717cdb6fd8200c751d30d14a}\label{classgevent_1_1queue_1_1_queue_a1b2a3b67717cdb6fd8200c751d30d14a}} 
+\index{gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}!\+\_\+\+\_\+len\+\_\+\+\_\+@{\+\_\+\+\_\+len\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+len\+\_\+\+\_\+@{\+\_\+\+\_\+len\+\_\+\+\_\+}!gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+len\+\_\+\+\_\+()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily def gevent.\+queue.\+Queue.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the size of the queue. This is the same as :meth:`qsize`.
+
+.. versionadded: 1.1b3
+
+    Previously, getting len() of a queue would raise a TypeError.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a1534373d379168ae9408af6b632df285}\label{classgevent_1_1queue_1_1_queue_a1534373d379168ae9408af6b632df285}} 
+\index{gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}!empty@{empty}}
+\index{empty@{empty}!gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily def gevent.\+queue.\+Queue.\+empty (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return ``True`` if the queue is empty, ``False`` otherwise.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a064875ef1eac4c3a222340e8feb34b60}\label{classgevent_1_1queue_1_1_queue_a064875ef1eac4c3a222340e8feb34b60}} 
+\index{gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}!full@{full}}
+\index{full@{full}!gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{full()}{full()}}
+{\footnotesize\ttfamily def gevent.\+queue.\+Queue.\+full (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return ``True`` if the queue is full, ``False`` otherwise.
+
+``Queue(None)`` is never full.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a27dec76bb19989ba472c90d481b242e1}\label{classgevent_1_1queue_1_1_queue_a27dec76bb19989ba472c90d481b242e1}} 
+\index{gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}!get@{get}}
+\index{get@{get}!gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily def gevent.\+queue.\+Queue.\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{block = {\ttfamily True},  }\item[{}]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove and return an item from the queue.
+
+If optional args *block* is true and *timeout* is ``None`` (the default),
+block if necessary until an item is available. If *timeout* is a positive number,
+it blocks at most *timeout* seconds and raises the :class:`Empty` exception
+if no item was available within that time. Otherwise (*block* is false), return
+an item if one is immediately available, else raise the :class:`Empty` exception
+(*timeout* is ignored in that case).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_af9b599f2a0608b43dd44d5ecff686c7c}\label{classgevent_1_1queue_1_1_queue_af9b599f2a0608b43dd44d5ecff686c7c}} 
+\index{gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}!get\+\_\+nowait@{get\+\_\+nowait}}
+\index{get\+\_\+nowait@{get\+\_\+nowait}!gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{get\+\_\+nowait()}{get\_nowait()}}
+{\footnotesize\ttfamily def gevent.\+queue.\+Queue.\+get\+\_\+nowait (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove and return an item from the queue without blocking.
+
+Only get an item if one is immediately available. Otherwise
+raise the :class:`Empty` exception.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a2591ab626ece2864d87f303ed58d967f}\label{classgevent_1_1queue_1_1_queue_a2591ab626ece2864d87f303ed58d967f}} 
+\index{gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}!peek@{peek}}
+\index{peek@{peek}!gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily def gevent.\+queue.\+Queue.\+peek (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{block = {\ttfamily True},  }\item[{}]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an item from the queue without removing it.
+
+If optional args *block* is true and *timeout* is ``None`` (the default),
+block if necessary until an item is available. If *timeout* is a positive number,
+it blocks at most *timeout* seconds and raises the :class:`Empty` exception
+if no item was available within that time. Otherwise (*block* is false), return
+an item if one is immediately available, else raise the :class:`Empty` exception
+(*timeout* is ignored in that case).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a90000a6a594083340c1123f84f4615ce}\label{classgevent_1_1queue_1_1_queue_a90000a6a594083340c1123f84f4615ce}} 
+\index{gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}!peek\+\_\+nowait@{peek\+\_\+nowait}}
+\index{peek\+\_\+nowait@{peek\+\_\+nowait}!gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{peek\+\_\+nowait()}{peek\_nowait()}}
+{\footnotesize\ttfamily def gevent.\+queue.\+Queue.\+peek\+\_\+nowait (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an item from the queue without blocking.
+
+Only return an item if one is immediately available. Otherwise
+raise the :class:`Empty` exception.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a75f86f125b819bd44599d45e826d9eed}\label{classgevent_1_1queue_1_1_queue_a75f86f125b819bd44599d45e826d9eed}} 
+\index{gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}!put@{put}}
+\index{put@{put}!gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily def gevent.\+queue.\+Queue.\+put (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{item,  }\item[{}]{block = {\ttfamily True},  }\item[{}]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Put an item into the queue.
+
+If optional arg *block* is true and *timeout* is ``None`` (the default),
+block if necessary until a free slot is available. If *timeout* is
+a positive number, it blocks at most *timeout* seconds and raises
+the :class:`Full` exception if no free slot was available within that time.
+Otherwise (*block* is false), put an item on the queue if a free slot
+is immediately available, else raise the :class:`Full` exception (*timeout*
+is ignored in that case).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a0b820188057f94b37752fff18e6b21b8}\label{classgevent_1_1queue_1_1_queue_a0b820188057f94b37752fff18e6b21b8}} 
+\index{gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}!put\+\_\+nowait@{put\+\_\+nowait}}
+\index{put\+\_\+nowait@{put\+\_\+nowait}!gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{put\+\_\+nowait()}{put\_nowait()}}
+{\footnotesize\ttfamily def gevent.\+queue.\+Queue.\+put\+\_\+nowait (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{item }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Put an item into the queue without blocking.
+
+Only enqueue the item if a free slot is immediately available.
+Otherwise raise the :class:`Full` exception.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1queue_1_1_queue_a84c2f7fb732602fa1233026865a958df}\label{classgevent_1_1queue_1_1_queue_a84c2f7fb732602fa1233026865a958df}} 
+\index{gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}!qsize@{qsize}}
+\index{qsize@{qsize}!gevent\+::queue\+::\+Queue@{gevent\+::queue\+::\+Queue}}
+\subsubsection{\texorpdfstring{qsize()}{qsize()}}
+{\footnotesize\ttfamily def gevent.\+queue.\+Queue.\+qsize (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the size of the queue.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/queue.\+py\end{DoxyCompactItemize}

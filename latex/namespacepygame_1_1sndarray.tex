@@ -1,0 +1,93 @@
+\hypertarget{namespacepygame_1_1sndarray}{}\section{pygame.\+sndarray Namespace Reference}
+\label{namespacepygame_1_1sndarray}\index{pygame.\+sndarray@{pygame.\+sndarray}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepygame_1_1sndarray_a55934ecb8dff624d08c51f81dfcacc33}{array} (sound)
+\item 
+def \hyperlink{namespacepygame_1_1sndarray_a5e83514c733600fcd28b5272d08e3caf}{samples} (sound)
+\item 
+def \hyperlink{namespacepygame_1_1sndarray_af5dcb27cb21e18d062c67cc6b76c8153}{make\+\_\+sound} (\hyperlink{namespacepygame_1_1sndarray_a55934ecb8dff624d08c51f81dfcacc33}{array})
+\item 
+def \hyperlink{namespacepygame_1_1sndarray_aa4ea420eae3d540ff373d0903c2559e0}{use\+\_\+arraytype} (arraytype)
+\item 
+def \hyperlink{namespacepygame_1_1sndarray_aef82d5b7b0affb3a556abc4a93a276f9}{get\+\_\+arraytype} ()
+\item 
+def \hyperlink{namespacepygame_1_1sndarray_a42fcfe0e6707784803293ac1a5e315c8}{get\+\_\+arraytypes} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1sndarray_a55934ecb8dff624d08c51f81dfcacc33}\label{namespacepygame_1_1sndarray_a55934ecb8dff624d08c51f81dfcacc33}} 
+\index{pygame\+::sndarray@{pygame\+::sndarray}!array@{array}}
+\index{array@{array}!pygame\+::sndarray@{pygame\+::sndarray}}
+\subsubsection{\texorpdfstring{array()}{array()}}
+{\footnotesize\ttfamily def pygame.\+sndarray.\+array (\begin{DoxyParamCaption}\item[{}]{sound }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.sndarray.array(Sound): return array
+
+Copy Sound samples into an array.
+
+Creates a new array for the sound data and copies the samples. The
+array will always be in the format returned from
+pygame.mixer.get_init().
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1sndarray_aef82d5b7b0affb3a556abc4a93a276f9}\label{namespacepygame_1_1sndarray_aef82d5b7b0affb3a556abc4a93a276f9}} 
+\index{pygame\+::sndarray@{pygame\+::sndarray}!get\+\_\+arraytype@{get\+\_\+arraytype}}
+\index{get\+\_\+arraytype@{get\+\_\+arraytype}!pygame\+::sndarray@{pygame\+::sndarray}}
+\subsubsection{\texorpdfstring{get\+\_\+arraytype()}{get\_arraytype()}}
+{\footnotesize\ttfamily def pygame.\+sndarray.\+get\+\_\+arraytype (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.sndarray.get_arraytype (): return str
+
+DEPRECATED - only numpy arrays are now supported.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1sndarray_a42fcfe0e6707784803293ac1a5e315c8}\label{namespacepygame_1_1sndarray_a42fcfe0e6707784803293ac1a5e315c8}} 
+\index{pygame\+::sndarray@{pygame\+::sndarray}!get\+\_\+arraytypes@{get\+\_\+arraytypes}}
+\index{get\+\_\+arraytypes@{get\+\_\+arraytypes}!pygame\+::sndarray@{pygame\+::sndarray}}
+\subsubsection{\texorpdfstring{get\+\_\+arraytypes()}{get\_arraytypes()}}
+{\footnotesize\ttfamily def pygame.\+sndarray.\+get\+\_\+arraytypes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.sndarray.get_arraytypes (): return tuple
+
+DEPRECATED - only numpy arrays are now supported.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1sndarray_af5dcb27cb21e18d062c67cc6b76c8153}\label{namespacepygame_1_1sndarray_af5dcb27cb21e18d062c67cc6b76c8153}} 
+\index{pygame\+::sndarray@{pygame\+::sndarray}!make\+\_\+sound@{make\+\_\+sound}}
+\index{make\+\_\+sound@{make\+\_\+sound}!pygame\+::sndarray@{pygame\+::sndarray}}
+\subsubsection{\texorpdfstring{make\+\_\+sound()}{make\_sound()}}
+{\footnotesize\ttfamily def pygame.\+sndarray.\+make\+\_\+sound (\begin{DoxyParamCaption}\item[{}]{array }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.sndarray.make_sound(array): return Sound
+
+Convert an array into a Sound object.
+
+Create a new playable Sound object from an array. The mixer module
+must be initialized and the array format must be similar to the mixer
+audio format.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1sndarray_a5e83514c733600fcd28b5272d08e3caf}\label{namespacepygame_1_1sndarray_a5e83514c733600fcd28b5272d08e3caf}} 
+\index{pygame\+::sndarray@{pygame\+::sndarray}!samples@{samples}}
+\index{samples@{samples}!pygame\+::sndarray@{pygame\+::sndarray}}
+\subsubsection{\texorpdfstring{samples()}{samples()}}
+{\footnotesize\ttfamily def pygame.\+sndarray.\+samples (\begin{DoxyParamCaption}\item[{}]{sound }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.sndarray.samples(Sound): return array
+
+Reference Sound samples into an array.
+
+Creates a new array that directly references the samples in a Sound
+object. Modifying the array will change the Sound. The array will
+always be in the format returned from pygame.mixer.get_init().
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1sndarray_aa4ea420eae3d540ff373d0903c2559e0}\label{namespacepygame_1_1sndarray_aa4ea420eae3d540ff373d0903c2559e0}} 
+\index{pygame\+::sndarray@{pygame\+::sndarray}!use\+\_\+arraytype@{use\+\_\+arraytype}}
+\index{use\+\_\+arraytype@{use\+\_\+arraytype}!pygame\+::sndarray@{pygame\+::sndarray}}
+\subsubsection{\texorpdfstring{use\+\_\+arraytype()}{use\_arraytype()}}
+{\footnotesize\ttfamily def pygame.\+sndarray.\+use\+\_\+arraytype (\begin{DoxyParamCaption}\item[{}]{arraytype }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.sndarray.use_arraytype (arraytype): return None
+
+DEPRECATED - only numpy arrays are now supported.
+\end{DoxyVerb}
+ 

@@ -1,0 +1,65 @@
+\hypertarget{namespacegevent_1_1threading}{}\section{gevent.\+threading Namespace Reference}
+\label{namespacegevent_1_1threading}\index{gevent.\+threading@{gevent.\+threading}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgevent_1_1threading_1_1___dummy_thread}{\+\_\+\+Dummy\+Thread}
+\item 
+class \hyperlink{classgevent_1_1threading_1_1_thread}{Thread}
+\item 
+class \hyperlink{classgevent_1_1threading_1_1_timer}{Timer}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacegevent_1_1threading_a474971d0c779037fc3d21a8510f76198}\label{namespacegevent_1_1threading_a474971d0c779037fc3d21a8510f76198}} 
+def {\bfseries main\+\_\+native\+\_\+thread} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacegevent_1_1threading_a37b6cb439b32d545f200468c481a3d59}\label{namespacegevent_1_1threading_a37b6cb439b32d545f200468c481a3d59}} 
+{\bfseries local} = \hyperlink{classgevent_1_1local_1_1local}{local}
+\item 
+\mbox{\Hypertarget{namespacegevent_1_1threading_abc69c90c9a034604f27af92a615c2eb9}\label{namespacegevent_1_1threading_abc69c90c9a034604f27af92a615c2eb9}} 
+{\bfseries start\+\_\+new\+\_\+thread} = \+\_\+start\+\_\+new\+\_\+thread
+\item 
+\mbox{\Hypertarget{namespacegevent_1_1threading_a107289ec24977973e7ab9e4ac6806996}\label{namespacegevent_1_1threading_a107289ec24977973e7ab9e4ac6806996}} 
+{\bfseries allocate\+\_\+lock} = \+\_\+allocate\+\_\+lock
+\item 
+\mbox{\Hypertarget{namespacegevent_1_1threading_adcf424a928bfb1653b4f46b4a9b38f52}\label{namespacegevent_1_1threading_adcf424a928bfb1653b4f46b4a9b38f52}} 
+{\bfseries getcurrent} = getcurrent
+\item 
+\mbox{\Hypertarget{namespacegevent_1_1threading_a2f28fe3a5bf76269b0f04fd2f1786cc3}\label{namespacegevent_1_1threading_a2f28fe3a5bf76269b0f04fd2f1786cc3}} 
+{\bfseries Lock} = \+\_\+allocate\+\_\+lock
+\item 
+\mbox{\Hypertarget{namespacegevent_1_1threading_ade2298b925085690c712eb1343a4e9f9}\label{namespacegevent_1_1threading_ade2298b925085690c712eb1343a4e9f9}} 
+{\bfseries get\+\_\+ident} = \+\_\+get\+\_\+ident
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Implementation of the standard :mod:`threading` using greenlets.
+
+.. note::
+
+    This module is a helper for :mod:`gevent.monkey` and is not
+    intended to be used directly. For spawning greenlets in your
+    applications, prefer higher level constructs like
+    :class:`gevent.Greenlet` class or :func:`gevent.spawn`. Attributes
+    in this module like ``__threading__`` are implementation artifacts subject
+    to change at any time.
+
+.. versionchanged:: 1.2.3
+
+   Defer adjusting the stdlib's list of active threads until we are
+   monkey patched. Previously this was done at import time. We are
+   documented to only be used as a helper for monkey patching, so this should
+   functionally be the same, but some applications ignore the documentation and
+   directly import this module anyway.
+
+   A positive consequence is that ``import gevent.threading,
+   threading; threading.current_thread()`` will no longer return a DummyThread
+   before monkey-patching.
+\end{DoxyVerb}
+ 

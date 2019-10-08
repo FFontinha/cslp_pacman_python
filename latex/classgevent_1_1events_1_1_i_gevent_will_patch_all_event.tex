@@ -1,0 +1,85 @@
+\hypertarget{classgevent_1_1events_1_1_i_gevent_will_patch_all_event}{}\section{gevent.\+events.\+I\+Gevent\+Will\+Patch\+All\+Event Class Reference}
+\label{classgevent_1_1events_1_1_i_gevent_will_patch_all_event}\index{gevent.\+events.\+I\+Gevent\+Will\+Patch\+All\+Event@{gevent.\+events.\+I\+Gevent\+Will\+Patch\+All\+Event}}
+
+
+Inherits \hyperlink{classgevent_1_1events_1_1_i_gevent_will_patch_event}{gevent.\+events.\+I\+Gevent\+Will\+Patch\+Event}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classgevent_1_1events_1_1_i_gevent_will_patch_all_event_ab1163084e4ac5f610ff6ddf84635cf42}{will\+\_\+patch\+\_\+module} (module\+\_\+name)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries patch\+\_\+all\+\_\+arguments}
+\item 
+{\bfseries patch\+\_\+all\+\_\+kwargs}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}An event emitted *before* gevent begins patching the system.
+
+Following this event will be a series of
+`IGeventWillPatchModuleEvent` and `IGeventDidPatchModuleEvent` for
+each patched module.
+
+Once the gevent builtin modules have been processed,
+`IGeventDidPatchBuiltinModulesEvent` will be emitted. Processing
+this event is an ideal time for third-party modules to be imported
+and patched (which may trigger its own will/did patch module
+events).
+
+Finally, a `IGeventDidPatchAllEvent` will be sent.
+
+If a subscriber to this event raises `DoNotPatch`, no patching
+will be done.
+
+The *source* and *target* attributes have undefined values.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1events_1_1_i_gevent_will_patch_all_event_ab1163084e4ac5f610ff6ddf84635cf42}\label{classgevent_1_1events_1_1_i_gevent_will_patch_all_event_ab1163084e4ac5f610ff6ddf84635cf42}} 
+\index{gevent\+::events\+::\+I\+Gevent\+Will\+Patch\+All\+Event@{gevent\+::events\+::\+I\+Gevent\+Will\+Patch\+All\+Event}!will\+\_\+patch\+\_\+module@{will\+\_\+patch\+\_\+module}}
+\index{will\+\_\+patch\+\_\+module@{will\+\_\+patch\+\_\+module}!gevent\+::events\+::\+I\+Gevent\+Will\+Patch\+All\+Event@{gevent\+::events\+::\+I\+Gevent\+Will\+Patch\+All\+Event}}
+\subsubsection{\texorpdfstring{will\+\_\+patch\+\_\+module()}{will\_patch\_module()}}
+{\footnotesize\ttfamily def gevent.\+events.\+I\+Gevent\+Will\+Patch\+All\+Event.\+will\+\_\+patch\+\_\+module (\begin{DoxyParamCaption}\item[{}]{module\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether the module named *module_name* will be patched.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgevent_1_1events_1_1_i_gevent_will_patch_all_event_a4ee8acdb7fff6de1f33eb18de2e8637c}\label{classgevent_1_1events_1_1_i_gevent_will_patch_all_event_a4ee8acdb7fff6de1f33eb18de2e8637c}} 
+\index{gevent\+::events\+::\+I\+Gevent\+Will\+Patch\+All\+Event@{gevent\+::events\+::\+I\+Gevent\+Will\+Patch\+All\+Event}!patch\+\_\+all\+\_\+arguments@{patch\+\_\+all\+\_\+arguments}}
+\index{patch\+\_\+all\+\_\+arguments@{patch\+\_\+all\+\_\+arguments}!gevent\+::events\+::\+I\+Gevent\+Will\+Patch\+All\+Event@{gevent\+::events\+::\+I\+Gevent\+Will\+Patch\+All\+Event}}
+\subsubsection{\texorpdfstring{patch\+\_\+all\+\_\+arguments}{patch\_all\_arguments}}
+{\footnotesize\ttfamily gevent.\+events.\+I\+Gevent\+Will\+Patch\+All\+Event.\+patch\+\_\+all\+\_\+arguments\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  Attribute(
+        \textcolor{stringliteral}{"A dictionary of all the arguments to `gevent.monkey.patch\_all`. "}
+        \textcolor{stringliteral}{"This dictionary should not be modified. "}
+    )
+\end{DoxyCode}
+\mbox{\Hypertarget{classgevent_1_1events_1_1_i_gevent_will_patch_all_event_a0e24c8030539830d72b804923886b757}\label{classgevent_1_1events_1_1_i_gevent_will_patch_all_event_a0e24c8030539830d72b804923886b757}} 
+\index{gevent\+::events\+::\+I\+Gevent\+Will\+Patch\+All\+Event@{gevent\+::events\+::\+I\+Gevent\+Will\+Patch\+All\+Event}!patch\+\_\+all\+\_\+kwargs@{patch\+\_\+all\+\_\+kwargs}}
+\index{patch\+\_\+all\+\_\+kwargs@{patch\+\_\+all\+\_\+kwargs}!gevent\+::events\+::\+I\+Gevent\+Will\+Patch\+All\+Event@{gevent\+::events\+::\+I\+Gevent\+Will\+Patch\+All\+Event}}
+\subsubsection{\texorpdfstring{patch\+\_\+all\+\_\+kwargs}{patch\_all\_kwargs}}
+{\footnotesize\ttfamily gevent.\+events.\+I\+Gevent\+Will\+Patch\+All\+Event.\+patch\+\_\+all\+\_\+kwargs\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  Attribute(
+        \textcolor{stringliteral}{"A dictionary of the extra arguments to `gevent.monkey.patch\_all`. "}
+        \textcolor{stringliteral}{"This dictionary should not be modified. "}
+    )
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/events.\+py\end{DoxyCompactItemize}

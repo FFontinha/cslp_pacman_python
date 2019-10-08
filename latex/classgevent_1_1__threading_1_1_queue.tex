@@ -1,0 +1,101 @@
+\hypertarget{classgevent_1_1__threading_1_1_queue}{}\section{gevent.\+\_\+threading.\+Queue Class Reference}
+\label{classgevent_1_1__threading_1_1_queue}\index{gevent.\+\_\+threading.\+Queue@{gevent.\+\_\+threading.\+Queue}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__threading_1_1_queue_ab0b8b1d56a88bd86156e20fb356b8e3e}\label{classgevent_1_1__threading_1_1_queue_ab0b8b1d56a88bd86156e20fb356b8e3e}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classgevent_1_1__threading_1_1_queue_ac2bdb2617cbb9f62a7ee9d68b8871144}{task\+\_\+done} (self)
+\item 
+def \hyperlink{classgevent_1_1__threading_1_1_queue_a74699231ed7c72d44dcb373908ad7af8}{qsize} (self, len=len)
+\item 
+def \hyperlink{classgevent_1_1__threading_1_1_queue_a0562fa76a39f3e5746fe9105031bca66}{empty} (self)
+\item 
+def \hyperlink{classgevent_1_1__threading_1_1_queue_a6061d745b1d271818d7aa2dbb17b6c0f}{full} (self)
+\item 
+def \hyperlink{classgevent_1_1__threading_1_1_queue_aefbf185463e87620fab548b6b7865d60}{put} (self, item)
+\item 
+def \hyperlink{classgevent_1_1__threading_1_1_queue_a95b0b413654f9fa7a435f2ef20a5199b}{get} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__threading_1_1_queue_ae2345cf8f5768164e458b531f934d375}\label{classgevent_1_1__threading_1_1_queue_ae2345cf8f5768164e458b531f934d375}} 
+{\bfseries unfinished\+\_\+tasks}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Create a queue object.
+
+The queue is always infinite size.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1__threading_1_1_queue_a0562fa76a39f3e5746fe9105031bca66}\label{classgevent_1_1__threading_1_1_queue_a0562fa76a39f3e5746fe9105031bca66}} 
+\index{gevent\+::\+\_\+threading\+::\+Queue@{gevent\+::\+\_\+threading\+::\+Queue}!empty@{empty}}
+\index{empty@{empty}!gevent\+::\+\_\+threading\+::\+Queue@{gevent\+::\+\_\+threading\+::\+Queue}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily def gevent.\+\_\+threading.\+Queue.\+empty (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the queue is empty, False otherwise (not reliable!).\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__threading_1_1_queue_a6061d745b1d271818d7aa2dbb17b6c0f}\label{classgevent_1_1__threading_1_1_queue_a6061d745b1d271818d7aa2dbb17b6c0f}} 
+\index{gevent\+::\+\_\+threading\+::\+Queue@{gevent\+::\+\_\+threading\+::\+Queue}!full@{full}}
+\index{full@{full}!gevent\+::\+\_\+threading\+::\+Queue@{gevent\+::\+\_\+threading\+::\+Queue}}
+\subsubsection{\texorpdfstring{full()}{full()}}
+{\footnotesize\ttfamily def gevent.\+\_\+threading.\+Queue.\+full (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the queue is full, False otherwise (not reliable!).\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__threading_1_1_queue_a95b0b413654f9fa7a435f2ef20a5199b}\label{classgevent_1_1__threading_1_1_queue_a95b0b413654f9fa7a435f2ef20a5199b}} 
+\index{gevent\+::\+\_\+threading\+::\+Queue@{gevent\+::\+\_\+threading\+::\+Queue}!get@{get}}
+\index{get@{get}!gevent\+::\+\_\+threading\+::\+Queue@{gevent\+::\+\_\+threading\+::\+Queue}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily def gevent.\+\_\+threading.\+Queue.\+get (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove and return an item from the queue.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__threading_1_1_queue_aefbf185463e87620fab548b6b7865d60}\label{classgevent_1_1__threading_1_1_queue_aefbf185463e87620fab548b6b7865d60}} 
+\index{gevent\+::\+\_\+threading\+::\+Queue@{gevent\+::\+\_\+threading\+::\+Queue}!put@{put}}
+\index{put@{put}!gevent\+::\+\_\+threading\+::\+Queue@{gevent\+::\+\_\+threading\+::\+Queue}}
+\subsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily def gevent.\+\_\+threading.\+Queue.\+put (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{item }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Put an item into the queue.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__threading_1_1_queue_a74699231ed7c72d44dcb373908ad7af8}\label{classgevent_1_1__threading_1_1_queue_a74699231ed7c72d44dcb373908ad7af8}} 
+\index{gevent\+::\+\_\+threading\+::\+Queue@{gevent\+::\+\_\+threading\+::\+Queue}!qsize@{qsize}}
+\index{qsize@{qsize}!gevent\+::\+\_\+threading\+::\+Queue@{gevent\+::\+\_\+threading\+::\+Queue}}
+\subsubsection{\texorpdfstring{qsize()}{qsize()}}
+{\footnotesize\ttfamily def gevent.\+\_\+threading.\+Queue.\+qsize (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{len = {\ttfamily len} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the approximate size of the queue (not reliable!).\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__threading_1_1_queue_ac2bdb2617cbb9f62a7ee9d68b8871144}\label{classgevent_1_1__threading_1_1_queue_ac2bdb2617cbb9f62a7ee9d68b8871144}} 
+\index{gevent\+::\+\_\+threading\+::\+Queue@{gevent\+::\+\_\+threading\+::\+Queue}!task\+\_\+done@{task\+\_\+done}}
+\index{task\+\_\+done@{task\+\_\+done}!gevent\+::\+\_\+threading\+::\+Queue@{gevent\+::\+\_\+threading\+::\+Queue}}
+\subsubsection{\texorpdfstring{task\+\_\+done()}{task\_done()}}
+{\footnotesize\ttfamily def gevent.\+\_\+threading.\+Queue.\+task\+\_\+done (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Indicate that a formerly enqueued task is complete.
+
+Used by Queue consumer threads.  For each get() used to fetch a task,
+a subsequent call to task_done() tells the queue that the processing
+on the task is complete.
+
+If a join() is currently blocking, it will resume when all items
+have been processed (meaning that a task_done() call was received
+for every item that had been put() into the queue).
+
+Raises a ValueError if called more times than there were items
+placed in the queue.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/\+\_\+threading.\+py\end{DoxyCompactItemize}

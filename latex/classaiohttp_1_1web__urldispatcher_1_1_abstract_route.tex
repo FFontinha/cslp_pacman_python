@@ -1,0 +1,63 @@
+\hypertarget{classaiohttp_1_1web__urldispatcher_1_1_abstract_route}{}\section{aiohttp.\+web\+\_\+urldispatcher.\+Abstract\+Route Class Reference}
+\label{classaiohttp_1_1web__urldispatcher_1_1_abstract_route}\index{aiohttp.\+web\+\_\+urldispatcher.\+Abstract\+Route@{aiohttp.\+web\+\_\+urldispatcher.\+Abstract\+Route}}
+
+
+Inherits A\+BC.
+
+
+
+Inherited by \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_resource_route}{aiohttp.\+web\+\_\+urldispatcher.\+Resource\+Route}, and \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_system_route}{aiohttp.\+web\+\_\+urldispatcher.\+System\+Route}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_a2de869bcb4e5eff92aa7221895ecd79a}\label{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_a2de869bcb4e5eff92aa7221895ecd79a}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, method, handler, expect\+\_\+handler=None, resource=None)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_aa43ca8053bdb67848f766ed5292404d8}\label{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_aa43ca8053bdb67848f766ed5292404d8}} 
+def {\bfseries method} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_ac16024d102e0aa7929b578ee9583be2e}\label{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_ac16024d102e0aa7929b578ee9583be2e}} 
+def {\bfseries handler} (self)
+\item 
+def \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_a32a0a7af736bef40ea54b2ad205e4f72}{name} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_a2207e455acdcb2475d72786c03159991}\label{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_a2207e455acdcb2475d72786c03159991}} 
+def {\bfseries resource} (self)
+\item 
+def \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_a2a4b0b79cc0c386299b17c58f1a4dc6a}{get\+\_\+info} (self)
+\item 
+def \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_a920185789e484154c92124b214cdf3fc}{url\+\_\+for} (self, args, kwargs)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_a7d81467f662c0d74939c8f0b2be44c90}\label{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_a7d81467f662c0d74939c8f0b2be44c90}} 
+def {\bfseries handle\+\_\+expect\+\_\+header} (self, request)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_a2a4b0b79cc0c386299b17c58f1a4dc6a}\label{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_a2a4b0b79cc0c386299b17c58f1a4dc6a}} 
+\index{aiohttp\+::web\+\_\+urldispatcher\+::\+Abstract\+Route@{aiohttp\+::web\+\_\+urldispatcher\+::\+Abstract\+Route}!get\+\_\+info@{get\+\_\+info}}
+\index{get\+\_\+info@{get\+\_\+info}!aiohttp\+::web\+\_\+urldispatcher\+::\+Abstract\+Route@{aiohttp\+::web\+\_\+urldispatcher\+::\+Abstract\+Route}}
+\subsubsection{\texorpdfstring{get\+\_\+info()}{get\_info()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+urldispatcher.\+Abstract\+Route.\+get\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a dict with additional info useful for introspection\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_a32a0a7af736bef40ea54b2ad205e4f72}\label{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_a32a0a7af736bef40ea54b2ad205e4f72}} 
+\index{aiohttp\+::web\+\_\+urldispatcher\+::\+Abstract\+Route@{aiohttp\+::web\+\_\+urldispatcher\+::\+Abstract\+Route}!name@{name}}
+\index{name@{name}!aiohttp\+::web\+\_\+urldispatcher\+::\+Abstract\+Route@{aiohttp\+::web\+\_\+urldispatcher\+::\+Abstract\+Route}}
+\subsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+urldispatcher.\+Abstract\+Route.\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Optional route's name, always equals to resource's name.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_a920185789e484154c92124b214cdf3fc}\label{classaiohttp_1_1web__urldispatcher_1_1_abstract_route_a920185789e484154c92124b214cdf3fc}} 
+\index{aiohttp\+::web\+\_\+urldispatcher\+::\+Abstract\+Route@{aiohttp\+::web\+\_\+urldispatcher\+::\+Abstract\+Route}!url\+\_\+for@{url\+\_\+for}}
+\index{url\+\_\+for@{url\+\_\+for}!aiohttp\+::web\+\_\+urldispatcher\+::\+Abstract\+Route@{aiohttp\+::web\+\_\+urldispatcher\+::\+Abstract\+Route}}
+\subsubsection{\texorpdfstring{url\+\_\+for()}{url\_for()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+urldispatcher.\+Abstract\+Route.\+url\+\_\+for (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Construct url for route with additional params.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/web\+\_\+urldispatcher.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,167 @@
+\hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher}{}\section{aiohttp.\+web\+\_\+urldispatcher.\+Url\+Dispatcher Class Reference}
+\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher}\index{aiohttp.\+web\+\_\+urldispatcher.\+Url\+Dispatcher@{aiohttp.\+web\+\_\+urldispatcher.\+Url\+Dispatcher}}
+
+
+Inherits \hyperlink{classaiohttp_1_1abc_1_1_abstract_router}{aiohttp.\+abc.\+Abstract\+Router}, and Mapping.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_af907e3bdad1787c8f4e0ac72cbdc7c63}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_af907e3bdad1787c8f4e0ac72cbdc7c63}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_af1507f4d483ee5987340a1bd3d18cf03}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_af1507f4d483ee5987340a1bd3d18cf03}} 
+def {\bfseries resolve} (self, request)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_ab2e3bd973d03a97c7cf22e484257b669}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_ab2e3bd973d03a97c7cf22e484257b669}} 
+def {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a8fe220695c81acbb1e48dd3ccaae0087}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a8fe220695c81acbb1e48dd3ccaae0087}} 
+def {\bfseries \+\_\+\+\_\+len\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_ac0419f1b51624fd0a23d2997ba4f8eb5}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_ac0419f1b51624fd0a23d2997ba4f8eb5}} 
+def {\bfseries \+\_\+\+\_\+contains\+\_\+\+\_\+} (self, name)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a9737b9d966cc22c7d68845ee6bf07a1f}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a9737b9d966cc22c7d68845ee6bf07a1f}} 
+def {\bfseries \+\_\+\+\_\+getitem\+\_\+\+\_\+} (self, name)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a6f47dfd19cc20ec0a70a158179ce7dfb}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a6f47dfd19cc20ec0a70a158179ce7dfb}} 
+def {\bfseries resources} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_ae2e69e2a4a7dcd14d5e23782a01ea825}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_ae2e69e2a4a7dcd14d5e23782a01ea825}} 
+def {\bfseries routes} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a85315f6df67def4a39cad2586ca07846}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a85315f6df67def4a39cad2586ca07846}} 
+def {\bfseries named\+\_\+resources} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a603ef3499bd5d728c75a576d9d7e5cdc}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a603ef3499bd5d728c75a576d9d7e5cdc}} 
+def {\bfseries register\+\_\+resource} (self, resource)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_af0b5574b77cbaf41af756b39d2283bb7}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_af0b5574b77cbaf41af756b39d2283bb7}} 
+def {\bfseries add\+\_\+resource} (self, path, name=None)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a4aa429a2b1e792e521c436feea911c68}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a4aa429a2b1e792e521c436feea911c68}} 
+def {\bfseries add\+\_\+route} (self, method, path, handler, name=None, expect\+\_\+handler=None)
+\item 
+def \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a51881bea91cd64ead8bd9717ba0b96ed}{add\+\_\+static} (self, prefix, path, name=None, expect\+\_\+handler=None, chunk\+\_\+size=256 $\ast$1024, show\+\_\+index=False, follow\+\_\+symlinks=False, append\+\_\+version=False)
+\item 
+def \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a41bfa58768e2eaa444f528e299f9a492}{add\+\_\+head} (self, path, handler, kwargs)
+\item 
+def \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_aa9593de4416fde65adfb837d9ef065b0}{add\+\_\+options} (self, path, handler, kwargs)
+\item 
+def \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_abf5734aafaab163d20b158b6ecdc8d30}{add\+\_\+get} (self, path, handler, name=None, allow\+\_\+head=True, kwargs)
+\item 
+def \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a92d640428f9b884450075b2495f75812}{add\+\_\+post} (self, path, handler, kwargs)
+\item 
+def \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a9a7a70995b6863953d4d185abc9d3354}{add\+\_\+put} (self, path, handler, kwargs)
+\item 
+def \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_ade00fe669cb2cdb2c837738d249f2728}{add\+\_\+patch} (self, path, handler, kwargs)
+\item 
+def \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_afda3249df3f47a4fcf13df279de849cf}{add\+\_\+delete} (self, path, handler, kwargs)
+\item 
+def \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a7cde1ed170743d73305dc54c19b87509}{add\+\_\+view} (self, path, handler, kwargs)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_aea19609481bba2157d5c7a8b7a4d96c7}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_aea19609481bba2157d5c7a8b7a4d96c7}} 
+def {\bfseries freeze} (self)
+\item 
+def \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_aa55ccedb52f2221f8a7b0b9bd1a6e33e}{add\+\_\+routes} (self, routes)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a4ae9203a668f3c22d4303efd084d3e0b}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a4ae9203a668f3c22d4303efd084d3e0b}} 
+{\bfseries N\+A\+M\+E\+\_\+\+S\+P\+L\+I\+T\+\_\+\+RE} = re.\+compile(r\textquotesingle{}\mbox{[}.\+:-\/\mbox{]}\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_afda3249df3f47a4fcf13df279de849cf}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_afda3249df3f47a4fcf13df279de849cf}} 
+\index{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}!add\+\_\+delete@{add\+\_\+delete}}
+\index{add\+\_\+delete@{add\+\_\+delete}!aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}}
+\subsubsection{\texorpdfstring{add\+\_\+delete()}{add\_delete()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+urldispatcher.\+Url\+Dispatcher.\+add\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{handler,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for add_route with method DELETE
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_abf5734aafaab163d20b158b6ecdc8d30}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_abf5734aafaab163d20b158b6ecdc8d30}} 
+\index{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}!add\+\_\+get@{add\+\_\+get}}
+\index{add\+\_\+get@{add\+\_\+get}!aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}}
+\subsubsection{\texorpdfstring{add\+\_\+get()}{add\_get()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+urldispatcher.\+Url\+Dispatcher.\+add\+\_\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{handler,  }\item[{}]{name = {\ttfamily None},  }\item[{}]{allow\+\_\+head = {\ttfamily True},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for add_route with method GET, if allow_head is true another
+route is added allowing head requests to the same endpoint
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a41bfa58768e2eaa444f528e299f9a492}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a41bfa58768e2eaa444f528e299f9a492}} 
+\index{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}!add\+\_\+head@{add\+\_\+head}}
+\index{add\+\_\+head@{add\+\_\+head}!aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}}
+\subsubsection{\texorpdfstring{add\+\_\+head()}{add\_head()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+urldispatcher.\+Url\+Dispatcher.\+add\+\_\+head (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{handler,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for add_route with method HEAD
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_aa9593de4416fde65adfb837d9ef065b0}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_aa9593de4416fde65adfb837d9ef065b0}} 
+\index{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}!add\+\_\+options@{add\+\_\+options}}
+\index{add\+\_\+options@{add\+\_\+options}!aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}}
+\subsubsection{\texorpdfstring{add\+\_\+options()}{add\_options()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+urldispatcher.\+Url\+Dispatcher.\+add\+\_\+options (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{handler,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for add_route with method OPTIONS
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_ade00fe669cb2cdb2c837738d249f2728}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_ade00fe669cb2cdb2c837738d249f2728}} 
+\index{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}!add\+\_\+patch@{add\+\_\+patch}}
+\index{add\+\_\+patch@{add\+\_\+patch}!aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}}
+\subsubsection{\texorpdfstring{add\+\_\+patch()}{add\_patch()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+urldispatcher.\+Url\+Dispatcher.\+add\+\_\+patch (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{handler,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for add_route with method PATCH
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a92d640428f9b884450075b2495f75812}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a92d640428f9b884450075b2495f75812}} 
+\index{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}!add\+\_\+post@{add\+\_\+post}}
+\index{add\+\_\+post@{add\+\_\+post}!aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}}
+\subsubsection{\texorpdfstring{add\+\_\+post()}{add\_post()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+urldispatcher.\+Url\+Dispatcher.\+add\+\_\+post (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{handler,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for add_route with method POST
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a9a7a70995b6863953d4d185abc9d3354}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a9a7a70995b6863953d4d185abc9d3354}} 
+\index{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}!add\+\_\+put@{add\+\_\+put}}
+\index{add\+\_\+put@{add\+\_\+put}!aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}}
+\subsubsection{\texorpdfstring{add\+\_\+put()}{add\_put()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+urldispatcher.\+Url\+Dispatcher.\+add\+\_\+put (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{handler,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for add_route with method PUT
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_aa55ccedb52f2221f8a7b0b9bd1a6e33e}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_aa55ccedb52f2221f8a7b0b9bd1a6e33e}} 
+\index{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}!add\+\_\+routes@{add\+\_\+routes}}
+\index{add\+\_\+routes@{add\+\_\+routes}!aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}}
+\subsubsection{\texorpdfstring{add\+\_\+routes()}{add\_routes()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+urldispatcher.\+Url\+Dispatcher.\+add\+\_\+routes (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{routes }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Append routes to route table.
+
+Parameter should be a sequence of RouteDef objects.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a51881bea91cd64ead8bd9717ba0b96ed}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a51881bea91cd64ead8bd9717ba0b96ed}} 
+\index{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}!add\+\_\+static@{add\+\_\+static}}
+\index{add\+\_\+static@{add\+\_\+static}!aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}}
+\subsubsection{\texorpdfstring{add\+\_\+static()}{add\_static()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+urldispatcher.\+Url\+Dispatcher.\+add\+\_\+static (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{prefix,  }\item[{}]{path,  }\item[{}]{name = {\ttfamily None},  }\item[{}]{expect\+\_\+handler = {\ttfamily None},  }\item[{}]{chunk\+\_\+size = {\ttfamily 256~$\ast$~1024},  }\item[{}]{show\+\_\+index = {\ttfamily False},  }\item[{}]{follow\+\_\+symlinks = {\ttfamily False},  }\item[{}]{append\+\_\+version = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add static files view.
+
+prefix - url prefix
+path - folder with files\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a7cde1ed170743d73305dc54c19b87509}\label{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher_a7cde1ed170743d73305dc54c19b87509}} 
+\index{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}!add\+\_\+view@{add\+\_\+view}}
+\index{add\+\_\+view@{add\+\_\+view}!aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher@{aiohttp\+::web\+\_\+urldispatcher\+::\+Url\+Dispatcher}}
+\subsubsection{\texorpdfstring{add\+\_\+view()}{add\_view()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+urldispatcher.\+Url\+Dispatcher.\+add\+\_\+view (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{handler,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for add_route with ANY methods for a class-based view
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/web\+\_\+urldispatcher.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,62 @@
+\hypertarget{namespacegevent_1_1local}{}\section{gevent.\+local Namespace Reference}
+\label{namespacegevent_1_1local}\index{gevent.\+local@{gevent.\+local}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgevent_1_1local_1_1__greenlet__deleted}{\+\_\+greenlet\+\_\+deleted}
+\item 
+class \hyperlink{classgevent_1_1local_1_1__local__deleted}{\+\_\+local\+\_\+deleted}
+\item 
+class \hyperlink{classgevent_1_1local_1_1__localimpl}{\+\_\+localimpl}
+\item 
+class \hyperlink{classgevent_1_1local_1_1__localimpl__dict__entry}{\+\_\+localimpl\+\_\+dict\+\_\+entry}
+\item 
+class \hyperlink{classgevent_1_1local_1_1__wrefdict}{\+\_\+wrefdict}
+\item 
+class \hyperlink{classgevent_1_1local_1_1local}{local}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1local_a7c64f3274eade7af20a74b11b7fb8406}{all\+\_\+local\+\_\+dicts\+\_\+for\+\_\+greenlet} (greenlet)
+\item 
+def \hyperlink{namespacegevent_1_1local_a7f1cd15dc008b574836a1b7489435fbe}{\+\_\+\+\_\+new\+\_\+\+\_\+} (cls, args, kw)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespacegevent_1_1local_a868e452a4e35f8b70506f6e56609a2b7}{key\+\_\+prefix} = \textquotesingle{}\+\_\+gevent\+\_\+local\+\_\+localimpl\+\_\+\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1local_a7f1cd15dc008b574836a1b7489435fbe}\label{namespacegevent_1_1local_a7f1cd15dc008b574836a1b7489435fbe}} 
+\index{gevent\+::local@{gevent\+::local}!\+\_\+\+\_\+new\+\_\+\+\_\+@{\+\_\+\+\_\+new\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+new\+\_\+\+\_\+@{\+\_\+\+\_\+new\+\_\+\+\_\+}!gevent\+::local@{gevent\+::local}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+new\+\_\+\+\_\+()}{\_\_new\_\_()}}
+{\footnotesize\ttfamily def gevent.\+local.\+\_\+\+\_\+new\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{args,  }\item[{}]{kw }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegevent_1_1local_a7c64f3274eade7af20a74b11b7fb8406}\label{namespacegevent_1_1local_a7c64f3274eade7af20a74b11b7fb8406}} 
+\index{gevent\+::local@{gevent\+::local}!all\+\_\+local\+\_\+dicts\+\_\+for\+\_\+greenlet@{all\+\_\+local\+\_\+dicts\+\_\+for\+\_\+greenlet}}
+\index{all\+\_\+local\+\_\+dicts\+\_\+for\+\_\+greenlet@{all\+\_\+local\+\_\+dicts\+\_\+for\+\_\+greenlet}!gevent\+::local@{gevent\+::local}}
+\subsubsection{\texorpdfstring{all\+\_\+local\+\_\+dicts\+\_\+for\+\_\+greenlet()}{all\_local\_dicts\_for\_greenlet()}}
+{\footnotesize\ttfamily def gevent.\+local.\+all\+\_\+local\+\_\+dicts\+\_\+for\+\_\+greenlet (\begin{DoxyParamCaption}\item[{}]{greenlet }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Internal debug helper for getting the local values associated
+with a greenlet. This is subject to change or removal at any time.
+
+:return: A list of ((type, id), {}) pairs, where the first element
+  is the type and id of the local object and the second object is its
+  instance dictionary, as seen from this greenlet.
+
+.. versionadded:: 1.3a2
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1local_a868e452a4e35f8b70506f6e56609a2b7}\label{namespacegevent_1_1local_a868e452a4e35f8b70506f6e56609a2b7}} 
+\index{gevent\+::local@{gevent\+::local}!key\+\_\+prefix@{key\+\_\+prefix}}
+\index{key\+\_\+prefix@{key\+\_\+prefix}!gevent\+::local@{gevent\+::local}}
+\subsubsection{\texorpdfstring{key\+\_\+prefix}{key\_prefix}}
+{\footnotesize\ttfamily string gevent.\+local.\+key\+\_\+prefix = \textquotesingle{}\+\_\+gevent\+\_\+local\+\_\+localimpl\+\_\+\textquotesingle{}}
+

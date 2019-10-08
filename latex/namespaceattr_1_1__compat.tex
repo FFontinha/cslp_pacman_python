@@ -1,0 +1,114 @@
+\hypertarget{namespaceattr_1_1__compat}{}\section{attr.\+\_\+compat Namespace Reference}
+\label{namespaceattr_1_1__compat}\index{attr.\+\_\+compat@{attr.\+\_\+compat}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classattr_1_1__compat_1_1_read_only_dict}{Read\+Only\+Dict}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceattr_1_1__compat_a529525094853e4ac7f75fa07e838b749}{isclass} (klass)
+\item 
+def \hyperlink{namespaceattr_1_1__compat_ae4db7daca1dce2b85955337bea02e0a9}{iteritems} (d)
+\item 
+def \hyperlink{namespaceattr_1_1__compat_a03120022bfdae93d7cbd3cf95d667d53}{metadata\+\_\+proxy} (d)
+\item 
+def \hyperlink{namespaceattr_1_1__compat_af86677ffeb442a606a72b93a848717cb}{import\+\_\+ctypes} ()
+\item 
+def \hyperlink{namespaceattr_1_1__compat_a3f82c63c6aa5e9eec442a57c64f79ae4}{just\+\_\+warn} (args, kw)
+\item 
+def \hyperlink{namespaceattr_1_1__compat_a8dccbbea3bd8babd13634172c5c44fbd}{make\+\_\+set\+\_\+closure\+\_\+cell} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespaceattr_1_1__compat_a25608fc3995bbc240f3d238b820a8797}{P\+Y2} = 2
+\item 
+string \hyperlink{namespaceattr_1_1__compat_a89375e5fc29dfb01bd95a08943d13eb3}{P\+Y\+PY} = \char`\"{}Py\+Py\char`\"{}
+\item 
+\hyperlink{namespaceattr_1_1__compat_aa77f00cd859563f6fceb36be818fdcd5}{ordered\+\_\+dict} = dict
+\item 
+string \hyperlink{namespaceattr_1_1__compat_abadd328564f4b92b07baa73ebc821e25}{T\+Y\+PE} = \char`\"{}type\char`\"{}
+\item 
+def \hyperlink{namespaceattr_1_1__compat_ab9e39ec6546b8656dfebb3ac8afe61f1}{set\+\_\+closure\+\_\+cell} = \hyperlink{namespaceattr_1_1__compat_a8dccbbea3bd8babd13634172c5c44fbd}{make\+\_\+set\+\_\+closure\+\_\+cell}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceattr_1_1__compat_af86677ffeb442a606a72b93a848717cb}\label{namespaceattr_1_1__compat_af86677ffeb442a606a72b93a848717cb}} 
+\index{attr\+::\+\_\+compat@{attr\+::\+\_\+compat}!import\+\_\+ctypes@{import\+\_\+ctypes}}
+\index{import\+\_\+ctypes@{import\+\_\+ctypes}!attr\+::\+\_\+compat@{attr\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{import\+\_\+ctypes()}{import\_ctypes()}}
+{\footnotesize\ttfamily def attr.\+\_\+compat.\+import\+\_\+ctypes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Moved into a function for testability.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceattr_1_1__compat_a529525094853e4ac7f75fa07e838b749}\label{namespaceattr_1_1__compat_a529525094853e4ac7f75fa07e838b749}} 
+\index{attr\+::\+\_\+compat@{attr\+::\+\_\+compat}!isclass@{isclass}}
+\index{isclass@{isclass}!attr\+::\+\_\+compat@{attr\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{isclass()}{isclass()}}
+{\footnotesize\ttfamily def attr.\+\_\+compat.\+isclass (\begin{DoxyParamCaption}\item[{}]{klass }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceattr_1_1__compat_ae4db7daca1dce2b85955337bea02e0a9}\label{namespaceattr_1_1__compat_ae4db7daca1dce2b85955337bea02e0a9}} 
+\index{attr\+::\+\_\+compat@{attr\+::\+\_\+compat}!iteritems@{iteritems}}
+\index{iteritems@{iteritems}!attr\+::\+\_\+compat@{attr\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{iteritems()}{iteritems()}}
+{\footnotesize\ttfamily def attr.\+\_\+compat.\+iteritems (\begin{DoxyParamCaption}\item[{}]{d }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceattr_1_1__compat_a3f82c63c6aa5e9eec442a57c64f79ae4}\label{namespaceattr_1_1__compat_a3f82c63c6aa5e9eec442a57c64f79ae4}} 
+\index{attr\+::\+\_\+compat@{attr\+::\+\_\+compat}!just\+\_\+warn@{just\+\_\+warn}}
+\index{just\+\_\+warn@{just\+\_\+warn}!attr\+::\+\_\+compat@{attr\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{just\+\_\+warn()}{just\_warn()}}
+{\footnotesize\ttfamily def attr.\+\_\+compat.\+just\+\_\+warn (\begin{DoxyParamCaption}\item[{}]{args,  }\item[{}]{kw }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}We only warn on Python 3 because we are not aware of any concrete
+consequences of not setting the cell on Python 2.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceattr_1_1__compat_a8dccbbea3bd8babd13634172c5c44fbd}\label{namespaceattr_1_1__compat_a8dccbbea3bd8babd13634172c5c44fbd}} 
+\index{attr\+::\+\_\+compat@{attr\+::\+\_\+compat}!make\+\_\+set\+\_\+closure\+\_\+cell@{make\+\_\+set\+\_\+closure\+\_\+cell}}
+\index{make\+\_\+set\+\_\+closure\+\_\+cell@{make\+\_\+set\+\_\+closure\+\_\+cell}!attr\+::\+\_\+compat@{attr\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{make\+\_\+set\+\_\+closure\+\_\+cell()}{make\_set\_closure\_cell()}}
+{\footnotesize\ttfamily def attr.\+\_\+compat.\+make\+\_\+set\+\_\+closure\+\_\+cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Moved into a function for testability.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceattr_1_1__compat_a03120022bfdae93d7cbd3cf95d667d53}\label{namespaceattr_1_1__compat_a03120022bfdae93d7cbd3cf95d667d53}} 
+\index{attr\+::\+\_\+compat@{attr\+::\+\_\+compat}!metadata\+\_\+proxy@{metadata\+\_\+proxy}}
+\index{metadata\+\_\+proxy@{metadata\+\_\+proxy}!attr\+::\+\_\+compat@{attr\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{metadata\+\_\+proxy()}{metadata\_proxy()}}
+{\footnotesize\ttfamily def attr.\+\_\+compat.\+metadata\+\_\+proxy (\begin{DoxyParamCaption}\item[{}]{d }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceattr_1_1__compat_aa77f00cd859563f6fceb36be818fdcd5}\label{namespaceattr_1_1__compat_aa77f00cd859563f6fceb36be818fdcd5}} 
+\index{attr\+::\+\_\+compat@{attr\+::\+\_\+compat}!ordered\+\_\+dict@{ordered\+\_\+dict}}
+\index{ordered\+\_\+dict@{ordered\+\_\+dict}!attr\+::\+\_\+compat@{attr\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{ordered\+\_\+dict}{ordered\_dict}}
+{\footnotesize\ttfamily attr.\+\_\+compat.\+ordered\+\_\+dict = dict}
+
+\mbox{\Hypertarget{namespaceattr_1_1__compat_a25608fc3995bbc240f3d238b820a8797}\label{namespaceattr_1_1__compat_a25608fc3995bbc240f3d238b820a8797}} 
+\index{attr\+::\+\_\+compat@{attr\+::\+\_\+compat}!P\+Y2@{P\+Y2}}
+\index{P\+Y2@{P\+Y2}!attr\+::\+\_\+compat@{attr\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{P\+Y2}{PY2}}
+{\footnotesize\ttfamily int attr.\+\_\+compat.\+P\+Y2 = 2}
+
+\mbox{\Hypertarget{namespaceattr_1_1__compat_a89375e5fc29dfb01bd95a08943d13eb3}\label{namespaceattr_1_1__compat_a89375e5fc29dfb01bd95a08943d13eb3}} 
+\index{attr\+::\+\_\+compat@{attr\+::\+\_\+compat}!P\+Y\+PY@{P\+Y\+PY}}
+\index{P\+Y\+PY@{P\+Y\+PY}!attr\+::\+\_\+compat@{attr\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{P\+Y\+PY}{PYPY}}
+{\footnotesize\ttfamily string attr.\+\_\+compat.\+P\+Y\+PY = \char`\"{}Py\+Py\char`\"{}}
+
+\mbox{\Hypertarget{namespaceattr_1_1__compat_ab9e39ec6546b8656dfebb3ac8afe61f1}\label{namespaceattr_1_1__compat_ab9e39ec6546b8656dfebb3ac8afe61f1}} 
+\index{attr\+::\+\_\+compat@{attr\+::\+\_\+compat}!set\+\_\+closure\+\_\+cell@{set\+\_\+closure\+\_\+cell}}
+\index{set\+\_\+closure\+\_\+cell@{set\+\_\+closure\+\_\+cell}!attr\+::\+\_\+compat@{attr\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{set\+\_\+closure\+\_\+cell}{set\_closure\_cell}}
+{\footnotesize\ttfamily def attr.\+\_\+compat.\+set\+\_\+closure\+\_\+cell = \hyperlink{namespaceattr_1_1__compat_a8dccbbea3bd8babd13634172c5c44fbd}{make\+\_\+set\+\_\+closure\+\_\+cell}()}
+
+\mbox{\Hypertarget{namespaceattr_1_1__compat_abadd328564f4b92b07baa73ebc821e25}\label{namespaceattr_1_1__compat_abadd328564f4b92b07baa73ebc821e25}} 
+\index{attr\+::\+\_\+compat@{attr\+::\+\_\+compat}!T\+Y\+PE@{T\+Y\+PE}}
+\index{T\+Y\+PE@{T\+Y\+PE}!attr\+::\+\_\+compat@{attr\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{T\+Y\+PE}{TYPE}}
+{\footnotesize\ttfamily string attr.\+\_\+compat.\+T\+Y\+PE = \char`\"{}type\char`\"{}}
+

@@ -1,0 +1,41 @@
+\hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_suppress}{}\section{setuptools.\+\_\+vendor.\+pyparsing.\+Suppress Class Reference}
+\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_suppress}\index{setuptools.\+\_\+vendor.\+pyparsing.\+Suppress@{setuptools.\+\_\+vendor.\+pyparsing.\+Suppress}}
+
+
+Inherits \hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_token_converter}{setuptools.\+\_\+vendor.\+pyparsing.\+Token\+Converter}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_suppress_a99f780117a65983c3f486a3a0c5c7e73}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_suppress_a99f780117a65983c3f486a3a0c5c7e73}} 
+def {\bfseries post\+Parse} (self, instring, loc, tokenlist)
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_suppress_a92b705f99f29fbc08b3c1eadec9cc090}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_suppress_a92b705f99f29fbc08b3c1eadec9cc090}} 
+def {\bfseries suppress} (self)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Converter for ignoring the results of a parsed expression.
+
+Example::
+    source = "a, b, c,d"
+    wd = Word(alphas)
+    wd_list1 = wd + ZeroOrMore(',' + wd)
+    print(wd_list1.parseString(source))
+
+    # often, delimiters that are useful during parsing are just in the
+    # way afterward - use Suppress to keep them out of the parsed output
+    wd_list2 = wd + ZeroOrMore(Suppress(',') + wd)
+    print(wd_list2.parseString(source))
+prints::
+    ['a', ',', 'b', ',', 'c', ',', 'd']
+    ['a', 'b', 'c', 'd']
+(See also L{delimitedList}.)
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/setuptools/\+\_\+vendor/pyparsing.\+py\end{DoxyCompactItemize}

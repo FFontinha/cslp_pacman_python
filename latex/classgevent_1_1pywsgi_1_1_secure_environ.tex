@@ -1,0 +1,96 @@
+\hypertarget{classgevent_1_1pywsgi_1_1_secure_environ}{}\section{gevent.\+pywsgi.\+Secure\+Environ Class Reference}
+\label{classgevent_1_1pywsgi_1_1_secure_environ}\index{gevent.\+pywsgi.\+Secure\+Environ@{gevent.\+pywsgi.\+Secure\+Environ}}
+
+
+Inherits \hyperlink{classgevent_1_1pywsgi_1_1_environ}{gevent.\+pywsgi.\+Environ}.
+
+
+
+Inherited by \hyperlink{classgevent_1_1pywsgi_1_1_w_s_g_i_secure_environ}{gevent.\+pywsgi.\+W\+S\+G\+I\+Secure\+Environ}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1pywsgi_1_1_secure_environ_a4836fd508c8b8640276ef733259da0f0}\label{classgevent_1_1pywsgi_1_1_secure_environ_a4836fd508c8b8640276ef733259da0f0}} 
+def {\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, name)
+\item 
+\mbox{\Hypertarget{classgevent_1_1pywsgi_1_1_secure_environ_a43ac82bb49bc974de6f361b47ae7c91e}\label{classgevent_1_1pywsgi_1_1_secure_environ_a43ac82bb49bc974de6f361b47ae7c91e}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1pywsgi_1_1_secure_environ_ad8b424808555705d3cc808e2e7982620}\label{classgevent_1_1pywsgi_1_1_secure_environ_ad8b424808555705d3cc808e2e7982620}} 
+bool {\bfseries default\+\_\+secure\+\_\+repr} = True
+\item 
+\mbox{\Hypertarget{classgevent_1_1pywsgi_1_1_secure_environ_a8047b2fa7f04237d54ea53c12a5de6a4}\label{classgevent_1_1pywsgi_1_1_secure_environ_a8047b2fa7f04237d54ea53c12a5de6a4}} 
+tuple {\bfseries default\+\_\+whitelist\+\_\+keys} = ()
+\item 
+\mbox{\Hypertarget{classgevent_1_1pywsgi_1_1_secure_environ_a295b5ba43eb65c421f3bb099ae5a23fa}\label{classgevent_1_1pywsgi_1_1_secure_environ_a295b5ba43eb65c421f3bb099ae5a23fa}} 
+bool {\bfseries default\+\_\+print\+\_\+masked\+\_\+keys} = True
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}An environment that does not print its keys and values
+by default.
+
+Provisional API.
+
+This is intended to keep potentially sensitive information like
+HTTP authorization and cookies from being inadvertently printed
+or logged.
+
+For debugging, each instance can have its *secure_repr* attribute
+set to ``False``, which will cause it to print like a normal dict.
+
+When *secure_repr* is ``True`` (the default), then the value of
+the *whitelist_keys* attribute is consulted; if this value is
+true-ish, it should be a container (something that responds to
+``in``) of key names (typically a list or set). Keys and values in
+this dictionary that are in *whitelist_keys* will then be printed,
+while all other values will be masked. These values may be
+customized on the class by setting the *default_secure_repr* and
+*default_whitelist_keys*, respectively::
+
+    >>> environ = SecureEnviron(key='value')
+    >>> environ # doctest: +ELLIPSIS
+    <pywsgi.SecureEnviron dict (keys: 1) at ...
+
+If we whitelist the key, it gets printed::
+
+    >>> environ.whitelist_keys = {'key'}
+    >>> environ
+    {'key': 'value'}
+
+A non-whitelisted key (*only*, to avoid doctest issues) is masked::
+
+    >>> environ['secure'] = 'secret'; del environ['key']
+    >>> environ
+    {'secure': '<MASKED>'}
+
+We can turn it off entirely for the instance::
+
+    >>> environ.secure_repr = False
+    >>> environ
+    {'secure': 'secret'}
+
+We can also customize it at the class level (here we use a new
+class to be explicit and to avoid polluting the true default
+values; we would set this class to be the ``environ_class`` of the
+server)::
+
+    >>> class MyEnviron(SecureEnviron):
+    ...    default_whitelist_keys = ('key',)
+    ...
+    >>> environ = MyEnviron({'key': 'value'})
+    >>> environ
+    {'key': 'value'}
+
+.. versionadded:: 1.2a1
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/pywsgi.\+py\end{DoxyCompactItemize}

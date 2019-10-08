@@ -1,0 +1,72 @@
+\hypertarget{classgevent_1_1hub_1_1signal}{}\section{gevent.\+hub.\+signal Class Reference}
+\label{classgevent_1_1hub_1_1signal}\index{gevent.\+hub.\+signal@{gevent.\+hub.\+signal}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1hub_1_1signal_ae568d254f6f97364661fc097b0dd4ace}\label{classgevent_1_1hub_1_1signal_ae568d254f6f97364661fc097b0dd4ace}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, signalnum, handler, args, kwargs)
+\item 
+\mbox{\Hypertarget{classgevent_1_1hub_1_1signal_adbf800135a115da3154adb373d8df069}\label{classgevent_1_1hub_1_1signal_adbf800135a115da3154adb373d8df069}} 
+def {\bfseries cancel} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1hub_1_1signal_af682f147101c8903f8cea0c672977a19}\label{classgevent_1_1hub_1_1signal_af682f147101c8903f8cea0c672977a19}} 
+def {\bfseries handle} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1hub_1_1signal_af7c2560079297ae03cece12130cdf338}\label{classgevent_1_1hub_1_1signal_af7c2560079297ae03cece12130cdf338}} 
+{\bfseries hub}
+\item 
+\mbox{\Hypertarget{classgevent_1_1hub_1_1signal_a13094744e750ba79212e791dce881020}\label{classgevent_1_1hub_1_1signal_a13094744e750ba79212e791dce881020}} 
+{\bfseries watcher}
+\item 
+\mbox{\Hypertarget{classgevent_1_1hub_1_1signal_ab330fe540f70c9a3adebbddc32636303}\label{classgevent_1_1hub_1_1signal_ab330fe540f70c9a3adebbddc32636303}} 
+{\bfseries handler}
+\item 
+\mbox{\Hypertarget{classgevent_1_1hub_1_1signal_ad8d5ea3086de5d0a9aba353a7db145e4}\label{classgevent_1_1hub_1_1signal_ad8d5ea3086de5d0a9aba353a7db145e4}} 
+{\bfseries args}
+\item 
+\mbox{\Hypertarget{classgevent_1_1hub_1_1signal_a6de447669914ca8390e8336bab58a1c5}\label{classgevent_1_1hub_1_1signal_a6de447669914ca8390e8336bab58a1c5}} 
+{\bfseries kwargs}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1hub_1_1signal_ae6eef525808dd35060adb9a204fb303a}\label{classgevent_1_1hub_1_1signal_ae6eef525808dd35060adb9a204fb303a}} 
+{\bfseries greenlet\+\_\+class} = None
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1hub_1_1signal_a00dfa17b80b99b7e7803bc5987bf1bbd}\label{classgevent_1_1hub_1_1signal_a00dfa17b80b99b7e7803bc5987bf1bbd}} 
+{\bfseries ref} = property(\+\_\+get\+\_\+ref, \+\_\+set\+\_\+ref)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Call the *handler* with the *args* and *kwargs* when the process
+receives the signal *signalnum*.
+
+The *handler* will be run in a new greenlet when the signal is delivered.
+
+This returns an object with the useful method ``cancel``, which, when called,
+will prevent future deliveries of *signalnum* from calling *handler*.
+
+.. note::
+
+    This may not operate correctly with SIGCHLD if libev child watchers
+    are used (as they are by default with os.fork).
+
+.. versionchanged:: 1.2a1
+   The ``handler`` argument is required to be callable at construction time.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/hub.\+py\end{DoxyCompactItemize}

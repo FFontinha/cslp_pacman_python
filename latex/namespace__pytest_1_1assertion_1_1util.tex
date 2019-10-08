@@ -1,0 +1,51 @@
+\hypertarget{namespace__pytest_1_1assertion_1_1util}{}\section{\+\_\+pytest.\+assertion.\+util Namespace Reference}
+\label{namespace__pytest_1_1assertion_1_1util}\index{\+\_\+pytest.\+assertion.\+util@{\+\_\+pytest.\+assertion.\+util}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1assertion_1_1util_ad0605375340ad2630bb26ecc5cda6c61}\label{namespace__pytest_1_1assertion_1_1util_ad0605375340ad2630bb26ecc5cda6c61}} 
+def {\bfseries ecu} (s)
+\item 
+def \hyperlink{namespace__pytest_1_1assertion_1_1util_ad86c7efa3854a6f81fb8b8f7ccc66e79}{format\+\_\+explanation} (explanation)
+\item 
+def \hyperlink{namespace__pytest_1_1assertion_1_1util_a0d808117a2ab9db3c81e7bf8c2e2fe0c}{assertrepr\+\_\+compare} (config, op, left, right)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1assertion_1_1util_aba9f931c69360af81ebbcb708f49b2b6}\label{namespace__pytest_1_1assertion_1_1util_aba9f931c69360af81ebbcb708f49b2b6}} 
+{\bfseries u} = six.\+text\+\_\+type
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1assertion_1_1util_a76ee30f29200bb0ef3e49f6ae17de424}\label{namespace__pytest_1_1assertion_1_1util_a76ee30f29200bb0ef3e49f6ae17de424}} 
+{\bfseries basestring} = str
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Utilities for assertion debugging\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1assertion_1_1util_a0d808117a2ab9db3c81e7bf8c2e2fe0c}\label{namespace__pytest_1_1assertion_1_1util_a0d808117a2ab9db3c81e7bf8c2e2fe0c}} 
+\index{\+\_\+pytest\+::assertion\+::util@{\+\_\+pytest\+::assertion\+::util}!assertrepr\+\_\+compare@{assertrepr\+\_\+compare}}
+\index{assertrepr\+\_\+compare@{assertrepr\+\_\+compare}!\+\_\+pytest\+::assertion\+::util@{\+\_\+pytest\+::assertion\+::util}}
+\subsubsection{\texorpdfstring{assertrepr\+\_\+compare()}{assertrepr\_compare()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+util.\+assertrepr\+\_\+compare (\begin{DoxyParamCaption}\item[{}]{config,  }\item[{}]{op,  }\item[{}]{left,  }\item[{}]{right }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return specialised explanations for some operators/operands\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1assertion_1_1util_ad86c7efa3854a6f81fb8b8f7ccc66e79}\label{namespace__pytest_1_1assertion_1_1util_ad86c7efa3854a6f81fb8b8f7ccc66e79}} 
+\index{\+\_\+pytest\+::assertion\+::util@{\+\_\+pytest\+::assertion\+::util}!format\+\_\+explanation@{format\+\_\+explanation}}
+\index{format\+\_\+explanation@{format\+\_\+explanation}!\+\_\+pytest\+::assertion\+::util@{\+\_\+pytest\+::assertion\+::util}}
+\subsubsection{\texorpdfstring{format\+\_\+explanation()}{format\_explanation()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+util.\+format\+\_\+explanation (\begin{DoxyParamCaption}\item[{}]{explanation }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This formats an explanation
+
+Normally all embedded newlines are escaped, however there are
+three exceptions: \n{, \n} and \n~.  The first two are intended
+cover nested explanations, see function and attribute explanations
+for examples (.visit_Call(), visit_Attribute()).  The last one is
+for when one explanation needs to span multiple lines, e.g. when
+displaying diffs.
+\end{DoxyVerb}
+ 

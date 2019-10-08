@@ -1,0 +1,75 @@
+\hypertarget{classsetuptools_1_1extern_1_1_vendor_importer}{}\section{setuptools.\+extern.\+Vendor\+Importer Class Reference}
+\label{classsetuptools_1_1extern_1_1_vendor_importer}\index{setuptools.\+extern.\+Vendor\+Importer@{setuptools.\+extern.\+Vendor\+Importer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1extern_1_1_vendor_importer_ab953e7ca460c58697e63e6b0f9cab962}\label{classsetuptools_1_1extern_1_1_vendor_importer_ab953e7ca460c58697e63e6b0f9cab962}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, root\+\_\+name, vendored\+\_\+names=(), vendor\+\_\+pkg=None)
+\item 
+def \hyperlink{classsetuptools_1_1extern_1_1_vendor_importer_ad443f2f83ec349be9f556dd6cb0602a0}{search\+\_\+path} (self)
+\item 
+def \hyperlink{classsetuptools_1_1extern_1_1_vendor_importer_a69fa6c7e9f28a8a4494f9e9651ea3314}{find\+\_\+module} (self, fullname, path=None)
+\item 
+def \hyperlink{classsetuptools_1_1extern_1_1_vendor_importer_a1d782aed41c8f30932f3be255f1f9b37}{load\+\_\+module} (self, fullname)
+\item 
+def \hyperlink{classsetuptools_1_1extern_1_1_vendor_importer_ac222230d5bb07d63d2749d23578015b1}{install} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1extern_1_1_vendor_importer_a2379abed53dd5125c6c01a7a05724f68}\label{classsetuptools_1_1extern_1_1_vendor_importer_a2379abed53dd5125c6c01a7a05724f68}} 
+{\bfseries root\+\_\+name}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1extern_1_1_vendor_importer_a3bd8e09ceee0dc10cef5fd6db8c2e877}\label{classsetuptools_1_1extern_1_1_vendor_importer_a3bd8e09ceee0dc10cef5fd6db8c2e877}} 
+{\bfseries vendored\+\_\+names}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1extern_1_1_vendor_importer_a438c2bf15940a2d1ceb84510bf8de36d}\label{classsetuptools_1_1extern_1_1_vendor_importer_a438c2bf15940a2d1ceb84510bf8de36d}} 
+{\bfseries vendor\+\_\+pkg}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A PEP 302 meta path importer for finding optionally-vendored
+or otherwise naturally-installed packages from root_name.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsetuptools_1_1extern_1_1_vendor_importer_a69fa6c7e9f28a8a4494f9e9651ea3314}\label{classsetuptools_1_1extern_1_1_vendor_importer_a69fa6c7e9f28a8a4494f9e9651ea3314}} 
+\index{setuptools\+::extern\+::\+Vendor\+Importer@{setuptools\+::extern\+::\+Vendor\+Importer}!find\+\_\+module@{find\+\_\+module}}
+\index{find\+\_\+module@{find\+\_\+module}!setuptools\+::extern\+::\+Vendor\+Importer@{setuptools\+::extern\+::\+Vendor\+Importer}}
+\subsubsection{\texorpdfstring{find\+\_\+module()}{find\_module()}}
+{\footnotesize\ttfamily def setuptools.\+extern.\+Vendor\+Importer.\+find\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fullname,  }\item[{}]{path = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return self when fullname starts with root_name and the
+target module is one vendored through this importer.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classsetuptools_1_1extern_1_1_vendor_importer_ac222230d5bb07d63d2749d23578015b1}\label{classsetuptools_1_1extern_1_1_vendor_importer_ac222230d5bb07d63d2749d23578015b1}} 
+\index{setuptools\+::extern\+::\+Vendor\+Importer@{setuptools\+::extern\+::\+Vendor\+Importer}!install@{install}}
+\index{install@{install}!setuptools\+::extern\+::\+Vendor\+Importer@{setuptools\+::extern\+::\+Vendor\+Importer}}
+\subsubsection{\texorpdfstring{install()}{install()}}
+{\footnotesize\ttfamily def setuptools.\+extern.\+Vendor\+Importer.\+install (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Install this importer into sys.meta_path if not already present.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classsetuptools_1_1extern_1_1_vendor_importer_a1d782aed41c8f30932f3be255f1f9b37}\label{classsetuptools_1_1extern_1_1_vendor_importer_a1d782aed41c8f30932f3be255f1f9b37}} 
+\index{setuptools\+::extern\+::\+Vendor\+Importer@{setuptools\+::extern\+::\+Vendor\+Importer}!load\+\_\+module@{load\+\_\+module}}
+\index{load\+\_\+module@{load\+\_\+module}!setuptools\+::extern\+::\+Vendor\+Importer@{setuptools\+::extern\+::\+Vendor\+Importer}}
+\subsubsection{\texorpdfstring{load\+\_\+module()}{load\_module()}}
+{\footnotesize\ttfamily def setuptools.\+extern.\+Vendor\+Importer.\+load\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fullname }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterate over the search path to locate and load fullname.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classsetuptools_1_1extern_1_1_vendor_importer_ad443f2f83ec349be9f556dd6cb0602a0}\label{classsetuptools_1_1extern_1_1_vendor_importer_ad443f2f83ec349be9f556dd6cb0602a0}} 
+\index{setuptools\+::extern\+::\+Vendor\+Importer@{setuptools\+::extern\+::\+Vendor\+Importer}!search\+\_\+path@{search\+\_\+path}}
+\index{search\+\_\+path@{search\+\_\+path}!setuptools\+::extern\+::\+Vendor\+Importer@{setuptools\+::extern\+::\+Vendor\+Importer}}
+\subsubsection{\texorpdfstring{search\+\_\+path()}{search\_path()}}
+{\footnotesize\ttfamily def setuptools.\+extern.\+Vendor\+Importer.\+search\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Search first the vendor package then as a natural package.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/setuptools/extern/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,59 @@
+\hypertarget{namespacepip_1_1utils_1_1outdated}{}\section{pip.\+utils.\+outdated Namespace Reference}
+\label{namespacepip_1_1utils_1_1outdated}\index{pip.\+utils.\+outdated@{pip.\+utils.\+outdated}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpip_1_1utils_1_1outdated_1_1_global_self_check_state}{Global\+Self\+Check\+State}
+\item 
+class \hyperlink{classpip_1_1utils_1_1outdated_1_1_virtualenv_self_check_state}{Virtualenv\+Self\+Check\+State}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepip_1_1utils_1_1outdated_a7d04cce928fd0c6ee51d31bbc9f2e676}{load\+\_\+selfcheck\+\_\+statefile} ()
+\item 
+def \hyperlink{namespacepip_1_1utils_1_1outdated_a40b845338f66acebadff26c747ae9c86}{pip\+\_\+version\+\_\+check} (session)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespacepip_1_1utils_1_1outdated_a45149473062f1dfbdef827d26beb4ea1}{S\+E\+L\+F\+C\+H\+E\+C\+K\+\_\+\+D\+A\+T\+E\+\_\+\+F\+MT} = \char`\"{}\%Y-\/\%m-\/\%dT\%H\+:\%M\+:\%SZ\char`\"{}
+\item 
+\hyperlink{namespacepip_1_1utils_1_1outdated_a8d835a5e8bc910159ca9898e156c06c1}{logger} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepip_1_1utils_1_1outdated_a7d04cce928fd0c6ee51d31bbc9f2e676}\label{namespacepip_1_1utils_1_1outdated_a7d04cce928fd0c6ee51d31bbc9f2e676}} 
+\index{pip\+::utils\+::outdated@{pip\+::utils\+::outdated}!load\+\_\+selfcheck\+\_\+statefile@{load\+\_\+selfcheck\+\_\+statefile}}
+\index{load\+\_\+selfcheck\+\_\+statefile@{load\+\_\+selfcheck\+\_\+statefile}!pip\+::utils\+::outdated@{pip\+::utils\+::outdated}}
+\subsubsection{\texorpdfstring{load\+\_\+selfcheck\+\_\+statefile()}{load\_selfcheck\_statefile()}}
+{\footnotesize\ttfamily def pip.\+utils.\+outdated.\+load\+\_\+selfcheck\+\_\+statefile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepip_1_1utils_1_1outdated_a40b845338f66acebadff26c747ae9c86}\label{namespacepip_1_1utils_1_1outdated_a40b845338f66acebadff26c747ae9c86}} 
+\index{pip\+::utils\+::outdated@{pip\+::utils\+::outdated}!pip\+\_\+version\+\_\+check@{pip\+\_\+version\+\_\+check}}
+\index{pip\+\_\+version\+\_\+check@{pip\+\_\+version\+\_\+check}!pip\+::utils\+::outdated@{pip\+::utils\+::outdated}}
+\subsubsection{\texorpdfstring{pip\+\_\+version\+\_\+check()}{pip\_version\_check()}}
+{\footnotesize\ttfamily def pip.\+utils.\+outdated.\+pip\+\_\+version\+\_\+check (\begin{DoxyParamCaption}\item[{}]{session }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check for an update for pip.
+
+Limit the frequency of checks to once per week. State is stored either in
+the active virtualenv or in the user's USER_CACHE_DIR keyed off the prefix
+of the pip script path.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepip_1_1utils_1_1outdated_a8d835a5e8bc910159ca9898e156c06c1}\label{namespacepip_1_1utils_1_1outdated_a8d835a5e8bc910159ca9898e156c06c1}} 
+\index{pip\+::utils\+::outdated@{pip\+::utils\+::outdated}!logger@{logger}}
+\index{logger@{logger}!pip\+::utils\+::outdated@{pip\+::utils\+::outdated}}
+\subsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily pip.\+utils.\+outdated.\+logger = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+
+\mbox{\Hypertarget{namespacepip_1_1utils_1_1outdated_a45149473062f1dfbdef827d26beb4ea1}\label{namespacepip_1_1utils_1_1outdated_a45149473062f1dfbdef827d26beb4ea1}} 
+\index{pip\+::utils\+::outdated@{pip\+::utils\+::outdated}!S\+E\+L\+F\+C\+H\+E\+C\+K\+\_\+\+D\+A\+T\+E\+\_\+\+F\+MT@{S\+E\+L\+F\+C\+H\+E\+C\+K\+\_\+\+D\+A\+T\+E\+\_\+\+F\+MT}}
+\index{S\+E\+L\+F\+C\+H\+E\+C\+K\+\_\+\+D\+A\+T\+E\+\_\+\+F\+MT@{S\+E\+L\+F\+C\+H\+E\+C\+K\+\_\+\+D\+A\+T\+E\+\_\+\+F\+MT}!pip\+::utils\+::outdated@{pip\+::utils\+::outdated}}
+\subsubsection{\texorpdfstring{S\+E\+L\+F\+C\+H\+E\+C\+K\+\_\+\+D\+A\+T\+E\+\_\+\+F\+MT}{SELFCHECK\_DATE\_FMT}}
+{\footnotesize\ttfamily string pip.\+utils.\+outdated.\+S\+E\+L\+F\+C\+H\+E\+C\+K\+\_\+\+D\+A\+T\+E\+\_\+\+F\+MT = \char`\"{}\%Y-\/\%m-\/\%dT\%H\+:\%M\+:\%SZ\char`\"{}}
+

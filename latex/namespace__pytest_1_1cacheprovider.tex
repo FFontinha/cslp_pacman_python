@@ -1,0 +1,85 @@
+\hypertarget{namespace__pytest_1_1cacheprovider}{}\section{\+\_\+pytest.\+cacheprovider Namespace Reference}
+\label{namespace__pytest_1_1cacheprovider}\index{\+\_\+pytest.\+cacheprovider@{\+\_\+pytest.\+cacheprovider}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class__pytest_1_1cacheprovider_1_1_cache}{Cache}
+\item 
+class \hyperlink{class__pytest_1_1cacheprovider_1_1_l_f_plugin}{L\+F\+Plugin}
+\item 
+class \hyperlink{class__pytest_1_1cacheprovider_1_1_n_f_plugin}{N\+F\+Plugin}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1cacheprovider_a1de97893cc0a0a3809aa19933395e5e7}\label{namespace__pytest_1_1cacheprovider_a1de97893cc0a0a3809aa19933395e5e7}} 
+def {\bfseries pytest\+\_\+addoption} (parser)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1cacheprovider_a88c94d8977ff7650d0fa6d1897c243b9}\label{namespace__pytest_1_1cacheprovider_a88c94d8977ff7650d0fa6d1897c243b9}} 
+def {\bfseries pytest\+\_\+cmdline\+\_\+main} (config)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1cacheprovider_a262b5e9e707fc06406b855366654bc11}\label{namespace__pytest_1_1cacheprovider_a262b5e9e707fc06406b855366654bc11}} 
+def {\bfseries pytest\+\_\+configure} (config)
+\item 
+def \hyperlink{namespace__pytest_1_1cacheprovider_af7069bb3796bc249738fb0b0adea69ad}{cache} (request)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1cacheprovider_ae9f8cb7ff924a0bc5f0f310e6c2824df}\label{namespace__pytest_1_1cacheprovider_ae9f8cb7ff924a0bc5f0f310e6c2824df}} 
+def {\bfseries pytest\+\_\+report\+\_\+header} (config)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1cacheprovider_adec3487856be2610dbc1a7365fb8f76d}\label{namespace__pytest_1_1cacheprovider_adec3487856be2610dbc1a7365fb8f76d}} 
+def {\bfseries cacheshow} (config, session)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries R\+E\+A\+D\+M\+E\+\_\+\+C\+O\+N\+T\+E\+NT}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}merged implementation of the cache provider
+
+the name cache was not chosen to ensure pluggy automatically
+ignores the external pytest-cache
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1cacheprovider_af7069bb3796bc249738fb0b0adea69ad}\label{namespace__pytest_1_1cacheprovider_af7069bb3796bc249738fb0b0adea69ad}} 
+\index{\+\_\+pytest\+::cacheprovider@{\+\_\+pytest\+::cacheprovider}!cache@{cache}}
+\index{cache@{cache}!\+\_\+pytest\+::cacheprovider@{\+\_\+pytest\+::cacheprovider}}
+\subsubsection{\texorpdfstring{cache()}{cache()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+cacheprovider.\+cache (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a cache object that can persist state between testing sessions.
+
+cache.get(key, default)
+cache.set(key, value)
+
+Keys must be a ``/`` separated value, where the first part is usually the
+name of your plugin or application to avoid clashes with other cache users.
+
+Values can be any object handled by the json stdlib module.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1cacheprovider_a494d6ed7a08de399160e10bbe090e216}\label{namespace__pytest_1_1cacheprovider_a494d6ed7a08de399160e10bbe090e216}} 
+\index{\+\_\+pytest\+::cacheprovider@{\+\_\+pytest\+::cacheprovider}!R\+E\+A\+D\+M\+E\+\_\+\+C\+O\+N\+T\+E\+NT@{R\+E\+A\+D\+M\+E\+\_\+\+C\+O\+N\+T\+E\+NT}}
+\index{R\+E\+A\+D\+M\+E\+\_\+\+C\+O\+N\+T\+E\+NT@{R\+E\+A\+D\+M\+E\+\_\+\+C\+O\+N\+T\+E\+NT}!\+\_\+pytest\+::cacheprovider@{\+\_\+pytest\+::cacheprovider}}
+\subsubsection{\texorpdfstring{R\+E\+A\+D\+M\+E\+\_\+\+C\+O\+N\+T\+E\+NT}{README\_CONTENT}}
+{\footnotesize\ttfamily string \+\_\+pytest.\+cacheprovider.\+R\+E\+A\+D\+M\+E\+\_\+\+C\+O\+N\+T\+E\+NT}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  \textcolor{stringliteral}{u"""\(\backslash\)}
+2 \textcolor{stringliteral}{# pytest cache directory #}
+3 \textcolor{stringliteral}{}
+4 \textcolor{stringliteral}{This directory contains data from the pytest's cache plugin,}
+5 \textcolor{stringliteral}{which provides the `--lf` and `--ff` options, as well as the `cache` fixture.}
+6 \textcolor{stringliteral}{}
+7 \textcolor{stringliteral}{**Do not** commit this to version control.}
+8 \textcolor{stringliteral}{}
+9 \textcolor{stringliteral}{See [the docs](https://docs.pytest.org/en/latest/cache.html) for more information.}
+10 \textcolor{stringliteral}{"""}
+\end{DoxyCode}

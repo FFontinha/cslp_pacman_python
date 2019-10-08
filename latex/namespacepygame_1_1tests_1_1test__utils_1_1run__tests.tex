@@ -1,0 +1,135 @@
+\hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1run__tests}{}\section{pygame.\+tests.\+test\+\_\+utils.\+run\+\_\+tests Namespace Reference}
+\label{namespacepygame_1_1tests_1_1test__utils_1_1run__tests}\index{pygame.\+tests.\+test\+\_\+utils.\+run\+\_\+tests@{pygame.\+tests.\+test\+\_\+utils.\+run\+\_\+tests}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_abd44671ba82757dadf8dbff244827152}{run} (args, kwds)
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a9aa509d33962241ddce9ea8c23f3dd44}{count\+\_\+results} (results)
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a0980c4b32a67289915e83ef70b7e71ae}{run\+\_\+and\+\_\+exit} (args, kwargs)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a893dd76028e6020f32d315cc79160c8b}{test\+\_\+pkg\+\_\+name} = \textquotesingle{}.\textquotesingle{}.join(\+\_\+\+\_\+name\+\_\+\+\_\+.\+split(\textquotesingle{}.\textquotesingle{})\mbox{[}0\+:-\/2\mbox{]})
+\item 
+string \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a81161e08464695fe2e6c042dda62f430}{is\+\_\+pygame\+\_\+pkg} = \textquotesingle{}pygame.\+tests\textquotesingle{}
+\item 
+string \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a551430c93ecaad1329ef68418a2b39bc}{test\+\_\+runner\+\_\+mod} = \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a893dd76028e6020f32d315cc79160c8b}{test\+\_\+pkg\+\_\+name} + \textquotesingle{}.test\+\_\+utils.\+test\+\_\+runner\textquotesingle{}
+\item 
+bool \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a7f32535107c97efd7704268f582f4e2d}{was\+\_\+run} = False
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a9aa509d33962241ddce9ea8c23f3dd44}\label{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a9aa509d33962241ddce9ea8c23f3dd44}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests@{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests}!count\+\_\+results@{count\+\_\+results}}
+\index{count\+\_\+results@{count\+\_\+results}!pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests@{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests}}
+\subsubsection{\texorpdfstring{count\+\_\+results()}{count\_results()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+test\+\_\+utils.\+run\+\_\+tests.\+count\+\_\+results (\begin{DoxyParamCaption}\item[{}]{results }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_abd44671ba82757dadf8dbff244827152}\label{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_abd44671ba82757dadf8dbff244827152}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests@{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests}!run@{run}}
+\index{run@{run}!pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests@{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+test\+\_\+utils.\+run\+\_\+tests.\+run (\begin{DoxyParamCaption}\item[{}]{args,  }\item[{}]{kwds }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run the Pygame unit test suite and return (total tests run, fails dict)
+
+Positional arguments (optional):
+The names of tests to include. If omitted then all tests are run. Test
+names need not include the trailing '_test'.
+
+Keyword arguments:
+incomplete - fail incomplete tests (default False)
+nosubprocess - run all test suites in the current process
+               (default False, use separate subprocesses)
+dump - dump failures/errors as dict ready to eval (default False)
+file - if provided, the name of a file into which to dump failures/errors
+timings - if provided, the number of times to run each individual test to
+          get an average run time (default is run each test once)
+exclude - A list of TAG names to exclude from the run. The items may be
+          comma or space separated.
+show_output - show silenced stderr/stdout on errors (default False)
+all - dump all results, not just errors (default False)
+randomize - randomize order of tests (default False)
+seed - if provided, a seed randomizer integer
+multi_thread - if provided, the number of THREADS in which to run
+               subprocessed tests
+time_out - if subprocess is True then the time limit in seconds before
+           killing a test (default 30)
+fake - if provided, the name of the fake tests package in the
+       run_tests__tests subpackage to run instead of the normal
+       Pygame tests
+python - the path to a python executable to run subprocessed tests
+         (default sys.executable)
+interative - allow tests tagged 'interative'.
+
+Return value:
+A tuple of total number of tests run, dictionary of error information. The
+dictionary is empty if no errors were recorded.
+
+By default individual test modules are run in separate subprocesses. This
+recreates normal Pygame usage where pygame.init() and pygame.quit() are
+called only once per program execution, and avoids unfortunate
+interactions between test modules. Also, a time limit is placed on test
+execution, so frozen tests are killed when there time allotment expired.
+Use the single process option if threading is not working properly or if
+tests are taking too long. It is not guaranteed that all tests will pass
+in single process mode.
+
+Tests are run in a randomized order if the randomize argument is True or a
+seed argument is provided. If no seed integer is provided then the system
+time is used.
+
+Individual test modules may have a corresponding *_tags.py module,
+defining a __tags__ attribute, a list of tag strings used to selectively
+omit modules from a run. By default only the 'interactive', 'ignore', and
+'subprocess_ignore' tags are ignored. 'interactive' is for modules that
+take user input, like cdrom_test.py. 'ignore' and 'subprocess_ignore' for
+for disabling modules for foreground and subprocess modes respectively.
+These are for disabling tests on optional modules or for experimental
+modules with known problems. These modules can be run from the console as
+a Python program.
+
+This function can only be called once per Python session. It is not
+reentrant.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a0980c4b32a67289915e83ef70b7e71ae}\label{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a0980c4b32a67289915e83ef70b7e71ae}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests@{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests}!run\+\_\+and\+\_\+exit@{run\+\_\+and\+\_\+exit}}
+\index{run\+\_\+and\+\_\+exit@{run\+\_\+and\+\_\+exit}!pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests@{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests}}
+\subsubsection{\texorpdfstring{run\+\_\+and\+\_\+exit()}{run\_and\_exit()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+test\+\_\+utils.\+run\+\_\+tests.\+run\+\_\+and\+\_\+exit (\begin{DoxyParamCaption}\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run the tests, and if there are failures, exit with a return code of 1.
+
+This is needed for various buildbots to recognise that the tests have
+failed.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a81161e08464695fe2e6c042dda62f430}\label{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a81161e08464695fe2e6c042dda62f430}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests@{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests}!is\+\_\+pygame\+\_\+pkg@{is\+\_\+pygame\+\_\+pkg}}
+\index{is\+\_\+pygame\+\_\+pkg@{is\+\_\+pygame\+\_\+pkg}!pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests@{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests}}
+\subsubsection{\texorpdfstring{is\+\_\+pygame\+\_\+pkg}{is\_pygame\_pkg}}
+{\footnotesize\ttfamily string pygame.\+tests.\+test\+\_\+utils.\+run\+\_\+tests.\+is\+\_\+pygame\+\_\+pkg = \textquotesingle{}pygame.\+tests\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a893dd76028e6020f32d315cc79160c8b}\label{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a893dd76028e6020f32d315cc79160c8b}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests@{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests}!test\+\_\+pkg\+\_\+name@{test\+\_\+pkg\+\_\+name}}
+\index{test\+\_\+pkg\+\_\+name@{test\+\_\+pkg\+\_\+name}!pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests@{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests}}
+\subsubsection{\texorpdfstring{test\+\_\+pkg\+\_\+name}{test\_pkg\_name}}
+{\footnotesize\ttfamily string pygame.\+tests.\+test\+\_\+utils.\+run\+\_\+tests.\+test\+\_\+pkg\+\_\+name = \textquotesingle{}.\textquotesingle{}.join(\+\_\+\+\_\+name\+\_\+\+\_\+.\+split(\textquotesingle{}.\textquotesingle{})\mbox{[}0\+:-\/2\mbox{]})}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a551430c93ecaad1329ef68418a2b39bc}\label{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a551430c93ecaad1329ef68418a2b39bc}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests@{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests}!test\+\_\+runner\+\_\+mod@{test\+\_\+runner\+\_\+mod}}
+\index{test\+\_\+runner\+\_\+mod@{test\+\_\+runner\+\_\+mod}!pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests@{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests}}
+\subsubsection{\texorpdfstring{test\+\_\+runner\+\_\+mod}{test\_runner\_mod}}
+{\footnotesize\ttfamily string pygame.\+tests.\+test\+\_\+utils.\+run\+\_\+tests.\+test\+\_\+runner\+\_\+mod = \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a893dd76028e6020f32d315cc79160c8b}{test\+\_\+pkg\+\_\+name} + \textquotesingle{}.test\+\_\+utils.\+test\+\_\+runner\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a7f32535107c97efd7704268f582f4e2d}\label{namespacepygame_1_1tests_1_1test__utils_1_1run__tests_a7f32535107c97efd7704268f582f4e2d}} 
+\index{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests@{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests}!was\+\_\+run@{was\+\_\+run}}
+\index{was\+\_\+run@{was\+\_\+run}!pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests@{pygame\+::tests\+::test\+\_\+utils\+::run\+\_\+tests}}
+\subsubsection{\texorpdfstring{was\+\_\+run}{was\_run}}
+{\footnotesize\ttfamily bool pygame.\+tests.\+test\+\_\+utils.\+run\+\_\+tests.\+was\+\_\+run = False}
+

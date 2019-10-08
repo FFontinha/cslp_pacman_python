@@ -1,0 +1,49 @@
+\hypertarget{namespacepy_1_1__io_1_1saferepr}{}\section{py.\+\_\+io.\+saferepr Namespace Reference}
+\label{namespacepy_1_1__io_1_1saferepr}\index{py.\+\_\+io.\+saferepr@{py.\+\_\+io.\+saferepr}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpy_1_1__io_1_1saferepr_1_1_safe_repr}{Safe\+Repr}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepy_1_1__io_1_1saferepr_a46c869895a42c6e1bcd1c2f58c4c21fc}{saferepr} (obj, maxsize=240)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacepy_1_1__io_1_1saferepr_a35b1d3868dd7cfcc70e8788fece2e56b}{builtin\+\_\+repr} = repr
+\item 
+\hyperlink{namespacepy_1_1__io_1_1saferepr_a056f331714e1b0a438d229e6fb9040ff}{reprlib} = py.\+builtin.\+\_\+tryimport(\textquotesingle{}repr\textquotesingle{}, \textquotesingle{}reprlib\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepy_1_1__io_1_1saferepr_a46c869895a42c6e1bcd1c2f58c4c21fc}\label{namespacepy_1_1__io_1_1saferepr_a46c869895a42c6e1bcd1c2f58c4c21fc}} 
+\index{py\+::\+\_\+io\+::saferepr@{py\+::\+\_\+io\+::saferepr}!saferepr@{saferepr}}
+\index{saferepr@{saferepr}!py\+::\+\_\+io\+::saferepr@{py\+::\+\_\+io\+::saferepr}}
+\subsubsection{\texorpdfstring{saferepr()}{saferepr()}}
+{\footnotesize\ttfamily def py.\+\_\+io.\+saferepr.\+saferepr (\begin{DoxyParamCaption}\item[{}]{obj,  }\item[{}]{maxsize = {\ttfamily 240} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a size-limited safe repr-string for the given object.
+Failing __repr__ functions of user instances will be represented
+with a short exception info and 'saferepr' generally takes
+care to never raise exceptions itself.  This function is a wrapper
+around the Repr/reprlib functionality of the standard 2.6 lib.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepy_1_1__io_1_1saferepr_a35b1d3868dd7cfcc70e8788fece2e56b}\label{namespacepy_1_1__io_1_1saferepr_a35b1d3868dd7cfcc70e8788fece2e56b}} 
+\index{py\+::\+\_\+io\+::saferepr@{py\+::\+\_\+io\+::saferepr}!builtin\+\_\+repr@{builtin\+\_\+repr}}
+\index{builtin\+\_\+repr@{builtin\+\_\+repr}!py\+::\+\_\+io\+::saferepr@{py\+::\+\_\+io\+::saferepr}}
+\subsubsection{\texorpdfstring{builtin\+\_\+repr}{builtin\_repr}}
+{\footnotesize\ttfamily py.\+\_\+io.\+saferepr.\+builtin\+\_\+repr = repr}
+
+\mbox{\Hypertarget{namespacepy_1_1__io_1_1saferepr_a056f331714e1b0a438d229e6fb9040ff}\label{namespacepy_1_1__io_1_1saferepr_a056f331714e1b0a438d229e6fb9040ff}} 
+\index{py\+::\+\_\+io\+::saferepr@{py\+::\+\_\+io\+::saferepr}!reprlib@{reprlib}}
+\index{reprlib@{reprlib}!py\+::\+\_\+io\+::saferepr@{py\+::\+\_\+io\+::saferepr}}
+\subsubsection{\texorpdfstring{reprlib}{reprlib}}
+{\footnotesize\ttfamily py.\+\_\+io.\+saferepr.\+reprlib = py.\+builtin.\+\_\+tryimport(\textquotesingle{}repr\textquotesingle{}, \textquotesingle{}reprlib\textquotesingle{})}
+

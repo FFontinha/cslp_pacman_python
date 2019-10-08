@@ -1,0 +1,75 @@
+\hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white}{}\section{setuptools.\+\_\+vendor.\+pyparsing.\+White Class Reference}
+\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white}\index{setuptools.\+\_\+vendor.\+pyparsing.\+White@{setuptools.\+\_\+vendor.\+pyparsing.\+White}}
+
+
+Inherits \hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_token}{setuptools.\+\_\+vendor.\+pyparsing.\+Token}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_ab4c953a9e93bac4a6e1808fd34aa3957}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_ab4c953a9e93bac4a6e1808fd34aa3957}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, ws=\char`\"{} \textbackslash{}\textbackslash{}, min=1, max=0, exact=0)
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_a1051ad5867aaeb8cf7a164f73819cfe0}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_a1051ad5867aaeb8cf7a164f73819cfe0}} 
+def {\bfseries parse\+Impl} (self, instring, loc, do\+Actions=True)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_a33a16c4f391cc1d6d487ad4c2a218cd8}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_a33a16c4f391cc1d6d487ad4c2a218cd8}} 
+{\bfseries match\+White}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_a6c7eb248e66fdaa41b7c579d4c17b723}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_a6c7eb248e66fdaa41b7c579d4c17b723}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_ad3557fae3b42c92fd87d31a285807949}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_ad3557fae3b42c92fd87d31a285807949}} 
+{\bfseries may\+Return\+Empty}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_a122cbc023457334667b7c1ca5c9144af}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_a122cbc023457334667b7c1ca5c9144af}} 
+{\bfseries errmsg}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_ae4039efae5150414812019c3a13c5b04}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_ae4039efae5150414812019c3a13c5b04}} 
+{\bfseries min\+Len}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_ac0dd6bda9bd4f96789e1b655a8f3c760}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_ac0dd6bda9bd4f96789e1b655a8f3c760}} 
+{\bfseries max\+Len}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dictionary {\bfseries white\+Strs}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Special matching class for matching whitespace.  Normally, whitespace is ignored
+by pyparsing grammars.  This class is included when some whitespace structures
+are significant.  Define with a string containing the whitespace characters to be
+matched; default is C{" \\t\\r\\n"}.  Also takes optional C{min}, C{max}, and C{exact} arguments,
+as defined for the C{L{Word}} class.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_a6ba0cae3eb9ceb599e3c4aa6dd97b8b7}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_white_a6ba0cae3eb9ceb599e3c4aa6dd97b8b7}} 
+\index{setuptools\+::\+\_\+vendor\+::pyparsing\+::\+White@{setuptools\+::\+\_\+vendor\+::pyparsing\+::\+White}!white\+Strs@{white\+Strs}}
+\index{white\+Strs@{white\+Strs}!setuptools\+::\+\_\+vendor\+::pyparsing\+::\+White@{setuptools\+::\+\_\+vendor\+::pyparsing\+::\+White}}
+\subsubsection{\texorpdfstring{white\+Strs}{whiteStrs}}
+{\footnotesize\ttfamily dictionary setuptools.\+\_\+vendor.\+pyparsing.\+White.\+white\+Strs\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \{
+        \textcolor{stringliteral}{" "} : \textcolor{stringliteral}{"<SPC>"},
+        \textcolor{stringliteral}{"\(\backslash\)t"}: \textcolor{stringliteral}{"<TAB>"},
+        \textcolor{stringliteral}{"\(\backslash\)n"}: \textcolor{stringliteral}{"<LF>"},
+        \textcolor{stringliteral}{"\(\backslash\)r"}: \textcolor{stringliteral}{"<CR>"},
+        \textcolor{stringliteral}{"\(\backslash\)f"}: \textcolor{stringliteral}{"<FF>"},
+        \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/setuptools/\+\_\+vendor/pyparsing.\+py\end{DoxyCompactItemize}

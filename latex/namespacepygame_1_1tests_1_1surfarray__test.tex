@@ -1,0 +1,196 @@
+\hypertarget{namespacepygame_1_1tests_1_1surfarray__test}{}\section{pygame.\+tests.\+surfarray\+\_\+test Namespace Reference}
+\label{namespacepygame_1_1tests_1_1surfarray__test}\index{pygame.\+tests.\+surfarray\+\_\+test@{pygame.\+tests.\+surfarray\+\_\+test}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpygame_1_1tests_1_1surfarray__test_1_1_surfarray_module_test}{Surfarray\+Module\+Test}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_ac0b928674da7c8ace7bb40b26946cec5}{test\+\_\+map\+\_\+array} (self)
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_acd13841435a33f3e352604877713f180}{test\+\_\+pixels2d} (self)
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_a568d88a366d3aa09839af1fc714c51f2}{test\+\_\+pixels3d} (self)
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_a73d16f325c3c81d41b5c16abbe25fbb2}{test\+\_\+pixels\+\_\+alpha} (self)
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_abc0df3e13841e43af20d77c71f7eed04}{test\+\_\+pixels\+\_\+red} (self)
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_a372c6348beaf0b7c65e11bb910c91914}{test\+\_\+pixels\+\_\+green} (self)
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_af7adaac6f86309f9911d8ff5e837904b}{test\+\_\+pixels\+\_\+blue} (self)
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_ada4f3f85ceecb979573bc5699fccdc83}{test\+\_\+use\+\_\+arraytype} (self)
+\item 
+def \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_a859af3be59699ee393c682e9e7d629a6}{test\+\_\+surf\+\_\+lock} (self)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1surfarray__test_adb37bf20fd4938d254591decff569dee}{pkg\+\_\+dir} = os.\+path.\+split(os.\+path.\+abspath(\+\_\+\+\_\+file\+\_\+\+\_\+))\mbox{[}0\mbox{]}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1surfarray__test_a4ff8b0c51ce66b0d7e2a3e0508bb98e7}{parent\+\_\+dir}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1surfarray__test_af2ffcb3b8f8dffe4bc587a2fb8aa26a2}{pkg\+\_\+name}
+\item 
+tuple \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_a2debc6de9160fbab950f9c0d4241558c}{is\+\_\+pygame\+\_\+pkg}
+\item 
+string \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_ac5cfb951c1c17907359c9e65919a2854}{arraytype} = \textquotesingle{}numpy\textquotesingle{}
+\item 
+string \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_af9daec8a99d357a0dd74c22a76a11816}{I\+S\+\_\+\+P\+Y\+PY} = platform.\+python\+\_\+implementation()
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1surfarray__test_a9691668f5ffc1d3c0b6b68a135061f36}{surf} = \hyperlink{namespacepygame_1_1surfarray_a2e4d5099d42534776fd74076d289b250}{pygame.\+surfarray.\+make\+\_\+surface}(self.\+\_\+make\+\_\+src\+\_\+array3d(dtype))
+\begin{DoxyCompactList}\small\item\em Even this simple assertion fails for 2d arrays. \end{DoxyCompactList}\item 
+int \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_af3c71573efea667ee8e3ddc53cb48217}{w} = 9
+\item 
+int \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_a374fc21a7bfd92a6dc2352644167597d}{h} = 11
+\item 
+int \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_ae4c9c44d41ff2302d59c285a8ac25127}{length} = \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_af3c71573efea667ee8e3ddc53cb48217}{w} $\ast$ \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_a374fc21a7bfd92a6dc2352644167597d}{h}
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1surfarray__test_a14feeb891d2ad6de3c3e0461e97c846c}{farr} = arange(0, \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_ae4c9c44d41ff2302d59c285a8ac25127}{length}, dtype=dtype)
+\item 
+\hyperlink{namespacepygame_1_1tests_1_1surfarray__test_a7c80667ec8c6297f43388370fdf508e1}{shape}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_ac0b928674da7c8ace7bb40b26946cec5}\label{namespacepygame_1_1tests_1_1surfarray__test_ac0b928674da7c8ace7bb40b26946cec5}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!test\+\_\+map\+\_\+array@{test\+\_\+map\+\_\+array}}
+\index{test\+\_\+map\+\_\+array@{test\+\_\+map\+\_\+array}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{test\+\_\+map\+\_\+array()}{test\_map\_array()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+surfarray\+\_\+test.\+test\+\_\+map\+\_\+array (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_acd13841435a33f3e352604877713f180}\label{namespacepygame_1_1tests_1_1surfarray__test_acd13841435a33f3e352604877713f180}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!test\+\_\+pixels2d@{test\+\_\+pixels2d}}
+\index{test\+\_\+pixels2d@{test\+\_\+pixels2d}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{test\+\_\+pixels2d()}{test\_pixels2d()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+surfarray\+\_\+test.\+test\+\_\+pixels2d (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_a568d88a366d3aa09839af1fc714c51f2}\label{namespacepygame_1_1tests_1_1surfarray__test_a568d88a366d3aa09839af1fc714c51f2}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!test\+\_\+pixels3d@{test\+\_\+pixels3d}}
+\index{test\+\_\+pixels3d@{test\+\_\+pixels3d}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{test\+\_\+pixels3d()}{test\_pixels3d()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+surfarray\+\_\+test.\+test\+\_\+pixels3d (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_a73d16f325c3c81d41b5c16abbe25fbb2}\label{namespacepygame_1_1tests_1_1surfarray__test_a73d16f325c3c81d41b5c16abbe25fbb2}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!test\+\_\+pixels\+\_\+alpha@{test\+\_\+pixels\+\_\+alpha}}
+\index{test\+\_\+pixels\+\_\+alpha@{test\+\_\+pixels\+\_\+alpha}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{test\+\_\+pixels\+\_\+alpha()}{test\_pixels\_alpha()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+surfarray\+\_\+test.\+test\+\_\+pixels\+\_\+alpha (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_af7adaac6f86309f9911d8ff5e837904b}\label{namespacepygame_1_1tests_1_1surfarray__test_af7adaac6f86309f9911d8ff5e837904b}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!test\+\_\+pixels\+\_\+blue@{test\+\_\+pixels\+\_\+blue}}
+\index{test\+\_\+pixels\+\_\+blue@{test\+\_\+pixels\+\_\+blue}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{test\+\_\+pixels\+\_\+blue()}{test\_pixels\_blue()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+surfarray\+\_\+test.\+test\+\_\+pixels\+\_\+blue (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_a372c6348beaf0b7c65e11bb910c91914}\label{namespacepygame_1_1tests_1_1surfarray__test_a372c6348beaf0b7c65e11bb910c91914}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!test\+\_\+pixels\+\_\+green@{test\+\_\+pixels\+\_\+green}}
+\index{test\+\_\+pixels\+\_\+green@{test\+\_\+pixels\+\_\+green}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{test\+\_\+pixels\+\_\+green()}{test\_pixels\_green()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+surfarray\+\_\+test.\+test\+\_\+pixels\+\_\+green (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_abc0df3e13841e43af20d77c71f7eed04}\label{namespacepygame_1_1tests_1_1surfarray__test_abc0df3e13841e43af20d77c71f7eed04}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!test\+\_\+pixels\+\_\+red@{test\+\_\+pixels\+\_\+red}}
+\index{test\+\_\+pixels\+\_\+red@{test\+\_\+pixels\+\_\+red}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{test\+\_\+pixels\+\_\+red()}{test\_pixels\_red()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+surfarray\+\_\+test.\+test\+\_\+pixels\+\_\+red (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_a859af3be59699ee393c682e9e7d629a6}\label{namespacepygame_1_1tests_1_1surfarray__test_a859af3be59699ee393c682e9e7d629a6}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!test\+\_\+surf\+\_\+lock@{test\+\_\+surf\+\_\+lock}}
+\index{test\+\_\+surf\+\_\+lock@{test\+\_\+surf\+\_\+lock}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{test\+\_\+surf\+\_\+lock()}{test\_surf\_lock()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+surfarray\+\_\+test.\+test\+\_\+surf\+\_\+lock (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_ada4f3f85ceecb979573bc5699fccdc83}\label{namespacepygame_1_1tests_1_1surfarray__test_ada4f3f85ceecb979573bc5699fccdc83}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!test\+\_\+use\+\_\+arraytype@{test\+\_\+use\+\_\+arraytype}}
+\index{test\+\_\+use\+\_\+arraytype@{test\+\_\+use\+\_\+arraytype}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{test\+\_\+use\+\_\+arraytype()}{test\_use\_arraytype()}}
+{\footnotesize\ttfamily def pygame.\+tests.\+surfarray\+\_\+test.\+test\+\_\+use\+\_\+arraytype (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_ac5cfb951c1c17907359c9e65919a2854}\label{namespacepygame_1_1tests_1_1surfarray__test_ac5cfb951c1c17907359c9e65919a2854}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!arraytype@{arraytype}}
+\index{arraytype@{arraytype}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{arraytype}{arraytype}}
+{\footnotesize\ttfamily string pygame.\+tests.\+surfarray\+\_\+test.\+arraytype = \textquotesingle{}numpy\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_a14feeb891d2ad6de3c3e0461e97c846c}\label{namespacepygame_1_1tests_1_1surfarray__test_a14feeb891d2ad6de3c3e0461e97c846c}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!farr@{farr}}
+\index{farr@{farr}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{farr}{farr}}
+{\footnotesize\ttfamily pygame.\+tests.\+surfarray\+\_\+test.\+farr = arange(0, \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_ae4c9c44d41ff2302d59c285a8ac25127}{length}, dtype=dtype)}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_a374fc21a7bfd92a6dc2352644167597d}\label{namespacepygame_1_1tests_1_1surfarray__test_a374fc21a7bfd92a6dc2352644167597d}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!h@{h}}
+\index{h@{h}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily int pygame.\+tests.\+surfarray\+\_\+test.\+h = 11}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_a2debc6de9160fbab950f9c0d4241558c}\label{namespacepygame_1_1tests_1_1surfarray__test_a2debc6de9160fbab950f9c0d4241558c}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!is\+\_\+pygame\+\_\+pkg@{is\+\_\+pygame\+\_\+pkg}}
+\index{is\+\_\+pygame\+\_\+pkg@{is\+\_\+pygame\+\_\+pkg}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{is\+\_\+pygame\+\_\+pkg}{is\_pygame\_pkg}}
+{\footnotesize\ttfamily pygame.\+tests.\+surfarray\+\_\+test.\+is\+\_\+pygame\+\_\+pkg}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (pkg\_name == \textcolor{stringliteral}{'tests'} \textcolor{keywordflow}{and}
+2                      os.path.split(parent\_dir)[1] == \textcolor{stringliteral}{'pygame'})
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_af9daec8a99d357a0dd74c22a76a11816}\label{namespacepygame_1_1tests_1_1surfarray__test_af9daec8a99d357a0dd74c22a76a11816}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!I\+S\+\_\+\+P\+Y\+PY@{I\+S\+\_\+\+P\+Y\+PY}}
+\index{I\+S\+\_\+\+P\+Y\+PY@{I\+S\+\_\+\+P\+Y\+PY}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{I\+S\+\_\+\+P\+Y\+PY}{IS\_PYPY}}
+{\footnotesize\ttfamily string pygame.\+tests.\+surfarray\+\_\+test.\+I\+S\+\_\+\+P\+Y\+PY = platform.\+python\+\_\+implementation()}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_ae4c9c44d41ff2302d59c285a8ac25127}\label{namespacepygame_1_1tests_1_1surfarray__test_ae4c9c44d41ff2302d59c285a8ac25127}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!length@{length}}
+\index{length@{length}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily int pygame.\+tests.\+surfarray\+\_\+test.\+length = \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_af3c71573efea667ee8e3ddc53cb48217}{w} $\ast$ \hyperlink{namespacepygame_1_1tests_1_1surfarray__test_a374fc21a7bfd92a6dc2352644167597d}{h}}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_a4ff8b0c51ce66b0d7e2a3e0508bb98e7}\label{namespacepygame_1_1tests_1_1surfarray__test_a4ff8b0c51ce66b0d7e2a3e0508bb98e7}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!parent\+\_\+dir@{parent\+\_\+dir}}
+\index{parent\+\_\+dir@{parent\+\_\+dir}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{parent\+\_\+dir}{parent\_dir}}
+{\footnotesize\ttfamily pygame.\+tests.\+surfarray\+\_\+test.\+parent\+\_\+dir}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_adb37bf20fd4938d254591decff569dee}\label{namespacepygame_1_1tests_1_1surfarray__test_adb37bf20fd4938d254591decff569dee}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!pkg\+\_\+dir@{pkg\+\_\+dir}}
+\index{pkg\+\_\+dir@{pkg\+\_\+dir}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{pkg\+\_\+dir}{pkg\_dir}}
+{\footnotesize\ttfamily pygame.\+tests.\+surfarray\+\_\+test.\+pkg\+\_\+dir = os.\+path.\+split(os.\+path.\+abspath(\+\_\+\+\_\+file\+\_\+\+\_\+))\mbox{[}0\mbox{]}}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_af2ffcb3b8f8dffe4bc587a2fb8aa26a2}\label{namespacepygame_1_1tests_1_1surfarray__test_af2ffcb3b8f8dffe4bc587a2fb8aa26a2}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!pkg\+\_\+name@{pkg\+\_\+name}}
+\index{pkg\+\_\+name@{pkg\+\_\+name}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{pkg\+\_\+name}{pkg\_name}}
+{\footnotesize\ttfamily pygame.\+tests.\+surfarray\+\_\+test.\+pkg\+\_\+name}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_a7c80667ec8c6297f43388370fdf508e1}\label{namespacepygame_1_1tests_1_1surfarray__test_a7c80667ec8c6297f43388370fdf508e1}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!shape@{shape}}
+\index{shape@{shape}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{shape}{shape}}
+{\footnotesize\ttfamily pygame.\+tests.\+surfarray\+\_\+test.\+shape}
+
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_a9691668f5ffc1d3c0b6b68a135061f36}\label{namespacepygame_1_1tests_1_1surfarray__test_a9691668f5ffc1d3c0b6b68a135061f36}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!surf@{surf}}
+\index{surf@{surf}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{surf}{surf}}
+{\footnotesize\ttfamily pygame.\+tests.\+surfarray\+\_\+test.\+surf = \hyperlink{namespacepygame_1_1surfarray_a2e4d5099d42534776fd74076d289b250}{pygame.\+surfarray.\+make\+\_\+surface}(self.\+\_\+make\+\_\+src\+\_\+array3d(dtype))}
+
+
+
+Even this simple assertion fails for 2d arrays. 
+
+Where\textquotesingle{}s the problem? surf = \hyperlink{namespacepygame_1_1surfarray_a2e4d5099d42534776fd74076d289b250}{pygame.\+surfarray.\+make\+\_\+surface}(self.\+\_\+make\+\_\+array2d(dtype)) self.\+fail\+Unless(surf.\+get\+\_\+bitsize() $>$= bitsize, \char`\"{}not \%i $>$= \%i)\char`\"{} \% (surf.\+get\+\_\+bitsize(), bitsize)) \mbox{\Hypertarget{namespacepygame_1_1tests_1_1surfarray__test_af3c71573efea667ee8e3ddc53cb48217}\label{namespacepygame_1_1tests_1_1surfarray__test_af3c71573efea667ee8e3ddc53cb48217}} 
+\index{pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}!w@{w}}
+\index{w@{w}!pygame\+::tests\+::surfarray\+\_\+test@{pygame\+::tests\+::surfarray\+\_\+test}}
+\subsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily int pygame.\+tests.\+surfarray\+\_\+test.\+w = 9}
+

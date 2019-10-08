@@ -1,0 +1,128 @@
+\hypertarget{namespacesetuptools_1_1ssl__support}{}\section{setuptools.\+ssl\+\_\+support Namespace Reference}
+\label{namespacesetuptools_1_1ssl__support}\index{setuptools.\+ssl\+\_\+support@{setuptools.\+ssl\+\_\+support}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsetuptools_1_1ssl__support_1_1_certificate_error}{Certificate\+Error}
+\item 
+class \hyperlink{classsetuptools_1_1ssl__support_1_1_verifying_h_t_t_p_s_conn}{Verifying\+H\+T\+T\+P\+S\+Conn}
+\item 
+class \hyperlink{classsetuptools_1_1ssl__support_1_1_verifying_h_t_t_p_s_handler}{Verifying\+H\+T\+T\+P\+S\+Handler}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesetuptools_1_1ssl__support_af946fca9376289edb47b2e1babe9f9ee}{match\+\_\+hostname} (cert, hostname)
+\item 
+def \hyperlink{namespacesetuptools_1_1ssl__support_ace7164bc765a0d578ae9c82eeb76b13a}{opener\+\_\+for} (ca\+\_\+bundle=None)
+\item 
+def \hyperlink{namespacesetuptools_1_1ssl__support_af8ea87b3644184df3df0bbda2f796ed5}{once} (func)
+\item 
+def \hyperlink{namespacesetuptools_1_1ssl__support_a057bf5d0a699f8fba4f40ac7c339185d}{get\+\_\+win\+\_\+certfile} ()
+\item 
+def \hyperlink{namespacesetuptools_1_1ssl__support_a52d0214adb152f4c38aebc413e404278}{find\+\_\+ca\+\_\+bundle} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacesetuptools_1_1ssl__support_a55a27a1705e0f1696f44078a212ed844}{ssl}
+\item 
+\hyperlink{namespacesetuptools_1_1ssl__support_a3bdfb81c9e24634ab57211cd72a90e0a}{cert\+\_\+paths}
+\item 
+\hyperlink{namespacesetuptools_1_1ssl__support_af7187d08f1ac5df0ac0382808f2a47d5}{H\+T\+T\+P\+S\+Handler}
+\item 
+\hyperlink{namespacesetuptools_1_1ssl__support_a2080acb14b60edc35201cff1915da4f8}{H\+T\+T\+P\+S\+Connection}
+\item 
+\hyperlink{namespacesetuptools_1_1ssl__support_a64bb9b0c9a63f24544b55c1d91312464}{is\+\_\+available}
+\item 
+\hyperlink{namespacesetuptools_1_1ssl__support_ac1a38bae98615d399c0145a6efb165e5}{Certificate\+Error}
+\item 
+\hyperlink{namespacesetuptools_1_1ssl__support_a8a8e98ff0935d8cda04e2f19fd235bc2}{match\+\_\+hostname}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacesetuptools_1_1ssl__support_a52d0214adb152f4c38aebc413e404278}\label{namespacesetuptools_1_1ssl__support_a52d0214adb152f4c38aebc413e404278}} 
+\index{setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}!find\+\_\+ca\+\_\+bundle@{find\+\_\+ca\+\_\+bundle}}
+\index{find\+\_\+ca\+\_\+bundle@{find\+\_\+ca\+\_\+bundle}!setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}}
+\subsubsection{\texorpdfstring{find\+\_\+ca\+\_\+bundle()}{find\_ca\_bundle()}}
+{\footnotesize\ttfamily def setuptools.\+ssl\+\_\+support.\+find\+\_\+ca\+\_\+bundle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an existing CA bundle path, or None\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacesetuptools_1_1ssl__support_a057bf5d0a699f8fba4f40ac7c339185d}\label{namespacesetuptools_1_1ssl__support_a057bf5d0a699f8fba4f40ac7c339185d}} 
+\index{setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}!get\+\_\+win\+\_\+certfile@{get\+\_\+win\+\_\+certfile}}
+\index{get\+\_\+win\+\_\+certfile@{get\+\_\+win\+\_\+certfile}!setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}}
+\subsubsection{\texorpdfstring{get\+\_\+win\+\_\+certfile()}{get\_win\_certfile()}}
+{\footnotesize\ttfamily def setuptools.\+ssl\+\_\+support.\+get\+\_\+win\+\_\+certfile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacesetuptools_1_1ssl__support_af946fca9376289edb47b2e1babe9f9ee}\label{namespacesetuptools_1_1ssl__support_af946fca9376289edb47b2e1babe9f9ee}} 
+\index{setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}!match\+\_\+hostname@{match\+\_\+hostname}}
+\index{match\+\_\+hostname@{match\+\_\+hostname}!setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}}
+\subsubsection{\texorpdfstring{match\+\_\+hostname()}{match\_hostname()}}
+{\footnotesize\ttfamily def setuptools.\+ssl\+\_\+support.\+match\+\_\+hostname (\begin{DoxyParamCaption}\item[{}]{cert,  }\item[{}]{hostname }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Verify that *cert* (in decoded format as returned by
+SSLSocket.getpeercert()) matches the *hostname*.  RFC 2818 and RFC 6125
+rules are followed, but IP addresses are not accepted for *hostname*.
+
+CertificateError is raised on failure. On success, the function
+returns nothing.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacesetuptools_1_1ssl__support_af8ea87b3644184df3df0bbda2f796ed5}\label{namespacesetuptools_1_1ssl__support_af8ea87b3644184df3df0bbda2f796ed5}} 
+\index{setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}!once@{once}}
+\index{once@{once}!setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}}
+\subsubsection{\texorpdfstring{once()}{once()}}
+{\footnotesize\ttfamily def setuptools.\+ssl\+\_\+support.\+once (\begin{DoxyParamCaption}\item[{}]{func }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacesetuptools_1_1ssl__support_ace7164bc765a0d578ae9c82eeb76b13a}\label{namespacesetuptools_1_1ssl__support_ace7164bc765a0d578ae9c82eeb76b13a}} 
+\index{setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}!opener\+\_\+for@{opener\+\_\+for}}
+\index{opener\+\_\+for@{opener\+\_\+for}!setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}}
+\subsubsection{\texorpdfstring{opener\+\_\+for()}{opener\_for()}}
+{\footnotesize\ttfamily def setuptools.\+ssl\+\_\+support.\+opener\+\_\+for (\begin{DoxyParamCaption}\item[{}]{ca\+\_\+bundle = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a urlopen() replacement that uses ca_bundle for verification\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacesetuptools_1_1ssl__support_a3bdfb81c9e24634ab57211cd72a90e0a}\label{namespacesetuptools_1_1ssl__support_a3bdfb81c9e24634ab57211cd72a90e0a}} 
+\index{setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}!cert\+\_\+paths@{cert\+\_\+paths}}
+\index{cert\+\_\+paths@{cert\+\_\+paths}!setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}}
+\subsubsection{\texorpdfstring{cert\+\_\+paths}{cert\_paths}}
+{\footnotesize\ttfamily setuptools.\+ssl\+\_\+support.\+cert\+\_\+paths}
+
+\mbox{\Hypertarget{namespacesetuptools_1_1ssl__support_ac1a38bae98615d399c0145a6efb165e5}\label{namespacesetuptools_1_1ssl__support_ac1a38bae98615d399c0145a6efb165e5}} 
+\index{setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}!Certificate\+Error@{Certificate\+Error}}
+\index{Certificate\+Error@{Certificate\+Error}!setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}}
+\subsubsection{\texorpdfstring{Certificate\+Error}{CertificateError}}
+{\footnotesize\ttfamily \hyperlink{classsetuptools_1_1ssl__support_1_1_certificate_error}{setuptools.\+ssl\+\_\+support.\+Certificate\+Error}}
+
+\mbox{\Hypertarget{namespacesetuptools_1_1ssl__support_a2080acb14b60edc35201cff1915da4f8}\label{namespacesetuptools_1_1ssl__support_a2080acb14b60edc35201cff1915da4f8}} 
+\index{setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}!H\+T\+T\+P\+S\+Connection@{H\+T\+T\+P\+S\+Connection}}
+\index{H\+T\+T\+P\+S\+Connection@{H\+T\+T\+P\+S\+Connection}!setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}}
+\subsubsection{\texorpdfstring{H\+T\+T\+P\+S\+Connection}{HTTPSConnection}}
+{\footnotesize\ttfamily setuptools.\+ssl\+\_\+support.\+H\+T\+T\+P\+S\+Connection}
+
+\mbox{\Hypertarget{namespacesetuptools_1_1ssl__support_af7187d08f1ac5df0ac0382808f2a47d5}\label{namespacesetuptools_1_1ssl__support_af7187d08f1ac5df0ac0382808f2a47d5}} 
+\index{setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}!H\+T\+T\+P\+S\+Handler@{H\+T\+T\+P\+S\+Handler}}
+\index{H\+T\+T\+P\+S\+Handler@{H\+T\+T\+P\+S\+Handler}!setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}}
+\subsubsection{\texorpdfstring{H\+T\+T\+P\+S\+Handler}{HTTPSHandler}}
+{\footnotesize\ttfamily setuptools.\+ssl\+\_\+support.\+H\+T\+T\+P\+S\+Handler}
+
+\mbox{\Hypertarget{namespacesetuptools_1_1ssl__support_a64bb9b0c9a63f24544b55c1d91312464}\label{namespacesetuptools_1_1ssl__support_a64bb9b0c9a63f24544b55c1d91312464}} 
+\index{setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}!is\+\_\+available@{is\+\_\+available}}
+\index{is\+\_\+available@{is\+\_\+available}!setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}}
+\subsubsection{\texorpdfstring{is\+\_\+available}{is\_available}}
+{\footnotesize\ttfamily setuptools.\+ssl\+\_\+support.\+is\+\_\+available}
+
+\mbox{\Hypertarget{namespacesetuptools_1_1ssl__support_a8a8e98ff0935d8cda04e2f19fd235bc2}\label{namespacesetuptools_1_1ssl__support_a8a8e98ff0935d8cda04e2f19fd235bc2}} 
+\index{setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}!match\+\_\+hostname@{match\+\_\+hostname}}
+\index{match\+\_\+hostname@{match\+\_\+hostname}!setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}}
+\subsubsection{\texorpdfstring{match\+\_\+hostname}{match\_hostname}}
+{\footnotesize\ttfamily setuptools.\+ssl\+\_\+support.\+match\+\_\+hostname}
+
+\mbox{\Hypertarget{namespacesetuptools_1_1ssl__support_a55a27a1705e0f1696f44078a212ed844}\label{namespacesetuptools_1_1ssl__support_a55a27a1705e0f1696f44078a212ed844}} 
+\index{setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}!ssl@{ssl}}
+\index{ssl@{ssl}!setuptools\+::ssl\+\_\+support@{setuptools\+::ssl\+\_\+support}}
+\subsubsection{\texorpdfstring{ssl}{ssl}}
+{\footnotesize\ttfamily setuptools.\+ssl\+\_\+support.\+ssl}
+

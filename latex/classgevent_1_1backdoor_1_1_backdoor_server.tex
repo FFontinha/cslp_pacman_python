@@ -1,0 +1,94 @@
+\hypertarget{classgevent_1_1backdoor_1_1_backdoor_server}{}\section{gevent.\+backdoor.\+Backdoor\+Server Class Reference}
+\label{classgevent_1_1backdoor_1_1_backdoor_server}\index{gevent.\+backdoor.\+Backdoor\+Server@{gevent.\+backdoor.\+Backdoor\+Server}}
+
+
+Inherits \hyperlink{classgevent_1_1server_1_1_stream_server}{gevent.\+server.\+Stream\+Server}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classgevent_1_1backdoor_1_1_backdoor_server_a778e529c7d59e383ac383dd82b78b77a}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, listener, locals=None, banner=None, server\+\_\+args)
+\item 
+def \hyperlink{classgevent_1_1backdoor_1_1_backdoor_server_a1ca7d2ccfd6c400605ebb1e1038bcede}{handle} (self, conn, \+\_\+address)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1backdoor_1_1_backdoor_server_a4a6c393141a89810a585416845afa9d8}\label{classgevent_1_1backdoor_1_1_backdoor_server_a4a6c393141a89810a585416845afa9d8}} 
+{\bfseries locals}
+\item 
+\mbox{\Hypertarget{classgevent_1_1backdoor_1_1_backdoor_server_a7a8532114e60b7bdf8d6baac08163234}\label{classgevent_1_1backdoor_1_1_backdoor_server_a7a8532114e60b7bdf8d6baac08163234}} 
+{\bfseries banner}
+\item 
+\mbox{\Hypertarget{classgevent_1_1backdoor_1_1_backdoor_server_a9a716f5addbb46110ab7e0c961ea0dc1}\label{classgevent_1_1backdoor_1_1_backdoor_server_a9a716f5addbb46110ab7e0c961ea0dc1}} 
+{\bfseries stderr}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Provide a backdoor to a program for debugging purposes.
+
+.. warning:: This backdoor provides no authentication and makes no
+      attempt to limit what remote users can do. Anyone that
+      can access the server can take any action that the running
+      python process can. Thus, while you may bind to any interface, for
+      security purposes it is recommended that you bind to one
+      only accessible to the local machine, e.g.,
+      127.0.0.1/localhost.
+
+Basic usage::
+
+    from gevent.backdoor import BackdoorServer
+    server = BackdoorServer(('127.0.0.1', 5001),
+                            banner="Hello from gevent backdoor!",
+                            locals={'foo': "From defined scope!"})
+    server.serve_forever()
+
+In a another terminal, connect with...::
+
+    $ telnet 127.0.0.1 5001
+    Trying 127.0.0.1...
+    Connected to 127.0.0.1.
+    Escape character is '^]'.
+    Hello from gevent backdoor!
+    >> print(foo)
+    From defined scope!
+
+.. versionchanged:: 1.2a1
+   Spawned greenlets are now tracked in a pool and killed when the server
+   is stopped.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgevent_1_1backdoor_1_1_backdoor_server_a778e529c7d59e383ac383dd82b78b77a}\label{classgevent_1_1backdoor_1_1_backdoor_server_a778e529c7d59e383ac383dd82b78b77a}} 
+\index{gevent\+::backdoor\+::\+Backdoor\+Server@{gevent\+::backdoor\+::\+Backdoor\+Server}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!gevent\+::backdoor\+::\+Backdoor\+Server@{gevent\+::backdoor\+::\+Backdoor\+Server}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def gevent.\+backdoor.\+Backdoor\+Server.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{listener,  }\item[{}]{locals = {\ttfamily None},  }\item[{}]{banner = {\ttfamily None},  }\item[{}]{server\+\_\+args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:keyword locals: If given, a dictionary of "builtin" values that will be available
+    at the top-level.
+:keyword banner: If geven, a string that will be printed to each connecting user.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1backdoor_1_1_backdoor_server_a1ca7d2ccfd6c400605ebb1e1038bcede}\label{classgevent_1_1backdoor_1_1_backdoor_server_a1ca7d2ccfd6c400605ebb1e1038bcede}} 
+\index{gevent\+::backdoor\+::\+Backdoor\+Server@{gevent\+::backdoor\+::\+Backdoor\+Server}!handle@{handle}}
+\index{handle@{handle}!gevent\+::backdoor\+::\+Backdoor\+Server@{gevent\+::backdoor\+::\+Backdoor\+Server}}
+\subsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily def gevent.\+backdoor.\+Backdoor\+Server.\+handle (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{conn,  }\item[{}]{\+\_\+address }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Interact with one remote user.
+
+.. versionchanged:: 1.1b2 Each connection gets its own
+    ``locals`` dictionary. Previously they were shared in a
+    potentially unsafe manner.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/backdoor.\+py\end{DoxyCompactItemize}

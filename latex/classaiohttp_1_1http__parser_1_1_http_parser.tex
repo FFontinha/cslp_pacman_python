@@ -1,0 +1,78 @@
+\hypertarget{classaiohttp_1_1http__parser_1_1_http_parser}{}\section{aiohttp.\+http\+\_\+parser.\+Http\+Parser Class Reference}
+\label{classaiohttp_1_1http__parser_1_1_http_parser}\index{aiohttp.\+http\+\_\+parser.\+Http\+Parser@{aiohttp.\+http\+\_\+parser.\+Http\+Parser}}
+
+
+Inherited by \hyperlink{classaiohttp_1_1http__parser_1_1_http_request_parser}{aiohttp.\+http\+\_\+parser.\+Http\+Request\+Parser}, and \hyperlink{classaiohttp_1_1http__parser_1_1_http_response_parser}{aiohttp.\+http\+\_\+parser.\+Http\+Response\+Parser}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__parser_1_1_http_parser_a36b8a2561d657f2a416951684a6c5195}\label{classaiohttp_1_1http__parser_1_1_http_parser_a36b8a2561d657f2a416951684a6c5195}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, protocol=None, loop=None, max\+\_\+line\+\_\+size=8190, max\+\_\+headers=32768, max\+\_\+field\+\_\+size=8190, timer=None, code=None, method=None, readall=False, payload\+\_\+exception=None, response\+\_\+with\+\_\+body=True, read\+\_\+until\+\_\+eof=False, auto\+\_\+decompress=True)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__parser_1_1_http_parser_a7a692f8d90703855e6b0d40476492a16}\label{classaiohttp_1_1http__parser_1_1_http_parser_a7a692f8d90703855e6b0d40476492a16}} 
+def {\bfseries feed\+\_\+eof} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__parser_1_1_http_parser_af0ceedab2ed271b24765e5d50bcec10f}\label{classaiohttp_1_1http__parser_1_1_http_parser_af0ceedab2ed271b24765e5d50bcec10f}} 
+def {\bfseries feed\+\_\+data} (self, data, S\+EP=b\textquotesingle{}\textbackslash{}r\textbackslash{}n\textquotesingle{}, E\+M\+P\+TY=b\textquotesingle{}\textquotesingle{}, C\+O\+N\+T\+E\+N\+T\+\_\+\+L\+E\+N\+G\+TH=hdrs.\+C\+O\+N\+T\+E\+N\+T\+\_\+\+L\+E\+N\+G\+TH, M\+E\+T\+H\+\_\+\+C\+O\+N\+N\+E\+CT=hdrs.\+M\+E\+T\+H\+\_\+\+C\+O\+N\+N\+E\+CT, S\+E\+C\+\_\+\+W\+E\+B\+S\+O\+C\+K\+E\+T\+\_\+\+K\+E\+Y1=hdrs.\+S\+E\+C\+\_\+\+W\+E\+B\+S\+O\+C\+K\+E\+T\+\_\+\+K\+E\+Y1)
+\item 
+def \hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a290b57971f5601f24455642f72c28551}{parse\+\_\+headers} (self, lines)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__parser_1_1_http_parser_adef15f0fb552a49e063203ec6846a02f}\label{classaiohttp_1_1http__parser_1_1_http_parser_adef15f0fb552a49e063203ec6846a02f}} 
+{\bfseries protocol}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__parser_1_1_http_parser_a414855fea16da14f89c28b8dfc5db872}\label{classaiohttp_1_1http__parser_1_1_http_parser_a414855fea16da14f89c28b8dfc5db872}} 
+{\bfseries loop}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__parser_1_1_http_parser_a75fe5a8947f7c2c1be70e4fac48679dd}\label{classaiohttp_1_1http__parser_1_1_http_parser_a75fe5a8947f7c2c1be70e4fac48679dd}} 
+{\bfseries max\+\_\+line\+\_\+size}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__parser_1_1_http_parser_a9efbe1959e295a7c98af21868a252f9f}\label{classaiohttp_1_1http__parser_1_1_http_parser_a9efbe1959e295a7c98af21868a252f9f}} 
+{\bfseries max\+\_\+headers}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__parser_1_1_http_parser_afbd4f6d8605b4c3876fb4bb546548197}\label{classaiohttp_1_1http__parser_1_1_http_parser_afbd4f6d8605b4c3876fb4bb546548197}} 
+{\bfseries max\+\_\+field\+\_\+size}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__parser_1_1_http_parser_a98798390f3f8e8d7de8ecf67c3d95ac8}\label{classaiohttp_1_1http__parser_1_1_http_parser_a98798390f3f8e8d7de8ecf67c3d95ac8}} 
+{\bfseries timer}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__parser_1_1_http_parser_aa92c1d74a3d19d338b46978df181c7e1}\label{classaiohttp_1_1http__parser_1_1_http_parser_aa92c1d74a3d19d338b46978df181c7e1}} 
+{\bfseries code}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__parser_1_1_http_parser_a73e70542ef5e0441a44bb4f2dfaa2d94}\label{classaiohttp_1_1http__parser_1_1_http_parser_a73e70542ef5e0441a44bb4f2dfaa2d94}} 
+{\bfseries method}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__parser_1_1_http_parser_af9fea4a084b367903e581657a34ecda1}\label{classaiohttp_1_1http__parser_1_1_http_parser_af9fea4a084b367903e581657a34ecda1}} 
+{\bfseries readall}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__parser_1_1_http_parser_a422dfce412368829e7f64c449b4c5a0b}\label{classaiohttp_1_1http__parser_1_1_http_parser_a422dfce412368829e7f64c449b4c5a0b}} 
+{\bfseries payload\+\_\+exception}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__parser_1_1_http_parser_a706f6035c972843641e05969f364b9f9}\label{classaiohttp_1_1http__parser_1_1_http_parser_a706f6035c972843641e05969f364b9f9}} 
+{\bfseries response\+\_\+with\+\_\+body}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__parser_1_1_http_parser_a991efaacf245c0c782d486085b1ef603}\label{classaiohttp_1_1http__parser_1_1_http_parser_a991efaacf245c0c782d486085b1ef603}} 
+{\bfseries read\+\_\+until\+\_\+eof}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1http__parser_1_1_http_parser_a290b57971f5601f24455642f72c28551}\label{classaiohttp_1_1http__parser_1_1_http_parser_a290b57971f5601f24455642f72c28551}} 
+\index{aiohttp\+::http\+\_\+parser\+::\+Http\+Parser@{aiohttp\+::http\+\_\+parser\+::\+Http\+Parser}!parse\+\_\+headers@{parse\+\_\+headers}}
+\index{parse\+\_\+headers@{parse\+\_\+headers}!aiohttp\+::http\+\_\+parser\+::\+Http\+Parser@{aiohttp\+::http\+\_\+parser\+::\+Http\+Parser}}
+\subsubsection{\texorpdfstring{parse\+\_\+headers()}{parse\_headers()}}
+{\footnotesize\ttfamily def aiohttp.\+http\+\_\+parser.\+Http\+Parser.\+parse\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{lines }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parses RFC 5322 headers from a stream.
+
+Line continuations are supported. Returns list of header name
+and value pairs. Header name is in upper case.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/http\+\_\+parser.\+py\end{DoxyCompactItemize}

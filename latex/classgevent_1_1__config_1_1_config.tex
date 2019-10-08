@@ -1,0 +1,53 @@
+\hypertarget{classgevent_1_1__config_1_1_config}{}\section{gevent.\+\_\+config.\+Config Class Reference}
+\label{classgevent_1_1__config_1_1_config}\index{gevent.\+\_\+config.\+Config@{gevent.\+\_\+config.\+Config}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_config_ac09d2d10a12e804318d43906910f0ad7}\label{classgevent_1_1__config_1_1_config_ac09d2d10a12e804318d43906910f0ad7}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_config_a87ce628183be9f8a3aeb6194389751fa}\label{classgevent_1_1__config_1_1_config_a87ce628183be9f8a3aeb6194389751fa}} 
+def {\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, name)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_config_af4887bd91cd7730bb0a2fb59b51cd595}\label{classgevent_1_1__config_1_1_config_af4887bd91cd7730bb0a2fb59b51cd595}} 
+def {\bfseries \+\_\+\+\_\+setattr\+\_\+\+\_\+} (self, name, value)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_config_a1819b591b155c679effc899d13861b2c}\label{classgevent_1_1__config_1_1_config_a1819b591b155c679effc899d13861b2c}} 
+def {\bfseries set} (self, name, value)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_config_a2eae0dd8806ca7a2e64f2d2383514f1c}\label{classgevent_1_1__config_1_1_config_a2eae0dd8806ca7a2e64f2d2383514f1c}} 
+def {\bfseries \+\_\+\+\_\+dir\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_config_a337bd48a609708840923a9b252284872}\label{classgevent_1_1__config_1_1_config_a337bd48a609708840923a9b252284872}} 
+{\bfseries settings}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Global configuration for gevent.
+
+There is one instance of this object at ``gevent.config``. If you
+are going to make changes in code, instead of using the documented
+environment variables, you need to make the changes before using
+any parts of gevent that might need those settings. For example::
+
+    >>> from gevent import config
+    >>> config.fileobject = 'thread'
+
+    >>> from gevent import fileobject
+    >>> fileobject.FileObject.__name__
+    'FileObjectThread'
+
+.. versionadded:: 1.3a2\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/\+\_\+config.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\hypertarget{classpy_1_1__io_1_1capture_1_1_f_d_capture}{}\section{py.\+\_\+io.\+capture.\+F\+D\+Capture Class Reference}
+\label{classpy_1_1__io_1_1capture_1_1_f_d_capture}\index{py.\+\_\+io.\+capture.\+F\+D\+Capture@{py.\+\_\+io.\+capture.\+F\+D\+Capture}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpy_1_1__io_1_1capture_1_1_f_d_capture_aa65e767565e80eaa2770917cc5d2ceec}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, targetfd, tmpfile=None, now=True, patchsys=False)
+\item 
+\mbox{\Hypertarget{classpy_1_1__io_1_1capture_1_1_f_d_capture_a59c1dc63e94aa96afb2d9d39637b948d}\label{classpy_1_1__io_1_1capture_1_1_f_d_capture_a59c1dc63e94aa96afb2d9d39637b948d}} 
+def {\bfseries start} (self)
+\item 
+def \hyperlink{classpy_1_1__io_1_1capture_1_1_f_d_capture_a6816f0c6c3af5924565a252050255b59}{done} (self)
+\item 
+def \hyperlink{classpy_1_1__io_1_1capture_1_1_f_d_capture_ad296b26bfbeaad94f4fcc4db00fec633}{writeorg} (self, data)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpy_1_1__io_1_1capture_1_1_f_d_capture_ae4f47b7a7450294bcf6a58d4a7e4f6c2}\label{classpy_1_1__io_1_1capture_1_1_f_d_capture_ae4f47b7a7450294bcf6a58d4a7e4f6c2}} 
+{\bfseries targetfd}
+\item 
+\mbox{\Hypertarget{classpy_1_1__io_1_1capture_1_1_f_d_capture_a52bf830fda0c85abc6ba5f0df613ba73}\label{classpy_1_1__io_1_1capture_1_1_f_d_capture_a52bf830fda0c85abc6ba5f0df613ba73}} 
+{\bfseries tmpfile}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Capture IO to/from a given os-level filedescriptor. \end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpy_1_1__io_1_1capture_1_1_f_d_capture_aa65e767565e80eaa2770917cc5d2ceec}\label{classpy_1_1__io_1_1capture_1_1_f_d_capture_aa65e767565e80eaa2770917cc5d2ceec}} 
+\index{py\+::\+\_\+io\+::capture\+::\+F\+D\+Capture@{py\+::\+\_\+io\+::capture\+::\+F\+D\+Capture}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!py\+::\+\_\+io\+::capture\+::\+F\+D\+Capture@{py\+::\+\_\+io\+::capture\+::\+F\+D\+Capture}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def py.\+\_\+io.\+capture.\+F\+D\+Capture.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{targetfd,  }\item[{}]{tmpfile = {\ttfamily None},  }\item[{}]{now = {\ttfamily True},  }\item[{}]{patchsys = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}save targetfd descriptor, and open a new
+    temporary file there.  If no tmpfile is
+    specified a tempfile.Tempfile() will be opened
+    in text mode.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpy_1_1__io_1_1capture_1_1_f_d_capture_a6816f0c6c3af5924565a252050255b59}\label{classpy_1_1__io_1_1capture_1_1_f_d_capture_a6816f0c6c3af5924565a252050255b59}} 
+\index{py\+::\+\_\+io\+::capture\+::\+F\+D\+Capture@{py\+::\+\_\+io\+::capture\+::\+F\+D\+Capture}!done@{done}}
+\index{done@{done}!py\+::\+\_\+io\+::capture\+::\+F\+D\+Capture@{py\+::\+\_\+io\+::capture\+::\+F\+D\+Capture}}
+\subsubsection{\texorpdfstring{done()}{done()}}
+{\footnotesize\ttfamily def py.\+\_\+io.\+capture.\+F\+D\+Capture.\+done (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}unpatch and clean up, returns the self.tmpfile (file object)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__io_1_1capture_1_1_f_d_capture_ad296b26bfbeaad94f4fcc4db00fec633}\label{classpy_1_1__io_1_1capture_1_1_f_d_capture_ad296b26bfbeaad94f4fcc4db00fec633}} 
+\index{py\+::\+\_\+io\+::capture\+::\+F\+D\+Capture@{py\+::\+\_\+io\+::capture\+::\+F\+D\+Capture}!writeorg@{writeorg}}
+\index{writeorg@{writeorg}!py\+::\+\_\+io\+::capture\+::\+F\+D\+Capture@{py\+::\+\_\+io\+::capture\+::\+F\+D\+Capture}}
+\subsubsection{\texorpdfstring{writeorg()}{writeorg()}}
+{\footnotesize\ttfamily def py.\+\_\+io.\+capture.\+F\+D\+Capture.\+writeorg (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}write a string to the original file descriptor
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/py/\+\_\+io/capture.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,103 @@
+\hypertarget{namespacewebsockets_1_1framing}{}\section{websockets.\+framing Namespace Reference}
+\label{namespacewebsockets_1_1framing}\index{websockets.\+framing@{websockets.\+framing}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classwebsockets_1_1framing_1_1_frame}{Frame}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacewebsockets_1_1framing_a2b818e33b862ae9d6aba510f28ff3054}{encode\+\_\+data} (data)
+\item 
+def \hyperlink{namespacewebsockets_1_1framing_a87c07ac57ab91606a4b370928bdd9661}{parse\+\_\+close} (data)
+\item 
+def \hyperlink{namespacewebsockets_1_1framing_a66d055e10d1ee6fee90af85bb16bd3e0}{serialize\+\_\+close} (code, reason)
+\item 
+def \hyperlink{namespacewebsockets_1_1framing_a9188aa9c6668705e1177726998a42b3e}{check\+\_\+close} (code)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1framing_a86486c16d67478db3cad6ea09e197ec4}\label{namespacewebsockets_1_1framing_a86486c16d67478db3cad6ea09e197ec4}} 
+{\bfseries D\+A\+T\+A\+\_\+\+O\+P\+C\+O\+D\+ES}
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1framing_a872e8a09f55c3965e1b71d3d33d60f17}\label{namespacewebsockets_1_1framing_a872e8a09f55c3965e1b71d3d33d60f17}} 
+{\bfseries O\+P\+\_\+\+C\+O\+NT}
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1framing_af7b3e8bf600da8867c5673aad46a46d7}\label{namespacewebsockets_1_1framing_af7b3e8bf600da8867c5673aad46a46d7}} 
+{\bfseries O\+P\+\_\+\+T\+E\+XT}
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1framing_ae01c22d0244052729205f2727c9f9e85}\label{namespacewebsockets_1_1framing_ae01c22d0244052729205f2727c9f9e85}} 
+{\bfseries O\+P\+\_\+\+B\+I\+N\+A\+RY}
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1framing_a56f354de335653cc2e2ab485f5c29718}\label{namespacewebsockets_1_1framing_a56f354de335653cc2e2ab485f5c29718}} 
+{\bfseries C\+T\+R\+L\+\_\+\+O\+P\+C\+O\+D\+ES}
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1framing_a673d080e41be5991cab9369db8be7851}\label{namespacewebsockets_1_1framing_a673d080e41be5991cab9369db8be7851}} 
+{\bfseries O\+P\+\_\+\+C\+L\+O\+SE}
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1framing_aada35c2c8db2cc53a3f9ee32b2ba741c}\label{namespacewebsockets_1_1framing_aada35c2c8db2cc53a3f9ee32b2ba741c}} 
+{\bfseries O\+P\+\_\+\+P\+I\+NG}
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1framing_a6ead5d7d797b00e72aa5e5390a91171b}\label{namespacewebsockets_1_1framing_a6ead5d7d797b00e72aa5e5390a91171b}} 
+{\bfseries O\+P\+\_\+\+P\+O\+NG}
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1framing_ace9594645836bac154a04c889b6d2260}\label{namespacewebsockets_1_1framing_ace9594645836bac154a04c889b6d2260}} 
+{\bfseries E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+C\+L\+O\+S\+E\+\_\+\+C\+O\+D\+ES}
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1framing_a6662dc31b702a6a1e878cdc1db77a6e6}\label{namespacewebsockets_1_1framing_a6662dc31b702a6a1e878cdc1db77a6e6}} 
+{\bfseries Frame\+Data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}The :mod:`websockets.framing` module implements data framing as specified in
+`section 5 of RFC 6455`_.
+
+It deals with a single frame at a time. Anything that depends on the sequence
+of frames is implemented in :mod:`websockets.protocol`.
+
+.. _section 5 of RFC 6455: http://tools.ietf.org/html/rfc6455#section-5\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacewebsockets_1_1framing_a9188aa9c6668705e1177726998a42b3e}\label{namespacewebsockets_1_1framing_a9188aa9c6668705e1177726998a42b3e}} 
+\index{websockets\+::framing@{websockets\+::framing}!check\+\_\+close@{check\+\_\+close}}
+\index{check\+\_\+close@{check\+\_\+close}!websockets\+::framing@{websockets\+::framing}}
+\subsubsection{\texorpdfstring{check\+\_\+close()}{check\_close()}}
+{\footnotesize\ttfamily def websockets.\+framing.\+check\+\_\+close (\begin{DoxyParamCaption}\item[{}]{code }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check the close code for a close frame.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacewebsockets_1_1framing_a2b818e33b862ae9d6aba510f28ff3054}\label{namespacewebsockets_1_1framing_a2b818e33b862ae9d6aba510f28ff3054}} 
+\index{websockets\+::framing@{websockets\+::framing}!encode\+\_\+data@{encode\+\_\+data}}
+\index{encode\+\_\+data@{encode\+\_\+data}!websockets\+::framing@{websockets\+::framing}}
+\subsubsection{\texorpdfstring{encode\+\_\+data()}{encode\_data()}}
+{\footnotesize\ttfamily def websockets.\+framing.\+encode\+\_\+data (\begin{DoxyParamCaption}\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Helper that converts :class:`str` or :class:`bytes` to :class:`bytes`.
+
+:class:`str` are encoded with UTF-8.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacewebsockets_1_1framing_a87c07ac57ab91606a4b370928bdd9661}\label{namespacewebsockets_1_1framing_a87c07ac57ab91606a4b370928bdd9661}} 
+\index{websockets\+::framing@{websockets\+::framing}!parse\+\_\+close@{parse\+\_\+close}}
+\index{parse\+\_\+close@{parse\+\_\+close}!websockets\+::framing@{websockets\+::framing}}
+\subsubsection{\texorpdfstring{parse\+\_\+close()}{parse\_close()}}
+{\footnotesize\ttfamily def websockets.\+framing.\+parse\+\_\+close (\begin{DoxyParamCaption}\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse the data in a close frame.
+
+Return ``(code, reason)`` when ``code`` is an :class:`int` and ``reason``
+a :class:`str`.
+
+Raise :exc:`~websockets.exceptions.WebSocketProtocolError` or
+:exc:`UnicodeDecodeError` if the data is invalid.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacewebsockets_1_1framing_a66d055e10d1ee6fee90af85bb16bd3e0}\label{namespacewebsockets_1_1framing_a66d055e10d1ee6fee90af85bb16bd3e0}} 
+\index{websockets\+::framing@{websockets\+::framing}!serialize\+\_\+close@{serialize\+\_\+close}}
+\index{serialize\+\_\+close@{serialize\+\_\+close}!websockets\+::framing@{websockets\+::framing}}
+\subsubsection{\texorpdfstring{serialize\+\_\+close()}{serialize\_close()}}
+{\footnotesize\ttfamily def websockets.\+framing.\+serialize\+\_\+close (\begin{DoxyParamCaption}\item[{}]{code,  }\item[{}]{reason }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Serialize the data for a close frame.
+
+This is the reverse of :func:`parse_close`.\end{DoxyVerb}
+ 

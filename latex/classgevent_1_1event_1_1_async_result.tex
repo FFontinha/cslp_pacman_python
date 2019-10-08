@@ -1,0 +1,234 @@
+\hypertarget{classgevent_1_1event_1_1_async_result}{}\section{gevent.\+event.\+Async\+Result Class Reference}
+\label{classgevent_1_1event_1_1_async_result}\index{gevent.\+event.\+Async\+Result@{gevent.\+event.\+Async\+Result}}
+
+
+Inherits \hyperlink{classgevent_1_1event_1_1___abstract_linkable}{gevent.\+event.\+\_\+\+Abstract\+Linkable}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_a7b6d053769e3151b4fbdc2de03178b22}\label{classgevent_1_1event_1_1_async_result_a7b6d053769e3151b4fbdc2de03178b22}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classgevent_1_1event_1_1_async_result_a0837f2c7d2b1ef963978846c46606abe}{value} (self)
+\item 
+def \hyperlink{classgevent_1_1event_1_1_async_result_a09be8943a76bb5ec4982a59644005a80}{exc\+\_\+info} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_a70fe1b7a4a24e8fed8cee8a16ba6747e}\label{classgevent_1_1event_1_1_async_result_a70fe1b7a4a24e8fed8cee8a16ba6747e}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classgevent_1_1event_1_1_async_result_a4b625390f5320b6921bc0c2f0afad192}{ready} (self)
+\item 
+def \hyperlink{classgevent_1_1event_1_1_async_result_a4fcee8b446a492d540d813c107b75ae6}{successful} (self)
+\item 
+def \hyperlink{classgevent_1_1event_1_1_async_result_a4eaed73fc940b8d8becc7536aa157ec1}{exception} (self)
+\item 
+def \hyperlink{classgevent_1_1event_1_1_async_result_a4dc750ec7ee0f71beebe3861c7c9d9af}{set} (self, \hyperlink{classgevent_1_1event_1_1_async_result_a0837f2c7d2b1ef963978846c46606abe}{value}=None)
+\item 
+def \hyperlink{classgevent_1_1event_1_1_async_result_a832be858eab0bbe7aa7ae343053c5555}{set\+\_\+exception} (self, \hyperlink{classgevent_1_1event_1_1_async_result_a4eaed73fc940b8d8becc7536aa157ec1}{exception}, \hyperlink{classgevent_1_1event_1_1_async_result_a09be8943a76bb5ec4982a59644005a80}{exc\+\_\+info}=None)
+\item 
+def \hyperlink{classgevent_1_1event_1_1_async_result_a0bce88da8039374f01304f65b7a43a34}{get} (self, block=True, timeout=None)
+\item 
+def \hyperlink{classgevent_1_1event_1_1_async_result_a8cc986866f45ba3ff3ad3658bf7280bf}{get\+\_\+nowait} (self)
+\item 
+def \hyperlink{classgevent_1_1event_1_1_async_result_adce89ba3e726e21dd67a10047b8e70c1}{wait} (self, timeout=None)
+\item 
+\mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_a9aa89782f21095e140fcc2e7177c616b}\label{classgevent_1_1event_1_1_async_result_a9aa89782f21095e140fcc2e7177c616b}} 
+def {\bfseries \+\_\+\+\_\+call\+\_\+\+\_\+} (self, source)
+\item 
+\mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_a67aac9d9a02ec6a6636463cc0d3ee482}\label{classgevent_1_1event_1_1_async_result_a67aac9d9a02ec6a6636463cc0d3ee482}} 
+def {\bfseries result} (self, timeout=None)
+\item 
+\mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_a860a60394145922b27bafbd28bf6df33}\label{classgevent_1_1event_1_1_async_result_a860a60394145922b27bafbd28bf6df33}} 
+def {\bfseries done} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_aa798795c474a9f4f7fa68bfb8cf1ac64}\label{classgevent_1_1event_1_1_async_result_aa798795c474a9f4f7fa68bfb8cf1ac64}} 
+def {\bfseries cancel} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_aa96aa2a523c274e38c64290c288a6c80}\label{classgevent_1_1event_1_1_async_result_aa96aa2a523c274e38c64290c288a6c80}} 
+def {\bfseries cancelled} (self)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_ae7d8ad9c051db7ae4331c31bbcea6ba9}\label{classgevent_1_1event_1_1_async_result_ae7d8ad9c051db7ae4331c31bbcea6ba9}} 
+def {\bfseries set\+\_\+result} = \hyperlink{classgevent_1_1event_1_1_async_result_a4dc750ec7ee0f71beebe3861c7c9d9af}{set}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A one-time event that stores a value or an exception.
+
+Like :class:`Event` it wakes up all the waiters when :meth:`set` or :meth:`set_exception`
+is called. Waiters may receive the passed value or exception by calling :meth:`get`
+instead of :meth:`wait`. An :class:`AsyncResult` instance cannot be reset.
+
+To pass a value call :meth:`set`. Calls to :meth:`get` (those that are currently blocking as well as
+those made in the future) will return the value:
+
+    >>> result = AsyncResult()
+    >>> result.set(100)
+    >>> result.get()
+    100
+
+To pass an exception call :meth:`set_exception`. This will cause :meth:`get` to raise that exception:
+
+    >>> result = AsyncResult()
+    >>> result.set_exception(RuntimeError('failure'))
+    >>> result.get()
+    Traceback (most recent call last):
+     ...
+    RuntimeError: failure
+
+:class:`AsyncResult` implements :meth:`__call__` and thus can be used as :meth:`link` target:
+
+    >>> import gevent
+    >>> result = AsyncResult()
+    >>> gevent.spawn(lambda : 1/0).link(result)
+    >>> try:
+    ...     result.get()
+    ... except ZeroDivisionError:
+    ...     print('ZeroDivisionError')
+    ZeroDivisionError
+
+.. note::
+    The order and timing in which waiting greenlets are awakened is not determined.
+    As an implementation note, in gevent 1.1 and 1.0, waiting greenlets are awakened in a
+    undetermined order sometime *after* the current greenlet yields to the event loop. Other greenlets
+    (those not waiting to be awakened) may run between the current greenlet yielding and
+    the waiting greenlets being awakened. These details may change in the future.
+
+.. versionchanged:: 1.1
+   The exact order in which waiting greenlets are awakened is not the same
+   as in 1.0.
+.. versionchanged:: 1.1
+   Callbacks :meth:`linked <rawlink>` to this object are required to be hashable, and duplicates are
+   merged.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_a09be8943a76bb5ec4982a59644005a80}\label{classgevent_1_1event_1_1_async_result_a09be8943a76bb5ec4982a59644005a80}} 
+\index{gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}!exc\+\_\+info@{exc\+\_\+info}}
+\index{exc\+\_\+info@{exc\+\_\+info}!gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}}
+\subsubsection{\texorpdfstring{exc\+\_\+info()}{exc\_info()}}
+{\footnotesize\ttfamily def gevent.\+event.\+Async\+Result.\+exc\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The three-tuple of exception information if :meth:`set_exception` was called.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_a4eaed73fc940b8d8becc7536aa157ec1}\label{classgevent_1_1event_1_1_async_result_a4eaed73fc940b8d8becc7536aa157ec1}} 
+\index{gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}!exception@{exception}}
+\index{exception@{exception}!gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}}
+\subsubsection{\texorpdfstring{exception()}{exception()}}
+{\footnotesize\ttfamily def gevent.\+event.\+Async\+Result.\+exception (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Holds the exception instance passed to :meth:`set_exception` if :meth:`set_exception` was called.
+Otherwise ``None``.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_a0bce88da8039374f01304f65b7a43a34}\label{classgevent_1_1event_1_1_async_result_a0bce88da8039374f01304f65b7a43a34}} 
+\index{gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}!get@{get}}
+\index{get@{get}!gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily def gevent.\+event.\+Async\+Result.\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{block = {\ttfamily True},  }\item[{}]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the stored value or raise the exception.
+
+If this instance already holds a value or an exception, return  or raise it immediately.
+Otherwise, block until another greenlet calls :meth:`set` or :meth:`set_exception` or
+until the optional timeout occurs.
+
+When the *timeout* argument is present and not ``None``, it should be a
+floating point number specifying a timeout for the operation in seconds
+(or fractions thereof). If the *timeout* elapses, the *Timeout* exception will
+be raised.
+
+:keyword bool block: If set to ``False`` and this instance is not ready,
+    immediately raise a :class:`Timeout` exception.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_a8cc986866f45ba3ff3ad3658bf7280bf}\label{classgevent_1_1event_1_1_async_result_a8cc986866f45ba3ff3ad3658bf7280bf}} 
+\index{gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}!get\+\_\+nowait@{get\+\_\+nowait}}
+\index{get\+\_\+nowait@{get\+\_\+nowait}!gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}}
+\subsubsection{\texorpdfstring{get\+\_\+nowait()}{get\_nowait()}}
+{\footnotesize\ttfamily def gevent.\+event.\+Async\+Result.\+get\+\_\+nowait (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the value or raise the exception without blocking.
+
+If this object is not yet :meth:`ready <ready>`, raise
+:class:`gevent.Timeout` immediately.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_a4b625390f5320b6921bc0c2f0afad192}\label{classgevent_1_1event_1_1_async_result_a4b625390f5320b6921bc0c2f0afad192}} 
+\index{gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}!ready@{ready}}
+\index{ready@{ready}!gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}}
+\subsubsection{\texorpdfstring{ready()}{ready()}}
+{\footnotesize\ttfamily def gevent.\+event.\+Async\+Result.\+ready (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return true if and only if it holds a value or an exception\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_a4dc750ec7ee0f71beebe3861c7c9d9af}\label{classgevent_1_1event_1_1_async_result_a4dc750ec7ee0f71beebe3861c7c9d9af}} 
+\index{gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}!set@{set}}
+\index{set@{set}!gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily def gevent.\+event.\+Async\+Result.\+set (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Store the value and wake up any waiters.
+
+All greenlets blocking on :meth:`get` or :meth:`wait` are awakened.
+Subsequent calls to :meth:`wait` and :meth:`get` will not block at all.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_a832be858eab0bbe7aa7ae343053c5555}\label{classgevent_1_1event_1_1_async_result_a832be858eab0bbe7aa7ae343053c5555}} 
+\index{gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}!set\+\_\+exception@{set\+\_\+exception}}
+\index{set\+\_\+exception@{set\+\_\+exception}!gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}}
+\subsubsection{\texorpdfstring{set\+\_\+exception()}{set\_exception()}}
+{\footnotesize\ttfamily def gevent.\+event.\+Async\+Result.\+set\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{exception,  }\item[{}]{exc\+\_\+info = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Store the exception and wake up any waiters.
+
+All greenlets blocking on :meth:`get` or :meth:`wait` are awakened.
+Subsequent calls to :meth:`wait` and :meth:`get` will not block at all.
+
+:keyword tuple exc_info: If given, a standard three-tuple of type, value, :class:`traceback`
+    as returned by :func:`sys.exc_info`. This will be used when the exception
+    is re-raised to propagate the correct traceback.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_a4fcee8b446a492d540d813c107b75ae6}\label{classgevent_1_1event_1_1_async_result_a4fcee8b446a492d540d813c107b75ae6}} 
+\index{gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}!successful@{successful}}
+\index{successful@{successful}!gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}}
+\subsubsection{\texorpdfstring{successful()}{successful()}}
+{\footnotesize\ttfamily def gevent.\+event.\+Async\+Result.\+successful (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return true if and only if it is ready and holds a value\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_a0837f2c7d2b1ef963978846c46606abe}\label{classgevent_1_1event_1_1_async_result_a0837f2c7d2b1ef963978846c46606abe}} 
+\index{gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}!value@{value}}
+\index{value@{value}!gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}}
+\subsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily def gevent.\+event.\+Async\+Result.\+value (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Holds the value passed to :meth:`set` if :meth:`set` was called. Otherwise,
+``None``
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1event_1_1_async_result_adce89ba3e726e21dd67a10047b8e70c1}\label{classgevent_1_1event_1_1_async_result_adce89ba3e726e21dd67a10047b8e70c1}} 
+\index{gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}!wait@{wait}}
+\index{wait@{wait}!gevent\+::event\+::\+Async\+Result@{gevent\+::event\+::\+Async\+Result}}
+\subsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily def gevent.\+event.\+Async\+Result.\+wait (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Block until the instance is ready.
+
+If this instance already holds a value, it is returned immediately. If this
+instance already holds an exception, ``None`` is returned immediately.
+
+Otherwise, block until another greenlet calls :meth:`set` or :meth:`set_exception`
+(at which point either the value or ``None`` will be returned, respectively),
+or until the optional timeout expires (at which point ``None`` will also be
+returned).
+
+When the *timeout* argument is present and not ``None``, it should be a
+floating point number specifying a timeout for the operation in seconds
+(or fractions thereof).
+
+.. note:: If a timeout is given and expires, ``None`` will be returned
+    (no timeout exception will be raised).\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/event.\+py\end{DoxyCompactItemize}

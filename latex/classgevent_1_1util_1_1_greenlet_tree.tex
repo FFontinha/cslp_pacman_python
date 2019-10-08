@@ -1,0 +1,128 @@
+\hypertarget{classgevent_1_1util_1_1_greenlet_tree}{}\section{gevent.\+util.\+Greenlet\+Tree Class Reference}
+\label{classgevent_1_1util_1_1_greenlet_tree}\index{gevent.\+util.\+Greenlet\+Tree@{gevent.\+util.\+Greenlet\+Tree}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1_greenlet_tree_a72bf30cbc94e66cfb1704b6e3a181223}\label{classgevent_1_1util_1_1_greenlet_tree_a72bf30cbc94e66cfb1704b6e3a181223}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, greenlet)
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1_greenlet_tree_a8eda397d222a22a35e1a40f6c9ef59c2}\label{classgevent_1_1util_1_1_greenlet_tree_a8eda397d222a22a35e1a40f6c9ef59c2}} 
+def {\bfseries add\+\_\+child} (self, tree)
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1_greenlet_tree_a29a0a8aac73470821c1e86cb93ad754c}\label{classgevent_1_1util_1_1_greenlet_tree_a29a0a8aac73470821c1e86cb93ad754c}} 
+def {\bfseries root} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1_greenlet_tree_a38488f2f84e2682f8393aa72de86bfcf}\label{classgevent_1_1util_1_1_greenlet_tree_a38488f2f84e2682f8393aa72de86bfcf}} 
+def {\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, name)
+\item 
+def \hyperlink{classgevent_1_1util_1_1_greenlet_tree_a969e680d518be73695f0a9fe9a736a0e}{format\+\_\+lines} (self, details=True)
+\item 
+def \hyperlink{classgevent_1_1util_1_1_greenlet_tree_a243660419ec4364558ef7d126bfb8647}{format} (self, details=True)
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1_greenlet_tree_a87412844fab33375adb70080455f52d2}\label{classgevent_1_1util_1_1_greenlet_tree_a87412844fab33375adb70080455f52d2}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classgevent_1_1util_1_1_greenlet_tree_a9dd8412218ac48d66385728da4b60b4b}{forest} (cls)
+\item 
+def \hyperlink{classgevent_1_1util_1_1_greenlet_tree_a6c56ec6e4983c6a7046b1ace698a0a7d}{current\+\_\+tree} (cls)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1_greenlet_tree_ab10f7d05551e671b8fccb3c1a2e0a21e}\label{classgevent_1_1util_1_1_greenlet_tree_ab10f7d05551e671b8fccb3c1a2e0a21e}} 
+{\bfseries child\+\_\+trees}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1_greenlet_tree_afa5798c68c6ed2bbebbb35e631fd70f3}\label{classgevent_1_1util_1_1_greenlet_tree_afa5798c68c6ed2bbebbb35e631fd70f3}} 
+{\bfseries greenlet} = None
+\item 
+dictionary {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+T\+A\+I\+LS}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Represents a tree of greenlets.
+
+In gevent, the *parent* of a greenlet is usually the hub, so this
+tree is primarily arganized along the *spawning_greenlet* dimension.
+
+This object has a small str form showing this hierarchy. The `format`
+method can output more details. The exact output is unspecified but is
+intended to be human readable.
+
+Use the `forest` method to get the root greenlet trees for
+all threads, and the `current_tree` to get the root greenlet tree for
+the current thread.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1util_1_1_greenlet_tree_a6c56ec6e4983c6a7046b1ace698a0a7d}\label{classgevent_1_1util_1_1_greenlet_tree_a6c56ec6e4983c6a7046b1ace698a0a7d}} 
+\index{gevent\+::util\+::\+Greenlet\+Tree@{gevent\+::util\+::\+Greenlet\+Tree}!current\+\_\+tree@{current\+\_\+tree}}
+\index{current\+\_\+tree@{current\+\_\+tree}!gevent\+::util\+::\+Greenlet\+Tree@{gevent\+::util\+::\+Greenlet\+Tree}}
+\subsubsection{\texorpdfstring{current\+\_\+tree()}{current\_tree()}}
+{\footnotesize\ttfamily def gevent.\+util.\+Greenlet\+Tree.\+current\+\_\+tree (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}current_tree() -> GreenletTree
+
+Returns the `GreenletTree` for the current thread.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1util_1_1_greenlet_tree_a9dd8412218ac48d66385728da4b60b4b}\label{classgevent_1_1util_1_1_greenlet_tree_a9dd8412218ac48d66385728da4b60b4b}} 
+\index{gevent\+::util\+::\+Greenlet\+Tree@{gevent\+::util\+::\+Greenlet\+Tree}!forest@{forest}}
+\index{forest@{forest}!gevent\+::util\+::\+Greenlet\+Tree@{gevent\+::util\+::\+Greenlet\+Tree}}
+\subsubsection{\texorpdfstring{forest()}{forest()}}
+{\footnotesize\ttfamily def gevent.\+util.\+Greenlet\+Tree.\+forest (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}forest() -> sequence
+
+Return a sequence of `GreenletTree`, one for each running
+native thread.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1util_1_1_greenlet_tree_a243660419ec4364558ef7d126bfb8647}\label{classgevent_1_1util_1_1_greenlet_tree_a243660419ec4364558ef7d126bfb8647}} 
+\index{gevent\+::util\+::\+Greenlet\+Tree@{gevent\+::util\+::\+Greenlet\+Tree}!format@{format}}
+\index{format@{format}!gevent\+::util\+::\+Greenlet\+Tree@{gevent\+::util\+::\+Greenlet\+Tree}}
+\subsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily def gevent.\+util.\+Greenlet\+Tree.\+format (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{details = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like `format_lines` but returns a string.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1util_1_1_greenlet_tree_a969e680d518be73695f0a9fe9a736a0e}\label{classgevent_1_1util_1_1_greenlet_tree_a969e680d518be73695f0a9fe9a736a0e}} 
+\index{gevent\+::util\+::\+Greenlet\+Tree@{gevent\+::util\+::\+Greenlet\+Tree}!format\+\_\+lines@{format\+\_\+lines}}
+\index{format\+\_\+lines@{format\+\_\+lines}!gevent\+::util\+::\+Greenlet\+Tree@{gevent\+::util\+::\+Greenlet\+Tree}}
+\subsubsection{\texorpdfstring{format\+\_\+lines()}{format\_lines()}}
+{\footnotesize\ttfamily def gevent.\+util.\+Greenlet\+Tree.\+format\+\_\+lines (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{details = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a sequence of lines for the greenlet tree.
+
+:keyword bool details: If true (the default),
+    then include more informative details in the output.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgevent_1_1util_1_1_greenlet_tree_a5a3a28f266b3eac6176ef704b45c37d1}\label{classgevent_1_1util_1_1_greenlet_tree_a5a3a28f266b3eac6176ef704b45c37d1}} 
+\index{gevent\+::util\+::\+Greenlet\+Tree@{gevent\+::util\+::\+Greenlet\+Tree}!D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+T\+A\+I\+LS@{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+T\+A\+I\+LS}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+T\+A\+I\+LS@{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+T\+A\+I\+LS}!gevent\+::util\+::\+Greenlet\+Tree@{gevent\+::util\+::\+Greenlet\+Tree}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+T\+A\+I\+LS}{DEFAULT\_DETAILS}}
+{\footnotesize\ttfamily dictionary gevent.\+util.\+Greenlet\+Tree.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+T\+A\+I\+LS\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \{
+        \textcolor{stringliteral}{'running\_stacks'}: \textcolor{keyword}{True},
+        \textcolor{stringliteral}{'running\_stack\_limit'}: \_STACK\_LIMIT,
+        \textcolor{stringliteral}{'spawning\_stacks'}: \textcolor{keyword}{True},
+        \textcolor{stringliteral}{'locals'}: \textcolor{keyword}{True},
+    \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/util.\+py\end{DoxyCompactItemize}

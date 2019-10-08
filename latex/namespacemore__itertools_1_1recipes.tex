@@ -1,0 +1,486 @@
+\hypertarget{namespacemore__itertools_1_1recipes}{}\section{more\+\_\+itertools.\+recipes Namespace Reference}
+\label{namespacemore__itertools_1_1recipes}\index{more\+\_\+itertools.\+recipes@{more\+\_\+itertools.\+recipes}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a652beac76dcf8f1184efc52a82baf6a5}{accumulate} (iterable, func=operator.\+add)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a98a7fa4325188c4f21ec27bdca3209c0}{take} (n, iterable)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_ab26d4a14071109df8e8b32a01cc529bd}{tabulate} (function, start=0)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a6a78aabd5136eaa8ee9f020d0e743ee8}{tail} (n, iterable)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_ac9f06068415d848706d2610a7a5cfb1d}{consume} (iterator, n=None)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a436b5ed8f5e2d2a013defa73efe58e96}{nth} (iterable, n, default=None)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a6400a87494f1598bf44f25baba0aff89}{all\+\_\+equal} (iterable)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a6be608968636cbc9c86ae22dfafa2084}{quantify} (iterable, pred=bool)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_ac5597d78009d99f7e689816d319a9a19}{padnone} (iterable)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_ab7e0f302ed571cc4d184ab2d8681c3fa}{ncycles} (iterable, n)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_af69e810bf23869a13ece58c041a621e7}{dotproduct} (vec1, vec2)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a7b1ecd9c57f8f84daf1b7ba33054daef}{flatten} (list\+Of\+Lists)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a18056a0b9753f79901a3c7fd04ac880f}{repeatfunc} (func, times=None, args)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a477d223bd446f8adb19e3e3c01cccb6f}{pairwise} (iterable)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a654f713d06d41d740a2b2ac4c3a52fbd}{grouper} (n, iterable, fillvalue=None)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_ae11f688fd6dc665c014e396ff41b03cf}{roundrobin} (iterables)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a260ce2b6a650dd423b430a7038d79159}{partition} (pred, iterable)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a12a76688001a6778691bb8174aea0bcf}{powerset} (iterable)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_ae04c0e99048d06439e3225bf9e931c94}{unique\+\_\+everseen} (iterable, key=None)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_adfffd7653dc27192b5f9d5cf69531514}{unique\+\_\+justseen} (iterable, key=None)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a42d0a60e7c9143fbc96a4033462ad7d0}{iter\+\_\+except} (func, exception, first=None)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_aa803f5a62b2be71f11d9ebf71d1f0de2}{first\+\_\+true} (iterable, default=False, pred=None)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a648d1e66c985c58f3e359f53b475e8eb}{random\+\_\+product} (args, kwds)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a2a5a87c0a50c30bb8da6d078d5bbdec1}{random\+\_\+permutation} (iterable, r=None)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a024a1437cf49722d56bdfda6a965574e}{random\+\_\+combination} (iterable, r)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a872452acad1fd3105000cb6d30b33bc0}{random\+\_\+combination\+\_\+with\+\_\+replacement} (iterable, r)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a876c7c479546a7c16bfd39dde32ff354}{nth\+\_\+combination} (iterable, r, index)
+\item 
+def \hyperlink{namespacemore__itertools_1_1recipes_a41254019483516268635407b58e620c5}{prepend} (value, iterator)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Imported from the recipes section of the itertools documentation.
+
+All functions taken from the recipes section of the itertools library docs
+[1]_.
+Some backward-compatible usability improvements have been made.
+
+.. [1] http://docs.python.org/library/itertools.html#recipes\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a652beac76dcf8f1184efc52a82baf6a5}\label{namespacemore__itertools_1_1recipes_a652beac76dcf8f1184efc52a82baf6a5}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!accumulate@{accumulate}}
+\index{accumulate@{accumulate}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{accumulate()}{accumulate()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+accumulate (\begin{DoxyParamCaption}\item[{}]{iterable,  }\item[{}]{func = {\ttfamily operator.add} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an iterator whose items are the accumulated results of a function
+(specified by the optional *func* argument) that takes two arguments.
+By default, returns accumulated sums with :func:`operator.add`.
+
+    >>> list(accumulate([1, 2, 3, 4, 5]))  # Running sum
+    [1, 3, 6, 10, 15]
+    >>> list(accumulate([1, 2, 3], func=operator.mul))  # Running product
+    [1, 2, 6]
+    >>> list(accumulate([0, 1, -1, 2, 3, 2], func=max))  # Running maximum
+    [0, 1, 1, 2, 3, 3]
+
+This function is available in the ``itertools`` module for Python 3.2 and
+greater.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a6400a87494f1598bf44f25baba0aff89}\label{namespacemore__itertools_1_1recipes_a6400a87494f1598bf44f25baba0aff89}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!all\+\_\+equal@{all\+\_\+equal}}
+\index{all\+\_\+equal@{all\+\_\+equal}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{all\+\_\+equal()}{all\_equal()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+all\+\_\+equal (\begin{DoxyParamCaption}\item[{}]{iterable }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns ``True`` if all the elements are equal to each other.
+
+    >>> all_equal('aaaa')
+    True
+    >>> all_equal('aaab')
+    False\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_ac9f06068415d848706d2610a7a5cfb1d}\label{namespacemore__itertools_1_1recipes_ac9f06068415d848706d2610a7a5cfb1d}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!consume@{consume}}
+\index{consume@{consume}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{consume()}{consume()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+consume (\begin{DoxyParamCaption}\item[{}]{iterator,  }\item[{}]{n = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Advance *iterable* by *n* steps. If *n* is ``None``, consume it
+entirely.
+
+Efficiently exhausts an iterator without returning values. Defaults to
+consuming the whole iterator, but an optional second argument may be
+provided to limit consumption.
+
+    >>> i = (x for x in range(10))
+    >>> next(i)
+    0
+    >>> consume(i, 3)
+    >>> next(i)
+    4
+    >>> consume(i)
+    >>> next(i)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration
+
+If the iterator has fewer items remaining than the provided limit, the
+whole iterator will be consumed.
+
+    >>> i = (x for x in range(3))
+    >>> consume(i, 5)
+    >>> next(i)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    StopIteration\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_af69e810bf23869a13ece58c041a621e7}\label{namespacemore__itertools_1_1recipes_af69e810bf23869a13ece58c041a621e7}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!dotproduct@{dotproduct}}
+\index{dotproduct@{dotproduct}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{dotproduct()}{dotproduct()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+dotproduct (\begin{DoxyParamCaption}\item[{}]{vec1,  }\item[{}]{vec2 }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the dot product of the two iterables.
+
+    >>> dotproduct([10, 10], [20, 20])
+    400\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_aa803f5a62b2be71f11d9ebf71d1f0de2}\label{namespacemore__itertools_1_1recipes_aa803f5a62b2be71f11d9ebf71d1f0de2}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!first\+\_\+true@{first\+\_\+true}}
+\index{first\+\_\+true@{first\+\_\+true}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{first\+\_\+true()}{first\_true()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+first\+\_\+true (\begin{DoxyParamCaption}\item[{}]{iterable,  }\item[{}]{default = {\ttfamily False},  }\item[{}]{pred = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the first true value in the iterable.
+
+If no true value is found, returns *default*
+
+If *pred* is not None, returns the first item for which
+``pred(item) == True`` .
+
+    >>> first_true(range(10))
+    1
+    >>> first_true(range(10), pred=lambda x: x > 5)
+    6
+    >>> first_true(range(10), default='missing', pred=lambda x: x > 9)
+    'missing'\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a7b1ecd9c57f8f84daf1b7ba33054daef}\label{namespacemore__itertools_1_1recipes_a7b1ecd9c57f8f84daf1b7ba33054daef}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!flatten@{flatten}}
+\index{flatten@{flatten}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{flatten()}{flatten()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+flatten (\begin{DoxyParamCaption}\item[{}]{list\+Of\+Lists }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an iterator flattening one level of nesting in a list of lists.
+
+    >>> list(flatten([[0, 1], [2, 3]]))
+    [0, 1, 2, 3]
+
+See also :func:`collapse`, which can flatten multiple levels of nesting.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a654f713d06d41d740a2b2ac4c3a52fbd}\label{namespacemore__itertools_1_1recipes_a654f713d06d41d740a2b2ac4c3a52fbd}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!grouper@{grouper}}
+\index{grouper@{grouper}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{grouper()}{grouper()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+grouper (\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{iterable,  }\item[{}]{fillvalue = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Collect data into fixed-length chunks or blocks.
+
+    >>> list(grouper(3, 'ABCDEFG', 'x'))
+    [('A', 'B', 'C'), ('D', 'E', 'F'), ('G', 'x', 'x')]\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a42d0a60e7c9143fbc96a4033462ad7d0}\label{namespacemore__itertools_1_1recipes_a42d0a60e7c9143fbc96a4033462ad7d0}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!iter\+\_\+except@{iter\+\_\+except}}
+\index{iter\+\_\+except@{iter\+\_\+except}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{iter\+\_\+except()}{iter\_except()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+iter\+\_\+except (\begin{DoxyParamCaption}\item[{}]{func,  }\item[{}]{exception,  }\item[{}]{first = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Yields results from a function repeatedly until an exception is raised.
+
+Converts a call-until-exception interface to an iterator interface.
+Like ``iter(func, sentinel)``, but uses an exception instead of a sentinel
+to end the loop.
+
+    >>> l = [0, 1, 2]
+    >>> list(iter_except(l.pop, IndexError))
+    [2, 1, 0]\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_ab7e0f302ed571cc4d184ab2d8681c3fa}\label{namespacemore__itertools_1_1recipes_ab7e0f302ed571cc4d184ab2d8681c3fa}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!ncycles@{ncycles}}
+\index{ncycles@{ncycles}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{ncycles()}{ncycles()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+ncycles (\begin{DoxyParamCaption}\item[{}]{iterable,  }\item[{}]{n }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the sequence elements *n* times
+
+    >>> list(ncycles(["a", "b"], 3))
+    ['a', 'b', 'a', 'b', 'a', 'b']\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a436b5ed8f5e2d2a013defa73efe58e96}\label{namespacemore__itertools_1_1recipes_a436b5ed8f5e2d2a013defa73efe58e96}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!nth@{nth}}
+\index{nth@{nth}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{nth()}{nth()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+nth (\begin{DoxyParamCaption}\item[{}]{iterable,  }\item[{}]{n,  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the nth item or a default value.
+
+    >>> l = range(10)
+    >>> nth(l, 3)
+    3
+    >>> nth(l, 20, "zebra")
+    'zebra'\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a876c7c479546a7c16bfd39dde32ff354}\label{namespacemore__itertools_1_1recipes_a876c7c479546a7c16bfd39dde32ff354}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!nth\+\_\+combination@{nth\+\_\+combination}}
+\index{nth\+\_\+combination@{nth\+\_\+combination}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{nth\+\_\+combination()}{nth\_combination()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+nth\+\_\+combination (\begin{DoxyParamCaption}\item[{}]{iterable,  }\item[{}]{r,  }\item[{}]{index }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Equivalent to ``list(combinations(iterable, r))[index]``.
+
+The subsequences of *iterable* that are of length *r* can be ordered
+lexicographically. :func:`nth_combination` computes the subsequence at
+sort position *index* directly, without computing the previous
+subsequences.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_ac5597d78009d99f7e689816d319a9a19}\label{namespacemore__itertools_1_1recipes_ac5597d78009d99f7e689816d319a9a19}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!padnone@{padnone}}
+\index{padnone@{padnone}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{padnone()}{padnone()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+padnone (\begin{DoxyParamCaption}\item[{}]{iterable }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the sequence of elements and then returns ``None`` indefinitely.
+
+    >>> take(5, padnone(range(3)))
+    [0, 1, 2, None, None]
+
+Useful for emulating the behavior of the built-in :func:`map` function.
+
+See also :func:`padded`.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a477d223bd446f8adb19e3e3c01cccb6f}\label{namespacemore__itertools_1_1recipes_a477d223bd446f8adb19e3e3c01cccb6f}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!pairwise@{pairwise}}
+\index{pairwise@{pairwise}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{pairwise()}{pairwise()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+pairwise (\begin{DoxyParamCaption}\item[{}]{iterable }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns an iterator of paired items, overlapping, from the original
+
+    >>> take(4, pairwise(count()))
+    [(0, 1), (1, 2), (2, 3), (3, 4)]\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a260ce2b6a650dd423b430a7038d79159}\label{namespacemore__itertools_1_1recipes_a260ce2b6a650dd423b430a7038d79159}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!partition@{partition}}
+\index{partition@{partition}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{partition()}{partition()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+partition (\begin{DoxyParamCaption}\item[{}]{pred,  }\item[{}]{iterable }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a 2-tuple of iterables derived from the input iterable.
+The first yields the items that have ``pred(item) == False``.
+The second yields the items that have ``pred(item) == True``.
+
+    >>> is_odd = lambda x: x % 2 != 0
+    >>> iterable = range(10)
+    >>> even_items, odd_items = partition(is_odd, iterable)
+    >>> list(even_items), list(odd_items)
+    ([0, 2, 4, 6, 8], [1, 3, 5, 7, 9])\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a12a76688001a6778691bb8174aea0bcf}\label{namespacemore__itertools_1_1recipes_a12a76688001a6778691bb8174aea0bcf}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!powerset@{powerset}}
+\index{powerset@{powerset}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{powerset()}{powerset()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+powerset (\begin{DoxyParamCaption}\item[{}]{iterable }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Yields all possible subsets of the iterable.
+
+    >>> list(powerset([1,2,3]))
+    [(), (1,), (2,), (3,), (1, 2), (1, 3), (2, 3), (1, 2, 3)]\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a41254019483516268635407b58e620c5}\label{namespacemore__itertools_1_1recipes_a41254019483516268635407b58e620c5}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!prepend@{prepend}}
+\index{prepend@{prepend}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{prepend()}{prepend()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+prepend (\begin{DoxyParamCaption}\item[{}]{value,  }\item[{}]{iterator }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Yield *value*, followed by the elements in *iterator*.
+
+    >>> value = '0'
+    >>> iterator = ['1', '2', '3']
+    >>> list(prepend(value, iterator))
+    ['0', '1', '2', '3']
+
+To prepend multiple values, see :func:`itertools.chain`.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a6be608968636cbc9c86ae22dfafa2084}\label{namespacemore__itertools_1_1recipes_a6be608968636cbc9c86ae22dfafa2084}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!quantify@{quantify}}
+\index{quantify@{quantify}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{quantify()}{quantify()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+quantify (\begin{DoxyParamCaption}\item[{}]{iterable,  }\item[{}]{pred = {\ttfamily bool} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the how many times the predicate is true.
+
+    >>> quantify([True, False, True])
+    2\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a024a1437cf49722d56bdfda6a965574e}\label{namespacemore__itertools_1_1recipes_a024a1437cf49722d56bdfda6a965574e}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!random\+\_\+combination@{random\+\_\+combination}}
+\index{random\+\_\+combination@{random\+\_\+combination}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{random\+\_\+combination()}{random\_combination()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+random\+\_\+combination (\begin{DoxyParamCaption}\item[{}]{iterable,  }\item[{}]{r }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a random *r* length subsequence of the elements in *iterable*.
+
+    >>> random_combination(range(5), 3)  # doctest:+SKIP
+    (2, 3, 4)
+
+This equivalent to taking a random selection from
+``itertools.combinations(iterable, r)``.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a872452acad1fd3105000cb6d30b33bc0}\label{namespacemore__itertools_1_1recipes_a872452acad1fd3105000cb6d30b33bc0}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!random\+\_\+combination\+\_\+with\+\_\+replacement@{random\+\_\+combination\+\_\+with\+\_\+replacement}}
+\index{random\+\_\+combination\+\_\+with\+\_\+replacement@{random\+\_\+combination\+\_\+with\+\_\+replacement}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{random\+\_\+combination\+\_\+with\+\_\+replacement()}{random\_combination\_with\_replacement()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+random\+\_\+combination\+\_\+with\+\_\+replacement (\begin{DoxyParamCaption}\item[{}]{iterable,  }\item[{}]{r }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a random *r* length subsequence of elements in *iterable*,
+allowing individual elements to be repeated.
+
+    >>> random_combination_with_replacement(range(3), 5) # doctest:+SKIP
+    (0, 0, 1, 2, 2)
+
+This equivalent to taking a random selection from
+``itertools.combinations_with_replacement(iterable, r)``.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a2a5a87c0a50c30bb8da6d078d5bbdec1}\label{namespacemore__itertools_1_1recipes_a2a5a87c0a50c30bb8da6d078d5bbdec1}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!random\+\_\+permutation@{random\+\_\+permutation}}
+\index{random\+\_\+permutation@{random\+\_\+permutation}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{random\+\_\+permutation()}{random\_permutation()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+random\+\_\+permutation (\begin{DoxyParamCaption}\item[{}]{iterable,  }\item[{}]{r = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a random *r* length permutation of the elements in *iterable*.
+
+If *r* is not specified or is ``None``, then *r* defaults to the length of
+*iterable*.
+
+    >>> random_permutation(range(5))  # doctest:+SKIP
+    (3, 4, 0, 1, 2)
+
+This equivalent to taking a random selection from
+``itertools.permutations(iterable, r)``.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a648d1e66c985c58f3e359f53b475e8eb}\label{namespacemore__itertools_1_1recipes_a648d1e66c985c58f3e359f53b475e8eb}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!random\+\_\+product@{random\+\_\+product}}
+\index{random\+\_\+product@{random\+\_\+product}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{random\+\_\+product()}{random\_product()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+random\+\_\+product (\begin{DoxyParamCaption}\item[{}]{args,  }\item[{}]{kwds }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draw an item at random from each of the input iterables.
+
+    >>> random_product('abc', range(4), 'XYZ')  # doctest:+SKIP
+    ('c', 3, 'Z')
+
+If *repeat* is provided as a keyword argument, that many items will be
+drawn from each iterable.
+
+    >>> random_product('abcd', range(4), repeat=2)  # doctest:+SKIP
+    ('a', 2, 'd', 3)
+
+This equivalent to taking a random selection from
+``itertools.product(*args, **kwarg)``.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a18056a0b9753f79901a3c7fd04ac880f}\label{namespacemore__itertools_1_1recipes_a18056a0b9753f79901a3c7fd04ac880f}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!repeatfunc@{repeatfunc}}
+\index{repeatfunc@{repeatfunc}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{repeatfunc()}{repeatfunc()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+repeatfunc (\begin{DoxyParamCaption}\item[{}]{func,  }\item[{}]{times = {\ttfamily None},  }\item[{}]{args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call *func* with *args* repeatedly, returning an iterable over the
+results.
+
+If *times* is specified, the iterable will terminate after that many
+repetitions:
+
+    >>> from operator import add
+    >>> times = 4
+    >>> args = 3, 5
+    >>> list(repeatfunc(add, times, *args))
+    [8, 8, 8, 8]
+
+If *times* is ``None`` the iterable will not terminate:
+
+    >>> from random import randrange
+    >>> times = None
+    >>> args = 1, 11
+    >>> take(6, repeatfunc(randrange, times, *args))  # doctest:+SKIP
+    [2, 4, 8, 1, 8, 4]\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_ae11f688fd6dc665c014e396ff41b03cf}\label{namespacemore__itertools_1_1recipes_ae11f688fd6dc665c014e396ff41b03cf}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!roundrobin@{roundrobin}}
+\index{roundrobin@{roundrobin}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{roundrobin()}{roundrobin()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+roundrobin (\begin{DoxyParamCaption}\item[{}]{iterables }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Yields an item from each iterable, alternating between them.
+
+    >>> list(roundrobin('ABC', 'D', 'EF'))
+    ['A', 'D', 'E', 'B', 'F', 'C']
+
+This function produces the same output as :func:`interleave_longest`, but
+may perform better for some inputs (in particular when the number of
+iterables is small).\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_ab26d4a14071109df8e8b32a01cc529bd}\label{namespacemore__itertools_1_1recipes_ab26d4a14071109df8e8b32a01cc529bd}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!tabulate@{tabulate}}
+\index{tabulate@{tabulate}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{tabulate()}{tabulate()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+tabulate (\begin{DoxyParamCaption}\item[{}]{function,  }\item[{}]{start = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an iterator over the results of ``func(start)``,
+``func(start + 1)``, ``func(start + 2)``...
+
+*func* should be a function that accepts one integer argument.
+
+If *start* is not specified it defaults to 0. It will be incremented each
+time the iterator is advanced.
+
+    >>> square = lambda x: x ** 2
+    >>> iterator = tabulate(square, -3)
+    >>> take(4, iterator)
+    [9, 4, 1, 0]\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a6a78aabd5136eaa8ee9f020d0e743ee8}\label{namespacemore__itertools_1_1recipes_a6a78aabd5136eaa8ee9f020d0e743ee8}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!tail@{tail}}
+\index{tail@{tail}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{tail()}{tail()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+tail (\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{iterable }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an iterator over the last *n* items of *iterable*.
+
+    >>> t = tail(3, 'ABCDEFG')
+    >>> list(t)
+    ['E', 'F', 'G']\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_a98a7fa4325188c4f21ec27bdca3209c0}\label{namespacemore__itertools_1_1recipes_a98a7fa4325188c4f21ec27bdca3209c0}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!take@{take}}
+\index{take@{take}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{take()}{take()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+take (\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{iterable }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return first *n* items of the iterable as a list.
+
+    >>> take(3, range(10))
+    [0, 1, 2]
+    >>> take(5, range(3))
+    [0, 1, 2]
+
+Effectively a short replacement for ``next`` based iterator consumption
+when you want more than one item, but less than the whole iterator.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_ae04c0e99048d06439e3225bf9e931c94}\label{namespacemore__itertools_1_1recipes_ae04c0e99048d06439e3225bf9e931c94}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!unique\+\_\+everseen@{unique\+\_\+everseen}}
+\index{unique\+\_\+everseen@{unique\+\_\+everseen}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{unique\+\_\+everseen()}{unique\_everseen()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+unique\+\_\+everseen (\begin{DoxyParamCaption}\item[{}]{iterable,  }\item[{}]{key = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Yield unique elements, preserving order.
+
+    >>> list(unique_everseen('AAAABBBCCDAABBB'))
+    ['A', 'B', 'C', 'D']
+    >>> list(unique_everseen('ABBCcAD', str.lower))
+    ['A', 'B', 'C', 'D']
+
+Sequences with a mix of hashable and unhashable items can be used.
+The function will be slower (i.e., `O(n^2)`) for unhashable items.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemore__itertools_1_1recipes_adfffd7653dc27192b5f9d5cf69531514}\label{namespacemore__itertools_1_1recipes_adfffd7653dc27192b5f9d5cf69531514}} 
+\index{more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}!unique\+\_\+justseen@{unique\+\_\+justseen}}
+\index{unique\+\_\+justseen@{unique\+\_\+justseen}!more\+\_\+itertools\+::recipes@{more\+\_\+itertools\+::recipes}}
+\subsubsection{\texorpdfstring{unique\+\_\+justseen()}{unique\_justseen()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+recipes.\+unique\+\_\+justseen (\begin{DoxyParamCaption}\item[{}]{iterable,  }\item[{}]{key = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Yields elements in order, ignoring serial duplicates
+
+    >>> list(unique_justseen('AAAABBBCCDAABBB'))
+    ['A', 'B', 'C', 'D', 'A', 'B']
+    >>> list(unique_justseen('ABBCcAD', str.lower))
+    ['A', 'B', 'C', 'A', 'D']\end{DoxyVerb}
+ 

@@ -1,0 +1,46 @@
+\hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1buftools}{}\section{pygame.\+tests.\+test\+\_\+utils.\+buftools Namespace Reference}
+\label{namespacepygame_1_1tests_1_1test__utils_1_1buftools}\index{pygame.\+tests.\+test\+\_\+utils.\+buftools@{pygame.\+tests.\+test\+\_\+utils.\+buftools}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpygame_1_1tests_1_1test__utils_1_1buftools_1_1_exporter}{Exporter}
+\item 
+class \hyperlink{classpygame_1_1tests_1_1test__utils_1_1buftools_1_1_exporter_test}{Exporter\+Test}
+\item 
+class \hyperlink{classpygame_1_1tests_1_1test__utils_1_1buftools_1_1_importer}{Importer}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1buftools_a0bc2b96247e46a6ffdb829c714e19f24}\label{namespacepygame_1_1tests_1_1test__utils_1_1buftools_a0bc2b96247e46a6ffdb829c714e19f24}} 
+string {\bfseries emsg} = \char`\"{}This Pygame build does not support the new \hyperlink{structbuffer}{buffer} protocol\char`\"{}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1buftools_a8885d176250ae6dac1b88462186c4dd3}\label{namespacepygame_1_1tests_1_1test__utils_1_1buftools_a8885d176250ae6dac1b88462186c4dd3}} 
+{\bfseries void\+\_\+p\+\_\+sz} = ctypes.\+sizeof(ctypes.\+c\+\_\+void\+\_\+p)
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1tests_1_1test__utils_1_1buftools_aca7d8c65900927f13682c80b7c6b3ef5}\label{namespacepygame_1_1tests_1_1test__utils_1_1buftools_aca7d8c65900927f13682c80b7c6b3ef5}} 
+{\bfseries c\+\_\+ssize\+\_\+t}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Module pygame.tests.test_utils.array
+
+Export the Exporter and Importer classes.
+
+Class Exporter has configurable shape and strides. Exporter objects
+provide a convient target for unit tests on Pygame objects and functions that
+import a new buffer interface.
+
+Class Importer imports a buffer interface with the given PyBUF_* flags.
+It returns NULL Py_buffer fields as None. The shape, strides, and suboffsets
+arrays are returned as tuples of ints. All Py_buffer field properties are
+read-only. This class is useful in comparing exported buffer interfaces
+with the actual request. The simular Python builtin memoryview currently
+does not support configurable PyBUF_* flags.
+
+This module contains its own unit tests. When Pygame is installed, these tests
+can be run with the following command line statement:
+
+python -m pygame.tests.test_utils.array\end{DoxyVerb}
+ 

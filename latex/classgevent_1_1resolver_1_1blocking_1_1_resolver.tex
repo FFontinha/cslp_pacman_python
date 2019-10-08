@@ -1,0 +1,41 @@
+\hypertarget{classgevent_1_1resolver_1_1blocking_1_1_resolver}{}\section{gevent.\+resolver.\+blocking.\+Resolver Class Reference}
+\label{classgevent_1_1resolver_1_1blocking_1_1_resolver}\index{gevent.\+resolver.\+blocking.\+Resolver@{gevent.\+resolver.\+blocking.\+Resolver}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1blocking_1_1_resolver_a32a08a6be94c9ca6d3bc0ad3efe12c0e}\label{classgevent_1_1resolver_1_1blocking_1_1_resolver_a32a08a6be94c9ca6d3bc0ad3efe12c0e}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, hub=None)
+\item 
+\mbox{\Hypertarget{classgevent_1_1resolver_1_1blocking_1_1_resolver_ae42f4cdc7a0950140c10fbbb2d8ea861}\label{classgevent_1_1resolver_1_1blocking_1_1_resolver_ae42f4cdc7a0950140c10fbbb2d8ea861}} 
+def {\bfseries close} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A resolver that directly uses the system's resolver functions.
+
+.. caution::
+
+    This resolver is *not* cooperative.
+
+This resolver has the lowest overhead of any resolver and
+typically approaches the speed of the unmodified :mod:`socket`
+functions. However, it is not cooperative, so if name resolution
+blocks, the entire thread and all its greenlets will be blocked.
+
+This can be useful during debugging, or it may be a good choice if
+your operating system provides a good caching resolver (such as
+macOS's Directory Services) that is usually very fast and
+functionally non-blocking.
+
+.. versionchanged:: 1.3a2
+   This was previously undocumented and existed in :mod:`gevent.socket`.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/resolver/blocking.\+py\end{DoxyCompactItemize}

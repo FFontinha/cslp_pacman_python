@@ -1,0 +1,104 @@
+\hypertarget{namespacepygame_1_1examples_1_1prevent__display__stretching}{}\section{pygame.\+examples.\+prevent\+\_\+display\+\_\+stretching Namespace Reference}
+\label{namespacepygame_1_1examples_1_1prevent__display__stretching}\index{pygame.\+examples.\+prevent\+\_\+display\+\_\+stretching@{pygame.\+examples.\+prevent\+\_\+display\+\_\+stretching}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_a034b9f07d55d11964ead7f0ddf6b0615}{selection} = \textquotesingle{}y\textquotesingle{}
+\item 
+string \hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_a86476f6ddd32f6569d5ceb1c00d9cb86}{msg} = \textquotesingle{}Stretching is prevented.\textquotesingle{}
+\item 
+\hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_a39af9ada0af856b295ebcacccf44da43}{user32} = ctypes.\+windll.\+user32
+\item 
+tuple \hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_a06b081393eecd9043fd8f990fc0b348e}{R\+E\+S\+O\+L\+U\+T\+I\+ON} = (350, 350)
+\item 
+\hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_ace43e5146d2035a456e7a97755618f55}{screen} = pygame.\+display.\+set\+\_\+mode(\hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_a06b081393eecd9043fd8f990fc0b348e}{R\+E\+S\+O\+L\+U\+T\+I\+ON})
+\item 
+\hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_a8f62218f54f4d1e72291f4d24b271cec}{font} = pygame.\+font.\+Font(None, 36)
+\item 
+\hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_ad84b8dee76a22eaf19f3e21f8e2df9b8}{msg\+\_\+surf} = font.\+render(\hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_a86476f6ddd32f6569d5ceb1c00d9cb86}{msg}, 1, \hyperlink{namespacepygame_ad27cf54b626cb073b189d7171af414fb}{pygame.\+Color}(\textquotesingle{}green\textquotesingle{}))
+\item 
+\hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_a428b54410e1aa5aa2304d436aaba0a36}{res\+\_\+surf} = font.\+render(\textquotesingle{}Intended resolution\+: \%ix\%i\textquotesingle{} \% \hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_a06b081393eecd9043fd8f990fc0b348e}{R\+E\+S\+O\+L\+U\+T\+I\+ON}, 1, \hyperlink{namespacepygame_ad27cf54b626cb073b189d7171af414fb}{pygame.\+Color}(\textquotesingle{}green\textquotesingle{}))
+\item 
+bool \hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_a1044502fc91fd281fc19ce657dadb9cb}{running} = True
+\item 
+\hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_a6f1441757a0ae78565f3d9d0a6e6e18a}{clock} = pygame.\+time.\+Clock()
+\item 
+int \hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_a416dc591af490919b6000f1cee208353}{counter} = 0
+\item 
+\hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_ad3cec33e3a632e0b98be2dbd2a2ad73b}{msg\+\_\+blit\+\_\+rect} = screen.\+blit(\hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_ad84b8dee76a22eaf19f3e21f8e2df9b8}{msg\+\_\+surf}, (0, 0))
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1prevent__display__stretching_a6f1441757a0ae78565f3d9d0a6e6e18a}\label{namespacepygame_1_1examples_1_1prevent__display__stretching_a6f1441757a0ae78565f3d9d0a6e6e18a}} 
+\index{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}!clock@{clock}}
+\index{clock@{clock}!pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}}
+\subsubsection{\texorpdfstring{clock}{clock}}
+{\footnotesize\ttfamily pygame.\+examples.\+prevent\+\_\+display\+\_\+stretching.\+clock = pygame.\+time.\+Clock()}
+
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1prevent__display__stretching_a416dc591af490919b6000f1cee208353}\label{namespacepygame_1_1examples_1_1prevent__display__stretching_a416dc591af490919b6000f1cee208353}} 
+\index{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}!counter@{counter}}
+\index{counter@{counter}!pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}}
+\subsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily int pygame.\+examples.\+prevent\+\_\+display\+\_\+stretching.\+counter = 0}
+
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1prevent__display__stretching_a8f62218f54f4d1e72291f4d24b271cec}\label{namespacepygame_1_1examples_1_1prevent__display__stretching_a8f62218f54f4d1e72291f4d24b271cec}} 
+\index{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}!font@{font}}
+\index{font@{font}!pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}}
+\subsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily pygame.\+examples.\+prevent\+\_\+display\+\_\+stretching.\+font = pygame.\+font.\+Font(None, 36)}
+
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1prevent__display__stretching_a86476f6ddd32f6569d5ceb1c00d9cb86}\label{namespacepygame_1_1examples_1_1prevent__display__stretching_a86476f6ddd32f6569d5ceb1c00d9cb86}} 
+\index{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}!msg@{msg}}
+\index{msg@{msg}!pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}}
+\subsubsection{\texorpdfstring{msg}{msg}}
+{\footnotesize\ttfamily string pygame.\+examples.\+prevent\+\_\+display\+\_\+stretching.\+msg = \textquotesingle{}Stretching is prevented.\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1prevent__display__stretching_ad3cec33e3a632e0b98be2dbd2a2ad73b}\label{namespacepygame_1_1examples_1_1prevent__display__stretching_ad3cec33e3a632e0b98be2dbd2a2ad73b}} 
+\index{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}!msg\+\_\+blit\+\_\+rect@{msg\+\_\+blit\+\_\+rect}}
+\index{msg\+\_\+blit\+\_\+rect@{msg\+\_\+blit\+\_\+rect}!pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}}
+\subsubsection{\texorpdfstring{msg\+\_\+blit\+\_\+rect}{msg\_blit\_rect}}
+{\footnotesize\ttfamily pygame.\+examples.\+prevent\+\_\+display\+\_\+stretching.\+msg\+\_\+blit\+\_\+rect = screen.\+blit(\hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_ad84b8dee76a22eaf19f3e21f8e2df9b8}{msg\+\_\+surf}, (0, 0))}
+
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1prevent__display__stretching_ad84b8dee76a22eaf19f3e21f8e2df9b8}\label{namespacepygame_1_1examples_1_1prevent__display__stretching_ad84b8dee76a22eaf19f3e21f8e2df9b8}} 
+\index{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}!msg\+\_\+surf@{msg\+\_\+surf}}
+\index{msg\+\_\+surf@{msg\+\_\+surf}!pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}}
+\subsubsection{\texorpdfstring{msg\+\_\+surf}{msg\_surf}}
+{\footnotesize\ttfamily pygame.\+examples.\+prevent\+\_\+display\+\_\+stretching.\+msg\+\_\+surf = font.\+render(\hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_a86476f6ddd32f6569d5ceb1c00d9cb86}{msg}, 1, \hyperlink{namespacepygame_ad27cf54b626cb073b189d7171af414fb}{pygame.\+Color}(\textquotesingle{}green\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1prevent__display__stretching_a428b54410e1aa5aa2304d436aaba0a36}\label{namespacepygame_1_1examples_1_1prevent__display__stretching_a428b54410e1aa5aa2304d436aaba0a36}} 
+\index{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}!res\+\_\+surf@{res\+\_\+surf}}
+\index{res\+\_\+surf@{res\+\_\+surf}!pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}}
+\subsubsection{\texorpdfstring{res\+\_\+surf}{res\_surf}}
+{\footnotesize\ttfamily pygame.\+examples.\+prevent\+\_\+display\+\_\+stretching.\+res\+\_\+surf = font.\+render(\textquotesingle{}Intended resolution\+: \%ix\%i\textquotesingle{} \% \hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_a06b081393eecd9043fd8f990fc0b348e}{R\+E\+S\+O\+L\+U\+T\+I\+ON}, 1, \hyperlink{namespacepygame_ad27cf54b626cb073b189d7171af414fb}{pygame.\+Color}(\textquotesingle{}green\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1prevent__display__stretching_a06b081393eecd9043fd8f990fc0b348e}\label{namespacepygame_1_1examples_1_1prevent__display__stretching_a06b081393eecd9043fd8f990fc0b348e}} 
+\index{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}!R\+E\+S\+O\+L\+U\+T\+I\+ON@{R\+E\+S\+O\+L\+U\+T\+I\+ON}}
+\index{R\+E\+S\+O\+L\+U\+T\+I\+ON@{R\+E\+S\+O\+L\+U\+T\+I\+ON}!pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}}
+\subsubsection{\texorpdfstring{R\+E\+S\+O\+L\+U\+T\+I\+ON}{RESOLUTION}}
+{\footnotesize\ttfamily tuple pygame.\+examples.\+prevent\+\_\+display\+\_\+stretching.\+R\+E\+S\+O\+L\+U\+T\+I\+ON = (350, 350)}
+
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1prevent__display__stretching_a1044502fc91fd281fc19ce657dadb9cb}\label{namespacepygame_1_1examples_1_1prevent__display__stretching_a1044502fc91fd281fc19ce657dadb9cb}} 
+\index{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}!running@{running}}
+\index{running@{running}!pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}}
+\subsubsection{\texorpdfstring{running}{running}}
+{\footnotesize\ttfamily bool pygame.\+examples.\+prevent\+\_\+display\+\_\+stretching.\+running = True}
+
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1prevent__display__stretching_ace43e5146d2035a456e7a97755618f55}\label{namespacepygame_1_1examples_1_1prevent__display__stretching_ace43e5146d2035a456e7a97755618f55}} 
+\index{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}!screen@{screen}}
+\index{screen@{screen}!pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}}
+\subsubsection{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily pygame.\+examples.\+prevent\+\_\+display\+\_\+stretching.\+screen = pygame.\+display.\+set\+\_\+mode(\hyperlink{namespacepygame_1_1examples_1_1prevent__display__stretching_a06b081393eecd9043fd8f990fc0b348e}{R\+E\+S\+O\+L\+U\+T\+I\+ON})}
+
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1prevent__display__stretching_a034b9f07d55d11964ead7f0ddf6b0615}\label{namespacepygame_1_1examples_1_1prevent__display__stretching_a034b9f07d55d11964ead7f0ddf6b0615}} 
+\index{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}!selection@{selection}}
+\index{selection@{selection}!pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}}
+\subsubsection{\texorpdfstring{selection}{selection}}
+{\footnotesize\ttfamily pygame.\+examples.\+prevent\+\_\+display\+\_\+stretching.\+selection = \textquotesingle{}y\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1prevent__display__stretching_a39af9ada0af856b295ebcacccf44da43}\label{namespacepygame_1_1examples_1_1prevent__display__stretching_a39af9ada0af856b295ebcacccf44da43}} 
+\index{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}!user32@{user32}}
+\index{user32@{user32}!pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching@{pygame\+::examples\+::prevent\+\_\+display\+\_\+stretching}}
+\subsubsection{\texorpdfstring{user32}{user32}}
+{\footnotesize\ttfamily pygame.\+examples.\+prevent\+\_\+display\+\_\+stretching.\+user32 = ctypes.\+windll.\+user32}
+

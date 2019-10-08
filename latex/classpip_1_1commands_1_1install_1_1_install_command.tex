@@ -1,0 +1,63 @@
+\hypertarget{classpip_1_1commands_1_1install_1_1_install_command}{}\section{pip.\+commands.\+install.\+Install\+Command Class Reference}
+\label{classpip_1_1commands_1_1install_1_1_install_command}\index{pip.\+commands.\+install.\+Install\+Command@{pip.\+commands.\+install.\+Install\+Command}}
+
+
+Inherits \hyperlink{classpip_1_1basecommand_1_1_requirement_command}{pip.\+basecommand.\+Requirement\+Command}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1commands_1_1install_1_1_install_command_aacdad79ade773b4ce2d504b5807da558}\label{classpip_1_1commands_1_1install_1_1_install_command_aacdad79ade773b4ce2d504b5807da558}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, args, kw)
+\item 
+\mbox{\Hypertarget{classpip_1_1commands_1_1install_1_1_install_command_a4595f956b896b8cffa7e10a807c0553a}\label{classpip_1_1commands_1_1install_1_1_install_command_a4595f956b896b8cffa7e10a807c0553a}} 
+def {\bfseries run} (self, options, args)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1commands_1_1install_1_1_install_command_a37fd13869af16262161d5ff98d3cb343}\label{classpip_1_1commands_1_1install_1_1_install_command_a37fd13869af16262161d5ff98d3cb343}} 
+string {\bfseries name} = \textquotesingle{}install\textquotesingle{}
+\item 
+string {\bfseries usage}
+\item 
+\mbox{\Hypertarget{classpip_1_1commands_1_1install_1_1_install_command_a1aed68f944f873e477e5eb71ca96db93}\label{classpip_1_1commands_1_1install_1_1_install_command_a1aed68f944f873e477e5eb71ca96db93}} 
+string {\bfseries summary} = \textquotesingle{}Install packages.\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Install packages from:
+
+- PyPI (and other indexes) using requirement specifiers.
+- VCS project urls.
+- Local project directories.
+- Local or remote source archives.
+
+pip also supports installing from "requirements files", which provide
+an easy way to specify a whole environment to be installed.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpip_1_1commands_1_1install_1_1_install_command_a4eb6f96bbe320ddd96da4756d9a01679}\label{classpip_1_1commands_1_1install_1_1_install_command_a4eb6f96bbe320ddd96da4756d9a01679}} 
+\index{pip\+::commands\+::install\+::\+Install\+Command@{pip\+::commands\+::install\+::\+Install\+Command}!usage@{usage}}
+\index{usage@{usage}!pip\+::commands\+::install\+::\+Install\+Command@{pip\+::commands\+::install\+::\+Install\+Command}}
+\subsubsection{\texorpdfstring{usage}{usage}}
+{\footnotesize\ttfamily string pip.\+commands.\+install.\+Install\+Command.\+usage\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \textcolor{stringliteral}{"""}
+\textcolor{stringliteral}{  %prog [options] <requirement specifier> [package-index-options] ...}
+\textcolor{stringliteral}{  %prog [options] -r <requirements file> [package-index-options] ...}
+\textcolor{stringliteral}{  %prog [options] [-e] <vcs project url> ...}
+\textcolor{stringliteral}{  %prog [options] [-e] <local project path> ...}
+\textcolor{stringliteral}{  %prog [options] <archive url/path> ..."""}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pip/commands/install.\+py\end{DoxyCompactItemize}

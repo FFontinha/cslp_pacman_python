@@ -1,0 +1,255 @@
+\hypertarget{namespacegevent_1_1__compat}{}\section{gevent.\+\_\+compat Namespace Reference}
+\label{namespacegevent_1_1__compat}\index{gevent.\+\_\+compat@{gevent.\+\_\+compat}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1__compat_a4a0e1b8df67d60b99bd9cc9a3cf71de5}{Native\+Str\+IO} ()
+\item 
+def \hyperlink{namespacegevent_1_1__compat_a07063d0a567e55c2e6081fe27aea1daf}{reraise} (t, value, tb=None)
+\begin{DoxyCompactList}\small\item\em Exceptions. \end{DoxyCompactList}\item 
+def \hyperlink{namespacegevent_1_1__compat_a50c20e8d50f8dbbc53fecc5beb05b37f}{exc\+\_\+clear} ()
+\item 
+def \hyperlink{namespacegevent_1_1__compat_a01664232f6552b9c39c515aed5b9a2a9}{fsencode} (filename)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespacegevent_1_1__compat_a4c797e14215a11782e89ac9d79319eef}{P\+Y2} = 2
+\item 
+int \hyperlink{namespacegevent_1_1__compat_a1f38bd9bcbba22fdec8ae256d328ebbd}{P\+Y3} = 3
+\item 
+\hyperlink{namespacegevent_1_1__compat_a1c5554c22e52f2b933b1f23af43c4fdb}{P\+Y\+PY} = hasattr(sys, \textquotesingle{}pypy\+\_\+version\+\_\+info\textquotesingle{})
+\item 
+\hyperlink{namespacegevent_1_1__compat_a887be9cbf2ddbbf113adcdec314f4438}{W\+IN} = sys.\+platform.\+startswith(\char`\"{}win\char`\"{})
+\item 
+\hyperlink{namespacegevent_1_1__compat_a40976c8a39be1eb8d1a09d0bf19d7cfe}{L\+I\+N\+UX} = sys.\+platform.\+startswith(\textquotesingle{}linux\textquotesingle{})
+\item 
+string \hyperlink{namespacegevent_1_1__compat_abc3311390157fd2ddfdb7c0ed4e15767}{O\+SX} = \textquotesingle{}darwin\textquotesingle{}
+\item 
+\hyperlink{namespacegevent_1_1__compat_ac9b543bba52d108734417c651f70f138}{P\+U\+R\+E\+\_\+\+P\+Y\+T\+H\+ON} = \hyperlink{namespacegevent_1_1__compat_a1c5554c22e52f2b933b1f23af43c4fdb}{P\+Y\+PY} or os.\+getenv(\textquotesingle{}P\+U\+R\+E\+\_\+\+P\+Y\+T\+H\+ON\textquotesingle{})
+\item 
+tuple \hyperlink{namespacegevent_1_1__compat_a2cec5c777b0096ac9a06a9b82f33b5b5}{string\+\_\+types} = (str,)
+\begin{DoxyCompactList}\small\item\em Types. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacegevent_1_1__compat_a187799adcbf897d7e24079b6c38deeba}{integer\+\_\+types} = (int,)
+\item 
+\hyperlink{namespacegevent_1_1__compat_a7264cc993b8f480e0fbd566e72f089f1}{text\+\_\+type} = str
+\item 
+tuple \hyperlink{namespacegevent_1_1__compat_a159360e096926e3ecba47ae9f7d62115}{native\+\_\+path\+\_\+types} = (str, bytes)
+\item 
+string \hyperlink{namespacegevent_1_1__compat_ac40cc83f74eb77f58053d1fe3b04ae66}{thread\+\_\+mod\+\_\+name} = \textquotesingle{}\+\_\+thread\textquotesingle{}
+\item 
+def \hyperlink{namespacegevent_1_1__compat_aff9b7c113467e5138ec6665fc6e96739}{reraise} = reraise
+\item 
+def \hyperlink{namespacegevent_1_1__compat_a0ad83ad0e9d4f7dfc80dc8b7d880429b}{exc\+\_\+clear} = sys.\+exc\+\_\+clear
+\item 
+\hyperlink{namespacegevent_1_1__compat_a944429ef95c4ca09ad27c8994361963e}{imp\+\_\+acquire\+\_\+lock} = imp.\+acquire\+\_\+lock
+\item 
+\hyperlink{namespacegevent_1_1__compat_aba43f7fa3eb1665fc4dc90566735add3}{imp\+\_\+release\+\_\+lock} = imp.\+release\+\_\+lock
+\item 
+\hyperlink{namespacegevent_1_1__compat_a1e84d240428e060258f93c34977b1d13}{iteritems} = dict.\+items
+\begin{DoxyCompactList}\small\item\em Functions. \end{DoxyCompactList}\item 
+\hyperlink{namespacegevent_1_1__compat_af63382a9c95ead77adf6c3b7305dabee}{itervalues} = dict.\+values
+\item 
+\hyperlink{namespacegevent_1_1__compat_a36b3d07c411c08f23bdf22f791a366fa}{xrange} = range
+\item 
+\hyperlink{namespacegevent_1_1__compat_af2f0d5be97491e26839022db0f01a7e5}{izip} = zip
+\item 
+def \hyperlink{namespacegevent_1_1__compat_a6ccd0d768303d89d43fee88e64c3836a}{fspath} = \+\_\+fspath
+\item 
+\hyperlink{namespacegevent_1_1__compat_a19f76a3ed005a53efa7c1b355bc6924d}{encoding} = sys.\+getfilesystemencoding() or (\textquotesingle{}utf-\/8\textquotesingle{} if not \hyperlink{namespacegevent_1_1__compat_a887be9cbf2ddbbf113adcdec314f4438}{W\+IN} else \textquotesingle{}mbcs\textquotesingle{})
+\item 
+string \hyperlink{namespacegevent_1_1__compat_aead37f1bc4f22b4a2fd7ebc324289618}{errors} = \textquotesingle{}mbcs\textquotesingle{} else \textquotesingle{}surrogateescape\textquotesingle{}
+\item 
+\hyperlink{namespacegevent_1_1__compat_aa416ad7c87475a5a7fc3d914a0af6ec7}{perf\+\_\+counter} = perf\+\_\+counter
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a50c20e8d50f8dbbc53fecc5beb05b37f}\label{namespacegevent_1_1__compat_a50c20e8d50f8dbbc53fecc5beb05b37f}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!exc\+\_\+clear@{exc\+\_\+clear}}
+\index{exc\+\_\+clear@{exc\+\_\+clear}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{exc\+\_\+clear()}{exc\_clear()}}
+{\footnotesize\ttfamily def gevent.\+\_\+compat.\+exc\+\_\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a01664232f6552b9c39c515aed5b9a2a9}\label{namespacegevent_1_1__compat_a01664232f6552b9c39c515aed5b9a2a9}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!fsencode@{fsencode}}
+\index{fsencode@{fsencode}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{fsencode()}{fsencode()}}
+{\footnotesize\ttfamily def gevent.\+\_\+compat.\+fsencode (\begin{DoxyParamCaption}\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Encode filename (an os.PathLike, bytes, or str) to the filesystem
+encoding with 'surrogateescape' error handler, return bytes unchanged.
+On Windows, use 'strict' error handler if the file system encoding is
+'mbcs' (which is the default encoding).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__compat_a4a0e1b8df67d60b99bd9cc9a3cf71de5}\label{namespacegevent_1_1__compat_a4a0e1b8df67d60b99bd9cc9a3cf71de5}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!Native\+Str\+IO@{Native\+Str\+IO}}
+\index{Native\+Str\+IO@{Native\+Str\+IO}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{Native\+Str\+I\+O()}{NativeStrIO()}}
+{\footnotesize\ttfamily def gevent.\+\_\+compat.\+Native\+Str\+IO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a07063d0a567e55c2e6081fe27aea1daf}\label{namespacegevent_1_1__compat_a07063d0a567e55c2e6081fe27aea1daf}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!reraise@{reraise}}
+\index{reraise@{reraise}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{reraise()}{reraise()}}
+{\footnotesize\ttfamily def gevent.\+\_\+compat.\+reraise (\begin{DoxyParamCaption}\item[{}]{t,  }\item[{}]{value,  }\item[{}]{tb = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Exceptions. 
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a19f76a3ed005a53efa7c1b355bc6924d}\label{namespacegevent_1_1__compat_a19f76a3ed005a53efa7c1b355bc6924d}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!encoding@{encoding}}
+\index{encoding@{encoding}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{encoding}{encoding}}
+{\footnotesize\ttfamily gevent.\+\_\+compat.\+encoding = sys.\+getfilesystemencoding() or (\textquotesingle{}utf-\/8\textquotesingle{} if not \hyperlink{namespacegevent_1_1__compat_a887be9cbf2ddbbf113adcdec314f4438}{W\+IN} else \textquotesingle{}mbcs\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_aead37f1bc4f22b4a2fd7ebc324289618}\label{namespacegevent_1_1__compat_aead37f1bc4f22b4a2fd7ebc324289618}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!errors@{errors}}
+\index{errors@{errors}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{errors}{errors}}
+{\footnotesize\ttfamily string gevent.\+\_\+compat.\+errors = \textquotesingle{}mbcs\textquotesingle{} else \textquotesingle{}surrogateescape\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a0ad83ad0e9d4f7dfc80dc8b7d880429b}\label{namespacegevent_1_1__compat_a0ad83ad0e9d4f7dfc80dc8b7d880429b}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!exc\+\_\+clear@{exc\+\_\+clear}}
+\index{exc\+\_\+clear@{exc\+\_\+clear}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{exc\+\_\+clear}{exc\_clear}}
+{\footnotesize\ttfamily def gevent.\+\_\+compat.\+exc\+\_\+clear = sys.\+exc\+\_\+clear}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a6ccd0d768303d89d43fee88e64c3836a}\label{namespacegevent_1_1__compat_a6ccd0d768303d89d43fee88e64c3836a}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!fspath@{fspath}}
+\index{fspath@{fspath}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{fspath}{fspath}}
+{\footnotesize\ttfamily def gevent.\+\_\+compat.\+fspath = \+\_\+fspath}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a944429ef95c4ca09ad27c8994361963e}\label{namespacegevent_1_1__compat_a944429ef95c4ca09ad27c8994361963e}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!imp\+\_\+acquire\+\_\+lock@{imp\+\_\+acquire\+\_\+lock}}
+\index{imp\+\_\+acquire\+\_\+lock@{imp\+\_\+acquire\+\_\+lock}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{imp\+\_\+acquire\+\_\+lock}{imp\_acquire\_lock}}
+{\footnotesize\ttfamily gevent.\+\_\+compat.\+imp\+\_\+acquire\+\_\+lock = imp.\+acquire\+\_\+lock}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_aba43f7fa3eb1665fc4dc90566735add3}\label{namespacegevent_1_1__compat_aba43f7fa3eb1665fc4dc90566735add3}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!imp\+\_\+release\+\_\+lock@{imp\+\_\+release\+\_\+lock}}
+\index{imp\+\_\+release\+\_\+lock@{imp\+\_\+release\+\_\+lock}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{imp\+\_\+release\+\_\+lock}{imp\_release\_lock}}
+{\footnotesize\ttfamily gevent.\+\_\+compat.\+imp\+\_\+release\+\_\+lock = imp.\+release\+\_\+lock}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a187799adcbf897d7e24079b6c38deeba}\label{namespacegevent_1_1__compat_a187799adcbf897d7e24079b6c38deeba}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!integer\+\_\+types@{integer\+\_\+types}}
+\index{integer\+\_\+types@{integer\+\_\+types}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{integer\+\_\+types}{integer\_types}}
+{\footnotesize\ttfamily tuple gevent.\+\_\+compat.\+integer\+\_\+types = (int,)}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a1e84d240428e060258f93c34977b1d13}\label{namespacegevent_1_1__compat_a1e84d240428e060258f93c34977b1d13}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!iteritems@{iteritems}}
+\index{iteritems@{iteritems}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{iteritems}{iteritems}}
+{\footnotesize\ttfamily gevent.\+\_\+compat.\+iteritems = dict.\+items}
+
+
+
+Functions. 
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_af63382a9c95ead77adf6c3b7305dabee}\label{namespacegevent_1_1__compat_af63382a9c95ead77adf6c3b7305dabee}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!itervalues@{itervalues}}
+\index{itervalues@{itervalues}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{itervalues}{itervalues}}
+{\footnotesize\ttfamily gevent.\+\_\+compat.\+itervalues = dict.\+values}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_af2f0d5be97491e26839022db0f01a7e5}\label{namespacegevent_1_1__compat_af2f0d5be97491e26839022db0f01a7e5}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!izip@{izip}}
+\index{izip@{izip}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{izip}{izip}}
+{\footnotesize\ttfamily gevent.\+\_\+compat.\+izip = zip}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a40976c8a39be1eb8d1a09d0bf19d7cfe}\label{namespacegevent_1_1__compat_a40976c8a39be1eb8d1a09d0bf19d7cfe}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!L\+I\+N\+UX@{L\+I\+N\+UX}}
+\index{L\+I\+N\+UX@{L\+I\+N\+UX}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{L\+I\+N\+UX}{LINUX}}
+{\footnotesize\ttfamily gevent.\+\_\+compat.\+L\+I\+N\+UX = sys.\+platform.\+startswith(\textquotesingle{}linux\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a159360e096926e3ecba47ae9f7d62115}\label{namespacegevent_1_1__compat_a159360e096926e3ecba47ae9f7d62115}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!native\+\_\+path\+\_\+types@{native\+\_\+path\+\_\+types}}
+\index{native\+\_\+path\+\_\+types@{native\+\_\+path\+\_\+types}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{native\+\_\+path\+\_\+types}{native\_path\_types}}
+{\footnotesize\ttfamily tuple gevent.\+\_\+compat.\+native\+\_\+path\+\_\+types = (str, bytes)}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_abc3311390157fd2ddfdb7c0ed4e15767}\label{namespacegevent_1_1__compat_abc3311390157fd2ddfdb7c0ed4e15767}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!O\+SX@{O\+SX}}
+\index{O\+SX@{O\+SX}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{O\+SX}{OSX}}
+{\footnotesize\ttfamily string gevent.\+\_\+compat.\+O\+SX = \textquotesingle{}darwin\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_aa416ad7c87475a5a7fc3d914a0af6ec7}\label{namespacegevent_1_1__compat_aa416ad7c87475a5a7fc3d914a0af6ec7}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!perf\+\_\+counter@{perf\+\_\+counter}}
+\index{perf\+\_\+counter@{perf\+\_\+counter}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{perf\+\_\+counter}{perf\_counter}}
+{\footnotesize\ttfamily gevent.\+\_\+compat.\+perf\+\_\+counter = perf\+\_\+counter}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_ac9b543bba52d108734417c651f70f138}\label{namespacegevent_1_1__compat_ac9b543bba52d108734417c651f70f138}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!P\+U\+R\+E\+\_\+\+P\+Y\+T\+H\+ON@{P\+U\+R\+E\+\_\+\+P\+Y\+T\+H\+ON}}
+\index{P\+U\+R\+E\+\_\+\+P\+Y\+T\+H\+ON@{P\+U\+R\+E\+\_\+\+P\+Y\+T\+H\+ON}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{P\+U\+R\+E\+\_\+\+P\+Y\+T\+H\+ON}{PURE\_PYTHON}}
+{\footnotesize\ttfamily gevent.\+\_\+compat.\+P\+U\+R\+E\+\_\+\+P\+Y\+T\+H\+ON = \hyperlink{namespacegevent_1_1__compat_a1c5554c22e52f2b933b1f23af43c4fdb}{P\+Y\+PY} or os.\+getenv(\textquotesingle{}P\+U\+R\+E\+\_\+\+P\+Y\+T\+H\+ON\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a4c797e14215a11782e89ac9d79319eef}\label{namespacegevent_1_1__compat_a4c797e14215a11782e89ac9d79319eef}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!P\+Y2@{P\+Y2}}
+\index{P\+Y2@{P\+Y2}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{P\+Y2}{PY2}}
+{\footnotesize\ttfamily int gevent.\+\_\+compat.\+P\+Y2 = 2}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a1f38bd9bcbba22fdec8ae256d328ebbd}\label{namespacegevent_1_1__compat_a1f38bd9bcbba22fdec8ae256d328ebbd}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!P\+Y3@{P\+Y3}}
+\index{P\+Y3@{P\+Y3}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{P\+Y3}{PY3}}
+{\footnotesize\ttfamily int gevent.\+\_\+compat.\+P\+Y3 = 3}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a1c5554c22e52f2b933b1f23af43c4fdb}\label{namespacegevent_1_1__compat_a1c5554c22e52f2b933b1f23af43c4fdb}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!P\+Y\+PY@{P\+Y\+PY}}
+\index{P\+Y\+PY@{P\+Y\+PY}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{P\+Y\+PY}{PYPY}}
+{\footnotesize\ttfamily gevent.\+\_\+compat.\+P\+Y\+PY = hasattr(sys, \textquotesingle{}pypy\+\_\+version\+\_\+info\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_aff9b7c113467e5138ec6665fc6e96739}\label{namespacegevent_1_1__compat_aff9b7c113467e5138ec6665fc6e96739}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!reraise@{reraise}}
+\index{reraise@{reraise}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{reraise}{reraise}}
+{\footnotesize\ttfamily def gevent.\+\_\+compat.\+reraise = reraise}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a2cec5c777b0096ac9a06a9b82f33b5b5}\label{namespacegevent_1_1__compat_a2cec5c777b0096ac9a06a9b82f33b5b5}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!string\+\_\+types@{string\+\_\+types}}
+\index{string\+\_\+types@{string\+\_\+types}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{string\+\_\+types}{string\_types}}
+{\footnotesize\ttfamily tuple gevent.\+\_\+compat.\+string\+\_\+types = (str,)}
+
+
+
+Types. 
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a7264cc993b8f480e0fbd566e72f089f1}\label{namespacegevent_1_1__compat_a7264cc993b8f480e0fbd566e72f089f1}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!text\+\_\+type@{text\+\_\+type}}
+\index{text\+\_\+type@{text\+\_\+type}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{text\+\_\+type}{text\_type}}
+{\footnotesize\ttfamily gevent.\+\_\+compat.\+text\+\_\+type = str}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_ac40cc83f74eb77f58053d1fe3b04ae66}\label{namespacegevent_1_1__compat_ac40cc83f74eb77f58053d1fe3b04ae66}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!thread\+\_\+mod\+\_\+name@{thread\+\_\+mod\+\_\+name}}
+\index{thread\+\_\+mod\+\_\+name@{thread\+\_\+mod\+\_\+name}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{thread\+\_\+mod\+\_\+name}{thread\_mod\_name}}
+{\footnotesize\ttfamily string gevent.\+\_\+compat.\+thread\+\_\+mod\+\_\+name = \textquotesingle{}\+\_\+thread\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a887be9cbf2ddbbf113adcdec314f4438}\label{namespacegevent_1_1__compat_a887be9cbf2ddbbf113adcdec314f4438}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!W\+IN@{W\+IN}}
+\index{W\+IN@{W\+IN}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{W\+IN}{WIN}}
+{\footnotesize\ttfamily gevent.\+\_\+compat.\+W\+IN = sys.\+platform.\+startswith(\char`\"{}win\char`\"{})}
+
+\mbox{\Hypertarget{namespacegevent_1_1__compat_a36b3d07c411c08f23bdf22f791a366fa}\label{namespacegevent_1_1__compat_a36b3d07c411c08f23bdf22f791a366fa}} 
+\index{gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}!xrange@{xrange}}
+\index{xrange@{xrange}!gevent\+::\+\_\+compat@{gevent\+::\+\_\+compat}}
+\subsubsection{\texorpdfstring{xrange}{xrange}}
+{\footnotesize\ttfamily gevent.\+\_\+compat.\+xrange = range}
+

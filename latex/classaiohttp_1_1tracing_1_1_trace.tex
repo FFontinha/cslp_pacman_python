@@ -1,0 +1,63 @@
+\hypertarget{classaiohttp_1_1tracing_1_1_trace}{}\section{aiohttp.\+tracing.\+Trace Class Reference}
+\label{classaiohttp_1_1tracing_1_1_trace}\index{aiohttp.\+tracing.\+Trace@{aiohttp.\+tracing.\+Trace}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a401a5c3c1f7c71172017f1499115078e}\label{classaiohttp_1_1tracing_1_1_trace_a401a5c3c1f7c71172017f1499115078e}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, session, trace\+\_\+config, trace\+\_\+config\+\_\+ctx)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1tracing_1_1_trace_ac25ab4dbdbf475e54d65322ea676dcc2}\label{classaiohttp_1_1tracing_1_1_trace_ac25ab4dbdbf475e54d65322ea676dcc2}} 
+def {\bfseries send\+\_\+request\+\_\+start} (self, method, url, headers)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1tracing_1_1_trace_ad6edb3a4abf7597c3e888697a10681b7}\label{classaiohttp_1_1tracing_1_1_trace_ad6edb3a4abf7597c3e888697a10681b7}} 
+def {\bfseries send\+\_\+request\+\_\+chunk\+\_\+sent} (self, chunk)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a957eb0b9b769deb3f872d50325839275}\label{classaiohttp_1_1tracing_1_1_trace_a957eb0b9b769deb3f872d50325839275}} 
+def {\bfseries send\+\_\+response\+\_\+chunk\+\_\+received} (self, chunk)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1tracing_1_1_trace_ae697d4ae7db1f9382504e616e172c189}\label{classaiohttp_1_1tracing_1_1_trace_ae697d4ae7db1f9382504e616e172c189}} 
+def {\bfseries send\+\_\+request\+\_\+end} (self, method, url, headers, response)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a290238e90fca43b05f9a0454e7986387}\label{classaiohttp_1_1tracing_1_1_trace_a290238e90fca43b05f9a0454e7986387}} 
+def {\bfseries send\+\_\+request\+\_\+exception} (self, method, url, headers, exception)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a8876c18183b51d7c3361e0b9892a76b6}\label{classaiohttp_1_1tracing_1_1_trace_a8876c18183b51d7c3361e0b9892a76b6}} 
+def {\bfseries send\+\_\+request\+\_\+redirect} (self, method, url, headers, response)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a74d69e6509d15230edbc95a8b88412d3}\label{classaiohttp_1_1tracing_1_1_trace_a74d69e6509d15230edbc95a8b88412d3}} 
+def {\bfseries send\+\_\+connection\+\_\+queued\+\_\+start} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1tracing_1_1_trace_ab48295408eea3a5d837f2cd096242580}\label{classaiohttp_1_1tracing_1_1_trace_ab48295408eea3a5d837f2cd096242580}} 
+def {\bfseries send\+\_\+connection\+\_\+queued\+\_\+end} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1tracing_1_1_trace_ab2b31a09211c3dac359c21ed1f2d0cbd}\label{classaiohttp_1_1tracing_1_1_trace_ab2b31a09211c3dac359c21ed1f2d0cbd}} 
+def {\bfseries send\+\_\+connection\+\_\+create\+\_\+start} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1tracing_1_1_trace_abfcb6361c65c20417873162bb54572dc}\label{classaiohttp_1_1tracing_1_1_trace_abfcb6361c65c20417873162bb54572dc}} 
+def {\bfseries send\+\_\+connection\+\_\+create\+\_\+end} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a6109e99dc6b556998db426397e225544}\label{classaiohttp_1_1tracing_1_1_trace_a6109e99dc6b556998db426397e225544}} 
+def {\bfseries send\+\_\+connection\+\_\+reuseconn} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1tracing_1_1_trace_af266798ba0985e5bb8fd2d581c04080d}\label{classaiohttp_1_1tracing_1_1_trace_af266798ba0985e5bb8fd2d581c04080d}} 
+def {\bfseries send\+\_\+dns\+\_\+resolvehost\+\_\+start} (self, host)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1tracing_1_1_trace_acd7ac8c5e62f78e7b775f9f9355e21c5}\label{classaiohttp_1_1tracing_1_1_trace_acd7ac8c5e62f78e7b775f9f9355e21c5}} 
+def {\bfseries send\+\_\+dns\+\_\+resolvehost\+\_\+end} (self, host)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a098401acdfc1f5f23dc9776a2061fb65}\label{classaiohttp_1_1tracing_1_1_trace_a098401acdfc1f5f23dc9776a2061fb65}} 
+def {\bfseries send\+\_\+dns\+\_\+cache\+\_\+hit} (self, host)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a65332996454dbcf74fef4490901e4591}\label{classaiohttp_1_1tracing_1_1_trace_a65332996454dbcf74fef4490901e4591}} 
+def {\bfseries send\+\_\+dns\+\_\+cache\+\_\+miss} (self, host)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Internal class used to keep together the main dependencies used
+at the moment of send a signal.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/tracing.\+py\end{DoxyCompactItemize}

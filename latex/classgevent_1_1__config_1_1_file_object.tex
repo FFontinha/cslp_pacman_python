@@ -1,0 +1,69 @@
+\hypertarget{classgevent_1_1__config_1_1_file_object}{}\section{gevent.\+\_\+config.\+File\+Object Class Reference}
+\label{classgevent_1_1__config_1_1_file_object}\index{gevent.\+\_\+config.\+File\+Object@{gevent.\+\_\+config.\+File\+Object}}
+
+
+Inherits \hyperlink{classgevent_1_1__config_1_1_importable_setting}{gevent.\+\_\+config.\+Importable\+Setting}, and \hyperlink{classgevent_1_1__config_1_1_setting}{gevent.\+\_\+config.\+Setting}.
+
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries desc}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_file_object_a00bde1f1782d70e4623f906565fbb877}\label{classgevent_1_1__config_1_1_file_object_a00bde1f1782d70e4623f906565fbb877}} 
+string {\bfseries environment\+\_\+key} = \textquotesingle{}G\+E\+V\+E\+N\+T\+\_\+\+F\+I\+LE\textquotesingle{}
+\item 
+list {\bfseries default}
+\item 
+dictionary {\bfseries shortname\+\_\+map}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_file_object_aef88355621466f434244602d3af8bc64}\label{classgevent_1_1__config_1_1_file_object_aef88355621466f434244602d3af8bc64}} 
+\index{gevent\+::\+\_\+config\+::\+File\+Object@{gevent\+::\+\_\+config\+::\+File\+Object}!default@{default}}
+\index{default@{default}!gevent\+::\+\_\+config\+::\+File\+Object@{gevent\+::\+\_\+config\+::\+File\+Object}}
+\subsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily list gevent.\+\_\+config.\+File\+Object.\+default\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  [
+        \textcolor{stringliteral}{'posix'},
+        \textcolor{stringliteral}{'thread'},
+    ]
+\end{DoxyCode}
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_file_object_aeb0f272fe17ac9387346098d3a67941e}\label{classgevent_1_1__config_1_1_file_object_aeb0f272fe17ac9387346098d3a67941e}} 
+\index{gevent\+::\+\_\+config\+::\+File\+Object@{gevent\+::\+\_\+config\+::\+File\+Object}!desc@{desc}}
+\index{desc@{desc}!gevent\+::\+\_\+config\+::\+File\+Object@{gevent\+::\+\_\+config\+::\+File\+Object}}
+\subsubsection{\texorpdfstring{desc}{desc}}
+{\footnotesize\ttfamily string gevent.\+\_\+config.\+File\+Object.\+desc\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \textcolor{stringliteral}{"""\(\backslash\)}
+\textcolor{stringliteral}{The kind of ``FileObject`` we will use.}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{See :mod:`gevent.fileobject` for a detailed description.}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{"""}
+\end{DoxyCode}
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_file_object_a1ed8b4ac0ba90309998541a15d54d0ed}\label{classgevent_1_1__config_1_1_file_object_a1ed8b4ac0ba90309998541a15d54d0ed}} 
+\index{gevent\+::\+\_\+config\+::\+File\+Object@{gevent\+::\+\_\+config\+::\+File\+Object}!shortname\+\_\+map@{shortname\+\_\+map}}
+\index{shortname\+\_\+map@{shortname\+\_\+map}!gevent\+::\+\_\+config\+::\+File\+Object@{gevent\+::\+\_\+config\+::\+File\+Object}}
+\subsubsection{\texorpdfstring{shortname\+\_\+map}{shortname\_map}}
+{\footnotesize\ttfamily dictionary gevent.\+\_\+config.\+File\+Object.\+shortname\+\_\+map\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \{
+        \textcolor{stringliteral}{'thread'}: \textcolor{stringliteral}{'gevent.\_fileobjectcommon.FileObjectThread'},
+        \textcolor{stringliteral}{'posix'}: \textcolor{stringliteral}{'gevent.\_fileobjectposix.FileObjectPosix'},
+        \textcolor{stringliteral}{'block'}: \textcolor{stringliteral}{'gevent.\_fileobjectcommon.FileObjectBlock'}
+    \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/\+\_\+config.\+py\end{DoxyCompactItemize}

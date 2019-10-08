@@ -1,0 +1,26 @@
+var classpygame_1_1tests_1_1display__test_1_1_display_module_test =
+[
+    [ "test_update", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#abaaba357fe0822f6010a6b1b8ad6cccf", null ],
+    [ "todo_test_flip", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#a72afcaa7f5c36e344e7c154c16b34a1b", null ],
+    [ "todo_test_get_active", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#a528355432483953b665c847d965572a3", null ],
+    [ "todo_test_get_caption", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#a91bc4de9ddb8091e12a167193cb9547e", null ],
+    [ "todo_test_get_driver", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#a71abc50381ad574397784e861a8dbc5d", null ],
+    [ "todo_test_get_init", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#a1fdaab5d7712b90bb4e1c5dd2dcd553a", null ],
+    [ "todo_test_get_surface", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#ac8bdbc4b69f3d429aa3aea8b6ac5411e", null ],
+    [ "todo_test_get_wm_info", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#a77d6fb78a947e197dc16a64b0b33a6c7", null ],
+    [ "todo_test_gl_get_attribute", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#a5c4ec95c02f18947ba38e1dc53bc1ba4", null ],
+    [ "todo_test_gl_set_attribute", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#a798c8ef7852133a786b44fbdfbecb7cf", null ],
+    [ "todo_test_iconify", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#a1bf9503f4c8a3f9fdd611c1503f10641", null ],
+    [ "todo_test_Info", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#ab0b14fa331c10858fa9b1bb8af12af2e", null ],
+    [ "todo_test_init", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#a883db00e91186ae9b1a0f5fd29e811d6", null ],
+    [ "todo_test_list_modes", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#ad12e5b6c4fd3691764dc8fbe29bbf50f", null ],
+    [ "todo_test_mode_ok", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#ae461d4ca42ed99e357dbabe7936905f0", null ],
+    [ "todo_test_quit", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#a4bf95da2e47b5e1d8a4248e1e6f9dba5", null ],
+    [ "todo_test_set_caption", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#ae602a4dd93036b6a5275cc014f3bb4e3", null ],
+    [ "todo_test_set_gamma", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#af8668c494d1f0bf00ac56083cb0eecf2", null ],
+    [ "todo_test_set_gamma_ramp", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#af327cd416379c24b46ce494a2572a302", null ],
+    [ "todo_test_set_icon", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#afea3c7cb5f98a1e6cc6c3b3af70be44a", null ],
+    [ "todo_test_set_mode", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#af5959ef5cec49bd7243d35b0e258f9da", null ],
+    [ "todo_test_set_palette", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#a77614652de936da7449ed13407140734", null ],
+    [ "todo_test_toggle_fullscreen", "classpygame_1_1tests_1_1display__test_1_1_display_module_test.html#a78596d1a436a572a9141da0c12c81027", null ]
+];

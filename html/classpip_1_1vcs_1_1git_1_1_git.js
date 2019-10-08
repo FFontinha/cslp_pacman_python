@@ -1,0 +1,25 @@
+var classpip_1_1vcs_1_1git_1_1_git =
+[
+    [ "__init__", "classpip_1_1vcs_1_1git_1_1_git.html#a877dc4f7f36e782785f3ff43e7443ada", null ],
+    [ "check_rev_options", "classpip_1_1vcs_1_1git_1_1_git.html#a3dcf087bd4e3b6ec255bc8de709ba7bf", null ],
+    [ "check_version", "classpip_1_1vcs_1_1git_1_1_git.html#a46aa03992931441d49a275a4e15953c2", null ],
+    [ "controls_location", "classpip_1_1vcs_1_1git_1_1_git.html#a9d82be6394269502943843c25462fcb3", null ],
+    [ "export", "classpip_1_1vcs_1_1git_1_1_git.html#ae58419806faec1e58516a3d253b63611", null ],
+    [ "get_full_refs", "classpip_1_1vcs_1_1git_1_1_git.html#a047000fdc1194f32005744dff5ac929d", null ],
+    [ "get_git_version", "classpip_1_1vcs_1_1git_1_1_git.html#a893127cecd38949beb8ea75df0a0c83f", null ],
+    [ "get_refs", "classpip_1_1vcs_1_1git_1_1_git.html#a785801c2b23742bf9a5fe6d2c25be6eb", null ],
+    [ "get_revision", "classpip_1_1vcs_1_1git_1_1_git.html#a02b02c0cf190078182b57d7c5c1a7c7c", null ],
+    [ "get_short_refs", "classpip_1_1vcs_1_1git_1_1_git.html#a31f34b094034c842af0dcf29a43826cd", null ],
+    [ "get_src_requirement", "classpip_1_1vcs_1_1git_1_1_git.html#a79e2a54753fdff90e0bad7f53d6cb1af", null ],
+    [ "get_url", "classpip_1_1vcs_1_1git_1_1_git.html#afc57b1e93b7e9446f4b0f5bde3d70be4", null ],
+    [ "get_url_rev", "classpip_1_1vcs_1_1git_1_1_git.html#a4bef8c67067f75d14376fb2208b1076d", null ],
+    [ "is_ref_branch", "classpip_1_1vcs_1_1git_1_1_git.html#a83bc947cef0a4da006a076189d47930b", null ],
+    [ "is_ref_commit", "classpip_1_1vcs_1_1git_1_1_git.html#a608b7df61ed6b95a42e6989777e981ca", null ],
+    [ "is_ref_remote", "classpip_1_1vcs_1_1git_1_1_git.html#afc373f792a7f4f6029298aade14a374c", null ],
+    [ "is_ref_tag", "classpip_1_1vcs_1_1git_1_1_git.html#aa93078b2632f969cd2df3dec2b31ac41", null ],
+    [ "obtain", "classpip_1_1vcs_1_1git_1_1_git.html#a5ad287451ecb79d3501838e0aece4d19", null ],
+    [ "switch", "classpip_1_1vcs_1_1git_1_1_git.html#ae86e1ddcf73078786a655753a7fc24a9", null ],
+    [ "update", "classpip_1_1vcs_1_1git_1_1_git.html#a362b2eb89024210e9154eda47d41b933", null ],
+    [ "update_submodules", "classpip_1_1vcs_1_1git_1_1_git.html#a2bdda103e6260261f57929bbec5ea967", null ],
+    [ "url", "classpip_1_1vcs_1_1git_1_1_git.html#aa3d85476fb9507fa24b99fc462ec5b6f", null ]
+];

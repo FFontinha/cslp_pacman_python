@@ -1,0 +1,83 @@
+\hypertarget{classgevent_1_1__interfaces_1_1_i_watcher}{}\section{gevent.\+\_\+interfaces.\+I\+Watcher Class Reference}
+\label{classgevent_1_1__interfaces_1_1_i_watcher}\index{gevent.\+\_\+interfaces.\+I\+Watcher@{gevent.\+\_\+interfaces.\+I\+Watcher}}
+
+
+Inherits \hyperlink{classgevent_1_1__util_1_1_interface}{gevent.\+\_\+util.\+Interface}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_watcher_a0ecb4c9a628a14ba3cd45bdf0b2a7387}{start} (callback, args, kwargs)
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_watcher_a285925e2c547d325758920cf94f961b6}{stop} ()
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_watcher_a119615038fcb2da7473f22b8570b90bb}{close} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}An event loop watcher.
+
+These objects call their *callback* function when the event
+loop detects the event has happened.
+
+.. important:: You *must* call :meth:`close` when you are
+   done with this object to avoid leaking native resources.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_watcher_a119615038fcb2da7473f22b8570b90bb}\label{classgevent_1_1__interfaces_1_1_i_watcher_a119615038fcb2da7473f22b8570b90bb}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Watcher@{gevent\+::\+\_\+interfaces\+::\+I\+Watcher}!close@{close}}
+\index{close@{close}!gevent\+::\+\_\+interfaces\+::\+I\+Watcher@{gevent\+::\+\_\+interfaces\+::\+I\+Watcher}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Watcher.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dispose of any native resources associated with the watcher.
+
+If we were active, stop.
+
+Attempting to operate on this object after calling close is
+undefined. You should dispose of any references you have to it
+after calling this method.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_watcher_a0ecb4c9a628a14ba3cd45bdf0b2a7387}\label{classgevent_1_1__interfaces_1_1_i_watcher_a0ecb4c9a628a14ba3cd45bdf0b2a7387}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Watcher@{gevent\+::\+\_\+interfaces\+::\+I\+Watcher}!start@{start}}
+\index{start@{start}!gevent\+::\+\_\+interfaces\+::\+I\+Watcher@{gevent\+::\+\_\+interfaces\+::\+I\+Watcher}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Watcher.\+start (\begin{DoxyParamCaption}\item[{}]{callback,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}An event loop watcher.
+
+These objects call their *callback* function when the event
+loop detects the event has happened.
+
+.. important:: You *must* call :meth:`close` when you are
+   done with this object to avoid leaking native resources.
+\end{DoxyVerb}
+\begin{DoxyVerb}Have the event loop begin watching for this event.
+
+When the event is detected, *callback* will be called with
+*args*.
+
+.. caution::
+
+    Not all watchers accept ``**kwargs``,
+    and some watchers define special meanings for certain keyword args.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_watcher_a285925e2c547d325758920cf94f961b6}\label{classgevent_1_1__interfaces_1_1_i_watcher_a285925e2c547d325758920cf94f961b6}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Watcher@{gevent\+::\+\_\+interfaces\+::\+I\+Watcher}!stop@{stop}}
+\index{stop@{stop}!gevent\+::\+\_\+interfaces\+::\+I\+Watcher@{gevent\+::\+\_\+interfaces\+::\+I\+Watcher}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Watcher.\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Have the event loop stop watching this event.
+
+In the future you may call :meth:`start` to begin watching
+again.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/\+\_\+interfaces.\+py\end{DoxyCompactItemize}

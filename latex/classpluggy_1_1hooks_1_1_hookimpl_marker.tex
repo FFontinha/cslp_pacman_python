@@ -1,0 +1,63 @@
+\hypertarget{classpluggy_1_1hooks_1_1_hookimpl_marker}{}\section{pluggy.\+hooks.\+Hookimpl\+Marker Class Reference}
+\label{classpluggy_1_1hooks_1_1_hookimpl_marker}\index{pluggy.\+hooks.\+Hookimpl\+Marker@{pluggy.\+hooks.\+Hookimpl\+Marker}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpluggy_1_1hooks_1_1_hookimpl_marker_a9fd5436a0b4b87c27706c6227e1dbc86}\label{classpluggy_1_1hooks_1_1_hookimpl_marker_a9fd5436a0b4b87c27706c6227e1dbc86}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, project\+\_\+name)
+\item 
+def \hyperlink{classpluggy_1_1hooks_1_1_hookimpl_marker_a1ea05e056abe8433e2762497b0b7a629}{\+\_\+\+\_\+call\+\_\+\+\_\+} (self, function=None, hookwrapper=False, optionalhook=False, tryfirst=False, trylast=False)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpluggy_1_1hooks_1_1_hookimpl_marker_a9caea8a81d4843b411382b26c77256d8}\label{classpluggy_1_1hooks_1_1_hookimpl_marker_a9caea8a81d4843b411382b26c77256d8}} 
+{\bfseries project\+\_\+name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Decorator helper class for marking functions as hook implementations.
+
+You can instantiate with a project_name to get a decorator.
+Calling PluginManager.register later will discover all marked functions
+if the PluginManager uses the same project_name.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpluggy_1_1hooks_1_1_hookimpl_marker_a1ea05e056abe8433e2762497b0b7a629}\label{classpluggy_1_1hooks_1_1_hookimpl_marker_a1ea05e056abe8433e2762497b0b7a629}} 
+\index{pluggy\+::hooks\+::\+Hookimpl\+Marker@{pluggy\+::hooks\+::\+Hookimpl\+Marker}!\+\_\+\+\_\+call\+\_\+\+\_\+@{\+\_\+\+\_\+call\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+call\+\_\+\+\_\+@{\+\_\+\+\_\+call\+\_\+\+\_\+}!pluggy\+::hooks\+::\+Hookimpl\+Marker@{pluggy\+::hooks\+::\+Hookimpl\+Marker}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+call\+\_\+\+\_\+()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily def pluggy.\+hooks.\+Hookimpl\+Marker.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{function = {\ttfamily None},  }\item[{}]{hookwrapper = {\ttfamily False},  }\item[{}]{optionalhook = {\ttfamily False},  }\item[{}]{tryfirst = {\ttfamily False},  }\item[{}]{trylast = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}if passed a function, directly sets attributes on the function
+which will make it discoverable to register().  If passed no function,
+returns a decorator which can be applied to a function later using
+the attributes supplied.
+
+If optionalhook is True a missing matching hook specification will not result
+in an error (by default it is an error if no matching spec is found).
+
+If tryfirst is True this hook implementation will run as early as possible
+in the chain of N hook implementations for a specfication.
+
+If trylast is True this hook implementation will run as late as possible
+in the chain of N hook implementations.
+
+If hookwrapper is True the hook implementations needs to execute exactly
+one "yield".  The code before the yield is run early before any non-hookwrapper
+function is run.  The code after the yield is run after all non-hookwrapper
+function have run.  The yield receives a ``_Result`` object representing
+the exception or result outcome of the inner calls (including other hookwrapper
+calls).\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pluggy/hooks.\+py\end{DoxyCompactItemize}

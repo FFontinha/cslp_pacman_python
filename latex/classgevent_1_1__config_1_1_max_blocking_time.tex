@@ -1,0 +1,55 @@
+\hypertarget{classgevent_1_1__config_1_1_max_blocking_time}{}\section{gevent.\+\_\+config.\+Max\+Blocking\+Time Class Reference}
+\label{classgevent_1_1__config_1_1_max_blocking_time}\index{gevent.\+\_\+config.\+Max\+Blocking\+Time@{gevent.\+\_\+config.\+Max\+Blocking\+Time}}
+
+
+Inherits \hyperlink{classgevent_1_1__config_1_1_float_setting_mixin}{gevent.\+\_\+config.\+Float\+Setting\+Mixin}, and \hyperlink{classgevent_1_1__config_1_1_setting}{gevent.\+\_\+config.\+Setting}.
+
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_max_blocking_time_a90cc8c2bd2cac342304547ac7269948f}\label{classgevent_1_1__config_1_1_max_blocking_time_a90cc8c2bd2cac342304547ac7269948f}} 
+string {\bfseries name} = \textquotesingle{}max\+\_\+blocking\+\_\+time\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_max_blocking_time_ad80a9b39686c57a432ebed4ed575176b}\label{classgevent_1_1__config_1_1_max_blocking_time_ad80a9b39686c57a432ebed4ed575176b}} 
+string {\bfseries environment\+\_\+key} = \textquotesingle{}G\+E\+V\+E\+N\+T\+\_\+\+M\+A\+X\+\_\+\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+T\+I\+ME\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_max_blocking_time_a59b88b2026cd5b3f83153be072dba87c}\label{classgevent_1_1__config_1_1_max_blocking_time_a59b88b2026cd5b3f83153be072dba87c}} 
+float {\bfseries default} = 0.\+1
+\item 
+string {\bfseries desc}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_max_blocking_time_a6e3c69a5339f95c35892d4e4f53e517f}\label{classgevent_1_1__config_1_1_max_blocking_time_a6e3c69a5339f95c35892d4e4f53e517f}} 
+\index{gevent\+::\+\_\+config\+::\+Max\+Blocking\+Time@{gevent\+::\+\_\+config\+::\+Max\+Blocking\+Time}!desc@{desc}}
+\index{desc@{desc}!gevent\+::\+\_\+config\+::\+Max\+Blocking\+Time@{gevent\+::\+\_\+config\+::\+Max\+Blocking\+Time}}
+\subsubsection{\texorpdfstring{desc}{desc}}
+{\footnotesize\ttfamily string gevent.\+\_\+config.\+Max\+Blocking\+Time.\+desc\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \textcolor{stringliteral}{"""\(\backslash\)}
+\textcolor{stringliteral}{If the `monitor\_thread` is enabled, this is}
+\textcolor{stringliteral}{approximately how long (in seconds)}
+\textcolor{stringliteral}{the event loop will be allowed to block before a warning is issued.}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{This function depends on using `greenlet.settrace`, so installing}
+\textcolor{stringliteral}{your own trace function after starting the monitoring thread will}
+\textcolor{stringliteral}{cause this feature to misbehave unless you call the function}
+\textcolor{stringliteral}{returned by `greenlet.settrace`. If you install a tracing function *before*}
+\textcolor{stringliteral}{the monitoring thread is started, it will still be called.}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{.. note:: In the unlikely event of creating and using multiple different}
+\textcolor{stringliteral}{    gevent hubs in the same native thread in a short period of time,}
+\textcolor{stringliteral}{    especially without destroying the hubs, false positives may be reported.}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{.. versionadded:: 1.3b1}
+\textcolor{stringliteral}{"""}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/\+\_\+config.\+py\end{DoxyCompactItemize}

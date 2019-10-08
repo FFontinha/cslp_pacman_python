@@ -1,0 +1,80 @@
+\hypertarget{namespaceaiohttp_1_1http__websocket}{}\section{aiohttp.\+http\+\_\+websocket Namespace Reference}
+\label{namespaceaiohttp_1_1http__websocket}\index{aiohttp.\+http\+\_\+websocket@{aiohttp.\+http\+\_\+websocket}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classaiohttp_1_1http__websocket_1_1_web_socket_error}{Web\+Socket\+Error}
+\item 
+class \hyperlink{classaiohttp_1_1http__websocket_1_1_web_socket_reader}{Web\+Socket\+Reader}
+\item 
+class \hyperlink{classaiohttp_1_1http__websocket_1_1_web_socket_writer}{Web\+Socket\+Writer}
+\item 
+class \hyperlink{classaiohttp_1_1http__websocket_1_1_w_s_close_code}{W\+S\+Close\+Code}
+\item 
+class \hyperlink{classaiohttp_1_1http__websocket_1_1_w_s_handshake_error}{W\+S\+Handshake\+Error}
+\item 
+class \hyperlink{classaiohttp_1_1http__websocket_1_1_w_s_message}{W\+S\+Message}
+\item 
+class \hyperlink{classaiohttp_1_1http__websocket_1_1_w_s_msg_type}{W\+S\+Msg\+Type}
+\item 
+class \hyperlink{classaiohttp_1_1http__websocket_1_1_w_s_parser_state}{W\+S\+Parser\+State}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1http__websocket_a62028adfbdc841f05e53610f89b6df92}\label{namespaceaiohttp_1_1http__websocket_a62028adfbdc841f05e53610f89b6df92}} 
+def {\bfseries ws\+\_\+ext\+\_\+parse} (extstr, isserver=False)
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1http__websocket_ad3abbe32655ba260830dc4f90db389a2}\label{namespaceaiohttp_1_1http__websocket_ad3abbe32655ba260830dc4f90db389a2}} 
+def {\bfseries ws\+\_\+ext\+\_\+gen} (compress=15, isserver=False, server\+\_\+notakeover=False)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1http__websocket_a07098798da5c7d501ec57302d39a5ce0}\label{namespaceaiohttp_1_1http__websocket_a07098798da5c7d501ec57302d39a5ce0}} 
+dictionary {\bfseries A\+L\+L\+O\+W\+E\+D\+\_\+\+C\+L\+O\+S\+E\+\_\+\+C\+O\+D\+ES} = \{int(i) for i in \hyperlink{classaiohttp_1_1http__websocket_1_1_w_s_close_code}{W\+S\+Close\+Code}\}
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1http__websocket_a5cc531a18fe7fa0cb99be19996267f6e}\label{namespaceaiohttp_1_1http__websocket_a5cc531a18fe7fa0cb99be19996267f6e}} 
+string {\bfseries W\+S\+\_\+\+K\+EY} = b\textquotesingle{}258\+E\+A\+F\+A5-\/\+E914-\/47\+D\+A-\/95\+C\+A-\/\+C5\+A\+B0\+D\+C85\+B11\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1http__websocket_a3445712a7a06ef6b602f04edc8ca6498}\label{namespaceaiohttp_1_1http__websocket_a3445712a7a06ef6b602f04edc8ca6498}} 
+{\bfseries U\+N\+P\+A\+C\+K\+\_\+\+L\+E\+N2} = Struct(\textquotesingle{}!H\textquotesingle{}).unpack\+\_\+from
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1http__websocket_a8bd5f8b9ffaf302ec48e21fa4cb602c6}\label{namespaceaiohttp_1_1http__websocket_a8bd5f8b9ffaf302ec48e21fa4cb602c6}} 
+{\bfseries U\+N\+P\+A\+C\+K\+\_\+\+L\+E\+N3} = Struct(\textquotesingle{}!Q\textquotesingle{}).unpack\+\_\+from
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1http__websocket_abb6017a3d87ae1eddd6000583289d0ab}\label{namespaceaiohttp_1_1http__websocket_abb6017a3d87ae1eddd6000583289d0ab}} 
+{\bfseries U\+N\+P\+A\+C\+K\+\_\+\+C\+L\+O\+S\+E\+\_\+\+C\+O\+DE} = Struct(\textquotesingle{}!H\textquotesingle{}).unpack
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1http__websocket_a0e8e25a728a806c0bf63dd3c64713de3}\label{namespaceaiohttp_1_1http__websocket_a0e8e25a728a806c0bf63dd3c64713de3}} 
+{\bfseries P\+A\+C\+K\+\_\+\+L\+E\+N1} = Struct(\textquotesingle{}!BB\textquotesingle{}).pack
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1http__websocket_a1984c394d3fb9e07c90d45eeae359b1f}\label{namespaceaiohttp_1_1http__websocket_a1984c394d3fb9e07c90d45eeae359b1f}} 
+{\bfseries P\+A\+C\+K\+\_\+\+L\+E\+N2} = Struct(\textquotesingle{}!B\+BH\textquotesingle{}).pack
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1http__websocket_a8e842995172b8f079ee2a9d93a9b2fdc}\label{namespaceaiohttp_1_1http__websocket_a8e842995172b8f079ee2a9d93a9b2fdc}} 
+{\bfseries P\+A\+C\+K\+\_\+\+L\+E\+N3} = Struct(\textquotesingle{}!B\+BQ\textquotesingle{}).pack
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1http__websocket_a474c9f18a2e71ffdde97c227124997bb}\label{namespaceaiohttp_1_1http__websocket_a474c9f18a2e71ffdde97c227124997bb}} 
+{\bfseries P\+A\+C\+K\+\_\+\+C\+L\+O\+S\+E\+\_\+\+C\+O\+DE} = Struct(\textquotesingle{}!H\textquotesingle{}).pack
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1http__websocket_a80d564768019991c30648a67545d2164}\label{namespaceaiohttp_1_1http__websocket_a80d564768019991c30648a67545d2164}} 
+int {\bfseries M\+S\+G\+\_\+\+S\+I\+ZE} = 2 $\ast$$\ast$ 14
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1http__websocket_a6712753b6c74c61aba861215118cddd0}\label{namespaceaiohttp_1_1http__websocket_a6712753b6c74c61aba861215118cddd0}} 
+int {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+I\+M\+IT} = 2 $\ast$$\ast$ 16
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1http__websocket_afdf07a7e232194cc59108715106c08c6}\label{namespaceaiohttp_1_1http__websocket_afdf07a7e232194cc59108715106c08c6}} 
+{\bfseries W\+S\+\_\+\+C\+L\+O\+S\+E\+D\+\_\+\+M\+E\+S\+S\+A\+GE} = \hyperlink{classaiohttp_1_1http__websocket_1_1_w_s_message}{W\+S\+Message}(W\+S\+Msg\+Type.\+C\+L\+O\+S\+ED, None, None)
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1http__websocket_aaddabbb42420a2ae44c8e4041b94d072}\label{namespaceaiohttp_1_1http__websocket_aaddabbb42420a2ae44c8e4041b94d072}} 
+{\bfseries W\+S\+\_\+\+C\+L\+O\+S\+I\+N\+G\+\_\+\+M\+E\+S\+S\+A\+GE} = \hyperlink{classaiohttp_1_1http__websocket_1_1_w_s_message}{W\+S\+Message}(W\+S\+Msg\+Type.\+C\+L\+O\+S\+I\+NG, None, None)
+\item 
+\mbox{\Hypertarget{namespaceaiohttp_1_1http__websocket_ad0af940d4edebba41a41e6ce7f3e1092}\label{namespaceaiohttp_1_1http__websocket_ad0af940d4edebba41a41e6ce7f3e1092}} 
+{\bfseries native\+\_\+byteorder} = sys.\+byteorder
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}WebSocket protocol versions 13 and 8.\end{DoxyVerb}
+ 

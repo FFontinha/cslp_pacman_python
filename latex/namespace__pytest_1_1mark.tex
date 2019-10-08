@@ -1,0 +1,68 @@
+\hypertarget{namespace__pytest_1_1mark}{}\section{\+\_\+pytest.\+mark Namespace Reference}
+\label{namespace__pytest_1_1mark}\index{\+\_\+pytest.\+mark@{\+\_\+pytest.\+mark}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace__pytest_1_1mark_1_1legacy}{legacy}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class__pytest_1_1mark_1_1_marker_error}{Marker\+Error}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespace__pytest_1_1mark_accf86ce8219b1b4a565453330568b6b8}{param} (values, kw)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1mark_a6c0576c6c4a5ef9c79556acad24cf8c2}\label{namespace__pytest_1_1mark_a6c0576c6c4a5ef9c79556acad24cf8c2}} 
+def {\bfseries pytest\+\_\+addoption} (parser)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1mark_a67aebef1a2449fe7ee4b89744a1e46c5}\label{namespace__pytest_1_1mark_a67aebef1a2449fe7ee4b89744a1e46c5}} 
+def {\bfseries pytest\+\_\+cmdline\+\_\+main} (config)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1mark_afa13a08c6a6d1c497685dce4136a302e}\label{namespace__pytest_1_1mark_afa13a08c6a6d1c497685dce4136a302e}} 
+def {\bfseries deselect\+\_\+by\+\_\+keyword} (items, config)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1mark_ad0c13bc86c3a5465b27f44b9100d4742}\label{namespace__pytest_1_1mark_ad0c13bc86c3a5465b27f44b9100d4742}} 
+def {\bfseries deselect\+\_\+by\+\_\+mark} (items, config)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1mark_adde1733e109dc92c38315f2fb23f0fb1}\label{namespace__pytest_1_1mark_adde1733e109dc92c38315f2fb23f0fb1}} 
+def {\bfseries pytest\+\_\+collection\+\_\+modifyitems} (items, config)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1mark_aba57d084b88f3c63b94eeb1c6c1a957c}\label{namespace__pytest_1_1mark_aba57d084b88f3c63b94eeb1c6c1a957c}} 
+def {\bfseries pytest\+\_\+configure} (config)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1mark_a633f9b78c7be7f6f9d36ac5043361805}\label{namespace__pytest_1_1mark_a633f9b78c7be7f6f9d36ac5043361805}} 
+def {\bfseries pytest\+\_\+unconfigure} (config)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}generic mechanism for marking and selecting python functions. \end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1mark_accf86ce8219b1b4a565453330568b6b8}\label{namespace__pytest_1_1mark_accf86ce8219b1b4a565453330568b6b8}} 
+\index{\+\_\+pytest\+::mark@{\+\_\+pytest\+::mark}!param@{param}}
+\index{param@{param}!\+\_\+pytest\+::mark@{\+\_\+pytest\+::mark}}
+\subsubsection{\texorpdfstring{param()}{param()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+mark.\+param (\begin{DoxyParamCaption}\item[{}]{values,  }\item[{}]{kw }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Specify a parameter in `pytest.mark.parametrize`_ calls or
+:ref:`parametrized fixtures <fixture-parametrize-marks>`.
+
+.. code-block:: python
+
+    @pytest.mark.parametrize("test_input,expected", [
+        ("3+5", 8),
+        pytest.param("6*9", 42, marks=pytest.mark.xfail),
+    ])
+    def test_eval(test_input, expected):
+        assert eval(test_input) == expected
+
+:param values: variable args of the values of the parameter set, in order.
+:keyword marks: a single mark or a list of marks to be applied to this parameter set.
+:keyword str id: the id to attribute to this parameter set.
+\end{DoxyVerb}
+ 

@@ -1,0 +1,97 @@
+\hypertarget{classpip_1_1baseparser_1_1_config_option_parser}{}\section{pip.\+baseparser.\+Config\+Option\+Parser Class Reference}
+\label{classpip_1_1baseparser_1_1_config_option_parser}\index{pip.\+baseparser.\+Config\+Option\+Parser@{pip.\+baseparser.\+Config\+Option\+Parser}}
+
+
+Inherits \hyperlink{classpip_1_1baseparser_1_1_custom_option_parser}{pip.\+baseparser.\+Custom\+Option\+Parser}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1baseparser_1_1_config_option_parser_a13d9f22982d31a7c2834ea0103350cb8}\label{classpip_1_1baseparser_1_1_config_option_parser_a13d9f22982d31a7c2834ea0103350cb8}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, args, kwargs)
+\item 
+\mbox{\Hypertarget{classpip_1_1baseparser_1_1_config_option_parser_a8fc07caba31d4a62c8b7eba0eaafbe9b}\label{classpip_1_1baseparser_1_1_config_option_parser_a8fc07caba31d4a62c8b7eba0eaafbe9b}} 
+def {\bfseries get\+\_\+config\+\_\+files} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1baseparser_1_1_config_option_parser_a28a88e73f4195ba1647e231e36b1b7f1}\label{classpip_1_1baseparser_1_1_config_option_parser_a28a88e73f4195ba1647e231e36b1b7f1}} 
+def {\bfseries check\+\_\+default} (self, option, key, val)
+\item 
+def \hyperlink{classpip_1_1baseparser_1_1_config_option_parser_a69d71a377015a9faa50da36fef01d313}{normalize\+\_\+keys} (self, items)
+\item 
+def \hyperlink{classpip_1_1baseparser_1_1_config_option_parser_a833df2251c0c281cc1edede5a2421b8b}{get\+\_\+config\+\_\+section} (self, name)
+\item 
+def \hyperlink{classpip_1_1baseparser_1_1_config_option_parser_a7c9d3c7d370dfbcf198e412678a07a5f}{get\+\_\+environ\+\_\+vars} (self)
+\item 
+def \hyperlink{classpip_1_1baseparser_1_1_config_option_parser_a376557439a966569d80a173ebd2aaccd}{get\+\_\+default\+\_\+values} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1baseparser_1_1_config_option_parser_a74c009037085c3cacad996b4613dec1c}\label{classpip_1_1baseparser_1_1_config_option_parser_a74c009037085c3cacad996b4613dec1c}} 
+def {\bfseries error} (self, msg)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1baseparser_1_1_config_option_parser_a6bd5f65a9dea9d3d122259782002df2d}\label{classpip_1_1baseparser_1_1_config_option_parser_a6bd5f65a9dea9d3d122259782002df2d}} 
+{\bfseries config}
+\item 
+\mbox{\Hypertarget{classpip_1_1baseparser_1_1_config_option_parser_ae15dc060b8a45a3750b6c659a2cfc523}\label{classpip_1_1baseparser_1_1_config_option_parser_ae15dc060b8a45a3750b6c659a2cfc523}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{classpip_1_1baseparser_1_1_config_option_parser_ab9ba7e08764f689a6c211fcee92d983d}\label{classpip_1_1baseparser_1_1_config_option_parser_ab9ba7e08764f689a6c211fcee92d983d}} 
+{\bfseries isolated}
+\item 
+\mbox{\Hypertarget{classpip_1_1baseparser_1_1_config_option_parser_ab7d3287d254043e808aa4047a1b454da}\label{classpip_1_1baseparser_1_1_config_option_parser_ab7d3287d254043e808aa4047a1b454da}} 
+{\bfseries files}
+\item 
+\mbox{\Hypertarget{classpip_1_1baseparser_1_1_config_option_parser_a436be8961b32e006d82b6201ceb2527a}\label{classpip_1_1baseparser_1_1_config_option_parser_a436be8961b32e006d82b6201ceb2527a}} 
+{\bfseries values}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1baseparser_1_1_config_option_parser_ae9cbd8b46812184ae559a00c74291ffd}\label{classpip_1_1baseparser_1_1_config_option_parser_ae9cbd8b46812184ae559a00c74291ffd}} 
+bool {\bfseries isolated} = False
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Custom option parser which updates its defaults by checking the
+configuration files and environmental variables\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1baseparser_1_1_config_option_parser_a833df2251c0c281cc1edede5a2421b8b}\label{classpip_1_1baseparser_1_1_config_option_parser_a833df2251c0c281cc1edede5a2421b8b}} 
+\index{pip\+::baseparser\+::\+Config\+Option\+Parser@{pip\+::baseparser\+::\+Config\+Option\+Parser}!get\+\_\+config\+\_\+section@{get\+\_\+config\+\_\+section}}
+\index{get\+\_\+config\+\_\+section@{get\+\_\+config\+\_\+section}!pip\+::baseparser\+::\+Config\+Option\+Parser@{pip\+::baseparser\+::\+Config\+Option\+Parser}}
+\subsubsection{\texorpdfstring{get\+\_\+config\+\_\+section()}{get\_config\_section()}}
+{\footnotesize\ttfamily def pip.\+baseparser.\+Config\+Option\+Parser.\+get\+\_\+config\+\_\+section (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a section of a configuration\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1baseparser_1_1_config_option_parser_a376557439a966569d80a173ebd2aaccd}\label{classpip_1_1baseparser_1_1_config_option_parser_a376557439a966569d80a173ebd2aaccd}} 
+\index{pip\+::baseparser\+::\+Config\+Option\+Parser@{pip\+::baseparser\+::\+Config\+Option\+Parser}!get\+\_\+default\+\_\+values@{get\+\_\+default\+\_\+values}}
+\index{get\+\_\+default\+\_\+values@{get\+\_\+default\+\_\+values}!pip\+::baseparser\+::\+Config\+Option\+Parser@{pip\+::baseparser\+::\+Config\+Option\+Parser}}
+\subsubsection{\texorpdfstring{get\+\_\+default\+\_\+values()}{get\_default\_values()}}
+{\footnotesize\ttfamily def pip.\+baseparser.\+Config\+Option\+Parser.\+get\+\_\+default\+\_\+values (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Overriding to make updating the defaults after instantiation of
+the option parser possible, _update_defaults() does the dirty work.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1baseparser_1_1_config_option_parser_a7c9d3c7d370dfbcf198e412678a07a5f}\label{classpip_1_1baseparser_1_1_config_option_parser_a7c9d3c7d370dfbcf198e412678a07a5f}} 
+\index{pip\+::baseparser\+::\+Config\+Option\+Parser@{pip\+::baseparser\+::\+Config\+Option\+Parser}!get\+\_\+environ\+\_\+vars@{get\+\_\+environ\+\_\+vars}}
+\index{get\+\_\+environ\+\_\+vars@{get\+\_\+environ\+\_\+vars}!pip\+::baseparser\+::\+Config\+Option\+Parser@{pip\+::baseparser\+::\+Config\+Option\+Parser}}
+\subsubsection{\texorpdfstring{get\+\_\+environ\+\_\+vars()}{get\_environ\_vars()}}
+{\footnotesize\ttfamily def pip.\+baseparser.\+Config\+Option\+Parser.\+get\+\_\+environ\+\_\+vars (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a generator with all environmental vars with prefix PIP_\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1baseparser_1_1_config_option_parser_a69d71a377015a9faa50da36fef01d313}\label{classpip_1_1baseparser_1_1_config_option_parser_a69d71a377015a9faa50da36fef01d313}} 
+\index{pip\+::baseparser\+::\+Config\+Option\+Parser@{pip\+::baseparser\+::\+Config\+Option\+Parser}!normalize\+\_\+keys@{normalize\+\_\+keys}}
+\index{normalize\+\_\+keys@{normalize\+\_\+keys}!pip\+::baseparser\+::\+Config\+Option\+Parser@{pip\+::baseparser\+::\+Config\+Option\+Parser}}
+\subsubsection{\texorpdfstring{normalize\+\_\+keys()}{normalize\_keys()}}
+{\footnotesize\ttfamily def pip.\+baseparser.\+Config\+Option\+Parser.\+normalize\+\_\+keys (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{items }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a config dictionary with normalized keys regardless of
+whether the keys were specified in environment variables or in config
+files\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pip/baseparser.\+py\end{DoxyCompactItemize}

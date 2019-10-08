@@ -1,0 +1,157 @@
+\hypertarget{classpy_1_1__path_1_1svnurl_1_1_svn_command_path}{}\section{py.\+\_\+path.\+svnurl.\+Svn\+Command\+Path Class Reference}
+\label{classpy_1_1__path_1_1svnurl_1_1_svn_command_path}\index{py.\+\_\+path.\+svnurl.\+Svn\+Command\+Path@{py.\+\_\+path.\+svnurl.\+Svn\+Command\+Path}}
+
+
+Inherits Svn\+Path\+Base.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_ac54ac68fd066b73ff5d33d5e89762aac}\label{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_ac54ac68fd066b73ff5d33d5e89762aac}} 
+def {\bfseries \+\_\+\+\_\+new\+\_\+\+\_\+} (cls, path, rev=None, auth=None)
+\item 
+\mbox{\Hypertarget{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_ab291ce79a949ede391c39555907bdd46}\label{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_ab291ce79a949ede391c39555907bdd46}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a66e970e14d18e617b26b7f95718233db}{open} (self, mode=\textquotesingle{}r\textquotesingle{})
+\item 
+def \hyperlink{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a56514d25aea1ebc54e20fabac10b98f2}{dirpath} (self, args, kwargs)
+\item 
+def \hyperlink{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a3d92713c05b9a68cd4ef4ffad5d56bd0}{mkdir} (self, args, kwargs)
+\item 
+def \hyperlink{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_aa24a5d520b9506e99516a6f40b4f8c20}{copy} (self, target, msg=\textquotesingle{}copied by py lib invocation\textquotesingle{})
+\item 
+def \hyperlink{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a6cc47cfdd362d1c6ef80029cacefc174}{rename} (self, target, msg=\char`\"{}renamed by py lib invocation\char`\"{})
+\item 
+def \hyperlink{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a0659be1acadcbb206fe24d69587c5327}{remove} (self, rec=1, msg=\textquotesingle{}removed by py lib invocation\textquotesingle{})
+\item 
+def \hyperlink{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a15e070016e51ace4118b18bc7ee5e942}{export} (self, topath)
+\item 
+def \hyperlink{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a8a262945224f11008f10757907fe3e40}{ensure} (self, args, kwargs)
+\item 
+def \hyperlink{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_aaf4b361937c91ea7803582881782aa52}{info} (self)
+\item 
+def \hyperlink{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a3b00a0a86e5fa7d7dea985c810673ff7}{listdir} (self, fil=None, sort=None)
+\item 
+def \hyperlink{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a0552e3647238a74f351ea7d7f04f06e5}{log} (self, rev\+\_\+start=None, rev\+\_\+end=1, verbose=False)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a9c96c63a94c79026ae43d244cf009316}\label{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a9c96c63a94c79026ae43d244cf009316}} 
+{\bfseries strpath}
+\item 
+\mbox{\Hypertarget{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a2fa6691a550192269b60ff7908664439}\label{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a2fa6691a550192269b60ff7908664439}} 
+{\bfseries rev}
+\item 
+\mbox{\Hypertarget{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_ace21eef58371565b17851ebf274aafa8}\label{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_ace21eef58371565b17851ebf274aafa8}} 
+{\bfseries auth}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}path implementation that offers access to (possibly remote) subversion
+repositories. \end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_aa24a5d520b9506e99516a6f40b4f8c20}\label{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_aa24a5d520b9506e99516a6f40b4f8c20}} 
+\index{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}!copy@{copy}}
+\index{copy@{copy}!py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+svnurl.\+Svn\+Command\+Path.\+copy (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{target,  }\item[{}]{msg = {\ttfamily \textquotesingle{}copied~by~py~lib~invocation\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}copy path to target with checkin message msg.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a56514d25aea1ebc54e20fabac10b98f2}\label{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a56514d25aea1ebc54e20fabac10b98f2}} 
+\index{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}!dirpath@{dirpath}}
+\index{dirpath@{dirpath}!py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}}
+\subsubsection{\texorpdfstring{dirpath()}{dirpath()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+svnurl.\+Svn\+Command\+Path.\+dirpath (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return the directory path of the current path joined
+    with any given path arguments.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a8a262945224f11008f10757907fe3e40}\label{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a8a262945224f11008f10757907fe3e40}} 
+\index{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}!ensure@{ensure}}
+\index{ensure@{ensure}!py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}}
+\subsubsection{\texorpdfstring{ensure()}{ensure()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+svnurl.\+Svn\+Command\+Path.\+ensure (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}ensure that an args-joined path exists (by default as
+    a file). If you specify a keyword argument 'dir=True'
+    then the path is forced to be a directory path.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a15e070016e51ace4118b18bc7ee5e942}\label{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a15e070016e51ace4118b18bc7ee5e942}} 
+\index{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}!export@{export}}
+\index{export@{export}!py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}}
+\subsubsection{\texorpdfstring{export()}{export()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+svnurl.\+Svn\+Command\+Path.\+export (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{topath }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}export to a local path
+
+    topath should not exist prior to calling this, returns a
+    py.path.local instance
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_aaf4b361937c91ea7803582881782aa52}\label{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_aaf4b361937c91ea7803582881782aa52}} 
+\index{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}!info@{info}}
+\index{info@{info}!py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}}
+\subsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+svnurl.\+Svn\+Command\+Path.\+info (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return an Info structure with svn-provided information. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a3b00a0a86e5fa7d7dea985c810673ff7}\label{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a3b00a0a86e5fa7d7dea985c810673ff7}} 
+\index{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}!listdir@{listdir}}
+\index{listdir@{listdir}!py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}}
+\subsubsection{\texorpdfstring{listdir()}{listdir()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+svnurl.\+Svn\+Command\+Path.\+listdir (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fil = {\ttfamily None},  }\item[{}]{sort = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}list directory contents, possibly filter by the given fil func
+    and possibly sorted.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a0552e3647238a74f351ea7d7f04f06e5}\label{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a0552e3647238a74f351ea7d7f04f06e5}} 
+\index{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}!log@{log}}
+\index{log@{log}!py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}}
+\subsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+svnurl.\+Svn\+Command\+Path.\+log (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{rev\+\_\+start = {\ttfamily None},  }\item[{}]{rev\+\_\+end = {\ttfamily 1},  }\item[{}]{verbose = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a list of LogEntry instances for this path.
+rev_start is the starting revision (defaulting to the first one).
+rev_end is the last revision (defaulting to HEAD).
+if verbose is True, then the LogEntry instances also know which files changed.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a3d92713c05b9a68cd4ef4ffad5d56bd0}\label{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a3d92713c05b9a68cd4ef4ffad5d56bd0}} 
+\index{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}!mkdir@{mkdir}}
+\index{mkdir@{mkdir}!py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}}
+\subsubsection{\texorpdfstring{mkdir()}{mkdir()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+svnurl.\+Svn\+Command\+Path.\+mkdir (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}create & return the directory joined with args.
+pass a 'msg' keyword argument to set the commit message.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a66e970e14d18e617b26b7f95718233db}\label{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a66e970e14d18e617b26b7f95718233db}} 
+\index{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}!open@{open}}
+\index{open@{open}!py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}}
+\subsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+svnurl.\+Svn\+Command\+Path.\+open (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{mode = {\ttfamily \textquotesingle{}r\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return an opened file with the given mode. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a0659be1acadcbb206fe24d69587c5327}\label{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a0659be1acadcbb206fe24d69587c5327}} 
+\index{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}!remove@{remove}}
+\index{remove@{remove}!py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+svnurl.\+Svn\+Command\+Path.\+remove (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{rec = {\ttfamily 1},  }\item[{}]{msg = {\ttfamily \textquotesingle{}removed~by~py~lib~invocation\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}remove a file or directory (or a directory tree if rec=1) with
+checkin message msg.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a6cc47cfdd362d1c6ef80029cacefc174}\label{classpy_1_1__path_1_1svnurl_1_1_svn_command_path_a6cc47cfdd362d1c6ef80029cacefc174}} 
+\index{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}!rename@{rename}}
+\index{rename@{rename}!py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path@{py\+::\+\_\+path\+::svnurl\+::\+Svn\+Command\+Path}}
+\subsubsection{\texorpdfstring{rename()}{rename()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+svnurl.\+Svn\+Command\+Path.\+rename (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{target,  }\item[{}]{msg = {\ttfamily \char`\"{}renamed~by~py~lib~invocation\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}rename this path to target with checkin message msg. \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/py/\+\_\+path/svnurl.\+py\end{DoxyCompactItemize}

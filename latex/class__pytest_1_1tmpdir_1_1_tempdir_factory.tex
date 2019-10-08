@@ -1,0 +1,74 @@
+\hypertarget{class__pytest_1_1tmpdir_1_1_tempdir_factory}{}\section{\+\_\+pytest.\+tmpdir.\+Tempdir\+Factory Class Reference}
+\label{class__pytest_1_1tmpdir_1_1_tempdir_factory}\index{\+\_\+pytest.\+tmpdir.\+Tempdir\+Factory@{\+\_\+pytest.\+tmpdir.\+Tempdir\+Factory}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1tmpdir_1_1_tempdir_factory_a5f6438e7e6797e5c3f87ac2629295174}\label{class__pytest_1_1tmpdir_1_1_tempdir_factory_a5f6438e7e6797e5c3f87ac2629295174}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, config)
+\item 
+def \hyperlink{class__pytest_1_1tmpdir_1_1_tempdir_factory_aa7de55caeecdc6dafeba3bfa130df7b6}{ensuretemp} (self, string, dir=1)
+\item 
+def \hyperlink{class__pytest_1_1tmpdir_1_1_tempdir_factory_a3a41e666a0a7da2e5d90f110971e0090}{mktemp} (self, basename, numbered=True)
+\item 
+def \hyperlink{class__pytest_1_1tmpdir_1_1_tempdir_factory_adb19657479e448f3661212cf73f0d9ac}{getbasetemp} (self)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1tmpdir_1_1_tempdir_factory_ac9b5da486733de211baf94b71bd29d56}\label{class__pytest_1_1tmpdir_1_1_tempdir_factory_ac9b5da486733de211baf94b71bd29d56}} 
+def {\bfseries finish} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1tmpdir_1_1_tempdir_factory_a61619d60d3cc5bb0035ee974975655e4}\label{class__pytest_1_1tmpdir_1_1_tempdir_factory_a61619d60d3cc5bb0035ee974975655e4}} 
+{\bfseries config}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1tmpdir_1_1_tempdir_factory_a607a4a7e62e0791697aca0a1ee0af88a}\label{class__pytest_1_1tmpdir_1_1_tempdir_factory_a607a4a7e62e0791697aca0a1ee0af88a}} 
+{\bfseries trace}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Factory for temporary directories under the common base temp directory.
+
+The base directory can be configured using the ``--basetemp`` option.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1tmpdir_1_1_tempdir_factory_aa7de55caeecdc6dafeba3bfa130df7b6}\label{class__pytest_1_1tmpdir_1_1_tempdir_factory_aa7de55caeecdc6dafeba3bfa130df7b6}} 
+\index{\+\_\+pytest\+::tmpdir\+::\+Tempdir\+Factory@{\+\_\+pytest\+::tmpdir\+::\+Tempdir\+Factory}!ensuretemp@{ensuretemp}}
+\index{ensuretemp@{ensuretemp}!\+\_\+pytest\+::tmpdir\+::\+Tempdir\+Factory@{\+\_\+pytest\+::tmpdir\+::\+Tempdir\+Factory}}
+\subsubsection{\texorpdfstring{ensuretemp()}{ensuretemp()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+tmpdir.\+Tempdir\+Factory.\+ensuretemp (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{string,  }\item[{}]{dir = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}(deprecated) return temporary directory path with
+    the given string as the trailing part.  It is usually
+    better to use the 'tmpdir' function argument which
+    provides an empty unique-per-test-invocation directory
+    and is guaranteed to be empty.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1tmpdir_1_1_tempdir_factory_adb19657479e448f3661212cf73f0d9ac}\label{class__pytest_1_1tmpdir_1_1_tempdir_factory_adb19657479e448f3661212cf73f0d9ac}} 
+\index{\+\_\+pytest\+::tmpdir\+::\+Tempdir\+Factory@{\+\_\+pytest\+::tmpdir\+::\+Tempdir\+Factory}!getbasetemp@{getbasetemp}}
+\index{getbasetemp@{getbasetemp}!\+\_\+pytest\+::tmpdir\+::\+Tempdir\+Factory@{\+\_\+pytest\+::tmpdir\+::\+Tempdir\+Factory}}
+\subsubsection{\texorpdfstring{getbasetemp()}{getbasetemp()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+tmpdir.\+Tempdir\+Factory.\+getbasetemp (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return base temporary directory. \end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1tmpdir_1_1_tempdir_factory_a3a41e666a0a7da2e5d90f110971e0090}\label{class__pytest_1_1tmpdir_1_1_tempdir_factory_a3a41e666a0a7da2e5d90f110971e0090}} 
+\index{\+\_\+pytest\+::tmpdir\+::\+Tempdir\+Factory@{\+\_\+pytest\+::tmpdir\+::\+Tempdir\+Factory}!mktemp@{mktemp}}
+\index{mktemp@{mktemp}!\+\_\+pytest\+::tmpdir\+::\+Tempdir\+Factory@{\+\_\+pytest\+::tmpdir\+::\+Tempdir\+Factory}}
+\subsubsection{\texorpdfstring{mktemp()}{mktemp()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+tmpdir.\+Tempdir\+Factory.\+mktemp (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{basename,  }\item[{}]{numbered = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a subdirectory of the base temporary directory and return it.
+If ``numbered``, ensure the directory is unique by adding a number
+prefix greater than any existing one.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/tmpdir.\+py\end{DoxyCompactItemize}

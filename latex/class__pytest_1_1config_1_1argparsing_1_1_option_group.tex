@@ -1,0 +1,50 @@
+\hypertarget{class__pytest_1_1config_1_1argparsing_1_1_option_group}{}\section{\+\_\+pytest.\+config.\+argparsing.\+Option\+Group Class Reference}
+\label{class__pytest_1_1config_1_1argparsing_1_1_option_group}\index{\+\_\+pytest.\+config.\+argparsing.\+Option\+Group@{\+\_\+pytest.\+config.\+argparsing.\+Option\+Group}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1argparsing_1_1_option_group_a03a3262dbbfb20e035d194b495c23439}\label{class__pytest_1_1config_1_1argparsing_1_1_option_group_a03a3262dbbfb20e035d194b495c23439}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, name, description=\char`\"{}\char`\"{}, parser=None)
+\item 
+def \hyperlink{class__pytest_1_1config_1_1argparsing_1_1_option_group_a4fc637e3a67d3ab6209499ad98b005a1}{addoption} (self, optnames, attrs)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1argparsing_1_1_option_group_af1aee1968e3ab60194d6e643302455cb}\label{class__pytest_1_1config_1_1argparsing_1_1_option_group_af1aee1968e3ab60194d6e643302455cb}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1argparsing_1_1_option_group_a257291944ae498cd096a8aee08d6f865}\label{class__pytest_1_1config_1_1argparsing_1_1_option_group_a257291944ae498cd096a8aee08d6f865}} 
+{\bfseries description}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1argparsing_1_1_option_group_a10eac337d8e10059f2d9ca6f86fe5273}\label{class__pytest_1_1config_1_1argparsing_1_1_option_group_a10eac337d8e10059f2d9ca6f86fe5273}} 
+{\bfseries options}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1argparsing_1_1_option_group_a526a64d57bb2fcfde7baed52ee88cc45}\label{class__pytest_1_1config_1_1argparsing_1_1_option_group_a526a64d57bb2fcfde7baed52ee88cc45}} 
+{\bfseries parser}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1config_1_1argparsing_1_1_option_group_a4fc637e3a67d3ab6209499ad98b005a1}\label{class__pytest_1_1config_1_1argparsing_1_1_option_group_a4fc637e3a67d3ab6209499ad98b005a1}} 
+\index{\+\_\+pytest\+::config\+::argparsing\+::\+Option\+Group@{\+\_\+pytest\+::config\+::argparsing\+::\+Option\+Group}!addoption@{addoption}}
+\index{addoption@{addoption}!\+\_\+pytest\+::config\+::argparsing\+::\+Option\+Group@{\+\_\+pytest\+::config\+::argparsing\+::\+Option\+Group}}
+\subsubsection{\texorpdfstring{addoption()}{addoption()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+config.\+argparsing.\+Option\+Group.\+addoption (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{optnames,  }\item[{}]{attrs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}add an option to this group.
+
+if a shortened version of a long option is specified it will
+be suppressed in the help. addoption('--twowords', '--two-words')
+results in help showing '--two-words' only, but --twowords gets
+accepted **and** the automatic destination is in args.twowords
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/config/argparsing.\+py\end{DoxyCompactItemize}

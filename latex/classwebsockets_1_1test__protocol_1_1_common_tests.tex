@@ -1,0 +1,380 @@
+\hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests}{}\section{websockets.\+test\+\_\+protocol.\+Common\+Tests Class Reference}
+\label{classwebsockets_1_1test__protocol_1_1_common_tests}\index{websockets.\+test\+\_\+protocol.\+Common\+Tests@{websockets.\+test\+\_\+protocol.\+Common\+Tests}}
+
+
+Inherited by \hyperlink{classwebsockets_1_1test__protocol_1_1_client_tests}{websockets.\+test\+\_\+protocol.\+Client\+Tests}, and \hyperlink{classwebsockets_1_1test__protocol_1_1_server_tests}{websockets.\+test\+\_\+protocol.\+Server\+Tests}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a37684bc48c8b71216be7b9989cd40033}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a37684bc48c8b71216be7b9989cd40033}} 
+def {\bfseries set\+Up} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a4fea0a65dea3dd3ee4af90126bdbbd53}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a4fea0a65dea3dd3ee4af90126bdbbd53}} 
+def {\bfseries tear\+Down} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a12f0d1531fed614aba8528b2189d4088}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a12f0d1531fed614aba8528b2189d4088}} 
+def {\bfseries run\+\_\+loop\+\_\+once} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_aa3a974ef61950972d04585ebd64cc33a}\label{classwebsockets_1_1test__protocol_1_1_common_tests_aa3a974ef61950972d04585ebd64cc33a}} 
+def {\bfseries make\+\_\+drain\+\_\+slow} (self, delay=MS)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a8775223e99b7202fc722e5a56c8301fd}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a8775223e99b7202fc722e5a56c8301fd}} 
+def {\bfseries ensure\+\_\+future} (self)
+\item 
+def \hyperlink{classwebsockets_1_1test__protocol_1_1_common_tests_a6452ee615a5c45fde6a0616f2a5e67f6}{receive\+\_\+frame} (self, frame)
+\item 
+def \hyperlink{classwebsockets_1_1test__protocol_1_1_common_tests_ac492a5ff533df2e78be496015f192a20}{receive\+\_\+eof} (self)
+\item 
+def \hyperlink{classwebsockets_1_1test__protocol_1_1_common_tests_af1c2c7d113da9e0c81657606142b9ee7}{receive\+\_\+eof\+\_\+if\+\_\+client} (self)
+\item 
+def \hyperlink{classwebsockets_1_1test__protocol_1_1_common_tests_a8d230d6cd9c4f2c3ddb81970ee2f73c9}{close\+\_\+connection} (self, code=1000, reason=\textquotesingle{}close\textquotesingle{})
+\item 
+def \hyperlink{classwebsockets_1_1test__protocol_1_1_common_tests_aba585cd1108bd941cb1172825d4f5829}{half\+\_\+close\+\_\+connection\+\_\+local} (self, code=1000, reason=\textquotesingle{}close\textquotesingle{})
+\item 
+def \hyperlink{classwebsockets_1_1test__protocol_1_1_common_tests_ac87a3d4ec375e6a1decc055686e62574}{half\+\_\+close\+\_\+connection\+\_\+remote} (self, code=1000, reason=\textquotesingle{}close\textquotesingle{})
+\item 
+def \hyperlink{classwebsockets_1_1test__protocol_1_1_common_tests_a9a2dab3248e4839526c94dec66017e90}{process\+\_\+invalid\+\_\+frames} (self)
+\item 
+def \hyperlink{classwebsockets_1_1test__protocol_1_1_common_tests_a06e19646b0fda6923ed411882d938e87}{last\+\_\+sent\+\_\+frame} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a545cf3bfce1bad4d5479e63106c2d177}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a545cf3bfce1bad4d5479e63106c2d177}} 
+def {\bfseries assert\+One\+Frame\+Sent} (self, args)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_ad0a23365ec612d6ea294de36a099c8ca}\label{classwebsockets_1_1test__protocol_1_1_common_tests_ad0a23365ec612d6ea294de36a099c8ca}} 
+def {\bfseries assert\+No\+Frame\+Sent} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a4f6d2e39693742092b09af5c0eab6c0a}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a4f6d2e39693742092b09af5c0eab6c0a}} 
+def {\bfseries assert\+Connection\+Closed} (self, code, message)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a32d83c1d0d217d640d989fc22ea20479}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a32d83c1d0d217d640d989fc22ea20479}} 
+def {\bfseries assert\+Connection\+Failed} (self, code, message)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_adb2b42d20848daca76029b76a1db117c}\label{classwebsockets_1_1test__protocol_1_1_common_tests_adb2b42d20848daca76029b76a1db117c}} 
+def {\bfseries assert\+Completes\+Within} (self, min\+\_\+time, max\+\_\+time)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a3f49c38c46cc415ab55b6749ad37c6c4}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a3f49c38c46cc415ab55b6749ad37c6c4}} 
+def {\bfseries test\+\_\+local\+\_\+address} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_afadc234b90ff475ff87e17787a551db3}\label{classwebsockets_1_1test__protocol_1_1_common_tests_afadc234b90ff475ff87e17787a551db3}} 
+def {\bfseries test\+\_\+local\+\_\+address\+\_\+before\+\_\+connection} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a3b22717374f94553efb5dfa5a6fa72b5}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a3b22717374f94553efb5dfa5a6fa72b5}} 
+def {\bfseries test\+\_\+remote\+\_\+address} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a2e35907d06728835ed552c78b4af6e9a}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a2e35907d06728835ed552c78b4af6e9a}} 
+def {\bfseries test\+\_\+remote\+\_\+address\+\_\+before\+\_\+connection} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_abf9e75a6613d61f6e838509ce7d3db3c}\label{classwebsockets_1_1test__protocol_1_1_common_tests_abf9e75a6613d61f6e838509ce7d3db3c}} 
+def {\bfseries test\+\_\+open} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_af54c75c847f2c3790e814a709541cd67}\label{classwebsockets_1_1test__protocol_1_1_common_tests_af54c75c847f2c3790e814a709541cd67}} 
+def {\bfseries test\+\_\+closed} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a8a461c06c83b5fd798dfaf651264a040}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a8a461c06c83b5fd798dfaf651264a040}} 
+def {\bfseries test\+\_\+recv\+\_\+text} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a6dc0212daf359b58e737f4170a777c0a}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a6dc0212daf359b58e737f4170a777c0a}} 
+def {\bfseries test\+\_\+recv\+\_\+binary} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_ae6aec4cf5d394695d285e50b925340f8}\label{classwebsockets_1_1test__protocol_1_1_common_tests_ae6aec4cf5d394695d285e50b925340f8}} 
+def {\bfseries test\+\_\+recv\+\_\+on\+\_\+closing\+\_\+connection\+\_\+local} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_aeb41cb4c9351386c98fd7de2ed32693d}\label{classwebsockets_1_1test__protocol_1_1_common_tests_aeb41cb4c9351386c98fd7de2ed32693d}} 
+def {\bfseries test\+\_\+recv\+\_\+on\+\_\+closing\+\_\+connection\+\_\+remote} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a064e7b9afb0448b1b1247568eb8c1d26}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a064e7b9afb0448b1b1247568eb8c1d26}} 
+def {\bfseries test\+\_\+recv\+\_\+on\+\_\+closed\+\_\+connection} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a705710b695a91a436d82a673b626447e}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a705710b695a91a436d82a673b626447e}} 
+def {\bfseries test\+\_\+recv\+\_\+protocol\+\_\+error} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_af95d17f52c68561e6a3655ac4339de81}\label{classwebsockets_1_1test__protocol_1_1_common_tests_af95d17f52c68561e6a3655ac4339de81}} 
+def {\bfseries test\+\_\+recv\+\_\+unicode\+\_\+error} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_aa48bcd98347647ce8c9b01135340e8a0}\label{classwebsockets_1_1test__protocol_1_1_common_tests_aa48bcd98347647ce8c9b01135340e8a0}} 
+def {\bfseries test\+\_\+recv\+\_\+text\+\_\+payload\+\_\+too\+\_\+big} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_ae8661d1e41cedf95db6d6cc99cfd5072}\label{classwebsockets_1_1test__protocol_1_1_common_tests_ae8661d1e41cedf95db6d6cc99cfd5072}} 
+def {\bfseries test\+\_\+recv\+\_\+binary\+\_\+payload\+\_\+too\+\_\+big} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a72bb1d7a5c1b2731a3f009988dbd1e32}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a72bb1d7a5c1b2731a3f009988dbd1e32}} 
+def {\bfseries test\+\_\+recv\+\_\+text\+\_\+no\+\_\+max\+\_\+size} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a761a7b9ff8eb30ccecfd2ee8fafde35e}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a761a7b9ff8eb30ccecfd2ee8fafde35e}} 
+def {\bfseries test\+\_\+recv\+\_\+binary\+\_\+no\+\_\+max\+\_\+size} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_ace415037bc1286027ef4539bcd2aa2c6}\label{classwebsockets_1_1test__protocol_1_1_common_tests_ace415037bc1286027ef4539bcd2aa2c6}} 
+def {\bfseries test\+\_\+recv\+\_\+other\+\_\+error} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a84062606ea2abeebe5d1c0acf2512b62}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a84062606ea2abeebe5d1c0acf2512b62}} 
+def {\bfseries test\+\_\+recv\+\_\+cancelled} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_aba4def9b11c67f8ce95d4c6f83ac5622}\label{classwebsockets_1_1test__protocol_1_1_common_tests_aba4def9b11c67f8ce95d4c6f83ac5622}} 
+def {\bfseries test\+\_\+send\+\_\+text} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a2fc454f137a94f6b34ffa5785983d6fc}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a2fc454f137a94f6b34ffa5785983d6fc}} 
+def {\bfseries test\+\_\+send\+\_\+binary} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a540783ae46eefb3c0a4f96f455809470}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a540783ae46eefb3c0a4f96f455809470}} 
+def {\bfseries test\+\_\+send\+\_\+type\+\_\+error} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_acf0d23b2fa407e9aa37f9e9edf70e026}\label{classwebsockets_1_1test__protocol_1_1_common_tests_acf0d23b2fa407e9aa37f9e9edf70e026}} 
+def {\bfseries test\+\_\+send\+\_\+on\+\_\+closing\+\_\+connection\+\_\+local} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a099b2b21004111f69d516bf2bd5b9b94}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a099b2b21004111f69d516bf2bd5b9b94}} 
+def {\bfseries test\+\_\+send\+\_\+on\+\_\+closing\+\_\+connection\+\_\+remote} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a6900fbc77e4fa8c8c8c4ac8c428b348e}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a6900fbc77e4fa8c8c8c4ac8c428b348e}} 
+def {\bfseries test\+\_\+send\+\_\+on\+\_\+closed\+\_\+connection} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_aba37def0b83d08854f39fa82a15fabed}\label{classwebsockets_1_1test__protocol_1_1_common_tests_aba37def0b83d08854f39fa82a15fabed}} 
+def {\bfseries test\+\_\+ping\+\_\+default} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a62f69b780f449ea8f3468bc608d2b93b}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a62f69b780f449ea8f3468bc608d2b93b}} 
+def {\bfseries test\+\_\+ping\+\_\+text} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a8dc31c9628587340a358422ed98300d9}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a8dc31c9628587340a358422ed98300d9}} 
+def {\bfseries test\+\_\+ping\+\_\+binary} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_ad9fd83028b83cb79a0aef3a2bdd57b52}\label{classwebsockets_1_1test__protocol_1_1_common_tests_ad9fd83028b83cb79a0aef3a2bdd57b52}} 
+def {\bfseries test\+\_\+ping\+\_\+type\+\_\+error} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a7308561e8b7856667f44fd79b5b71601}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a7308561e8b7856667f44fd79b5b71601}} 
+def {\bfseries test\+\_\+ping\+\_\+on\+\_\+closing\+\_\+connection\+\_\+local} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_aeaf6e6305e63b583dc15cd2644da5f14}\label{classwebsockets_1_1test__protocol_1_1_common_tests_aeaf6e6305e63b583dc15cd2644da5f14}} 
+def {\bfseries test\+\_\+ping\+\_\+on\+\_\+closing\+\_\+connection\+\_\+remote} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a9f193a4e0e188a7338467909798bd811}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a9f193a4e0e188a7338467909798bd811}} 
+def {\bfseries test\+\_\+ping\+\_\+on\+\_\+closed\+\_\+connection} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a085cfaf79b075c46d8ad8418cd39c738}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a085cfaf79b075c46d8ad8418cd39c738}} 
+def {\bfseries test\+\_\+pong\+\_\+default} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a5738102a23696e260e739e9b36db63f1}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a5738102a23696e260e739e9b36db63f1}} 
+def {\bfseries test\+\_\+pong\+\_\+text} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a4243a93655424e7ea7ca274dfd032da7}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a4243a93655424e7ea7ca274dfd032da7}} 
+def {\bfseries test\+\_\+pong\+\_\+binary} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_ace6be6d55cb2352106541068e968ce9c}\label{classwebsockets_1_1test__protocol_1_1_common_tests_ace6be6d55cb2352106541068e968ce9c}} 
+def {\bfseries test\+\_\+pong\+\_\+type\+\_\+error} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a61d5fd87a2903030f458ba676e541c4d}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a61d5fd87a2903030f458ba676e541c4d}} 
+def {\bfseries test\+\_\+pong\+\_\+on\+\_\+closing\+\_\+connection\+\_\+local} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a13ed50b2a7461619167261dcc763ddd5}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a13ed50b2a7461619167261dcc763ddd5}} 
+def {\bfseries test\+\_\+pong\+\_\+on\+\_\+closing\+\_\+connection\+\_\+remote} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_aa57af2799b4c7cfe953f2dee449870dc}\label{classwebsockets_1_1test__protocol_1_1_common_tests_aa57af2799b4c7cfe953f2dee449870dc}} 
+def {\bfseries test\+\_\+pong\+\_\+on\+\_\+closed\+\_\+connection} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_ada55c0ff660869783509093e78a39e5e}\label{classwebsockets_1_1test__protocol_1_1_common_tests_ada55c0ff660869783509093e78a39e5e}} 
+def {\bfseries test\+\_\+answer\+\_\+ping} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a6f01460b9880d6a136b3c575ddbc56e1}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a6f01460b9880d6a136b3c575ddbc56e1}} 
+def {\bfseries test\+\_\+ignore\+\_\+pong} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a1b6d18587b62bf7fd0a94c7a21290197}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a1b6d18587b62bf7fd0a94c7a21290197}} 
+def {\bfseries test\+\_\+acknowledge\+\_\+ping} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_ae99a18f10f26f69110b9451ea35e7835}\label{classwebsockets_1_1test__protocol_1_1_common_tests_ae99a18f10f26f69110b9451ea35e7835}} 
+def {\bfseries test\+\_\+cancel\+\_\+ping} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a05b107f276fb4466a9fc2611b69f983d}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a05b107f276fb4466a9fc2611b69f983d}} 
+def {\bfseries test\+\_\+acknowledge\+\_\+previous\+\_\+pings} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a39e53ac50bacb9b5db89d333d5799405}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a39e53ac50bacb9b5db89d333d5799405}} 
+def {\bfseries test\+\_\+cancelled\+\_\+ping} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_acd5ae1af181470cae3ca4b1dac202c15}\label{classwebsockets_1_1test__protocol_1_1_common_tests_acd5ae1af181470cae3ca4b1dac202c15}} 
+def {\bfseries test\+\_\+duplicate\+\_\+ping} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a2837f6ff552f0d2b62fd9aec1c61b686}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a2837f6ff552f0d2b62fd9aec1c61b686}} 
+def {\bfseries test\+\_\+fragmented\+\_\+text} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a686f0d3db5bb2d91c7704b7ee6200620}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a686f0d3db5bb2d91c7704b7ee6200620}} 
+def {\bfseries test\+\_\+fragmented\+\_\+binary} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_ad01d867e73d8d1ffb58ae9043f1505ef}\label{classwebsockets_1_1test__protocol_1_1_common_tests_ad01d867e73d8d1ffb58ae9043f1505ef}} 
+def {\bfseries test\+\_\+fragmented\+\_\+text\+\_\+payload\+\_\+too\+\_\+big} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a325c0db935d53af7f8a1a1f593cb92e3}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a325c0db935d53af7f8a1a1f593cb92e3}} 
+def {\bfseries test\+\_\+fragmented\+\_\+binary\+\_\+payload\+\_\+too\+\_\+big} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a3262f02af976c25b304fe57931913504}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a3262f02af976c25b304fe57931913504}} 
+def {\bfseries test\+\_\+fragmented\+\_\+text\+\_\+no\+\_\+max\+\_\+size} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a5a1970613e1f8260d41a705de30b2c6d}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a5a1970613e1f8260d41a705de30b2c6d}} 
+def {\bfseries test\+\_\+fragmented\+\_\+binary\+\_\+no\+\_\+max\+\_\+size} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_afde25f80bf7a9945650f9120241296a2}\label{classwebsockets_1_1test__protocol_1_1_common_tests_afde25f80bf7a9945650f9120241296a2}} 
+def {\bfseries test\+\_\+control\+\_\+frame\+\_\+within\+\_\+fragmented\+\_\+text} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_ae5208b04d1ce7a51effbf9025740c7cd}\label{classwebsockets_1_1test__protocol_1_1_common_tests_ae5208b04d1ce7a51effbf9025740c7cd}} 
+def {\bfseries test\+\_\+unterminated\+\_\+fragmented\+\_\+text} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a7f31a6c0c63c965ecd32b05d10b0d661}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a7f31a6c0c63c965ecd32b05d10b0d661}} 
+def {\bfseries test\+\_\+close\+\_\+handshake\+\_\+in\+\_\+fragmented\+\_\+text} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_ae00f58b9ee4c98eab15af81de9457112}\label{classwebsockets_1_1test__protocol_1_1_common_tests_ae00f58b9ee4c98eab15af81de9457112}} 
+def {\bfseries test\+\_\+connection\+\_\+close\+\_\+in\+\_\+fragmented\+\_\+text} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a1e5d7575d96f701f44dcccc461e0a4be}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a1e5d7575d96f701f44dcccc461e0a4be}} 
+def {\bfseries test\+\_\+connection\+\_\+lost} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_aec87367cc5407bf5f17778058230428d}\label{classwebsockets_1_1test__protocol_1_1_common_tests_aec87367cc5407bf5f17778058230428d}} 
+def {\bfseries test\+\_\+ensure\+\_\+open\+\_\+before\+\_\+opening\+\_\+handshake} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a5b2e7baa6ede7812f6294494d322b2a2}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a5b2e7baa6ede7812f6294494d322b2a2}} 
+def {\bfseries test\+\_\+ensure\+\_\+open\+\_\+during\+\_\+unclean\+\_\+close} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_af46c784f640b39b9ec9bd00d8a0eb98e}\label{classwebsockets_1_1test__protocol_1_1_common_tests_af46c784f640b39b9ec9bd00d8a0eb98e}} 
+def {\bfseries test\+\_\+legacy\+\_\+recv} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_af43e5c0dc4c7b72400279b63b1d2c3f8}\label{classwebsockets_1_1test__protocol_1_1_common_tests_af43e5c0dc4c7b72400279b63b1d2c3f8}} 
+def {\bfseries test\+\_\+connection\+\_\+closed\+\_\+attributes} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a3c491cf66ab91525c9eb9a104853ef72}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a3c491cf66ab91525c9eb9a104853ef72}} 
+def {\bfseries test\+\_\+local\+\_\+close} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_aef4e1b722704cdfabfda3feed4b5af26}\label{classwebsockets_1_1test__protocol_1_1_common_tests_aef4e1b722704cdfabfda3feed4b5af26}} 
+def {\bfseries test\+\_\+remote\+\_\+close} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_ad9e788720743842f2f293f3b950cabed}\label{classwebsockets_1_1test__protocol_1_1_common_tests_ad9e788720743842f2f293f3b950cabed}} 
+def {\bfseries test\+\_\+simultaneous\+\_\+close} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a9a9261f475a8801a130624b8c533bbe1}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a9a9261f475a8801a130624b8c533bbe1}} 
+def {\bfseries test\+\_\+close\+\_\+preserves\+\_\+incoming\+\_\+frames} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a42dd8d5d1dcefcc3bed37e87f138ca5a}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a42dd8d5d1dcefcc3bed37e87f138ca5a}} 
+def {\bfseries test\+\_\+close\+\_\+protocol\+\_\+error} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_ac422a1343129e00b947a6d549cba69af}\label{classwebsockets_1_1test__protocol_1_1_common_tests_ac422a1343129e00b947a6d549cba69af}} 
+def {\bfseries test\+\_\+close\+\_\+connection\+\_\+lost} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a5a9f12e6ba6bacc89ed2ba7a98e3efa5}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a5a9f12e6ba6bacc89ed2ba7a98e3efa5}} 
+def {\bfseries test\+\_\+local\+\_\+close\+\_\+during\+\_\+recv} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a52a28832e94cca68e3762ed43a428c77}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a52a28832e94cca68e3762ed43a428c77}} 
+def {\bfseries test\+\_\+remote\+\_\+close\+\_\+during\+\_\+send} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a1c668a713995b3e5134e63b0183f7f5b}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a1c668a713995b3e5134e63b0183f7f5b}} 
+{\bfseries loop}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_ae73483f68e502c587aaf4560aa7e4178}\label{classwebsockets_1_1test__protocol_1_1_common_tests_ae73483f68e502c587aaf4560aa7e4178}} 
+{\bfseries protocol}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a9f0cc627ba9e4efcce88494d1feef34b}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a9f0cc627ba9e4efcce88494d1feef34b}} 
+{\bfseries transport}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a8e95f8b64add62abe8168c6b1acce7e1}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a8e95f8b64add62abe8168c6b1acce7e1}} 
+{\bfseries close\+\_\+frame} = \hyperlink{classwebsockets_1_1framing_1_1_frame}{Frame}(True, O\+P\+\_\+\+C\+L\+O\+SE, serialize\+\_\+close(1000, \textquotesingle{}close\textquotesingle{}))
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_ab051ce2f119028749767cb82131593ee}\label{classwebsockets_1_1test__protocol_1_1_common_tests_ab051ce2f119028749767cb82131593ee}} 
+{\bfseries local\+\_\+close} = \hyperlink{classwebsockets_1_1framing_1_1_frame}{Frame}(True, O\+P\+\_\+\+C\+L\+O\+SE, serialize\+\_\+close(1000, \textquotesingle{}local\textquotesingle{}))
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_affa14d56361e7f5c44c739e526616924}\label{classwebsockets_1_1test__protocol_1_1_common_tests_affa14d56361e7f5c44c739e526616924}} 
+{\bfseries remote\+\_\+close} = \hyperlink{classwebsockets_1_1framing_1_1_frame}{Frame}(True, O\+P\+\_\+\+C\+L\+O\+SE, serialize\+\_\+close(1000, \textquotesingle{}remote\textquotesingle{}))
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Mixin that defines most tests but doesn't inherit unittest.TestCase.
+
+Tests are run by the ServerTests and ClientTests subclasses.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a8d230d6cd9c4f2c3ddb81970ee2f73c9}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a8d230d6cd9c4f2c3ddb81970ee2f73c9}} 
+\index{websockets\+::test\+\_\+protocol\+::\+Common\+Tests@{websockets\+::test\+\_\+protocol\+::\+Common\+Tests}!close\+\_\+connection@{close\+\_\+connection}}
+\index{close\+\_\+connection@{close\+\_\+connection}!websockets\+::test\+\_\+protocol\+::\+Common\+Tests@{websockets\+::test\+\_\+protocol\+::\+Common\+Tests}}
+\subsubsection{\texorpdfstring{close\+\_\+connection()}{close\_connection()}}
+{\footnotesize\ttfamily def websockets.\+test\+\_\+protocol.\+Common\+Tests.\+close\+\_\+connection (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{code = {\ttfamily 1000},  }\item[{}]{reason = {\ttfamily \textquotesingle{}close\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Execute a closing handshake.
+
+This puts the connection in the CLOSED state.\end{DoxyVerb}
+ \mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_aba585cd1108bd941cb1172825d4f5829}\label{classwebsockets_1_1test__protocol_1_1_common_tests_aba585cd1108bd941cb1172825d4f5829}} 
+\index{websockets\+::test\+\_\+protocol\+::\+Common\+Tests@{websockets\+::test\+\_\+protocol\+::\+Common\+Tests}!half\+\_\+close\+\_\+connection\+\_\+local@{half\+\_\+close\+\_\+connection\+\_\+local}}
+\index{half\+\_\+close\+\_\+connection\+\_\+local@{half\+\_\+close\+\_\+connection\+\_\+local}!websockets\+::test\+\_\+protocol\+::\+Common\+Tests@{websockets\+::test\+\_\+protocol\+::\+Common\+Tests}}
+\subsubsection{\texorpdfstring{half\+\_\+close\+\_\+connection\+\_\+local()}{half\_close\_connection\_local()}}
+{\footnotesize\ttfamily def websockets.\+test\+\_\+protocol.\+Common\+Tests.\+half\+\_\+close\+\_\+connection\+\_\+local (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{code = {\ttfamily 1000},  }\item[{}]{reason = {\ttfamily \textquotesingle{}close\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Start a closing handshake but do not complete it.
+
+The main difference with `close_connection` is that the connection is
+left in the CLOSING state until the event loop runs again.
+
+The current implementation returns a task that must be awaited or
+cancelled, else asyncio complains about destroying a pending task.\end{DoxyVerb}
+ \mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_ac87a3d4ec375e6a1decc055686e62574}\label{classwebsockets_1_1test__protocol_1_1_common_tests_ac87a3d4ec375e6a1decc055686e62574}} 
+\index{websockets\+::test\+\_\+protocol\+::\+Common\+Tests@{websockets\+::test\+\_\+protocol\+::\+Common\+Tests}!half\+\_\+close\+\_\+connection\+\_\+remote@{half\+\_\+close\+\_\+connection\+\_\+remote}}
+\index{half\+\_\+close\+\_\+connection\+\_\+remote@{half\+\_\+close\+\_\+connection\+\_\+remote}!websockets\+::test\+\_\+protocol\+::\+Common\+Tests@{websockets\+::test\+\_\+protocol\+::\+Common\+Tests}}
+\subsubsection{\texorpdfstring{half\+\_\+close\+\_\+connection\+\_\+remote()}{half\_close\_connection\_remote()}}
+{\footnotesize\ttfamily def websockets.\+test\+\_\+protocol.\+Common\+Tests.\+half\+\_\+close\+\_\+connection\+\_\+remote (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{code = {\ttfamily 1000},  }\item[{}]{reason = {\ttfamily \textquotesingle{}close\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Receive a closing handshake but do not complete it.
+
+The main difference with `close_connection` is that the connection is
+left in the CLOSING state until the event loop runs again.\end{DoxyVerb}
+ \mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a06e19646b0fda6923ed411882d938e87}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a06e19646b0fda6923ed411882d938e87}} 
+\index{websockets\+::test\+\_\+protocol\+::\+Common\+Tests@{websockets\+::test\+\_\+protocol\+::\+Common\+Tests}!last\+\_\+sent\+\_\+frame@{last\+\_\+sent\+\_\+frame}}
+\index{last\+\_\+sent\+\_\+frame@{last\+\_\+sent\+\_\+frame}!websockets\+::test\+\_\+protocol\+::\+Common\+Tests@{websockets\+::test\+\_\+protocol\+::\+Common\+Tests}}
+\subsubsection{\texorpdfstring{last\+\_\+sent\+\_\+frame()}{last\_sent\_frame()}}
+{\footnotesize\ttfamily def websockets.\+test\+\_\+protocol.\+Common\+Tests.\+last\+\_\+sent\+\_\+frame (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read the last frame sent to the transport.
+
+This method assumes that at most one frame was sent. It raises an
+AssertionError otherwise.\end{DoxyVerb}
+ \mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a9a2dab3248e4839526c94dec66017e90}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a9a2dab3248e4839526c94dec66017e90}} 
+\index{websockets\+::test\+\_\+protocol\+::\+Common\+Tests@{websockets\+::test\+\_\+protocol\+::\+Common\+Tests}!process\+\_\+invalid\+\_\+frames@{process\+\_\+invalid\+\_\+frames}}
+\index{process\+\_\+invalid\+\_\+frames@{process\+\_\+invalid\+\_\+frames}!websockets\+::test\+\_\+protocol\+::\+Common\+Tests@{websockets\+::test\+\_\+protocol\+::\+Common\+Tests}}
+\subsubsection{\texorpdfstring{process\+\_\+invalid\+\_\+frames()}{process\_invalid\_frames()}}
+{\footnotesize\ttfamily def websockets.\+test\+\_\+protocol.\+Common\+Tests.\+process\+\_\+invalid\+\_\+frames (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make the protocol fail quickly after simulating invalid data.
+
+To achieve this, this function triggers the protocol's eof_received,
+which interrupts pending reads waiting for more data.\end{DoxyVerb}
+ \mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_ac492a5ff533df2e78be496015f192a20}\label{classwebsockets_1_1test__protocol_1_1_common_tests_ac492a5ff533df2e78be496015f192a20}} 
+\index{websockets\+::test\+\_\+protocol\+::\+Common\+Tests@{websockets\+::test\+\_\+protocol\+::\+Common\+Tests}!receive\+\_\+eof@{receive\+\_\+eof}}
+\index{receive\+\_\+eof@{receive\+\_\+eof}!websockets\+::test\+\_\+protocol\+::\+Common\+Tests@{websockets\+::test\+\_\+protocol\+::\+Common\+Tests}}
+\subsubsection{\texorpdfstring{receive\+\_\+eof()}{receive\_eof()}}
+{\footnotesize\ttfamily def websockets.\+test\+\_\+protocol.\+Common\+Tests.\+receive\+\_\+eof (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make the protocol receive the end of the data stream.
+
+Since ``WebSocketCommonProtocol.eof_received`` returns ``None``, an
+actual transport would close itself after calling it. This function
+emulates that behavior.\end{DoxyVerb}
+ \mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_af1c2c7d113da9e0c81657606142b9ee7}\label{classwebsockets_1_1test__protocol_1_1_common_tests_af1c2c7d113da9e0c81657606142b9ee7}} 
+\index{websockets\+::test\+\_\+protocol\+::\+Common\+Tests@{websockets\+::test\+\_\+protocol\+::\+Common\+Tests}!receive\+\_\+eof\+\_\+if\+\_\+client@{receive\+\_\+eof\+\_\+if\+\_\+client}}
+\index{receive\+\_\+eof\+\_\+if\+\_\+client@{receive\+\_\+eof\+\_\+if\+\_\+client}!websockets\+::test\+\_\+protocol\+::\+Common\+Tests@{websockets\+::test\+\_\+protocol\+::\+Common\+Tests}}
+\subsubsection{\texorpdfstring{receive\+\_\+eof\+\_\+if\+\_\+client()}{receive\_eof\_if\_client()}}
+{\footnotesize\ttfamily def websockets.\+test\+\_\+protocol.\+Common\+Tests.\+receive\+\_\+eof\+\_\+if\+\_\+client (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like receive_eof, but only if this is the client side.
+
+Since the server is supposed to initiate the termination of the TCP
+connection, this method helps making tests work for both sides.\end{DoxyVerb}
+ \mbox{\Hypertarget{classwebsockets_1_1test__protocol_1_1_common_tests_a6452ee615a5c45fde6a0616f2a5e67f6}\label{classwebsockets_1_1test__protocol_1_1_common_tests_a6452ee615a5c45fde6a0616f2a5e67f6}} 
+\index{websockets\+::test\+\_\+protocol\+::\+Common\+Tests@{websockets\+::test\+\_\+protocol\+::\+Common\+Tests}!receive\+\_\+frame@{receive\+\_\+frame}}
+\index{receive\+\_\+frame@{receive\+\_\+frame}!websockets\+::test\+\_\+protocol\+::\+Common\+Tests@{websockets\+::test\+\_\+protocol\+::\+Common\+Tests}}
+\subsubsection{\texorpdfstring{receive\+\_\+frame()}{receive\_frame()}}
+{\footnotesize\ttfamily def websockets.\+test\+\_\+protocol.\+Common\+Tests.\+receive\+\_\+frame (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{frame }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make the protocol receive a frame.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/websockets/test\+\_\+protocol.\+py\end{DoxyCompactItemize}

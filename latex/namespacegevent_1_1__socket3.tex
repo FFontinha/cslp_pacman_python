@@ -1,0 +1,130 @@
+\hypertarget{namespacegevent_1_1__socket3}{}\section{gevent.\+\_\+socket3 Namespace Reference}
+\label{namespacegevent_1_1__socket3}\index{gevent.\+\_\+socket3@{gevent.\+\_\+socket3}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgevent_1_1__socket3_1_1__wrefsocket}{\+\_\+wrefsocket}
+\item 
+class \hyperlink{classgevent_1_1__socket3_1_1socket}{socket}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1__socket3_afee07c7980d68bbd43fe9fa22e7bc543}{fromfd} (fd, family, type, proto=0)
+\item 
+def \hyperlink{namespacegevent_1_1__socket3_a5f5c2b678f70a7a54b1ae17e90572992}{fromshare} (info)
+\item 
+def \hyperlink{namespacegevent_1_1__socket3_ac4533378cc02af62ff3518867e7b5efd}{socketpair} (family=None, type=S\+O\+C\+K\+\_\+\+S\+T\+R\+E\+AM, proto=0)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacegevent_1_1__socket3_a346ac852fc35904cfcd1404629344c79}{names\+\_\+to\+\_\+ignore}
+\item 
+\hyperlink{namespacegevent_1_1__socket3_a6b4d9ca5ec84530d82ded6d7c1a0f625}{dunder\+\_\+names\+\_\+to\+\_\+keep}
+\item 
+int \hyperlink{namespacegevent_1_1__socket3_ab1860b5f800d108bbd2dfd628a6ddbb4}{E\+H\+O\+S\+T\+U\+N\+R\+E\+A\+CH} = -\/1
+\item 
+int \hyperlink{namespacegevent_1_1__socket3_a3b86d8ad9f340864357d63d241d372eb}{E\+C\+O\+N\+N\+R\+E\+F\+U\+S\+ED} = -\/1
+\item 
+\hyperlink{namespacegevent_1_1__socket3_a2a62116b59be85ef70fa350dd6250e5e}{Socket\+IO} = \+\_\+\+\_\+socket\+\_\+\+\_\+.\+Socket\+IO
+\item 
+\hyperlink{namespacegevent_1_1__socket3_a4e43e22861afa146e11b8964d5772684}{timeout\+\_\+default} = object()
+\item 
+\hyperlink{namespacegevent_1_1__socket3_a6267687dbe403a376a86bb4d4de248db}{Socket\+Type} = \+\_\+\+\_\+socket\+\_\+\+\_\+.\+Socket\+Type
+\item 
+\hyperlink{namespacegevent_1_1__socket3_ac3701a95ca7cd9fe3f54cfa93e942647}{close} = \+\_\+\+\_\+socket\+\_\+\+\_\+.\+close
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1__socket3_afee07c7980d68bbd43fe9fa22e7bc543}\label{namespacegevent_1_1__socket3_afee07c7980d68bbd43fe9fa22e7bc543}} 
+\index{gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}!fromfd@{fromfd}}
+\index{fromfd@{fromfd}!gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}}
+\subsubsection{\texorpdfstring{fromfd()}{fromfd()}}
+{\footnotesize\ttfamily def gevent.\+\_\+socket3.\+fromfd (\begin{DoxyParamCaption}\item[{}]{fd,  }\item[{}]{family,  }\item[{}]{type,  }\item[{}]{proto = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}fromfd(fd, family, type[, proto]) -> socket object
+
+Create a socket object from a duplicate of the given file
+descriptor.  The remaining arguments are the same as for socket().
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__socket3_a5f5c2b678f70a7a54b1ae17e90572992}\label{namespacegevent_1_1__socket3_a5f5c2b678f70a7a54b1ae17e90572992}} 
+\index{gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}!fromshare@{fromshare}}
+\index{fromshare@{fromshare}!gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}}
+\subsubsection{\texorpdfstring{fromshare()}{fromshare()}}
+{\footnotesize\ttfamily def gevent.\+\_\+socket3.\+fromshare (\begin{DoxyParamCaption}\item[{}]{info }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}fromshare(info) -> socket object
+
+Create a socket object from a the bytes object returned by
+socket.share(pid).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__socket3_ac4533378cc02af62ff3518867e7b5efd}\label{namespacegevent_1_1__socket3_ac4533378cc02af62ff3518867e7b5efd}} 
+\index{gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}!socketpair@{socketpair}}
+\index{socketpair@{socketpair}!gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}}
+\subsubsection{\texorpdfstring{socketpair()}{socketpair()}}
+{\footnotesize\ttfamily def gevent.\+\_\+socket3.\+socketpair (\begin{DoxyParamCaption}\item[{}]{family = {\ttfamily None},  }\item[{}]{type = {\ttfamily SOCK\+\_\+STREAM},  }\item[{}]{proto = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}socketpair([family[, type[, proto]]]) -> (socket object, socket object)
+
+Create a pair of socket objects from the sockets returned by the platform
+socketpair() function.
+The arguments are the same as for socket() except the default family is
+AF_UNIX if defined on the platform; otherwise, the default is AF_INET.
+
+.. versionchanged:: 1.2
+   All Python 3 versions on Windows supply this function (natively
+   supplied by Python 3.5 and above).
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1__socket3_ac3701a95ca7cd9fe3f54cfa93e942647}\label{namespacegevent_1_1__socket3_ac3701a95ca7cd9fe3f54cfa93e942647}} 
+\index{gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}!close@{close}}
+\index{close@{close}!gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}}
+\subsubsection{\texorpdfstring{close}{close}}
+{\footnotesize\ttfamily gevent.\+\_\+socket3.\+close = \+\_\+\+\_\+socket\+\_\+\+\_\+.\+close}
+
+\mbox{\Hypertarget{namespacegevent_1_1__socket3_a6b4d9ca5ec84530d82ded6d7c1a0f625}\label{namespacegevent_1_1__socket3_a6b4d9ca5ec84530d82ded6d7c1a0f625}} 
+\index{gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}!dunder\+\_\+names\+\_\+to\+\_\+keep@{dunder\+\_\+names\+\_\+to\+\_\+keep}}
+\index{dunder\+\_\+names\+\_\+to\+\_\+keep@{dunder\+\_\+names\+\_\+to\+\_\+keep}!gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}}
+\subsubsection{\texorpdfstring{dunder\+\_\+names\+\_\+to\+\_\+keep}{dunder\_names\_to\_keep}}
+{\footnotesize\ttfamily gevent.\+\_\+socket3.\+dunder\+\_\+names\+\_\+to\+\_\+keep}
+
+\mbox{\Hypertarget{namespacegevent_1_1__socket3_a3b86d8ad9f340864357d63d241d372eb}\label{namespacegevent_1_1__socket3_a3b86d8ad9f340864357d63d241d372eb}} 
+\index{gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}!E\+C\+O\+N\+N\+R\+E\+F\+U\+S\+ED@{E\+C\+O\+N\+N\+R\+E\+F\+U\+S\+ED}}
+\index{E\+C\+O\+N\+N\+R\+E\+F\+U\+S\+ED@{E\+C\+O\+N\+N\+R\+E\+F\+U\+S\+ED}!gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}}
+\subsubsection{\texorpdfstring{E\+C\+O\+N\+N\+R\+E\+F\+U\+S\+ED}{ECONNREFUSED}}
+{\footnotesize\ttfamily int gevent.\+\_\+socket3.\+E\+C\+O\+N\+N\+R\+E\+F\+U\+S\+ED = -\/1}
+
+\mbox{\Hypertarget{namespacegevent_1_1__socket3_ab1860b5f800d108bbd2dfd628a6ddbb4}\label{namespacegevent_1_1__socket3_ab1860b5f800d108bbd2dfd628a6ddbb4}} 
+\index{gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}!E\+H\+O\+S\+T\+U\+N\+R\+E\+A\+CH@{E\+H\+O\+S\+T\+U\+N\+R\+E\+A\+CH}}
+\index{E\+H\+O\+S\+T\+U\+N\+R\+E\+A\+CH@{E\+H\+O\+S\+T\+U\+N\+R\+E\+A\+CH}!gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}}
+\subsubsection{\texorpdfstring{E\+H\+O\+S\+T\+U\+N\+R\+E\+A\+CH}{EHOSTUNREACH}}
+{\footnotesize\ttfamily int gevent.\+\_\+socket3.\+E\+H\+O\+S\+T\+U\+N\+R\+E\+A\+CH = -\/1}
+
+\mbox{\Hypertarget{namespacegevent_1_1__socket3_a346ac852fc35904cfcd1404629344c79}\label{namespacegevent_1_1__socket3_a346ac852fc35904cfcd1404629344c79}} 
+\index{gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}!names\+\_\+to\+\_\+ignore@{names\+\_\+to\+\_\+ignore}}
+\index{names\+\_\+to\+\_\+ignore@{names\+\_\+to\+\_\+ignore}!gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}}
+\subsubsection{\texorpdfstring{names\+\_\+to\+\_\+ignore}{names\_to\_ignore}}
+{\footnotesize\ttfamily gevent.\+\_\+socket3.\+names\+\_\+to\+\_\+ignore}
+
+\mbox{\Hypertarget{namespacegevent_1_1__socket3_a2a62116b59be85ef70fa350dd6250e5e}\label{namespacegevent_1_1__socket3_a2a62116b59be85ef70fa350dd6250e5e}} 
+\index{gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}!Socket\+IO@{Socket\+IO}}
+\index{Socket\+IO@{Socket\+IO}!gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}}
+\subsubsection{\texorpdfstring{Socket\+IO}{SocketIO}}
+{\footnotesize\ttfamily gevent.\+\_\+socket3.\+Socket\+IO = \+\_\+\+\_\+socket\+\_\+\+\_\+.\+Socket\+IO}
+
+\mbox{\Hypertarget{namespacegevent_1_1__socket3_a6267687dbe403a376a86bb4d4de248db}\label{namespacegevent_1_1__socket3_a6267687dbe403a376a86bb4d4de248db}} 
+\index{gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}!Socket\+Type@{Socket\+Type}}
+\index{Socket\+Type@{Socket\+Type}!gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}}
+\subsubsection{\texorpdfstring{Socket\+Type}{SocketType}}
+{\footnotesize\ttfamily gevent.\+\_\+socket3.\+Socket\+Type = \+\_\+\+\_\+socket\+\_\+\+\_\+.\+Socket\+Type}
+
+\mbox{\Hypertarget{namespacegevent_1_1__socket3_a4e43e22861afa146e11b8964d5772684}\label{namespacegevent_1_1__socket3_a4e43e22861afa146e11b8964d5772684}} 
+\index{gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}!timeout\+\_\+default@{timeout\+\_\+default}}
+\index{timeout\+\_\+default@{timeout\+\_\+default}!gevent\+::\+\_\+socket3@{gevent\+::\+\_\+socket3}}
+\subsubsection{\texorpdfstring{timeout\+\_\+default}{timeout\_default}}
+{\footnotesize\ttfamily gevent.\+\_\+socket3.\+timeout\+\_\+default = object()}
+

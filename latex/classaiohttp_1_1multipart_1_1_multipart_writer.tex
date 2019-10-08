@@ -1,0 +1,87 @@
+\hypertarget{classaiohttp_1_1multipart_1_1_multipart_writer}{}\section{aiohttp.\+multipart.\+Multipart\+Writer Class Reference}
+\label{classaiohttp_1_1multipart_1_1_multipart_writer}\index{aiohttp.\+multipart.\+Multipart\+Writer@{aiohttp.\+multipart.\+Multipart\+Writer}}
+
+
+Inherits \hyperlink{classaiohttp_1_1payload_1_1_payload}{aiohttp.\+payload.\+Payload}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_writer_a12face73b5230804303ce38b150daa2c}\label{classaiohttp_1_1multipart_1_1_multipart_writer_a12face73b5230804303ce38b150daa2c}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, subtype=\textquotesingle{}mixed\textquotesingle{}, boundary=None)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_writer_ac765c8ac7b986595f4456e8990992d0c}\label{classaiohttp_1_1multipart_1_1_multipart_writer_ac765c8ac7b986595f4456e8990992d0c}} 
+def {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_writer_a3b54903d2c7c8124a27faa49998da90b}\label{classaiohttp_1_1multipart_1_1_multipart_writer_a3b54903d2c7c8124a27faa49998da90b}} 
+def {\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, exc\+\_\+type, exc\+\_\+val, exc\+\_\+tb)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_writer_ac29dff98c4d2ea8567515988787873e5}\label{classaiohttp_1_1multipart_1_1_multipart_writer_ac29dff98c4d2ea8567515988787873e5}} 
+def {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_writer_af9cf06eedab0f05bc983a85e1ce6a22c}\label{classaiohttp_1_1multipart_1_1_multipart_writer_af9cf06eedab0f05bc983a85e1ce6a22c}} 
+def {\bfseries \+\_\+\+\_\+len\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_writer_aa4c09a229123f829a8a24a52522e05f8}\label{classaiohttp_1_1multipart_1_1_multipart_writer_aa4c09a229123f829a8a24a52522e05f8}} 
+def {\bfseries boundary} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_writer_ac749e7f81c2ea6b4dc973a41a14c6c82}\label{classaiohttp_1_1multipart_1_1_multipart_writer_ac749e7f81c2ea6b4dc973a41a14c6c82}} 
+def {\bfseries append} (self, obj, \hyperlink{classaiohttp_1_1payload_1_1_payload_a2a53edff1dc2e83f11fb952f4471426d}{headers}=None)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_multipart_writer_a8a5a821be4573c2f92bab6a0b84e09a3}{append\+\_\+payload} (self, payload)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_multipart_writer_acac3d6614a647dab7d337c3539907718}{append\+\_\+json} (self, obj, \hyperlink{classaiohttp_1_1payload_1_1_payload_a2a53edff1dc2e83f11fb952f4471426d}{headers}=None)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_multipart_writer_ae38cdc05a79873a3dcd17e15155c605b}{append\+\_\+form} (self, obj, \hyperlink{classaiohttp_1_1payload_1_1_payload_a2a53edff1dc2e83f11fb952f4471426d}{headers}=None)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_multipart_writer_a7a99085cc43de729f8b918a25a367842}{size} (self)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_multipart_writer_a6ecad8771e11380e61ff94b8ca9e5a4d}{write} (self, writer, close\+\_\+boundary=True)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Multipart body writer.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_writer_ae38cdc05a79873a3dcd17e15155c605b}\label{classaiohttp_1_1multipart_1_1_multipart_writer_ae38cdc05a79873a3dcd17e15155c605b}} 
+\index{aiohttp\+::multipart\+::\+Multipart\+Writer@{aiohttp\+::multipart\+::\+Multipart\+Writer}!append\+\_\+form@{append\+\_\+form}}
+\index{append\+\_\+form@{append\+\_\+form}!aiohttp\+::multipart\+::\+Multipart\+Writer@{aiohttp\+::multipart\+::\+Multipart\+Writer}}
+\subsubsection{\texorpdfstring{append\+\_\+form()}{append\_form()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Multipart\+Writer.\+append\+\_\+form (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{obj,  }\item[{}]{headers = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Helper to append form urlencoded part.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_writer_acac3d6614a647dab7d337c3539907718}\label{classaiohttp_1_1multipart_1_1_multipart_writer_acac3d6614a647dab7d337c3539907718}} 
+\index{aiohttp\+::multipart\+::\+Multipart\+Writer@{aiohttp\+::multipart\+::\+Multipart\+Writer}!append\+\_\+json@{append\+\_\+json}}
+\index{append\+\_\+json@{append\+\_\+json}!aiohttp\+::multipart\+::\+Multipart\+Writer@{aiohttp\+::multipart\+::\+Multipart\+Writer}}
+\subsubsection{\texorpdfstring{append\+\_\+json()}{append\_json()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Multipart\+Writer.\+append\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{obj,  }\item[{}]{headers = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Helper to append JSON part.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_writer_a8a5a821be4573c2f92bab6a0b84e09a3}\label{classaiohttp_1_1multipart_1_1_multipart_writer_a8a5a821be4573c2f92bab6a0b84e09a3}} 
+\index{aiohttp\+::multipart\+::\+Multipart\+Writer@{aiohttp\+::multipart\+::\+Multipart\+Writer}!append\+\_\+payload@{append\+\_\+payload}}
+\index{append\+\_\+payload@{append\+\_\+payload}!aiohttp\+::multipart\+::\+Multipart\+Writer@{aiohttp\+::multipart\+::\+Multipart\+Writer}}
+\subsubsection{\texorpdfstring{append\+\_\+payload()}{append\_payload()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Multipart\+Writer.\+append\+\_\+payload (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{payload }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a new body part to multipart writer.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_writer_a7a99085cc43de729f8b918a25a367842}\label{classaiohttp_1_1multipart_1_1_multipart_writer_a7a99085cc43de729f8b918a25a367842}} 
+\index{aiohttp\+::multipart\+::\+Multipart\+Writer@{aiohttp\+::multipart\+::\+Multipart\+Writer}!size@{size}}
+\index{size@{size}!aiohttp\+::multipart\+::\+Multipart\+Writer@{aiohttp\+::multipart\+::\+Multipart\+Writer}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Multipart\+Writer.\+size (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Size of the payload.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_writer_a6ecad8771e11380e61ff94b8ca9e5a4d}\label{classaiohttp_1_1multipart_1_1_multipart_writer_a6ecad8771e11380e61ff94b8ca9e5a4d}} 
+\index{aiohttp\+::multipart\+::\+Multipart\+Writer@{aiohttp\+::multipart\+::\+Multipart\+Writer}!write@{write}}
+\index{write@{write}!aiohttp\+::multipart\+::\+Multipart\+Writer@{aiohttp\+::multipart\+::\+Multipart\+Writer}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Multipart\+Writer.\+write (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{writer,  }\item[{}]{close\+\_\+boundary = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write body.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/multipart.\+py\end{DoxyCompactItemize}

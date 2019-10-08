@@ -1,0 +1,108 @@
+\hypertarget{classgevent_1_1lock_1_1_dummy_semaphore}{}\section{gevent.\+lock.\+Dummy\+Semaphore Class Reference}
+\label{classgevent_1_1lock_1_1_dummy_semaphore}\index{gevent.\+lock.\+Dummy\+Semaphore@{gevent.\+lock.\+Dummy\+Semaphore}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classgevent_1_1lock_1_1_dummy_semaphore_ab6c0219ecff8c5ac7aee4e5238841300}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, value=None)
+\item 
+\mbox{\Hypertarget{classgevent_1_1lock_1_1_dummy_semaphore_af22b1956c0736406795d3292913b57d1}\label{classgevent_1_1lock_1_1_dummy_semaphore_af22b1956c0736406795d3292913b57d1}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classgevent_1_1lock_1_1_dummy_semaphore_a32e9f4bb478d89bdc923aa32f334f88d}{locked} (self)
+\item 
+def \hyperlink{classgevent_1_1lock_1_1_dummy_semaphore_a29fb584a77690e528fc92764d990bf3d}{release} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1lock_1_1_dummy_semaphore_ac4b75a62cb5cded440af6cdcc0e0043c}\label{classgevent_1_1lock_1_1_dummy_semaphore_ac4b75a62cb5cded440af6cdcc0e0043c}} 
+def {\bfseries rawlink} (self, callback)
+\item 
+\mbox{\Hypertarget{classgevent_1_1lock_1_1_dummy_semaphore_a62e00ed09721be6bb6b10d4c3fc8566a}\label{classgevent_1_1lock_1_1_dummy_semaphore_a62e00ed09721be6bb6b10d4c3fc8566a}} 
+def {\bfseries unlink} (self, callback)
+\item 
+def \hyperlink{classgevent_1_1lock_1_1_dummy_semaphore_a9c3fe3a91c10720b8eb75485ad9c9324}{wait} (self, timeout=None)
+\item 
+def \hyperlink{classgevent_1_1lock_1_1_dummy_semaphore_a2ec96f58e8df31411309513bb138dcc8}{acquire} (self, blocking=True, timeout=None)
+\item 
+\mbox{\Hypertarget{classgevent_1_1lock_1_1_dummy_semaphore_a3e3e0aee9ddc3e13bf7d2dc78790b3d0}\label{classgevent_1_1lock_1_1_dummy_semaphore_a3e3e0aee9ddc3e13bf7d2dc78790b3d0}} 
+def {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1lock_1_1_dummy_semaphore_a45bd391c0bf242191fe03420b9e06256}\label{classgevent_1_1lock_1_1_dummy_semaphore_a45bd391c0bf242191fe03420b9e06256}} 
+def {\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, typ, val, tb)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}DummySemaphore(value=None) -> DummySemaphore
+
+A Semaphore initialized with "infinite" initial value. None of its
+methods ever block.
+
+This can be used to parameterize on whether or not to actually
+guard access to a potentially limited resource. If the resource is
+actually limited, such as a fixed-size thread pool, use a real
+:class:`Semaphore`, but if the resource is unbounded, use an
+instance of this class. In that way none of the supporting code
+needs to change.
+
+Similarly, it can be used to parameterize on whether or not to
+enforce mutual exclusion to some underlying object. If the
+underlying object is known to be thread-safe itself mutual
+exclusion is not needed and a ``DummySemaphore`` can be used, but
+if that's not true, use a real ``Semaphore``.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgevent_1_1lock_1_1_dummy_semaphore_ab6c0219ecff8c5ac7aee4e5238841300}\label{classgevent_1_1lock_1_1_dummy_semaphore_ab6c0219ecff8c5ac7aee4e5238841300}} 
+\index{gevent\+::lock\+::\+Dummy\+Semaphore@{gevent\+::lock\+::\+Dummy\+Semaphore}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!gevent\+::lock\+::\+Dummy\+Semaphore@{gevent\+::lock\+::\+Dummy\+Semaphore}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def gevent.\+lock.\+Dummy\+Semaphore.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}.. versionchanged:: 1.1rc3
+    Accept and ignore a *value* argument for compatibility with Semaphore.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1lock_1_1_dummy_semaphore_a2ec96f58e8df31411309513bb138dcc8}\label{classgevent_1_1lock_1_1_dummy_semaphore_a2ec96f58e8df31411309513bb138dcc8}} 
+\index{gevent\+::lock\+::\+Dummy\+Semaphore@{gevent\+::lock\+::\+Dummy\+Semaphore}!acquire@{acquire}}
+\index{acquire@{acquire}!gevent\+::lock\+::\+Dummy\+Semaphore@{gevent\+::lock\+::\+Dummy\+Semaphore}}
+\subsubsection{\texorpdfstring{acquire()}{acquire()}}
+{\footnotesize\ttfamily def gevent.\+lock.\+Dummy\+Semaphore.\+acquire (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{blocking = {\ttfamily True},  }\item[{}]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A DummySemaphore can always be acquired immediately so this always
+returns True and ignores its arguments.
+
+.. versionchanged:: 1.1a1
+   Always return *true*.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1lock_1_1_dummy_semaphore_a32e9f4bb478d89bdc923aa32f334f88d}\label{classgevent_1_1lock_1_1_dummy_semaphore_a32e9f4bb478d89bdc923aa32f334f88d}} 
+\index{gevent\+::lock\+::\+Dummy\+Semaphore@{gevent\+::lock\+::\+Dummy\+Semaphore}!locked@{locked}}
+\index{locked@{locked}!gevent\+::lock\+::\+Dummy\+Semaphore@{gevent\+::lock\+::\+Dummy\+Semaphore}}
+\subsubsection{\texorpdfstring{locked()}{locked()}}
+{\footnotesize\ttfamily def gevent.\+lock.\+Dummy\+Semaphore.\+locked (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A DummySemaphore is never locked so this always returns False.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1lock_1_1_dummy_semaphore_a29fb584a77690e528fc92764d990bf3d}\label{classgevent_1_1lock_1_1_dummy_semaphore_a29fb584a77690e528fc92764d990bf3d}} 
+\index{gevent\+::lock\+::\+Dummy\+Semaphore@{gevent\+::lock\+::\+Dummy\+Semaphore}!release@{release}}
+\index{release@{release}!gevent\+::lock\+::\+Dummy\+Semaphore@{gevent\+::lock\+::\+Dummy\+Semaphore}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily def gevent.\+lock.\+Dummy\+Semaphore.\+release (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Releasing a dummy semaphore does nothing.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1lock_1_1_dummy_semaphore_a9c3fe3a91c10720b8eb75485ad9c9324}\label{classgevent_1_1lock_1_1_dummy_semaphore_a9c3fe3a91c10720b8eb75485ad9c9324}} 
+\index{gevent\+::lock\+::\+Dummy\+Semaphore@{gevent\+::lock\+::\+Dummy\+Semaphore}!wait@{wait}}
+\index{wait@{wait}!gevent\+::lock\+::\+Dummy\+Semaphore@{gevent\+::lock\+::\+Dummy\+Semaphore}}
+\subsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily def gevent.\+lock.\+Dummy\+Semaphore.\+wait (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Waiting for a DummySemaphore returns immediately.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/lock.\+py\end{DoxyCompactItemize}

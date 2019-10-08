@@ -1,0 +1,107 @@
+\hypertarget{class__pytest_1_1pytester_1_1_line_matcher}{}\section{\+\_\+pytest.\+pytester.\+Line\+Matcher Class Reference}
+\label{class__pytest_1_1pytester_1_1_line_matcher}\index{\+\_\+pytest.\+pytester.\+Line\+Matcher@{\+\_\+pytest.\+pytester.\+Line\+Matcher}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_line_matcher_ab7cbaaa0454579bf7e06a7a2b55272c2}\label{class__pytest_1_1pytester_1_1_line_matcher_ab7cbaaa0454579bf7e06a7a2b55272c2}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, lines)
+\item 
+def \hyperlink{class__pytest_1_1pytester_1_1_line_matcher_ad1ec0a52963a0ebf982d5a2ff1e8856b}{str} (self)
+\item 
+def \hyperlink{class__pytest_1_1pytester_1_1_line_matcher_a77606dd9fd900b4863c766c5f640ba27}{fnmatch\+\_\+lines\+\_\+random} (self, lines2)
+\item 
+def \hyperlink{class__pytest_1_1pytester_1_1_line_matcher_a7cb3221f2ab7309da2342bb23257fc46}{re\+\_\+match\+\_\+lines\+\_\+random} (self, lines2)
+\item 
+def \hyperlink{class__pytest_1_1pytester_1_1_line_matcher_a2841f2333c328cbd7b48ec18ce60baae}{get\+\_\+lines\+\_\+after} (self, fnline)
+\item 
+def \hyperlink{class__pytest_1_1pytester_1_1_line_matcher_a114cc37c53d37f961df9f9bf4341d381}{fnmatch\+\_\+lines} (self, lines2)
+\item 
+def \hyperlink{class__pytest_1_1pytester_1_1_line_matcher_abfacaa8b4c4e97ec60df7b299126389e}{re\+\_\+match\+\_\+lines} (self, lines2)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_line_matcher_acc548c20380063e91aac9a04e7641d0f}\label{class__pytest_1_1pytester_1_1_line_matcher_acc548c20380063e91aac9a04e7641d0f}} 
+{\bfseries lines}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Flexible matching of text.
+
+This is a convenience class to test large texts like the output of
+commands.
+
+The constructor takes a list of lines without their trailing newlines, i.e.
+``text.splitlines()``.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1pytester_1_1_line_matcher_a114cc37c53d37f961df9f9bf4341d381}\label{class__pytest_1_1pytester_1_1_line_matcher_a114cc37c53d37f961df9f9bf4341d381}} 
+\index{\+\_\+pytest\+::pytester\+::\+Line\+Matcher@{\+\_\+pytest\+::pytester\+::\+Line\+Matcher}!fnmatch\+\_\+lines@{fnmatch\+\_\+lines}}
+\index{fnmatch\+\_\+lines@{fnmatch\+\_\+lines}!\+\_\+pytest\+::pytester\+::\+Line\+Matcher@{\+\_\+pytest\+::pytester\+::\+Line\+Matcher}}
+\subsubsection{\texorpdfstring{fnmatch\+\_\+lines()}{fnmatch\_lines()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+pytester.\+Line\+Matcher.\+fnmatch\+\_\+lines (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{lines2 }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Search captured text for matching lines using ``fnmatch.fnmatch``.
+
+The argument is a list of lines which have to match and can use glob
+wildcards.  If they do not match a pytest.fail() is called.  The
+matches and non-matches are also printed on stdout.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1pytester_1_1_line_matcher_a77606dd9fd900b4863c766c5f640ba27}\label{class__pytest_1_1pytester_1_1_line_matcher_a77606dd9fd900b4863c766c5f640ba27}} 
+\index{\+\_\+pytest\+::pytester\+::\+Line\+Matcher@{\+\_\+pytest\+::pytester\+::\+Line\+Matcher}!fnmatch\+\_\+lines\+\_\+random@{fnmatch\+\_\+lines\+\_\+random}}
+\index{fnmatch\+\_\+lines\+\_\+random@{fnmatch\+\_\+lines\+\_\+random}!\+\_\+pytest\+::pytester\+::\+Line\+Matcher@{\+\_\+pytest\+::pytester\+::\+Line\+Matcher}}
+\subsubsection{\texorpdfstring{fnmatch\+\_\+lines\+\_\+random()}{fnmatch\_lines\_random()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+pytester.\+Line\+Matcher.\+fnmatch\+\_\+lines\+\_\+random (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{lines2 }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check lines exist in the output using in any order.
+
+Lines are checked using ``fnmatch.fnmatch``. The argument is a list of
+lines which have to occur in the output, in any order.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1pytester_1_1_line_matcher_a2841f2333c328cbd7b48ec18ce60baae}\label{class__pytest_1_1pytester_1_1_line_matcher_a2841f2333c328cbd7b48ec18ce60baae}} 
+\index{\+\_\+pytest\+::pytester\+::\+Line\+Matcher@{\+\_\+pytest\+::pytester\+::\+Line\+Matcher}!get\+\_\+lines\+\_\+after@{get\+\_\+lines\+\_\+after}}
+\index{get\+\_\+lines\+\_\+after@{get\+\_\+lines\+\_\+after}!\+\_\+pytest\+::pytester\+::\+Line\+Matcher@{\+\_\+pytest\+::pytester\+::\+Line\+Matcher}}
+\subsubsection{\texorpdfstring{get\+\_\+lines\+\_\+after()}{get\_lines\_after()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+pytester.\+Line\+Matcher.\+get\+\_\+lines\+\_\+after (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fnline }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return all lines following the given line in the text.
+
+The given line can contain glob wildcards.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1pytester_1_1_line_matcher_abfacaa8b4c4e97ec60df7b299126389e}\label{class__pytest_1_1pytester_1_1_line_matcher_abfacaa8b4c4e97ec60df7b299126389e}} 
+\index{\+\_\+pytest\+::pytester\+::\+Line\+Matcher@{\+\_\+pytest\+::pytester\+::\+Line\+Matcher}!re\+\_\+match\+\_\+lines@{re\+\_\+match\+\_\+lines}}
+\index{re\+\_\+match\+\_\+lines@{re\+\_\+match\+\_\+lines}!\+\_\+pytest\+::pytester\+::\+Line\+Matcher@{\+\_\+pytest\+::pytester\+::\+Line\+Matcher}}
+\subsubsection{\texorpdfstring{re\+\_\+match\+\_\+lines()}{re\_match\_lines()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+pytester.\+Line\+Matcher.\+re\+\_\+match\+\_\+lines (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{lines2 }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Search captured text for matching lines using ``re.match``.
+
+The argument is a list of lines which have to match using ``re.match``.
+If they do not match a pytest.fail() is called.
+
+The matches and non-matches are also printed on stdout.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1pytester_1_1_line_matcher_a7cb3221f2ab7309da2342bb23257fc46}\label{class__pytest_1_1pytester_1_1_line_matcher_a7cb3221f2ab7309da2342bb23257fc46}} 
+\index{\+\_\+pytest\+::pytester\+::\+Line\+Matcher@{\+\_\+pytest\+::pytester\+::\+Line\+Matcher}!re\+\_\+match\+\_\+lines\+\_\+random@{re\+\_\+match\+\_\+lines\+\_\+random}}
+\index{re\+\_\+match\+\_\+lines\+\_\+random@{re\+\_\+match\+\_\+lines\+\_\+random}!\+\_\+pytest\+::pytester\+::\+Line\+Matcher@{\+\_\+pytest\+::pytester\+::\+Line\+Matcher}}
+\subsubsection{\texorpdfstring{re\+\_\+match\+\_\+lines\+\_\+random()}{re\_match\_lines\_random()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+pytester.\+Line\+Matcher.\+re\+\_\+match\+\_\+lines\+\_\+random (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{lines2 }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check lines exist in the output using ``re.match``, in any order.
+
+The argument is a list of lines which have to occur in the output, in
+any order.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1pytester_1_1_line_matcher_ad1ec0a52963a0ebf982d5a2ff1e8856b}\label{class__pytest_1_1pytester_1_1_line_matcher_ad1ec0a52963a0ebf982d5a2ff1e8856b}} 
+\index{\+\_\+pytest\+::pytester\+::\+Line\+Matcher@{\+\_\+pytest\+::pytester\+::\+Line\+Matcher}!str@{str}}
+\index{str@{str}!\+\_\+pytest\+::pytester\+::\+Line\+Matcher@{\+\_\+pytest\+::pytester\+::\+Line\+Matcher}}
+\subsubsection{\texorpdfstring{str()}{str()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+pytester.\+Line\+Matcher.\+str (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the entire original text.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/pytester.\+py\end{DoxyCompactItemize}

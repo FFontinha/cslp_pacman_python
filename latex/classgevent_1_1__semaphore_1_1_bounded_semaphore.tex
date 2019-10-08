@@ -1,0 +1,38 @@
+\hypertarget{classgevent_1_1__semaphore_1_1_bounded_semaphore}{}\section{gevent.\+\_\+semaphore.\+Bounded\+Semaphore Class Reference}
+\label{classgevent_1_1__semaphore_1_1_bounded_semaphore}\index{gevent.\+\_\+semaphore.\+Bounded\+Semaphore@{gevent.\+\_\+semaphore.\+Bounded\+Semaphore}}
+
+
+Inherits \hyperlink{classgevent_1_1__semaphore_1_1_semaphore}{gevent.\+\_\+semaphore.\+Semaphore}.
+
+
+
+Inherited by \hyperlink{classgevent_1_1thread_1_1_lock_type}{gevent.\+thread.\+Lock\+Type}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__semaphore_1_1_bounded_semaphore_a88005e20b7a23b4fe55bfbe4e1254304}\label{classgevent_1_1__semaphore_1_1_bounded_semaphore_a88005e20b7a23b4fe55bfbe4e1254304}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, args, kwargs)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__semaphore_1_1_bounded_semaphore_a44a580da7a69128de464148610bd7b2c}\label{classgevent_1_1__semaphore_1_1_bounded_semaphore_a44a580da7a69128de464148610bd7b2c}} 
+def {\bfseries release} (self)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}BoundedSemaphore(value=1) -> BoundedSemaphore
+
+A bounded semaphore checks to make sure its current value doesn't
+exceed its initial value. If it does, :class:`ValueError` is
+raised. In most situations semaphores are used to guard resources
+with limited capacity. If the semaphore is released too many times
+it's a sign of a bug.
+
+If not given, *value* defaults to 1.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/\+\_\+semaphore.\+py\end{DoxyCompactItemize}

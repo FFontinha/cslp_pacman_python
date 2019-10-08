@@ -1,0 +1,71 @@
+\hypertarget{classpacman_tree_search_1_1_pac_domain}{}\section{pacman\+Tree\+Search.\+Pac\+Domain Class Reference}
+\label{classpacman_tree_search_1_1_pac_domain}\index{pacman\+Tree\+Search.\+Pac\+Domain@{pacman\+Tree\+Search.\+Pac\+Domain}}
+
+
+Inherits \hyperlink{classtree__search_1_1_search_domain}{tree\+\_\+search.\+Search\+Domain}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpacman_tree_search_1_1_pac_domain_a624fd17966a0d8fc045f879a756d4984}\label{classpacman_tree_search_1_1_pac_domain_a624fd17966a0d8fc045f879a756d4984}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, map, info)
+\item 
+def \hyperlink{classpacman_tree_search_1_1_pac_domain_a95a706f2147863ec5df3b79ea7af5b8f}{actions} (self, state)
+\item 
+def \hyperlink{classpacman_tree_search_1_1_pac_domain_a168ff25a4290929fd7c8a996bdf6fd9f}{result} (self, state, action)
+\item 
+def \hyperlink{classpacman_tree_search_1_1_pac_domain_adec7eec583e7446c00530ebcfda9a320}{cost} (self, state, action)
+\item 
+def \hyperlink{classpacman_tree_search_1_1_pac_domain_aa4a5017a21583f8fda719af130179c47}{heuristic} (self, state, goal\+\_\+state)
+\item 
+\mbox{\Hypertarget{classpacman_tree_search_1_1_pac_domain_a5635dd21f165367195b2d1473168476a}\label{classpacman_tree_search_1_1_pac_domain_a5635dd21f165367195b2d1473168476a}} 
+def {\bfseries satisfies} (self, state, goal)
+\item 
+\mbox{\Hypertarget{classpacman_tree_search_1_1_pac_domain_aec32a3c18e4b535fc0eeb130a12fffba}\label{classpacman_tree_search_1_1_pac_domain_aec32a3c18e4b535fc0eeb130a12fffba}} 
+def {\bfseries equivalent} (self, state1, state2)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpacman_tree_search_1_1_pac_domain_ae8c01f57ed55f1d1e947309d04cd6323}\label{classpacman_tree_search_1_1_pac_domain_ae8c01f57ed55f1d1e947309d04cd6323}} 
+{\bfseries map}
+\item 
+\mbox{\Hypertarget{classpacman_tree_search_1_1_pac_domain_ac6958cb13156d6ab106143b723f55631}\label{classpacman_tree_search_1_1_pac_domain_ac6958cb13156d6ab106143b723f55631}} 
+{\bfseries info}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpacman_tree_search_1_1_pac_domain_a95a706f2147863ec5df3b79ea7af5b8f}\label{classpacman_tree_search_1_1_pac_domain_a95a706f2147863ec5df3b79ea7af5b8f}} 
+\index{pacman\+Tree\+Search\+::\+Pac\+Domain@{pacman\+Tree\+Search\+::\+Pac\+Domain}!actions@{actions}}
+\index{actions@{actions}!pacman\+Tree\+Search\+::\+Pac\+Domain@{pacman\+Tree\+Search\+::\+Pac\+Domain}}
+\subsubsection{\texorpdfstring{actions()}{actions()}}
+{\footnotesize\ttfamily def pacman\+Tree\+Search.\+Pac\+Domain.\+actions (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{state }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Acções possiveis do pacman\end{DoxyVerb}
+ \mbox{\Hypertarget{classpacman_tree_search_1_1_pac_domain_adec7eec583e7446c00530ebcfda9a320}\label{classpacman_tree_search_1_1_pac_domain_adec7eec583e7446c00530ebcfda9a320}} 
+\index{pacman\+Tree\+Search\+::\+Pac\+Domain@{pacman\+Tree\+Search\+::\+Pac\+Domain}!cost@{cost}}
+\index{cost@{cost}!pacman\+Tree\+Search\+::\+Pac\+Domain@{pacman\+Tree\+Search\+::\+Pac\+Domain}}
+\subsubsection{\texorpdfstring{cost()}{cost()}}
+{\footnotesize\ttfamily def pacman\+Tree\+Search.\+Pac\+Domain.\+cost (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{state,  }\item[{}]{action }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculo do custo\end{DoxyVerb}
+ \mbox{\Hypertarget{classpacman_tree_search_1_1_pac_domain_aa4a5017a21583f8fda719af130179c47}\label{classpacman_tree_search_1_1_pac_domain_aa4a5017a21583f8fda719af130179c47}} 
+\index{pacman\+Tree\+Search\+::\+Pac\+Domain@{pacman\+Tree\+Search\+::\+Pac\+Domain}!heuristic@{heuristic}}
+\index{heuristic@{heuristic}!pacman\+Tree\+Search\+::\+Pac\+Domain@{pacman\+Tree\+Search\+::\+Pac\+Domain}}
+\subsubsection{\texorpdfstring{heuristic()}{heuristic()}}
+{\footnotesize\ttfamily def pacman\+Tree\+Search.\+Pac\+Domain.\+heuristic (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{state,  }\item[{}]{goal\+\_\+state }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Heuristica Mannathan (abs(xs - xg) + (abs(ys - yg))\end{DoxyVerb}
+ \mbox{\Hypertarget{classpacman_tree_search_1_1_pac_domain_a168ff25a4290929fd7c8a996bdf6fd9f}\label{classpacman_tree_search_1_1_pac_domain_a168ff25a4290929fd7c8a996bdf6fd9f}} 
+\index{pacman\+Tree\+Search\+::\+Pac\+Domain@{pacman\+Tree\+Search\+::\+Pac\+Domain}!result@{result}}
+\index{result@{result}!pacman\+Tree\+Search\+::\+Pac\+Domain@{pacman\+Tree\+Search\+::\+Pac\+Domain}}
+\subsubsection{\texorpdfstring{result()}{result()}}
+{\footnotesize\ttfamily def pacman\+Tree\+Search.\+Pac\+Domain.\+result (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{state,  }\item[{}]{action }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resultado\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pacman\+Tree\+Search.\+py\end{DoxyCompactItemize}

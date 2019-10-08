@@ -1,0 +1,112 @@
+\hypertarget{namespacewebsockets_1_1handshake}{}\section{websockets.\+handshake Namespace Reference}
+\label{namespacewebsockets_1_1handshake}\index{websockets.\+handshake@{websockets.\+handshake}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacewebsockets_1_1handshake_a5fe8d524dcf44ac708fd508eae3ff81c}{build\+\_\+request} (headers)
+\item 
+def \hyperlink{namespacewebsockets_1_1handshake_ac1ce106fd4af8a831be403588df35c44}{check\+\_\+request} (headers)
+\item 
+def \hyperlink{namespacewebsockets_1_1handshake_a636125b0e4dee92d2a9ba759e3b1d0ee}{build\+\_\+response} (headers, key)
+\item 
+def \hyperlink{namespacewebsockets_1_1handshake_a358fc900cbcbb82de84710c8046987a6}{check\+\_\+response} (headers, key)
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1handshake_a88a518d98729bfce13609463ea54241c}\label{namespacewebsockets_1_1handshake_a88a518d98729bfce13609463ea54241c}} 
+def {\bfseries accept} (key)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1handshake_a3cc02b16afb08a9162959b587991c8e8}\label{namespacewebsockets_1_1handshake_a3cc02b16afb08a9162959b587991c8e8}} 
+{\bfseries G\+U\+ID}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}The :mod:`websockets.handshake` module deals with the WebSocket opening
+handshake according to `section 4 of RFC 6455`_.
+
+.. _section 4 of RFC 6455: http://tools.ietf.org/html/rfc6455#section-4
+
+Functions defined in this module manipulate HTTP headers. The ``headers``
+argument must implement ``get`` and ``__setitem__`` and ``get`` —  a small
+subset of the :class:`~collections.abc.MutableMapping` abstract base class.
+
+Headers names and values are :class:`str` objects containing only ASCII
+characters.
+
+Some checks cannot be performed because they depend too much on the
+context; instead, they're documented below.
+
+To accept a connection, a server must:
+
+- Read the request, check that the method is GET, and check the headers with
+  :func:`check_request`,
+- Send a 101 response to the client with the headers created by
+  :func:`build_response` if the request is valid; otherwise, send an
+  appropriate HTTP error code.
+
+To open a connection, a client must:
+
+- Send a GET request to the server with the headers created by
+  :func:`build_request`,
+- Read the response, check that the status code is 101, and check the headers
+  with :func:`check_response`.\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacewebsockets_1_1handshake_a5fe8d524dcf44ac708fd508eae3ff81c}\label{namespacewebsockets_1_1handshake_a5fe8d524dcf44ac708fd508eae3ff81c}} 
+\index{websockets\+::handshake@{websockets\+::handshake}!build\+\_\+request@{build\+\_\+request}}
+\index{build\+\_\+request@{build\+\_\+request}!websockets\+::handshake@{websockets\+::handshake}}
+\subsubsection{\texorpdfstring{build\+\_\+request()}{build\_request()}}
+{\footnotesize\ttfamily def websockets.\+handshake.\+build\+\_\+request (\begin{DoxyParamCaption}\item[{}]{headers }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build a handshake request to send to the server.
+
+Return the ``key`` which must be passed to :func:`check_response`.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacewebsockets_1_1handshake_a636125b0e4dee92d2a9ba759e3b1d0ee}\label{namespacewebsockets_1_1handshake_a636125b0e4dee92d2a9ba759e3b1d0ee}} 
+\index{websockets\+::handshake@{websockets\+::handshake}!build\+\_\+response@{build\+\_\+response}}
+\index{build\+\_\+response@{build\+\_\+response}!websockets\+::handshake@{websockets\+::handshake}}
+\subsubsection{\texorpdfstring{build\+\_\+response()}{build\_response()}}
+{\footnotesize\ttfamily def websockets.\+handshake.\+build\+\_\+response (\begin{DoxyParamCaption}\item[{}]{headers,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build a handshake response to send to the client.
+
+``key`` comes from :func:`check_request`.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacewebsockets_1_1handshake_ac1ce106fd4af8a831be403588df35c44}\label{namespacewebsockets_1_1handshake_ac1ce106fd4af8a831be403588df35c44}} 
+\index{websockets\+::handshake@{websockets\+::handshake}!check\+\_\+request@{check\+\_\+request}}
+\index{check\+\_\+request@{check\+\_\+request}!websockets\+::handshake@{websockets\+::handshake}}
+\subsubsection{\texorpdfstring{check\+\_\+request()}{check\_request()}}
+{\footnotesize\ttfamily def websockets.\+handshake.\+check\+\_\+request (\begin{DoxyParamCaption}\item[{}]{headers }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check a handshake request received from the client.
+
+If the handshake is valid, this function returns the ``key`` which must be
+passed to :func:`build_response`.
+
+Otherwise it raises an :exc:`~websockets.exceptions.InvalidHandshake`
+exception and the server must return an error like 400 Bad Request.
+
+This function doesn't verify that the request is an HTTP/1.1 or higher GET
+request and doesn't perform Host and Origin checks. These controls are
+usually performed earlier in the HTTP request handling code. They're the
+responsibility of the caller.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacewebsockets_1_1handshake_a358fc900cbcbb82de84710c8046987a6}\label{namespacewebsockets_1_1handshake_a358fc900cbcbb82de84710c8046987a6}} 
+\index{websockets\+::handshake@{websockets\+::handshake}!check\+\_\+response@{check\+\_\+response}}
+\index{check\+\_\+response@{check\+\_\+response}!websockets\+::handshake@{websockets\+::handshake}}
+\subsubsection{\texorpdfstring{check\+\_\+response()}{check\_response()}}
+{\footnotesize\ttfamily def websockets.\+handshake.\+check\+\_\+response (\begin{DoxyParamCaption}\item[{}]{headers,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check a handshake response received from the server.
+
+``key`` comes from :func:`build_request`.
+
+If the handshake is valid, this function returns ``None``.
+
+Otherwise it raises an :exc:`~websockets.exceptions.InvalidHandshake`
+exception.
+
+This function doesn't verify that the response is an HTTP/1.1 or higher
+response with a 101 status code. These controls are the responsibility of
+the caller.\end{DoxyVerb}
+ 

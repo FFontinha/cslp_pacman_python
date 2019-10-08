@@ -1,0 +1,70 @@
+\hypertarget{namespacepygame_1_1examples_1_1sound__array__demos}{}\section{pygame.\+examples.\+sound\+\_\+array\+\_\+demos Namespace Reference}
+\label{namespacepygame_1_1examples_1_1sound__array__demos}\index{pygame.\+examples.\+sound\+\_\+array\+\_\+demos@{pygame.\+examples.\+sound\+\_\+array\+\_\+demos}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepygame_1_1examples_1_1sound__array__demos_abf020bfb096e724a14937f3b4e1d41e8}{make\+\_\+echo} (sound, samples\+\_\+per\+\_\+second, mydebug=True)
+\item 
+def \hyperlink{namespacepygame_1_1examples_1_1sound__array__demos_a5538155e0ecd86e2a7f99769b0846f0f}{slow\+\_\+down\+\_\+sound} (sound, rate)
+\item 
+def \hyperlink{namespacepygame_1_1examples_1_1sound__array__demos_a3ef2a5278ab9ef368dad0fe4a8d72003}{sound\+\_\+from\+\_\+pos} (sound, start\+\_\+pos, samples\+\_\+per\+\_\+second=None, inplace=1)
+\item 
+def \hyperlink{namespacepygame_1_1examples_1_1sound__array__demos_acbfb03de7788e106221eceef241c3259}{main} (arraytype=None)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Creates an echo effect an any Sound object.
+
+Uses sndarray and MumPy ( or Numeric) to create offset faded copies of the
+original sound. Currently it just uses hardcoded values for the
+number of echos and the delay. Easy for you to recreate as 
+needed. The array packaged used can be specified by an optional
+--numpy or --numeric command line option.
+
+version 2. changes:
+- Should work with different sample rates now.
+- put into a function.
+- Uses NumPy by default, but falls back on Numeric.\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1sound__array__demos_acbfb03de7788e106221eceef241c3259}\label{namespacepygame_1_1examples_1_1sound__array__demos_acbfb03de7788e106221eceef241c3259}} 
+\index{pygame\+::examples\+::sound\+\_\+array\+\_\+demos@{pygame\+::examples\+::sound\+\_\+array\+\_\+demos}!main@{main}}
+\index{main@{main}!pygame\+::examples\+::sound\+\_\+array\+\_\+demos@{pygame\+::examples\+::sound\+\_\+array\+\_\+demos}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def pygame.\+examples.\+sound\+\_\+array\+\_\+demos.\+main (\begin{DoxyParamCaption}\item[{}]{arraytype = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}play various sndarray effects
+
+If arraytype is provided then use that array package. Valid
+values are 'numeric' or 'numpy'. Otherwise default to NumPy,
+or fall back on Numeric if NumPy is not installed.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1examples_1_1sound__array__demos_abf020bfb096e724a14937f3b4e1d41e8}\label{namespacepygame_1_1examples_1_1sound__array__demos_abf020bfb096e724a14937f3b4e1d41e8}} 
+\index{pygame\+::examples\+::sound\+\_\+array\+\_\+demos@{pygame\+::examples\+::sound\+\_\+array\+\_\+demos}!make\+\_\+echo@{make\+\_\+echo}}
+\index{make\+\_\+echo@{make\+\_\+echo}!pygame\+::examples\+::sound\+\_\+array\+\_\+demos@{pygame\+::examples\+::sound\+\_\+array\+\_\+demos}}
+\subsubsection{\texorpdfstring{make\+\_\+echo()}{make\_echo()}}
+{\footnotesize\ttfamily def pygame.\+examples.\+sound\+\_\+array\+\_\+demos.\+make\+\_\+echo (\begin{DoxyParamCaption}\item[{}]{sound,  }\item[{}]{samples\+\_\+per\+\_\+second,  }\item[{}]{mydebug = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}returns a sound which is echoed of the last one.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1examples_1_1sound__array__demos_a5538155e0ecd86e2a7f99769b0846f0f}\label{namespacepygame_1_1examples_1_1sound__array__demos_a5538155e0ecd86e2a7f99769b0846f0f}} 
+\index{pygame\+::examples\+::sound\+\_\+array\+\_\+demos@{pygame\+::examples\+::sound\+\_\+array\+\_\+demos}!slow\+\_\+down\+\_\+sound@{slow\+\_\+down\+\_\+sound}}
+\index{slow\+\_\+down\+\_\+sound@{slow\+\_\+down\+\_\+sound}!pygame\+::examples\+::sound\+\_\+array\+\_\+demos@{pygame\+::examples\+::sound\+\_\+array\+\_\+demos}}
+\subsubsection{\texorpdfstring{slow\+\_\+down\+\_\+sound()}{slow\_down\_sound()}}
+{\footnotesize\ttfamily def pygame.\+examples.\+sound\+\_\+array\+\_\+demos.\+slow\+\_\+down\+\_\+sound (\begin{DoxyParamCaption}\item[{}]{sound,  }\item[{}]{rate }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}returns a sound which is a slowed down version of the original.
+       rate - at which the sound should be slowed down.  eg. 0.5 would be half speed.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1examples_1_1sound__array__demos_a3ef2a5278ab9ef368dad0fe4a8d72003}\label{namespacepygame_1_1examples_1_1sound__array__demos_a3ef2a5278ab9ef368dad0fe4a8d72003}} 
+\index{pygame\+::examples\+::sound\+\_\+array\+\_\+demos@{pygame\+::examples\+::sound\+\_\+array\+\_\+demos}!sound\+\_\+from\+\_\+pos@{sound\+\_\+from\+\_\+pos}}
+\index{sound\+\_\+from\+\_\+pos@{sound\+\_\+from\+\_\+pos}!pygame\+::examples\+::sound\+\_\+array\+\_\+demos@{pygame\+::examples\+::sound\+\_\+array\+\_\+demos}}
+\subsubsection{\texorpdfstring{sound\+\_\+from\+\_\+pos()}{sound\_from\_pos()}}
+{\footnotesize\ttfamily def pygame.\+examples.\+sound\+\_\+array\+\_\+demos.\+sound\+\_\+from\+\_\+pos (\begin{DoxyParamCaption}\item[{}]{sound,  }\item[{}]{start\+\_\+pos,  }\item[{}]{samples\+\_\+per\+\_\+second = {\ttfamily None},  }\item[{}]{inplace = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}returns a sound which begins at the start_pos.
+     start_pos - in seconds from the begining.
+     samples_per_second - 
+\end{DoxyVerb}
+ 

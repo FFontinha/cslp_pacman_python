@@ -1,0 +1,82 @@
+\hypertarget{viewer_8py}{}\section{viewer.\+py File Reference}
+\label{viewer_8py}\index{viewer.\+py@{viewer.\+py}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classviewer_1_1_game_over}{viewer.\+Game\+Over}
+\item 
+class \hyperlink{classviewer_1_1_pac_man}{viewer.\+Pac\+Man}
+\item 
+class \hyperlink{classviewer_1_1_ghost}{viewer.\+Ghost}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceviewer}{viewer}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceviewer_a0826d04cc7d687880b5319be8eb7cd43}{viewer.\+messages\+\_\+handler} (ws\+\_\+path, queue)
+\item 
+def \hyperlink{namespaceviewer_abc882e9f90b892fa6984e88c1a387920}{viewer.\+clear\+\_\+callback} (surf, rect)
+\item 
+def \hyperlink{namespaceviewer_aa2b64260b485ecd3de1ef871b30cb966}{viewer.\+scale} (pos)
+\item 
+def \hyperlink{namespaceviewer_a1907ec5a9737fd37e3d6401cedfe3c86}{viewer.\+draw\+\_\+background} (mapa, S\+C\+R\+E\+EN)
+\item 
+def \hyperlink{namespaceviewer_a9907b06131a30cefdda3202aa498e6b6}{viewer.\+draw\+\_\+wall} (S\+C\+R\+E\+EN, x, y)
+\item 
+def \hyperlink{namespaceviewer_a2d2685c19dd8912cb8999147b8774a39}{viewer.\+draw\+\_\+energy} (S\+C\+R\+E\+EN, x, y, boost=False)
+\item 
+def \hyperlink{namespaceviewer_ad78eceb6648e8eadcdcb58cf7d161dfb}{viewer.\+draw\+\_\+info} (S\+C\+R\+E\+EN, text, pos)
+\item 
+def \hyperlink{namespaceviewer_a4e02ea07dd7149a5b5afcffb300c14aa}{viewer.\+main\+\_\+loop} (q)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceviewer_ae5293c9bdae639c8c4c58c076722d755}{viewer.\+level}
+\item 
+\hyperlink{namespaceviewer_a7a420ec0e1bb58775b845f32c4674daa}{viewer.\+logger} = logging.\+get\+Logger(\textquotesingle{}websockets\textquotesingle{})
+\item 
+dictionary \hyperlink{namespaceviewer_a3bd33705051ffc40b5bfd35e243ae0ac}{viewer.\+P\+A\+C\+M\+AN} = \{\textquotesingle{}up\textquotesingle{}\+: (24, 72), \textquotesingle{}left\textquotesingle{}\+: (0, 72), \textquotesingle{}down\textquotesingle{}\+: (120, 72), \textquotesingle{}right\textquotesingle{}\+: (96, 72)\}
+\item 
+dictionary \hyperlink{namespaceviewer_a49becc796180fd2036cad73589a3cfcc}{viewer.\+R\+E\+D\+\_\+\+G\+H\+O\+ST} = \{\textquotesingle{}up\textquotesingle{}\+: (168, 144), \textquotesingle{}left\textquotesingle{}\+: (96, 144), \textquotesingle{}down\textquotesingle{}\+: (48, 144), \textquotesingle{}right\textquotesingle{}\+: (0, 144)\}
+\item 
+dictionary \hyperlink{namespaceviewer_abe62d2acf5d0c83805fa210e5e88eca2}{viewer.\+P\+I\+N\+K\+\_\+\+G\+H\+O\+ST} = \{\textquotesingle{}up\textquotesingle{}\+: (168, 192), \textquotesingle{}left\textquotesingle{}\+: (96, 192), \textquotesingle{}down\textquotesingle{}\+: (48, 192), \textquotesingle{}right\textquotesingle{}\+: (0, 192)\}
+\item 
+dictionary \hyperlink{namespaceviewer_a8dd3905e87c1c9dfdb99de2c99d24bd8}{viewer.\+O\+R\+A\+N\+G\+E\+\_\+\+G\+H\+O\+ST} = \{\textquotesingle{}up\textquotesingle{}\+: (168, 216), \textquotesingle{}left\textquotesingle{}\+: (96, 216), \textquotesingle{}down\textquotesingle{}\+: (48, 216), \textquotesingle{}right\textquotesingle{}\+: (0, 216)\}
+\item 
+dictionary \hyperlink{namespaceviewer_a597b296be3b6c09a7759a6b15e8691d2}{viewer.\+B\+L\+U\+E\+\_\+\+G\+H\+O\+ST} = \{\textquotesingle{}up\textquotesingle{}\+: (8$\ast$24+168, 192), \textquotesingle{}left\textquotesingle{}\+: (8$\ast$24+96, 192), \textquotesingle{}down\textquotesingle{}\+: (8$\ast$24+48, 192), \textquotesingle{}right\textquotesingle{}\+: (8$\ast$24+0, 192)\}
+\item 
+list \hyperlink{namespaceviewer_acf3b118d8806b60e75950eb17c346ff7}{viewer.\+G\+H\+O\+S\+TS} = \mbox{[}R\+E\+D\+\_\+\+G\+H\+O\+ST, P\+I\+N\+K\+\_\+\+G\+H\+O\+ST, O\+R\+A\+N\+G\+E\+\_\+\+G\+H\+O\+ST, B\+L\+U\+E\+\_\+\+G\+H\+O\+ST\mbox{]}
+\item 
+int \hyperlink{namespaceviewer_a3086f1a9ab26e199f7f0b53f1fd0443f}{viewer.\+C\+H\+A\+R\+\_\+\+L\+E\+N\+G\+TH} = 26
+\item 
+int \hyperlink{namespaceviewer_ae24d498ff64ab3cc41406c591e58c0dd}{viewer.\+C\+H\+A\+R\+\_\+\+S\+I\+ZE} = C\+H\+A\+R\+\_\+\+L\+E\+N\+G\+TH, C\+H\+A\+R\+\_\+\+L\+E\+N\+G\+TH
+\item 
+int \hyperlink{namespaceviewer_ad5e2ff3c34674b67764a31dc0ba5a1c4}{viewer.\+E\+N\+E\+R\+G\+Y\+\_\+\+R\+A\+D\+I\+US} = 4
+\item 
+int \hyperlink{namespaceviewer_ab4d3ff3e9dd13bedd3897c4871c927ad}{viewer.\+B\+O\+O\+S\+T\+\_\+\+R\+A\+D\+I\+US} = 8
+\item 
+\hyperlink{namespaceviewer_a33982a3fdf16022861ad8227ed375a3f}{viewer.\+S\+C\+A\+LE} = None
+\item 
+\hyperlink{namespaceviewer_a40cdbd0d97e7e53fe61800e7e504e763}{viewer.\+parser} = argparse.\+Argument\+Parser()
+\item 
+\hyperlink{namespaceviewer_a4519b0a4a06be2d506044dbada863c7e}{viewer.\+help}
+\item 
+\hyperlink{namespaceviewer_af9634fd9573f0f29bdd7856c3b61decc}{viewer.\+default}
+\item 
+\hyperlink{namespaceviewer_aae395bb4d0ce7a287019769e4ed6e603}{viewer.\+type}
+\item 
+\hyperlink{namespaceviewer_ad9bf277fee851c5eadd676fe6f1a24e8}{viewer.\+int}
+\item 
+\hyperlink{namespaceviewer_ae4c74d58aa55cd0c26a4f9113529f1bf}{viewer.\+args} = parser.\+parse\+\_\+args()
+\item 
+\hyperlink{namespaceviewer_a660bbde5965f91becad747868e409c6c}{viewer.\+L\+O\+OP} = asyncio.\+get\+\_\+event\+\_\+loop()
+\item 
+\hyperlink{namespaceviewer_a1f452bb9e64e242ae0cf6089e85cf1ca}{viewer.\+q} = asyncio.\+Queue()
+\item 
+string \hyperlink{namespaceviewer_aa3b7314e33c7838d36b05e751690ea1b}{viewer.\+ws\+\_\+path} = \textquotesingle{}ws\+://\{\}\+:\{\}/viewer\textquotesingle{}.format(args.\+server, args.\+port)
+\end{DoxyCompactItemize}

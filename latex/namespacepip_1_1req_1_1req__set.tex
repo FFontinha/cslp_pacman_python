@@ -1,0 +1,52 @@
+\hypertarget{namespacepip_1_1req_1_1req__set}{}\section{pip.\+req.\+req\+\_\+set Namespace Reference}
+\label{namespacepip_1_1req_1_1req__set}\index{pip.\+req.\+req\+\_\+set@{pip.\+req.\+req\+\_\+set}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpip_1_1req_1_1req__set_1_1_dist_abstraction}{Dist\+Abstraction}
+\item 
+class \hyperlink{classpip_1_1req_1_1req__set_1_1_installed}{Installed}
+\item 
+class \hyperlink{classpip_1_1req_1_1req__set_1_1_is_s_dist}{Is\+S\+Dist}
+\item 
+class \hyperlink{classpip_1_1req_1_1req__set_1_1_is_wheel}{Is\+Wheel}
+\item 
+class \hyperlink{classpip_1_1req_1_1req__set_1_1_requirements}{Requirements}
+\item 
+class \hyperlink{classpip_1_1req_1_1req__set_1_1_requirement_set}{Requirement\+Set}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepip_1_1req_1_1req__set_a0310dc8ab7613e26b5f9d368e5a7290b}{make\+\_\+abstract\+\_\+dist} (req\+\_\+to\+\_\+install)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacepip_1_1req_1_1req__set_af90cb2c437dda0849fed3f9f246b6e2c}{logger} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepip_1_1req_1_1req__set_a0310dc8ab7613e26b5f9d368e5a7290b}\label{namespacepip_1_1req_1_1req__set_a0310dc8ab7613e26b5f9d368e5a7290b}} 
+\index{pip\+::req\+::req\+\_\+set@{pip\+::req\+::req\+\_\+set}!make\+\_\+abstract\+\_\+dist@{make\+\_\+abstract\+\_\+dist}}
+\index{make\+\_\+abstract\+\_\+dist@{make\+\_\+abstract\+\_\+dist}!pip\+::req\+::req\+\_\+set@{pip\+::req\+::req\+\_\+set}}
+\subsubsection{\texorpdfstring{make\+\_\+abstract\+\_\+dist()}{make\_abstract\_dist()}}
+{\footnotesize\ttfamily def pip.\+req.\+req\+\_\+set.\+make\+\_\+abstract\+\_\+dist (\begin{DoxyParamCaption}\item[{}]{req\+\_\+to\+\_\+install }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Factory to make an abstract dist object.
+
+Preconditions: Either an editable req with a source_dir, or satisfied_by or
+a wheel link, or a non-editable req with a source_dir.
+
+:return: A concrete DistAbstraction.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepip_1_1req_1_1req__set_af90cb2c437dda0849fed3f9f246b6e2c}\label{namespacepip_1_1req_1_1req__set_af90cb2c437dda0849fed3f9f246b6e2c}} 
+\index{pip\+::req\+::req\+\_\+set@{pip\+::req\+::req\+\_\+set}!logger@{logger}}
+\index{logger@{logger}!pip\+::req\+::req\+\_\+set@{pip\+::req\+::req\+\_\+set}}
+\subsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily pip.\+req.\+req\+\_\+set.\+logger = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+

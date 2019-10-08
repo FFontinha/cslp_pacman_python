@@ -1,0 +1,65 @@
+\hypertarget{stathelper_8c}{}\section{venv/lib/python3.6/site-\/packages/gevent/libev/stathelper.c File Reference}
+\label{stathelper_8c}\index{venv/lib/python3.\+6/site-\/packages/gevent/libev/stathelper.\+c@{venv/lib/python3.\+6/site-\/packages/gevent/libev/stathelper.\+c}}
+{\ttfamily \#include \char`\"{}structseq.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{stathelper_8c_a5c43c2fda1aeed655bc303ed83ed1614}{S\+T\+R\+U\+C\+T\+\_\+\+S\+T\+AT}~struct \hyperlink{structstat}{stat}
+\item 
+\#define \hyperlink{stathelper_8c_a909111e4c9eda2a5269f36e9ed31d1d1}{S\+T\+\_\+\+B\+L\+K\+S\+I\+Z\+E\+\_\+\+I\+DX}~12
+\item 
+\#define \hyperlink{stathelper_8c_a2d64d609645568d2daa95de052ac8828}{S\+T\+\_\+\+B\+L\+O\+C\+K\+S\+\_\+\+I\+DX}~\hyperlink{stathelper_8c_a909111e4c9eda2a5269f36e9ed31d1d1}{S\+T\+\_\+\+B\+L\+K\+S\+I\+Z\+E\+\_\+\+I\+DX}
+\item 
+\#define \hyperlink{stathelper_8c_abe4f4543b012d7d57509425a93002f1b}{S\+T\+\_\+\+R\+D\+E\+V\+\_\+\+I\+DX}~\hyperlink{stathelper_8c_a2d64d609645568d2daa95de052ac8828}{S\+T\+\_\+\+B\+L\+O\+C\+K\+S\+\_\+\+I\+DX}
+\item 
+\#define \hyperlink{stathelper_8c_aa9e01c48c6161b23ad341fe9ca035be2}{S\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+I\+DX}~\hyperlink{stathelper_8c_abe4f4543b012d7d57509425a93002f1b}{S\+T\+\_\+\+R\+D\+E\+V\+\_\+\+I\+DX}
+\item 
+\#define \hyperlink{stathelper_8c_a462e8c204b6b67c25c8cc4f93a173f20}{S\+T\+\_\+\+G\+E\+N\+\_\+\+I\+DX}~\hyperlink{stathelper_8c_aa9e01c48c6161b23ad341fe9ca035be2}{S\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+I\+DX}
+\item 
+\#define \hyperlink{stathelper_8c_aa6ec526a1426a499625e8a8fa3105177}{S\+T\+\_\+\+B\+I\+R\+T\+H\+T\+I\+M\+E\+\_\+\+I\+DX}~\hyperlink{stathelper_8c_a462e8c204b6b67c25c8cc4f93a173f20}{S\+T\+\_\+\+G\+E\+N\+\_\+\+I\+DX}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{stathelper_8c_aa6ec526a1426a499625e8a8fa3105177}\label{stathelper_8c_aa6ec526a1426a499625e8a8fa3105177}} 
+\index{stathelper.\+c@{stathelper.\+c}!S\+T\+\_\+\+B\+I\+R\+T\+H\+T\+I\+M\+E\+\_\+\+I\+DX@{S\+T\+\_\+\+B\+I\+R\+T\+H\+T\+I\+M\+E\+\_\+\+I\+DX}}
+\index{S\+T\+\_\+\+B\+I\+R\+T\+H\+T\+I\+M\+E\+\_\+\+I\+DX@{S\+T\+\_\+\+B\+I\+R\+T\+H\+T\+I\+M\+E\+\_\+\+I\+DX}!stathelper.\+c@{stathelper.\+c}}
+\subsubsection{\texorpdfstring{S\+T\+\_\+\+B\+I\+R\+T\+H\+T\+I\+M\+E\+\_\+\+I\+DX}{ST\_BIRTHTIME\_IDX}}
+{\footnotesize\ttfamily \#define S\+T\+\_\+\+B\+I\+R\+T\+H\+T\+I\+M\+E\+\_\+\+I\+DX~\hyperlink{stathelper_8c_a462e8c204b6b67c25c8cc4f93a173f20}{S\+T\+\_\+\+G\+E\+N\+\_\+\+I\+DX}}
+
+\mbox{\Hypertarget{stathelper_8c_a909111e4c9eda2a5269f36e9ed31d1d1}\label{stathelper_8c_a909111e4c9eda2a5269f36e9ed31d1d1}} 
+\index{stathelper.\+c@{stathelper.\+c}!S\+T\+\_\+\+B\+L\+K\+S\+I\+Z\+E\+\_\+\+I\+DX@{S\+T\+\_\+\+B\+L\+K\+S\+I\+Z\+E\+\_\+\+I\+DX}}
+\index{S\+T\+\_\+\+B\+L\+K\+S\+I\+Z\+E\+\_\+\+I\+DX@{S\+T\+\_\+\+B\+L\+K\+S\+I\+Z\+E\+\_\+\+I\+DX}!stathelper.\+c@{stathelper.\+c}}
+\subsubsection{\texorpdfstring{S\+T\+\_\+\+B\+L\+K\+S\+I\+Z\+E\+\_\+\+I\+DX}{ST\_BLKSIZE\_IDX}}
+{\footnotesize\ttfamily \#define S\+T\+\_\+\+B\+L\+K\+S\+I\+Z\+E\+\_\+\+I\+DX~12}
+
+\mbox{\Hypertarget{stathelper_8c_a2d64d609645568d2daa95de052ac8828}\label{stathelper_8c_a2d64d609645568d2daa95de052ac8828}} 
+\index{stathelper.\+c@{stathelper.\+c}!S\+T\+\_\+\+B\+L\+O\+C\+K\+S\+\_\+\+I\+DX@{S\+T\+\_\+\+B\+L\+O\+C\+K\+S\+\_\+\+I\+DX}}
+\index{S\+T\+\_\+\+B\+L\+O\+C\+K\+S\+\_\+\+I\+DX@{S\+T\+\_\+\+B\+L\+O\+C\+K\+S\+\_\+\+I\+DX}!stathelper.\+c@{stathelper.\+c}}
+\subsubsection{\texorpdfstring{S\+T\+\_\+\+B\+L\+O\+C\+K\+S\+\_\+\+I\+DX}{ST\_BLOCKS\_IDX}}
+{\footnotesize\ttfamily \#define S\+T\+\_\+\+B\+L\+O\+C\+K\+S\+\_\+\+I\+DX~\hyperlink{stathelper_8c_a909111e4c9eda2a5269f36e9ed31d1d1}{S\+T\+\_\+\+B\+L\+K\+S\+I\+Z\+E\+\_\+\+I\+DX}}
+
+\mbox{\Hypertarget{stathelper_8c_aa9e01c48c6161b23ad341fe9ca035be2}\label{stathelper_8c_aa9e01c48c6161b23ad341fe9ca035be2}} 
+\index{stathelper.\+c@{stathelper.\+c}!S\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+I\+DX@{S\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+I\+DX}}
+\index{S\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+I\+DX@{S\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+I\+DX}!stathelper.\+c@{stathelper.\+c}}
+\subsubsection{\texorpdfstring{S\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+I\+DX}{ST\_FLAGS\_IDX}}
+{\footnotesize\ttfamily \#define S\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+I\+DX~\hyperlink{stathelper_8c_abe4f4543b012d7d57509425a93002f1b}{S\+T\+\_\+\+R\+D\+E\+V\+\_\+\+I\+DX}}
+
+\mbox{\Hypertarget{stathelper_8c_a462e8c204b6b67c25c8cc4f93a173f20}\label{stathelper_8c_a462e8c204b6b67c25c8cc4f93a173f20}} 
+\index{stathelper.\+c@{stathelper.\+c}!S\+T\+\_\+\+G\+E\+N\+\_\+\+I\+DX@{S\+T\+\_\+\+G\+E\+N\+\_\+\+I\+DX}}
+\index{S\+T\+\_\+\+G\+E\+N\+\_\+\+I\+DX@{S\+T\+\_\+\+G\+E\+N\+\_\+\+I\+DX}!stathelper.\+c@{stathelper.\+c}}
+\subsubsection{\texorpdfstring{S\+T\+\_\+\+G\+E\+N\+\_\+\+I\+DX}{ST\_GEN\_IDX}}
+{\footnotesize\ttfamily \#define S\+T\+\_\+\+G\+E\+N\+\_\+\+I\+DX~\hyperlink{stathelper_8c_aa9e01c48c6161b23ad341fe9ca035be2}{S\+T\+\_\+\+F\+L\+A\+G\+S\+\_\+\+I\+DX}}
+
+\mbox{\Hypertarget{stathelper_8c_abe4f4543b012d7d57509425a93002f1b}\label{stathelper_8c_abe4f4543b012d7d57509425a93002f1b}} 
+\index{stathelper.\+c@{stathelper.\+c}!S\+T\+\_\+\+R\+D\+E\+V\+\_\+\+I\+DX@{S\+T\+\_\+\+R\+D\+E\+V\+\_\+\+I\+DX}}
+\index{S\+T\+\_\+\+R\+D\+E\+V\+\_\+\+I\+DX@{S\+T\+\_\+\+R\+D\+E\+V\+\_\+\+I\+DX}!stathelper.\+c@{stathelper.\+c}}
+\subsubsection{\texorpdfstring{S\+T\+\_\+\+R\+D\+E\+V\+\_\+\+I\+DX}{ST\_RDEV\_IDX}}
+{\footnotesize\ttfamily \#define S\+T\+\_\+\+R\+D\+E\+V\+\_\+\+I\+DX~\hyperlink{stathelper_8c_a2d64d609645568d2daa95de052ac8828}{S\+T\+\_\+\+B\+L\+O\+C\+K\+S\+\_\+\+I\+DX}}
+
+\mbox{\Hypertarget{stathelper_8c_a5c43c2fda1aeed655bc303ed83ed1614}\label{stathelper_8c_a5c43c2fda1aeed655bc303ed83ed1614}} 
+\index{stathelper.\+c@{stathelper.\+c}!S\+T\+R\+U\+C\+T\+\_\+\+S\+T\+AT@{S\+T\+R\+U\+C\+T\+\_\+\+S\+T\+AT}}
+\index{S\+T\+R\+U\+C\+T\+\_\+\+S\+T\+AT@{S\+T\+R\+U\+C\+T\+\_\+\+S\+T\+AT}!stathelper.\+c@{stathelper.\+c}}
+\subsubsection{\texorpdfstring{S\+T\+R\+U\+C\+T\+\_\+\+S\+T\+AT}{STRUCT\_STAT}}
+{\footnotesize\ttfamily \#define S\+T\+R\+U\+C\+T\+\_\+\+S\+T\+AT~struct \hyperlink{structstat}{stat}}
+

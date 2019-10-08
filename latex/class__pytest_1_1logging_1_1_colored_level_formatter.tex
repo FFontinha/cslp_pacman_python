@@ -1,0 +1,54 @@
+\hypertarget{class__pytest_1_1logging_1_1_colored_level_formatter}{}\section{\+\_\+pytest.\+logging.\+Colored\+Level\+Formatter Class Reference}
+\label{class__pytest_1_1logging_1_1_colored_level_formatter}\index{\+\_\+pytest.\+logging.\+Colored\+Level\+Formatter@{\+\_\+pytest.\+logging.\+Colored\+Level\+Formatter}}
+
+
+Inherits Formatter.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1logging_1_1_colored_level_formatter_adb00462988b5fd3e051a32126f112c92}\label{class__pytest_1_1logging_1_1_colored_level_formatter_adb00462988b5fd3e051a32126f112c92}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, terminalwriter, args, kwargs)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1logging_1_1_colored_level_formatter_aa80f818609ef0e43b9b6a1c854820f00}\label{class__pytest_1_1logging_1_1_colored_level_formatter_aa80f818609ef0e43b9b6a1c854820f00}} 
+def {\bfseries format} (self, record)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dictionary {\bfseries L\+O\+G\+L\+E\+V\+E\+L\+\_\+\+C\+O\+L\+O\+R\+O\+P\+TS}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1logging_1_1_colored_level_formatter_a2c8f52256ca28158e9152fb64b9a5f12}\label{class__pytest_1_1logging_1_1_colored_level_formatter_a2c8f52256ca28158e9152fb64b9a5f12}} 
+{\bfseries L\+E\+V\+E\+L\+N\+A\+M\+E\+\_\+\+F\+M\+T\+\_\+\+R\+E\+G\+EX} = re.\+compile(r\char`\"{}\%\textbackslash{}(levelname\textbackslash{})(\mbox{[}+-\/\mbox{]}?\textbackslash{}d$\ast$s)\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Colorize the %(levelname)..s part of the log format passed to __init__.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class__pytest_1_1logging_1_1_colored_level_formatter_a1ff0351c7660c1fc744941479117807f}\label{class__pytest_1_1logging_1_1_colored_level_formatter_a1ff0351c7660c1fc744941479117807f}} 
+\index{\+\_\+pytest\+::logging\+::\+Colored\+Level\+Formatter@{\+\_\+pytest\+::logging\+::\+Colored\+Level\+Formatter}!L\+O\+G\+L\+E\+V\+E\+L\+\_\+\+C\+O\+L\+O\+R\+O\+P\+TS@{L\+O\+G\+L\+E\+V\+E\+L\+\_\+\+C\+O\+L\+O\+R\+O\+P\+TS}}
+\index{L\+O\+G\+L\+E\+V\+E\+L\+\_\+\+C\+O\+L\+O\+R\+O\+P\+TS@{L\+O\+G\+L\+E\+V\+E\+L\+\_\+\+C\+O\+L\+O\+R\+O\+P\+TS}!\+\_\+pytest\+::logging\+::\+Colored\+Level\+Formatter@{\+\_\+pytest\+::logging\+::\+Colored\+Level\+Formatter}}
+\subsubsection{\texorpdfstring{L\+O\+G\+L\+E\+V\+E\+L\+\_\+\+C\+O\+L\+O\+R\+O\+P\+TS}{LOGLEVEL\_COLOROPTS}}
+{\footnotesize\ttfamily dictionary \+\_\+pytest.\+logging.\+Colored\+Level\+Formatter.\+L\+O\+G\+L\+E\+V\+E\+L\+\_\+\+C\+O\+L\+O\+R\+O\+P\+TS\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \{
+        logging.CRITICAL: \{\textcolor{stringliteral}{"red"}\},
+        logging.ERROR: \{\textcolor{stringliteral}{"red"}, \textcolor{stringliteral}{"bold"}\},
+        logging.WARNING: \{\textcolor{stringliteral}{"yellow"}\},
+        logging.WARN: \{\textcolor{stringliteral}{"yellow"}\},
+        logging.INFO: \{\textcolor{stringliteral}{"green"}\},
+        logging.DEBUG: \{\textcolor{stringliteral}{"purple"}\},
+        logging.NOTSET: set(),
+    \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/logging.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+\hypertarget{namespacegevent_1_1fileobject}{}\section{gevent.\+fileobject Namespace Reference}
+\label{namespacegevent_1_1fileobject}\index{gevent.\+fileobject@{gevent.\+fileobject}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacegevent_1_1fileobject_a8b5971757e4fa1e2581d98114b7b66fe}\label{namespacegevent_1_1fileobject_a8b5971757e4fa1e2581d98114b7b66fe}} 
+{\bfseries File\+Object} = config.\+fileobject
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Wrappers to make file-like objects cooperative.
+
+.. class:: FileObject
+
+   The main entry point to the file-like gevent-compatible behaviour. It will be defined
+   to be the best available implementation.
+
+There are two main implementations of ``FileObject``. On all systems,
+there is :class:`FileObjectThread` which uses the built-in native
+threadpool to avoid blocking the entire interpreter. On UNIX systems
+(those that support the :mod:`fcntl` module), there is also
+:class:`FileObjectPosix` which uses native non-blocking semantics.
+
+A third class, :class:`FileObjectBlock`, is simply a wrapper that executes everything
+synchronously (and so is not gevent-compatible). It is provided for testing and debugging
+purposes.
+
+Configuration
+=============
+
+You may change the default value for ``FileObject`` using the
+``GEVENT_FILE`` environment variable. Set it to ``posix``, ``thread``,
+or ``block`` to choose from :class:`FileObjectPosix`,
+:class:`FileObjectThread` and :class:`FileObjectBlock`, respectively.
+You may also set it to the fully qualified class name of another
+object that implements the file interface to use one of your own
+objects.
+
+.. note:: The environment variable must be set at the time this module
+   is first imported.
+
+Classes
+=======
+\end{DoxyVerb}
+ 

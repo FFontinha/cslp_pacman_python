@@ -1,0 +1,186 @@
+\hypertarget{bitmask_8h}{}\section{venv/include/site/python3.6/pygame/bitmask.h File Reference}
+\label{bitmask_8h}\index{venv/include/site/python3.\+6/pygame/bitmask.\+h@{venv/include/site/python3.\+6/pygame/bitmask.\+h}}
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbitmask}{bitmask}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{bitmask_8h_a2eb6f9e0395b47b8d5e3eeae4fe0c116}{I\+N\+L\+I\+NE}
+\item 
+\#define \hyperlink{bitmask_8h_a65861bb1744fdd99af2c9d019c94c6a8}{B\+I\+T\+M\+A\+S\+K\+\_\+W}~unsigned long int
+\item 
+\#define \hyperlink{bitmask_8h_a5d303ad7af1508d191bf10a8f12e0ca6}{B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+L\+EN}~(sizeof(\hyperlink{bitmask_8h_a65861bb1744fdd99af2c9d019c94c6a8}{B\+I\+T\+M\+A\+S\+K\+\_\+W})$\ast$C\+H\+A\+R\+\_\+\+B\+IT)
+\item 
+\#define \hyperlink{bitmask_8h_afa7e67b271a40c990b32d0352d7af437}{B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+M\+A\+SK}~(\hyperlink{bitmask_8h_a5d303ad7af1508d191bf10a8f12e0ca6}{B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+L\+EN} -\/ 1)
+\item 
+\#define \hyperlink{bitmask_8h_a2cd17dec717b4d75b7ec651c0b146c14}{B\+I\+T\+M\+A\+S\+K\+\_\+N}(n)~((\hyperlink{bitmask_8h_a65861bb1744fdd99af2c9d019c94c6a8}{B\+I\+T\+M\+A\+S\+K\+\_\+W})1 $<$$<$ (n))
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structbitmask}{bitmask} \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$ \hyperlink{bitmask_8h_aa752ba4914c2b0281e5936851f223d7a}{bitmask\+\_\+create} (int w, int h)
+\item 
+void \hyperlink{bitmask_8h_a379d419bea71c3f666f6da85c03541d7}{bitmask\+\_\+free} (\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$m)
+\item 
+void \hyperlink{bitmask_8h_ae020ada4c4e04de0e829cc0248fcf552}{bitmask\+\_\+clear} (\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$m)
+\item 
+void \hyperlink{bitmask_8h_a82bb2f19bb34d8ba5240afb64e8552f2}{bitmask\+\_\+fill} (\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$m)
+\item 
+void \hyperlink{bitmask_8h_ae8cd3225bc8d4217adc83c0ab6fc0f25}{bitmask\+\_\+invert} (\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$m)
+\item 
+unsigned int \hyperlink{bitmask_8h_a1339d047b942a5dd649763a3869c380d}{bitmask\+\_\+count} (\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$m)
+\item 
+int \hyperlink{bitmask_8h_a07c65f652b03bee8d0cad4dedee17fe7}{bitmask\+\_\+overlap} (const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$a, const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$b, int xoffset, int yoffset)
+\item 
+int \hyperlink{bitmask_8h_a695a67d13d6f85c01acb6e1549c45d52}{bitmask\+\_\+overlap\+\_\+pos} (const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$a, const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$b, int xoffset, int yoffset, int $\ast$x, int $\ast$y)
+\item 
+int \hyperlink{bitmask_8h_afd774ee58a1a496ba270efccf991aff4}{bitmask\+\_\+overlap\+\_\+area} (const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$a, const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$b, int xoffset, int yoffset)
+\item 
+void \hyperlink{bitmask_8h_a548594904deeac9b21d930ee40630a88}{bitmask\+\_\+overlap\+\_\+mask} (const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$a, const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$b, \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$c, int xoffset, int yoffset)
+\item 
+void \hyperlink{bitmask_8h_a045e7585fa0aa5541fda13168ca6064c}{bitmask\+\_\+draw} (\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$a, const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$b, int xoffset, int yoffset)
+\item 
+void \hyperlink{bitmask_8h_a1fdb8ba386423e0d18207826b32a1e24}{bitmask\+\_\+erase} (\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$a, const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$b, int xoffset, int yoffset)
+\item 
+\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$ \hyperlink{bitmask_8h_a6d32f0aa6f50c71ed378073059943f70}{bitmask\+\_\+scale} (const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$m, int w, int h)
+\item 
+void \hyperlink{bitmask_8h_afda667839c5c0e71e5bdf374f113845f}{bitmask\+\_\+convolve} (const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$a, const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$b, \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$o, int xoffset, int yoffset)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{bitmask_8h_a2cd17dec717b4d75b7ec651c0b146c14}\label{bitmask_8h_a2cd17dec717b4d75b7ec651c0b146c14}} 
+\index{bitmask.\+h@{bitmask.\+h}!B\+I\+T\+M\+A\+S\+K\+\_\+N@{B\+I\+T\+M\+A\+S\+K\+\_\+N}}
+\index{B\+I\+T\+M\+A\+S\+K\+\_\+N@{B\+I\+T\+M\+A\+S\+K\+\_\+N}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{B\+I\+T\+M\+A\+S\+K\+\_\+N}{BITMASK\_N}}
+{\footnotesize\ttfamily \#define B\+I\+T\+M\+A\+S\+K\+\_\+N(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})~((\hyperlink{bitmask_8h_a65861bb1744fdd99af2c9d019c94c6a8}{B\+I\+T\+M\+A\+S\+K\+\_\+W})1 $<$$<$ (n))}
+
+\mbox{\Hypertarget{bitmask_8h_a65861bb1744fdd99af2c9d019c94c6a8}\label{bitmask_8h_a65861bb1744fdd99af2c9d019c94c6a8}} 
+\index{bitmask.\+h@{bitmask.\+h}!B\+I\+T\+M\+A\+S\+K\+\_\+W@{B\+I\+T\+M\+A\+S\+K\+\_\+W}}
+\index{B\+I\+T\+M\+A\+S\+K\+\_\+W@{B\+I\+T\+M\+A\+S\+K\+\_\+W}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{B\+I\+T\+M\+A\+S\+K\+\_\+W}{BITMASK\_W}}
+{\footnotesize\ttfamily \#define B\+I\+T\+M\+A\+S\+K\+\_\+W~unsigned long int}
+
+\mbox{\Hypertarget{bitmask_8h_a5d303ad7af1508d191bf10a8f12e0ca6}\label{bitmask_8h_a5d303ad7af1508d191bf10a8f12e0ca6}} 
+\index{bitmask.\+h@{bitmask.\+h}!B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+L\+EN@{B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+L\+EN}}
+\index{B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+L\+EN@{B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+L\+EN}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+L\+EN}{BITMASK\_W\_LEN}}
+{\footnotesize\ttfamily \#define B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+L\+EN~(sizeof(\hyperlink{bitmask_8h_a65861bb1744fdd99af2c9d019c94c6a8}{B\+I\+T\+M\+A\+S\+K\+\_\+W})$\ast$C\+H\+A\+R\+\_\+\+B\+IT)}
+
+\mbox{\Hypertarget{bitmask_8h_afa7e67b271a40c990b32d0352d7af437}\label{bitmask_8h_afa7e67b271a40c990b32d0352d7af437}} 
+\index{bitmask.\+h@{bitmask.\+h}!B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+M\+A\+SK@{B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+M\+A\+SK}}
+\index{B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+M\+A\+SK@{B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+M\+A\+SK}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+M\+A\+SK}{BITMASK\_W\_MASK}}
+{\footnotesize\ttfamily \#define B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+M\+A\+SK~(\hyperlink{bitmask_8h_a5d303ad7af1508d191bf10a8f12e0ca6}{B\+I\+T\+M\+A\+S\+K\+\_\+\+W\+\_\+\+L\+EN} -\/ 1)}
+
+\mbox{\Hypertarget{bitmask_8h_a2eb6f9e0395b47b8d5e3eeae4fe0c116}\label{bitmask_8h_a2eb6f9e0395b47b8d5e3eeae4fe0c116}} 
+\index{bitmask.\+h@{bitmask.\+h}!I\+N\+L\+I\+NE@{I\+N\+L\+I\+NE}}
+\index{I\+N\+L\+I\+NE@{I\+N\+L\+I\+NE}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+L\+I\+NE}{INLINE}}
+{\footnotesize\ttfamily \#define I\+N\+L\+I\+NE}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}\label{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}} 
+\index{bitmask.\+h@{bitmask.\+h}!bitmask\+\_\+t@{bitmask\+\_\+t}}
+\index{bitmask\+\_\+t@{bitmask\+\_\+t}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{bitmask\+\_\+t}{bitmask\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structbitmask}{bitmask}  \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{bitmask_8h_ae020ada4c4e04de0e829cc0248fcf552}\label{bitmask_8h_ae020ada4c4e04de0e829cc0248fcf552}} 
+\index{bitmask.\+h@{bitmask.\+h}!bitmask\+\_\+clear@{bitmask\+\_\+clear}}
+\index{bitmask\+\_\+clear@{bitmask\+\_\+clear}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{bitmask\+\_\+clear()}{bitmask\_clear()}}
+{\footnotesize\ttfamily void bitmask\+\_\+clear (\begin{DoxyParamCaption}\item[{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_afda667839c5c0e71e5bdf374f113845f}\label{bitmask_8h_afda667839c5c0e71e5bdf374f113845f}} 
+\index{bitmask.\+h@{bitmask.\+h}!bitmask\+\_\+convolve@{bitmask\+\_\+convolve}}
+\index{bitmask\+\_\+convolve@{bitmask\+\_\+convolve}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{bitmask\+\_\+convolve()}{bitmask\_convolve()}}
+{\footnotesize\ttfamily void bitmask\+\_\+convolve (\begin{DoxyParamCaption}\item[{const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{a,  }\item[{const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{b,  }\item[{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{o,  }\item[{int}]{xoffset,  }\item[{int}]{yoffset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a1339d047b942a5dd649763a3869c380d}\label{bitmask_8h_a1339d047b942a5dd649763a3869c380d}} 
+\index{bitmask.\+h@{bitmask.\+h}!bitmask\+\_\+count@{bitmask\+\_\+count}}
+\index{bitmask\+\_\+count@{bitmask\+\_\+count}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{bitmask\+\_\+count()}{bitmask\_count()}}
+{\footnotesize\ttfamily unsigned int bitmask\+\_\+count (\begin{DoxyParamCaption}\item[{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_aa752ba4914c2b0281e5936851f223d7a}\label{bitmask_8h_aa752ba4914c2b0281e5936851f223d7a}} 
+\index{bitmask.\+h@{bitmask.\+h}!bitmask\+\_\+create@{bitmask\+\_\+create}}
+\index{bitmask\+\_\+create@{bitmask\+\_\+create}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{bitmask\+\_\+create()}{bitmask\_create()}}
+{\footnotesize\ttfamily \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}$\ast$ bitmask\+\_\+create (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a045e7585fa0aa5541fda13168ca6064c}\label{bitmask_8h_a045e7585fa0aa5541fda13168ca6064c}} 
+\index{bitmask.\+h@{bitmask.\+h}!bitmask\+\_\+draw@{bitmask\+\_\+draw}}
+\index{bitmask\+\_\+draw@{bitmask\+\_\+draw}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{bitmask\+\_\+draw()}{bitmask\_draw()}}
+{\footnotesize\ttfamily void bitmask\+\_\+draw (\begin{DoxyParamCaption}\item[{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{a,  }\item[{const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{b,  }\item[{int}]{xoffset,  }\item[{int}]{yoffset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a1fdb8ba386423e0d18207826b32a1e24}\label{bitmask_8h_a1fdb8ba386423e0d18207826b32a1e24}} 
+\index{bitmask.\+h@{bitmask.\+h}!bitmask\+\_\+erase@{bitmask\+\_\+erase}}
+\index{bitmask\+\_\+erase@{bitmask\+\_\+erase}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{bitmask\+\_\+erase()}{bitmask\_erase()}}
+{\footnotesize\ttfamily void bitmask\+\_\+erase (\begin{DoxyParamCaption}\item[{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{a,  }\item[{const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{b,  }\item[{int}]{xoffset,  }\item[{int}]{yoffset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a82bb2f19bb34d8ba5240afb64e8552f2}\label{bitmask_8h_a82bb2f19bb34d8ba5240afb64e8552f2}} 
+\index{bitmask.\+h@{bitmask.\+h}!bitmask\+\_\+fill@{bitmask\+\_\+fill}}
+\index{bitmask\+\_\+fill@{bitmask\+\_\+fill}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{bitmask\+\_\+fill()}{bitmask\_fill()}}
+{\footnotesize\ttfamily void bitmask\+\_\+fill (\begin{DoxyParamCaption}\item[{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a379d419bea71c3f666f6da85c03541d7}\label{bitmask_8h_a379d419bea71c3f666f6da85c03541d7}} 
+\index{bitmask.\+h@{bitmask.\+h}!bitmask\+\_\+free@{bitmask\+\_\+free}}
+\index{bitmask\+\_\+free@{bitmask\+\_\+free}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{bitmask\+\_\+free()}{bitmask\_free()}}
+{\footnotesize\ttfamily void bitmask\+\_\+free (\begin{DoxyParamCaption}\item[{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_ae8cd3225bc8d4217adc83c0ab6fc0f25}\label{bitmask_8h_ae8cd3225bc8d4217adc83c0ab6fc0f25}} 
+\index{bitmask.\+h@{bitmask.\+h}!bitmask\+\_\+invert@{bitmask\+\_\+invert}}
+\index{bitmask\+\_\+invert@{bitmask\+\_\+invert}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{bitmask\+\_\+invert()}{bitmask\_invert()}}
+{\footnotesize\ttfamily void bitmask\+\_\+invert (\begin{DoxyParamCaption}\item[{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a07c65f652b03bee8d0cad4dedee17fe7}\label{bitmask_8h_a07c65f652b03bee8d0cad4dedee17fe7}} 
+\index{bitmask.\+h@{bitmask.\+h}!bitmask\+\_\+overlap@{bitmask\+\_\+overlap}}
+\index{bitmask\+\_\+overlap@{bitmask\+\_\+overlap}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{bitmask\+\_\+overlap()}{bitmask\_overlap()}}
+{\footnotesize\ttfamily int bitmask\+\_\+overlap (\begin{DoxyParamCaption}\item[{const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{a,  }\item[{const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{b,  }\item[{int}]{xoffset,  }\item[{int}]{yoffset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_afd774ee58a1a496ba270efccf991aff4}\label{bitmask_8h_afd774ee58a1a496ba270efccf991aff4}} 
+\index{bitmask.\+h@{bitmask.\+h}!bitmask\+\_\+overlap\+\_\+area@{bitmask\+\_\+overlap\+\_\+area}}
+\index{bitmask\+\_\+overlap\+\_\+area@{bitmask\+\_\+overlap\+\_\+area}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{bitmask\+\_\+overlap\+\_\+area()}{bitmask\_overlap\_area()}}
+{\footnotesize\ttfamily int bitmask\+\_\+overlap\+\_\+area (\begin{DoxyParamCaption}\item[{const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{a,  }\item[{const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{b,  }\item[{int}]{xoffset,  }\item[{int}]{yoffset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a548594904deeac9b21d930ee40630a88}\label{bitmask_8h_a548594904deeac9b21d930ee40630a88}} 
+\index{bitmask.\+h@{bitmask.\+h}!bitmask\+\_\+overlap\+\_\+mask@{bitmask\+\_\+overlap\+\_\+mask}}
+\index{bitmask\+\_\+overlap\+\_\+mask@{bitmask\+\_\+overlap\+\_\+mask}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{bitmask\+\_\+overlap\+\_\+mask()}{bitmask\_overlap\_mask()}}
+{\footnotesize\ttfamily void bitmask\+\_\+overlap\+\_\+mask (\begin{DoxyParamCaption}\item[{const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{a,  }\item[{const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{b,  }\item[{\hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{c,  }\item[{int}]{xoffset,  }\item[{int}]{yoffset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a695a67d13d6f85c01acb6e1549c45d52}\label{bitmask_8h_a695a67d13d6f85c01acb6e1549c45d52}} 
+\index{bitmask.\+h@{bitmask.\+h}!bitmask\+\_\+overlap\+\_\+pos@{bitmask\+\_\+overlap\+\_\+pos}}
+\index{bitmask\+\_\+overlap\+\_\+pos@{bitmask\+\_\+overlap\+\_\+pos}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{bitmask\+\_\+overlap\+\_\+pos()}{bitmask\_overlap\_pos()}}
+{\footnotesize\ttfamily int bitmask\+\_\+overlap\+\_\+pos (\begin{DoxyParamCaption}\item[{const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{a,  }\item[{const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{b,  }\item[{int}]{xoffset,  }\item[{int}]{yoffset,  }\item[{int $\ast$}]{x,  }\item[{int $\ast$}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bitmask_8h_a6d32f0aa6f50c71ed378073059943f70}\label{bitmask_8h_a6d32f0aa6f50c71ed378073059943f70}} 
+\index{bitmask.\+h@{bitmask.\+h}!bitmask\+\_\+scale@{bitmask\+\_\+scale}}
+\index{bitmask\+\_\+scale@{bitmask\+\_\+scale}!bitmask.\+h@{bitmask.\+h}}
+\subsubsection{\texorpdfstring{bitmask\+\_\+scale()}{bitmask\_scale()}}
+{\footnotesize\ttfamily \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t}$\ast$ bitmask\+\_\+scale (\begin{DoxyParamCaption}\item[{const \hyperlink{bitmask_8h_a1a22740a2084764b6414a23d29c065a9}{bitmask\+\_\+t} $\ast$}]{m,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+

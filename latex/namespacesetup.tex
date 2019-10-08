@@ -1,0 +1,47 @@
+\hypertarget{namespacesetup}{}\section{setup Namespace Reference}
+\label{namespacesetup}\index{setup@{setup}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacesetup_a8a38282b23206ebafccde8f4de986718}\label{namespacesetup_a8a38282b23206ebafccde8f4de986718}} 
+string {\bfseries N\+A\+ME} = \textquotesingle{}aliens\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespacesetup_a704f2323949f9be057e0a3574731e019}\label{namespacesetup_a704f2323949f9be057e0a3574731e019}} 
+string {\bfseries V\+E\+R\+S\+I\+ON} = \textquotesingle{}0.\+1\textquotesingle{}
+\item 
+{\bfseries plist}
+\item 
+\mbox{\Hypertarget{namespacesetup_ad027a8e9452da003dca32bf7467bd16e}\label{namespacesetup_ad027a8e9452da003dca32bf7467bd16e}} 
+{\bfseries data\+\_\+files}
+\item 
+\mbox{\Hypertarget{namespacesetup_aad9151216e694c416c968e9eecaec02a}\label{namespacesetup_aad9151216e694c416c968e9eecaec02a}} 
+{\bfseries app}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Script for building the example.
+
+Usage:
+    python setup.py py2app
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacesetup_adcba0ccec227e8f14fcbfc3ae9bfe7d6}\label{namespacesetup_adcba0ccec227e8f14fcbfc3ae9bfe7d6}} 
+\index{setup@{setup}!plist@{plist}}
+\index{plist@{plist}!setup@{setup}}
+\subsubsection{\texorpdfstring{plist}{plist}}
+{\footnotesize\ttfamily setup.\+plist}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  dict(
+2     CFBundleIconFile=NAME,
+3     CFBundleName=NAME,
+4     CFBundleShortVersionString=VERSION,
+5     CFBundleGetInfoString=\textcolor{stringliteral}{' '}.join([NAME, VERSION]),
+6     CFBundleExecutable=NAME,
+7     CFBundleIdentifier=\textcolor{stringliteral}{'org.pygame.examples.aliens'},
+8 )
+\end{DoxyCode}

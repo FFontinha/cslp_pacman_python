@@ -1,0 +1,325 @@
+\hypertarget{namespacegevent_1_1os}{}\section{gevent.\+os Namespace Reference}
+\label{namespacegevent_1_1os}\index{gevent.\+os@{gevent.\+os}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1os_afda17326a86efe283deb154009b8aac9}{make\+\_\+nonblocking} (fd)
+\item 
+def \hyperlink{namespacegevent_1_1os_a2fb3b6b13b3e790a9a392746bd295ffb}{nb\+\_\+read} (fd, n)
+\item 
+def \hyperlink{namespacegevent_1_1os_a22d656b3256c18d0db846822e129eafb}{nb\+\_\+write} (fd, buf)
+\item 
+def \hyperlink{namespacegevent_1_1os_a49ed3c20a04f75267ee2fe251c4358a9}{tp\+\_\+read} (fd, n)
+\item 
+def \hyperlink{namespacegevent_1_1os_abda169fc047bb4cc04b25ea8f154aa7f}{tp\+\_\+write} (fd, buf)
+\item 
+def \hyperlink{namespacegevent_1_1os_a98835fac37df4bd17a1433f6c01daf6f}{fork\+\_\+gevent} ()
+\item 
+def \hyperlink{namespacegevent_1_1os_a7d22bcbe03e198e484217634c2611b7e}{fork} ()
+\item 
+def \hyperlink{namespacegevent_1_1os_a3e04fb5e868290aae691fd3a3a85a77e}{forkpty\+\_\+gevent} ()
+\item 
+def \hyperlink{namespacegevent_1_1os_a73d51adddb408a122bc8137102f54653}{waitpid} (pid, options)
+\item 
+def \hyperlink{namespacegevent_1_1os_a536e814c326f318e9bae710344de11d6}{fork\+\_\+and\+\_\+watch} (callback=None, loop=None, ref=False, \hyperlink{namespacegevent_1_1os_a7d22bcbe03e198e484217634c2611b7e}{fork}=\hyperlink{namespacegevent_1_1os_a98835fac37df4bd17a1433f6c01daf6f}{fork\+\_\+gevent})
+\item 
+def \hyperlink{namespacegevent_1_1os_a5115239646d7bd6a10bf4c24d07926b3}{forkpty\+\_\+and\+\_\+watch} (callback=None, loop=None, ref=False, forkpty=\hyperlink{namespacegevent_1_1os_a3e04fb5e868290aae691fd3a3a85a77e}{forkpty\+\_\+gevent})
+\item 
+def \hyperlink{namespacegevent_1_1os_a333943be729b41ab9ebc1402d8fb7992}{fork} (args, kwargs)
+\item 
+def \hyperlink{namespacegevent_1_1os_a0301570240bde65a58985e2b60e15535}{forkpty} (args, kwargs)
+\item 
+def \hyperlink{namespacegevent_1_1os_a050db0adfdcdc0616ac36b1d9874d494}{forkpty} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacegevent_1_1os_aedc9a2148b4c38a4cfaebe522ab9efc7}\label{namespacegevent_1_1os_aedc9a2148b4c38a4cfaebe522ab9efc7}} 
+{\bfseries E\+A\+G\+A\+IN} = getattr(errno, \textquotesingle{}E\+A\+G\+A\+IN\textquotesingle{}, 11)
+\item 
+\mbox{\Hypertarget{namespacegevent_1_1os_ab7aad9683af2405447fd413dfd0cea0c}\label{namespacegevent_1_1os_ab7aad9683af2405447fd413dfd0cea0c}} 
+{\bfseries fcntl} = None
+\item 
+\mbox{\Hypertarget{namespacegevent_1_1os_ae4886d17856986449da59e9f9fef8603}\label{namespacegevent_1_1os_ae4886d17856986449da59e9f9fef8603}} 
+list {\bfseries ignored\+\_\+errors} = \mbox{[}E\+A\+G\+A\+IN, errno.\+E\+I\+N\+TR\mbox{]}
+\item 
+\mbox{\Hypertarget{namespacegevent_1_1os_a4be4b87919eec33aa018cdab5dc5c072}\label{namespacegevent_1_1os_a4be4b87919eec33aa018cdab5dc5c072}} 
+def {\bfseries forkpty} = \hyperlink{namespacegevent_1_1os_a3e04fb5e868290aae691fd3a3a85a77e}{forkpty\+\_\+gevent}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Low-level operating system functions from :mod:`os`.
+
+Cooperative I/O
+===============
+
+This module provides cooperative versions of :func:`os.read` and
+:func:`os.write`. These functions are *not* monkey-patched; you
+must explicitly call them or monkey patch them yourself.
+
+POSIX functions
+---------------
+
+On POSIX, non-blocking IO is available.
+
+- :func:`nb_read`
+- :func:`nb_write`
+- :func:`make_nonblocking`
+
+All Platforms
+-------------
+
+On non-POSIX platforms (e.g., Windows), non-blocking IO is not
+available. On those platforms (and on POSIX), cooperative IO can
+be done with the threadpool.
+
+- :func:`tp_read`
+- :func:`tp_write`
+
+Child Processes
+===============
+
+The functions :func:`fork` and (on POSIX) :func:`forkpty` and :func:`waitpid` can be used
+to manage child processes.
+
+.. warning::
+
+   Forking a process that uses greenlets does not eliminate all non-running
+   greenlets. Any that were scheduled in the hub of the forking thread in the parent
+   remain scheduled in the child; compare this to how normal threads operate. (This behaviour
+   may change is a subsequent major release.)
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1os_a7d22bcbe03e198e484217634c2611b7e}\label{namespacegevent_1_1os_a7d22bcbe03e198e484217634c2611b7e}} 
+\index{gevent\+::os@{gevent\+::os}!fork@{fork}}
+\index{fork@{fork}!gevent\+::os@{gevent\+::os}}
+\subsubsection{\texorpdfstring{fork()}{fork()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def gevent.\+os.\+fork (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A wrapper for :func:`fork_gevent` for non-POSIX platforms.
+\end{DoxyVerb}
+
+
+\begin{DoxyVerb}Forks a child process, initializes gevent in the child,
+but *does not* prepare the parent to wait for the child or receive SIGCHLD.
+
+This implementation of ``fork`` is a wrapper for :func:`fork_gevent`
+when the environment variable ``GEVENT_NOWAITPID`` *is* defined.
+This is not recommended for most applications.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1os_a333943be729b41ab9ebc1402d8fb7992}\label{namespacegevent_1_1os_a333943be729b41ab9ebc1402d8fb7992}} 
+\index{gevent\+::os@{gevent\+::os}!fork@{fork}}
+\index{fork@{fork}!gevent\+::os@{gevent\+::os}}
+\subsubsection{\texorpdfstring{fork()}{fork()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def gevent.\+os.\+fork (\begin{DoxyParamCaption}\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Forks a child process and starts a child watcher for it in the
+parent process so that ``waitpid`` and SIGCHLD work as expected.
+
+This implementation of ``fork`` is a wrapper for :func:`fork_and_watch`
+when the environment variable ``GEVENT_NOWAITPID`` is *not* defined.
+This is the default and should be used by most applications.
+
+.. versionchanged:: 1.1b2
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1os_a536e814c326f318e9bae710344de11d6}\label{namespacegevent_1_1os_a536e814c326f318e9bae710344de11d6}} 
+\index{gevent\+::os@{gevent\+::os}!fork\+\_\+and\+\_\+watch@{fork\+\_\+and\+\_\+watch}}
+\index{fork\+\_\+and\+\_\+watch@{fork\+\_\+and\+\_\+watch}!gevent\+::os@{gevent\+::os}}
+\subsubsection{\texorpdfstring{fork\+\_\+and\+\_\+watch()}{fork\_and\_watch()}}
+{\footnotesize\ttfamily def gevent.\+os.\+fork\+\_\+and\+\_\+watch (\begin{DoxyParamCaption}\item[{}]{callback = {\ttfamily None},  }\item[{}]{loop = {\ttfamily None},  }\item[{}]{ref = {\ttfamily False},  }\item[{}]{fork = {\ttfamily \hyperlink{namespacegevent_1_1os_a98835fac37df4bd17a1433f6c01daf6f}{fork\+\_\+gevent}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Fork a child process and start a child watcher for it in the parent process.
+
+This call cooperates with :func:`waitpid` to enable cooperatively waiting
+for children to finish. When monkey-patching, these functions are patched in as
+:func:`os.fork` and :func:`os.waitpid`, respectively.
+
+In the child process, this function calls :func:`gevent.hub.reinit` before returning.
+
+Availability: POSIX.
+
+:keyword callback: If given, a callable that will be called with the child watcher
+    when the child finishes.
+:keyword loop: The loop to start the watcher in. Defaults to the
+    loop of the current hub.
+:keyword fork: The fork function. Defaults to :func:`the one defined in this
+    module <gevent.os.fork_gevent>` (which automatically calls :func:`gevent.hub.reinit`).
+    Pass the builtin :func:`os.fork` function if you do not need to
+    initialize gevent in the child process.
+
+.. versionadded:: 1.1b1
+.. seealso::
+    :func:`gevent.monkey.get_original` To access the builtin :func:`os.fork`.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1os_a98835fac37df4bd17a1433f6c01daf6f}\label{namespacegevent_1_1os_a98835fac37df4bd17a1433f6c01daf6f}} 
+\index{gevent\+::os@{gevent\+::os}!fork\+\_\+gevent@{fork\+\_\+gevent}}
+\index{fork\+\_\+gevent@{fork\+\_\+gevent}!gevent\+::os@{gevent\+::os}}
+\subsubsection{\texorpdfstring{fork\+\_\+gevent()}{fork\_gevent()}}
+{\footnotesize\ttfamily def gevent.\+os.\+fork\+\_\+gevent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Forks the process using :func:`os.fork` and prepares the
+child process to continue using gevent before returning.
+
+.. note::
+
+    The PID returned by this function may not be waitable with
+    either the original :func:`os.waitpid` or this module's
+    :func:`waitpid` and it may not generate SIGCHLD signals if
+    libev child watchers are or ever have been in use. For
+    example, the :mod:`gevent.subprocess` module uses libev
+    child watchers (which parts of gevent use libev child
+    watchers is subject to change at any time). Most
+    applications should use :func:`fork_and_watch`, which is
+    monkey-patched as the default replacement for
+    :func:`os.fork` and implements the ``fork`` function of
+    this module by default, unless the environment variable
+    ``GEVENT_NOWAITPID`` is defined before this module is
+    imported.
+
+.. versionadded:: 1.1b2
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1os_a0301570240bde65a58985e2b60e15535}\label{namespacegevent_1_1os_a0301570240bde65a58985e2b60e15535}} 
+\index{gevent\+::os@{gevent\+::os}!forkpty@{forkpty}}
+\index{forkpty@{forkpty}!gevent\+::os@{gevent\+::os}}
+\subsubsection{\texorpdfstring{forkpty()}{forkpty()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily def gevent.\+os.\+forkpty (\begin{DoxyParamCaption}\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :func:`fork`, but using :func:`forkpty_gevent`.
+
+This implementation of ``forkpty`` is a wrapper for :func:`forkpty_and_watch`
+when the environment variable ``GEVENT_NOWAITPID`` is *not* defined.
+This is the default and should be used by most applications.
+
+.. versionadded:: 1.1b5
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1os_a050db0adfdcdc0616ac36b1d9874d494}\label{namespacegevent_1_1os_a050db0adfdcdc0616ac36b1d9874d494}} 
+\index{gevent\+::os@{gevent\+::os}!forkpty@{forkpty}}
+\index{forkpty@{forkpty}!gevent\+::os@{gevent\+::os}}
+\subsubsection{\texorpdfstring{forkpty()}{forkpty()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily def gevent.\+os.\+forkpty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :func:`fork`, but using :func:`os.forkpty`
+
+This implementation of ``forkpty`` is a wrapper for :func:`forkpty_gevent`
+when the environment variable ``GEVENT_NOWAITPID`` *is* defined.
+This is not recommended for most applications.
+
+.. versionadded:: 1.1b5
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1os_a5115239646d7bd6a10bf4c24d07926b3}\label{namespacegevent_1_1os_a5115239646d7bd6a10bf4c24d07926b3}} 
+\index{gevent\+::os@{gevent\+::os}!forkpty\+\_\+and\+\_\+watch@{forkpty\+\_\+and\+\_\+watch}}
+\index{forkpty\+\_\+and\+\_\+watch@{forkpty\+\_\+and\+\_\+watch}!gevent\+::os@{gevent\+::os}}
+\subsubsection{\texorpdfstring{forkpty\+\_\+and\+\_\+watch()}{forkpty\_and\_watch()}}
+{\footnotesize\ttfamily def gevent.\+os.\+forkpty\+\_\+and\+\_\+watch (\begin{DoxyParamCaption}\item[{}]{callback = {\ttfamily None},  }\item[{}]{loop = {\ttfamily None},  }\item[{}]{ref = {\ttfamily False},  }\item[{}]{forkpty = {\ttfamily \hyperlink{namespacegevent_1_1os_a3e04fb5e868290aae691fd3a3a85a77e}{forkpty\+\_\+gevent}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :func:`fork_and_watch`, except using :func:`forkpty_gevent`.
+
+Availability: Some Unix systems.
+
+.. versionadded:: 1.1b5
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1os_a3e04fb5e868290aae691fd3a3a85a77e}\label{namespacegevent_1_1os_a3e04fb5e868290aae691fd3a3a85a77e}} 
+\index{gevent\+::os@{gevent\+::os}!forkpty\+\_\+gevent@{forkpty\+\_\+gevent}}
+\index{forkpty\+\_\+gevent@{forkpty\+\_\+gevent}!gevent\+::os@{gevent\+::os}}
+\subsubsection{\texorpdfstring{forkpty\+\_\+gevent()}{forkpty\_gevent()}}
+{\footnotesize\ttfamily def gevent.\+os.\+forkpty\+\_\+gevent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Forks the process using :func:`os.forkpty` and prepares the
+child process to continue using gevent before returning.
+
+Returns a tuple (pid, master_fd). The `master_fd` is *not* put into
+non-blocking mode.
+
+Availability: Some Unix systems.
+
+.. seealso:: This function has the same limitations as :func:`fork_gevent`.
+
+.. versionadded:: 1.1b5
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1os_afda17326a86efe283deb154009b8aac9}\label{namespacegevent_1_1os_afda17326a86efe283deb154009b8aac9}} 
+\index{gevent\+::os@{gevent\+::os}!make\+\_\+nonblocking@{make\+\_\+nonblocking}}
+\index{make\+\_\+nonblocking@{make\+\_\+nonblocking}!gevent\+::os@{gevent\+::os}}
+\subsubsection{\texorpdfstring{make\+\_\+nonblocking()}{make\_nonblocking()}}
+{\footnotesize\ttfamily def gevent.\+os.\+make\+\_\+nonblocking (\begin{DoxyParamCaption}\item[{}]{fd }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Put the file descriptor *fd* into non-blocking mode if
+possible.
+
+:return: A boolean value that evaluates to True if successful.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1os_a2fb3b6b13b3e790a9a392746bd295ffb}\label{namespacegevent_1_1os_a2fb3b6b13b3e790a9a392746bd295ffb}} 
+\index{gevent\+::os@{gevent\+::os}!nb\+\_\+read@{nb\+\_\+read}}
+\index{nb\+\_\+read@{nb\+\_\+read}!gevent\+::os@{gevent\+::os}}
+\subsubsection{\texorpdfstring{nb\+\_\+read()}{nb\_read()}}
+{\footnotesize\ttfamily def gevent.\+os.\+nb\+\_\+read (\begin{DoxyParamCaption}\item[{}]{fd,  }\item[{}]{n }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read up to *n* bytes from file descriptor *fd*. Return a
+byte string containing the bytes read, which may be shorter than
+*n*. If end-of-file is reached, an empty string is returned.
+
+The descriptor must be in non-blocking mode.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1os_a22d656b3256c18d0db846822e129eafb}\label{namespacegevent_1_1os_a22d656b3256c18d0db846822e129eafb}} 
+\index{gevent\+::os@{gevent\+::os}!nb\+\_\+write@{nb\+\_\+write}}
+\index{nb\+\_\+write@{nb\+\_\+write}!gevent\+::os@{gevent\+::os}}
+\subsubsection{\texorpdfstring{nb\+\_\+write()}{nb\_write()}}
+{\footnotesize\ttfamily def gevent.\+os.\+nb\+\_\+write (\begin{DoxyParamCaption}\item[{}]{fd,  }\item[{}]{buf }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write some number of bytes from buffer *buf* to file
+descriptor *fd*. Return the number of bytes written, which may
+be less than the length of *buf*.
+
+The file descriptor must be in non-blocking mode.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1os_a49ed3c20a04f75267ee2fe251c4358a9}\label{namespacegevent_1_1os_a49ed3c20a04f75267ee2fe251c4358a9}} 
+\index{gevent\+::os@{gevent\+::os}!tp\+\_\+read@{tp\+\_\+read}}
+\index{tp\+\_\+read@{tp\+\_\+read}!gevent\+::os@{gevent\+::os}}
+\subsubsection{\texorpdfstring{tp\+\_\+read()}{tp\_read()}}
+{\footnotesize\ttfamily def gevent.\+os.\+tp\+\_\+read (\begin{DoxyParamCaption}\item[{}]{fd,  }\item[{}]{n }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read up to *n* bytes from file descriptor *fd*. Return a string
+containing the bytes read. If end-of-file is reached, an empty string
+is returned.
+
+Reading is done using the threadpool.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1os_abda169fc047bb4cc04b25ea8f154aa7f}\label{namespacegevent_1_1os_abda169fc047bb4cc04b25ea8f154aa7f}} 
+\index{gevent\+::os@{gevent\+::os}!tp\+\_\+write@{tp\+\_\+write}}
+\index{tp\+\_\+write@{tp\+\_\+write}!gevent\+::os@{gevent\+::os}}
+\subsubsection{\texorpdfstring{tp\+\_\+write()}{tp\_write()}}
+{\footnotesize\ttfamily def gevent.\+os.\+tp\+\_\+write (\begin{DoxyParamCaption}\item[{}]{fd,  }\item[{}]{buf }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write bytes from buffer *buf* to file descriptor *fd*. Return the
+number of bytes written.
+
+Writing is done using the threadpool.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1os_a73d51adddb408a122bc8137102f54653}\label{namespacegevent_1_1os_a73d51adddb408a122bc8137102f54653}} 
+\index{gevent\+::os@{gevent\+::os}!waitpid@{waitpid}}
+\index{waitpid@{waitpid}!gevent\+::os@{gevent\+::os}}
+\subsubsection{\texorpdfstring{waitpid()}{waitpid()}}
+{\footnotesize\ttfamily def gevent.\+os.\+waitpid (\begin{DoxyParamCaption}\item[{}]{pid,  }\item[{}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wait for a child process to finish.
+
+If the child process was spawned using
+:func:`fork_and_watch`, then this function behaves
+cooperatively. If not, it *may* have race conditions; see
+:func:`fork_gevent` for more information.
+
+The arguments are as for the underlying
+:func:`os.waitpid`. Some combinations of *options* may not
+be supported cooperatively (as of 1.1 that includes
+WUNTRACED). Using a *pid* of 0 to request waiting on only processes
+from the current process group is not cooperative.
+
+Availability: POSIX.
+
+.. versionadded:: 1.1b1
+.. versionchanged:: 1.2a1
+   More cases are handled in a cooperative manner.
+\end{DoxyVerb}
+ 

@@ -1,0 +1,44 @@
+\hypertarget{namespaceattr_1_1filters}{}\section{attr.\+filters Namespace Reference}
+\label{namespaceattr_1_1filters}\index{attr.\+filters@{attr.\+filters}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceattr_1_1filters_a7a5b29aa035bff272b0da3974d12fa9f}{include} (what)
+\item 
+def \hyperlink{namespaceattr_1_1filters_aa29ccc775c8e224f455682a080465aa1}{exclude} (what)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Commonly useful filters for :func:`attr.asdict`.
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceattr_1_1filters_aa29ccc775c8e224f455682a080465aa1}\label{namespaceattr_1_1filters_aa29ccc775c8e224f455682a080465aa1}} 
+\index{attr\+::filters@{attr\+::filters}!exclude@{exclude}}
+\index{exclude@{exclude}!attr\+::filters@{attr\+::filters}}
+\subsubsection{\texorpdfstring{exclude()}{exclude()}}
+{\footnotesize\ttfamily def attr.\+filters.\+exclude (\begin{DoxyParamCaption}\item[{}]{what }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Blacklist *what*.
+
+:param what: What to blacklist.
+:type what: :class:`list` of classes or :class:`attr.Attribute`\\ s.
+
+:rtype: :class:`callable`
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceattr_1_1filters_a7a5b29aa035bff272b0da3974d12fa9f}\label{namespaceattr_1_1filters_a7a5b29aa035bff272b0da3974d12fa9f}} 
+\index{attr\+::filters@{attr\+::filters}!include@{include}}
+\index{include@{include}!attr\+::filters@{attr\+::filters}}
+\subsubsection{\texorpdfstring{include()}{include()}}
+{\footnotesize\ttfamily def attr.\+filters.\+include (\begin{DoxyParamCaption}\item[{}]{what }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whitelist *what*.
+
+:param what: What to whitelist.
+:type what: :class:`list` of :class:`type` or :class:`attr.Attribute`\\ s
+
+:rtype: :class:`callable`
+\end{DoxyVerb}
+ 

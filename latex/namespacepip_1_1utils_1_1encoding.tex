@@ -1,0 +1,53 @@
+\hypertarget{namespacepip_1_1utils_1_1encoding}{}\section{pip.\+utils.\+encoding Namespace Reference}
+\label{namespacepip_1_1utils_1_1encoding}\index{pip.\+utils.\+encoding@{pip.\+utils.\+encoding}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepip_1_1utils_1_1encoding_a81f854dfd577fe8f004cddfc74d7e58b}{auto\+\_\+decode} (data)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \hyperlink{namespacepip_1_1utils_1_1encoding_adb154be984065fe2c170a89d7dda7deb}{B\+O\+MS}
+\item 
+\hyperlink{namespacepip_1_1utils_1_1encoding_abb3bbfc7c97f461b48cff8119aea35a3}{E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+RE} = re.\+compile(b\textquotesingle{}coding\mbox{[}\+:=\mbox{]}\textbackslash{}s$\ast$(\mbox{[}-\/\textbackslash{}w.\mbox{]}+)\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepip_1_1utils_1_1encoding_a81f854dfd577fe8f004cddfc74d7e58b}\label{namespacepip_1_1utils_1_1encoding_a81f854dfd577fe8f004cddfc74d7e58b}} 
+\index{pip\+::utils\+::encoding@{pip\+::utils\+::encoding}!auto\+\_\+decode@{auto\+\_\+decode}}
+\index{auto\+\_\+decode@{auto\+\_\+decode}!pip\+::utils\+::encoding@{pip\+::utils\+::encoding}}
+\subsubsection{\texorpdfstring{auto\+\_\+decode()}{auto\_decode()}}
+{\footnotesize\ttfamily def pip.\+utils.\+encoding.\+auto\+\_\+decode (\begin{DoxyParamCaption}\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check a bytes string for a BOM to correctly detect the encoding
+
+Fallback to locale.getpreferredencoding(False) like open() on Python3\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepip_1_1utils_1_1encoding_adb154be984065fe2c170a89d7dda7deb}\label{namespacepip_1_1utils_1_1encoding_adb154be984065fe2c170a89d7dda7deb}} 
+\index{pip\+::utils\+::encoding@{pip\+::utils\+::encoding}!B\+O\+MS@{B\+O\+MS}}
+\index{B\+O\+MS@{B\+O\+MS}!pip\+::utils\+::encoding@{pip\+::utils\+::encoding}}
+\subsubsection{\texorpdfstring{B\+O\+MS}{BOMS}}
+{\footnotesize\ttfamily list pip.\+utils.\+encoding.\+B\+O\+MS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  [
+2     (codecs.BOM\_UTF8, \textcolor{stringliteral}{'utf8'}),
+3     (codecs.BOM\_UTF16, \textcolor{stringliteral}{'utf16'}),
+4     (codecs.BOM\_UTF16\_BE, \textcolor{stringliteral}{'utf16-be'}),
+5     (codecs.BOM\_UTF16\_LE, \textcolor{stringliteral}{'utf16-le'}),
+6     (codecs.BOM\_UTF32, \textcolor{stringliteral}{'utf32'}),
+7     (codecs.BOM\_UTF32\_BE, \textcolor{stringliteral}{'utf32-be'}),
+8     (codecs.BOM\_UTF32\_LE, \textcolor{stringliteral}{'utf32-le'}),
+9 ]
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1utils_1_1encoding_abb3bbfc7c97f461b48cff8119aea35a3}\label{namespacepip_1_1utils_1_1encoding_abb3bbfc7c97f461b48cff8119aea35a3}} 
+\index{pip\+::utils\+::encoding@{pip\+::utils\+::encoding}!E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+RE@{E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+RE}}
+\index{E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+RE@{E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+RE}!pip\+::utils\+::encoding@{pip\+::utils\+::encoding}}
+\subsubsection{\texorpdfstring{E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+RE}{ENCODING\_RE}}
+{\footnotesize\ttfamily pip.\+utils.\+encoding.\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+RE = re.\+compile(b\textquotesingle{}coding\mbox{[}\+:=\mbox{]}\textbackslash{}s$\ast$(\mbox{[}-\/\textbackslash{}w.\mbox{]}+)\textquotesingle{})}
+

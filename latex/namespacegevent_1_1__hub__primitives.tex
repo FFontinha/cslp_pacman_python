@@ -1,0 +1,220 @@
+\hypertarget{namespacegevent_1_1__hub__primitives}{}\section{gevent.\+\_\+hub\+\_\+primitives Namespace Reference}
+\label{namespacegevent_1_1__hub__primitives}\index{gevent.\+\_\+hub\+\_\+primitives@{gevent.\+\_\+hub\+\_\+primitives}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgevent_1_1__hub__primitives_1_1___wait_iterator}{\+\_\+\+Wait\+Iterator}
+\item 
+class \hyperlink{classgevent_1_1__hub__primitives_1_1_wait_operations_greenlet}{Wait\+Operations\+Greenlet}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1__hub__primitives_aca76d6a00bb3e30192d61faa90f10e9d}{wait} (self, watcher)
+\item 
+def \hyperlink{namespacegevent_1_1__hub__primitives_a770d622e477cf73f6b30dd05850ade67}{cancel\+\_\+wait} (self, watcher, error, close\+\_\+watcher=False)
+\item 
+def \hyperlink{namespacegevent_1_1__hub__primitives_ae5fd0efa38447d7a7a15f9218ae50c19}{iwait\+\_\+on\+\_\+objects} (objects, timeout=None, count=None)
+\item 
+def \hyperlink{namespacegevent_1_1__hub__primitives_a670618f9da100eaaa5d2a7b80b746926}{wait\+\_\+on\+\_\+objects} (objects=None, timeout=None, count=None)
+\item 
+def \hyperlink{namespacegevent_1_1__hub__primitives_ae92cc5ba65b855482653a2f9592ee847}{set\+\_\+default\+\_\+timeout\+\_\+error} (e)
+\item 
+def \hyperlink{namespacegevent_1_1__hub__primitives_a25ceb34f03f1cfac42467e304aed6fd2}{wait\+\_\+on\+\_\+socket} (socket, watcher, timeout\+\_\+exc=None)
+\item 
+def \hyperlink{namespacegevent_1_1__hub__primitives_ae484b73e4c293e8788d5857165c2e230}{wait\+\_\+on\+\_\+watcher} (watcher, timeout=None, timeout\+\_\+exc=\hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE}, hub=None)
+\item 
+def \hyperlink{namespacegevent_1_1__hub__primitives_a50d1746d1e26dabc9e0b9eb1f3a226d3}{wait\+\_\+read} (fileno, timeout=None, timeout\+\_\+exc=\hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE})
+\item 
+def \hyperlink{namespacegevent_1_1__hub__primitives_ad85018e5bc9d1b852a8d111fa5ad1b6f}{wait\+\_\+write} (fileno, timeout=None, timeout\+\_\+exc=\hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE}, event=\hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE})
+\item 
+def \hyperlink{namespacegevent_1_1__hub__primitives_af51473b17ea50f4388118cb6ba839a1e}{wait\+\_\+readwrite} (fileno, timeout=None, timeout\+\_\+exc=\hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE}, event=\hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1__hub__primitives_a770d622e477cf73f6b30dd05850ade67}\label{namespacegevent_1_1__hub__primitives_a770d622e477cf73f6b30dd05850ade67}} 
+\index{gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}!cancel\+\_\+wait@{cancel\+\_\+wait}}
+\index{cancel\+\_\+wait@{cancel\+\_\+wait}!gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}}
+\subsubsection{\texorpdfstring{cancel\+\_\+wait()}{cancel\_wait()}}
+{\footnotesize\ttfamily def gevent.\+\_\+hub\+\_\+primitives.\+cancel\+\_\+wait (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{watcher,  }\item[{}]{error,  }\item[{}]{close\+\_\+watcher = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Cancel an in-progress call to :meth:`wait` by throwing the given *error*
+in the waiting greenlet.
+
+.. versionchanged:: 1.3a1
+   Added the *close_watcher* parameter. If true, the watcher
+   will be closed after the exception is thrown. The watcher should then
+   be discarded. Closing the watcher is important to release native resources.
+.. versionchanged:: 1.3a2
+   Allow the *watcher* to be ``None``. No action is taken in that case.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__hub__primitives_ae5fd0efa38447d7a7a15f9218ae50c19}\label{namespacegevent_1_1__hub__primitives_ae5fd0efa38447d7a7a15f9218ae50c19}} 
+\index{gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}!iwait\+\_\+on\+\_\+objects@{iwait\+\_\+on\+\_\+objects}}
+\index{iwait\+\_\+on\+\_\+objects@{iwait\+\_\+on\+\_\+objects}!gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}}
+\subsubsection{\texorpdfstring{iwait\+\_\+on\+\_\+objects()}{iwait\_on\_objects()}}
+{\footnotesize\ttfamily def gevent.\+\_\+hub\+\_\+primitives.\+iwait\+\_\+on\+\_\+objects (\begin{DoxyParamCaption}\item[{}]{objects,  }\item[{}]{timeout = {\ttfamily None},  }\item[{}]{count = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iteratively yield *objects* as they are ready, until all (or *count*) are ready
+or *timeout* expired.
+
+:param objects: A sequence (supporting :func:`len`) containing objects
+    implementing the wait protocol (rawlink() and unlink()).
+:keyword int count: If not `None`, then a number specifying the maximum number
+    of objects to wait for. If ``None`` (the default), all objects
+    are waited for.
+:keyword float timeout: If given, specifies a maximum number of seconds
+    to wait. If the timeout expires before the desired waited-for objects
+    are available, then this method returns immediately.
+
+.. seealso:: :func:`wait`
+
+.. versionchanged:: 1.1a1
+   Add the *count* parameter.
+.. versionchanged:: 1.1a2
+   No longer raise :exc:`LoopExit` if our caller switches greenlets
+   in between items yielded by this function.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__hub__primitives_ae92cc5ba65b855482653a2f9592ee847}\label{namespacegevent_1_1__hub__primitives_ae92cc5ba65b855482653a2f9592ee847}} 
+\index{gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}!set\+\_\+default\+\_\+timeout\+\_\+error@{set\+\_\+default\+\_\+timeout\+\_\+error}}
+\index{set\+\_\+default\+\_\+timeout\+\_\+error@{set\+\_\+default\+\_\+timeout\+\_\+error}!gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}}
+\subsubsection{\texorpdfstring{set\+\_\+default\+\_\+timeout\+\_\+error()}{set\_default\_timeout\_error()}}
+{\footnotesize\ttfamily def gevent.\+\_\+hub\+\_\+primitives.\+set\+\_\+default\+\_\+timeout\+\_\+error (\begin{DoxyParamCaption}\item[{}]{e }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegevent_1_1__hub__primitives_aca76d6a00bb3e30192d61faa90f10e9d}\label{namespacegevent_1_1__hub__primitives_aca76d6a00bb3e30192d61faa90f10e9d}} 
+\index{gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}!wait@{wait}}
+\index{wait@{wait}!gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}}
+\subsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily def gevent.\+\_\+hub\+\_\+primitives.\+wait (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{watcher }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wait until the *watcher* (which must not be started) is ready.
+
+The current greenlet will be unscheduled during this time.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__hub__primitives_a670618f9da100eaaa5d2a7b80b746926}\label{namespacegevent_1_1__hub__primitives_a670618f9da100eaaa5d2a7b80b746926}} 
+\index{gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}!wait\+\_\+on\+\_\+objects@{wait\+\_\+on\+\_\+objects}}
+\index{wait\+\_\+on\+\_\+objects@{wait\+\_\+on\+\_\+objects}!gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}}
+\subsubsection{\texorpdfstring{wait\+\_\+on\+\_\+objects()}{wait\_on\_objects()}}
+{\footnotesize\ttfamily def gevent.\+\_\+hub\+\_\+primitives.\+wait\+\_\+on\+\_\+objects (\begin{DoxyParamCaption}\item[{}]{objects = {\ttfamily None},  }\item[{}]{timeout = {\ttfamily None},  }\item[{}]{count = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wait for ``objects`` to become ready or for event loop to finish.
+
+If ``objects`` is provided, it must be a list containing objects
+implementing the wait protocol (rawlink() and unlink() methods):
+
+- :class:`gevent.Greenlet` instance
+- :class:`gevent.event.Event` instance
+- :class:`gevent.lock.Semaphore` instance
+- :class:`gevent.subprocess.Popen` instance
+
+If ``objects`` is ``None`` (the default), ``wait()`` blocks until
+the current event loop has nothing to do (or until ``timeout`` passes):
+
+- all greenlets have finished
+- all servers were stopped
+- all event loop watchers were stopped.
+
+If ``count`` is ``None`` (the default), wait for all ``objects``
+to become ready.
+
+If ``count`` is a number, wait for (up to) ``count`` objects to become
+ready. (For example, if count is ``1`` then the function exits
+when any object in the list is ready).
+
+If ``timeout`` is provided, it specifies the maximum number of
+seconds ``wait()`` will block.
+
+Returns the list of ready objects, in the order in which they were
+ready.
+
+.. seealso:: :func:`iwait`
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__hub__primitives_a25ceb34f03f1cfac42467e304aed6fd2}\label{namespacegevent_1_1__hub__primitives_a25ceb34f03f1cfac42467e304aed6fd2}} 
+\index{gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}!wait\+\_\+on\+\_\+socket@{wait\+\_\+on\+\_\+socket}}
+\index{wait\+\_\+on\+\_\+socket@{wait\+\_\+on\+\_\+socket}!gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}}
+\subsubsection{\texorpdfstring{wait\+\_\+on\+\_\+socket()}{wait\_on\_socket()}}
+{\footnotesize\ttfamily def gevent.\+\_\+hub\+\_\+primitives.\+wait\+\_\+on\+\_\+socket (\begin{DoxyParamCaption}\item[{}]{socket,  }\item[{}]{watcher,  }\item[{}]{timeout\+\_\+exc = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegevent_1_1__hub__primitives_ae484b73e4c293e8788d5857165c2e230}\label{namespacegevent_1_1__hub__primitives_ae484b73e4c293e8788d5857165c2e230}} 
+\index{gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}!wait\+\_\+on\+\_\+watcher@{wait\+\_\+on\+\_\+watcher}}
+\index{wait\+\_\+on\+\_\+watcher@{wait\+\_\+on\+\_\+watcher}!gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}}
+\subsubsection{\texorpdfstring{wait\+\_\+on\+\_\+watcher()}{wait\_on\_watcher()}}
+{\footnotesize\ttfamily def gevent.\+\_\+hub\+\_\+primitives.\+wait\+\_\+on\+\_\+watcher (\begin{DoxyParamCaption}\item[{}]{watcher,  }\item[{}]{timeout = {\ttfamily None},  }\item[{}]{timeout\+\_\+exc = {\ttfamily \hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE}},  }\item[{}]{hub = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}wait(watcher, timeout=None, [timeout_exc=None]) -> None
+
+Block the current greenlet until *watcher* is ready.
+
+If *timeout* is non-negative, then *timeout_exc* is raised after
+*timeout* second has passed.
+
+If :func:`cancel_wait` is called on *io* by another greenlet,
+raise an exception in this blocking greenlet
+(``socket.error(EBADF, 'File descriptor was closed in another
+greenlet')`` by default).
+
+:param io: An event loop watcher, most commonly an IO watcher obtained from
+    :meth:`gevent.core.loop.io`
+:keyword timeout_exc: The exception to raise if the timeout expires.
+    By default, a :class:`socket.timeout` exception is raised.
+    If you pass a value for this keyword, it is interpreted as for
+    :class:`gevent.timeout.Timeout`.
+
+:raises ~gevent.hub.ConcurrentObjectUseError: If the *watcher* is
+    already started.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__hub__primitives_a50d1746d1e26dabc9e0b9eb1f3a226d3}\label{namespacegevent_1_1__hub__primitives_a50d1746d1e26dabc9e0b9eb1f3a226d3}} 
+\index{gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}!wait\+\_\+read@{wait\+\_\+read}}
+\index{wait\+\_\+read@{wait\+\_\+read}!gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}}
+\subsubsection{\texorpdfstring{wait\+\_\+read()}{wait\_read()}}
+{\footnotesize\ttfamily def gevent.\+\_\+hub\+\_\+primitives.\+wait\+\_\+read (\begin{DoxyParamCaption}\item[{}]{fileno,  }\item[{}]{timeout = {\ttfamily None},  }\item[{}]{timeout\+\_\+exc = {\ttfamily \hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}wait_read(fileno, timeout=None, [timeout_exc=None]) -> None
+
+Block the current greenlet until *fileno* is ready to read.
+
+For the meaning of the other parameters and possible exceptions,
+see :func:`wait`.
+
+.. seealso:: :func:`cancel_wait`
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__hub__primitives_af51473b17ea50f4388118cb6ba839a1e}\label{namespacegevent_1_1__hub__primitives_af51473b17ea50f4388118cb6ba839a1e}} 
+\index{gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}!wait\+\_\+readwrite@{wait\+\_\+readwrite}}
+\index{wait\+\_\+readwrite@{wait\+\_\+readwrite}!gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}}
+\subsubsection{\texorpdfstring{wait\+\_\+readwrite()}{wait\_readwrite()}}
+{\footnotesize\ttfamily def gevent.\+\_\+hub\+\_\+primitives.\+wait\+\_\+readwrite (\begin{DoxyParamCaption}\item[{}]{fileno,  }\item[{}]{timeout = {\ttfamily None},  }\item[{}]{timeout\+\_\+exc = {\ttfamily \hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE}},  }\item[{}]{event = {\ttfamily \hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}wait_readwrite(fileno, timeout=None, [timeout_exc=None]) -> None
+
+Block the current greenlet until *fileno* is ready to read or
+write.
+
+For the meaning of the other parameters and possible exceptions,
+see :func:`wait`.
+
+.. deprecated:: 1.1
+   The keyword argument *event* is ignored. Applications should not pass this parameter.
+   In the future, doing so will become an error.
+
+.. seealso:: :func:`cancel_wait`
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1__hub__primitives_ad85018e5bc9d1b852a8d111fa5ad1b6f}\label{namespacegevent_1_1__hub__primitives_ad85018e5bc9d1b852a8d111fa5ad1b6f}} 
+\index{gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}!wait\+\_\+write@{wait\+\_\+write}}
+\index{wait\+\_\+write@{wait\+\_\+write}!gevent\+::\+\_\+hub\+\_\+primitives@{gevent\+::\+\_\+hub\+\_\+primitives}}
+\subsubsection{\texorpdfstring{wait\+\_\+write()}{wait\_write()}}
+{\footnotesize\ttfamily def gevent.\+\_\+hub\+\_\+primitives.\+wait\+\_\+write (\begin{DoxyParamCaption}\item[{}]{fileno,  }\item[{}]{timeout = {\ttfamily None},  }\item[{}]{timeout\+\_\+exc = {\ttfamily \hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE}},  }\item[{}]{event = {\ttfamily \hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}wait_write(fileno, timeout=None, [timeout_exc=None]) -> None
+
+Block the current greenlet until *fileno* is ready to write.
+
+For the meaning of the other parameters and possible exceptions,
+see :func:`wait`.
+
+.. deprecated:: 1.1
+   The keyword argument *event* is ignored. Applications should not pass this parameter.
+   In the future, doing so will become an error.
+
+.. seealso:: :func:`cancel_wait`
+\end{DoxyVerb}
+ 

@@ -1,0 +1,117 @@
+\hypertarget{namespace__pytest_1_1capture}{}\section{\+\_\+pytest.\+capture Namespace Reference}
+\label{namespace__pytest_1_1capture}\index{\+\_\+pytest.\+capture@{\+\_\+pytest.\+capture}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class__pytest_1_1capture_1_1_capture_fixture}{Capture\+Fixture}
+\item 
+class \hyperlink{class__pytest_1_1capture_1_1_capture_manager}{Capture\+Manager}
+\item 
+class \hyperlink{class__pytest_1_1capture_1_1_dont_read_from_input}{Dont\+Read\+From\+Input}
+\item 
+class \hyperlink{class__pytest_1_1capture_1_1_encoded_file}{Encoded\+File}
+\item 
+class \hyperlink{class__pytest_1_1capture_1_1_f_d_capture}{F\+D\+Capture}
+\item 
+class \hyperlink{class__pytest_1_1capture_1_1_f_d_capture_binary}{F\+D\+Capture\+Binary}
+\item 
+class \hyperlink{class__pytest_1_1capture_1_1_multi_capture}{Multi\+Capture}
+\item 
+class \hyperlink{class__pytest_1_1capture_1_1_no_capture}{No\+Capture}
+\item 
+class \hyperlink{class__pytest_1_1capture_1_1_sys_capture}{Sys\+Capture}
+\item 
+class \hyperlink{class__pytest_1_1capture_1_1_sys_capture_binary}{Sys\+Capture\+Binary}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1capture_a1f0628312a3e38f5f5e584120717156f}\label{namespace__pytest_1_1capture_a1f0628312a3e38f5f5e584120717156f}} 
+def {\bfseries pytest\+\_\+addoption} (parser)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1capture_a98cbc831a9c6f10cc974feeb490193a7}\label{namespace__pytest_1_1capture_a98cbc831a9c6f10cc974feeb490193a7}} 
+def {\bfseries pytest\+\_\+load\+\_\+initial\+\_\+conftests} (early\+\_\+config, parser, args)
+\item 
+def \hyperlink{namespace__pytest_1_1capture_a0c9a4fc3173a5ab87c7066f3911666e8}{capsys} (request)
+\item 
+def \hyperlink{namespace__pytest_1_1capture_ae1f2a75a93becc62b712162e84b6e955}{capsysbinary} (request)
+\item 
+def \hyperlink{namespace__pytest_1_1capture_a071b8199e1357caed85740df9b2fb1f6}{capfd} (request)
+\item 
+def \hyperlink{namespace__pytest_1_1capture_a59bfc1c8065be6fcee0965d2587bd346}{capfdbinary} (request)
+\item 
+def \hyperlink{namespace__pytest_1_1capture_a5cbb0426ce1caa95e8c8951c408e3a6b}{safe\+\_\+text\+\_\+dupfile} (f, mode, default\+\_\+encoding=\char`\"{}U\+T\+F8\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1capture_ab72206f311d414678c8bd729f5de8931}\label{namespace__pytest_1_1capture_ab72206f311d414678c8bd729f5de8931}} 
+dictionary {\bfseries patchsysdict} = \{0\+: \char`\"{}stdin\char`\"{}, 1\+: \char`\"{}stdout\char`\"{}, 2\+: \char`\"{}stderr\char`\"{}\}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1capture_a4aebbdea006de16031d6bdd292ab738a}\label{namespace__pytest_1_1capture_a4aebbdea006de16031d6bdd292ab738a}} 
+dictionary {\bfseries capture\+\_\+fixtures} = \{\char`\"{}capfd\char`\"{}, \char`\"{}\hyperlink{namespace__pytest_1_1capture_a59bfc1c8065be6fcee0965d2587bd346}{capfdbinary}\char`\"{}, \char`\"{}\hyperlink{namespace__pytest_1_1capture_a0c9a4fc3173a5ab87c7066f3911666e8}{capsys}\char`\"{}, \char`\"{}\hyperlink{namespace__pytest_1_1capture_ae1f2a75a93becc62b712162e84b6e955}{capsysbinary}\char`\"{}\}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1capture_a2cfd79b49158bf25ad527da3dae70f3f}\label{namespace__pytest_1_1capture_a2cfd79b49158bf25ad527da3dae70f3f}} 
+{\bfseries Capture\+Result} = collections.\+namedtuple(\char`\"{}Capture\+Result\char`\"{}, \mbox{[}\char`\"{}out\char`\"{}, \char`\"{}err\char`\"{}\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}per-test stdout/stderr capturing mechanism.\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1capture_a071b8199e1357caed85740df9b2fb1f6}\label{namespace__pytest_1_1capture_a071b8199e1357caed85740df9b2fb1f6}} 
+\index{\+\_\+pytest\+::capture@{\+\_\+pytest\+::capture}!capfd@{capfd}}
+\index{capfd@{capfd}!\+\_\+pytest\+::capture@{\+\_\+pytest\+::capture}}
+\subsubsection{\texorpdfstring{capfd()}{capfd()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+capture.\+capfd (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Enable capturing of writes to file descriptors ``1`` and ``2`` and make
+captured output available via ``capfd.readouterr()`` method calls
+which return a ``(out, err)`` tuple.  ``out`` and ``err`` will be ``text``
+objects.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1capture_a59bfc1c8065be6fcee0965d2587bd346}\label{namespace__pytest_1_1capture_a59bfc1c8065be6fcee0965d2587bd346}} 
+\index{\+\_\+pytest\+::capture@{\+\_\+pytest\+::capture}!capfdbinary@{capfdbinary}}
+\index{capfdbinary@{capfdbinary}!\+\_\+pytest\+::capture@{\+\_\+pytest\+::capture}}
+\subsubsection{\texorpdfstring{capfdbinary()}{capfdbinary()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+capture.\+capfdbinary (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Enable capturing of write to file descriptors 1 and 2 and make
+captured output available via ``capfdbinary.readouterr`` method calls
+which return a ``(out, err)`` tuple.  ``out`` and ``err`` will be
+``bytes`` objects.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1capture_a0c9a4fc3173a5ab87c7066f3911666e8}\label{namespace__pytest_1_1capture_a0c9a4fc3173a5ab87c7066f3911666e8}} 
+\index{\+\_\+pytest\+::capture@{\+\_\+pytest\+::capture}!capsys@{capsys}}
+\index{capsys@{capsys}!\+\_\+pytest\+::capture@{\+\_\+pytest\+::capture}}
+\subsubsection{\texorpdfstring{capsys()}{capsys()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+capture.\+capsys (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Enable capturing of writes to ``sys.stdout`` and ``sys.stderr`` and make
+captured output available via ``capsys.readouterr()`` method calls
+which return a ``(out, err)`` namedtuple.  ``out`` and ``err`` will be ``text``
+objects.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1capture_ae1f2a75a93becc62b712162e84b6e955}\label{namespace__pytest_1_1capture_ae1f2a75a93becc62b712162e84b6e955}} 
+\index{\+\_\+pytest\+::capture@{\+\_\+pytest\+::capture}!capsysbinary@{capsysbinary}}
+\index{capsysbinary@{capsysbinary}!\+\_\+pytest\+::capture@{\+\_\+pytest\+::capture}}
+\subsubsection{\texorpdfstring{capsysbinary()}{capsysbinary()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+capture.\+capsysbinary (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Enable capturing of writes to ``sys.stdout`` and ``sys.stderr`` and make
+captured output available via ``capsys.readouterr()`` method calls
+which return a ``(out, err)`` tuple.  ``out`` and ``err`` will be ``bytes``
+objects.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1capture_a5cbb0426ce1caa95e8c8951c408e3a6b}\label{namespace__pytest_1_1capture_a5cbb0426ce1caa95e8c8951c408e3a6b}} 
+\index{\+\_\+pytest\+::capture@{\+\_\+pytest\+::capture}!safe\+\_\+text\+\_\+dupfile@{safe\+\_\+text\+\_\+dupfile}}
+\index{safe\+\_\+text\+\_\+dupfile@{safe\+\_\+text\+\_\+dupfile}!\+\_\+pytest\+::capture@{\+\_\+pytest\+::capture}}
+\subsubsection{\texorpdfstring{safe\+\_\+text\+\_\+dupfile()}{safe\_text\_dupfile()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+capture.\+safe\+\_\+text\+\_\+dupfile (\begin{DoxyParamCaption}\item[{}]{f,  }\item[{}]{mode,  }\item[{}]{default\+\_\+encoding = {\ttfamily \char`\"{}UTF8\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return an open text file object that's a duplicate of f on the
+    FD-level if possible.
+\end{DoxyVerb}
+ 

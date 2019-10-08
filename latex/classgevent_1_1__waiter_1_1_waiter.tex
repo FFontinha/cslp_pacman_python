@@ -1,0 +1,142 @@
+\hypertarget{classgevent_1_1__waiter_1_1_waiter}{}\section{gevent.\+\_\+waiter.\+Waiter Class Reference}
+\label{classgevent_1_1__waiter_1_1_waiter}\index{gevent.\+\_\+waiter.\+Waiter@{gevent.\+\_\+waiter.\+Waiter}}
+
+
+Inherits object.
+
+
+
+Inherited by \hyperlink{classgevent_1_1__waiter_1_1_multiple_waiter}{gevent.\+\_\+waiter.\+Multiple\+Waiter}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__waiter_1_1_waiter_abbe85c934b3fc6f4a34eea3fc4826316}\label{classgevent_1_1__waiter_1_1_waiter_abbe85c934b3fc6f4a34eea3fc4826316}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, hub=None)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__waiter_1_1_waiter_a1734167f1ea15eea997267677939ff6b}\label{classgevent_1_1__waiter_1_1_waiter_a1734167f1ea15eea997267677939ff6b}} 
+def {\bfseries clear} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__waiter_1_1_waiter_a341a45ec58e780285455bffc8df621b0}\label{classgevent_1_1__waiter_1_1_waiter_a341a45ec58e780285455bffc8df621b0}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classgevent_1_1__waiter_1_1_waiter_a337f9b6eef9c4f2ed53fcd0c2aed1c05}{ready} (self)
+\item 
+def \hyperlink{classgevent_1_1__waiter_1_1_waiter_a4480be01e5cd9a6ff84be6343a6c2d86}{successful} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__waiter_1_1_waiter_a2c981bb4898105cdec7c0539b45140f5}\label{classgevent_1_1__waiter_1_1_waiter_a2c981bb4898105cdec7c0539b45140f5}} 
+def {\bfseries exc\+\_\+info} (self)
+\item 
+def \hyperlink{classgevent_1_1__waiter_1_1_waiter_ac31aa2cdc2a7aac4cf2d9e4ea5bb526f}{switch} (self, value)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__waiter_1_1_waiter_a220df6575e4be8ce2049a3f57cedb6a9}\label{classgevent_1_1__waiter_1_1_waiter_a220df6575e4be8ce2049a3f57cedb6a9}} 
+def {\bfseries switch\+\_\+args} (self, args)
+\item 
+def \hyperlink{classgevent_1_1__waiter_1_1_waiter_a1d8d060e34ca91799fdd761b5dbea82a}{throw} (self, throw\+\_\+args)
+\item 
+def \hyperlink{classgevent_1_1__waiter_1_1_waiter_aabc14be0f3dc9a5490399e0138b3ce6e}{get} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__waiter_1_1_waiter_a18e7c7a4dd5ad63d11f3e7c67ac97b3e}\label{classgevent_1_1__waiter_1_1_waiter_a18e7c7a4dd5ad63d11f3e7c67ac97b3e}} 
+def {\bfseries \+\_\+\+\_\+call\+\_\+\+\_\+} (self, source)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__waiter_1_1_waiter_ad0f985b0fc223a60c94c1c06dccba4d1}\label{classgevent_1_1__waiter_1_1_waiter_ad0f985b0fc223a60c94c1c06dccba4d1}} 
+{\bfseries hub}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__waiter_1_1_waiter_ab4317e5b41ffc2d93573ee5b26128a2d}\label{classgevent_1_1__waiter_1_1_waiter_ab4317e5b41ffc2d93573ee5b26128a2d}} 
+{\bfseries greenlet}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__waiter_1_1_waiter_a3b1539d98bc33c21303cf4578b92a2d8}\label{classgevent_1_1__waiter_1_1_waiter_a3b1539d98bc33c21303cf4578b92a2d8}} 
+{\bfseries value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A low level communication utility for greenlets.
+
+Waiter is a wrapper around greenlet's ``switch()`` and ``throw()`` calls that makes them somewhat safer:
+
+* switching will occur only if the waiting greenlet is executing :meth:`get` method currently;
+* any error raised in the greenlet is handled inside :meth:`switch` and :meth:`throw`
+* if :meth:`switch`/:meth:`throw` is called before the receiver calls :meth:`get`, then :class:`Waiter`
+  will store the value/exception. The following :meth:`get` will return the value/raise the exception.
+
+The :meth:`switch` and :meth:`throw` methods must only be called from the :class:`Hub` greenlet.
+The :meth:`get` method must be called from a greenlet other than :class:`Hub`.
+
+    >>> result = Waiter()
+    >>> timer = get_hub().loop.timer(0.1)
+    >>> timer.start(result.switch, 'hello from Waiter')
+    >>> result.get() # blocks for 0.1 seconds
+    'hello from Waiter'
+    >>> timer.close()
+
+If switch is called before the greenlet gets a chance to call :meth:`get` then
+:class:`Waiter` stores the value.
+
+    >>> result = Waiter()
+    >>> timer = get_hub().loop.timer(0.1)
+    >>> timer.start(result.switch, 'hi from Waiter')
+    >>> sleep(0.2)
+    >>> result.get() # returns immediately without blocking
+    'hi from Waiter'
+    >>> timer.close()
+
+.. warning::
+
+    This a limited and dangerous way to communicate between
+    greenlets. It can easily leave a greenlet unscheduled forever
+    if used incorrectly. Consider using safer classes such as
+    :class:`gevent.event.Event`, :class:`gevent.event.AsyncResult`,
+    or :class:`gevent.queue.Queue`.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1__waiter_1_1_waiter_aabc14be0f3dc9a5490399e0138b3ce6e}\label{classgevent_1_1__waiter_1_1_waiter_aabc14be0f3dc9a5490399e0138b3ce6e}} 
+\index{gevent\+::\+\_\+waiter\+::\+Waiter@{gevent\+::\+\_\+waiter\+::\+Waiter}!get@{get}}
+\index{get@{get}!gevent\+::\+\_\+waiter\+::\+Waiter@{gevent\+::\+\_\+waiter\+::\+Waiter}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily def gevent.\+\_\+waiter.\+Waiter.\+get (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If a value/an exception is stored, return/raise it. Otherwise until switch() or throw() is called.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__waiter_1_1_waiter_a337f9b6eef9c4f2ed53fcd0c2aed1c05}\label{classgevent_1_1__waiter_1_1_waiter_a337f9b6eef9c4f2ed53fcd0c2aed1c05}} 
+\index{gevent\+::\+\_\+waiter\+::\+Waiter@{gevent\+::\+\_\+waiter\+::\+Waiter}!ready@{ready}}
+\index{ready@{ready}!gevent\+::\+\_\+waiter\+::\+Waiter@{gevent\+::\+\_\+waiter\+::\+Waiter}}
+\subsubsection{\texorpdfstring{ready()}{ready()}}
+{\footnotesize\ttfamily def gevent.\+\_\+waiter.\+Waiter.\+ready (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return true if and only if it holds a value or an exception\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__waiter_1_1_waiter_a4480be01e5cd9a6ff84be6343a6c2d86}\label{classgevent_1_1__waiter_1_1_waiter_a4480be01e5cd9a6ff84be6343a6c2d86}} 
+\index{gevent\+::\+\_\+waiter\+::\+Waiter@{gevent\+::\+\_\+waiter\+::\+Waiter}!successful@{successful}}
+\index{successful@{successful}!gevent\+::\+\_\+waiter\+::\+Waiter@{gevent\+::\+\_\+waiter\+::\+Waiter}}
+\subsubsection{\texorpdfstring{successful()}{successful()}}
+{\footnotesize\ttfamily def gevent.\+\_\+waiter.\+Waiter.\+successful (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return true if and only if it is ready and holds a value\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__waiter_1_1_waiter_ac31aa2cdc2a7aac4cf2d9e4ea5bb526f}\label{classgevent_1_1__waiter_1_1_waiter_ac31aa2cdc2a7aac4cf2d9e4ea5bb526f}} 
+\index{gevent\+::\+\_\+waiter\+::\+Waiter@{gevent\+::\+\_\+waiter\+::\+Waiter}!switch@{switch}}
+\index{switch@{switch}!gevent\+::\+\_\+waiter\+::\+Waiter@{gevent\+::\+\_\+waiter\+::\+Waiter}}
+\subsubsection{\texorpdfstring{switch()}{switch()}}
+{\footnotesize\ttfamily def gevent.\+\_\+waiter.\+Waiter.\+switch (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Switch to the greenlet if one's available. Otherwise store the
+*value*.
+
+.. versionchanged:: 1.3b1
+   The *value* is no longer optional.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__waiter_1_1_waiter_a1d8d060e34ca91799fdd761b5dbea82a}\label{classgevent_1_1__waiter_1_1_waiter_a1d8d060e34ca91799fdd761b5dbea82a}} 
+\index{gevent\+::\+\_\+waiter\+::\+Waiter@{gevent\+::\+\_\+waiter\+::\+Waiter}!throw@{throw}}
+\index{throw@{throw}!gevent\+::\+\_\+waiter\+::\+Waiter@{gevent\+::\+\_\+waiter\+::\+Waiter}}
+\subsubsection{\texorpdfstring{throw()}{throw()}}
+{\footnotesize\ttfamily def gevent.\+\_\+waiter.\+Waiter.\+throw (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{throw\+\_\+args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Switch to the greenlet with the exception. If there's no greenlet, store the exception.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/\+\_\+waiter.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,43 @@
+\hypertarget{classaiohttp_1_1connector_1_1_unix_connector}{}\section{aiohttp.\+connector.\+Unix\+Connector Class Reference}
+\label{classaiohttp_1_1connector_1_1_unix_connector}\index{aiohttp.\+connector.\+Unix\+Connector@{aiohttp.\+connector.\+Unix\+Connector}}
+
+
+Inherits \hyperlink{classaiohttp_1_1connector_1_1_base_connector}{aiohttp.\+connector.\+Base\+Connector}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1connector_1_1_unix_connector_a1a8a4d670950306ec9699d5b52a16724}\label{classaiohttp_1_1connector_1_1_unix_connector_a1a8a4d670950306ec9699d5b52a16724}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{classaiohttp_1_1connector_1_1_unix_connector_a15da4cbb60292fc35f32dcf2c3dbb622}{path}, \hyperlink{classaiohttp_1_1connector_1_1_base_connector_ae732f0e680ae1c5d35c57417a5cd9c4e}{force\+\_\+close}=False, keepalive\+\_\+timeout=sentinel, \hyperlink{classaiohttp_1_1connector_1_1_base_connector_a9ae454fca119e032ccf66cb4745f4fbe}{limit}=100, \hyperlink{classaiohttp_1_1connector_1_1_base_connector_adce24e0088f2017dcc7338b65a708f04}{limit\+\_\+per\+\_\+host}=0, loop=None)
+\item 
+def \hyperlink{classaiohttp_1_1connector_1_1_unix_connector_a15da4cbb60292fc35f32dcf2c3dbb622}{path} (self)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Unix socket connector.
+
+path - Unix socket path.
+keepalive_timeout - (optional) Keep-alive timeout.
+force_close - Set to True to force close and do reconnect
+    after each request (and between redirects).
+limit - The total number of simultaneous connections.
+limit_per_host - Number of simultaneous connections to one host.
+loop - Optional event loop.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1connector_1_1_unix_connector_a15da4cbb60292fc35f32dcf2c3dbb622}\label{classaiohttp_1_1connector_1_1_unix_connector_a15da4cbb60292fc35f32dcf2c3dbb622}} 
+\index{aiohttp\+::connector\+::\+Unix\+Connector@{aiohttp\+::connector\+::\+Unix\+Connector}!path@{path}}
+\index{path@{path}!aiohttp\+::connector\+::\+Unix\+Connector@{aiohttp\+::connector\+::\+Unix\+Connector}}
+\subsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily def aiohttp.\+connector.\+Unix\+Connector.\+path (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Path to unix socket.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/connector.\+py\end{DoxyCompactItemize}

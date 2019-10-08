@@ -1,0 +1,40 @@
+\hypertarget{namespace__pytest_1_1paths}{}\section{\+\_\+pytest.\+paths Namespace Reference}
+\label{namespace__pytest_1_1paths}\index{\+\_\+pytest.\+paths@{\+\_\+pytest.\+paths}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespace__pytest_1_1paths_a3fbb95fdbcdb06a57937bbaeeb429189}{resolve\+\_\+from\+\_\+str} (input, root)
+\item 
+def \hyperlink{namespace__pytest_1_1paths_afa9a212d6f5062d0dddae91faed48136}{fnmatch\+\_\+ex} (pattern, path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1paths_afa9a212d6f5062d0dddae91faed48136}\label{namespace__pytest_1_1paths_afa9a212d6f5062d0dddae91faed48136}} 
+\index{\+\_\+pytest\+::paths@{\+\_\+pytest\+::paths}!fnmatch\+\_\+ex@{fnmatch\+\_\+ex}}
+\index{fnmatch\+\_\+ex@{fnmatch\+\_\+ex}!\+\_\+pytest\+::paths@{\+\_\+pytest\+::paths}}
+\subsubsection{\texorpdfstring{fnmatch\+\_\+ex()}{fnmatch\_ex()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+paths.\+fnmatch\+\_\+ex (\begin{DoxyParamCaption}\item[{}]{pattern,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}FNMatcher port from py.path.common which works with PurePath() instances.
+
+The difference between this algorithm and PurePath.match() is that the latter matches "**" glob expressions
+for each part of the path, while this algorithm uses the whole path instead.
+
+For example:
+    "tests/foo/bar/doc/test_foo.py" matches pattern "tests/**/doc/test*.py" with this algorithm, but not with
+    PurePath.match().
+
+This algorithm was ported to keep backward-compatibility with existing settings which assume paths match according
+this logic.
+
+References:
+* https://bugs.python.org/issue29249
+* https://bugs.python.org/issue34731
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1paths_a3fbb95fdbcdb06a57937bbaeeb429189}\label{namespace__pytest_1_1paths_a3fbb95fdbcdb06a57937bbaeeb429189}} 
+\index{\+\_\+pytest\+::paths@{\+\_\+pytest\+::paths}!resolve\+\_\+from\+\_\+str@{resolve\+\_\+from\+\_\+str}}
+\index{resolve\+\_\+from\+\_\+str@{resolve\+\_\+from\+\_\+str}!\+\_\+pytest\+::paths@{\+\_\+pytest\+::paths}}
+\subsubsection{\texorpdfstring{resolve\+\_\+from\+\_\+str()}{resolve\_from\_str()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+paths.\+resolve\+\_\+from\+\_\+str (\begin{DoxyParamCaption}\item[{}]{input,  }\item[{}]{root }\end{DoxyParamCaption})}
+

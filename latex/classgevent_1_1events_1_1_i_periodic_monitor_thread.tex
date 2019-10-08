@@ -1,0 +1,44 @@
+\hypertarget{classgevent_1_1events_1_1_i_periodic_monitor_thread}{}\section{gevent.\+events.\+I\+Periodic\+Monitor\+Thread Class Reference}
+\label{classgevent_1_1events_1_1_i_periodic_monitor_thread}\index{gevent.\+events.\+I\+Periodic\+Monitor\+Thread@{gevent.\+events.\+I\+Periodic\+Monitor\+Thread}}
+
+
+Inherits \hyperlink{classgevent_1_1__util_1_1_interface}{gevent.\+\_\+util.\+Interface}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classgevent_1_1events_1_1_i_periodic_monitor_thread_a756fbdd414b61f69e6689219bd2fccc6}{add\+\_\+monitoring\+\_\+function} (function, period)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}The contract for the periodic monitoring thread that is started
+by the hub.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1events_1_1_i_periodic_monitor_thread_a756fbdd414b61f69e6689219bd2fccc6}\label{classgevent_1_1events_1_1_i_periodic_monitor_thread_a756fbdd414b61f69e6689219bd2fccc6}} 
+\index{gevent\+::events\+::\+I\+Periodic\+Monitor\+Thread@{gevent\+::events\+::\+I\+Periodic\+Monitor\+Thread}!add\+\_\+monitoring\+\_\+function@{add\+\_\+monitoring\+\_\+function}}
+\index{add\+\_\+monitoring\+\_\+function@{add\+\_\+monitoring\+\_\+function}!gevent\+::events\+::\+I\+Periodic\+Monitor\+Thread@{gevent\+::events\+::\+I\+Periodic\+Monitor\+Thread}}
+\subsubsection{\texorpdfstring{add\+\_\+monitoring\+\_\+function()}{add\_monitoring\_function()}}
+{\footnotesize\ttfamily def gevent.\+events.\+I\+Periodic\+Monitor\+Thread.\+add\+\_\+monitoring\+\_\+function (\begin{DoxyParamCaption}\item[{}]{function,  }\item[{}]{period }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Schedule the *function* to be called approximately every *period* fractional seconds.
+
+The *function* receives one argument, the hub being monitored. It is called
+in the monitoring thread, *not* the hub thread. It **must not** attempt to
+use the gevent asynchronous API.
+
+If the *function* is already a monitoring function, then its *period*
+will be updated for future runs.
+
+If the *period* is ``None``, then the function will be removed.
+
+A *period* less than or equal to zero is not allowed.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/events.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\hypertarget{classpygame_1_1sprite_1_1collide__circle__ratio}{}\section{pygame.\+sprite.\+collide\+\_\+circle\+\_\+ratio Class Reference}
+\label{classpygame_1_1sprite_1_1collide__circle__ratio}\index{pygame.\+sprite.\+collide\+\_\+circle\+\_\+ratio@{pygame.\+sprite.\+collide\+\_\+circle\+\_\+ratio}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1collide__circle__ratio_a9e8814fc9fa6f041f00a6364bfd8a1b3}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, ratio)
+\item 
+def \hyperlink{classpygame_1_1sprite_1_1collide__circle__ratio_a31932a1fe8275e90f63ccf5c195416f3}{\+\_\+\+\_\+call\+\_\+\+\_\+} (self, left, right)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpygame_1_1sprite_1_1collide__circle__ratio_a47a55dd2985218dfad71e2e13d0ca734}\label{classpygame_1_1sprite_1_1collide__circle__ratio_a47a55dd2985218dfad71e2e13d0ca734}} 
+{\bfseries ratio}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}detect collision between two sprites using scaled circles
+
+This callable class checks for collisions between two sprites using a
+scaled version of a sprite's radius. It is created with a ratio as the
+argument to the constructor. The instance is then intended to be passed as
+a collided callback function to the *collide functions.
+
+New in pygame 1.8.1\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpygame_1_1sprite_1_1collide__circle__ratio_a9e8814fc9fa6f041f00a6364bfd8a1b3}\label{classpygame_1_1sprite_1_1collide__circle__ratio_a9e8814fc9fa6f041f00a6364bfd8a1b3}} 
+\index{pygame\+::sprite\+::collide\+\_\+circle\+\_\+ratio@{pygame\+::sprite\+::collide\+\_\+circle\+\_\+ratio}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pygame\+::sprite\+::collide\+\_\+circle\+\_\+ratio@{pygame\+::sprite\+::collide\+\_\+circle\+\_\+ratio}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+collide\+\_\+circle\+\_\+ratio.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ratio }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}creates a new collide_circle_ratio callable instance
+
+The given ratio is expected to be a floating point value used to scale
+the underlying sprite radius before checking for collisions.
+
+When the ratio is ratio=1.0, then it behaves exactly like the 
+collide_circle method.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpygame_1_1sprite_1_1collide__circle__ratio_a31932a1fe8275e90f63ccf5c195416f3}\label{classpygame_1_1sprite_1_1collide__circle__ratio_a31932a1fe8275e90f63ccf5c195416f3}} 
+\index{pygame\+::sprite\+::collide\+\_\+circle\+\_\+ratio@{pygame\+::sprite\+::collide\+\_\+circle\+\_\+ratio}!\+\_\+\+\_\+call\+\_\+\+\_\+@{\+\_\+\+\_\+call\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+call\+\_\+\+\_\+@{\+\_\+\+\_\+call\+\_\+\+\_\+}!pygame\+::sprite\+::collide\+\_\+circle\+\_\+ratio@{pygame\+::sprite\+::collide\+\_\+circle\+\_\+ratio}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+call\+\_\+\+\_\+()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+collide\+\_\+circle\+\_\+ratio.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{left,  }\item[{}]{right }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}detect collision between two sprites using scaled circles
+
+pygame.sprite.collide_circle_radio(ratio)(left, right): return bool
+
+Tests for collision between two sprites by testing whether two circles
+centered on the sprites overlap after scaling the circle's radius by
+the stored ratio. If the sprites have a "radius" attribute, that is
+used to create the circle; otherwise, a circle is created that is big
+enough to completely enclose the sprite's rect as given by the "rect"
+attribute. Intended to be passed as a collided callback function to the
+*collide functions. Sprites must have a "rect" and an optional "radius"
+attribute.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pygame/sprite.\+py\end{DoxyCompactItemize}

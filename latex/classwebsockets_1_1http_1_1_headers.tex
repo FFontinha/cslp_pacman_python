@@ -1,0 +1,112 @@
+\hypertarget{classwebsockets_1_1http_1_1_headers}{}\section{websockets.\+http.\+Headers Class Reference}
+\label{classwebsockets_1_1http_1_1_headers}\index{websockets.\+http.\+Headers@{websockets.\+http.\+Headers}}
+
+
+Inherits Mutable\+Mapping.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1http_1_1_headers_adec466c1b6bc0fc30648963563acf0b6}\label{classwebsockets_1_1http_1_1_headers_adec466c1b6bc0fc30648963563acf0b6}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, args, kwargs)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1http_1_1_headers_af5ffcf8dabd04f868386026b1c26750e}\label{classwebsockets_1_1http_1_1_headers_af5ffcf8dabd04f868386026b1c26750e}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1http_1_1_headers_ab224335048101275b5f4bfd917bed835}\label{classwebsockets_1_1http_1_1_headers_ab224335048101275b5f4bfd917bed835}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1http_1_1_headers_ab188cdc172e6a5e04a397b65914b3728}\label{classwebsockets_1_1http_1_1_headers_ab188cdc172e6a5e04a397b65914b3728}} 
+def {\bfseries copy} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1http_1_1_headers_ab9f28be4394631d6688fec71596875f9}\label{classwebsockets_1_1http_1_1_headers_ab9f28be4394631d6688fec71596875f9}} 
+def {\bfseries \+\_\+\+\_\+contains\+\_\+\+\_\+} (self, key)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1http_1_1_headers_a7ff870ea3a409a216cd2821f011c1056}\label{classwebsockets_1_1http_1_1_headers_a7ff870ea3a409a216cd2821f011c1056}} 
+def {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1http_1_1_headers_a5f23487c8c5ab8602e0109ec918f0536}\label{classwebsockets_1_1http_1_1_headers_a5f23487c8c5ab8602e0109ec918f0536}} 
+def {\bfseries \+\_\+\+\_\+len\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1http_1_1_headers_a734824251074aa23b452d9aed041d061}\label{classwebsockets_1_1http_1_1_headers_a734824251074aa23b452d9aed041d061}} 
+def {\bfseries \+\_\+\+\_\+getitem\+\_\+\+\_\+} (self, key)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1http_1_1_headers_aef1a09e5b381a918f94cda26acb7ad6e}\label{classwebsockets_1_1http_1_1_headers_aef1a09e5b381a918f94cda26acb7ad6e}} 
+def {\bfseries \+\_\+\+\_\+setitem\+\_\+\+\_\+} (self, key, value)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1http_1_1_headers_aa80d8efa5f2782ef128a2c65dd190712}\label{classwebsockets_1_1http_1_1_headers_aa80d8efa5f2782ef128a2c65dd190712}} 
+def {\bfseries \+\_\+\+\_\+delitem\+\_\+\+\_\+} (self, key)
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1http_1_1_headers_add92852911c8c2bcd79b52cf0c8732be}\label{classwebsockets_1_1http_1_1_headers_add92852911c8c2bcd79b52cf0c8732be}} 
+def {\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\item 
+def \hyperlink{classwebsockets_1_1http_1_1_headers_a7192693c16f55372225392677fff9d22}{clear} (self)
+\item 
+def \hyperlink{classwebsockets_1_1http_1_1_headers_ad990f8341a755d293a4b5661d15ec501}{get\+\_\+all} (self, key)
+\item 
+def \hyperlink{classwebsockets_1_1http_1_1_headers_a0fbb3ba41822be545f0302c3190d3cc6}{raw\+\_\+items} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Data structure for working with HTTP headers efficiently.
+
+A :class:`list` of ``(name, values)`` is inefficient for lookups.
+
+A :class:`dict` doesn't suffice because header names are case-insensitive
+and multiple occurrences of headers with the same name are possible.
+
+:class:`Headers` stores HTTP headers in a hybrid data structure to provide
+efficient insertions and lookups while preserving the original data.
+
+In order to account for multiple values with minimal hassle,
+:class:`Headers` follows this logic:
+
+- When getting a header with ``headers[name]``:
+    - if there's no value, :exc:`KeyError` is raised;
+    - if there's exactly one value, it's returned;
+    - if there's more than one value, :exc:`MultipleValuesError` is raised.
+
+- When setting a header with ``headers[name] = value``, the value is
+  appended to the list of values for that header.
+
+- When deleting a header with ``del headers[name]``, all values for that
+  header are removed (this is slow).
+
+Other methods for manipulating headers are consistent with this logic.
+
+As long as no header occurs multiple times, :class:`Headers` behaves like
+:class:`dict`, except keys are lower-cased to provide case-insensitivity.
+
+:meth:`get_all()` returns a list of all values for a header and
+:meth:`raw_items()` returns an iterator of ``(name, values)`` pairs,
+similar to :meth:`http.client.HTTPMessage`.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classwebsockets_1_1http_1_1_headers_a7192693c16f55372225392677fff9d22}\label{classwebsockets_1_1http_1_1_headers_a7192693c16f55372225392677fff9d22}} 
+\index{websockets\+::http\+::\+Headers@{websockets\+::http\+::\+Headers}!clear@{clear}}
+\index{clear@{clear}!websockets\+::http\+::\+Headers@{websockets\+::http\+::\+Headers}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily def websockets.\+http.\+Headers.\+clear (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove all headers.\end{DoxyVerb}
+ \mbox{\Hypertarget{classwebsockets_1_1http_1_1_headers_ad990f8341a755d293a4b5661d15ec501}\label{classwebsockets_1_1http_1_1_headers_ad990f8341a755d293a4b5661d15ec501}} 
+\index{websockets\+::http\+::\+Headers@{websockets\+::http\+::\+Headers}!get\+\_\+all@{get\+\_\+all}}
+\index{get\+\_\+all@{get\+\_\+all}!websockets\+::http\+::\+Headers@{websockets\+::http\+::\+Headers}}
+\subsubsection{\texorpdfstring{get\+\_\+all()}{get\_all()}}
+{\footnotesize\ttfamily def websockets.\+http.\+Headers.\+get\+\_\+all (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the (possibly empty) list of all values for a header.\end{DoxyVerb}
+ \mbox{\Hypertarget{classwebsockets_1_1http_1_1_headers_a0fbb3ba41822be545f0302c3190d3cc6}\label{classwebsockets_1_1http_1_1_headers_a0fbb3ba41822be545f0302c3190d3cc6}} 
+\index{websockets\+::http\+::\+Headers@{websockets\+::http\+::\+Headers}!raw\+\_\+items@{raw\+\_\+items}}
+\index{raw\+\_\+items@{raw\+\_\+items}!websockets\+::http\+::\+Headers@{websockets\+::http\+::\+Headers}}
+\subsubsection{\texorpdfstring{raw\+\_\+items()}{raw\_items()}}
+{\footnotesize\ttfamily def websockets.\+http.\+Headers.\+raw\+\_\+items (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an iterator of (header name, header value).\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/websockets/http.\+py\end{DoxyCompactItemize}

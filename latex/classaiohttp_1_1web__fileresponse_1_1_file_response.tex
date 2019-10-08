@@ -1,0 +1,93 @@
+\hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response}{}\section{aiohttp.\+web\+\_\+fileresponse.\+File\+Response Class Reference}
+\label{classaiohttp_1_1web__fileresponse_1_1_file_response}\index{aiohttp.\+web\+\_\+fileresponse.\+File\+Response@{aiohttp.\+web\+\_\+fileresponse.\+File\+Response}}
+
+
+Inherits \hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{aiohttp.\+web\+\_\+response.\+Stream\+Response}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a94000453ecce69b06e3288cfd81fae23}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a94000453ecce69b06e3288cfd81fae23}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, path, chunk\+\_\+size=256 $\ast$1024, args, kwargs)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a4dc631eece40a5733d320a13177ef2be}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a4dc631eece40a5733d320a13177ef2be}} 
+def {\bfseries prepare} (self, request)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_aa8b8f5c5514a5932e96c4a24b8f07ae5}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_aa8b8f5c5514a5932e96c4a24b8f07ae5}} 
+{\bfseries filepath} = self.\+\_\+path
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_ab651677f98f48d57ad375e721a40b5dd}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_ab651677f98f48d57ad375e721a40b5dd}} 
+bool {\bfseries gzip} = False
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a9538c6b9c6cbaf364af4fd98fac13fba}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a9538c6b9c6cbaf364af4fd98fac13fba}} 
+{\bfseries gzip\+\_\+path} = filepath.\+with\+\_\+name(filepath.\+name + \textquotesingle{}.gz\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a7d731600070cd2d99df33852128edf78}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a7d731600070cd2d99df33852128edf78}} 
+{\bfseries st} = filepath.\+stat()
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a023cbf17e335c114390f32af040bf8a8}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a023cbf17e335c114390f32af040bf8a8}} 
+{\bfseries modsince} = request.\+if\+\_\+modified\+\_\+since
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a153b963bc0afbb7dda32a9d8efaa58ac}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a153b963bc0afbb7dda32a9d8efaa58ac}} 
+{\bfseries unmodsince} = request.\+if\+\_\+unmodified\+\_\+since
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_ae694193d3975368849d2c3dba0ec7703}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_ae694193d3975368849d2c3dba0ec7703}} 
+{\bfseries ct}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a205707297a0f023a375909819028d9bd}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a205707297a0f023a375909819028d9bd}} 
+{\bfseries encoding}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a7e5448ce74299ab399cc9a7215da58d1}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a7e5448ce74299ab399cc9a7215da58d1}} 
+string {\bfseries ct} = \textquotesingle{}application/octet-\/stream\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a28269ee84eb41fc7d6eebff5b28bbf90}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a28269ee84eb41fc7d6eebff5b28bbf90}} 
+bool {\bfseries should\+\_\+set\+\_\+ct} = True
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a7137ef3c5d39522785687c21bc1d65a3}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a7137ef3c5d39522785687c21bc1d65a3}} 
+string {\bfseries encoding} = \textquotesingle{}gzip\textquotesingle{} if gzip else None
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a4be69b96a5bc73f9eefdb8bafaae54f9}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a4be69b96a5bc73f9eefdb8bafaae54f9}} 
+{\bfseries status} = H\+T\+T\+P\+Ok.\+status\+\_\+code
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_ad202d85c1ebb5d7d4b299883a13e07b7}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_ad202d85c1ebb5d7d4b299883a13e07b7}} 
+{\bfseries file\+\_\+size} = st.\+st\+\_\+size
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a98d5e1b477c4cac5919fdab46329897a}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a98d5e1b477c4cac5919fdab46329897a}} 
+{\bfseries count} = file\+\_\+size
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a2465b626db237ca0142619f3a39f57e1}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a2465b626db237ca0142619f3a39f57e1}} 
+{\bfseries start} = None
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_afb6925d573a63756d82633add41112ca}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_afb6925d573a63756d82633add41112ca}} 
+{\bfseries ifrange} = request.\+if\+\_\+range
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a2d932377b10f77b0b87608201cdb88e3}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a2d932377b10f77b0b87608201cdb88e3}} 
+{\bfseries rng} = request.\+http\+\_\+range
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a656a18a4d9afd3b8309bc01a3656c07d}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a656a18a4d9afd3b8309bc01a3656c07d}} 
+{\bfseries end} = rng.\+stop
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a39489fcfffdcd261f89c068cf1a315af}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a39489fcfffdcd261f89c068cf1a315af}} 
+int {\bfseries start} = 0
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a150cbdc7628a27807f8e480b1a2323ab}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a150cbdc7628a27807f8e480b1a2323ab}} 
+{\bfseries content\+\_\+type}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a7d68bd05f403d46ba4aa7961c7e76f3e}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a7d68bd05f403d46ba4aa7961c7e76f3e}} 
+{\bfseries last\+\_\+modified}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__fileresponse_1_1_file_response_a56fba0dbeac8e9fc1e96724849e029f7}\label{classaiohttp_1_1web__fileresponse_1_1_file_response_a56fba0dbeac8e9fc1e96724849e029f7}} 
+{\bfseries content\+\_\+length}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A response object can be used to send files.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/web\+\_\+fileresponse.\+py\end{DoxyCompactItemize}

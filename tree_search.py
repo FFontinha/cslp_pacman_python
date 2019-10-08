@@ -18,45 +18,51 @@ from abc import ABC, abstractmethod
 # Permitem calcular
 # as accoes possiveis em cada estado, etc
 class SearchDomain(ABC):
+    """ Dominios de pesquisa permitem calcular as accoes possiveis em cada estado, etc"""
 
-    # construtor
     @abstractmethod
     def __init__(self):
+        """construtor"""
         pass
 
     # lista de accoes possiveis num estado
     @abstractmethod
     def actions(self, state):
+        """lista de accoes possiveis num estado"""
         pass
 
     # resultado de uma accao num estado, ou seja, o estado seguinte
     @abstractmethod
     def result(self, state, action):
+        """resultado de uma accao num estado, ou seja, o estado seguinte"""
         pass
 
     # custo de uma accao num estado
     @abstractmethod
     def cost(self, state, action):
+        """custo de uma accao num estado"""
         pass
 
     # custo estimado de chegar de um estado a outro
     @abstractmethod
     def heuristic(self, state, goal_state):
+        """custo estimado de chegar de um estado a outro"""
         pass
 
     # comparacao de estados (devolve True se estados foram equivalentes)
     @abstractmethod
     def equivalent(self, state1, state2):
+        """comparacao de estados (devolve True se estados foram equivalentes)"""
         pass
 
     # devolve True se goal satisfeito no state
     @abstractmethod
     def satisfies(self, state, goal):
+        """devolve True se goal satisfeito no state"""
         pass
 
-# Problemas concretos a resolver
-# dentro de um determinado dominio
 class SearchProblem:
+    """ Problemas concretos a resolver dentro de um determinado dominio"""
     def __init__(self, domain, initial, goal):
         self.domain = domain
         self.initial = initial
@@ -65,8 +71,8 @@ class SearchProblem:
         return self.domain.satisfies(state,self.goal)
         
 
-# Nos de uma arvore de pesquisa
 class SearchNode:
+    """Nos de uma arvore de pesquisa"""
     def __init__(self,state,parent,arg3=None,arg4=None,arg5=None):
         self.state = state
         self.parent = parent
@@ -78,9 +84,8 @@ class SearchNode:
     def __repr__(self):
         return str(self)
 
-# Arvores de pesquisa
 class SearchTree:
-
+    """Arvores de pesquisa"""
     # construtor
     def __init__(self,problem, strategy='breadth'): 
         self.problem = problem
@@ -88,8 +93,9 @@ class SearchTree:
         self.open_nodes = [root]
         self.strategy = strategy
 
-    # obter o caminho (sequencia de estados) da raiz ate um no
+
     def get_path(self,node):
+        """Obter o caminho (sequencia de estados) da raiz ate um no"""
         if node.parent == None:
             return [node.state]
         path = self.get_path(node.parent)
@@ -98,6 +104,7 @@ class SearchTree:
 
     # procurar a solucao
     def search(self):
+        """Procurar solução"""
         while self.open_nodes != []:
             node = self.open_nodes.pop(0)
             if self.problem.goal_test(node.state):
@@ -111,6 +118,7 @@ class SearchTree:
 
     # juntar novos nos a lista de nos abertos de acordo com a estrategia
     def add_to_open(self,lnewnodes):
+        """Juntar novos nos a lista de nos abertos de acordo com a estrategia"""
         if self.strategy == 'breadth':
             self.open_nodes.extend(lnewnodes)
         elif self.strategy == 'depth':

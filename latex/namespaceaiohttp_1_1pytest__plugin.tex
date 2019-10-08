@@ -1,0 +1,182 @@
+\hypertarget{namespaceaiohttp_1_1pytest__plugin}{}\section{aiohttp.\+pytest\+\_\+plugin Namespace Reference}
+\label{namespaceaiohttp_1_1pytest__plugin}\index{aiohttp.\+pytest\+\_\+plugin@{aiohttp.\+pytest\+\_\+plugin}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceaiohttp_1_1pytest__plugin_ac0f752130583c16f198a79d395bc50f9}{pytest\+\_\+addoption} (parser)
+\item 
+def \hyperlink{namespaceaiohttp_1_1pytest__plugin_a772c55c24478647abee6bff8fee38523}{pytest\+\_\+fixture\+\_\+setup} (fixturedef)
+\item 
+def \hyperlink{namespaceaiohttp_1_1pytest__plugin_a6b6f4af436c3430865f0bbd0cc978202}{fast} (request)
+\item 
+def \hyperlink{namespaceaiohttp_1_1pytest__plugin_a557e64d4b425eaca246cb556d5704850}{loop\+\_\+debug} (request)
+\item 
+def \hyperlink{namespaceaiohttp_1_1pytest__plugin_a800342aec70a184eb31b6618ef05acfe}{pytest\+\_\+pycollect\+\_\+makeitem} (collector, name, obj)
+\item 
+def \hyperlink{namespaceaiohttp_1_1pytest__plugin_af300895004fd19b88e2b19b698bf48b7}{pytest\+\_\+pyfunc\+\_\+call} (pyfuncitem)
+\item 
+def \hyperlink{namespaceaiohttp_1_1pytest__plugin_ad1b66bb6280942fd5e8e43aa3cfc2a80}{pytest\+\_\+generate\+\_\+tests} (metafunc)
+\item 
+def \hyperlink{namespaceaiohttp_1_1pytest__plugin_a3666e22bceb1b3c3e28c97b5346cb61e}{loop} (loop\+\_\+factory, \hyperlink{namespaceaiohttp_1_1pytest__plugin_a6b6f4af436c3430865f0bbd0cc978202}{fast}, \hyperlink{namespaceaiohttp_1_1pytest__plugin_a557e64d4b425eaca246cb556d5704850}{loop\+\_\+debug})
+\item 
+def \hyperlink{namespaceaiohttp_1_1pytest__plugin_a5d594e7375606d5a5c545f0fed0fa73f}{unused\+\_\+port} (\hyperlink{namespaceaiohttp_1_1pytest__plugin_adb00ddc12b0a3439fbc706acc6c00291}{aiohttp\+\_\+unused\+\_\+port})
+\item 
+def \hyperlink{namespaceaiohttp_1_1pytest__plugin_adb00ddc12b0a3439fbc706acc6c00291}{aiohttp\+\_\+unused\+\_\+port} ()
+\item 
+def \hyperlink{namespaceaiohttp_1_1pytest__plugin_a2b336ccaec737fd03defdd7b85534093}{aiohttp\+\_\+server} (\hyperlink{namespaceaiohttp_1_1pytest__plugin_a3666e22bceb1b3c3e28c97b5346cb61e}{loop})
+\item 
+def \hyperlink{namespaceaiohttp_1_1pytest__plugin_a255e4480fd1be15147521161583f9472}{test\+\_\+server} (\hyperlink{namespaceaiohttp_1_1pytest__plugin_a2b336ccaec737fd03defdd7b85534093}{aiohttp\+\_\+server})
+\item 
+def \hyperlink{namespaceaiohttp_1_1pytest__plugin_a53921f00d47161b403b2fb3632805edf}{aiohttp\+\_\+raw\+\_\+server} (\hyperlink{namespaceaiohttp_1_1pytest__plugin_a3666e22bceb1b3c3e28c97b5346cb61e}{loop})
+\item 
+def \hyperlink{namespaceaiohttp_1_1pytest__plugin_a58cb78466b179efba0f8422657e5388b}{raw\+\_\+test\+\_\+server} (\hyperlink{namespaceaiohttp_1_1pytest__plugin_a53921f00d47161b403b2fb3632805edf}{aiohttp\+\_\+raw\+\_\+server})
+\item 
+def \hyperlink{namespaceaiohttp_1_1pytest__plugin_a10d28bc47d04d5015fa1c9ebbe243af0}{aiohttp\+\_\+client} (\hyperlink{namespaceaiohttp_1_1pytest__plugin_a3666e22bceb1b3c3e28c97b5346cb61e}{loop})
+\item 
+def \hyperlink{namespaceaiohttp_1_1pytest__plugin_ad781032bed1cac6b539a8fbca15260b6}{test\+\_\+client} (\hyperlink{namespaceaiohttp_1_1pytest__plugin_a10d28bc47d04d5015fa1c9ebbe243af0}{aiohttp\+\_\+client})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceaiohttp_1_1pytest__plugin_a527f0c17cb15d76b7aa1b91613aaa5a8}{uvloop} = None
+\item 
+\hyperlink{namespaceaiohttp_1_1pytest__plugin_ab171d4134bf53d5c094c3169fa2ebbbf}{tokio} = None
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_a10d28bc47d04d5015fa1c9ebbe243af0}\label{namespaceaiohttp_1_1pytest__plugin_a10d28bc47d04d5015fa1c9ebbe243af0}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!aiohttp\+\_\+client@{aiohttp\+\_\+client}}
+\index{aiohttp\+\_\+client@{aiohttp\+\_\+client}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{aiohttp\+\_\+client()}{aiohttp\_client()}}
+{\footnotesize\ttfamily def aiohttp.\+pytest\+\_\+plugin.\+aiohttp\+\_\+client (\begin{DoxyParamCaption}\item[{}]{loop }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Factory to create a TestClient instance.
+
+aiohttp_client(app, **kwargs)
+aiohttp_client(server, **kwargs)
+aiohttp_client(raw_server, **kwargs)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_a53921f00d47161b403b2fb3632805edf}\label{namespaceaiohttp_1_1pytest__plugin_a53921f00d47161b403b2fb3632805edf}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!aiohttp\+\_\+raw\+\_\+server@{aiohttp\+\_\+raw\+\_\+server}}
+\index{aiohttp\+\_\+raw\+\_\+server@{aiohttp\+\_\+raw\+\_\+server}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{aiohttp\+\_\+raw\+\_\+server()}{aiohttp\_raw\_server()}}
+{\footnotesize\ttfamily def aiohttp.\+pytest\+\_\+plugin.\+aiohttp\+\_\+raw\+\_\+server (\begin{DoxyParamCaption}\item[{}]{loop }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Factory to create a RawTestServer instance, given a web handler.
+
+aiohttp_raw_server(handler, **kwargs)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_a2b336ccaec737fd03defdd7b85534093}\label{namespaceaiohttp_1_1pytest__plugin_a2b336ccaec737fd03defdd7b85534093}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!aiohttp\+\_\+server@{aiohttp\+\_\+server}}
+\index{aiohttp\+\_\+server@{aiohttp\+\_\+server}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{aiohttp\+\_\+server()}{aiohttp\_server()}}
+{\footnotesize\ttfamily def aiohttp.\+pytest\+\_\+plugin.\+aiohttp\+\_\+server (\begin{DoxyParamCaption}\item[{}]{loop }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Factory to create a TestServer instance, given an app.
+
+aiohttp_server(app, **kwargs)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_adb00ddc12b0a3439fbc706acc6c00291}\label{namespaceaiohttp_1_1pytest__plugin_adb00ddc12b0a3439fbc706acc6c00291}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!aiohttp\+\_\+unused\+\_\+port@{aiohttp\+\_\+unused\+\_\+port}}
+\index{aiohttp\+\_\+unused\+\_\+port@{aiohttp\+\_\+unused\+\_\+port}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{aiohttp\+\_\+unused\+\_\+port()}{aiohttp\_unused\_port()}}
+{\footnotesize\ttfamily def aiohttp.\+pytest\+\_\+plugin.\+aiohttp\+\_\+unused\+\_\+port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a port that is unused on the current host.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_a6b6f4af436c3430865f0bbd0cc978202}\label{namespaceaiohttp_1_1pytest__plugin_a6b6f4af436c3430865f0bbd0cc978202}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!fast@{fast}}
+\index{fast@{fast}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{fast()}{fast()}}
+{\footnotesize\ttfamily def aiohttp.\+pytest\+\_\+plugin.\+fast (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}--fast config option\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_a3666e22bceb1b3c3e28c97b5346cb61e}\label{namespaceaiohttp_1_1pytest__plugin_a3666e22bceb1b3c3e28c97b5346cb61e}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!loop@{loop}}
+\index{loop@{loop}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily def aiohttp.\+pytest\+\_\+plugin.\+loop (\begin{DoxyParamCaption}\item[{}]{loop\+\_\+factory,  }\item[{}]{fast,  }\item[{}]{loop\+\_\+debug }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an instance of the event loop.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_a557e64d4b425eaca246cb556d5704850}\label{namespaceaiohttp_1_1pytest__plugin_a557e64d4b425eaca246cb556d5704850}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!loop\+\_\+debug@{loop\+\_\+debug}}
+\index{loop\+\_\+debug@{loop\+\_\+debug}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{loop\+\_\+debug()}{loop\_debug()}}
+{\footnotesize\ttfamily def aiohttp.\+pytest\+\_\+plugin.\+loop\+\_\+debug (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}--enable-loop-debug config option\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_ac0f752130583c16f198a79d395bc50f9}\label{namespaceaiohttp_1_1pytest__plugin_ac0f752130583c16f198a79d395bc50f9}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!pytest\+\_\+addoption@{pytest\+\_\+addoption}}
+\index{pytest\+\_\+addoption@{pytest\+\_\+addoption}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{pytest\+\_\+addoption()}{pytest\_addoption()}}
+{\footnotesize\ttfamily def aiohttp.\+pytest\+\_\+plugin.\+pytest\+\_\+addoption (\begin{DoxyParamCaption}\item[{}]{parser }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_a772c55c24478647abee6bff8fee38523}\label{namespaceaiohttp_1_1pytest__plugin_a772c55c24478647abee6bff8fee38523}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!pytest\+\_\+fixture\+\_\+setup@{pytest\+\_\+fixture\+\_\+setup}}
+\index{pytest\+\_\+fixture\+\_\+setup@{pytest\+\_\+fixture\+\_\+setup}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{pytest\+\_\+fixture\+\_\+setup()}{pytest\_fixture\_setup()}}
+{\footnotesize\ttfamily def aiohttp.\+pytest\+\_\+plugin.\+pytest\+\_\+fixture\+\_\+setup (\begin{DoxyParamCaption}\item[{}]{fixturedef }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Allow fixtures to be coroutines. Run coroutine fixtures in an event loop.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_ad1b66bb6280942fd5e8e43aa3cfc2a80}\label{namespaceaiohttp_1_1pytest__plugin_ad1b66bb6280942fd5e8e43aa3cfc2a80}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!pytest\+\_\+generate\+\_\+tests@{pytest\+\_\+generate\+\_\+tests}}
+\index{pytest\+\_\+generate\+\_\+tests@{pytest\+\_\+generate\+\_\+tests}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{pytest\+\_\+generate\+\_\+tests()}{pytest\_generate\_tests()}}
+{\footnotesize\ttfamily def aiohttp.\+pytest\+\_\+plugin.\+pytest\+\_\+generate\+\_\+tests (\begin{DoxyParamCaption}\item[{}]{metafunc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_a800342aec70a184eb31b6618ef05acfe}\label{namespaceaiohttp_1_1pytest__plugin_a800342aec70a184eb31b6618ef05acfe}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!pytest\+\_\+pycollect\+\_\+makeitem@{pytest\+\_\+pycollect\+\_\+makeitem}}
+\index{pytest\+\_\+pycollect\+\_\+makeitem@{pytest\+\_\+pycollect\+\_\+makeitem}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{pytest\+\_\+pycollect\+\_\+makeitem()}{pytest\_pycollect\_makeitem()}}
+{\footnotesize\ttfamily def aiohttp.\+pytest\+\_\+plugin.\+pytest\+\_\+pycollect\+\_\+makeitem (\begin{DoxyParamCaption}\item[{}]{collector,  }\item[{}]{name,  }\item[{}]{obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Fix pytest collecting for coroutines.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_af300895004fd19b88e2b19b698bf48b7}\label{namespaceaiohttp_1_1pytest__plugin_af300895004fd19b88e2b19b698bf48b7}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!pytest\+\_\+pyfunc\+\_\+call@{pytest\+\_\+pyfunc\+\_\+call}}
+\index{pytest\+\_\+pyfunc\+\_\+call@{pytest\+\_\+pyfunc\+\_\+call}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{pytest\+\_\+pyfunc\+\_\+call()}{pytest\_pyfunc\_call()}}
+{\footnotesize\ttfamily def aiohttp.\+pytest\+\_\+plugin.\+pytest\+\_\+pyfunc\+\_\+call (\begin{DoxyParamCaption}\item[{}]{pyfuncitem }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run coroutines in an event loop instead of a normal function call.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_a58cb78466b179efba0f8422657e5388b}\label{namespaceaiohttp_1_1pytest__plugin_a58cb78466b179efba0f8422657e5388b}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!raw\+\_\+test\+\_\+server@{raw\+\_\+test\+\_\+server}}
+\index{raw\+\_\+test\+\_\+server@{raw\+\_\+test\+\_\+server}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{raw\+\_\+test\+\_\+server()}{raw\_test\_server()}}
+{\footnotesize\ttfamily def aiohttp.\+pytest\+\_\+plugin.\+raw\+\_\+test\+\_\+server (\begin{DoxyParamCaption}\item[{}]{aiohttp\+\_\+raw\+\_\+server }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_ad781032bed1cac6b539a8fbca15260b6}\label{namespaceaiohttp_1_1pytest__plugin_ad781032bed1cac6b539a8fbca15260b6}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!test\+\_\+client@{test\+\_\+client}}
+\index{test\+\_\+client@{test\+\_\+client}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{test\+\_\+client()}{test\_client()}}
+{\footnotesize\ttfamily def aiohttp.\+pytest\+\_\+plugin.\+test\+\_\+client (\begin{DoxyParamCaption}\item[{}]{aiohttp\+\_\+client }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_a255e4480fd1be15147521161583f9472}\label{namespaceaiohttp_1_1pytest__plugin_a255e4480fd1be15147521161583f9472}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!test\+\_\+server@{test\+\_\+server}}
+\index{test\+\_\+server@{test\+\_\+server}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{test\+\_\+server()}{test\_server()}}
+{\footnotesize\ttfamily def aiohttp.\+pytest\+\_\+plugin.\+test\+\_\+server (\begin{DoxyParamCaption}\item[{}]{aiohttp\+\_\+server }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_a5d594e7375606d5a5c545f0fed0fa73f}\label{namespaceaiohttp_1_1pytest__plugin_a5d594e7375606d5a5c545f0fed0fa73f}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!unused\+\_\+port@{unused\+\_\+port}}
+\index{unused\+\_\+port@{unused\+\_\+port}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{unused\+\_\+port()}{unused\_port()}}
+{\footnotesize\ttfamily def aiohttp.\+pytest\+\_\+plugin.\+unused\+\_\+port (\begin{DoxyParamCaption}\item[{}]{aiohttp\+\_\+unused\+\_\+port }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_ab171d4134bf53d5c094c3169fa2ebbbf}\label{namespaceaiohttp_1_1pytest__plugin_ab171d4134bf53d5c094c3169fa2ebbbf}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!tokio@{tokio}}
+\index{tokio@{tokio}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{tokio}{tokio}}
+{\footnotesize\ttfamily aiohttp.\+pytest\+\_\+plugin.\+tokio = None}
+
+\mbox{\Hypertarget{namespaceaiohttp_1_1pytest__plugin_a527f0c17cb15d76b7aa1b91613aaa5a8}\label{namespaceaiohttp_1_1pytest__plugin_a527f0c17cb15d76b7aa1b91613aaa5a8}} 
+\index{aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}!uvloop@{uvloop}}
+\index{uvloop@{uvloop}!aiohttp\+::pytest\+\_\+plugin@{aiohttp\+::pytest\+\_\+plugin}}
+\subsubsection{\texorpdfstring{uvloop}{uvloop}}
+{\footnotesize\ttfamily aiohttp.\+pytest\+\_\+plugin.\+uvloop = None}
+

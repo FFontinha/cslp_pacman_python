@@ -1,0 +1,92 @@
+\hypertarget{classpy_1_1__code_1_1code_1_1_exception_info}{}\section{py.\+\_\+code.\+code.\+Exception\+Info Class Reference}
+\label{classpy_1_1__code_1_1code_1_1_exception_info}\index{py.\+\_\+code.\+code.\+Exception\+Info@{py.\+\_\+code.\+code.\+Exception\+Info}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_exception_info_aaea77e68a7e88b1f756b7cb4cb032206}\label{classpy_1_1__code_1_1code_1_1_exception_info_aaea77e68a7e88b1f756b7cb4cb032206}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, tup=None, exprinfo=None)
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_exception_info_a4f83e2de3ac3385fc548349f7424bc36}\label{classpy_1_1__code_1_1code_1_1_exception_info_a4f83e2de3ac3385fc548349f7424bc36}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classpy_1_1__code_1_1code_1_1_exception_info_ab69ed52d921c39d1bd51c3503c9ada42}{exconly} (self, tryshort=False)
+\item 
+def \hyperlink{classpy_1_1__code_1_1code_1_1_exception_info_a189744015e10339feec4bdc28591049b}{errisinstance} (self, exc)
+\item 
+def \hyperlink{classpy_1_1__code_1_1code_1_1_exception_info_a57953e48c7a0f5109f4628fb6746a36d}{getrepr} (self, showlocals=False, style=\char`\"{}long\char`\"{}, abspath=False, tbfilter=True, funcargs=False)
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_exception_info_af5d601c778456b1faa0dd1f665dfd6b0}\label{classpy_1_1__code_1_1code_1_1_exception_info_af5d601c778456b1faa0dd1f665dfd6b0}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_exception_info_a1c977e305060aa28cf2482337f752d38}\label{classpy_1_1__code_1_1code_1_1_exception_info_a1c977e305060aa28cf2482337f752d38}} 
+def {\bfseries \+\_\+\+\_\+unicode\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_exception_info_a1aaa65f4f1ee397048c4bbd72bb5db31}\label{classpy_1_1__code_1_1code_1_1_exception_info_a1aaa65f4f1ee397048c4bbd72bb5db31}} 
+{\bfseries type}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_exception_info_a6036b178a038d2d4ff2b2a11360d7666}\label{classpy_1_1__code_1_1code_1_1_exception_info_a6036b178a038d2d4ff2b2a11360d7666}} 
+{\bfseries value}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_exception_info_ad3517cdcbfd12e3563f1fda42b5ae2e2}\label{classpy_1_1__code_1_1code_1_1_exception_info_ad3517cdcbfd12e3563f1fda42b5ae2e2}} 
+{\bfseries tb}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_exception_info_a7e0c69b94b015422d14c4bc9985895b2}\label{classpy_1_1__code_1_1code_1_1_exception_info_a7e0c69b94b015422d14c4bc9985895b2}} 
+{\bfseries typename}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_exception_info_a461e177208731c4326fa02afb9378904}\label{classpy_1_1__code_1_1code_1_1_exception_info_a461e177208731c4326fa02afb9378904}} 
+{\bfseries traceback}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}wraps sys.exc_info() objects and offers
+    help for navigating the traceback.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_exception_info_a189744015e10339feec4bdc28591049b}\label{classpy_1_1__code_1_1code_1_1_exception_info_a189744015e10339feec4bdc28591049b}} 
+\index{py\+::\+\_\+code\+::code\+::\+Exception\+Info@{py\+::\+\_\+code\+::code\+::\+Exception\+Info}!errisinstance@{errisinstance}}
+\index{errisinstance@{errisinstance}!py\+::\+\_\+code\+::code\+::\+Exception\+Info@{py\+::\+\_\+code\+::code\+::\+Exception\+Info}}
+\subsubsection{\texorpdfstring{errisinstance()}{errisinstance()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+Exception\+Info.\+errisinstance (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{exc }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return True if the exception is an instance of exc \end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_exception_info_ab69ed52d921c39d1bd51c3503c9ada42}\label{classpy_1_1__code_1_1code_1_1_exception_info_ab69ed52d921c39d1bd51c3503c9ada42}} 
+\index{py\+::\+\_\+code\+::code\+::\+Exception\+Info@{py\+::\+\_\+code\+::code\+::\+Exception\+Info}!exconly@{exconly}}
+\index{exconly@{exconly}!py\+::\+\_\+code\+::code\+::\+Exception\+Info@{py\+::\+\_\+code\+::code\+::\+Exception\+Info}}
+\subsubsection{\texorpdfstring{exconly()}{exconly()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+Exception\+Info.\+exconly (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tryshort = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return the exception as a string
+
+    when 'tryshort' resolves to True, and the exception is a
+    py.code._AssertionError, only the actual exception part of
+    the exception representation is returned (so 'AssertionError: ' is
+    removed from the beginning)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__code_1_1code_1_1_exception_info_a57953e48c7a0f5109f4628fb6746a36d}\label{classpy_1_1__code_1_1code_1_1_exception_info_a57953e48c7a0f5109f4628fb6746a36d}} 
+\index{py\+::\+\_\+code\+::code\+::\+Exception\+Info@{py\+::\+\_\+code\+::code\+::\+Exception\+Info}!getrepr@{getrepr}}
+\index{getrepr@{getrepr}!py\+::\+\_\+code\+::code\+::\+Exception\+Info@{py\+::\+\_\+code\+::code\+::\+Exception\+Info}}
+\subsubsection{\texorpdfstring{getrepr()}{getrepr()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+code.\+Exception\+Info.\+getrepr (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{showlocals = {\ttfamily False},  }\item[{}]{style = {\ttfamily \char`\"{}long\char`\"{}},  }\item[{}]{abspath = {\ttfamily False},  }\item[{}]{tbfilter = {\ttfamily True},  }\item[{}]{funcargs = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return str()able representation of this exception info.
+    showlocals: show locals per traceback entry
+    style: long|short|no|native traceback style
+    tbfilter: hide entries (where __tracebackhide__ is true)
+
+    in case of style==native, tbfilter and showlocals is ignored.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/py/\+\_\+code/code.\+py\end{DoxyCompactItemize}

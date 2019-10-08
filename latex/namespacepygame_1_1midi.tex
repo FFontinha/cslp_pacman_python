@@ -1,0 +1,242 @@
+\hypertarget{namespacepygame_1_1midi}{}\section{pygame.\+midi Namespace Reference}
+\label{namespacepygame_1_1midi}\index{pygame.\+midi@{pygame.\+midi}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpygame_1_1midi_1_1_input}{Input}
+\item 
+class \hyperlink{classpygame_1_1midi_1_1_midi_exception}{Midi\+Exception}
+\item 
+class \hyperlink{classpygame_1_1midi_1_1_output}{Output}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepygame_1_1midi_a2272bbd4600ff1706570238796d25eb9}{init} ()
+\item 
+def \hyperlink{namespacepygame_1_1midi_acd13a2df48ba49d2d7b54c41041b5947}{quit} ()
+\item 
+def \hyperlink{namespacepygame_1_1midi_a1a222467ad7f6c7c51850bc961d56c16}{get\+\_\+count} ()
+\item 
+def \hyperlink{namespacepygame_1_1midi_a6b730b0fcba359aeb568488d5d23d733}{get\+\_\+default\+\_\+input\+\_\+id} ()
+\item 
+def \hyperlink{namespacepygame_1_1midi_a29a30630292b83257a9348f3ccea65ae}{get\+\_\+default\+\_\+output\+\_\+id} ()
+\item 
+def \hyperlink{namespacepygame_1_1midi_a6d4fb40a72cc8d833f4b59076827d963}{get\+\_\+device\+\_\+info} (an\+\_\+id)
+\item 
+def \hyperlink{namespacepygame_1_1midi_a2f81b7e8c7f654aa21fe687b2a9cc51c}{time} ()
+\item 
+def \hyperlink{namespacepygame_1_1midi_a7623e211da0629c5520b3b0384445104}{midis2events} (midis, device\+\_\+id)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1midi_a8b89fc8f22e1e3fcd920257221695a0e}\label{namespacepygame_1_1midi_a8b89fc8f22e1e3fcd920257221695a0e}} 
+int {\bfseries M\+I\+D\+I\+IN} = pygame.\+locals.\+U\+S\+E\+R\+E\+V\+E\+NT + 10
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1midi_a96ca76760f324656f2dee60efeee1ec4}\label{namespacepygame_1_1midi_a96ca76760f324656f2dee60efeee1ec4}} 
+int {\bfseries M\+I\+D\+I\+O\+UT} = pygame.\+locals.\+U\+S\+E\+R\+E\+V\+E\+NT + 11
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}pygame.midi
+pygame module for interacting with midi input and output.
+
+The midi module can send output to midi devices, and get input
+from midi devices.  It can also list midi devices on the system.
+
+Including real midi devices, and virtual ones.
+
+It uses the portmidi library.  Is portable to which ever platforms
+portmidi supports (currently windows, OSX, and linux).
+
+This uses pyportmidi for now, but may use its own bindings at some
+point in the future.  The pyportmidi bindings are included with pygame.
+
+New in pygame 1.9.0.
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1midi_a1a222467ad7f6c7c51850bc961d56c16}\label{namespacepygame_1_1midi_a1a222467ad7f6c7c51850bc961d56c16}} 
+\index{pygame\+::midi@{pygame\+::midi}!get\+\_\+count@{get\+\_\+count}}
+\index{get\+\_\+count@{get\+\_\+count}!pygame\+::midi@{pygame\+::midi}}
+\subsubsection{\texorpdfstring{get\+\_\+count()}{get\_count()}}
+{\footnotesize\ttfamily def pygame.\+midi.\+get\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}gets the number of devices.
+pygame.midi.get_count(): return num_devices
+
+
+Device ids range from 0 to get_count() -1
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1midi_a6b730b0fcba359aeb568488d5d23d733}\label{namespacepygame_1_1midi_a6b730b0fcba359aeb568488d5d23d733}} 
+\index{pygame\+::midi@{pygame\+::midi}!get\+\_\+default\+\_\+input\+\_\+id@{get\+\_\+default\+\_\+input\+\_\+id}}
+\index{get\+\_\+default\+\_\+input\+\_\+id@{get\+\_\+default\+\_\+input\+\_\+id}!pygame\+::midi@{pygame\+::midi}}
+\subsubsection{\texorpdfstring{get\+\_\+default\+\_\+input\+\_\+id()}{get\_default\_input\_id()}}
+{\footnotesize\ttfamily def pygame.\+midi.\+get\+\_\+default\+\_\+input\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}gets default input device number
+pygame.midi.get_default_input_id(): return default_id
+
+
+Return the default device ID or -1 if there are no devices.
+The result can be passed to the Input()/Ouput() class.
+
+On the PC, the user can specify a default device by
+setting an environment variable. For example, to use device #1.
+
+    set PM_RECOMMENDED_INPUT_DEVICE=1
+
+The user should first determine the available device ID by using
+the supplied application "testin" or "testout".
+
+In general, the registry is a better place for this kind of info,
+and with USB devices that can come and go, using integers is not
+very reliable for device identification. Under Windows, if
+PM_RECOMMENDED_OUTPUT_DEVICE (or PM_RECOMMENDED_INPUT_DEVICE) is
+*NOT* found in the environment, then the default device is obtained
+by looking for a string in the registry under:
+    HKEY_LOCAL_MACHINE/SOFTWARE/PortMidi/Recommended_Input_Device
+and HKEY_LOCAL_MACHINE/SOFTWARE/PortMidi/Recommended_Output_Device
+for a string. The number of the first device with a substring that
+matches the string exactly is returned. For example, if the string
+in the registry is "USB", and device 1 is named
+"In USB MidiSport 1x1", then that will be the default
+input because it contains the string "USB".
+
+In addition to the name, get_device_info() returns "interf", which
+is the interface name. (The "interface" is the underlying software
+system or API used by PortMidi to access devices. Examples are
+MMSystem, DirectX (not implemented), ALSA, OSS (not implemented), etc.)
+At present, the only Win32 interface is "MMSystem", the only Linux
+interface is "ALSA", and the only Max OS X interface is "CoreMIDI".
+To specify both the interface and the device name in the registry,
+separate the two with a comma and a space, e.g.:
+    MMSystem, In USB MidiSport 1x1
+In this case, the string before the comma must be a substring of
+the "interf" string, and the string after the space must be a
+substring of the "name" name string in order to match the device.
+
+Note: in the current release, the default is simply the first device
+(the input or output device with the lowest PmDeviceID).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1midi_a29a30630292b83257a9348f3ccea65ae}\label{namespacepygame_1_1midi_a29a30630292b83257a9348f3ccea65ae}} 
+\index{pygame\+::midi@{pygame\+::midi}!get\+\_\+default\+\_\+output\+\_\+id@{get\+\_\+default\+\_\+output\+\_\+id}}
+\index{get\+\_\+default\+\_\+output\+\_\+id@{get\+\_\+default\+\_\+output\+\_\+id}!pygame\+::midi@{pygame\+::midi}}
+\subsubsection{\texorpdfstring{get\+\_\+default\+\_\+output\+\_\+id()}{get\_default\_output\_id()}}
+{\footnotesize\ttfamily def pygame.\+midi.\+get\+\_\+default\+\_\+output\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}gets default output device number
+pygame.midi.get_default_output_id(): return default_id
+
+
+Return the default device ID or -1 if there are no devices.
+The result can be passed to the Input()/Ouput() class.
+
+On the PC, the user can specify a default device by
+setting an environment variable. For example, to use device #1.
+
+    set PM_RECOMMENDED_OUTPUT_DEVICE=1
+
+The user should first determine the available device ID by using
+the supplied application "testin" or "testout".
+
+In general, the registry is a better place for this kind of info,
+and with USB devices that can come and go, using integers is not
+very reliable for device identification. Under Windows, if
+PM_RECOMMENDED_OUTPUT_DEVICE (or PM_RECOMMENDED_INPUT_DEVICE) is
+*NOT* found in the environment, then the default device is obtained
+by looking for a string in the registry under:
+    HKEY_LOCAL_MACHINE/SOFTWARE/PortMidi/Recommended_Input_Device
+and HKEY_LOCAL_MACHINE/SOFTWARE/PortMidi/Recommended_Output_Device
+for a string. The number of the first device with a substring that
+matches the string exactly is returned. For example, if the string
+in the registry is "USB", and device 1 is named
+"In USB MidiSport 1x1", then that will be the default
+input because it contains the string "USB".
+
+In addition to the name, get_device_info() returns "interf", which
+is the interface name. (The "interface" is the underlying software
+system or API used by PortMidi to access devices. Examples are
+MMSystem, DirectX (not implemented), ALSA, OSS (not implemented), etc.)
+At present, the only Win32 interface is "MMSystem", the only Linux
+interface is "ALSA", and the only Max OS X interface is "CoreMIDI".
+To specify both the interface and the device name in the registry,
+separate the two with a comma and a space, e.g.:
+    MMSystem, In USB MidiSport 1x1
+In this case, the string before the comma must be a substring of
+the "interf" string, and the string after the space must be a
+substring of the "name" name string in order to match the device.
+
+Note: in the current release, the default is simply the first device
+(the input or output device with the lowest PmDeviceID).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1midi_a6d4fb40a72cc8d833f4b59076827d963}\label{namespacepygame_1_1midi_a6d4fb40a72cc8d833f4b59076827d963}} 
+\index{pygame\+::midi@{pygame\+::midi}!get\+\_\+device\+\_\+info@{get\+\_\+device\+\_\+info}}
+\index{get\+\_\+device\+\_\+info@{get\+\_\+device\+\_\+info}!pygame\+::midi@{pygame\+::midi}}
+\subsubsection{\texorpdfstring{get\+\_\+device\+\_\+info()}{get\_device\_info()}}
+{\footnotesize\ttfamily def pygame.\+midi.\+get\+\_\+device\+\_\+info (\begin{DoxyParamCaption}\item[{}]{an\+\_\+id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}returns information about a midi device
+pygame.midi.get_device_info(an_id): return (interf, name, input, output, opened)
+
+interf - a text string describing the device interface, eg 'ALSA'.
+name - a text string for the name of the device, eg 'Midi Through Port-0'
+input - 0, or 1 if the device is an input device.
+output - 0, or 1 if the device is an output device.
+opened - 0, or 1 if the device is opened.
+
+If the id is out of range, the function returns None.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1midi_a2272bbd4600ff1706570238796d25eb9}\label{namespacepygame_1_1midi_a2272bbd4600ff1706570238796d25eb9}} 
+\index{pygame\+::midi@{pygame\+::midi}!init@{init}}
+\index{init@{init}!pygame\+::midi@{pygame\+::midi}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily def pygame.\+midi.\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}initialize the midi module
+pygame.midi.init(): return None
+
+Call the initialisation function before using the midi module.
+
+It is safe to call this more than once.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1midi_a7623e211da0629c5520b3b0384445104}\label{namespacepygame_1_1midi_a7623e211da0629c5520b3b0384445104}} 
+\index{pygame\+::midi@{pygame\+::midi}!midis2events@{midis2events}}
+\index{midis2events@{midis2events}!pygame\+::midi@{pygame\+::midi}}
+\subsubsection{\texorpdfstring{midis2events()}{midis2events()}}
+{\footnotesize\ttfamily def pygame.\+midi.\+midis2events (\begin{DoxyParamCaption}\item[{}]{midis,  }\item[{}]{device\+\_\+id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}converts midi events to pygame events
+pygame.midi.midis2events(midis, device_id): return [Event, ...]
+
+Takes a sequence of midi events and returns list of pygame events.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1midi_acd13a2df48ba49d2d7b54c41041b5947}\label{namespacepygame_1_1midi_acd13a2df48ba49d2d7b54c41041b5947}} 
+\index{pygame\+::midi@{pygame\+::midi}!quit@{quit}}
+\index{quit@{quit}!pygame\+::midi@{pygame\+::midi}}
+\subsubsection{\texorpdfstring{quit()}{quit()}}
+{\footnotesize\ttfamily def pygame.\+midi.\+quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}uninitialize the midi module
+pygame.midi.quit(): return None
+
+
+Called automatically atexit if you don't call it.
+
+It is safe to call this function more than once.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1midi_a2f81b7e8c7f654aa21fe687b2a9cc51c}\label{namespacepygame_1_1midi_a2f81b7e8c7f654aa21fe687b2a9cc51c}} 
+\index{pygame\+::midi@{pygame\+::midi}!time@{time}}
+\index{time@{time}!pygame\+::midi@{pygame\+::midi}}
+\subsubsection{\texorpdfstring{time()}{time()}}
+{\footnotesize\ttfamily def pygame.\+midi.\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}returns the current time in ms of the PortMidi timer
+pygame.midi.time(): return time
+
+The time is reset to 0, when the module is inited.
+\end{DoxyVerb}
+ 

@@ -1,0 +1,165 @@
+\hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader}{}\section{aiohttp.\+multipart.\+Body\+Part\+Reader Class Reference}
+\label{classaiohttp_1_1multipart_1_1_body_part_reader}\index{aiohttp.\+multipart.\+Body\+Part\+Reader@{aiohttp.\+multipart.\+Body\+Part\+Reader}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_abe6b30e692a7c579ca64976d8a8ceb9b}\label{classaiohttp_1_1multipart_1_1_body_part_reader_abe6b30e692a7c579ca64976d8a8ceb9b}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, boundary, headers, content)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_ac621b3047b3ccf545c6675f96a9a5d0f}\label{classaiohttp_1_1multipart_1_1_body_part_reader_ac621b3047b3ccf545c6675f96a9a5d0f}} 
+def {\bfseries \+\_\+\+\_\+aiter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_a83c26769ba3a9cc70f63ce23837ee15b}\label{classaiohttp_1_1multipart_1_1_body_part_reader_a83c26769ba3a9cc70f63ce23837ee15b}} 
+def {\bfseries \+\_\+\+\_\+anext\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_ae04000c21ebd939afb16e2f3106e538b}\label{classaiohttp_1_1multipart_1_1_body_part_reader_ae04000c21ebd939afb16e2f3106e538b}} 
+def {\bfseries next} (self)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_body_part_reader_a51ce7158a5d803ce9e53f177fa96bb8c}{read} (self, \hyperlink{classaiohttp_1_1multipart_1_1_body_part_reader_a97f00c080c7c84423636e182e7638706}{decode}=False)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_body_part_reader_afb299e0e44d0b6bb95aeb5c1709121a4}{read\+\_\+chunk} (self, size=chunk\+\_\+size)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_body_part_reader_a21ae160be9e586ccc7df7b468216db44}{readline} (self)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_body_part_reader_a23130082f378478f6da9e09168c34a11}{release} (self)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_body_part_reader_a96751ec0eae97861585e2596c361fcb8}{text} (self, encoding=None)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_body_part_reader_a3ad9b8805390d178867f0cb763e701fb}{json} (self, encoding=None)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_body_part_reader_a313d11c2b068df4d8b9fc060d0208315}{form} (self, encoding=None)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_body_part_reader_a96ff9ae3bebde19124b072ec74ba8b34}{at\+\_\+eof} (self)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_body_part_reader_a97f00c080c7c84423636e182e7638706}{decode} (self, data)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_body_part_reader_a825fe9661760b578e1ab94bd463ce220}{get\+\_\+charset} (self, default=None)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_body_part_reader_ab983ea22d799778976dc13a4a2a38bf3}{name} (self)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_body_part_reader_afd42076ef9080ce98dc423bc66fa0dc0}{filename} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_a30eb4fc23e02993774e1b4da37286c01}\label{classaiohttp_1_1multipart_1_1_body_part_reader_a30eb4fc23e02993774e1b4da37286c01}} 
+{\bfseries headers}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_a0c8115576621ad840edb3ea75d1ff4fa}\label{classaiohttp_1_1multipart_1_1_body_part_reader_a0c8115576621ad840edb3ea75d1ff4fa}} 
+int {\bfseries chunk\+\_\+size} = 8192
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Multipart reader for single body part.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_a96ff9ae3bebde19124b072ec74ba8b34}\label{classaiohttp_1_1multipart_1_1_body_part_reader_a96ff9ae3bebde19124b072ec74ba8b34}} 
+\index{aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}!at\+\_\+eof@{at\+\_\+eof}}
+\index{at\+\_\+eof@{at\+\_\+eof}!aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}}
+\subsubsection{\texorpdfstring{at\+\_\+eof()}{at\_eof()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Body\+Part\+Reader.\+at\+\_\+eof (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns True if the boundary was reached or False otherwise.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_a97f00c080c7c84423636e182e7638706}\label{classaiohttp_1_1multipart_1_1_body_part_reader_a97f00c080c7c84423636e182e7638706}} 
+\index{aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}!decode@{decode}}
+\index{decode@{decode}!aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}}
+\subsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Body\+Part\+Reader.\+decode (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decodes data according the specified Content-Encoding
+or Content-Transfer-Encoding headers value.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_afd42076ef9080ce98dc423bc66fa0dc0}\label{classaiohttp_1_1multipart_1_1_body_part_reader_afd42076ef9080ce98dc423bc66fa0dc0}} 
+\index{aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}!filename@{filename}}
+\index{filename@{filename}!aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}}
+\subsubsection{\texorpdfstring{filename()}{filename()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Body\+Part\+Reader.\+filename (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns filename specified in Content-Disposition header or None
+if missed or header is malformed.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_a313d11c2b068df4d8b9fc060d0208315}\label{classaiohttp_1_1multipart_1_1_body_part_reader_a313d11c2b068df4d8b9fc060d0208315}} 
+\index{aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}!form@{form}}
+\index{form@{form}!aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}}
+\subsubsection{\texorpdfstring{form()}{form()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Body\+Part\+Reader.\+form (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{encoding = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like read(), but assumes that body parts contains form
+urlencoded data.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_a825fe9661760b578e1ab94bd463ce220}\label{classaiohttp_1_1multipart_1_1_body_part_reader_a825fe9661760b578e1ab94bd463ce220}} 
+\index{aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}!get\+\_\+charset@{get\+\_\+charset}}
+\index{get\+\_\+charset@{get\+\_\+charset}!aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}}
+\subsubsection{\texorpdfstring{get\+\_\+charset()}{get\_charset()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Body\+Part\+Reader.\+get\+\_\+charset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns charset parameter from Content-Type header or default.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_a3ad9b8805390d178867f0cb763e701fb}\label{classaiohttp_1_1multipart_1_1_body_part_reader_a3ad9b8805390d178867f0cb763e701fb}} 
+\index{aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}!json@{json}}
+\index{json@{json}!aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}}
+\subsubsection{\texorpdfstring{json()}{json()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Body\+Part\+Reader.\+json (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{encoding = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like read(), but assumes that body parts contains JSON data.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_ab983ea22d799778976dc13a4a2a38bf3}\label{classaiohttp_1_1multipart_1_1_body_part_reader_ab983ea22d799778976dc13a4a2a38bf3}} 
+\index{aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}!name@{name}}
+\index{name@{name}!aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}}
+\subsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Body\+Part\+Reader.\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns name specified in Content-Disposition header or None
+if missed or header is malformed.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_a51ce7158a5d803ce9e53f177fa96bb8c}\label{classaiohttp_1_1multipart_1_1_body_part_reader_a51ce7158a5d803ce9e53f177fa96bb8c}} 
+\index{aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}!read@{read}}
+\index{read@{read}!aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Body\+Part\+Reader.\+read (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{decode = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reads body part data.
+
+decode: Decodes data following by encoding
+method from Content-Encoding header. If it missed
+data remains untouched
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_afb299e0e44d0b6bb95aeb5c1709121a4}\label{classaiohttp_1_1multipart_1_1_body_part_reader_afb299e0e44d0b6bb95aeb5c1709121a4}} 
+\index{aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}!read\+\_\+chunk@{read\+\_\+chunk}}
+\index{read\+\_\+chunk@{read\+\_\+chunk}!aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}}
+\subsubsection{\texorpdfstring{read\+\_\+chunk()}{read\_chunk()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Body\+Part\+Reader.\+read\+\_\+chunk (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{size = {\ttfamily chunk\+\_\+size} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reads body part content chunk of the specified size.
+
+size: chunk size
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_a21ae160be9e586ccc7df7b468216db44}\label{classaiohttp_1_1multipart_1_1_body_part_reader_a21ae160be9e586ccc7df7b468216db44}} 
+\index{aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}!readline@{readline}}
+\index{readline@{readline}!aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}}
+\subsubsection{\texorpdfstring{readline()}{readline()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Body\+Part\+Reader.\+readline (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reads body part by line by line.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_a23130082f378478f6da9e09168c34a11}\label{classaiohttp_1_1multipart_1_1_body_part_reader_a23130082f378478f6da9e09168c34a11}} 
+\index{aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}!release@{release}}
+\index{release@{release}!aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Body\+Part\+Reader.\+release (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like read(), but reads all the data to the void.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_body_part_reader_a96751ec0eae97861585e2596c361fcb8}\label{classaiohttp_1_1multipart_1_1_body_part_reader_a96751ec0eae97861585e2596c361fcb8}} 
+\index{aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}!text@{text}}
+\index{text@{text}!aiohttp\+::multipart\+::\+Body\+Part\+Reader@{aiohttp\+::multipart\+::\+Body\+Part\+Reader}}
+\subsubsection{\texorpdfstring{text()}{text()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Body\+Part\+Reader.\+text (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{encoding = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like read(), but assumes that body part contains text data.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/multipart.\+py\end{DoxyCompactItemize}

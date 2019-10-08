@@ -1,0 +1,50 @@
+\hypertarget{class__pytest_1_1fixtures_1_1_func_fixture_info}{}\section{\+\_\+pytest.\+fixtures.\+Func\+Fixture\+Info Class Reference}
+\label{class__pytest_1_1fixtures_1_1_func_fixture_info}\index{\+\_\+pytest.\+fixtures.\+Func\+Fixture\+Info@{\+\_\+pytest.\+fixtures.\+Func\+Fixture\+Info}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{class__pytest_1_1fixtures_1_1_func_fixture_info_a9d5dcacd522060736b3a6316d97af0f0}{prune\+\_\+dependency\+\_\+tree} (self)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_func_fixture_info_ae00a314985cc58b886c6e17ba7fb8e23}\label{class__pytest_1_1fixtures_1_1_func_fixture_info_ae00a314985cc58b886c6e17ba7fb8e23}} 
+{\bfseries argnames} = attr.\+ib(type=tuple)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_func_fixture_info_a4b7c3e7ea2a1e2bd817328c3251f692d}\label{class__pytest_1_1fixtures_1_1_func_fixture_info_a4b7c3e7ea2a1e2bd817328c3251f692d}} 
+{\bfseries initialnames} = attr.\+ib(type=tuple)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_func_fixture_info_a278fcf9f598bb3d3e7ff706c938ea137}\label{class__pytest_1_1fixtures_1_1_func_fixture_info_a278fcf9f598bb3d3e7ff706c938ea137}} 
+{\bfseries names\+\_\+closure} = attr.\+ib()
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_func_fixture_info_aba0fc74b2d2a9058113a478e242d7849}\label{class__pytest_1_1fixtures_1_1_func_fixture_info_aba0fc74b2d2a9058113a478e242d7849}} 
+{\bfseries name2fixturedefs} = attr.\+ib()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_func_fixture_info_a9d5dcacd522060736b3a6316d97af0f0}\label{class__pytest_1_1fixtures_1_1_func_fixture_info_a9d5dcacd522060736b3a6316d97af0f0}} 
+\index{\+\_\+pytest\+::fixtures\+::\+Func\+Fixture\+Info@{\+\_\+pytest\+::fixtures\+::\+Func\+Fixture\+Info}!prune\+\_\+dependency\+\_\+tree@{prune\+\_\+dependency\+\_\+tree}}
+\index{prune\+\_\+dependency\+\_\+tree@{prune\+\_\+dependency\+\_\+tree}!\+\_\+pytest\+::fixtures\+::\+Func\+Fixture\+Info@{\+\_\+pytest\+::fixtures\+::\+Func\+Fixture\+Info}}
+\subsubsection{\texorpdfstring{prune\+\_\+dependency\+\_\+tree()}{prune\_dependency\_tree()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+Func\+Fixture\+Info.\+prune\+\_\+dependency\+\_\+tree (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Recompute names_closure from initialnames and name2fixturedefs
+
+Can only reduce names_closure, which means that the new closure will
+always be a subset of the old one. The order is preserved.
+
+This method is needed because direct parametrization may shadow some
+of the fixtures that were included in the originally built dependency
+tree. In this way the dependency tree can get pruned, and the closure
+of argnames may get reduced.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/fixtures.\+py\end{DoxyCompactItemize}

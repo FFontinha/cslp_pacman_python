@@ -1,0 +1,75 @@
+\hypertarget{namespace__pytest_1_1warnings}{}\section{\+\_\+pytest.\+warnings Namespace Reference}
+\label{namespace__pytest_1_1warnings}\index{\+\_\+pytest.\+warnings@{\+\_\+pytest.\+warnings}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespace__pytest_1_1warnings_ac0f4073b618ceebb7d9d0cd4f963c38f}{pytest\+\_\+addoption} (parser)
+\item 
+def \hyperlink{namespace__pytest_1_1warnings_aae727a9e4545555b3bcf9f8042c69eac}{pytest\+\_\+configure} (config)
+\item 
+def \hyperlink{namespace__pytest_1_1warnings_af1306aff34a4450e3a379b5618787d14}{catch\+\_\+warnings\+\_\+for\+\_\+item} (config, ihook, when, item)
+\item 
+def \hyperlink{namespace__pytest_1_1warnings_a83b34eca5850e04a5604197e2c2666b6}{warning\+\_\+record\+\_\+to\+\_\+str} (warning\+\_\+message)
+\item 
+def \hyperlink{namespace__pytest_1_1warnings_a0eeee30a34091403585154387a18d175}{pytest\+\_\+runtest\+\_\+protocol} (item)
+\item 
+def \hyperlink{namespace__pytest_1_1warnings_a1cd8386af75b21e83acbf236950b8d66}{pytest\+\_\+collection} (session)
+\item 
+def \hyperlink{namespace__pytest_1_1warnings_acc5a1dc3ecfb364a1a980f7cc6eae1e1}{pytest\+\_\+terminal\+\_\+summary} (terminalreporter)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1warnings_af1306aff34a4450e3a379b5618787d14}\label{namespace__pytest_1_1warnings_af1306aff34a4450e3a379b5618787d14}} 
+\index{\+\_\+pytest\+::warnings@{\+\_\+pytest\+::warnings}!catch\+\_\+warnings\+\_\+for\+\_\+item@{catch\+\_\+warnings\+\_\+for\+\_\+item}}
+\index{catch\+\_\+warnings\+\_\+for\+\_\+item@{catch\+\_\+warnings\+\_\+for\+\_\+item}!\+\_\+pytest\+::warnings@{\+\_\+pytest\+::warnings}}
+\subsubsection{\texorpdfstring{catch\+\_\+warnings\+\_\+for\+\_\+item()}{catch\_warnings\_for\_item()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+warnings.\+catch\+\_\+warnings\+\_\+for\+\_\+item (\begin{DoxyParamCaption}\item[{}]{config,  }\item[{}]{ihook,  }\item[{}]{when,  }\item[{}]{item }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Context manager that catches warnings generated in the contained execution block.
+
+``item`` can be None if we are not in the context of an item execution.
+
+Each warning captured triggers the ``pytest_warning_captured`` hook.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1warnings_ac0f4073b618ceebb7d9d0cd4f963c38f}\label{namespace__pytest_1_1warnings_ac0f4073b618ceebb7d9d0cd4f963c38f}} 
+\index{\+\_\+pytest\+::warnings@{\+\_\+pytest\+::warnings}!pytest\+\_\+addoption@{pytest\+\_\+addoption}}
+\index{pytest\+\_\+addoption@{pytest\+\_\+addoption}!\+\_\+pytest\+::warnings@{\+\_\+pytest\+::warnings}}
+\subsubsection{\texorpdfstring{pytest\+\_\+addoption()}{pytest\_addoption()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+warnings.\+pytest\+\_\+addoption (\begin{DoxyParamCaption}\item[{}]{parser }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1warnings_a1cd8386af75b21e83acbf236950b8d66}\label{namespace__pytest_1_1warnings_a1cd8386af75b21e83acbf236950b8d66}} 
+\index{\+\_\+pytest\+::warnings@{\+\_\+pytest\+::warnings}!pytest\+\_\+collection@{pytest\+\_\+collection}}
+\index{pytest\+\_\+collection@{pytest\+\_\+collection}!\+\_\+pytest\+::warnings@{\+\_\+pytest\+::warnings}}
+\subsubsection{\texorpdfstring{pytest\+\_\+collection()}{pytest\_collection()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+warnings.\+pytest\+\_\+collection (\begin{DoxyParamCaption}\item[{}]{session }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1warnings_aae727a9e4545555b3bcf9f8042c69eac}\label{namespace__pytest_1_1warnings_aae727a9e4545555b3bcf9f8042c69eac}} 
+\index{\+\_\+pytest\+::warnings@{\+\_\+pytest\+::warnings}!pytest\+\_\+configure@{pytest\+\_\+configure}}
+\index{pytest\+\_\+configure@{pytest\+\_\+configure}!\+\_\+pytest\+::warnings@{\+\_\+pytest\+::warnings}}
+\subsubsection{\texorpdfstring{pytest\+\_\+configure()}{pytest\_configure()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+warnings.\+pytest\+\_\+configure (\begin{DoxyParamCaption}\item[{}]{config }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1warnings_a0eeee30a34091403585154387a18d175}\label{namespace__pytest_1_1warnings_a0eeee30a34091403585154387a18d175}} 
+\index{\+\_\+pytest\+::warnings@{\+\_\+pytest\+::warnings}!pytest\+\_\+runtest\+\_\+protocol@{pytest\+\_\+runtest\+\_\+protocol}}
+\index{pytest\+\_\+runtest\+\_\+protocol@{pytest\+\_\+runtest\+\_\+protocol}!\+\_\+pytest\+::warnings@{\+\_\+pytest\+::warnings}}
+\subsubsection{\texorpdfstring{pytest\+\_\+runtest\+\_\+protocol()}{pytest\_runtest\_protocol()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+warnings.\+pytest\+\_\+runtest\+\_\+protocol (\begin{DoxyParamCaption}\item[{}]{item }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1warnings_acc5a1dc3ecfb364a1a980f7cc6eae1e1}\label{namespace__pytest_1_1warnings_acc5a1dc3ecfb364a1a980f7cc6eae1e1}} 
+\index{\+\_\+pytest\+::warnings@{\+\_\+pytest\+::warnings}!pytest\+\_\+terminal\+\_\+summary@{pytest\+\_\+terminal\+\_\+summary}}
+\index{pytest\+\_\+terminal\+\_\+summary@{pytest\+\_\+terminal\+\_\+summary}!\+\_\+pytest\+::warnings@{\+\_\+pytest\+::warnings}}
+\subsubsection{\texorpdfstring{pytest\+\_\+terminal\+\_\+summary()}{pytest\_terminal\_summary()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+warnings.\+pytest\+\_\+terminal\+\_\+summary (\begin{DoxyParamCaption}\item[{}]{terminalreporter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1warnings_a83b34eca5850e04a5604197e2c2666b6}\label{namespace__pytest_1_1warnings_a83b34eca5850e04a5604197e2c2666b6}} 
+\index{\+\_\+pytest\+::warnings@{\+\_\+pytest\+::warnings}!warning\+\_\+record\+\_\+to\+\_\+str@{warning\+\_\+record\+\_\+to\+\_\+str}}
+\index{warning\+\_\+record\+\_\+to\+\_\+str@{warning\+\_\+record\+\_\+to\+\_\+str}!\+\_\+pytest\+::warnings@{\+\_\+pytest\+::warnings}}
+\subsubsection{\texorpdfstring{warning\+\_\+record\+\_\+to\+\_\+str()}{warning\_record\_to\_str()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+warnings.\+warning\+\_\+record\+\_\+to\+\_\+str (\begin{DoxyParamCaption}\item[{}]{warning\+\_\+message }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert a warnings.WarningMessage to a string, taking in account a lot of unicode shenaningans in Python 2.
+
+When Python 2 support is dropped this function can be greatly simplified.
+\end{DoxyVerb}
+ 

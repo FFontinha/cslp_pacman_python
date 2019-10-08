@@ -1,0 +1,57 @@
+\hypertarget{namespacepygame_1_1__numpysndarray}{}\section{pygame.\+\_\+numpysndarray Namespace Reference}
+\label{namespacepygame_1_1__numpysndarray}\index{pygame.\+\_\+numpysndarray@{pygame.\+\_\+numpysndarray}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepygame_1_1__numpysndarray_a5ce2cbcb07242a70d9b65fff19801ade}{array} (sound)
+\item 
+def \hyperlink{namespacepygame_1_1__numpysndarray_a9c6c1a49e395ab900de24c97a1cbfa47}{samples} (sound)
+\item 
+def \hyperlink{namespacepygame_1_1__numpysndarray_a74934489a13e92a8a7f865e1eb91bda0}{make\+\_\+sound} (\hyperlink{namespacepygame_1_1__numpysndarray_a5ce2cbcb07242a70d9b65fff19801ade}{array})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1__numpysndarray_a5ce2cbcb07242a70d9b65fff19801ade}\label{namespacepygame_1_1__numpysndarray_a5ce2cbcb07242a70d9b65fff19801ade}} 
+\index{pygame\+::\+\_\+numpysndarray@{pygame\+::\+\_\+numpysndarray}!array@{array}}
+\index{array@{array}!pygame\+::\+\_\+numpysndarray@{pygame\+::\+\_\+numpysndarray}}
+\subsubsection{\texorpdfstring{array()}{array()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysndarray.\+array (\begin{DoxyParamCaption}\item[{}]{sound }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame._numpysndarray.array(Sound): return array
+
+Copy Sound samples into an array.
+
+Creates a new array for the sound data and copies the samples. The
+array will always be in the format returned from
+pygame.mixer.get_init().
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1__numpysndarray_a74934489a13e92a8a7f865e1eb91bda0}\label{namespacepygame_1_1__numpysndarray_a74934489a13e92a8a7f865e1eb91bda0}} 
+\index{pygame\+::\+\_\+numpysndarray@{pygame\+::\+\_\+numpysndarray}!make\+\_\+sound@{make\+\_\+sound}}
+\index{make\+\_\+sound@{make\+\_\+sound}!pygame\+::\+\_\+numpysndarray@{pygame\+::\+\_\+numpysndarray}}
+\subsubsection{\texorpdfstring{make\+\_\+sound()}{make\_sound()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysndarray.\+make\+\_\+sound (\begin{DoxyParamCaption}\item[{}]{array }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame._numpysndarray.make_sound(array): return Sound
+
+Convert an array into a Sound object.
+
+Create a new playable Sound object from an array. The mixer module
+must be initialized and the array format must be similar to the mixer
+audio format.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1__numpysndarray_a9c6c1a49e395ab900de24c97a1cbfa47}\label{namespacepygame_1_1__numpysndarray_a9c6c1a49e395ab900de24c97a1cbfa47}} 
+\index{pygame\+::\+\_\+numpysndarray@{pygame\+::\+\_\+numpysndarray}!samples@{samples}}
+\index{samples@{samples}!pygame\+::\+\_\+numpysndarray@{pygame\+::\+\_\+numpysndarray}}
+\subsubsection{\texorpdfstring{samples()}{samples()}}
+{\footnotesize\ttfamily def pygame.\+\_\+numpysndarray.\+samples (\begin{DoxyParamCaption}\item[{}]{sound }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame._numpysndarray.samples(Sound): return array
+
+Reference Sound samples into an array.
+
+Creates a new array that directly references the samples in a Sound
+object. Modifying the array will change the Sound. The array will
+always be in the format returned from pygame.mixer.get_init().
+\end{DoxyVerb}
+ 

@@ -1,0 +1,108 @@
+\hypertarget{namespacewebsockets_1_1http}{}\section{websockets.\+http Namespace Reference}
+\label{namespacewebsockets_1_1http}\index{websockets.\+http@{websockets.\+http}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classwebsockets_1_1http_1_1_headers}{Headers}
+\item 
+class \hyperlink{classwebsockets_1_1http_1_1_multiple_values_error}{Multiple\+Values\+Error}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacewebsockets_1_1http_aa060b2ffb58150775d151cfa7ac3e276}{read\+\_\+request} (stream)
+\item 
+def \hyperlink{namespacewebsockets_1_1http_a4a2fa59574c998f90999402c995c0a1b}{read\+\_\+response} (stream)
+\item 
+def \hyperlink{namespacewebsockets_1_1http_a75fb58c62ddc81487e554a7798931adc}{read\+\_\+headers} (stream)
+\item 
+def \hyperlink{namespacewebsockets_1_1http_a0d3f313afb171e8b73c34410509e6ec1}{read\+\_\+line} (stream)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1http_a4fc348f90372785b400f4ca4fd9a6bd2}\label{namespacewebsockets_1_1http_a4fc348f90372785b400f4ca4fd9a6bd2}} 
+{\bfseries M\+A\+X\+\_\+\+H\+E\+A\+D\+E\+RS}
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1http_a7daadd7833770af7f7659150c5b5761e}\label{namespacewebsockets_1_1http_a7daadd7833770af7f7659150c5b5761e}} 
+{\bfseries M\+A\+X\+\_\+\+L\+I\+NE}
+\item 
+\mbox{\Hypertarget{namespacewebsockets_1_1http_a55f8f26a6de556349f1b0fb1769357e5}\label{namespacewebsockets_1_1http_a55f8f26a6de556349f1b0fb1769357e5}} 
+{\bfseries U\+S\+E\+R\+\_\+\+A\+G\+E\+NT}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}The :mod:`websockets.http` module provides basic HTTP parsing and
+serialization. It is merely adequate for WebSocket handshake messages.
+
+Its functions cannot be imported from :mod:`websockets`. They must be imported
+from :mod:`websockets.http`.\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacewebsockets_1_1http_a75fb58c62ddc81487e554a7798931adc}\label{namespacewebsockets_1_1http_a75fb58c62ddc81487e554a7798931adc}} 
+\index{websockets\+::http@{websockets\+::http}!read\+\_\+headers@{read\+\_\+headers}}
+\index{read\+\_\+headers@{read\+\_\+headers}!websockets\+::http@{websockets\+::http}}
+\subsubsection{\texorpdfstring{read\+\_\+headers()}{read\_headers()}}
+{\footnotesize\ttfamily def websockets.\+http.\+read\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{stream }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read HTTP headers from ``stream``.
+
+``stream`` is an :class:`~asyncio.StreamReader`.
+
+Return a :class:`Headers` instance
+
+Non-ASCII characters are represented with surrogate escapes.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacewebsockets_1_1http_a0d3f313afb171e8b73c34410509e6ec1}\label{namespacewebsockets_1_1http_a0d3f313afb171e8b73c34410509e6ec1}} 
+\index{websockets\+::http@{websockets\+::http}!read\+\_\+line@{read\+\_\+line}}
+\index{read\+\_\+line@{read\+\_\+line}!websockets\+::http@{websockets\+::http}}
+\subsubsection{\texorpdfstring{read\+\_\+line()}{read\_line()}}
+{\footnotesize\ttfamily def websockets.\+http.\+read\+\_\+line (\begin{DoxyParamCaption}\item[{}]{stream }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read a single line from ``stream``.
+
+``stream`` is an :class:`~asyncio.StreamReader`.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacewebsockets_1_1http_aa060b2ffb58150775d151cfa7ac3e276}\label{namespacewebsockets_1_1http_aa060b2ffb58150775d151cfa7ac3e276}} 
+\index{websockets\+::http@{websockets\+::http}!read\+\_\+request@{read\+\_\+request}}
+\index{read\+\_\+request@{read\+\_\+request}!websockets\+::http@{websockets\+::http}}
+\subsubsection{\texorpdfstring{read\+\_\+request()}{read\_request()}}
+{\footnotesize\ttfamily def websockets.\+http.\+read\+\_\+request (\begin{DoxyParamCaption}\item[{}]{stream }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read an HTTP/1.1 GET request from ``stream``.
+
+``stream`` is an :class:`~asyncio.StreamReader`.
+
+Return ``(path, headers)`` where ``path`` is a :class:`str` and
+``headers`` is a :class:`Headers` instance.
+
+``path`` isn't URL-decoded or validated in any way.
+
+Non-ASCII characters are represented with surrogate escapes.
+
+Raise an exception if the request isn't well formatted.
+
+Don't attempt to read the request body because WebSocket handshake
+requests don't have one. If the request contains a body, it may be
+read from ``stream`` after this coroutine returns.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacewebsockets_1_1http_a4a2fa59574c998f90999402c995c0a1b}\label{namespacewebsockets_1_1http_a4a2fa59574c998f90999402c995c0a1b}} 
+\index{websockets\+::http@{websockets\+::http}!read\+\_\+response@{read\+\_\+response}}
+\index{read\+\_\+response@{read\+\_\+response}!websockets\+::http@{websockets\+::http}}
+\subsubsection{\texorpdfstring{read\+\_\+response()}{read\_response()}}
+{\footnotesize\ttfamily def websockets.\+http.\+read\+\_\+response (\begin{DoxyParamCaption}\item[{}]{stream }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read an HTTP/1.1 response from ``stream``.
+
+``stream`` is an :class:`~asyncio.StreamReader`.
+
+Return ``(status_code, headers)`` where ``status_code`` is a :class:`int`
+and ``headers`` is a :class:`Headers` instance.
+
+Non-ASCII characters are represented with surrogate escapes.
+
+Raise an exception if the response isn't well formatted.
+
+Don't attempt to read the response body, because WebSocket handshake
+responses don't have one. If the response contains a body, it may be
+read from ``stream`` after this coroutine returns.\end{DoxyVerb}
+ 

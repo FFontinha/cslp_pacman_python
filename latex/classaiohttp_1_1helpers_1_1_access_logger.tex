@@ -1,0 +1,127 @@
+\hypertarget{classaiohttp_1_1helpers_1_1_access_logger}{}\section{aiohttp.\+helpers.\+Access\+Logger Class Reference}
+\label{classaiohttp_1_1helpers_1_1_access_logger}\index{aiohttp.\+helpers.\+Access\+Logger@{aiohttp.\+helpers.\+Access\+Logger}}
+
+
+Inherits \hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger}{aiohttp.\+abc.\+Abstract\+Access\+Logger}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classaiohttp_1_1helpers_1_1_access_logger_ad0d3b542f6036f62cd3c10593dd225a1}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, logger, log\+\_\+format=L\+O\+G\+\_\+\+F\+O\+R\+M\+AT)
+\item 
+def \hyperlink{classaiohttp_1_1helpers_1_1_access_logger_a9e53e1bdb16592c153a0ce7400acc1b8}{compile\+\_\+format} (self, log\+\_\+format)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1helpers_1_1_access_logger_af5f0a5b71ffd18e9d121511216a8eb6d}\label{classaiohttp_1_1helpers_1_1_access_logger_af5f0a5b71ffd18e9d121511216a8eb6d}} 
+def {\bfseries log} (self, request, response, time)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dictionary {\bfseries L\+O\+G\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+AP}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1helpers_1_1_access_logger_afe6ba89c38a66f34c42fd1c1dd0f79a1}\label{classaiohttp_1_1helpers_1_1_access_logger_afe6ba89c38a66f34c42fd1c1dd0f79a1}} 
+string {\bfseries L\+O\+G\+\_\+\+F\+O\+R\+M\+AT} = \textquotesingle{}\%a \%t \char`\"{}\%r\char`\"{} \%s \%b \char`\"{}\%\{Referer\}i\char`\"{} \char`\"{}\%\{User-\/Agent\}i\char`\"{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1helpers_1_1_access_logger_a03b48291f5f79abb3907e703841a9e63}\label{classaiohttp_1_1helpers_1_1_access_logger_a03b48291f5f79abb3907e703841a9e63}} 
+{\bfseries F\+O\+R\+M\+A\+T\+\_\+\+RE} = re.\+compile(r\textquotesingle{}\%(\textbackslash{}\{(\mbox{[}A-\/Za-\/z0-\/9\textbackslash{}-\/\+\_\+\mbox{]}+)\textbackslash{}\}(\mbox{[}ioe\mbox{]})$\vert$\mbox{[}at\+Prsb\+OD\mbox{]}$\vert$Tf?)\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1helpers_1_1_access_logger_ac3c77c6cc096645c4072d7b35f4a6c67}\label{classaiohttp_1_1helpers_1_1_access_logger_ac3c77c6cc096645c4072d7b35f4a6c67}} 
+{\bfseries C\+L\+E\+A\+N\+U\+P\+\_\+\+RE} = re.\+compile(r\textquotesingle{}(\%\mbox{[}$^\wedge$s\mbox{]})\textquotesingle{})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Helper object to log access.
+
+Usage:
+    log = logging.getLogger("spam")
+    log_format = "%a %{User-Agent}i"
+    access_logger = AccessLogger(log, log_format)
+    access_logger.log(request, response, time)
+
+Format:
+    %%  The percent sign
+    %a  Remote IP-address (IP-address of proxy if using reverse proxy)
+    %t  Time when the request was started to process
+    %P  The process ID of the child that serviced the request
+    %r  First line of request
+    %s  Response status code
+    %b  Size of response in bytes, including HTTP headers
+    %T  Time taken to serve the request, in seconds
+    %Tf Time taken to serve the request, in seconds with floating fraction
+        in .06f format
+    %D  Time taken to serve the request, in microseconds
+    %{FOO}i  request.headers['FOO']
+    %{FOO}o  response.headers['FOO']
+    %{FOO}e  os.environ['FOO']\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1helpers_1_1_access_logger_ad0d3b542f6036f62cd3c10593dd225a1}\label{classaiohttp_1_1helpers_1_1_access_logger_ad0d3b542f6036f62cd3c10593dd225a1}} 
+\index{aiohttp\+::helpers\+::\+Access\+Logger@{aiohttp\+::helpers\+::\+Access\+Logger}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!aiohttp\+::helpers\+::\+Access\+Logger@{aiohttp\+::helpers\+::\+Access\+Logger}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def aiohttp.\+helpers.\+Access\+Logger.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{logger,  }\item[{}]{log\+\_\+format = {\ttfamily LOG\+\_\+FORMAT} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialise the logger.
+
+logger is a logger object to be used for logging.
+log_format is an string with apache compatible log format description.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1helpers_1_1_access_logger_a9e53e1bdb16592c153a0ce7400acc1b8}\label{classaiohttp_1_1helpers_1_1_access_logger_a9e53e1bdb16592c153a0ce7400acc1b8}} 
+\index{aiohttp\+::helpers\+::\+Access\+Logger@{aiohttp\+::helpers\+::\+Access\+Logger}!compile\+\_\+format@{compile\+\_\+format}}
+\index{compile\+\_\+format@{compile\+\_\+format}!aiohttp\+::helpers\+::\+Access\+Logger@{aiohttp\+::helpers\+::\+Access\+Logger}}
+\subsubsection{\texorpdfstring{compile\+\_\+format()}{compile\_format()}}
+{\footnotesize\ttfamily def aiohttp.\+helpers.\+Access\+Logger.\+compile\+\_\+format (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{log\+\_\+format }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Translate log_format into form usable by modulo formatting
+
+All known atoms will be replaced with %s
+Also methods for formatting of those atoms will be added to
+_methods in appropriate order
+
+For example we have log_format = "%a %t"
+This format will be translated to "%s %s"
+Also contents of _methods will be
+[self._format_a, self._format_t]
+These method will be called and results will be passed
+to translated string format.
+
+Each _format_* method receive 'args' which is list of arguments
+given to self.log
+
+Exceptions are _format_e, _format_i and _format_o methods which
+also receive key name (by functools.partial)\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1helpers_1_1_access_logger_a573c348b998ef6112f9b8436c27cef0c}\label{classaiohttp_1_1helpers_1_1_access_logger_a573c348b998ef6112f9b8436c27cef0c}} 
+\index{aiohttp\+::helpers\+::\+Access\+Logger@{aiohttp\+::helpers\+::\+Access\+Logger}!L\+O\+G\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+AP@{L\+O\+G\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+AP}}
+\index{L\+O\+G\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+AP@{L\+O\+G\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+AP}!aiohttp\+::helpers\+::\+Access\+Logger@{aiohttp\+::helpers\+::\+Access\+Logger}}
+\subsubsection{\texorpdfstring{L\+O\+G\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+AP}{LOG\_FORMAT\_MAP}}
+{\footnotesize\ttfamily dictionary aiohttp.\+helpers.\+Access\+Logger.\+L\+O\+G\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+AP\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \{
+        \textcolor{stringliteral}{'a'}: \textcolor{stringliteral}{'remote\_address'},
+        \textcolor{stringliteral}{'t'}: \textcolor{stringliteral}{'request\_start\_time'},
+        \textcolor{stringliteral}{'P'}: \textcolor{stringliteral}{'process\_id'},
+        \textcolor{stringliteral}{'r': '}first\_request\_line',
+        \textcolor{stringliteral}{'s'}: \textcolor{stringliteral}{'response\_status'},
+        \textcolor{stringliteral}{'b'}: \textcolor{stringliteral}{'response\_size'},
+        \textcolor{stringliteral}{'T'}: \textcolor{stringliteral}{'request\_time'},
+        \textcolor{stringliteral}{'Tf'}: \textcolor{stringliteral}{'request\_time\_frac'},
+        \textcolor{stringliteral}{'D'}: \textcolor{stringliteral}{'request\_time\_micro'},
+        \textcolor{stringliteral}{'i'}: \textcolor{stringliteral}{'request\_header'},
+        \textcolor{stringliteral}{'o'}: \textcolor{stringliteral}{'response\_header'},
+    \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/helpers.\+py\end{DoxyCompactItemize}

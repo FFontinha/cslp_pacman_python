@@ -1,0 +1,63 @@
+\hypertarget{namespacepygame_1_1pkgdata}{}\section{pygame.\+pkgdata Namespace Reference}
+\label{namespacepygame_1_1pkgdata}\index{pygame.\+pkgdata@{pygame.\+pkgdata}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1pkgdata_ab48c1a7af4a4e385db3c8f54b00d6dcd}\label{namespacepygame_1_1pkgdata_ab48c1a7af4a4e385db3c8f54b00d6dcd}} 
+def {\bfseries resource\+\_\+exists} (package\+\_\+or\+\_\+requirement, resource\+\_\+name)
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1pkgdata_a81b6fca236e12605b13c9d418a81c653}\label{namespacepygame_1_1pkgdata_a81b6fca236e12605b13c9d418a81c653}} 
+def {\bfseries resource\+\_\+stream} (package\+\_\+of\+\_\+requirement, resource\+\_\+name)
+\item 
+def \hyperlink{namespacepygame_1_1pkgdata_a781dc67594d56b559fbb71d979e6c135}{get\+Resource} (identifier, pkgname=\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1pkgdata_ab09383768f833308c2ecbea06d8aeccc}\label{namespacepygame_1_1pkgdata_ab09383768f833308c2ecbea06d8aeccc}} 
+{\bfseries Bytes\+IO} = get\+\_\+\+Bytes\+IO()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}pkgdata is a simple, extensible way for a package to acquire data file 
+resources.
+
+The getResource function is equivalent to the standard idioms, such as
+the following minimal implementation:
+    
+    import sys, os
+
+    def getResource(identifier, pkgname=__name__):
+pkgpath = os.path.dirname(sys.modules[pkgname].__file__)
+path = os.path.join(pkgpath, identifier)
+return file(os.path.normpath(path), mode='rb')
+
+When a __loader__ is present on the module given by __name__, it will defer
+getResource to its get_data implementation and return it as a file-like
+object (such as StringIO).
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1pkgdata_a781dc67594d56b559fbb71d979e6c135}\label{namespacepygame_1_1pkgdata_a781dc67594d56b559fbb71d979e6c135}} 
+\index{pygame\+::pkgdata@{pygame\+::pkgdata}!get\+Resource@{get\+Resource}}
+\index{get\+Resource@{get\+Resource}!pygame\+::pkgdata@{pygame\+::pkgdata}}
+\subsubsection{\texorpdfstring{get\+Resource()}{getResource()}}
+{\footnotesize\ttfamily def pygame.\+pkgdata.\+get\+Resource (\begin{DoxyParamCaption}\item[{}]{identifier,  }\item[{}]{pkgname = {\ttfamily \+\_\+\+\_\+name\+\_\+\+\_\+} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Acquire a readable object for a given package name and identifier.
+An IOError will be raised if the resource can not be found.
+
+For example:
+    mydata = getResource('mypkgdata.jpg').read()
+
+Note that the package name must be fully qualified, if given, such
+that it would be found in sys.modules.
+
+In some cases, getResource will return a real file object.  In that
+case, it may be useful to use its name attribute to get the path
+rather than use it as a file-like object.  For example, you may
+be handing data off to a C API.
+\end{DoxyVerb}
+ 

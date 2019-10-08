@@ -1,0 +1,91 @@
+\hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager}{}\section{\+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager Class Reference}
+\label{class__pytest_1_1config_1_1_pytest_plugin_manager}\index{\+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager@{\+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager}}
+
+
+Inherits Plugin\+Manager.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a1530a175c4ca3c4c58740ddb3838b409}\label{class__pytest_1_1config_1_1_pytest_plugin_manager_a1530a175c4ca3c4c58740ddb3838b409}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a2f8dbbdb244922fa7a8e9cab22b2c7e5}{addhooks} (self, module\+\_\+or\+\_\+class)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a8dfb781bf0dac56ee36b67dd625a8f9c}\label{class__pytest_1_1config_1_1_pytest_plugin_manager_a8dfb781bf0dac56ee36b67dd625a8f9c}} 
+def {\bfseries parse\+\_\+hookimpl\+\_\+opts} (self, plugin, name)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_ab1ed76c7a02db2a561627ca2f87c88b1}\label{class__pytest_1_1config_1_1_pytest_plugin_manager_ab1ed76c7a02db2a561627ca2f87c88b1}} 
+def {\bfseries parse\+\_\+hookspec\+\_\+opts} (self, module\+\_\+or\+\_\+class, name)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_acc2a54d80ce2fca812e6fb524797faee}\label{class__pytest_1_1config_1_1_pytest_plugin_manager_acc2a54d80ce2fca812e6fb524797faee}} 
+def {\bfseries register} (self, plugin, name=None)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a227b7cc081a23d12bada485cc86bbd21}\label{class__pytest_1_1config_1_1_pytest_plugin_manager_a227b7cc081a23d12bada485cc86bbd21}} 
+def {\bfseries getplugin} (self, name)
+\item 
+def \hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a4d3df6b285ba52ee06aa2009d7b94077}{hasplugin} (self, name)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_af9671cd517bb7db583842fde6ca520d2}\label{class__pytest_1_1config_1_1_pytest_plugin_manager_af9671cd517bb7db583842fde6ca520d2}} 
+def {\bfseries pytest\+\_\+configure} (self, config)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a7c6dccd5e348a59038b183e86e7a4946}\label{class__pytest_1_1config_1_1_pytest_plugin_manager_a7c6dccd5e348a59038b183e86e7a4946}} 
+def {\bfseries consider\+\_\+preparse} (self, args)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a29d66e6efe9d2992df5dd4e417821ad6}\label{class__pytest_1_1config_1_1_pytest_plugin_manager_a29d66e6efe9d2992df5dd4e417821ad6}} 
+def {\bfseries consider\+\_\+pluginarg} (self, arg)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_ae0b9fa3b96880c8ea457bf116e16d23b}\label{class__pytest_1_1config_1_1_pytest_plugin_manager_ae0b9fa3b96880c8ea457bf116e16d23b}} 
+def {\bfseries consider\+\_\+conftest} (self, conftestmodule)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_afa2ee6b9acda6e8118fcbf66e9d26367}\label{class__pytest_1_1config_1_1_pytest_plugin_manager_afa2ee6b9acda6e8118fcbf66e9d26367}} 
+def {\bfseries consider\+\_\+env} (self)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_aa8c5feecdedf02b8194731cafc9d950e}\label{class__pytest_1_1config_1_1_pytest_plugin_manager_aa8c5feecdedf02b8194731cafc9d950e}} 
+def {\bfseries consider\+\_\+module} (self, mod)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a60824751e0d38c83ebd98922f8733d29}\label{class__pytest_1_1config_1_1_pytest_plugin_manager_a60824751e0d38c83ebd98922f8733d29}} 
+def {\bfseries import\+\_\+plugin} (self, modname)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a5f37353aee7b750c58d1ecd648a305fd}\label{class__pytest_1_1config_1_1_pytest_plugin_manager_a5f37353aee7b750c58d1ecd648a305fd}} 
+{\bfseries rewrite\+\_\+hook}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Overwrites :py:class:`pluggy.PluginManager <pluggy.PluginManager>` to add pytest-specific
+functionality:
+
+* loading plugins from the command line, ``PYTEST_PLUGINS`` env variable and
+  ``pytest_plugins`` global variables found in plugins being loaded;
+* ``conftest.py`` loading during start-up;
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a2f8dbbdb244922fa7a8e9cab22b2c7e5}\label{class__pytest_1_1config_1_1_pytest_plugin_manager_a2f8dbbdb244922fa7a8e9cab22b2c7e5}} 
+\index{\+\_\+pytest\+::config\+::\+Pytest\+Plugin\+Manager@{\+\_\+pytest\+::config\+::\+Pytest\+Plugin\+Manager}!addhooks@{addhooks}}
+\index{addhooks@{addhooks}!\+\_\+pytest\+::config\+::\+Pytest\+Plugin\+Manager@{\+\_\+pytest\+::config\+::\+Pytest\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{addhooks()}{addhooks()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+addhooks (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{module\+\_\+or\+\_\+class }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}.. deprecated:: 2.8
+
+Use :py:meth:`pluggy.PluginManager.add_hookspecs <PluginManager.add_hookspecs>`
+instead.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a4d3df6b285ba52ee06aa2009d7b94077}\label{class__pytest_1_1config_1_1_pytest_plugin_manager_a4d3df6b285ba52ee06aa2009d7b94077}} 
+\index{\+\_\+pytest\+::config\+::\+Pytest\+Plugin\+Manager@{\+\_\+pytest\+::config\+::\+Pytest\+Plugin\+Manager}!hasplugin@{hasplugin}}
+\index{hasplugin@{hasplugin}!\+\_\+pytest\+::config\+::\+Pytest\+Plugin\+Manager@{\+\_\+pytest\+::config\+::\+Pytest\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{hasplugin()}{hasplugin()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+hasplugin (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the plugin with the given name is registered.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/config/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

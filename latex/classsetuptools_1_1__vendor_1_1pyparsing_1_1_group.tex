@@ -1,0 +1,42 @@
+\hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_group}{}\section{setuptools.\+\_\+vendor.\+pyparsing.\+Group Class Reference}
+\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_group}\index{setuptools.\+\_\+vendor.\+pyparsing.\+Group@{setuptools.\+\_\+vendor.\+pyparsing.\+Group}}
+
+
+Inherits \hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_token_converter}{setuptools.\+\_\+vendor.\+pyparsing.\+Token\+Converter}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_group_ac8ddd6ac40275611871ddf1ce6eaa6da}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_group_ac8ddd6ac40275611871ddf1ce6eaa6da}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, expr)
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_group_a83c4ae0d82479b6fcac000adab3a3bc3}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_group_a83c4ae0d82479b6fcac000adab3a3bc3}} 
+def {\bfseries post\+Parse} (self, instring, loc, tokenlist)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_group_abb9329fa2f2c5c248c18b80cdd6f39c0}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_group_abb9329fa2f2c5c248c18b80cdd6f39c0}} 
+{\bfseries save\+As\+List}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Converter to return the matched tokens as a list - useful for returning tokens of C{L{ZeroOrMore}} and C{L{OneOrMore}} expressions.
+
+Example::
+    ident = Word(alphas)
+    num = Word(nums)
+    term = ident | num
+    func = ident + Optional(delimitedList(term))
+    print(func.parseString("fn a,b,100"))  # -> ['fn', 'a', 'b', '100']
+
+    func = ident + Group(Optional(delimitedList(term)))
+    print(func.parseString("fn a,b,100"))  # -> ['fn', ['a', 'b', '100']]
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/setuptools/\+\_\+vendor/pyparsing.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,101 @@
+\hypertarget{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks}{}\section{gevent.\+\_\+ffi.\+loop.\+Abstract\+Callbacks Class Reference}
+\label{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks}\index{gevent.\+\_\+ffi.\+loop.\+Abstract\+Callbacks@{gevent.\+\_\+ffi.\+loop.\+Abstract\+Callbacks}}
+
+
+Note on C\+F\+FI objects, callbacks and the lifecycle of watcher objects.  
+
+
+
+
+Inherits object.
+
+
+
+Inherited by \hyperlink{classgevent_1_1libev_1_1corecffi_1_1___callbacks}{gevent.\+libev.\+corecffi.\+\_\+\+Callbacks}, and \hyperlink{classgevent_1_1libuv_1_1loop_1_1___callbacks}{gevent.\+libuv.\+loop.\+\_\+\+Callbacks}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_a319fcaaa90cbbe173aad550d43dcb30b}\label{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_a319fcaaa90cbbe173aad550d43dcb30b}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, ffi)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_a34ef2c22e05517bab3a4b6739ae04d3f}\label{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_a34ef2c22e05517bab3a4b6739ae04d3f}} 
+def {\bfseries from\+\_\+handle} (self, handle)
+\item 
+def \hyperlink{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_a48b9030fe4b0002fbb3374bbe85b30c3}{python\+\_\+callback} (self, handle, revents)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_a209765f784d867f41dfa3b667895e78d}\label{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_a209765f784d867f41dfa3b667895e78d}} 
+def {\bfseries python\+\_\+handle\+\_\+error} (self, handle, \+\_\+revents)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_ae2a063345dc1921d7cffb0e0ecba829b}\label{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_ae2a063345dc1921d7cffb0e0ecba829b}} 
+def {\bfseries unhandled\+\_\+onerror} (self, t, v, tb)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_ace30e9cf4f83010fef025c0b02956714}\label{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_ace30e9cf4f83010fef025c0b02956714}} 
+def {\bfseries python\+\_\+stop} (self, handle)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_ac118d1dacf4d2bb69f476ba766a18722}\label{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_ac118d1dacf4d2bb69f476ba766a18722}} 
+def {\bfseries python\+\_\+check\+\_\+callback} (self, watcher\+\_\+ptr)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_ac118d1dacf4d2bb69f476ba766a18722}\label{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_ac118d1dacf4d2bb69f476ba766a18722}} 
+def {\bfseries python\+\_\+check\+\_\+callback} (self, watcher\+\_\+ptr)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_a2336869b4a35d0002266d0d5aa2d6a7e}\label{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_a2336869b4a35d0002266d0d5aa2d6a7e}} 
+def {\bfseries python\+\_\+prepare\+\_\+callback} (self, watcher\+\_\+ptr)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_ad70f66da1cd9f298de757a93dd760630}\label{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_ad70f66da1cd9f298de757a93dd760630}} 
+def {\bfseries check\+\_\+callback\+\_\+onerror} (self, t, v, tb)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_a09b25285f9a6e2446a44b15f1b5522e2}\label{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_a09b25285f9a6e2446a44b15f1b5522e2}} 
+{\bfseries ffi}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_aa71949d30abd05f97bc0ca43f9cf58f2}\label{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_aa71949d30abd05f97bc0ca43f9cf58f2}} 
+{\bfseries callbacks}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_a666ebdcd58a473f35ec7ca6b4305e1ca}\label{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_a666ebdcd58a473f35ec7ca6b4305e1ca}} 
+{\bfseries from\+\_\+handle}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Note on C\+F\+FI objects, callbacks and the lifecycle of watcher objects. 
+
+Each subclass of {\ttfamily watcher} allocates a C structure of the appropriate type e.\+g., struct gevent\+\_\+ev\+\_\+io and holds this pointer in its {\ttfamily \+\_\+gwatcher} attribute. When that watcher instance is garbage collected, then the C structure is also freed. The C structure is passed to libev from the watcher\textquotesingle{}s start() method and then to the appropriate C callback function, e.\+g., \+\_\+gevent\+\_\+ev\+\_\+io\+\_\+callback, which passes it back to python\textquotesingle{}s \+\_\+python\+\_\+callback where we need the watcher instance. Therefore, as long as that callback is active (the watcher is started), the watcher instance must not be allowed to get GC\textquotesingle{}d---any access at the C level or even the F\+FI level to the freed memory could crash the process.
+
+However, the typical idiom calls for writing something like this\+: loop.\+io(fd, python\+\_\+cb).start() thus forgetting the newly created watcher subclass and allowing it to be immediately GC\textquotesingle{}d. To combat this, when the watcher is started, it places itself into the loop\textquotesingle{}s {\ttfamily \+\_\+keepaliveset}, and it only removes itself when the watcher\textquotesingle{}s {\ttfamily stop()} method is called. Often, this is the {\itshape only} reference keeping the watcher object, and hence its C structure, alive.
+
+This is slightly complicated by the fact that the python-\/level callback, called from the C callback, could choose to manually stop the watcher. When we return to the C level callback, we now have an invalid pointer, and attempting to pass it back to Python (e.\+g., to handle an error) could crash. Hence, \+\_\+python\+\_\+callback, \+\_\+gevent\+\_\+io\+\_\+callback, and \+\_\+python\+\_\+handle\+\_\+error cooperate to make sure that the watcher instance stays in the loops {\ttfamily \+\_\+keepaliveset} while the C code could be running---and if it gets removed, to not call back to Python again. See also \href{https://github.com/gevent/gevent/issues/676}{\tt https\+://github.\+com/gevent/gevent/issues/676} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_a48b9030fe4b0002fbb3374bbe85b30c3}\label{classgevent_1_1__ffi_1_1loop_1_1_abstract_callbacks_a48b9030fe4b0002fbb3374bbe85b30c3}} 
+\index{gevent\+::\+\_\+ffi\+::loop\+::\+Abstract\+Callbacks@{gevent\+::\+\_\+ffi\+::loop\+::\+Abstract\+Callbacks}!python\+\_\+callback@{python\+\_\+callback}}
+\index{python\+\_\+callback@{python\+\_\+callback}!gevent\+::\+\_\+ffi\+::loop\+::\+Abstract\+Callbacks@{gevent\+::\+\_\+ffi\+::loop\+::\+Abstract\+Callbacks}}
+\subsubsection{\texorpdfstring{python\+\_\+callback()}{python\_callback()}}
+{\footnotesize\ttfamily def gevent.\+\_\+ffi.\+loop.\+Abstract\+Callbacks.\+python\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{handle,  }\item[{}]{revents }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns an integer having one of three values:
+
+- -1
+  An exception occurred during the callback and you must call
+  :func:`_python_handle_error` to deal with it. The Python watcher
+  object will have the exception tuple saved in ``_exc_info``.
+- 1
+  Everything went according to plan. You should check to see if the libev
+  watcher is still active, and call :func:`python_stop` if it is not. This will
+  clean up the memory. Finding the watcher still active at the event loop level,
+  but not having stopped itself at the gevent level is a buggy scenario and
+  shouldn't happen.
+- 2
+  Everything went according to plan, but the watcher has already
+  been stopped. Its memory may no longer be valid.
+
+This function should never return 0, as that's the default value that
+Python exceptions will produce.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/\+\_\+ffi/loop.\+py\end{DoxyCompactItemize}

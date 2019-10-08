@@ -1,0 +1,56 @@
+\hypertarget{classwebsockets_1_1extensions_1_1base_1_1_client_extension_factory}{}\section{websockets.\+extensions.\+base.\+Client\+Extension\+Factory Class Reference}
+\label{classwebsockets_1_1extensions_1_1base_1_1_client_extension_factory}\index{websockets.\+extensions.\+base.\+Client\+Extension\+Factory@{websockets.\+extensions.\+base.\+Client\+Extension\+Factory}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classwebsockets_1_1extensions_1_1base_1_1_client_extension_factory_a09b84860d0bd35f6c634e96d17432fb1}{get\+\_\+request\+\_\+params} (self)
+\item 
+def \hyperlink{classwebsockets_1_1extensions_1_1base_1_1_client_extension_factory_a8ded17af12365d1b4f2c44fd6e0e257c}{process\+\_\+response\+\_\+params} (self, params, accepted\+\_\+extensions)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classwebsockets_1_1extensions_1_1base_1_1_client_extension_factory_a23a536b8ae84d7e630f00a71ba6e1496}\label{classwebsockets_1_1extensions_1_1base_1_1_client_extension_factory_a23a536b8ae84d7e630f00a71ba6e1496}} 
+{\bfseries name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Abstract class for client-side extension factories.
+
+Extension factories handle configuration and negotiation.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classwebsockets_1_1extensions_1_1base_1_1_client_extension_factory_a09b84860d0bd35f6c634e96d17432fb1}\label{classwebsockets_1_1extensions_1_1base_1_1_client_extension_factory_a09b84860d0bd35f6c634e96d17432fb1}} 
+\index{websockets\+::extensions\+::base\+::\+Client\+Extension\+Factory@{websockets\+::extensions\+::base\+::\+Client\+Extension\+Factory}!get\+\_\+request\+\_\+params@{get\+\_\+request\+\_\+params}}
+\index{get\+\_\+request\+\_\+params@{get\+\_\+request\+\_\+params}!websockets\+::extensions\+::base\+::\+Client\+Extension\+Factory@{websockets\+::extensions\+::base\+::\+Client\+Extension\+Factory}}
+\subsubsection{\texorpdfstring{get\+\_\+request\+\_\+params()}{get\_request\_params()}}
+{\footnotesize\ttfamily def websockets.\+extensions.\+base.\+Client\+Extension\+Factory.\+get\+\_\+request\+\_\+params (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build request parameters.
+
+Return a list of (name, value) pairs.\end{DoxyVerb}
+ \mbox{\Hypertarget{classwebsockets_1_1extensions_1_1base_1_1_client_extension_factory_a8ded17af12365d1b4f2c44fd6e0e257c}\label{classwebsockets_1_1extensions_1_1base_1_1_client_extension_factory_a8ded17af12365d1b4f2c44fd6e0e257c}} 
+\index{websockets\+::extensions\+::base\+::\+Client\+Extension\+Factory@{websockets\+::extensions\+::base\+::\+Client\+Extension\+Factory}!process\+\_\+response\+\_\+params@{process\+\_\+response\+\_\+params}}
+\index{process\+\_\+response\+\_\+params@{process\+\_\+response\+\_\+params}!websockets\+::extensions\+::base\+::\+Client\+Extension\+Factory@{websockets\+::extensions\+::base\+::\+Client\+Extension\+Factory}}
+\subsubsection{\texorpdfstring{process\+\_\+response\+\_\+params()}{process\_response\_params()}}
+{\footnotesize\ttfamily def websockets.\+extensions.\+base.\+Client\+Extension\+Factory.\+process\+\_\+response\+\_\+params (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{params,  }\item[{}]{accepted\+\_\+extensions }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}"
+Process response parameters.
+
+``params`` are a list of (name, value) pairs.
+
+``accepted_extensions`` is a list of previously accepted extensions,
+represented by extension instances.
+
+Return an extension instance (an instance of a subclass of
+:class:`Extension`) if these parameters are acceptable.
+
+Raise :exc:`~websockets.exceptions.NegotiationError` if they aren't.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/websockets/extensions/base.\+py\end{DoxyCompactItemize}

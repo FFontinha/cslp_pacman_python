@@ -1,0 +1,101 @@
+\hypertarget{namespaceatomicwrites}{}\section{atomicwrites Namespace Reference}
+\label{namespaceatomicwrites}\index{atomicwrites@{atomicwrites}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classatomicwrites_1_1_atomic_writer}{Atomic\+Writer}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceatomicwrites_a0b838ddf6d04138974560f54882d1d7c}{replace\+\_\+atomic} (src, dst)
+\item 
+def \hyperlink{namespaceatomicwrites_a9119d986230aa83ba3faf3b0f1dd7824}{move\+\_\+atomic} (src, dst)
+\item 
+def \hyperlink{namespaceatomicwrites_a019d5cceda829d130599a1c7343e2000}{atomic\+\_\+write} (path, writer\+\_\+cls=\hyperlink{classatomicwrites_1_1_atomic_writer}{Atomic\+Writer}, cls\+\_\+kwargs)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceatomicwrites_a052cf96beb5954d5923ab338842ebc23}{fcntl} = None
+\item 
+int \hyperlink{namespaceatomicwrites_a142f5f24b1f83a61fca862b2b4f1202c}{P\+Y2} = 2
+\item 
+int \hyperlink{namespaceatomicwrites_ab0acf4cf3a419dc7a6a3c22e32019a1c}{text\+\_\+type} = unicode if \hyperlink{namespaceatomicwrites_a142f5f24b1f83a61fca862b2b4f1202c}{P\+Y2} else str
+\item 
+string \hyperlink{namespaceatomicwrites_a1df24b2608e442584eb44060eeb599ad}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+O\+DE} = \char`\"{}wb\char`\"{} if \hyperlink{namespaceatomicwrites_a142f5f24b1f83a61fca862b2b4f1202c}{P\+Y2} else \char`\"{}w\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceatomicwrites_a019d5cceda829d130599a1c7343e2000}\label{namespaceatomicwrites_a019d5cceda829d130599a1c7343e2000}} 
+\index{atomicwrites@{atomicwrites}!atomic\+\_\+write@{atomic\+\_\+write}}
+\index{atomic\+\_\+write@{atomic\+\_\+write}!atomicwrites@{atomicwrites}}
+\subsubsection{\texorpdfstring{atomic\+\_\+write()}{atomic\_write()}}
+{\footnotesize\ttfamily def atomicwrites.\+atomic\+\_\+write (\begin{DoxyParamCaption}\item[{}]{path,  }\item[{}]{writer\+\_\+cls = {\ttfamily \hyperlink{classatomicwrites_1_1_atomic_writer}{Atomic\+Writer}},  }\item[{}]{cls\+\_\+kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Simple atomic writes. This wraps :py:class:`AtomicWriter`::
+
+    with atomic_write(path) as f:
+        f.write(...)
+
+:param path: The target path to write to.
+:param writer_cls: The writer class to use. This parameter is useful if you
+    subclassed :py:class:`AtomicWriter` to change some behavior and want to
+    use that new subclass.
+
+Additional keyword arguments are passed to the writer class. See
+:py:class:`AtomicWriter`.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceatomicwrites_a9119d986230aa83ba3faf3b0f1dd7824}\label{namespaceatomicwrites_a9119d986230aa83ba3faf3b0f1dd7824}} 
+\index{atomicwrites@{atomicwrites}!move\+\_\+atomic@{move\+\_\+atomic}}
+\index{move\+\_\+atomic@{move\+\_\+atomic}!atomicwrites@{atomicwrites}}
+\subsubsection{\texorpdfstring{move\+\_\+atomic()}{move\_atomic()}}
+{\footnotesize\ttfamily def atomicwrites.\+move\+\_\+atomic (\begin{DoxyParamCaption}\item[{}]{src,  }\item[{}]{dst }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Move ``src`` to ``dst``. There might a timewindow where both filesystem
+entries exist. If ``dst`` already exists, :py:exc:`FileExistsError` will be
+raised.
+
+Both paths must reside on the same filesystem for the operation to be
+atomic.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceatomicwrites_a0b838ddf6d04138974560f54882d1d7c}\label{namespaceatomicwrites_a0b838ddf6d04138974560f54882d1d7c}} 
+\index{atomicwrites@{atomicwrites}!replace\+\_\+atomic@{replace\+\_\+atomic}}
+\index{replace\+\_\+atomic@{replace\+\_\+atomic}!atomicwrites@{atomicwrites}}
+\subsubsection{\texorpdfstring{replace\+\_\+atomic()}{replace\_atomic()}}
+{\footnotesize\ttfamily def atomicwrites.\+replace\+\_\+atomic (\begin{DoxyParamCaption}\item[{}]{src,  }\item[{}]{dst }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Move ``src`` to ``dst``. If ``dst`` exists, it will be silently
+overwritten.
+
+Both paths must reside on the same filesystem for the operation to be
+atomic.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceatomicwrites_a1df24b2608e442584eb44060eeb599ad}\label{namespaceatomicwrites_a1df24b2608e442584eb44060eeb599ad}} 
+\index{atomicwrites@{atomicwrites}!D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+O\+DE@{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+O\+DE}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+O\+DE@{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+O\+DE}!atomicwrites@{atomicwrites}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+O\+DE}{DEFAULT\_MODE}}
+{\footnotesize\ttfamily string atomicwrites.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+O\+DE = \char`\"{}wb\char`\"{} if \hyperlink{namespaceatomicwrites_a142f5f24b1f83a61fca862b2b4f1202c}{P\+Y2} else \char`\"{}w\char`\"{}}
+
+\mbox{\Hypertarget{namespaceatomicwrites_a052cf96beb5954d5923ab338842ebc23}\label{namespaceatomicwrites_a052cf96beb5954d5923ab338842ebc23}} 
+\index{atomicwrites@{atomicwrites}!fcntl@{fcntl}}
+\index{fcntl@{fcntl}!atomicwrites@{atomicwrites}}
+\subsubsection{\texorpdfstring{fcntl}{fcntl}}
+{\footnotesize\ttfamily atomicwrites.\+fcntl = None}
+
+\mbox{\Hypertarget{namespaceatomicwrites_a142f5f24b1f83a61fca862b2b4f1202c}\label{namespaceatomicwrites_a142f5f24b1f83a61fca862b2b4f1202c}} 
+\index{atomicwrites@{atomicwrites}!P\+Y2@{P\+Y2}}
+\index{P\+Y2@{P\+Y2}!atomicwrites@{atomicwrites}}
+\subsubsection{\texorpdfstring{P\+Y2}{PY2}}
+{\footnotesize\ttfamily int atomicwrites.\+P\+Y2 = 2}
+
+\mbox{\Hypertarget{namespaceatomicwrites_ab0acf4cf3a419dc7a6a3c22e32019a1c}\label{namespaceatomicwrites_ab0acf4cf3a419dc7a6a3c22e32019a1c}} 
+\index{atomicwrites@{atomicwrites}!text\+\_\+type@{text\+\_\+type}}
+\index{text\+\_\+type@{text\+\_\+type}!atomicwrites@{atomicwrites}}
+\subsubsection{\texorpdfstring{text\+\_\+type}{text\_type}}
+{\footnotesize\ttfamily int atomicwrites.\+text\+\_\+type = unicode if \hyperlink{namespaceatomicwrites_a142f5f24b1f83a61fca862b2b4f1202c}{P\+Y2} else str}
+

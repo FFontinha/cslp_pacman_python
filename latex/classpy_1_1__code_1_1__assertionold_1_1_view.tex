@@ -1,0 +1,62 @@
+\hypertarget{classpy_1_1__code_1_1__assertionold_1_1_view}{}\section{py.\+\_\+code.\+\_\+assertionold.\+View Class Reference}
+\label{classpy_1_1__code_1_1__assertionold_1_1_view}\index{py.\+\_\+code.\+\_\+assertionold.\+View@{py.\+\_\+code.\+\_\+assertionold.\+View}}
+
+
+Inherits object.
+
+
+
+Inherited by \hyperlink{classpy_1_1__code_1_1__assertionold_1_1_interpretable}{py.\+\_\+code.\+\_\+assertionold.\+Interpretable}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1__assertionold_1_1_view_a3c1f3209176ff9757d590d67bd786ed4}\label{classpy_1_1__code_1_1__assertionold_1_1_view_a3c1f3209176ff9757d590d67bd786ed4}} 
+def {\bfseries \+\_\+\+\_\+new\+\_\+\+\_\+} (rootclass, obj, args, kwds)
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1__assertionold_1_1_view_a6a96838762338a829dcc776eb165762c}\label{classpy_1_1__code_1_1__assertionold_1_1_view_a6a96838762338a829dcc776eb165762c}} 
+def {\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, attr)
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1__assertionold_1_1_view_a88f5df587e34affcd5875a69f67aea8b}\label{classpy_1_1__code_1_1__assertionold_1_1_view_a88f5df587e34affcd5875a69f67aea8b}} 
+def {\bfseries \+\_\+\+\_\+viewkey\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1__assertionold_1_1_view_a01ed9a33a052bccbb86d05dee73fbff9}\label{classpy_1_1__code_1_1__assertionold_1_1_view_a01ed9a33a052bccbb86d05dee73fbff9}} 
+def {\bfseries \+\_\+\+\_\+matchkey\+\_\+\+\_\+} (self, key, subclasses)
+\item 
+\mbox{\Hypertarget{classpy_1_1__code_1_1__assertionold_1_1_view_ac5138156b02e1253d80d191de89ba2cf}\label{classpy_1_1__code_1_1__assertionold_1_1_view_ac5138156b02e1253d80d191de89ba2cf}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}View base class.
+
+If C is a subclass of View, then C(x) creates a proxy object around
+the object x.  The actual class of the proxy is not C in general,
+but a *subclass* of C determined by the rules below.  To avoid confusion
+we call view class the class of the proxy (a subclass of C, so of View)
+and object class the class of x.
+
+Attributes and methods not found in the proxy are automatically read on x.
+Other operations like setting attributes are performed on the proxy, as
+determined by its view class.  The object x is available from the proxy
+as its __obj__ attribute.
+
+The view class selection is determined by the __view__ tuples and the
+optional __viewkey__ method.  By default, the selected view class is the
+most specific subclass of C whose __view__ mentions the class of x.
+If no such subclass is found, the search proceeds with the parent
+object classes.  For example, C(True) will first look for a subclass
+of C with __view__ = (..., bool, ...) and only if it doesn't find any
+look for one with __view__ = (..., int, ...), and then ..., object,...
+If everything fails the class C itself is considered to be the default.
+
+Alternatively, the view class selection can be driven by another aspect
+of the object x, instead of the class of x, by overriding __viewkey__.
+See last example at the end of this module.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/py/\+\_\+code/\+\_\+assertionold.\+py\end{DoxyCompactItemize}

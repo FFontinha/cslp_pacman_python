@@ -1,0 +1,51 @@
+\hypertarget{classpip_1_1utils_1_1logging_1_1_colorized_stream_handler}{}\section{pip.\+utils.\+logging.\+Colorized\+Stream\+Handler Class Reference}
+\label{classpip_1_1utils_1_1logging_1_1_colorized_stream_handler}\index{pip.\+utils.\+logging.\+Colorized\+Stream\+Handler@{pip.\+utils.\+logging.\+Colorized\+Stream\+Handler}}
+
+
+Inherits Stream\+Handler.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1utils_1_1logging_1_1_colorized_stream_handler_a3dabbb6191861ed26f5bbce5b50fe6cd}\label{classpip_1_1utils_1_1logging_1_1_colorized_stream_handler_a3dabbb6191861ed26f5bbce5b50fe6cd}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, stream=None)
+\item 
+\mbox{\Hypertarget{classpip_1_1utils_1_1logging_1_1_colorized_stream_handler_acb33652e8022186c5810667d29d8ffec}\label{classpip_1_1utils_1_1logging_1_1_colorized_stream_handler_acb33652e8022186c5810667d29d8ffec}} 
+def {\bfseries should\+\_\+color} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1utils_1_1logging_1_1_colorized_stream_handler_a0a68ac40661a9af4e0f51754b54f2294}\label{classpip_1_1utils_1_1logging_1_1_colorized_stream_handler_a0a68ac40661a9af4e0f51754b54f2294}} 
+def {\bfseries format} (self, record)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1utils_1_1logging_1_1_colorized_stream_handler_aed5cab3868d3cf00d40c63cb0b254aa6}\label{classpip_1_1utils_1_1logging_1_1_colorized_stream_handler_aed5cab3868d3cf00d40c63cb0b254aa6}} 
+{\bfseries stream}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list {\bfseries C\+O\+L\+O\+RS}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpip_1_1utils_1_1logging_1_1_colorized_stream_handler_a0182edc556d65ac71f7edf150e7b87f6}\label{classpip_1_1utils_1_1logging_1_1_colorized_stream_handler_a0182edc556d65ac71f7edf150e7b87f6}} 
+\index{pip\+::utils\+::logging\+::\+Colorized\+Stream\+Handler@{pip\+::utils\+::logging\+::\+Colorized\+Stream\+Handler}!C\+O\+L\+O\+RS@{C\+O\+L\+O\+RS}}
+\index{C\+O\+L\+O\+RS@{C\+O\+L\+O\+RS}!pip\+::utils\+::logging\+::\+Colorized\+Stream\+Handler@{pip\+::utils\+::logging\+::\+Colorized\+Stream\+Handler}}
+\subsubsection{\texorpdfstring{C\+O\+L\+O\+RS}{COLORS}}
+{\footnotesize\ttfamily list pip.\+utils.\+logging.\+Colorized\+Stream\+Handler.\+C\+O\+L\+O\+RS\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  [
+            \textcolor{comment}{# This needs to be in order from highest logging level to lowest.}
+            (logging.ERROR, \_color\_wrap(colorama.Fore.RED)),
+            (logging.WARNING, \_color\_wrap(colorama.Fore.YELLOW)),
+        ]
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pip/utils/logging.\+py\end{DoxyCompactItemize}

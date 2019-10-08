@@ -1,0 +1,100 @@
+\hypertarget{namespace__pytest_1_1junitxml}{}\section{\+\_\+pytest.\+junitxml Namespace Reference}
+\label{namespace__pytest_1_1junitxml}\index{\+\_\+pytest.\+junitxml@{\+\_\+pytest.\+junitxml}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class__pytest_1_1junitxml_1_1___node_reporter}{\+\_\+\+Node\+Reporter}
+\item 
+class \hyperlink{class__pytest_1_1junitxml_1_1_junit}{Junit}
+\item 
+class \hyperlink{class__pytest_1_1junitxml_1_1_log_x_m_l}{Log\+X\+ML}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1junitxml_a9b28eb9d59688192401be9656b8a602e}\label{namespace__pytest_1_1junitxml_a9b28eb9d59688192401be9656b8a602e}} 
+def {\bfseries bin\+\_\+xml\+\_\+escape} (arg)
+\item 
+def \hyperlink{namespace__pytest_1_1junitxml_ad331b67a9b40cbd4121576852a296315}{record\+\_\+property} (request)
+\item 
+def \hyperlink{namespace__pytest_1_1junitxml_ac77a0ad7f33416d08a6654bbdb865c11}{record\+\_\+xml\+\_\+property} (\hyperlink{namespace__pytest_1_1junitxml_ad331b67a9b40cbd4121576852a296315}{record\+\_\+property}, request)
+\item 
+def \hyperlink{namespace__pytest_1_1junitxml_a4cff71db329d352c81f33eba5cdff813}{record\+\_\+xml\+\_\+attribute} (request)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1junitxml_a1372505e9b14fb5da350ae4f1cb3a90d}\label{namespace__pytest_1_1junitxml_a1372505e9b14fb5da350ae4f1cb3a90d}} 
+def {\bfseries pytest\+\_\+addoption} (parser)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1junitxml_a269ff98cb82d06fcf931fd5765245ec2}\label{namespace__pytest_1_1junitxml_a269ff98cb82d06fcf931fd5765245ec2}} 
+def {\bfseries pytest\+\_\+configure} (config)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1junitxml_ab59dbbc8ffd1bd2c0bc43033f037131e}\label{namespace__pytest_1_1junitxml_ab59dbbc8ffd1bd2c0bc43033f037131e}} 
+def {\bfseries pytest\+\_\+unconfigure} (config)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1junitxml_a631c21582da0508cb52f6bf437006df2}\label{namespace__pytest_1_1junitxml_a631c21582da0508cb52f6bf437006df2}} 
+def {\bfseries mangle\+\_\+test\+\_\+address} (address)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1junitxml_a382190db8e657424f0ec3450064084b7}\label{namespace__pytest_1_1junitxml_a382190db8e657424f0ec3450064084b7}} 
+{\bfseries unichr} = chr
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1junitxml_ac616f7ed80014f2aa209e0c3d84c3239}\label{namespace__pytest_1_1junitxml_ac616f7ed80014f2aa209e0c3d84c3239}} 
+{\bfseries unicode} = str
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1junitxml_a72e1641cfe24222403740be33201f0cc}\label{namespace__pytest_1_1junitxml_a72e1641cfe24222403740be33201f0cc}} 
+{\bfseries long} = int
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1junitxml_a8104f76e94df64c5f167ae4b25dd08cb}\label{namespace__pytest_1_1junitxml_a8104f76e94df64c5f167ae4b25dd08cb}} 
+{\bfseries illegal\+\_\+xml\+\_\+re} = re.\+compile(unicode(\char`\"{}\mbox{[}$^\wedge$\%s\mbox{]}\char`\"{}) \% unicode(\char`\"{}\char`\"{}).join(\+\_\+legal\+\_\+xml\+\_\+re))
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}report test results in JUnit-XML format,
+for use with Jenkins and build integration servers.
+
+
+Based on initial code from Ross Lawley.
+
+Output conforms to https://github.com/jenkinsci/xunit-plugin/blob/master/
+src/main/resources/org/jenkinsci/plugins/xunit/types/model/xsd/junit-10.xsd
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1junitxml_ad331b67a9b40cbd4121576852a296315}\label{namespace__pytest_1_1junitxml_ad331b67a9b40cbd4121576852a296315}} 
+\index{\+\_\+pytest\+::junitxml@{\+\_\+pytest\+::junitxml}!record\+\_\+property@{record\+\_\+property}}
+\index{record\+\_\+property@{record\+\_\+property}!\+\_\+pytest\+::junitxml@{\+\_\+pytest\+::junitxml}}
+\subsubsection{\texorpdfstring{record\+\_\+property()}{record\_property()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+junitxml.\+record\+\_\+property (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add an extra properties the calling test.
+User properties become part of the test report and are available to the
+configured reporters, like JUnit XML.
+The fixture is callable with ``(name, value)``, with value being automatically
+xml-encoded.
+
+Example::
+
+    def test_function(record_property):
+        record_property("example_key", 1)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1junitxml_a4cff71db329d352c81f33eba5cdff813}\label{namespace__pytest_1_1junitxml_a4cff71db329d352c81f33eba5cdff813}} 
+\index{\+\_\+pytest\+::junitxml@{\+\_\+pytest\+::junitxml}!record\+\_\+xml\+\_\+attribute@{record\+\_\+xml\+\_\+attribute}}
+\index{record\+\_\+xml\+\_\+attribute@{record\+\_\+xml\+\_\+attribute}!\+\_\+pytest\+::junitxml@{\+\_\+pytest\+::junitxml}}
+\subsubsection{\texorpdfstring{record\+\_\+xml\+\_\+attribute()}{record\_xml\_attribute()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+junitxml.\+record\+\_\+xml\+\_\+attribute (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add extra xml attributes to the tag for the calling test.
+The fixture is callable with ``(name, value)``, with value being
+automatically xml-encoded
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1junitxml_ac77a0ad7f33416d08a6654bbdb865c11}\label{namespace__pytest_1_1junitxml_ac77a0ad7f33416d08a6654bbdb865c11}} 
+\index{\+\_\+pytest\+::junitxml@{\+\_\+pytest\+::junitxml}!record\+\_\+xml\+\_\+property@{record\+\_\+xml\+\_\+property}}
+\index{record\+\_\+xml\+\_\+property@{record\+\_\+xml\+\_\+property}!\+\_\+pytest\+::junitxml@{\+\_\+pytest\+::junitxml}}
+\subsubsection{\texorpdfstring{record\+\_\+xml\+\_\+property()}{record\_xml\_property()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+junitxml.\+record\+\_\+xml\+\_\+property (\begin{DoxyParamCaption}\item[{}]{record\+\_\+property,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}(Deprecated) use record_property.\end{DoxyVerb}
+ 

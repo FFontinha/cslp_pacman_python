@@ -1,0 +1,248 @@
+\hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket}{}\section{gevent.\+\_\+ssl3.\+S\+S\+L\+Socket Class Reference}
+\label{classgevent_1_1__ssl3_1_1_s_s_l_socket}\index{gevent.\+\_\+ssl3.\+S\+S\+L\+Socket@{gevent.\+\_\+ssl3.\+S\+S\+L\+Socket}}
+
+
+Inherits socket.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a82af1a0fa2a5cb8cddf864f06633c366}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a82af1a0fa2a5cb8cddf864f06633c366}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, sock=None, keyfile=None, certfile=None, server\+\_\+side=False, cert\+\_\+reqs=C\+E\+R\+T\+\_\+\+N\+O\+NE, ssl\+\_\+version=P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+S\+S\+Lv23, ca\+\_\+certs=None, do\+\_\+handshake\+\_\+on\+\_\+connect=True, family=A\+F\+\_\+\+I\+N\+ET, type=S\+O\+C\+K\+\_\+\+S\+T\+R\+E\+AM, proto=0, fileno=None, suppress\+\_\+ragged\+\_\+eofs=True, npn\+\_\+protocols=None, ciphers=None, server\+\_\+hostname=None, \+\_\+session=None, \+\_\+context=None)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a48ab6ecbf6420fc558ec87f3f3015109}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a48ab6ecbf6420fc558ec87f3f3015109}} 
+def {\bfseries context} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_abf0170825fafaf7d191327d3d9f9eac2}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_abf0170825fafaf7d191327d3d9f9eac2}} 
+def {\bfseries context} (self, ctx)
+\item 
+def \hyperlink{classgevent_1_1__ssl3_1_1_s_s_l_socket_ae1b9bcf22ac37c8779c1efc923377b80}{session} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a14057db0d1e2695d168253c5d5d4c53b}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a14057db0d1e2695d168253c5d5d4c53b}} 
+def {\bfseries session} (self, session)
+\item 
+def \hyperlink{classgevent_1_1__ssl3_1_1_s_s_l_socket_a7a93424c8d33b6ca28f227c4ed862b5d}{session\+\_\+reused} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_add7ac066af42da452c18a0357c80b6b9}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_add7ac066af42da452c18a0357c80b6b9}} 
+def {\bfseries dup} (self)
+\item 
+def \hyperlink{classgevent_1_1__ssl3_1_1_s_s_l_socket_aac03dec1f89aded382df4440f5c3d646}{read} (self, len=1024, \hyperlink{structbuffer}{buffer}=None)
+\item 
+def \hyperlink{classgevent_1_1__ssl3_1_1_s_s_l_socket_a200a4e1f5db77b2c6d67b6a97186b1a6}{write} (self, data)
+\item 
+def \hyperlink{classgevent_1_1__ssl3_1_1_s_s_l_socket_a6df3214312f129e952b5ca4e171653ab}{getpeercert} (self, binary\+\_\+form=False)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_ada906c502392d02d77202d124abb7739}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_ada906c502392d02d77202d124abb7739}} 
+def {\bfseries selected\+\_\+npn\+\_\+protocol} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_acb3c8176c5cd350f15ae070916838845}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_acb3c8176c5cd350f15ae070916838845}} 
+def {\bfseries selected\+\_\+alpn\+\_\+protocol} (self)
+\item 
+def \hyperlink{classgevent_1_1__ssl3_1_1_s_s_l_socket_a30fd5079ec79337882629034e775be5d}{shared\+\_\+ciphers} (self)
+\item 
+def \hyperlink{classgevent_1_1__ssl3_1_1_s_s_l_socket_ace26ef6392770a2b4e60cabeb22b89f3}{version} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a63ecf0dadf831885310eaf418b9429a2}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a63ecf0dadf831885310eaf418b9429a2}} 
+def {\bfseries cipher} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a35428c6633c3d5ee86a4d074e7ce7149}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a35428c6633c3d5ee86a4d074e7ce7149}} 
+def {\bfseries compression} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a3daf0827c9e57eb1c18ac8a36479b535}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a3daf0827c9e57eb1c18ac8a36479b535}} 
+def {\bfseries send} (self, data, flags=0, timeout=timeout\+\_\+default)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_acae067cb849cce1ebce47b9946277b6d}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_acae067cb849cce1ebce47b9946277b6d}} 
+def {\bfseries sendto} (self, data, flags\+\_\+or\+\_\+addr, addr=None)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a9a572827a7eb79cf22d7a916996f5b9f}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a9a572827a7eb79cf22d7a916996f5b9f}} 
+def {\bfseries sendmsg} (self, args, kwargs)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a23a1b1632eb8f55e6932d3f0d6a7db25}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a23a1b1632eb8f55e6932d3f0d6a7db25}} 
+def {\bfseries sendall} (self, data, flags=0)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_ad30f9e836243b40c2e0ab43c4de6927a}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_ad30f9e836243b40c2e0ab43c4de6927a}} 
+def {\bfseries recv} (self, buflen=1024, flags=0)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a3377dff7c731af780c42e901750290d2}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a3377dff7c731af780c42e901750290d2}} 
+def {\bfseries recv\+\_\+into} (self, \hyperlink{structbuffer}{buffer}, nbytes=None, flags=0)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a6230d95e547497cefc0b0ba268e98e32}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a6230d95e547497cefc0b0ba268e98e32}} 
+def {\bfseries recvfrom} (self, buflen=1024, flags=0)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a76026b5ab1d86acbda6ba9bc27fa75e5}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a76026b5ab1d86acbda6ba9bc27fa75e5}} 
+def {\bfseries recvfrom\+\_\+into} (self, \hyperlink{structbuffer}{buffer}, nbytes=None, flags=0)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a1f57f65e5d117437e1688b9b9a383473}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a1f57f65e5d117437e1688b9b9a383473}} 
+def {\bfseries recvmsg} (self, args, kwargs)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a93cf27ac32259b8bf52de230530f06ee}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a93cf27ac32259b8bf52de230530f06ee}} 
+def {\bfseries recvmsg\+\_\+into} (self, args, kwargs)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_aee86ac5bf295b5b5758288c8c0c11ef5}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_aee86ac5bf295b5b5758288c8c0c11ef5}} 
+def {\bfseries pending} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_ac4964a8a0c2607ea3a3090d4edbe46aa}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_ac4964a8a0c2607ea3a3090d4edbe46aa}} 
+def {\bfseries shutdown} (self, how)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_ac790ec7967f7253d90b30602cd6a0e46}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_ac790ec7967f7253d90b30602cd6a0e46}} 
+def {\bfseries unwrap} (self)
+\item 
+def \hyperlink{classgevent_1_1__ssl3_1_1_s_s_l_socket_ab006b95491b0f2ff9e768950388f47c4}{do\+\_\+handshake} (self)
+\item 
+def \hyperlink{classgevent_1_1__ssl3_1_1_s_s_l_socket_a0e2d0c00a0cf5b917f3a2535c1d50ef4}{connect} (self, addr)
+\item 
+def \hyperlink{classgevent_1_1__ssl3_1_1_s_s_l_socket_a9519423cdfc8b54fd45275087c9194ef}{connect\+\_\+ex} (self, addr)
+\item 
+def \hyperlink{classgevent_1_1__ssl3_1_1_s_s_l_socket_ab0af1f088dae8fb8e2e1d94ebea1795d}{accept} (self)
+\item 
+def \hyperlink{classgevent_1_1__ssl3_1_1_s_s_l_socket_a0f023363a0c398f177dc2b45cb26d3f8}{get\+\_\+channel\+\_\+binding} (self, cb\+\_\+type=\char`\"{}tls-\/unique\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a31211d91256ba40bbf8e037ac2234338}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a31211d91256ba40bbf8e037ac2234338}} 
+{\bfseries keyfile}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_aff7cad52ac18e489cc4239435720c21c}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_aff7cad52ac18e489cc4239435720c21c}} 
+{\bfseries certfile}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a490a67cb06a5fcefa1fa429e6f606e7f}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a490a67cb06a5fcefa1fa429e6f606e7f}} 
+{\bfseries cert\+\_\+reqs}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a82b46b41cd7f3dd80476fbaa3f25f722}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a82b46b41cd7f3dd80476fbaa3f25f722}} 
+{\bfseries ssl\+\_\+version}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_ab95ceffbb7eebfe83c0399976ad2c52a}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_ab95ceffbb7eebfe83c0399976ad2c52a}} 
+{\bfseries ca\+\_\+certs}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a244fc9b509530b842a73f9ce8d4fe66a}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a244fc9b509530b842a73f9ce8d4fe66a}} 
+{\bfseries ciphers}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a76025b12ca8aee2d7d3cce5eb6bb3f2a}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a76025b12ca8aee2d7d3cce5eb6bb3f2a}} 
+{\bfseries server\+\_\+side}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a6a76f067e79b06af82083dbf86064a5d}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a6a76f067e79b06af82083dbf86064a5d}} 
+{\bfseries server\+\_\+hostname}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_ac5d0b526f879f5a1c69b3cdd82e044c3}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_ac5d0b526f879f5a1c69b3cdd82e044c3}} 
+{\bfseries do\+\_\+handshake\+\_\+on\+\_\+connect}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_aa3a9714bbf28848f969a3e6368d5a89a}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_aa3a9714bbf28848f969a3e6368d5a89a}} 
+{\bfseries suppress\+\_\+ragged\+\_\+eofs}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_af318b0a047aaa917fe7834eb9cc90346}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_af318b0a047aaa917fe7834eb9cc90346}} 
+{\bfseries timeout}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}gevent `ssl.SSLSocket <https://docs.python.org/3/library/ssl.html#ssl-sockets>`_
+for Python 3.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_ab0af1f088dae8fb8e2e1d94ebea1795d}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_ab0af1f088dae8fb8e2e1d94ebea1795d}} 
+\index{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}!accept@{accept}}
+\index{accept@{accept}!gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}}
+\subsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily def gevent.\+\_\+ssl3.\+S\+S\+L\+Socket.\+accept (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Accepts a new connection from a remote client, and returns
+a tuple containing that new connection wrapped with a server-side
+SSL channel, and the address of the remote client.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a0e2d0c00a0cf5b917f3a2535c1d50ef4}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a0e2d0c00a0cf5b917f3a2535c1d50ef4}} 
+\index{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}!connect@{connect}}
+\index{connect@{connect}!gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily def gevent.\+\_\+ssl3.\+S\+S\+L\+Socket.\+connect (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{addr }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Connects to remote ADDR, and then wraps the connection in
+an SSL channel.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a9519423cdfc8b54fd45275087c9194ef}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a9519423cdfc8b54fd45275087c9194ef}} 
+\index{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}!connect\+\_\+ex@{connect\+\_\+ex}}
+\index{connect\+\_\+ex@{connect\+\_\+ex}!gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}}
+\subsubsection{\texorpdfstring{connect\+\_\+ex()}{connect\_ex()}}
+{\footnotesize\ttfamily def gevent.\+\_\+ssl3.\+S\+S\+L\+Socket.\+connect\+\_\+ex (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{addr }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Connects to remote ADDR, and then wraps the connection in
+an SSL channel.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_ab006b95491b0f2ff9e768950388f47c4}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_ab006b95491b0f2ff9e768950388f47c4}} 
+\index{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}!do\+\_\+handshake@{do\+\_\+handshake}}
+\index{do\+\_\+handshake@{do\+\_\+handshake}!gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}}
+\subsubsection{\texorpdfstring{do\+\_\+handshake()}{do\_handshake()}}
+{\footnotesize\ttfamily def gevent.\+\_\+ssl3.\+S\+S\+L\+Socket.\+do\+\_\+handshake (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform a TLS/SSL handshake.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a0f023363a0c398f177dc2b45cb26d3f8}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a0f023363a0c398f177dc2b45cb26d3f8}} 
+\index{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}!get\+\_\+channel\+\_\+binding@{get\+\_\+channel\+\_\+binding}}
+\index{get\+\_\+channel\+\_\+binding@{get\+\_\+channel\+\_\+binding}!gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}}
+\subsubsection{\texorpdfstring{get\+\_\+channel\+\_\+binding()}{get\_channel\_binding()}}
+{\footnotesize\ttfamily def gevent.\+\_\+ssl3.\+S\+S\+L\+Socket.\+get\+\_\+channel\+\_\+binding (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cb\+\_\+type = {\ttfamily \char`\"{}tls-\/unique\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get channel binding data for current connection.  Raise ValueError
+if the requested `cb_type` is not supported.  Return bytes of the data
+or None if the data is not available (e.g. before the handshake).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a6df3214312f129e952b5ca4e171653ab}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a6df3214312f129e952b5ca4e171653ab}} 
+\index{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}!getpeercert@{getpeercert}}
+\index{getpeercert@{getpeercert}!gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}}
+\subsubsection{\texorpdfstring{getpeercert()}{getpeercert()}}
+{\footnotesize\ttfamily def gevent.\+\_\+ssl3.\+S\+S\+L\+Socket.\+getpeercert (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{binary\+\_\+form = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a formatted version of the data in the
+certificate provided by the other end of the SSL channel.
+Return None if no certificate was provided, {} if a
+certificate was provided, but not validated.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_aac03dec1f89aded382df4440f5c3d646}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_aac03dec1f89aded382df4440f5c3d646}} 
+\index{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}!read@{read}}
+\index{read@{read}!gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily def gevent.\+\_\+ssl3.\+S\+S\+L\+Socket.\+read (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{len = {\ttfamily 1024},  }\item[{}]{buffer = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read up to LEN bytes and return them.
+Return zero-length string on EOF.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_ae1b9bcf22ac37c8779c1efc923377b80}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_ae1b9bcf22ac37c8779c1efc923377b80}} 
+\index{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}!session@{session}}
+\index{session@{session}!gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}}
+\subsubsection{\texorpdfstring{session()}{session()}}
+{\footnotesize\ttfamily def gevent.\+\_\+ssl3.\+S\+S\+L\+Socket.\+session (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The SSLSession for client socket.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a7a93424c8d33b6ca28f227c4ed862b5d}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a7a93424c8d33b6ca28f227c4ed862b5d}} 
+\index{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}!session\+\_\+reused@{session\+\_\+reused}}
+\index{session\+\_\+reused@{session\+\_\+reused}!gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}}
+\subsubsection{\texorpdfstring{session\+\_\+reused()}{session\_reused()}}
+{\footnotesize\ttfamily def gevent.\+\_\+ssl3.\+S\+S\+L\+Socket.\+session\+\_\+reused (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Was the client session reused during handshake\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a30fd5079ec79337882629034e775be5d}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a30fd5079ec79337882629034e775be5d}} 
+\index{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}!shared\+\_\+ciphers@{shared\+\_\+ciphers}}
+\index{shared\+\_\+ciphers@{shared\+\_\+ciphers}!gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}}
+\subsubsection{\texorpdfstring{shared\+\_\+ciphers()}{shared\_ciphers()}}
+{\footnotesize\ttfamily def gevent.\+\_\+ssl3.\+S\+S\+L\+Socket.\+shared\+\_\+ciphers (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of ciphers shared by the client during the handshake or
+None if this is not a valid server connection.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_ace26ef6392770a2b4e60cabeb22b89f3}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_ace26ef6392770a2b4e60cabeb22b89f3}} 
+\index{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}!version@{version}}
+\index{version@{version}!gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}}
+\subsubsection{\texorpdfstring{version()}{version()}}
+{\footnotesize\ttfamily def gevent.\+\_\+ssl3.\+S\+S\+L\+Socket.\+version (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a string identifying the protocol version used by the
+current SSL channel. \end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__ssl3_1_1_s_s_l_socket_a200a4e1f5db77b2c6d67b6a97186b1a6}\label{classgevent_1_1__ssl3_1_1_s_s_l_socket_a200a4e1f5db77b2c6d67b6a97186b1a6}} 
+\index{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}!write@{write}}
+\index{write@{write}!gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket@{gevent\+::\+\_\+ssl3\+::\+S\+S\+L\+Socket}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily def gevent.\+\_\+ssl3.\+S\+S\+L\+Socket.\+write (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write DATA to the underlying SSL channel.  Returns
+number of bytes of DATA actually transmitted.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/\+\_\+ssl3.\+py\end{DoxyCompactItemize}

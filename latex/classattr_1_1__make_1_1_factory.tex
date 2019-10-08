@@ -1,0 +1,52 @@
+\hypertarget{classattr_1_1__make_1_1_factory}{}\section{attr.\+\_\+make.\+Factory Class Reference}
+\label{classattr_1_1__make_1_1_factory}\index{attr.\+\_\+make.\+Factory@{attr.\+\_\+make.\+Factory}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classattr_1_1__make_1_1_factory_a58b9a79c6890af8b87ac19dbdf00703c}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, factory, takes\+\_\+self=False)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classattr_1_1__make_1_1_factory_a73c7c99477a3359f80c366335fded33e}\label{classattr_1_1__make_1_1_factory_a73c7c99477a3359f80c366335fded33e}} 
+{\bfseries factory} = attrib()
+\item 
+\mbox{\Hypertarget{classattr_1_1__make_1_1_factory_a9b55379dafa58be014f690608a114251}\label{classattr_1_1__make_1_1_factory_a9b55379dafa58be014f690608a114251}} 
+{\bfseries takes\+\_\+self} = attrib()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Stores a factory callable.
+
+If passed as the default value to :func:`attr.ib`, the factory is used to
+generate a new value.
+
+:param callable factory: A callable that takes either none or exactly one
+    mandatory positional argument depending on *takes_self*.
+:param bool takes_self: Pass the partially initialized instance that is
+    being initialized as a positional argument.
+
+.. versionadded:: 17.1.0  *takes_self*
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classattr_1_1__make_1_1_factory_a58b9a79c6890af8b87ac19dbdf00703c}\label{classattr_1_1__make_1_1_factory_a58b9a79c6890af8b87ac19dbdf00703c}} 
+\index{attr\+::\+\_\+make\+::\+Factory@{attr\+::\+\_\+make\+::\+Factory}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!attr\+::\+\_\+make\+::\+Factory@{attr\+::\+\_\+make\+::\+Factory}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def attr.\+\_\+make.\+Factory.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{factory,  }\item[{}]{takes\+\_\+self = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}`Factory` is part of the default machinery so if we want a default
+value here, we have to implement it ourselves.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/attr/\+\_\+make.\+py\end{DoxyCompactItemize}

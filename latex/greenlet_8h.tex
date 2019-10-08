@@ -1,0 +1,257 @@
+\hypertarget{greenlet_8h}{}\section{venv/include/site/python3.6/greenlet/greenlet.h File Reference}
+\label{greenlet_8h}\index{venv/include/site/python3.\+6/greenlet/greenlet.\+h@{venv/include/site/python3.\+6/greenlet/greenlet.\+h}}
+{\ttfamily \#include $<$Python.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__greenlet}{\+\_\+greenlet}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{greenlet_8h_abf3539f2bdf10b2b2137d6483cfc6ce7}{G\+R\+E\+E\+N\+L\+E\+T\+\_\+\+V\+E\+R\+S\+I\+ON}~\char`\"{}0.\+4.\+15\char`\"{}
+\item 
+\#define \hyperlink{greenlet_8h_aa45ac625a939ff70b9c6b60170afb1ba}{Py\+Greenlet\+\_\+\+Check}(op)~Py\+Object\+\_\+\+Type\+Check(op, \&\hyperlink{greenlet_8h_aa7c395f46392f4ce4c7771678122d53b}{Py\+Greenlet\+\_\+\+Type})
+\item 
+\#define \hyperlink{greenlet_8h_a8753daf3c9d8509b806beb3d02e4c57b}{Py\+Greenlet\+\_\+\+M\+A\+IN}(op)~(((\hyperlink{greenlet_8h_a9c809cbf74add940125f5fffc5924370}{Py\+Greenlet}$\ast$)(op))-\/$>$stack\+\_\+stop == (char$\ast$) -\/1)
+\item 
+\#define \hyperlink{greenlet_8h_a583ec8bccb8471e67fd8fd1312116811}{Py\+Greenlet\+\_\+\+S\+T\+A\+R\+T\+ED}(op)~(((\hyperlink{greenlet_8h_a9c809cbf74add940125f5fffc5924370}{Py\+Greenlet}$\ast$)(op))-\/$>$stack\+\_\+stop != N\+U\+LL)
+\item 
+\#define \hyperlink{greenlet_8h_a7bf1f1d8d319340f152f77c133496453}{Py\+Greenlet\+\_\+\+A\+C\+T\+I\+VE}(op)~(((\hyperlink{greenlet_8h_a9c809cbf74add940125f5fffc5924370}{Py\+Greenlet}$\ast$)(op))-\/$>$stack\+\_\+start != N\+U\+LL)
+\item 
+\#define \hyperlink{greenlet_8h_a9936ac54c2a00e37b05d83a49bdab1ab}{Py\+Greenlet\+\_\+\+G\+E\+T\+\_\+\+P\+A\+R\+E\+NT}(op)~(((\hyperlink{greenlet_8h_a9c809cbf74add940125f5fffc5924370}{Py\+Greenlet}$\ast$)(op))-\/$>$parent)
+\item 
+\#define \hyperlink{greenlet_8h_aac915da032e3082e297ade5fde5a6ac2}{Py\+Greenlet\+\_\+\+A\+P\+I\+\_\+pointers}~8
+\item 
+\#define \hyperlink{greenlet_8h_a121f841af1dc75e7e2b9f8e10fcfdc6e}{Py\+Greenlet\+\_\+\+Type\+\_\+\+N\+UM}~0
+\item 
+\#define \hyperlink{greenlet_8h_a556b544719ebd78fea56cbd74d0483c6}{Py\+Exc\+\_\+\+Greenlet\+Error\+\_\+\+N\+UM}~1
+\item 
+\#define \hyperlink{greenlet_8h_adc6d1d62e1fe145e69de208bd67c2a8f}{Py\+Exc\+\_\+\+Greenlet\+Exit\+\_\+\+N\+UM}~2
+\item 
+\#define \hyperlink{greenlet_8h_ad7b687f26c879069125b590d28dbccc6}{Py\+Greenlet\+\_\+\+New\+\_\+\+N\+UM}~3
+\item 
+\#define \hyperlink{greenlet_8h_a8b21c88cb0daa37d6953a134c96986b8}{Py\+Greenlet\+\_\+\+Get\+Current\+\_\+\+N\+UM}~4
+\item 
+\#define \hyperlink{greenlet_8h_a5c184862dd59fa8f2b9c10d90219090d}{Py\+Greenlet\+\_\+\+Throw\+\_\+\+N\+UM}~5
+\item 
+\#define \hyperlink{greenlet_8h_a004a17fadd8cbee4c4065d6f52ef6c82}{Py\+Greenlet\+\_\+\+Switch\+\_\+\+N\+UM}~6
+\item 
+\#define \hyperlink{greenlet_8h_a134ce9eeda401a1f5766a15024680e5a}{Py\+Greenlet\+\_\+\+Set\+Parent\+\_\+\+N\+UM}~7
+\item 
+\#define \hyperlink{greenlet_8h_aa7c395f46392f4ce4c7771678122d53b}{Py\+Greenlet\+\_\+\+Type}~($\ast$(Py\+Type\+Object $\ast$) \+\_\+\+Py\+Greenlet\+\_\+\+A\+PI\mbox{[}\hyperlink{greenlet_8h_a121f841af1dc75e7e2b9f8e10fcfdc6e}{Py\+Greenlet\+\_\+\+Type\+\_\+\+N\+UM}\mbox{]})
+\item 
+\#define \hyperlink{greenlet_8h_a80f20681e2159a888164f797488e633e}{Py\+Exc\+\_\+\+Greenlet\+Error}~((Py\+Object $\ast$) \+\_\+\+Py\+Greenlet\+\_\+\+A\+PI\mbox{[}\hyperlink{greenlet_8h_a556b544719ebd78fea56cbd74d0483c6}{Py\+Exc\+\_\+\+Greenlet\+Error\+\_\+\+N\+UM}\mbox{]})
+\item 
+\#define \hyperlink{greenlet_8h_aa134d634bcb3d3fe5788b9f438c8b7ab}{Py\+Exc\+\_\+\+Greenlet\+Exit}~((Py\+Object $\ast$) \+\_\+\+Py\+Greenlet\+\_\+\+A\+PI\mbox{[}\hyperlink{greenlet_8h_adc6d1d62e1fe145e69de208bd67c2a8f}{Py\+Exc\+\_\+\+Greenlet\+Exit\+\_\+\+N\+UM}\mbox{]})
+\item 
+\#define \hyperlink{greenlet_8h_a4a1a728bc9b16a3a66d57a6d354fa456}{Py\+Greenlet\+\_\+\+New}
+\item 
+\#define \hyperlink{greenlet_8h_a560525588cea58e2a8630c9ceab1ddfb}{Py\+Greenlet\+\_\+\+Get\+Current}~($\ast$ (\hyperlink{greenlet_8h_a9c809cbf74add940125f5fffc5924370}{Py\+Greenlet} $\ast$ ($\ast$)(void)) \+\_\+\+Py\+Greenlet\+\_\+\+A\+PI\mbox{[}\hyperlink{greenlet_8h_a8b21c88cb0daa37d6953a134c96986b8}{Py\+Greenlet\+\_\+\+Get\+Current\+\_\+\+N\+UM}\mbox{]})
+\item 
+\#define \hyperlink{greenlet_8h_a4b18e115cae2847721557502e671a047}{Py\+Greenlet\+\_\+\+Throw}
+\item 
+\#define \hyperlink{greenlet_8h_ac3d267e4218d18036b96be51d6f0763c}{Py\+Greenlet\+\_\+\+Switch}
+\item 
+\#define \hyperlink{greenlet_8h_a39e3547ce5f4d1c2a5652db4df729937}{Py\+Greenlet\+\_\+\+Set\+Parent}
+\item 
+\#define \hyperlink{greenlet_8h_ab1a700d34819d3525d1de74af1f8a3ad}{Py\+Greenlet\+\_\+\+Import}()
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__greenlet}{\+\_\+greenlet} \hyperlink{greenlet_8h_a9c809cbf74add940125f5fffc5924370}{Py\+Greenlet}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{greenlet_8h_abf3539f2bdf10b2b2137d6483cfc6ce7}\label{greenlet_8h_abf3539f2bdf10b2b2137d6483cfc6ce7}} 
+\index{greenlet.\+h@{greenlet.\+h}!G\+R\+E\+E\+N\+L\+E\+T\+\_\+\+V\+E\+R\+S\+I\+ON@{G\+R\+E\+E\+N\+L\+E\+T\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{G\+R\+E\+E\+N\+L\+E\+T\+\_\+\+V\+E\+R\+S\+I\+ON@{G\+R\+E\+E\+N\+L\+E\+T\+\_\+\+V\+E\+R\+S\+I\+ON}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{G\+R\+E\+E\+N\+L\+E\+T\+\_\+\+V\+E\+R\+S\+I\+ON}{GREENLET\_VERSION}}
+{\footnotesize\ttfamily \#define G\+R\+E\+E\+N\+L\+E\+T\+\_\+\+V\+E\+R\+S\+I\+ON~\char`\"{}0.\+4.\+15\char`\"{}}
+
+\mbox{\Hypertarget{greenlet_8h_a80f20681e2159a888164f797488e633e}\label{greenlet_8h_a80f20681e2159a888164f797488e633e}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Exc\+\_\+\+Greenlet\+Error@{Py\+Exc\+\_\+\+Greenlet\+Error}}
+\index{Py\+Exc\+\_\+\+Greenlet\+Error@{Py\+Exc\+\_\+\+Greenlet\+Error}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Exc\+\_\+\+Greenlet\+Error}{PyExc\_GreenletError}}
+{\footnotesize\ttfamily \#define Py\+Exc\+\_\+\+Greenlet\+Error~((Py\+Object $\ast$) \+\_\+\+Py\+Greenlet\+\_\+\+A\+PI\mbox{[}\hyperlink{greenlet_8h_a556b544719ebd78fea56cbd74d0483c6}{Py\+Exc\+\_\+\+Greenlet\+Error\+\_\+\+N\+UM}\mbox{]})}
+
+\mbox{\Hypertarget{greenlet_8h_a556b544719ebd78fea56cbd74d0483c6}\label{greenlet_8h_a556b544719ebd78fea56cbd74d0483c6}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Exc\+\_\+\+Greenlet\+Error\+\_\+\+N\+UM@{Py\+Exc\+\_\+\+Greenlet\+Error\+\_\+\+N\+UM}}
+\index{Py\+Exc\+\_\+\+Greenlet\+Error\+\_\+\+N\+UM@{Py\+Exc\+\_\+\+Greenlet\+Error\+\_\+\+N\+UM}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Exc\+\_\+\+Greenlet\+Error\+\_\+\+N\+UM}{PyExc\_GreenletError\_NUM}}
+{\footnotesize\ttfamily \#define Py\+Exc\+\_\+\+Greenlet\+Error\+\_\+\+N\+UM~1}
+
+\mbox{\Hypertarget{greenlet_8h_aa134d634bcb3d3fe5788b9f438c8b7ab}\label{greenlet_8h_aa134d634bcb3d3fe5788b9f438c8b7ab}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Exc\+\_\+\+Greenlet\+Exit@{Py\+Exc\+\_\+\+Greenlet\+Exit}}
+\index{Py\+Exc\+\_\+\+Greenlet\+Exit@{Py\+Exc\+\_\+\+Greenlet\+Exit}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Exc\+\_\+\+Greenlet\+Exit}{PyExc\_GreenletExit}}
+{\footnotesize\ttfamily \#define Py\+Exc\+\_\+\+Greenlet\+Exit~((Py\+Object $\ast$) \+\_\+\+Py\+Greenlet\+\_\+\+A\+PI\mbox{[}\hyperlink{greenlet_8h_adc6d1d62e1fe145e69de208bd67c2a8f}{Py\+Exc\+\_\+\+Greenlet\+Exit\+\_\+\+N\+UM}\mbox{]})}
+
+\mbox{\Hypertarget{greenlet_8h_adc6d1d62e1fe145e69de208bd67c2a8f}\label{greenlet_8h_adc6d1d62e1fe145e69de208bd67c2a8f}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Exc\+\_\+\+Greenlet\+Exit\+\_\+\+N\+UM@{Py\+Exc\+\_\+\+Greenlet\+Exit\+\_\+\+N\+UM}}
+\index{Py\+Exc\+\_\+\+Greenlet\+Exit\+\_\+\+N\+UM@{Py\+Exc\+\_\+\+Greenlet\+Exit\+\_\+\+N\+UM}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Exc\+\_\+\+Greenlet\+Exit\+\_\+\+N\+UM}{PyExc\_GreenletExit\_NUM}}
+{\footnotesize\ttfamily \#define Py\+Exc\+\_\+\+Greenlet\+Exit\+\_\+\+N\+UM~2}
+
+\mbox{\Hypertarget{greenlet_8h_a7bf1f1d8d319340f152f77c133496453}\label{greenlet_8h_a7bf1f1d8d319340f152f77c133496453}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+A\+C\+T\+I\+VE@{Py\+Greenlet\+\_\+\+A\+C\+T\+I\+VE}}
+\index{Py\+Greenlet\+\_\+\+A\+C\+T\+I\+VE@{Py\+Greenlet\+\_\+\+A\+C\+T\+I\+VE}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+A\+C\+T\+I\+VE}{PyGreenlet\_ACTIVE}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+A\+C\+T\+I\+VE(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(((\hyperlink{greenlet_8h_a9c809cbf74add940125f5fffc5924370}{Py\+Greenlet}$\ast$)(op))-\/$>$stack\+\_\+start != N\+U\+LL)}
+
+\mbox{\Hypertarget{greenlet_8h_aac915da032e3082e297ade5fde5a6ac2}\label{greenlet_8h_aac915da032e3082e297ade5fde5a6ac2}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+A\+P\+I\+\_\+pointers@{Py\+Greenlet\+\_\+\+A\+P\+I\+\_\+pointers}}
+\index{Py\+Greenlet\+\_\+\+A\+P\+I\+\_\+pointers@{Py\+Greenlet\+\_\+\+A\+P\+I\+\_\+pointers}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+A\+P\+I\+\_\+pointers}{PyGreenlet\_API\_pointers}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+A\+P\+I\+\_\+pointers~8}
+
+\mbox{\Hypertarget{greenlet_8h_aa45ac625a939ff70b9c6b60170afb1ba}\label{greenlet_8h_aa45ac625a939ff70b9c6b60170afb1ba}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+Check@{Py\+Greenlet\+\_\+\+Check}}
+\index{Py\+Greenlet\+\_\+\+Check@{Py\+Greenlet\+\_\+\+Check}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+Check}{PyGreenlet\_Check}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~Py\+Object\+\_\+\+Type\+Check(op, \&\hyperlink{greenlet_8h_aa7c395f46392f4ce4c7771678122d53b}{Py\+Greenlet\+\_\+\+Type})}
+
+\mbox{\Hypertarget{greenlet_8h_a9936ac54c2a00e37b05d83a49bdab1ab}\label{greenlet_8h_a9936ac54c2a00e37b05d83a49bdab1ab}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+G\+E\+T\+\_\+\+P\+A\+R\+E\+NT@{Py\+Greenlet\+\_\+\+G\+E\+T\+\_\+\+P\+A\+R\+E\+NT}}
+\index{Py\+Greenlet\+\_\+\+G\+E\+T\+\_\+\+P\+A\+R\+E\+NT@{Py\+Greenlet\+\_\+\+G\+E\+T\+\_\+\+P\+A\+R\+E\+NT}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+G\+E\+T\+\_\+\+P\+A\+R\+E\+NT}{PyGreenlet\_GET\_PARENT}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+G\+E\+T\+\_\+\+P\+A\+R\+E\+NT(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(((\hyperlink{greenlet_8h_a9c809cbf74add940125f5fffc5924370}{Py\+Greenlet}$\ast$)(op))-\/$>$parent)}
+
+\mbox{\Hypertarget{greenlet_8h_a560525588cea58e2a8630c9ceab1ddfb}\label{greenlet_8h_a560525588cea58e2a8630c9ceab1ddfb}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+Get\+Current@{Py\+Greenlet\+\_\+\+Get\+Current}}
+\index{Py\+Greenlet\+\_\+\+Get\+Current@{Py\+Greenlet\+\_\+\+Get\+Current}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+Get\+Current}{PyGreenlet\_GetCurrent}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+Get\+Current~($\ast$ (\hyperlink{greenlet_8h_a9c809cbf74add940125f5fffc5924370}{Py\+Greenlet} $\ast$ ($\ast$)(void)) \+\_\+\+Py\+Greenlet\+\_\+\+A\+PI\mbox{[}\hyperlink{greenlet_8h_a8b21c88cb0daa37d6953a134c96986b8}{Py\+Greenlet\+\_\+\+Get\+Current\+\_\+\+N\+UM}\mbox{]})}
+
+\mbox{\Hypertarget{greenlet_8h_a8b21c88cb0daa37d6953a134c96986b8}\label{greenlet_8h_a8b21c88cb0daa37d6953a134c96986b8}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+Get\+Current\+\_\+\+N\+UM@{Py\+Greenlet\+\_\+\+Get\+Current\+\_\+\+N\+UM}}
+\index{Py\+Greenlet\+\_\+\+Get\+Current\+\_\+\+N\+UM@{Py\+Greenlet\+\_\+\+Get\+Current\+\_\+\+N\+UM}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+Get\+Current\+\_\+\+N\+UM}{PyGreenlet\_GetCurrent\_NUM}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+Get\+Current\+\_\+\+N\+UM~4}
+
+\mbox{\Hypertarget{greenlet_8h_ab1a700d34819d3525d1de74af1f8a3ad}\label{greenlet_8h_ab1a700d34819d3525d1de74af1f8a3ad}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+Import@{Py\+Greenlet\+\_\+\+Import}}
+\index{Py\+Greenlet\+\_\+\+Import@{Py\+Greenlet\+\_\+\+Import}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+Import}{PyGreenlet\_Import}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+Import(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{ \(\backslash\)
+    PyObject *module = PyImport\_ImportModule(\textcolor{stringliteral}{"greenlet"}); \(\backslash\)
+    if (module != NULL) \{ \(\backslash\)
+        PyObject *c\_api\_object = PyObject\_GetAttrString( \(\backslash\)
+            module, \textcolor{stringliteral}{"\_C\_API"}); \(\backslash\)
+        if (c\_api\_object != NULL && PyCObject\_Check(c\_api\_object)) \{ \(\backslash\)
+            \_PyGreenlet\_API = \(\backslash\)
+                (\textcolor{keywordtype}{void} **) \hyperlink{namespacepygame_1_1tests_1_1test__utils_1_1arrinter_a1a64f426026cabc0201e6fd3e6083168}{PyCObject\_AsVoidPtr}(c\_api\_object); \(\backslash\)
+            Py\_DECREF(c\_api\_object); \(\backslash\)
+        \} \(\backslash\)
+        Py\_DECREF(module); \(\backslash\)
+    \} \(\backslash\)
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{greenlet_8h_a8753daf3c9d8509b806beb3d02e4c57b}\label{greenlet_8h_a8753daf3c9d8509b806beb3d02e4c57b}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+M\+A\+IN@{Py\+Greenlet\+\_\+\+M\+A\+IN}}
+\index{Py\+Greenlet\+\_\+\+M\+A\+IN@{Py\+Greenlet\+\_\+\+M\+A\+IN}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+M\+A\+IN}{PyGreenlet\_MAIN}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+M\+A\+IN(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(((\hyperlink{greenlet_8h_a9c809cbf74add940125f5fffc5924370}{Py\+Greenlet}$\ast$)(op))-\/$>$stack\+\_\+stop == (char$\ast$) -\/1)}
+
+\mbox{\Hypertarget{greenlet_8h_a4a1a728bc9b16a3a66d57a6d354fa456}\label{greenlet_8h_a4a1a728bc9b16a3a66d57a6d354fa456}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+New@{Py\+Greenlet\+\_\+\+New}}
+\index{Py\+Greenlet\+\_\+\+New@{Py\+Greenlet\+\_\+\+New}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+New}{PyGreenlet\_New}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+New}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(* (\hyperlink{struct__greenlet}{PyGreenlet} * (*)(PyObject *\hyperlink{namespacepy_1_1__code_1_1__assertionnew_a13c71189d49371c1f4312e64e9e63cc7}{run}, \hyperlink{struct__greenlet}{PyGreenlet} *parent)) \(\backslash\)
+     \_PyGreenlet\_API[\hyperlink{greenlet_8h_ad7b687f26c879069125b590d28dbccc6}{PyGreenlet\_New\_NUM}])
+\end{DoxyCode}
+\mbox{\Hypertarget{greenlet_8h_ad7b687f26c879069125b590d28dbccc6}\label{greenlet_8h_ad7b687f26c879069125b590d28dbccc6}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+New\+\_\+\+N\+UM@{Py\+Greenlet\+\_\+\+New\+\_\+\+N\+UM}}
+\index{Py\+Greenlet\+\_\+\+New\+\_\+\+N\+UM@{Py\+Greenlet\+\_\+\+New\+\_\+\+N\+UM}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+New\+\_\+\+N\+UM}{PyGreenlet\_New\_NUM}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+New\+\_\+\+N\+UM~3}
+
+\mbox{\Hypertarget{greenlet_8h_a39e3547ce5f4d1c2a5652db4df729937}\label{greenlet_8h_a39e3547ce5f4d1c2a5652db4df729937}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+Set\+Parent@{Py\+Greenlet\+\_\+\+Set\+Parent}}
+\index{Py\+Greenlet\+\_\+\+Set\+Parent@{Py\+Greenlet\+\_\+\+Set\+Parent}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+Set\+Parent}{PyGreenlet\_SetParent}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+Set\+Parent}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(* (\hyperlink{namespaceserver_a803365d66cd8c1e68f7e41a1837a59f4}{int} (*)(\hyperlink{struct__greenlet}{PyGreenlet} *greenlet, \hyperlink{struct__greenlet}{PyGreenlet} *nparent)) \(\backslash\)
+     \_PyGreenlet\_API[\hyperlink{greenlet_8h_a134ce9eeda401a1f5766a15024680e5a}{PyGreenlet\_SetParent\_NUM}])
+\end{DoxyCode}
+\mbox{\Hypertarget{greenlet_8h_a134ce9eeda401a1f5766a15024680e5a}\label{greenlet_8h_a134ce9eeda401a1f5766a15024680e5a}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+Set\+Parent\+\_\+\+N\+UM@{Py\+Greenlet\+\_\+\+Set\+Parent\+\_\+\+N\+UM}}
+\index{Py\+Greenlet\+\_\+\+Set\+Parent\+\_\+\+N\+UM@{Py\+Greenlet\+\_\+\+Set\+Parent\+\_\+\+N\+UM}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+Set\+Parent\+\_\+\+N\+UM}{PyGreenlet\_SetParent\_NUM}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+Set\+Parent\+\_\+\+N\+UM~7}
+
+\mbox{\Hypertarget{greenlet_8h_a583ec8bccb8471e67fd8fd1312116811}\label{greenlet_8h_a583ec8bccb8471e67fd8fd1312116811}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+S\+T\+A\+R\+T\+ED@{Py\+Greenlet\+\_\+\+S\+T\+A\+R\+T\+ED}}
+\index{Py\+Greenlet\+\_\+\+S\+T\+A\+R\+T\+ED@{Py\+Greenlet\+\_\+\+S\+T\+A\+R\+T\+ED}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+S\+T\+A\+R\+T\+ED}{PyGreenlet\_STARTED}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+S\+T\+A\+R\+T\+ED(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})~(((\hyperlink{greenlet_8h_a9c809cbf74add940125f5fffc5924370}{Py\+Greenlet}$\ast$)(op))-\/$>$stack\+\_\+stop != N\+U\+LL)}
+
+\mbox{\Hypertarget{greenlet_8h_ac3d267e4218d18036b96be51d6f0763c}\label{greenlet_8h_ac3d267e4218d18036b96be51d6f0763c}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+Switch@{Py\+Greenlet\+\_\+\+Switch}}
+\index{Py\+Greenlet\+\_\+\+Switch@{Py\+Greenlet\+\_\+\+Switch}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+Switch}{PyGreenlet\_Switch}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+Switch}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(* (PyObject * (*)(\hyperlink{struct__greenlet}{PyGreenlet} *greenlet, PyObject *\hyperlink{namespaceserver_aea7e1efc19535ee9bab8400a812b43a9}{args}, PyObject *kwargs)) \(\backslash\)
+     \_PyGreenlet\_API[\hyperlink{greenlet_8h_a004a17fadd8cbee4c4065d6f52ef6c82}{PyGreenlet\_Switch\_NUM}])
+\end{DoxyCode}
+\mbox{\Hypertarget{greenlet_8h_a004a17fadd8cbee4c4065d6f52ef6c82}\label{greenlet_8h_a004a17fadd8cbee4c4065d6f52ef6c82}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+Switch\+\_\+\+N\+UM@{Py\+Greenlet\+\_\+\+Switch\+\_\+\+N\+UM}}
+\index{Py\+Greenlet\+\_\+\+Switch\+\_\+\+N\+UM@{Py\+Greenlet\+\_\+\+Switch\+\_\+\+N\+UM}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+Switch\+\_\+\+N\+UM}{PyGreenlet\_Switch\_NUM}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+Switch\+\_\+\+N\+UM~6}
+
+\mbox{\Hypertarget{greenlet_8h_a4b18e115cae2847721557502e671a047}\label{greenlet_8h_a4b18e115cae2847721557502e671a047}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+Throw@{Py\+Greenlet\+\_\+\+Throw}}
+\index{Py\+Greenlet\+\_\+\+Throw@{Py\+Greenlet\+\_\+\+Throw}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+Throw}{PyGreenlet\_Throw}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+Throw}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(* (PyObject * (*) \(\backslash\)
+        (\hyperlink{struct__greenlet}{PyGreenlet} *\textcolor{keyword}{self}, PyObject *typ, PyObject *val, PyObject *tb)) \(\backslash\)
+     \_PyGreenlet\_API[\hyperlink{greenlet_8h_a5c184862dd59fa8f2b9c10d90219090d}{PyGreenlet\_Throw\_NUM}])
+\end{DoxyCode}
+\mbox{\Hypertarget{greenlet_8h_a5c184862dd59fa8f2b9c10d90219090d}\label{greenlet_8h_a5c184862dd59fa8f2b9c10d90219090d}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+Throw\+\_\+\+N\+UM@{Py\+Greenlet\+\_\+\+Throw\+\_\+\+N\+UM}}
+\index{Py\+Greenlet\+\_\+\+Throw\+\_\+\+N\+UM@{Py\+Greenlet\+\_\+\+Throw\+\_\+\+N\+UM}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+Throw\+\_\+\+N\+UM}{PyGreenlet\_Throw\_NUM}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+Throw\+\_\+\+N\+UM~5}
+
+\mbox{\Hypertarget{greenlet_8h_aa7c395f46392f4ce4c7771678122d53b}\label{greenlet_8h_aa7c395f46392f4ce4c7771678122d53b}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+Type@{Py\+Greenlet\+\_\+\+Type}}
+\index{Py\+Greenlet\+\_\+\+Type@{Py\+Greenlet\+\_\+\+Type}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+Type}{PyGreenlet\_Type}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+Type~($\ast$(Py\+Type\+Object $\ast$) \+\_\+\+Py\+Greenlet\+\_\+\+A\+PI\mbox{[}\hyperlink{greenlet_8h_a121f841af1dc75e7e2b9f8e10fcfdc6e}{Py\+Greenlet\+\_\+\+Type\+\_\+\+N\+UM}\mbox{]})}
+
+\mbox{\Hypertarget{greenlet_8h_a121f841af1dc75e7e2b9f8e10fcfdc6e}\label{greenlet_8h_a121f841af1dc75e7e2b9f8e10fcfdc6e}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet\+\_\+\+Type\+\_\+\+N\+UM@{Py\+Greenlet\+\_\+\+Type\+\_\+\+N\+UM}}
+\index{Py\+Greenlet\+\_\+\+Type\+\_\+\+N\+UM@{Py\+Greenlet\+\_\+\+Type\+\_\+\+N\+UM}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet\+\_\+\+Type\+\_\+\+N\+UM}{PyGreenlet\_Type\_NUM}}
+{\footnotesize\ttfamily \#define Py\+Greenlet\+\_\+\+Type\+\_\+\+N\+UM~0}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{greenlet_8h_a9c809cbf74add940125f5fffc5924370}\label{greenlet_8h_a9c809cbf74add940125f5fffc5924370}} 
+\index{greenlet.\+h@{greenlet.\+h}!Py\+Greenlet@{Py\+Greenlet}}
+\index{Py\+Greenlet@{Py\+Greenlet}!greenlet.\+h@{greenlet.\+h}}
+\subsubsection{\texorpdfstring{Py\+Greenlet}{PyGreenlet}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct__greenlet}{\+\_\+greenlet}  \hyperlink{greenlet_8h_a9c809cbf74add940125f5fffc5924370}{Py\+Greenlet}}
+

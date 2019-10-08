@@ -21,6 +21,7 @@ class PacDomain(SearchDomain):
         self.info = info
 
     def actions(self, state):
+        """Acções possiveis do pacman"""
         [x, y] = state
 
         actlist = []
@@ -39,12 +40,13 @@ class PacDomain(SearchDomain):
         return actlist
 
     def result(self, state, action):
-
+        """Resultado"""
         actionRes = list(action[0])
         if list(state) == actionRes:
             return action[1]
 
     def cost(self, state, action):
+        """Calculo do custo"""
         x1, y1 = state
         x2, y2 = action[1]
 
@@ -55,6 +57,7 @@ class PacDomain(SearchDomain):
 
     # Heuristic is Manhattan (abs(xs - xg) + (abs(ys - yg))
     def heuristic(self, state, goal_state):
+        """Heuristica Mannathan (abs(xs - xg) + (abs(ys - yg))"""
         x1, y1 = state
         x2, y2 = goal_state
 
@@ -90,6 +93,7 @@ class PacTree(SearchTree):
         return
 
     def search2(self):
+        """Pesquisa para o proximo node"""
         while self.open_nodes != []:
             node = self.open_nodes.pop(0)
             print("\t-----NEXT NODE----")

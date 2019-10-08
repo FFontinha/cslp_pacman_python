@@ -1,0 +1,57 @@
+\hypertarget{namespacepygame_1_1examples_1_1scroll}{}\section{pygame.\+examples.\+scroll Namespace Reference}
+\label{namespacepygame_1_1examples_1_1scroll}\index{pygame.\+examples.\+scroll@{pygame.\+examples.\+scroll}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scroll_a0629752a1c62604fc80a77b7ff2bee52}\label{namespacepygame_1_1examples_1_1scroll_a0629752a1c62604fc80a77b7ff2bee52}} 
+def {\bfseries draw\+\_\+arrow} (surf, color, posn, direction)
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scroll_a0d9a7f950394b8c6d7a3216153d2a214}\label{namespacepygame_1_1examples_1_1scroll_a0d9a7f950394b8c6d7a3216153d2a214}} 
+def {\bfseries add\+\_\+arrow\+\_\+button} (screen, regions, posn, direction)
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scroll_a971616c98db81ed4bec3e141c9ef42fa}\label{namespacepygame_1_1examples_1_1scroll_a971616c98db81ed4bec3e141c9ef42fa}} 
+def {\bfseries scroll\+\_\+view} (screen, image, direction, view\+\_\+rect)
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scroll_a72e0f5b6a78f5909d6524bf5cdc8debe}\label{namespacepygame_1_1examples_1_1scroll_a72e0f5b6a78f5909d6524bf5cdc8debe}} 
+def {\bfseries main} (image\+\_\+file=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scroll_ab94aa0ff696a1c2b3d6e7208489a088a}\label{namespacepygame_1_1examples_1_1scroll_ab94aa0ff696a1c2b3d6e7208489a088a}} 
+{\bfseries main\+\_\+dir} = os.\+path.\+dirname(os.\+path.\+abspath(\+\_\+\+\_\+file\+\_\+\+\_\+))
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scroll_adfbacb1635db3116c297ec9aa9ff9694}\label{namespacepygame_1_1examples_1_1scroll_adfbacb1635db3116c297ec9aa9ff9694}} 
+int {\bfseries D\+I\+R\+\_\+\+UP} = 1
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scroll_ae18a3b265502752ddc031d32a0eb87e4}\label{namespacepygame_1_1examples_1_1scroll_ae18a3b265502752ddc031d32a0eb87e4}} 
+int {\bfseries D\+I\+R\+\_\+\+D\+O\+WN} = 2
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scroll_aab310f9efab59da29de742bd6c67e952}\label{namespacepygame_1_1examples_1_1scroll_aab310f9efab59da29de742bd6c67e952}} 
+int {\bfseries D\+I\+R\+\_\+\+L\+E\+FT} = 3
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scroll_a388c95162f7ee8e99995e377136446fb}\label{namespacepygame_1_1examples_1_1scroll_a388c95162f7ee8e99995e377136446fb}} 
+int {\bfseries D\+I\+R\+\_\+\+R\+I\+G\+HT} = 4
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scroll_a5c21f3008271e253a49e6d9ffbc99777}\label{namespacepygame_1_1examples_1_1scroll_a5c21f3008271e253a49e6d9ffbc99777}} 
+int {\bfseries zoom\+\_\+factor} = 8
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1scroll_ab1665310e7c68afa04a30fd7e7512705}\label{namespacepygame_1_1examples_1_1scroll_ab1665310e7c68afa04a30fd7e7512705}} 
+{\bfseries image\+\_\+file} = sys.\+argv\mbox{[}1\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}An zoomed image viewer that demonstrates Surface.scroll
+
+This example shows a scrollable image that has a zoom factor of eight.
+It uses the Surface.scroll function to shift the image on the display
+surface. A clip rectangle protects a margin area. If called as a function,
+the example accepts an optional image file path. If run as a program
+it takes an optional file path command line argument. If no file
+is provided a default image file is used.
+
+When running click on a black triangle to move one pixel in the direction
+the triangle points. Or use the arrow keys. Close the window or press ESC
+to quit.\end{DoxyVerb}
+ 

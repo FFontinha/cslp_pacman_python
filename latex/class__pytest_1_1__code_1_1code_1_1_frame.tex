@@ -1,0 +1,104 @@
+\hypertarget{class__pytest_1_1__code_1_1code_1_1_frame}{}\section{\+\_\+pytest.\+\_\+code.\+code.\+Frame Class Reference}
+\label{class__pytest_1_1__code_1_1code_1_1_frame}\index{\+\_\+pytest.\+\_\+code.\+code.\+Frame@{\+\_\+pytest.\+\_\+code.\+code.\+Frame}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_frame_aa2b641a20d0950ae8347ccc1f746a7c1}\label{class__pytest_1_1__code_1_1code_1_1_frame_aa2b641a20d0950ae8347ccc1f746a7c1}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, frame)
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_frame_ad23548ae1a23c439708b93a5042fefea}{statement} (self)
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_frame_a2483073f398cacd7ec6b9c6b9b2fa506}{eval} (self, code, vars)
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_frame_a6ef6fdc82162cc934af75969700dca82}{exec\+\_\+} (self, code, vars)
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_frame_a6d1b4ebb61e4a1dd4ac54564f7c54011}{repr} (self, object)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_frame_a685c6e86c0bd38032551a132e321f9db}\label{class__pytest_1_1__code_1_1code_1_1_frame_a685c6e86c0bd38032551a132e321f9db}} 
+def {\bfseries is\+\_\+true} (self, object)
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_frame_a11a32c449e6caa70aecb0048d7af3ac2}{getargs} (self, var=False)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_frame_a7529318869835c1bc4f0c7abfa065891}\label{class__pytest_1_1__code_1_1code_1_1_frame_a7529318869835c1bc4f0c7abfa065891}} 
+{\bfseries lineno}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_frame_a68da818f46faea3a6a6f42f576f22566}\label{class__pytest_1_1__code_1_1code_1_1_frame_a68da818f46faea3a6a6f42f576f22566}} 
+{\bfseries f\+\_\+globals}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_frame_ac913dad3d015951a95f26763066a574e}\label{class__pytest_1_1__code_1_1code_1_1_frame_ac913dad3d015951a95f26763066a574e}} 
+{\bfseries f\+\_\+locals}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_frame_ade834df7929797143b04d98e8adacb9f}\label{class__pytest_1_1__code_1_1code_1_1_frame_ade834df7929797143b04d98e8adacb9f}} 
+{\bfseries raw}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_frame_afff8ef80a5482ca933b3f8d4a86b21aa}\label{class__pytest_1_1__code_1_1code_1_1_frame_afff8ef80a5482ca933b3f8d4a86b21aa}} 
+{\bfseries code}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Wrapper around a Python frame holding f_locals and f_globals
+in which expressions can be evaluated.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_frame_a2483073f398cacd7ec6b9c6b9b2fa506}\label{class__pytest_1_1__code_1_1code_1_1_frame_a2483073f398cacd7ec6b9c6b9b2fa506}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame}!eval@{eval}}
+\index{eval@{eval}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame}}
+\subsubsection{\texorpdfstring{eval()}{eval()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Frame.\+eval (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{code,  }\item[{}]{vars }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}evaluate 'code' in the frame
+
+    'vars' are optional additional local variables
+
+    returns the result of the evaluation
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_frame_a6ef6fdc82162cc934af75969700dca82}\label{class__pytest_1_1__code_1_1code_1_1_frame_a6ef6fdc82162cc934af75969700dca82}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame}!exec\+\_\+@{exec\+\_\+}}
+\index{exec\+\_\+@{exec\+\_\+}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame}}
+\subsubsection{\texorpdfstring{exec\+\_\+()}{exec\_()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Frame.\+exec\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{code,  }\item[{}]{vars }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}exec 'code' in the frame
+
+    'vars' are optiona; additional local variables
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_frame_a11a32c449e6caa70aecb0048d7af3ac2}\label{class__pytest_1_1__code_1_1code_1_1_frame_a11a32c449e6caa70aecb0048d7af3ac2}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame}!getargs@{getargs}}
+\index{getargs@{getargs}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame}}
+\subsubsection{\texorpdfstring{getargs()}{getargs()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Frame.\+getargs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{var = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a list of tuples (name, value) for all arguments
+
+    if 'var' is set True also include the variable and keyword
+    arguments when present
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_frame_a6d1b4ebb61e4a1dd4ac54564f7c54011}\label{class__pytest_1_1__code_1_1code_1_1_frame_a6d1b4ebb61e4a1dd4ac54564f7c54011}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame}!repr@{repr}}
+\index{repr@{repr}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame}}
+\subsubsection{\texorpdfstring{repr()}{repr()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Frame.\+repr (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{object }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a 'safe' (non-recursive, one-line) string repr for 'object'
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_frame_ad23548ae1a23c439708b93a5042fefea}\label{class__pytest_1_1__code_1_1code_1_1_frame_ad23548ae1a23c439708b93a5042fefea}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame}!statement@{statement}}
+\index{statement@{statement}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Frame}}
+\subsubsection{\texorpdfstring{statement()}{statement()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Frame.\+statement (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}statement this frame is at \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/\+\_\+code/code.\+py\end{DoxyCompactItemize}

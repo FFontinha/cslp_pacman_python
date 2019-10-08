@@ -1,0 +1,157 @@
+\hypertarget{classsetuptools_1_1dist_1_1_feature}{}\section{setuptools.\+dist.\+Feature Class Reference}
+\label{classsetuptools_1_1dist_1_1_feature}\index{setuptools.\+dist.\+Feature@{setuptools.\+dist.\+Feature}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1dist_1_1_feature_a160df35a075c78ef2a7732bce650dded}\label{classsetuptools_1_1dist_1_1_feature_a160df35a075c78ef2a7732bce650dded}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, description, standard=False, available=True, optional=True, require\+\_\+features=(), remove=(), extras)
+\item 
+def \hyperlink{classsetuptools_1_1dist_1_1_feature_ac3896cc19837e04ab7b51a01368c9c7a}{include\+\_\+by\+\_\+default} (self)
+\item 
+def \hyperlink{classsetuptools_1_1dist_1_1_feature_a02c6d97eea9aa58d36a60fa33dac0b97}{include\+\_\+in} (self, dist)
+\item 
+def \hyperlink{classsetuptools_1_1dist_1_1_feature_aa7bf364cf012b0da64fa1a6c54af8930}{exclude\+\_\+from} (self, dist)
+\item 
+def \hyperlink{classsetuptools_1_1dist_1_1_feature_a4d60dcf37f70c14ee94f92a3dd1a9e2c}{validate} (self, dist)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1dist_1_1_feature_a43b491899fabc23f5a6078805d8ad2fb}\label{classsetuptools_1_1dist_1_1_feature_a43b491899fabc23f5a6078805d8ad2fb}} 
+def {\bfseries warn\+\_\+deprecated} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1dist_1_1_feature_abfd385a10c76be4b9f8f9c835f51546e}\label{classsetuptools_1_1dist_1_1_feature_abfd385a10c76be4b9f8f9c835f51546e}} 
+{\bfseries description}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1dist_1_1_feature_a6bed2f1c5dd9deb63f88fa5dbc65d3cf}\label{classsetuptools_1_1dist_1_1_feature_a6bed2f1c5dd9deb63f88fa5dbc65d3cf}} 
+{\bfseries standard}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1dist_1_1_feature_af9093aa520fcdcc91cc18f38274e6fb4}\label{classsetuptools_1_1dist_1_1_feature_af9093aa520fcdcc91cc18f38274e6fb4}} 
+{\bfseries available}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1dist_1_1_feature_a52f214040c829332ca5420e1cbe4ed3a}\label{classsetuptools_1_1dist_1_1_feature_a52f214040c829332ca5420e1cbe4ed3a}} 
+{\bfseries optional}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1dist_1_1_feature_ada7c401027d0f0d6f828a2ffed58b6c3}\label{classsetuptools_1_1dist_1_1_feature_ada7c401027d0f0d6f828a2ffed58b6c3}} 
+{\bfseries require\+\_\+features}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1dist_1_1_feature_a8d9c70cbfbf09b131734ce64698ae734}\label{classsetuptools_1_1dist_1_1_feature_a8d9c70cbfbf09b131734ce64698ae734}} 
+{\bfseries remove}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1dist_1_1_feature_a07fa08608e87fc13cbb14e6d14fb0221}\label{classsetuptools_1_1dist_1_1_feature_a07fa08608e87fc13cbb14e6d14fb0221}} 
+{\bfseries extras}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}**deprecated** -- The `Feature` facility was never completely implemented
+or supported, `has reported issues
+<https://github.com/pypa/setuptools/issues/58>`_ and will be removed in
+a future version.
+
+A subset of the distribution that can be excluded if unneeded/wanted
+
+Features are created using these keyword arguments:
+
+  'description' -- a short, human readable description of the feature, to
+     be used in error messages, and option help messages.
+
+  'standard' -- if true, the feature is included by default if it is
+     available on the current system.  Otherwise, the feature is only
+     included if requested via a command line '--with-X' option, or if
+     another included feature requires it.  The default setting is 'False'.
+
+  'available' -- if true, the feature is available for installation on the
+     current system.  The default setting is 'True'.
+
+  'optional' -- if true, the feature's inclusion can be controlled from the
+     command line, using the '--with-X' or '--without-X' options.  If
+     false, the feature's inclusion status is determined automatically,
+     based on 'availabile', 'standard', and whether any other feature
+     requires it.  The default setting is 'True'.
+
+  'require_features' -- a string or sequence of strings naming features
+     that should also be included if this feature is included.  Defaults to
+     empty list.  May also contain 'Require' objects that should be
+     added/removed from the distribution.
+
+  'remove' -- a string or list of strings naming packages to be removed
+     from the distribution if this feature is *not* included.  If the
+     feature *is* included, this argument is ignored.  This argument exists
+     to support removing features that "crosscut" a distribution, such as
+     defining a 'tests' feature that removes all the 'tests' subpackages
+     provided by other features.  The default for this argument is an empty
+     list.  (Note: the named package(s) or modules must exist in the base
+     distribution when the 'setup()' function is initially called.)
+
+  other keywords -- any other keyword arguments are saved, and passed to
+     the distribution's 'include()' and 'exclude()' methods when the
+     feature is included or excluded, respectively.  So, for example, you
+     could pass 'packages=["a","b"]' to cause packages 'a' and 'b' to be
+     added or removed from the distribution as appropriate.
+
+A feature must include at least one 'requires', 'remove', or other
+keyword argument.  Otherwise, it can't affect the distribution in any way.
+Note also that you can subclass 'Feature' to create your own specialized
+feature types that modify the distribution in other ways when included or
+excluded.  See the docstrings for the various methods here for more detail.
+Aside from the methods, the only feature attributes that distributions look
+at are 'description' and 'optional'.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsetuptools_1_1dist_1_1_feature_aa7bf364cf012b0da64fa1a6c54af8930}\label{classsetuptools_1_1dist_1_1_feature_aa7bf364cf012b0da64fa1a6c54af8930}} 
+\index{setuptools\+::dist\+::\+Feature@{setuptools\+::dist\+::\+Feature}!exclude\+\_\+from@{exclude\+\_\+from}}
+\index{exclude\+\_\+from@{exclude\+\_\+from}!setuptools\+::dist\+::\+Feature@{setuptools\+::dist\+::\+Feature}}
+\subsubsection{\texorpdfstring{exclude\+\_\+from()}{exclude\_from()}}
+{\footnotesize\ttfamily def setuptools.\+dist.\+Feature.\+exclude\+\_\+from (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dist }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ensure feature is excluded from distribution
+
+You may override this in a subclass to perform additional operations on
+the distribution.  This method will be called at most once per
+feature, and only after all included features have been asked to
+include themselves.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classsetuptools_1_1dist_1_1_feature_ac3896cc19837e04ab7b51a01368c9c7a}\label{classsetuptools_1_1dist_1_1_feature_ac3896cc19837e04ab7b51a01368c9c7a}} 
+\index{setuptools\+::dist\+::\+Feature@{setuptools\+::dist\+::\+Feature}!include\+\_\+by\+\_\+default@{include\+\_\+by\+\_\+default}}
+\index{include\+\_\+by\+\_\+default@{include\+\_\+by\+\_\+default}!setuptools\+::dist\+::\+Feature@{setuptools\+::dist\+::\+Feature}}
+\subsubsection{\texorpdfstring{include\+\_\+by\+\_\+default()}{include\_by\_default()}}
+{\footnotesize\ttfamily def setuptools.\+dist.\+Feature.\+include\+\_\+by\+\_\+default (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Should this feature be included by default?\end{DoxyVerb}
+ \mbox{\Hypertarget{classsetuptools_1_1dist_1_1_feature_a02c6d97eea9aa58d36a60fa33dac0b97}\label{classsetuptools_1_1dist_1_1_feature_a02c6d97eea9aa58d36a60fa33dac0b97}} 
+\index{setuptools\+::dist\+::\+Feature@{setuptools\+::dist\+::\+Feature}!include\+\_\+in@{include\+\_\+in}}
+\index{include\+\_\+in@{include\+\_\+in}!setuptools\+::dist\+::\+Feature@{setuptools\+::dist\+::\+Feature}}
+\subsubsection{\texorpdfstring{include\+\_\+in()}{include\_in()}}
+{\footnotesize\ttfamily def setuptools.\+dist.\+Feature.\+include\+\_\+in (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dist }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ensure feature and its requirements are included in distribution
+
+You may override this in a subclass to perform additional operations on
+the distribution.  Note that this method may be called more than once
+per feature, and so should be idempotent.\end{DoxyVerb}
+ \mbox{\Hypertarget{classsetuptools_1_1dist_1_1_feature_a4d60dcf37f70c14ee94f92a3dd1a9e2c}\label{classsetuptools_1_1dist_1_1_feature_a4d60dcf37f70c14ee94f92a3dd1a9e2c}} 
+\index{setuptools\+::dist\+::\+Feature@{setuptools\+::dist\+::\+Feature}!validate@{validate}}
+\index{validate@{validate}!setuptools\+::dist\+::\+Feature@{setuptools\+::dist\+::\+Feature}}
+\subsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily def setuptools.\+dist.\+Feature.\+validate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dist }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Verify that feature makes sense in context of distribution
+
+This method is called by the distribution just before it parses its
+command line.  It checks to ensure that the 'remove' attribute, if any,
+contains only valid package/module names that are present in the base
+distribution when 'setup()' is called.  You may override it in a
+subclass to perform any other required validation of the feature
+against a target distribution.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/setuptools/dist.\+py\end{DoxyCompactItemize}

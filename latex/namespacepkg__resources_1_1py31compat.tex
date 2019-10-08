@@ -1,0 +1,32 @@
+\hypertarget{namespacepkg__resources_1_1py31compat}{}\section{pkg\+\_\+resources.\+py31compat Namespace Reference}
+\label{namespacepkg__resources_1_1py31compat}\index{pkg\+\_\+resources.\+py31compat@{pkg\+\_\+resources.\+py31compat}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacepkg__resources_1_1py31compat_a34f3346cfd3bc500d891716a864880f5}{needs\+\_\+makedirs}
+\item 
+def \hyperlink{namespacepkg__resources_1_1py31compat_adaa43170a8bde56096c2beec09a6ea7d}{makedirs} = \+\_\+makedirs\+\_\+31 if \hyperlink{namespacepkg__resources_1_1py31compat_a34f3346cfd3bc500d891716a864880f5}{needs\+\_\+makedirs} else os.\+makedirs
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepkg__resources_1_1py31compat_adaa43170a8bde56096c2beec09a6ea7d}\label{namespacepkg__resources_1_1py31compat_adaa43170a8bde56096c2beec09a6ea7d}} 
+\index{pkg\+\_\+resources\+::py31compat@{pkg\+\_\+resources\+::py31compat}!makedirs@{makedirs}}
+\index{makedirs@{makedirs}!pkg\+\_\+resources\+::py31compat@{pkg\+\_\+resources\+::py31compat}}
+\subsubsection{\texorpdfstring{makedirs}{makedirs}}
+{\footnotesize\ttfamily def pkg\+\_\+resources.\+py31compat.\+makedirs = \+\_\+makedirs\+\_\+31 if \hyperlink{namespacepkg__resources_1_1py31compat_a34f3346cfd3bc500d891716a864880f5}{needs\+\_\+makedirs} else os.\+makedirs}
+
+\mbox{\Hypertarget{namespacepkg__resources_1_1py31compat_a34f3346cfd3bc500d891716a864880f5}\label{namespacepkg__resources_1_1py31compat_a34f3346cfd3bc500d891716a864880f5}} 
+\index{pkg\+\_\+resources\+::py31compat@{pkg\+\_\+resources\+::py31compat}!needs\+\_\+makedirs@{needs\+\_\+makedirs}}
+\index{needs\+\_\+makedirs@{needs\+\_\+makedirs}!pkg\+\_\+resources\+::py31compat@{pkg\+\_\+resources\+::py31compat}}
+\subsubsection{\texorpdfstring{needs\+\_\+makedirs}{needs\_makedirs}}
+{\footnotesize\ttfamily tuple pkg\+\_\+resources.\+py31compat.\+needs\+\_\+makedirs}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (
+2     sys.version\_info < (3, 2, 5) \textcolor{keywordflow}{or}
+3     (3, 3) <= sys.version\_info < (3, 3, 6) \textcolor{keywordflow}{or}
+4     (3, 4) <= sys.version\_info < (3, 4, 1)
+5 )
+\end{DoxyCode}

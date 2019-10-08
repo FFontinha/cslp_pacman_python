@@ -1,0 +1,78 @@
+\hypertarget{class__pytest_1_1cacheprovider_1_1_cache}{}\section{\+\_\+pytest.\+cacheprovider.\+Cache Class Reference}
+\label{class__pytest_1_1cacheprovider_1_1_cache}\index{\+\_\+pytest.\+cacheprovider.\+Cache@{\+\_\+pytest.\+cacheprovider.\+Cache}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_af4a86ac1036af0761f3c9076dd33fb4a}\label{class__pytest_1_1cacheprovider_1_1_cache_af4a86ac1036af0761f3c9076dd33fb4a}} 
+def {\bfseries for\+\_\+config} (cls, config)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_ac2cfea5bbe9d51ea01e35296686cf95b}\label{class__pytest_1_1cacheprovider_1_1_cache_ac2cfea5bbe9d51ea01e35296686cf95b}} 
+def {\bfseries warn} (self, fmt, args)
+\item 
+def \hyperlink{class__pytest_1_1cacheprovider_1_1_cache_a127fc1232969fda6de872312d8520059}{makedir} (self, name)
+\item 
+def \hyperlink{class__pytest_1_1cacheprovider_1_1_cache_afb5455632ee3d406b3226f63f7a3cca7}{get} (self, key, default)
+\item 
+def \hyperlink{class__pytest_1_1cacheprovider_1_1_cache_a5ae178e79e86425ce2c56dfcf96bbf3b}{set} (self, key, value)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_a8f4e5b9af32d799f9c00c160ceb27915}\label{class__pytest_1_1cacheprovider_1_1_cache_a8f4e5b9af32d799f9c00c160ceb27915}} 
+def {\bfseries cache\+\_\+dir\+\_\+from\+\_\+config} (config)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_afb5455632ee3d406b3226f63f7a3cca7}\label{class__pytest_1_1cacheprovider_1_1_cache_afb5455632ee3d406b3226f63f7a3cca7}} 
+\index{\+\_\+pytest\+::cacheprovider\+::\+Cache@{\+\_\+pytest\+::cacheprovider\+::\+Cache}!get@{get}}
+\index{get@{get}!\+\_\+pytest\+::cacheprovider\+::\+Cache@{\+\_\+pytest\+::cacheprovider\+::\+Cache}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+cacheprovider.\+Cache.\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{default }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return cached value for the given key.  If no value
+was yet cached or the value cannot be read, the specified
+default is returned.
+
+:param key: must be a ``/`` separated value. Usually the first
+     name is the name of your plugin or your application.
+:param default: must be provided in case of a cache-miss or
+     invalid cache values.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_a127fc1232969fda6de872312d8520059}\label{class__pytest_1_1cacheprovider_1_1_cache_a127fc1232969fda6de872312d8520059}} 
+\index{\+\_\+pytest\+::cacheprovider\+::\+Cache@{\+\_\+pytest\+::cacheprovider\+::\+Cache}!makedir@{makedir}}
+\index{makedir@{makedir}!\+\_\+pytest\+::cacheprovider\+::\+Cache@{\+\_\+pytest\+::cacheprovider\+::\+Cache}}
+\subsubsection{\texorpdfstring{makedir()}{makedir()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+cacheprovider.\+Cache.\+makedir (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a directory path object with the given name.  If the
+directory does not yet exist, it will be created.  You can use it
+to manage files likes e. g. store/retrieve database
+dumps across test sessions.
+
+:param name: must be a string not containing a ``/`` separator.
+     Make sure the name contains your plugin or application
+     identifiers to prevent clashes with other cache users.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_a5ae178e79e86425ce2c56dfcf96bbf3b}\label{class__pytest_1_1cacheprovider_1_1_cache_a5ae178e79e86425ce2c56dfcf96bbf3b}} 
+\index{\+\_\+pytest\+::cacheprovider\+::\+Cache@{\+\_\+pytest\+::cacheprovider\+::\+Cache}!set@{set}}
+\index{set@{set}!\+\_\+pytest\+::cacheprovider\+::\+Cache@{\+\_\+pytest\+::cacheprovider\+::\+Cache}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+cacheprovider.\+Cache.\+set (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}save value for the given key.
+
+:param key: must be a ``/`` separated value. Usually the first
+     name is the name of your plugin or your application.
+:param value: must be of any combination of basic
+       python types, including nested types
+       like e. g. lists of dictionaries.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/cacheprovider.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+\hypertarget{classsetuptools_1_1config_1_1_config_handler}{}\section{setuptools.\+config.\+Config\+Handler Class Reference}
+\label{classsetuptools_1_1config_1_1_config_handler}\index{setuptools.\+config.\+Config\+Handler@{setuptools.\+config.\+Config\+Handler}}
+
+
+Inherits object.
+
+
+
+Inherited by \hyperlink{classsetuptools_1_1config_1_1_config_metadata_handler}{setuptools.\+config.\+Config\+Metadata\+Handler}, and \hyperlink{classsetuptools_1_1config_1_1_config_options_handler}{setuptools.\+config.\+Config\+Options\+Handler}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1config_1_1_config_handler_a00d3fc6e1c42f5e46490a423b4d124b6}\label{classsetuptools_1_1config_1_1_config_handler_a00d3fc6e1c42f5e46490a423b4d124b6}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, target\+\_\+obj, options, ignore\+\_\+option\+\_\+errors=False)
+\item 
+def \hyperlink{classsetuptools_1_1config_1_1_config_handler_aae6195fe85e3caf2da8bf0b41644e234}{parsers} (self)
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1config_1_1_config_handler_a972a9b2d1f6a6782ad900b58a63092d5}\label{classsetuptools_1_1config_1_1_config_handler_a972a9b2d1f6a6782ad900b58a63092d5}} 
+def {\bfseries \+\_\+\+\_\+setitem\+\_\+\+\_\+} (self, option\+\_\+name, value)
+\item 
+def \hyperlink{classsetuptools_1_1config_1_1_config_handler_a253ac8a3585f40218d2e09d3243ade5b}{parse\+\_\+section} (self, section\+\_\+options)
+\item 
+def \hyperlink{classsetuptools_1_1config_1_1_config_handler_afdcabf01520d6e9a99ebf893b8422f17}{parse} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1config_1_1_config_handler_a5d64dedea13caaf606cde29c6aac8d97}\label{classsetuptools_1_1config_1_1_config_handler_a5d64dedea13caaf606cde29c6aac8d97}} 
+{\bfseries ignore\+\_\+option\+\_\+errors}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1config_1_1_config_handler_aa932a185c0e0fd1d98ebc8bceb88b153}\label{classsetuptools_1_1config_1_1_config_handler_aa932a185c0e0fd1d98ebc8bceb88b153}} 
+{\bfseries target\+\_\+obj}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1config_1_1_config_handler_a46419994f67045997eeb6dfd75da23d1}\label{classsetuptools_1_1config_1_1_config_handler_a46419994f67045997eeb6dfd75da23d1}} 
+{\bfseries sections}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1config_1_1_config_handler_a670721835f76b2148ef5f8b05e51d8f1}\label{classsetuptools_1_1config_1_1_config_handler_a670721835f76b2148ef5f8b05e51d8f1}} 
+{\bfseries set\+\_\+options}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1config_1_1_config_handler_a4d832c71e7372fa90bc76a5827de5ed2}\label{classsetuptools_1_1config_1_1_config_handler_a4d832c71e7372fa90bc76a5827de5ed2}} 
+{\bfseries section\+\_\+prefix}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1config_1_1_config_handler_a7692b812de7bbc4541531b169036064f}\label{classsetuptools_1_1config_1_1_config_handler_a7692b812de7bbc4541531b169036064f}} 
+{\bfseries aliases}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Handles metadata supplied in configuration files.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsetuptools_1_1config_1_1_config_handler_afdcabf01520d6e9a99ebf893b8422f17}\label{classsetuptools_1_1config_1_1_config_handler_afdcabf01520d6e9a99ebf893b8422f17}} 
+\index{setuptools\+::config\+::\+Config\+Handler@{setuptools\+::config\+::\+Config\+Handler}!parse@{parse}}
+\index{parse@{parse}!setuptools\+::config\+::\+Config\+Handler@{setuptools\+::config\+::\+Config\+Handler}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily def setuptools.\+config.\+Config\+Handler.\+parse (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parses configuration file items from one
+or more related sections.\end{DoxyVerb}
+ \mbox{\Hypertarget{classsetuptools_1_1config_1_1_config_handler_a253ac8a3585f40218d2e09d3243ade5b}\label{classsetuptools_1_1config_1_1_config_handler_a253ac8a3585f40218d2e09d3243ade5b}} 
+\index{setuptools\+::config\+::\+Config\+Handler@{setuptools\+::config\+::\+Config\+Handler}!parse\+\_\+section@{parse\+\_\+section}}
+\index{parse\+\_\+section@{parse\+\_\+section}!setuptools\+::config\+::\+Config\+Handler@{setuptools\+::config\+::\+Config\+Handler}}
+\subsubsection{\texorpdfstring{parse\+\_\+section()}{parse\_section()}}
+{\footnotesize\ttfamily def setuptools.\+config.\+Config\+Handler.\+parse\+\_\+section (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{section\+\_\+options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parses configuration file section.
+
+:param dict section_options:
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classsetuptools_1_1config_1_1_config_handler_aae6195fe85e3caf2da8bf0b41644e234}\label{classsetuptools_1_1config_1_1_config_handler_aae6195fe85e3caf2da8bf0b41644e234}} 
+\index{setuptools\+::config\+::\+Config\+Handler@{setuptools\+::config\+::\+Config\+Handler}!parsers@{parsers}}
+\index{parsers@{parsers}!setuptools\+::config\+::\+Config\+Handler@{setuptools\+::config\+::\+Config\+Handler}}
+\subsubsection{\texorpdfstring{parsers()}{parsers()}}
+{\footnotesize\ttfamily def setuptools.\+config.\+Config\+Handler.\+parsers (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Metadata item name to parser function mapping.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/setuptools/config.\+py\end{DoxyCompactItemize}

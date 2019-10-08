@@ -1,0 +1,90 @@
+\hypertarget{namespace__pytest_1_1assertion}{}\section{\+\_\+pytest.\+assertion Namespace Reference}
+\label{namespace__pytest_1_1assertion}\index{\+\_\+pytest.\+assertion@{\+\_\+pytest.\+assertion}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace__pytest_1_1assertion_1_1rewrite}{rewrite}
+\item 
+ \hyperlink{namespace__pytest_1_1assertion_1_1truncate}{truncate}
+\item 
+ \hyperlink{namespace__pytest_1_1assertion_1_1util}{util}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class__pytest_1_1assertion_1_1_assertion_state}{Assertion\+State}
+\item 
+class \hyperlink{class__pytest_1_1assertion_1_1_dummy_rewrite_hook}{Dummy\+Rewrite\+Hook}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1assertion_abd34d536f9e3973b0a414084fd0bd1cd}\label{namespace__pytest_1_1assertion_abd34d536f9e3973b0a414084fd0bd1cd}} 
+def {\bfseries pytest\+\_\+addoption} (parser)
+\item 
+def \hyperlink{namespace__pytest_1_1assertion_ae67a9be38000c6db37ac5f7775e6ad33}{register\+\_\+assert\+\_\+rewrite} (names)
+\item 
+def \hyperlink{namespace__pytest_1_1assertion_a00eeb8dd8f386c69e73741d12ab8a204}{install\+\_\+importhook} (config)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1assertion_a10ddb14226a7de70aad1e6ce96e29537}\label{namespace__pytest_1_1assertion_a10ddb14226a7de70aad1e6ce96e29537}} 
+def {\bfseries pytest\+\_\+collection} (session)
+\item 
+def \hyperlink{namespace__pytest_1_1assertion_a22e8b90bf006e6950f78877966756b8f}{pytest\+\_\+runtest\+\_\+setup} (item)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1assertion_a2863cf908b2859f16f427bb0f0a6c1fc}\label{namespace__pytest_1_1assertion_a2863cf908b2859f16f427bb0f0a6c1fc}} 
+def {\bfseries pytest\+\_\+runtest\+\_\+teardown} (item)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1assertion_aadd1ba63417bb9cf5cf657e1135ed606}\label{namespace__pytest_1_1assertion_aadd1ba63417bb9cf5cf657e1135ed606}} 
+def {\bfseries pytest\+\_\+sessionfinish} (session)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1assertion_acf92d3c13ae1a80c7908517eec88f87c}\label{namespace__pytest_1_1assertion_acf92d3c13ae1a80c7908517eec88f87c}} 
+{\bfseries pytest\+\_\+assertrepr\+\_\+compare} = \hyperlink{namespace__pytest_1_1assertion_1_1util_a0d808117a2ab9db3c81e7bf8c2e2fe0c}{util.\+assertrepr\+\_\+compare}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}support for presenting detailed information in failing assertions.
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1assertion_a00eeb8dd8f386c69e73741d12ab8a204}\label{namespace__pytest_1_1assertion_a00eeb8dd8f386c69e73741d12ab8a204}} 
+\index{\+\_\+pytest\+::assertion@{\+\_\+pytest\+::assertion}!install\+\_\+importhook@{install\+\_\+importhook}}
+\index{install\+\_\+importhook@{install\+\_\+importhook}!\+\_\+pytest\+::assertion@{\+\_\+pytest\+::assertion}}
+\subsubsection{\texorpdfstring{install\+\_\+importhook()}{install\_importhook()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+install\+\_\+importhook (\begin{DoxyParamCaption}\item[{}]{config }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Try to install the rewrite hook, raise SystemError if it fails.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1assertion_a22e8b90bf006e6950f78877966756b8f}\label{namespace__pytest_1_1assertion_a22e8b90bf006e6950f78877966756b8f}} 
+\index{\+\_\+pytest\+::assertion@{\+\_\+pytest\+::assertion}!pytest\+\_\+runtest\+\_\+setup@{pytest\+\_\+runtest\+\_\+setup}}
+\index{pytest\+\_\+runtest\+\_\+setup@{pytest\+\_\+runtest\+\_\+setup}!\+\_\+pytest\+::assertion@{\+\_\+pytest\+::assertion}}
+\subsubsection{\texorpdfstring{pytest\+\_\+runtest\+\_\+setup()}{pytest\_runtest\_setup()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+pytest\+\_\+runtest\+\_\+setup (\begin{DoxyParamCaption}\item[{}]{item }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Setup the pytest_assertrepr_compare hook
+
+The newinterpret and rewrite modules will use util._reprcompare if
+it exists to use custom reporting via the
+pytest_assertrepr_compare hook.  This sets up this custom
+comparison for the test.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1assertion_ae67a9be38000c6db37ac5f7775e6ad33}\label{namespace__pytest_1_1assertion_ae67a9be38000c6db37ac5f7775e6ad33}} 
+\index{\+\_\+pytest\+::assertion@{\+\_\+pytest\+::assertion}!register\+\_\+assert\+\_\+rewrite@{register\+\_\+assert\+\_\+rewrite}}
+\index{register\+\_\+assert\+\_\+rewrite@{register\+\_\+assert\+\_\+rewrite}!\+\_\+pytest\+::assertion@{\+\_\+pytest\+::assertion}}
+\subsubsection{\texorpdfstring{register\+\_\+assert\+\_\+rewrite()}{register\_assert\_rewrite()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+assertion.\+register\+\_\+assert\+\_\+rewrite (\begin{DoxyParamCaption}\item[{}]{names }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register one or more module names to be rewritten on import.
+
+This function will make sure that this module or all modules inside
+the package will get their assert statements rewritten.
+Thus you should make sure to call this before the module is
+actually imported, usually in your __init__.py if you are a plugin
+using a package.
+
+:raise TypeError: if the given module names are not strings.
+\end{DoxyVerb}
+ 

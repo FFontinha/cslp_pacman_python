@@ -1,0 +1,25 @@
+var __socket3_8py =
+[
+    [ "_wrefsocket", "classgevent_1_1__socket3_1_1__wrefsocket.html", null ],
+    [ "socket", "classgevent_1_1__socket3_1_1socket.html", "classgevent_1_1__socket3_1_1socket" ],
+    [ "_get_memory", "__socket3_8py.html#afe4403ba5f74ed2545d9bea5b2f94def", null ],
+    [ "fromfd", "__socket3_8py.html#afee07c7980d68bbd43fe9fa22e7bc543", null ],
+    [ "fromshare", "__socket3_8py.html#a5f5c2b678f70a7a54b1ae17e90572992", null ],
+    [ "socketpair", "__socket3_8py.html#ac4533378cc02af62ff3518867e7b5efd", null ],
+    [ "__all__", "__socket3_8py.html#aef90e2bca9a0083af36a329294af006e", null ],
+    [ "__dns__", "__socket3_8py.html#a34206cc5fe49456b477b7fde90001ea0", null ],
+    [ "__extensions__", "__socket3_8py.html#a68c33a860f1e7b2585573d0fb4a6e14f", null ],
+    [ "__implements__", "__socket3_8py.html#a69c20d5ed6eeea208aa39128ae7fd922", null ],
+    [ "__imports__", "__socket3_8py.html#a1814ddcf583ed3171b97b8d60786da51", null ],
+    [ "__socket__", "__socket3_8py.html#a413bf8260b5f77c27d61acecec52cff6", null ],
+    [ "_LOCALHOST", "__socket3_8py.html#a1be983eaba1254c3b1f093290bc1d02e", null ],
+    [ "_LOCALHOST_V6", "__socket3_8py.html#a05e25b8acd11350661bad577115b4e5f", null ],
+    [ "close", "__socket3_8py.html#ac3701a95ca7cd9fe3f54cfa93e942647", null ],
+    [ "dunder_names_to_keep", "__socket3_8py.html#a6b4d9ca5ec84530d82ded6d7c1a0f625", null ],
+    [ "ECONNREFUSED", "__socket3_8py.html#a3b86d8ad9f340864357d63d241d372eb", null ],
+    [ "EHOSTUNREACH", "__socket3_8py.html#ab1860b5f800d108bbd2dfd628a6ddbb4", null ],
+    [ "names_to_ignore", "__socket3_8py.html#a346ac852fc35904cfcd1404629344c79", null ],
+    [ "SocketIO", "__socket3_8py.html#a2a62116b59be85ef70fa350dd6250e5e", null ],
+    [ "SocketType", "__socket3_8py.html#a6267687dbe403a376a86bb4d4de248db", null ],
+    [ "timeout_default", "__socket3_8py.html#a4e43e22861afa146e11b8964d5772684", null ]
+];

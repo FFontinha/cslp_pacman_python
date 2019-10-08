@@ -1,0 +1,95 @@
+\hypertarget{classaiohttp_1_1http__writer_1_1_stream_writer}{}\section{aiohttp.\+http\+\_\+writer.\+Stream\+Writer Class Reference}
+\label{classaiohttp_1_1http__writer_1_1_stream_writer}\index{aiohttp.\+http\+\_\+writer.\+Stream\+Writer@{aiohttp.\+http\+\_\+writer.\+Stream\+Writer}}
+
+
+Inherits \hyperlink{classaiohttp_1_1abc_1_1_abstract_stream_writer}{aiohttp.\+abc.\+Abstract\+Stream\+Writer}.
+
+
+
+Inherited by \hyperlink{classaiohttp_1_1web__fileresponse_1_1_sendfile_stream_writer}{aiohttp.\+web\+\_\+fileresponse.\+Sendfile\+Stream\+Writer}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__writer_1_1_stream_writer_a8ca0bb03d80e4a85517c706ea0f44be1}\label{classaiohttp_1_1http__writer_1_1_stream_writer_a8ca0bb03d80e4a85517c706ea0f44be1}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__writer_1_1_stream_writer_a5700b1f8fad98a1e624a05d7fd3e15c5}\label{classaiohttp_1_1http__writer_1_1_stream_writer_a5700b1f8fad98a1e624a05d7fd3e15c5}} 
+def {\bfseries transport} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__writer_1_1_stream_writer_a913eeb8d77e926f4f62f9bfc8f36c291}\label{classaiohttp_1_1http__writer_1_1_stream_writer_a913eeb8d77e926f4f62f9bfc8f36c291}} 
+def {\bfseries protocol} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__writer_1_1_stream_writer_ac9f1d41abd833543dc883786a639aaa8}\label{classaiohttp_1_1http__writer_1_1_stream_writer_ac9f1d41abd833543dc883786a639aaa8}} 
+def {\bfseries enable\+\_\+chunking} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__writer_1_1_stream_writer_a2571ebb9a4868e29720f41f24083ab0d}\label{classaiohttp_1_1http__writer_1_1_stream_writer_a2571ebb9a4868e29720f41f24083ab0d}} 
+def {\bfseries enable\+\_\+compression}
+\item 
+def \hyperlink{classaiohttp_1_1http__writer_1_1_stream_writer_a25f7d4ab3ecc49c6de1c57a2adc9502f}{write} (self, chunk, \hyperlink{classaiohttp_1_1http__writer_1_1_stream_writer_a5db49131b819dbe234ea180010417b05}{drain}=True, L\+I\+M\+IT=0x10000)
+\item 
+def \hyperlink{classaiohttp_1_1http__writer_1_1_stream_writer_abbb79b9abf414dc7ce352766920ab868}{write\+\_\+headers} (self, status\+\_\+line, headers)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__writer_1_1_stream_writer_af573e959c54f83c8c4d5cdc9b94bc453}\label{classaiohttp_1_1http__writer_1_1_stream_writer_af573e959c54f83c8c4d5cdc9b94bc453}} 
+def {\bfseries write\+\_\+eof} (self, chunk=b\textquotesingle{}\textquotesingle{})
+\item 
+def \hyperlink{classaiohttp_1_1http__writer_1_1_stream_writer_a5db49131b819dbe234ea180010417b05}{drain} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__writer_1_1_stream_writer_ad7d5b08bef49817df72567415d24bb30}\label{classaiohttp_1_1http__writer_1_1_stream_writer_ad7d5b08bef49817df72567415d24bb30}} 
+{\bfseries loop}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__writer_1_1_stream_writer_aede39331e38ab0cd6cc595c59ee1b122}\label{classaiohttp_1_1http__writer_1_1_stream_writer_aede39331e38ab0cd6cc595c59ee1b122}} 
+{\bfseries length}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__writer_1_1_stream_writer_a506ba6d6c5914530f47b9c9e8375cd74}\label{classaiohttp_1_1http__writer_1_1_stream_writer_a506ba6d6c5914530f47b9c9e8375cd74}} 
+{\bfseries chunked}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__writer_1_1_stream_writer_ae699983f60bc475928271988b2ff994b}\label{classaiohttp_1_1http__writer_1_1_stream_writer_ae699983f60bc475928271988b2ff994b}} 
+{\bfseries buffer\+\_\+size}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1http__writer_1_1_stream_writer_aa3ddf3a6bbb94695b23a089994757ba0}\label{classaiohttp_1_1http__writer_1_1_stream_writer_aa3ddf3a6bbb94695b23a089994757ba0}} 
+{\bfseries output\+\_\+size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1http__writer_1_1_stream_writer_a5db49131b819dbe234ea180010417b05}\label{classaiohttp_1_1http__writer_1_1_stream_writer_a5db49131b819dbe234ea180010417b05}} 
+\index{aiohttp\+::http\+\_\+writer\+::\+Stream\+Writer@{aiohttp\+::http\+\_\+writer\+::\+Stream\+Writer}!drain@{drain}}
+\index{drain@{drain}!aiohttp\+::http\+\_\+writer\+::\+Stream\+Writer@{aiohttp\+::http\+\_\+writer\+::\+Stream\+Writer}}
+\subsubsection{\texorpdfstring{drain()}{drain()}}
+{\footnotesize\ttfamily def aiohttp.\+http\+\_\+writer.\+Stream\+Writer.\+drain (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{None }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Flush the write buffer.
+
+The intended use is to write
+
+  await w.write(data)
+  await w.drain()
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1http__writer_1_1_stream_writer_a25f7d4ab3ecc49c6de1c57a2adc9502f}\label{classaiohttp_1_1http__writer_1_1_stream_writer_a25f7d4ab3ecc49c6de1c57a2adc9502f}} 
+\index{aiohttp\+::http\+\_\+writer\+::\+Stream\+Writer@{aiohttp\+::http\+\_\+writer\+::\+Stream\+Writer}!write@{write}}
+\index{write@{write}!aiohttp\+::http\+\_\+writer\+::\+Stream\+Writer@{aiohttp\+::http\+\_\+writer\+::\+Stream\+Writer}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily def aiohttp.\+http\+\_\+writer.\+Stream\+Writer.\+write (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{chunk,  }\item[{}]{drain = {\ttfamily True},  }\item[{}]{L\+I\+M\+IT = {\ttfamily 0x10000},  }\item[{}]{None }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes chunk of data to a stream.
+
+write_eof() indicates end of stream.
+writer can't be used after write_eof() method being called.
+write() return drain future.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1http__writer_1_1_stream_writer_abbb79b9abf414dc7ce352766920ab868}\label{classaiohttp_1_1http__writer_1_1_stream_writer_abbb79b9abf414dc7ce352766920ab868}} 
+\index{aiohttp\+::http\+\_\+writer\+::\+Stream\+Writer@{aiohttp\+::http\+\_\+writer\+::\+Stream\+Writer}!write\+\_\+headers@{write\+\_\+headers}}
+\index{write\+\_\+headers@{write\+\_\+headers}!aiohttp\+::http\+\_\+writer\+::\+Stream\+Writer@{aiohttp\+::http\+\_\+writer\+::\+Stream\+Writer}}
+\subsubsection{\texorpdfstring{write\+\_\+headers()}{write\_headers()}}
+{\footnotesize\ttfamily def aiohttp.\+http\+\_\+writer.\+Stream\+Writer.\+write\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{status\+\_\+line,  }\item[{}]{headers,  }\item[{}]{None }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write request/response status and headers.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/http\+\_\+writer.\+py\end{DoxyCompactItemize}

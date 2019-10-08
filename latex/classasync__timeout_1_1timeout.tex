@@ -1,0 +1,51 @@
+\hypertarget{classasync__timeout_1_1timeout}{}\section{async\+\_\+timeout.\+timeout Class Reference}
+\label{classasync__timeout_1_1timeout}\index{async\+\_\+timeout.\+timeout@{async\+\_\+timeout.\+timeout}}
+
+
+Inherited by \hyperlink{classaiohttp_1_1helpers_1_1_ceil_timeout}{aiohttp.\+helpers.\+Ceil\+Timeout}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classasync__timeout_1_1timeout_a54dad3986587388d0fd50b0b67301fa3}\label{classasync__timeout_1_1timeout_a54dad3986587388d0fd50b0b67301fa3}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+\mbox{\Hypertarget{classasync__timeout_1_1timeout_a9d0b8c434b16a729376394df07a48378}\label{classasync__timeout_1_1timeout_a9d0b8c434b16a729376394df07a48378}} 
+def {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classasync__timeout_1_1timeout_a0d8437d5a09ab0fb4a5746d548a03d58}\label{classasync__timeout_1_1timeout_a0d8437d5a09ab0fb4a5746d548a03d58}} 
+def {\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+}
+\item 
+\mbox{\Hypertarget{classasync__timeout_1_1timeout_a4b964259682180282b971c4259b96327}\label{classasync__timeout_1_1timeout_a4b964259682180282b971c4259b96327}} 
+def {\bfseries \+\_\+\+\_\+aenter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classasync__timeout_1_1timeout_a36e76b8fb17f33937b37e0a6ad0aecdc}\label{classasync__timeout_1_1timeout_a36e76b8fb17f33937b37e0a6ad0aecdc}} 
+def {\bfseries \+\_\+\+\_\+aexit\+\_\+\+\_\+}
+\item 
+\mbox{\Hypertarget{classasync__timeout_1_1timeout_ac82e95d08f75c52598335dca904a8e94}\label{classasync__timeout_1_1timeout_ac82e95d08f75c52598335dca904a8e94}} 
+def {\bfseries expired} (self)
+\item 
+\mbox{\Hypertarget{classasync__timeout_1_1timeout_a65812b63fc942f80d0515746a2844a5d}\label{classasync__timeout_1_1timeout_a65812b63fc942f80d0515746a2844a5d}} 
+def {\bfseries remaining} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}timeout context manager.
+
+Useful in cases when you want to apply timeout logic around block
+of code or in cases when asyncio.wait_for is not suitable. For example:
+
+>>> with timeout(0.001):
+...     async with aiohttp.get('https://github.com') as r:
+...         await r.text()
+
+
+timeout - value in seconds or None to disable timeout logic
+loop - asyncio compatible event loop
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/async\+\_\+timeout/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

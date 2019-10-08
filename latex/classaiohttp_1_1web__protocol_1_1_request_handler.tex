@@ -1,0 +1,192 @@
+\hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler}{}\section{aiohttp.\+web\+\_\+protocol.\+Request\+Handler Class Reference}
+\label{classaiohttp_1_1web__protocol_1_1_request_handler}\index{aiohttp.\+web\+\_\+protocol.\+Request\+Handler@{aiohttp.\+web\+\_\+protocol.\+Request\+Handler}}
+
+
+Inherits \hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol}{aiohttp.\+base\+\_\+protocol.\+Base\+Protocol}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_ab7bf595a3948d745d8cb79eef654ee03}\label{classaiohttp_1_1web__protocol_1_1_request_handler_ab7bf595a3948d745d8cb79eef654ee03}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, manager, loop=None, keepalive\+\_\+timeout=75, tcp\+\_\+keepalive=True, logger=server\+\_\+logger, access\+\_\+log\+\_\+class=\hyperlink{classaiohttp_1_1helpers_1_1_access_logger}{helpers.\+Access\+Logger}, access\+\_\+log=access\+\_\+logger, access\+\_\+log\+\_\+format=helpers.\+Access\+Logger.\+L\+O\+G\+\_\+\+F\+O\+R\+M\+AT, debug=False, max\+\_\+line\+\_\+size=8190, max\+\_\+headers=32768, max\+\_\+field\+\_\+size=8190, lingering\+\_\+time=10.\+0)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a02ef7ccf5536dabfb96d3d705fdd0fad}\label{classaiohttp_1_1web__protocol_1_1_request_handler_a02ef7ccf5536dabfb96d3d705fdd0fad}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a0d79aabb48502b0efd5acbdcc35685a8}\label{classaiohttp_1_1web__protocol_1_1_request_handler_a0d79aabb48502b0efd5acbdcc35685a8}} 
+def {\bfseries keepalive\+\_\+timeout} (self)
+\item 
+def \hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_af66b3af02b5c875e969ad888131984e4}{shutdown} (self, timeout=15.\+0)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_aea24c6704bae5aeee2eed9ad69281fa8}\label{classaiohttp_1_1web__protocol_1_1_request_handler_aea24c6704bae5aeee2eed9ad69281fa8}} 
+def {\bfseries connection\+\_\+made} (self, transport)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a2c0a6a11094bbf5c0984fb8581f1f171}\label{classaiohttp_1_1web__protocol_1_1_request_handler_a2c0a6a11094bbf5c0984fb8581f1f171}} 
+def {\bfseries connection\+\_\+lost} (self, exc)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a51017f3b2a20557f69dc78e4b01cff42}\label{classaiohttp_1_1web__protocol_1_1_request_handler_a51017f3b2a20557f69dc78e4b01cff42}} 
+def {\bfseries set\+\_\+parser} (self, parser)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_aafb34f52a2ed49541826b097196302da}\label{classaiohttp_1_1web__protocol_1_1_request_handler_aafb34f52a2ed49541826b097196302da}} 
+def {\bfseries eof\+\_\+received} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a5b19ac4cb6a1d0b6315b37b4db6e4928}\label{classaiohttp_1_1web__protocol_1_1_request_handler_a5b19ac4cb6a1d0b6315b37b4db6e4928}} 
+def {\bfseries data\+\_\+received} (self, data)
+\item 
+def \hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_ab073a98a5ec1ca97277314e24f9b03fb}{keep\+\_\+alive} (self, val)
+\item 
+def \hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a446ed0bc907a0ebee1f201432c1addef}{close} (self)
+\item 
+def \hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a690a8b2e869e3ccd187ebbd53b1f193e}{force\+\_\+close} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a72c411143854a049c91b28d93af9dce9}\label{classaiohttp_1_1web__protocol_1_1_request_handler_a72c411143854a049c91b28d93af9dce9}} 
+def {\bfseries log\+\_\+access} (self, request, response, time)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_aefd99c59479fca809dbf89e36288900e}\label{classaiohttp_1_1web__protocol_1_1_request_handler_aefd99c59479fca809dbf89e36288900e}} 
+def {\bfseries log\+\_\+debug} (self, args, kw)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_ac3f745aed9685f641c14c1c82a866f5f}\label{classaiohttp_1_1web__protocol_1_1_request_handler_ac3f745aed9685f641c14c1c82a866f5f}} 
+def {\bfseries log\+\_\+exception} (self, args, kw)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a5a19491269d519249841276325a5a12c}\label{classaiohttp_1_1web__protocol_1_1_request_handler_a5a19491269d519249841276325a5a12c}} 
+def {\bfseries pause\+\_\+reading} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a514422a904a45e29a82c8c084f26bd35}\label{classaiohttp_1_1web__protocol_1_1_request_handler_a514422a904a45e29a82c8c084f26bd35}} 
+def {\bfseries resume\+\_\+reading} (self)
+\item 
+def \hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a9360c259487f6581c6a979e9c1031e68}{start} (self)
+\item 
+def \hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_aa66bb9cd253f5f10045b14649f4ea570}{handle\+\_\+error} (self, request, status=500, exc=None, message=None)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a96ab9bc10a024b69cb68914ed891c8c9}\label{classaiohttp_1_1web__protocol_1_1_request_handler_a96ab9bc10a024b69cb68914ed891c8c9}} 
+def {\bfseries handle\+\_\+parse\+\_\+error} (self, writer, status, exc=None, message=None)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a5c39ae124dfeffb715bbd42752fa340b}\label{classaiohttp_1_1web__protocol_1_1_request_handler_a5c39ae124dfeffb715bbd42752fa340b}} 
+{\bfseries logger}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a74b033940c7eaebff6690510cd863678}\label{classaiohttp_1_1web__protocol_1_1_request_handler_a74b033940c7eaebff6690510cd863678}} 
+{\bfseries debug}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_abe8fb907c006144a10f627c8f97f84ed}\label{classaiohttp_1_1web__protocol_1_1_request_handler_abe8fb907c006144a10f627c8f97f84ed}} 
+{\bfseries access\+\_\+log}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a8662c67cdf94456b824bbf4fb985a6a1}\label{classaiohttp_1_1web__protocol_1_1_request_handler_a8662c67cdf94456b824bbf4fb985a6a1}} 
+{\bfseries access\+\_\+logger}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_afd50c4aebce51c36a035d7b751b6b210}\label{classaiohttp_1_1web__protocol_1_1_request_handler_afd50c4aebce51c36a035d7b751b6b210}} 
+{\bfseries transport}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_af9e1d1c11b137c1b0f21aef5010ca079}\label{classaiohttp_1_1web__protocol_1_1_request_handler_af9e1d1c11b137c1b0f21aef5010ca079}} 
+int {\bfseries K\+E\+E\+P\+A\+L\+I\+V\+E\+\_\+\+R\+E\+S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+D\+E\+L\+AY} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}HTTP protocol implementation.
+
+RequestHandler handles incoming HTTP request. It reads request line,
+request headers and request payload and calls handle_request() method.
+By default it always returns with 404 response.
+
+RequestHandler handles errors in incoming request, like bad
+status line, bad headers or incomplete payload. If any error occurs,
+connection gets closed.
+
+:param keepalive_timeout: number of seconds before closing
+                          keep-alive connection
+:type keepalive_timeout: int or None
+
+:param bool tcp_keepalive: TCP keep-alive is on, default is on
+
+:param bool debug: enable debug mode
+
+:param logger: custom logger object
+:type logger: aiohttp.log.server_logger
+
+:param access_log_class: custom class for access_logger
+:type access_log_class: aiohttp.abc.AbstractAccessLogger
+
+:param access_log: custom logging object
+:type access_log: aiohttp.log.server_logger
+
+:param str access_log_format: access log format string
+
+:param loop: Optional event loop
+
+:param int max_line_size: Optional maximum header line size
+
+:param int max_field_size: Optional maximum header field size
+
+:param int max_headers: Optional maximum header size\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a446ed0bc907a0ebee1f201432c1addef}\label{classaiohttp_1_1web__protocol_1_1_request_handler_a446ed0bc907a0ebee1f201432c1addef}} 
+\index{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler@{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler}!close@{close}}
+\index{close@{close}!aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler@{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Stop accepting new pipelinig messages and close
+connection when handlers done processing messages\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a690a8b2e869e3ccd187ebbd53b1f193e}\label{classaiohttp_1_1web__protocol_1_1_request_handler_a690a8b2e869e3ccd187ebbd53b1f193e}} 
+\index{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler@{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler}!force\+\_\+close@{force\+\_\+close}}
+\index{force\+\_\+close@{force\+\_\+close}!aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler@{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler}}
+\subsubsection{\texorpdfstring{force\+\_\+close()}{force\_close()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+force\+\_\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Force close connection\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_aa66bb9cd253f5f10045b14649f4ea570}\label{classaiohttp_1_1web__protocol_1_1_request_handler_aa66bb9cd253f5f10045b14649f4ea570}} 
+\index{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler@{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler}!handle\+\_\+error@{handle\+\_\+error}}
+\index{handle\+\_\+error@{handle\+\_\+error}!aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler@{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler}}
+\subsubsection{\texorpdfstring{handle\+\_\+error()}{handle\_error()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+handle\+\_\+error (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{status = {\ttfamily 500},  }\item[{}]{exc = {\ttfamily None},  }\item[{}]{message = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handle errors.
+
+Returns HTTP response with specific status code. Logs additional
+information. It always closes current connection.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_ab073a98a5ec1ca97277314e24f9b03fb}\label{classaiohttp_1_1web__protocol_1_1_request_handler_ab073a98a5ec1ca97277314e24f9b03fb}} 
+\index{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler@{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler}!keep\+\_\+alive@{keep\+\_\+alive}}
+\index{keep\+\_\+alive@{keep\+\_\+alive}!aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler@{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler}}
+\subsubsection{\texorpdfstring{keep\+\_\+alive()}{keep\_alive()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+keep\+\_\+alive (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{val }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set keep-alive connection mode.
+
+:param bool val: new state.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_af66b3af02b5c875e969ad888131984e4}\label{classaiohttp_1_1web__protocol_1_1_request_handler_af66b3af02b5c875e969ad888131984e4}} 
+\index{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler@{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler@{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler}}
+\subsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+shutdown (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{timeout = {\ttfamily 15.0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Worker process is about to exit, we need cleanup everything and
+stop accepting requests. It is especially important for keep-alive
+connections.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a9360c259487f6581c6a979e9c1031e68}\label{classaiohttp_1_1web__protocol_1_1_request_handler_a9360c259487f6581c6a979e9c1031e68}} 
+\index{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler@{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler}!start@{start}}
+\index{start@{start}!aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler@{aiohttp\+::web\+\_\+protocol\+::\+Request\+Handler}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily def aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+start (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Process incoming request.
+
+It reads request line, request headers and request payload, then
+calls handle_request() method. Subclass has to override
+handle_request(). start() handles various exceptions in request
+or response handling. Connection is being closed always unless
+keep_alive(True) specified.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/web\+\_\+protocol.\+py\end{DoxyCompactItemize}

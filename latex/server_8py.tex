@@ -1,0 +1,47 @@
+\hypertarget{server_8py}{}\section{server.\+py File Reference}
+\label{server_8py}\index{server.\+py@{server.\+py}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classserver_1_1_game__server}{server.\+Game\+\_\+server}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceserver}{server}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceserver_a005764c00126daf80eaacfcc2451946c}{server.\+level}
+\item 
+\hyperlink{namespaceserver_a4f8abe5e41727de7cb88d5f2a826cdcb}{server.\+D\+E\+B\+UG}
+\item 
+\hyperlink{namespaceserver_addb76dcb1b81da9cf62eb9849b07211a}{server.\+format}
+\item 
+\hyperlink{namespaceserver_a520e79a10b246384fddda4381139cb5c}{server.\+wslogger} = logging.\+get\+Logger(\textquotesingle{}websockets\textquotesingle{})
+\item 
+\hyperlink{namespaceserver_abfa1d56012bc320e4b26361390f6fc24}{server.\+logger} = logging.\+get\+Logger(\textquotesingle{}Server\textquotesingle{})
+\item 
+\hyperlink{namespaceserver_a5de7d96778fa1c69916ba414cbf5b5bd}{server.\+Player} = namedtuple(\textquotesingle{}Player\textquotesingle{}, \mbox{[}\textquotesingle{}name\textquotesingle{}, \textquotesingle{}ws\textquotesingle{}\mbox{]})
+\item 
+\hyperlink{namespaceserver_aadab40bc4bd88b83c559fbe658ef25fc}{server.\+parser} = argparse.\+Argument\+Parser()
+\item 
+\hyperlink{namespaceserver_a692f59b384dd93287c366eb7e7c0608b}{server.\+help}
+\item 
+\hyperlink{namespaceserver_a70ecbc33459e4c393ccddd6f1d1bcc04}{server.\+default}
+\item 
+\hyperlink{namespaceserver_a72aa2cd67bf6ea46a0eea394a62534a2}{server.\+type}
+\item 
+\hyperlink{namespaceserver_a803365d66cd8c1e68f7e41a1837a59f4}{server.\+int}
+\item 
+\hyperlink{namespaceserver_aea7e1efc19535ee9bab8400a812b43a9}{server.\+args} = parser.\+parse\+\_\+args()
+\item 
+\hyperlink{namespaceserver_a9eff316f9603d6931577e565c3afeee3}{server.\+g} = Game\+\_\+server(args.\+map, args.\+ghosts, args.\+lives, args.\+timeout)
+\item 
+\hyperlink{namespaceserver_ab163e79d5204d92c409ff4961e7f530d}{server.\+game\+\_\+loop\+\_\+task} = asyncio.\+ensure\+\_\+future(g.\+mainloop())
+\item 
+\hyperlink{namespaceserver_a6a73b8acab3526375057956cf76a1036}{server.\+websocket\+\_\+server} = websockets.\+serve(g.\+incomming\+\_\+handler, args.\+bind, args.\+port)
+\item 
+\hyperlink{namespaceserver_ac09871606862ea18f9b00501a0844fd5}{server.\+loop} = asyncio.\+get\+\_\+event\+\_\+loop()
+\end{DoxyCompactItemize}

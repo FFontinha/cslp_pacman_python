@@ -1,0 +1,91 @@
+\hypertarget{namespace__pytest_1_1__code_1_1source}{}\section{\+\_\+pytest.\+\_\+code.\+source Namespace Reference}
+\label{namespace__pytest_1_1__code_1_1source}\index{\+\_\+pytest.\+\_\+code.\+source@{\+\_\+pytest.\+\_\+code.\+source}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespace__pytest_1_1__code_1_1source_a880c3f81c89810985d903019c632cce2}{compile\+\_\+} (source, filename=None, mode=\char`\"{}exec\char`\"{}, flags=0, dont\+\_\+inherit=0)
+\item 
+def \hyperlink{namespace__pytest_1_1__code_1_1source_a898c9e9866d45b01be4a377121197029}{getfslineno} (obj)
+\item 
+def \hyperlink{namespace__pytest_1_1__code_1_1source_ad4647a725198f413607fc6a33166c742}{findsource} (obj)
+\item 
+def \hyperlink{namespace__pytest_1_1__code_1_1source_a9badfc85c26fa72c5a02d62da993cfc2}{getsource} (obj, kwargs)
+\item 
+def \hyperlink{namespace__pytest_1_1__code_1_1source_a7a11c4b808daa88d8c1ec05f7e2e934f}{deindent} (lines, offset=None)
+\item 
+def \hyperlink{namespace__pytest_1_1__code_1_1source_ad2722e6aaa4eca513ba22384d317672a}{get\+\_\+statement\+\_\+startend2} (lineno, node)
+\item 
+def \hyperlink{namespace__pytest_1_1__code_1_1source_a7e55b7f4027353801bdd01a053468d5d}{getstatementrange\+\_\+ast} (lineno, source, assertion=False, astnode=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace__pytest_1_1__code_1_1source_aeea9fd65c04e5ab8aa858f4972f9f6b0}{cpy\+\_\+compile} = compile
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1__code_1_1source_a880c3f81c89810985d903019c632cce2}\label{namespace__pytest_1_1__code_1_1source_a880c3f81c89810985d903019c632cce2}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::source@{\+\_\+pytest\+::\+\_\+code\+::source}!compile\+\_\+@{compile\+\_\+}}
+\index{compile\+\_\+@{compile\+\_\+}!\+\_\+pytest\+::\+\_\+code\+::source@{\+\_\+pytest\+::\+\_\+code\+::source}}
+\subsubsection{\texorpdfstring{compile\+\_\+()}{compile\_()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+source.\+compile\+\_\+ (\begin{DoxyParamCaption}\item[{}]{source,  }\item[{}]{filename = {\ttfamily None},  }\item[{}]{mode = {\ttfamily \char`\"{}exec\char`\"{}},  }\item[{}]{flags = {\ttfamily 0},  }\item[{}]{dont\+\_\+inherit = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}compile the given source to a raw code object,
+    and maintain an internal cache which allows later
+    retrieval of the source code for the code object
+    and any recursively created code objects.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1__code_1_1source_a7a11c4b808daa88d8c1ec05f7e2e934f}\label{namespace__pytest_1_1__code_1_1source_a7a11c4b808daa88d8c1ec05f7e2e934f}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::source@{\+\_\+pytest\+::\+\_\+code\+::source}!deindent@{deindent}}
+\index{deindent@{deindent}!\+\_\+pytest\+::\+\_\+code\+::source@{\+\_\+pytest\+::\+\_\+code\+::source}}
+\subsubsection{\texorpdfstring{deindent()}{deindent()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+source.\+deindent (\begin{DoxyParamCaption}\item[{}]{lines,  }\item[{}]{offset = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1__code_1_1source_ad4647a725198f413607fc6a33166c742}\label{namespace__pytest_1_1__code_1_1source_ad4647a725198f413607fc6a33166c742}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::source@{\+\_\+pytest\+::\+\_\+code\+::source}!findsource@{findsource}}
+\index{findsource@{findsource}!\+\_\+pytest\+::\+\_\+code\+::source@{\+\_\+pytest\+::\+\_\+code\+::source}}
+\subsubsection{\texorpdfstring{findsource()}{findsource()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+source.\+findsource (\begin{DoxyParamCaption}\item[{}]{obj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1__code_1_1source_ad2722e6aaa4eca513ba22384d317672a}\label{namespace__pytest_1_1__code_1_1source_ad2722e6aaa4eca513ba22384d317672a}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::source@{\+\_\+pytest\+::\+\_\+code\+::source}!get\+\_\+statement\+\_\+startend2@{get\+\_\+statement\+\_\+startend2}}
+\index{get\+\_\+statement\+\_\+startend2@{get\+\_\+statement\+\_\+startend2}!\+\_\+pytest\+::\+\_\+code\+::source@{\+\_\+pytest\+::\+\_\+code\+::source}}
+\subsubsection{\texorpdfstring{get\+\_\+statement\+\_\+startend2()}{get\_statement\_startend2()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+source.\+get\+\_\+statement\+\_\+startend2 (\begin{DoxyParamCaption}\item[{}]{lineno,  }\item[{}]{node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1__code_1_1source_a898c9e9866d45b01be4a377121197029}\label{namespace__pytest_1_1__code_1_1source_a898c9e9866d45b01be4a377121197029}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::source@{\+\_\+pytest\+::\+\_\+code\+::source}!getfslineno@{getfslineno}}
+\index{getfslineno@{getfslineno}!\+\_\+pytest\+::\+\_\+code\+::source@{\+\_\+pytest\+::\+\_\+code\+::source}}
+\subsubsection{\texorpdfstring{getfslineno()}{getfslineno()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+source.\+getfslineno (\begin{DoxyParamCaption}\item[{}]{obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return source location (path, lineno) for the given object.
+If the source cannot be determined return ("", -1)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1__code_1_1source_a9badfc85c26fa72c5a02d62da993cfc2}\label{namespace__pytest_1_1__code_1_1source_a9badfc85c26fa72c5a02d62da993cfc2}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::source@{\+\_\+pytest\+::\+\_\+code\+::source}!getsource@{getsource}}
+\index{getsource@{getsource}!\+\_\+pytest\+::\+\_\+code\+::source@{\+\_\+pytest\+::\+\_\+code\+::source}}
+\subsubsection{\texorpdfstring{getsource()}{getsource()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+source.\+getsource (\begin{DoxyParamCaption}\item[{}]{obj,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1__code_1_1source_a7e55b7f4027353801bdd01a053468d5d}\label{namespace__pytest_1_1__code_1_1source_a7e55b7f4027353801bdd01a053468d5d}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::source@{\+\_\+pytest\+::\+\_\+code\+::source}!getstatementrange\+\_\+ast@{getstatementrange\+\_\+ast}}
+\index{getstatementrange\+\_\+ast@{getstatementrange\+\_\+ast}!\+\_\+pytest\+::\+\_\+code\+::source@{\+\_\+pytest\+::\+\_\+code\+::source}}
+\subsubsection{\texorpdfstring{getstatementrange\+\_\+ast()}{getstatementrange\_ast()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+source.\+getstatementrange\+\_\+ast (\begin{DoxyParamCaption}\item[{}]{lineno,  }\item[{}]{source,  }\item[{}]{assertion = {\ttfamily False},  }\item[{}]{astnode = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1__code_1_1source_aeea9fd65c04e5ab8aa858f4972f9f6b0}\label{namespace__pytest_1_1__code_1_1source_aeea9fd65c04e5ab8aa858f4972f9f6b0}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::source@{\+\_\+pytest\+::\+\_\+code\+::source}!cpy\+\_\+compile@{cpy\+\_\+compile}}
+\index{cpy\+\_\+compile@{cpy\+\_\+compile}!\+\_\+pytest\+::\+\_\+code\+::source@{\+\_\+pytest\+::\+\_\+code\+::source}}
+\subsubsection{\texorpdfstring{cpy\+\_\+compile}{cpy\_compile}}
+{\footnotesize\ttfamily \+\_\+pytest.\+\_\+code.\+source.\+cpy\+\_\+compile = compile}
+

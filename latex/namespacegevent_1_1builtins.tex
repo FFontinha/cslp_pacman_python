@@ -1,0 +1,24 @@
+\hypertarget{namespacegevent_1_1builtins}{}\section{gevent.\+builtins Namespace Reference}
+\label{namespacegevent_1_1builtins}\index{gevent.\+builtins@{gevent.\+builtins}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1builtins_af9e9a3f875b6ad49130df523300bc561}{\+\_\+\+\_\+import\+\_\+\+\_\+} (args, kwargs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1builtins_af9e9a3f875b6ad49130df523300bc561}\label{namespacegevent_1_1builtins_af9e9a3f875b6ad49130df523300bc561}} 
+\index{gevent\+::builtins@{gevent\+::builtins}!\+\_\+\+\_\+import\+\_\+\+\_\+@{\+\_\+\+\_\+import\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+import\+\_\+\+\_\+@{\+\_\+\+\_\+import\+\_\+\+\_\+}!gevent\+::builtins@{gevent\+::builtins}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+import\+\_\+\+\_\+()}{\_\_import\_\_()}}
+{\footnotesize\ttfamily def gevent.\+builtins.\+\_\+\+\_\+import\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}__import__(name, globals=None, locals=None, fromlist=(), level=0) -> object
+
+Normally python protects imports against concurrency by doing some locking
+at the C level (at least, it does that in CPython).  This function just
+wraps the normal __import__ functionality in a recursive lock, ensuring that
+we're protected against greenlet import concurrency as well.
+\end{DoxyVerb}
+ 

@@ -1,0 +1,39 @@
+\hypertarget{classaiohttp_1_1locks_1_1_event_result_or_error}{}\section{aiohttp.\+locks.\+Event\+Result\+Or\+Error Class Reference}
+\label{classaiohttp_1_1locks_1_1_event_result_or_error}\index{aiohttp.\+locks.\+Event\+Result\+Or\+Error@{aiohttp.\+locks.\+Event\+Result\+Or\+Error}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1locks_1_1_event_result_or_error_aac520e5cd3d377eec2866c9804e113eb}\label{classaiohttp_1_1locks_1_1_event_result_or_error_aac520e5cd3d377eec2866c9804e113eb}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, loop)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1locks_1_1_event_result_or_error_a8fecae9d3611a8bc672ac1ed1069d145}\label{classaiohttp_1_1locks_1_1_event_result_or_error_a8fecae9d3611a8bc672ac1ed1069d145}} 
+def {\bfseries set} (self, exc=None)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1locks_1_1_event_result_or_error_a0bb9fd171e8842ddf73d8f1d3bd6a4e0}\label{classaiohttp_1_1locks_1_1_event_result_or_error_a0bb9fd171e8842ddf73d8f1d3bd6a4e0}} 
+def {\bfseries wait} (self)
+\item 
+def \hyperlink{classaiohttp_1_1locks_1_1_event_result_or_error_a59ddf15f09e18975d6c889c048557488}{cancel} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}This class wrappers the Event asyncio lock allowing either awake the
+locked Tasks without any error or raising an exception.
+
+thanks to @vorpalsmith for the simple design.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1locks_1_1_event_result_or_error_a59ddf15f09e18975d6c889c048557488}\label{classaiohttp_1_1locks_1_1_event_result_or_error_a59ddf15f09e18975d6c889c048557488}} 
+\index{aiohttp\+::locks\+::\+Event\+Result\+Or\+Error@{aiohttp\+::locks\+::\+Event\+Result\+Or\+Error}!cancel@{cancel}}
+\index{cancel@{cancel}!aiohttp\+::locks\+::\+Event\+Result\+Or\+Error@{aiohttp\+::locks\+::\+Event\+Result\+Or\+Error}}
+\subsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily def aiohttp.\+locks.\+Event\+Result\+Or\+Error.\+cancel (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Cancel all waiters \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/locks.\+py\end{DoxyCompactItemize}

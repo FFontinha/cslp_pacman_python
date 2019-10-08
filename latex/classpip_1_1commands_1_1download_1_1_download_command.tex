@@ -1,0 +1,63 @@
+\hypertarget{classpip_1_1commands_1_1download_1_1_download_command}{}\section{pip.\+commands.\+download.\+Download\+Command Class Reference}
+\label{classpip_1_1commands_1_1download_1_1_download_command}\index{pip.\+commands.\+download.\+Download\+Command@{pip.\+commands.\+download.\+Download\+Command}}
+
+
+Inherits \hyperlink{classpip_1_1basecommand_1_1_requirement_command}{pip.\+basecommand.\+Requirement\+Command}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1commands_1_1download_1_1_download_command_a29ff1d499ba5fb58060364a38b4fd2d5}\label{classpip_1_1commands_1_1download_1_1_download_command_a29ff1d499ba5fb58060364a38b4fd2d5}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, args, kw)
+\item 
+\mbox{\Hypertarget{classpip_1_1commands_1_1download_1_1_download_command_a98c1875e9fda5962faacd71826d7db0e}\label{classpip_1_1commands_1_1download_1_1_download_command_a98c1875e9fda5962faacd71826d7db0e}} 
+def {\bfseries run} (self, options, args)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1commands_1_1download_1_1_download_command_a4d35d31913da485b984312ee05a8a287}\label{classpip_1_1commands_1_1download_1_1_download_command_a4d35d31913da485b984312ee05a8a287}} 
+string {\bfseries name} = \textquotesingle{}download\textquotesingle{}
+\item 
+string {\bfseries usage}
+\item 
+\mbox{\Hypertarget{classpip_1_1commands_1_1download_1_1_download_command_a3d08ec762e791e985291deb106c054b1}\label{classpip_1_1commands_1_1download_1_1_download_command_a3d08ec762e791e985291deb106c054b1}} 
+string {\bfseries summary} = \textquotesingle{}Download packages.\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Download packages from:
+
+- PyPI (and other indexes) using requirement specifiers.
+- VCS project urls.
+- Local project directories.
+- Local or remote source archives.
+
+pip also supports downloading from "requirements files", which provide
+an easy way to specify a whole environment to be downloaded.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpip_1_1commands_1_1download_1_1_download_command_a59f1d0905d9560a715a3e040f0c20e09}\label{classpip_1_1commands_1_1download_1_1_download_command_a59f1d0905d9560a715a3e040f0c20e09}} 
+\index{pip\+::commands\+::download\+::\+Download\+Command@{pip\+::commands\+::download\+::\+Download\+Command}!usage@{usage}}
+\index{usage@{usage}!pip\+::commands\+::download\+::\+Download\+Command@{pip\+::commands\+::download\+::\+Download\+Command}}
+\subsubsection{\texorpdfstring{usage}{usage}}
+{\footnotesize\ttfamily string pip.\+commands.\+download.\+Download\+Command.\+usage\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \textcolor{stringliteral}{"""}
+\textcolor{stringliteral}{  %prog [options] <requirement specifier> [package-index-options] ...}
+\textcolor{stringliteral}{  %prog [options] -r <requirements file> [package-index-options] ...}
+\textcolor{stringliteral}{  %prog [options] [-e] <vcs project url> ...}
+\textcolor{stringliteral}{  %prog [options] [-e] <local project path> ...}
+\textcolor{stringliteral}{  %prog [options] <archive url/path> ..."""}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pip/commands/download.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,68 @@
+\hypertarget{classpip_1_1req_1_1req__set_1_1_dist_abstraction}{}\section{pip.\+req.\+req\+\_\+set.\+Dist\+Abstraction Class Reference}
+\label{classpip_1_1req_1_1req__set_1_1_dist_abstraction}\index{pip.\+req.\+req\+\_\+set.\+Dist\+Abstraction@{pip.\+req.\+req\+\_\+set.\+Dist\+Abstraction}}
+
+
+Inherits object.
+
+
+
+Inherited by \hyperlink{classpip_1_1req_1_1req__set_1_1_installed}{pip.\+req.\+req\+\_\+set.\+Installed}, \hyperlink{classpip_1_1req_1_1req__set_1_1_is_s_dist}{pip.\+req.\+req\+\_\+set.\+Is\+S\+Dist}, and \hyperlink{classpip_1_1req_1_1req__set_1_1_is_wheel}{pip.\+req.\+req\+\_\+set.\+Is\+Wheel}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1req_1_1req__set_1_1_dist_abstraction_a4778d5a024088f75f8fb4f3eb3d410a7}\label{classpip_1_1req_1_1req__set_1_1_dist_abstraction_a4778d5a024088f75f8fb4f3eb3d410a7}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, req\+\_\+to\+\_\+install)
+\item 
+def \hyperlink{classpip_1_1req_1_1req__set_1_1_dist_abstraction_a7c0a313f6747e489e8498d16dbbd20ec}{dist} (self, finder)
+\item 
+def \hyperlink{classpip_1_1req_1_1req__set_1_1_dist_abstraction_af4fa3f620557141cb77fbaeb9728a3b5}{prep\+\_\+for\+\_\+dist} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1req_1_1req__set_1_1_dist_abstraction_a9fc1a732b1a8cf067596b1e2ed0840ae}\label{classpip_1_1req_1_1req__set_1_1_dist_abstraction_a9fc1a732b1a8cf067596b1e2ed0840ae}} 
+{\bfseries req\+\_\+to\+\_\+install}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Abstracts out the wheel vs non-wheel prepare_files logic.
+
+The requirements for anything installable are as follows:
+ - we must be able to determine the requirement name
+   (or we can't correctly handle the non-upgrade case).
+ - we must be able to generate a list of run-time dependencies
+   without installing any additional packages (or we would
+   have to either burn time by doing temporary isolated installs
+   or alternatively violate pips 'don't start installing unless
+   all requirements are available' rule - neither of which are
+   desirable).
+ - for packages with setup requirements, we must also be able
+   to determine their requirements without installing additional
+   packages (for the same reason as run-time dependencies)
+ - we must be able to create a Distribution object exposing the
+   above metadata.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1req_1_1req__set_1_1_dist_abstraction_a7c0a313f6747e489e8498d16dbbd20ec}\label{classpip_1_1req_1_1req__set_1_1_dist_abstraction_a7c0a313f6747e489e8498d16dbbd20ec}} 
+\index{pip\+::req\+::req\+\_\+set\+::\+Dist\+Abstraction@{pip\+::req\+::req\+\_\+set\+::\+Dist\+Abstraction}!dist@{dist}}
+\index{dist@{dist}!pip\+::req\+::req\+\_\+set\+::\+Dist\+Abstraction@{pip\+::req\+::req\+\_\+set\+::\+Dist\+Abstraction}}
+\subsubsection{\texorpdfstring{dist()}{dist()}}
+{\footnotesize\ttfamily def pip.\+req.\+req\+\_\+set.\+Dist\+Abstraction.\+dist (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{finder }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a setuptools Dist object.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1req_1_1req__set_1_1_dist_abstraction_af4fa3f620557141cb77fbaeb9728a3b5}\label{classpip_1_1req_1_1req__set_1_1_dist_abstraction_af4fa3f620557141cb77fbaeb9728a3b5}} 
+\index{pip\+::req\+::req\+\_\+set\+::\+Dist\+Abstraction@{pip\+::req\+::req\+\_\+set\+::\+Dist\+Abstraction}!prep\+\_\+for\+\_\+dist@{prep\+\_\+for\+\_\+dist}}
+\index{prep\+\_\+for\+\_\+dist@{prep\+\_\+for\+\_\+dist}!pip\+::req\+::req\+\_\+set\+::\+Dist\+Abstraction@{pip\+::req\+::req\+\_\+set\+::\+Dist\+Abstraction}}
+\subsubsection{\texorpdfstring{prep\+\_\+for\+\_\+dist()}{prep\_for\_dist()}}
+{\footnotesize\ttfamily def pip.\+req.\+req\+\_\+set.\+Dist\+Abstraction.\+prep\+\_\+for\+\_\+dist (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ensure that we can get a Dist for this requirement.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pip/req/req\+\_\+set.\+py\end{DoxyCompactItemize}

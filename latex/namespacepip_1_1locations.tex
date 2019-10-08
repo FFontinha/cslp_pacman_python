@@ -1,0 +1,135 @@
+\hypertarget{namespacepip_1_1locations}{}\section{pip.\+locations Namespace Reference}
+\label{namespacepip_1_1locations}\index{pip.\+locations@{pip.\+locations}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepip_1_1locations_a45248619f9e84d94d3ca01000d4b31a8}{write\+\_\+delete\+\_\+marker\+\_\+file} (directory)
+\item 
+def \hyperlink{namespacepip_1_1locations_a042f3a1b12ebc3488f8e609ae25a2825}{running\+\_\+under\+\_\+virtualenv} ()
+\item 
+def \hyperlink{namespacepip_1_1locations_ab4f8c03a4b4174e2eb2bc59ed836c2ee}{virtualenv\+\_\+no\+\_\+global} ()
+\item 
+def \hyperlink{namespacepip_1_1locations_a749771d21bde6287da42c380135c5b06}{distutils\+\_\+scheme} (dist\+\_\+name, user=False, home=None, root=None, isolated=False, prefix=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1locations_a0be7611a57b34e53752d2ddd79d389cb}\label{namespacepip_1_1locations_a0be7611a57b34e53752d2ddd79d389cb}} 
+{\bfseries U\+S\+E\+R\+\_\+\+C\+A\+C\+H\+E\+\_\+\+D\+IR} = appdirs.\+user\+\_\+cache\+\_\+dir(\char`\"{}pip\char`\"{})
+\item 
+string {\bfseries D\+E\+L\+E\+T\+E\+\_\+\+M\+A\+R\+K\+E\+R\+\_\+\+M\+E\+S\+S\+A\+GE}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1locations_a07c6a7312b1e20de7d14f1d276346c1c}\label{namespacepip_1_1locations_a07c6a7312b1e20de7d14f1d276346c1c}} 
+string {\bfseries P\+I\+P\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+M\+A\+R\+K\+E\+R\+\_\+\+F\+I\+L\+E\+N\+A\+ME} = \textquotesingle{}pip-\/delete-\/this-\/directory.\+txt\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1locations_a2dbd838e1265d5a1cdf6315d8d7aded8}\label{namespacepip_1_1locations_a2dbd838e1265d5a1cdf6315d8d7aded8}} 
+{\bfseries src\+\_\+prefix} = os.\+path.\+join(sys.\+prefix, \textquotesingle{}src\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespacepip_1_1locations_a14389e608810b11be740eb23b5f9e5c4}\label{namespacepip_1_1locations_a14389e608810b11be740eb23b5f9e5c4}} 
+{\bfseries site\+\_\+packages} = sysconfig.\+get\+\_\+python\+\_\+lib()
+\item 
+\mbox{\Hypertarget{namespacepip_1_1locations_a713470e148a114c8a5354caa1350b563}\label{namespacepip_1_1locations_a713470e148a114c8a5354caa1350b563}} 
+{\bfseries user\+\_\+site} = site.\+U\+S\+E\+R\+\_\+\+S\+I\+TE
+\item 
+\mbox{\Hypertarget{namespacepip_1_1locations_a4919dd9f75232e5206a115747bf623b8}\label{namespacepip_1_1locations_a4919dd9f75232e5206a115747bf623b8}} 
+{\bfseries user\+\_\+dir} = expanduser(\textquotesingle{}$\sim$\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespacepip_1_1locations_a17ffe3d265c7e1606bdcd5ca87120b16}\label{namespacepip_1_1locations_a17ffe3d265c7e1606bdcd5ca87120b16}} 
+{\bfseries bin\+\_\+py} = os.\+path.\+join(sys.\+prefix, \textquotesingle{}Scripts\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespacepip_1_1locations_a273b80f5578ac16ca7f3187bdeee0b5c}\label{namespacepip_1_1locations_a273b80f5578ac16ca7f3187bdeee0b5c}} 
+{\bfseries bin\+\_\+user} = os.\+path.\+join(user\+\_\+site, \textquotesingle{}Scripts\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespacepip_1_1locations_a86923a18ee844d0b9d52973b2e169900}\label{namespacepip_1_1locations_a86923a18ee844d0b9d52973b2e169900}} 
+string {\bfseries config\+\_\+basename} = \textquotesingle{}pip.\+ini\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1locations_a233e8671fa82bb356acf8db6be17c273}\label{namespacepip_1_1locations_a233e8671fa82bb356acf8db6be17c273}} 
+{\bfseries legacy\+\_\+storage\+\_\+dir} = os.\+path.\+join(user\+\_\+dir, \textquotesingle{}pip\textquotesingle{})
+\item 
+{\bfseries legacy\+\_\+config\+\_\+file}
+\item 
+list {\bfseries site\+\_\+config\+\_\+files}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Locations where we look for configs, install stuff, etc\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepip_1_1locations_a749771d21bde6287da42c380135c5b06}\label{namespacepip_1_1locations_a749771d21bde6287da42c380135c5b06}} 
+\index{pip\+::locations@{pip\+::locations}!distutils\+\_\+scheme@{distutils\+\_\+scheme}}
+\index{distutils\+\_\+scheme@{distutils\+\_\+scheme}!pip\+::locations@{pip\+::locations}}
+\subsubsection{\texorpdfstring{distutils\+\_\+scheme()}{distutils\_scheme()}}
+{\footnotesize\ttfamily def pip.\+locations.\+distutils\+\_\+scheme (\begin{DoxyParamCaption}\item[{}]{dist\+\_\+name,  }\item[{}]{user = {\ttfamily False},  }\item[{}]{home = {\ttfamily None},  }\item[{}]{root = {\ttfamily None},  }\item[{}]{isolated = {\ttfamily False},  }\item[{}]{prefix = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a distutils install scheme
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1locations_a042f3a1b12ebc3488f8e609ae25a2825}\label{namespacepip_1_1locations_a042f3a1b12ebc3488f8e609ae25a2825}} 
+\index{pip\+::locations@{pip\+::locations}!running\+\_\+under\+\_\+virtualenv@{running\+\_\+under\+\_\+virtualenv}}
+\index{running\+\_\+under\+\_\+virtualenv@{running\+\_\+under\+\_\+virtualenv}!pip\+::locations@{pip\+::locations}}
+\subsubsection{\texorpdfstring{running\+\_\+under\+\_\+virtualenv()}{running\_under\_virtualenv()}}
+{\footnotesize\ttfamily def pip.\+locations.\+running\+\_\+under\+\_\+virtualenv (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if we're running inside a virtualenv, False otherwise.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1locations_ab4f8c03a4b4174e2eb2bc59ed836c2ee}\label{namespacepip_1_1locations_ab4f8c03a4b4174e2eb2bc59ed836c2ee}} 
+\index{pip\+::locations@{pip\+::locations}!virtualenv\+\_\+no\+\_\+global@{virtualenv\+\_\+no\+\_\+global}}
+\index{virtualenv\+\_\+no\+\_\+global@{virtualenv\+\_\+no\+\_\+global}!pip\+::locations@{pip\+::locations}}
+\subsubsection{\texorpdfstring{virtualenv\+\_\+no\+\_\+global()}{virtualenv\_no\_global()}}
+{\footnotesize\ttfamily def pip.\+locations.\+virtualenv\+\_\+no\+\_\+global (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if in a venv and no system site packages.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1locations_a45248619f9e84d94d3ca01000d4b31a8}\label{namespacepip_1_1locations_a45248619f9e84d94d3ca01000d4b31a8}} 
+\index{pip\+::locations@{pip\+::locations}!write\+\_\+delete\+\_\+marker\+\_\+file@{write\+\_\+delete\+\_\+marker\+\_\+file}}
+\index{write\+\_\+delete\+\_\+marker\+\_\+file@{write\+\_\+delete\+\_\+marker\+\_\+file}!pip\+::locations@{pip\+::locations}}
+\subsubsection{\texorpdfstring{write\+\_\+delete\+\_\+marker\+\_\+file()}{write\_delete\_marker\_file()}}
+{\footnotesize\ttfamily def pip.\+locations.\+write\+\_\+delete\+\_\+marker\+\_\+file (\begin{DoxyParamCaption}\item[{}]{directory }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write the pip delete marker file into this directory.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepip_1_1locations_a1f09408b763218672d11f193e7aa6a68}\label{namespacepip_1_1locations_a1f09408b763218672d11f193e7aa6a68}} 
+\index{pip\+::locations@{pip\+::locations}!D\+E\+L\+E\+T\+E\+\_\+\+M\+A\+R\+K\+E\+R\+\_\+\+M\+E\+S\+S\+A\+GE@{D\+E\+L\+E\+T\+E\+\_\+\+M\+A\+R\+K\+E\+R\+\_\+\+M\+E\+S\+S\+A\+GE}}
+\index{D\+E\+L\+E\+T\+E\+\_\+\+M\+A\+R\+K\+E\+R\+\_\+\+M\+E\+S\+S\+A\+GE@{D\+E\+L\+E\+T\+E\+\_\+\+M\+A\+R\+K\+E\+R\+\_\+\+M\+E\+S\+S\+A\+GE}!pip\+::locations@{pip\+::locations}}
+\subsubsection{\texorpdfstring{D\+E\+L\+E\+T\+E\+\_\+\+M\+A\+R\+K\+E\+R\+\_\+\+M\+E\+S\+S\+A\+GE}{DELETE\_MARKER\_MESSAGE}}
+{\footnotesize\ttfamily string pip.\+locations.\+D\+E\+L\+E\+T\+E\+\_\+\+M\+A\+R\+K\+E\+R\+\_\+\+M\+E\+S\+S\+A\+GE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  \textcolor{stringliteral}{'''\(\backslash\)}
+2 \textcolor{stringliteral}{This file is placed here by pip to indicate the source was put}
+3 \textcolor{stringliteral}{here by pip.}
+4 \textcolor{stringliteral}{}
+5 \textcolor{stringliteral}{Once this package is successfully installed this source code will be}
+6 \textcolor{stringliteral}{deleted (unless you remove this file).}
+7 \textcolor{stringliteral}{'''}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1locations_a8e5f514d46a86886953af92000262223}\label{namespacepip_1_1locations_a8e5f514d46a86886953af92000262223}} 
+\index{pip\+::locations@{pip\+::locations}!legacy\+\_\+config\+\_\+file@{legacy\+\_\+config\+\_\+file}}
+\index{legacy\+\_\+config\+\_\+file@{legacy\+\_\+config\+\_\+file}!pip\+::locations@{pip\+::locations}}
+\subsubsection{\texorpdfstring{legacy\+\_\+config\+\_\+file}{legacy\_config\_file}}
+{\footnotesize\ttfamily pip.\+locations.\+legacy\+\_\+config\+\_\+file}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  os.path.join(
+2         legacy\_storage\_dir,
+3         config\_basename,
+4     )
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1locations_ad4df8ee1051c2068139f30653041d0a8}\label{namespacepip_1_1locations_ad4df8ee1051c2068139f30653041d0a8}} 
+\index{pip\+::locations@{pip\+::locations}!site\+\_\+config\+\_\+files@{site\+\_\+config\+\_\+files}}
+\index{site\+\_\+config\+\_\+files@{site\+\_\+config\+\_\+files}!pip\+::locations@{pip\+::locations}}
+\subsubsection{\texorpdfstring{site\+\_\+config\+\_\+files}{site\_config\_files}}
+{\footnotesize\ttfamily list pip.\+locations.\+site\+\_\+config\+\_\+files}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  [
+2     os.path.join(path, config\_basename)
+3     \textcolor{keywordflow}{for} path \textcolor{keywordflow}{in} appdirs.site\_config\_dirs(\textcolor{stringliteral}{'pip'})
+4 ]
+\end{DoxyCode}

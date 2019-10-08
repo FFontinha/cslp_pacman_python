@@ -1,0 +1,121 @@
+\hypertarget{classgevent_1_1__fileobjectposix_1_1_file_object_posix}{}\section{gevent.\+\_\+fileobjectposix.\+File\+Object\+Posix Class Reference}
+\label{classgevent_1_1__fileobjectposix_1_1_file_object_posix}\index{gevent.\+\_\+fileobjectposix.\+File\+Object\+Posix@{gevent.\+\_\+fileobjectposix.\+File\+Object\+Posix}}
+
+
+Inherits \hyperlink{classgevent_1_1__fileobjectcommon_1_1_file_object_base}{gevent.\+\_\+fileobjectcommon.\+File\+Object\+Base}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classgevent_1_1__fileobjectposix_1_1_file_object_posix_a349d8eb16287677be25306052b1efae9}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, fobj, mode=\textquotesingle{}rb\textquotesingle{}, bufsize=-\/1, close=True)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__fileobjectposix_1_1_file_object_posix_abb08a99de17fcb8a04d8bd701fb775d5}\label{classgevent_1_1__fileobjectposix_1_1_file_object_posix_abb08a99de17fcb8a04d8bd701fb775d5}} 
+def {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__fileobjectposix_1_1_file_object_posix_a557ae9bfd4660e19ac385df8cba20f34}\label{classgevent_1_1__fileobjectposix_1_1_file_object_posix_a557ae9bfd4660e19ac385df8cba20f34}} 
+{\bfseries fileio}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__fileobjectposix_1_1_file_object_posix_a305f0535716af6fa7fd6b6f73230b583}\label{classgevent_1_1__fileobjectposix_1_1_file_object_posix_a305f0535716af6fa7fd6b6f73230b583}} 
+{\bfseries default\+\_\+bufsize} = io.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A file-like object that operates on non-blocking files but
+provides a synchronous, cooperative interface.
+
+.. caution::
+     This object is only effective wrapping files that can be used meaningfully
+     with :func:`select.select` such as sockets and pipes.
+
+     In general, on most platforms, operations on regular files
+     (e.g., ``open('a_file.txt')``) are considered non-blocking
+     already, even though they can take some time to complete as
+     data is copied to the kernel and flushed to disk: this time
+     is relatively bounded compared to sockets or pipes, though.
+     A :func:`~os.read` or :func:`~os.write` call on such a file
+     will still effectively block for some small period of time.
+     Therefore, wrapping this class around a regular file is
+     unlikely to make IO gevent-friendly: reading or writing large
+     amounts of data could still block the event loop.
+
+     If you'll be working with regular files and doing IO in large
+     chunks, you may consider using
+     :class:`~gevent.fileobject.FileObjectThread` or
+     :func:`~gevent.os.tp_read` and :func:`~gevent.os.tp_write` to bypass this
+     concern.
+
+.. note::
+     Random read/write (e.g., ``mode='rwb'``) is not supported.
+     For that, use :class:`io.BufferedRWPair` around two instance of this
+     class.
+
+.. tip::
+     Although this object provides a :meth:`fileno` method and so
+     can itself be passed to :func:`fcntl.fcntl`, setting the
+     :data:`os.O_NONBLOCK` flag will have no effect (reads will
+     still block the greenlet, although other greenlets can run).
+     However, removing that flag *will cause this object to no
+     longer be cooperative* (other greenlets will no longer run).
+
+     You can use the internal ``fileio`` attribute of this object
+     (a :class:`io.RawIOBase`) to perform non-blocking byte reads.
+     Note, however, that once you begin directly using this
+     attribute, the results from using methods of *this* object
+     are undefined, especially in text mode. (See :issue:`222`.)
+
+.. versionchanged:: 1.1
+   Now uses the :mod:`io` package internally. Under Python 2, previously
+   used the undocumented class :class:`socket._fileobject`. This provides
+   better file-like semantics (and portability to Python 3).
+.. versionchanged:: 1.2a1
+   Document the ``fileio`` attribute for non-blocking reads.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgevent_1_1__fileobjectposix_1_1_file_object_posix_a349d8eb16287677be25306052b1efae9}\label{classgevent_1_1__fileobjectposix_1_1_file_object_posix_a349d8eb16287677be25306052b1efae9}} 
+\index{gevent\+::\+\_\+fileobjectposix\+::\+File\+Object\+Posix@{gevent\+::\+\_\+fileobjectposix\+::\+File\+Object\+Posix}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!gevent\+::\+\_\+fileobjectposix\+::\+File\+Object\+Posix@{gevent\+::\+\_\+fileobjectposix\+::\+File\+Object\+Posix}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def gevent.\+\_\+fileobjectposix.\+File\+Object\+Posix.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fobj,  }\item[{}]{mode = {\ttfamily \textquotesingle{}rb\textquotesingle{}},  }\item[{}]{bufsize = {\ttfamily -\/1},  }\item[{}]{close = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param fobj: Either an integer fileno, or an object supporting the
+    usual :meth:`socket.fileno` method. The file *will* be
+    put in non-blocking mode using :func:`gevent.os.make_nonblocking`.
+:keyword str mode: The manner of access to the file, one of "rb", "rU" or "wb"
+    (where the "b" or "U" can be omitted).
+    If "U" is part of the mode, universal newlines will be used. On Python 2,
+    if 't' is not in the mode, this will result in returning byte (native) strings;
+    putting 't'  in the mode will return text strings. This may cause
+    :exc:`UnicodeDecodeError` to be raised.
+:keyword int bufsize: If given, the size of the buffer to use. The default
+    value means to use a platform-specific default
+    Other values are interpreted as for the :mod:`io` package.
+    Buffering is ignored in text mode.
+
+.. versionchanged:: 1.3a1
+
+   On Python 2, enabling universal newlines no longer forces unicode
+   IO.
+
+.. versionchanged:: 1.2a1
+
+   A bufsize of 0 in write mode is no longer forced to be 1.
+   Instead, the underlying buffer is flushed after every write
+   operation to simulate a bufsize of 0. In gevent 1.0, a
+   bufsize of 0 was flushed when a newline was written, while
+   in gevent 1.1 it was flushed when more than one byte was
+   written. Note that this may have performance impacts.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/\+\_\+fileobjectposix.\+py\end{DoxyCompactItemize}

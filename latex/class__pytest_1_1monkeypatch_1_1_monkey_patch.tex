@@ -1,0 +1,174 @@
+\hypertarget{class__pytest_1_1monkeypatch_1_1_monkey_patch}{}\section{\+\_\+pytest.\+monkeypatch.\+Monkey\+Patch Class Reference}
+\label{class__pytest_1_1monkeypatch_1_1_monkey_patch}\index{\+\_\+pytest.\+monkeypatch.\+Monkey\+Patch@{\+\_\+pytest.\+monkeypatch.\+Monkey\+Patch}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1monkeypatch_1_1_monkey_patch_a1079fb579b5b11fffae63d2bb06bb3d8}\label{class__pytest_1_1monkeypatch_1_1_monkey_patch_a1079fb579b5b11fffae63d2bb06bb3d8}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{class__pytest_1_1monkeypatch_1_1_monkey_patch_aa9f369b562c70493a77a04cb9831b73c}{context} (self)
+\item 
+def \hyperlink{class__pytest_1_1monkeypatch_1_1_monkey_patch_a5907e4038adc542852aa11669c75d735}{setattr} (self, target, name, value=notset, raising=True)
+\item 
+def \hyperlink{class__pytest_1_1monkeypatch_1_1_monkey_patch_a4156b2c944fb97594323cf2dd7c09ccc}{delattr} (self, target, name=notset, raising=True)
+\item 
+def \hyperlink{class__pytest_1_1monkeypatch_1_1_monkey_patch_a188f5623428b6b29b94e5144bc2d75b3}{setitem} (self, dic, name, value)
+\item 
+def \hyperlink{class__pytest_1_1monkeypatch_1_1_monkey_patch_a8e8bae3db12d84514a9992f01e800d90}{delitem} (self, dic, name, raising=True)
+\item 
+def \hyperlink{class__pytest_1_1monkeypatch_1_1_monkey_patch_a53fc05d4431d1790747d9ce7e82ce105}{setenv} (self, name, value, prepend=None)
+\item 
+def \hyperlink{class__pytest_1_1monkeypatch_1_1_monkey_patch_a873307491f2c4eef2ebb1cf8a5702dbd}{delenv} (self, name, raising=True)
+\item 
+def \hyperlink{class__pytest_1_1monkeypatch_1_1_monkey_patch_a0f6b909b0c6dfd6873488c43feb22bd5}{syspath\+\_\+prepend} (self, path)
+\item 
+def \hyperlink{class__pytest_1_1monkeypatch_1_1_monkey_patch_a0557e1c8f8d7e3738eed674f21c6addc}{chdir} (self, path)
+\item 
+def \hyperlink{class__pytest_1_1monkeypatch_1_1_monkey_patch_a0c15865c3de639e2501f49d164aaf7c4}{undo} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Object returned by the ``monkeypatch`` fixture keeping a record of setattr/item/env/syspath changes.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1monkeypatch_1_1_monkey_patch_a0557e1c8f8d7e3738eed674f21c6addc}\label{class__pytest_1_1monkeypatch_1_1_monkey_patch_a0557e1c8f8d7e3738eed674f21c6addc}} 
+\index{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}!chdir@{chdir}}
+\index{chdir@{chdir}!\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}}
+\subsubsection{\texorpdfstring{chdir()}{chdir()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+monkeypatch.\+Monkey\+Patch.\+chdir (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Change the current working directory to the specified path.
+Path can be a string or a py.path.local object.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1monkeypatch_1_1_monkey_patch_aa9f369b562c70493a77a04cb9831b73c}\label{class__pytest_1_1monkeypatch_1_1_monkey_patch_aa9f369b562c70493a77a04cb9831b73c}} 
+\index{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}!context@{context}}
+\index{context@{context}!\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}}
+\subsubsection{\texorpdfstring{context()}{context()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+monkeypatch.\+Monkey\+Patch.\+context (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Context manager that returns a new :class:`MonkeyPatch` object which
+undoes any patching done inside the ``with`` block upon exit:
+
+.. code-block:: python
+
+    import functools
+    def test_partial(monkeypatch):
+with monkeypatch.context() as m:
+    m.setattr(functools, "partial", 3)
+
+Useful in situations where it is desired to undo some patches before the test ends,
+such as mocking ``stdlib`` functions that might break pytest itself if mocked (for examples
+of this see `#3290 <https://github.com/pytest-dev/pytest/issues/3290>`_.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1monkeypatch_1_1_monkey_patch_a4156b2c944fb97594323cf2dd7c09ccc}\label{class__pytest_1_1monkeypatch_1_1_monkey_patch_a4156b2c944fb97594323cf2dd7c09ccc}} 
+\index{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}!delattr@{delattr}}
+\index{delattr@{delattr}!\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}}
+\subsubsection{\texorpdfstring{delattr()}{delattr()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+monkeypatch.\+Monkey\+Patch.\+delattr (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{target,  }\item[{}]{name = {\ttfamily notset},  }\item[{}]{raising = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Delete attribute ``name`` from ``target``, by default raise
+AttributeError it the attribute did not previously exist.
+
+If no ``name`` is specified and ``target`` is a string
+it will be interpreted as a dotted import path with the
+last part being the attribute name.
+
+If ``raising`` is set to False, no exception will be raised if the
+attribute is missing.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1monkeypatch_1_1_monkey_patch_a873307491f2c4eef2ebb1cf8a5702dbd}\label{class__pytest_1_1monkeypatch_1_1_monkey_patch_a873307491f2c4eef2ebb1cf8a5702dbd}} 
+\index{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}!delenv@{delenv}}
+\index{delenv@{delenv}!\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}}
+\subsubsection{\texorpdfstring{delenv()}{delenv()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+monkeypatch.\+Monkey\+Patch.\+delenv (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{raising = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Delete ``name`` from the environment. Raise KeyError if it does
+not exist.
+
+If ``raising`` is set to False, no exception will be raised if the
+environment variable is missing.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1monkeypatch_1_1_monkey_patch_a8e8bae3db12d84514a9992f01e800d90}\label{class__pytest_1_1monkeypatch_1_1_monkey_patch_a8e8bae3db12d84514a9992f01e800d90}} 
+\index{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}!delitem@{delitem}}
+\index{delitem@{delitem}!\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}}
+\subsubsection{\texorpdfstring{delitem()}{delitem()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+monkeypatch.\+Monkey\+Patch.\+delitem (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dic,  }\item[{}]{name,  }\item[{}]{raising = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Delete ``name`` from dict. Raise KeyError if it doesn't exist.
+
+If ``raising`` is set to False, no exception will be raised if the
+key is missing.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1monkeypatch_1_1_monkey_patch_a5907e4038adc542852aa11669c75d735}\label{class__pytest_1_1monkeypatch_1_1_monkey_patch_a5907e4038adc542852aa11669c75d735}} 
+\index{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}!setattr@{setattr}}
+\index{setattr@{setattr}!\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}}
+\subsubsection{\texorpdfstring{setattr()}{setattr()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+monkeypatch.\+Monkey\+Patch.\+setattr (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{target,  }\item[{}]{name,  }\item[{}]{value = {\ttfamily notset},  }\item[{}]{raising = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set attribute value on target, memorizing the old value.
+By default raise AttributeError if the attribute did not exist.
+
+For convenience you can specify a string as ``target`` which
+will be interpreted as a dotted import path, with the last part
+being the attribute name.  Example:
+``monkeypatch.setattr("os.getcwd", lambda: "/")``
+would set the ``getcwd`` function of the ``os`` module.
+
+The ``raising`` value determines if the setattr should fail
+if the attribute is not already present (defaults to True
+which means it will raise).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1monkeypatch_1_1_monkey_patch_a53fc05d4431d1790747d9ce7e82ce105}\label{class__pytest_1_1monkeypatch_1_1_monkey_patch_a53fc05d4431d1790747d9ce7e82ce105}} 
+\index{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}!setenv@{setenv}}
+\index{setenv@{setenv}!\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}}
+\subsubsection{\texorpdfstring{setenv()}{setenv()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+monkeypatch.\+Monkey\+Patch.\+setenv (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{value,  }\item[{}]{prepend = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set environment variable ``name`` to ``value``.  If ``prepend``
+is a character, read the current environment variable value
+and prepend the ``value`` adjoined with the ``prepend`` character.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1monkeypatch_1_1_monkey_patch_a188f5623428b6b29b94e5144bc2d75b3}\label{class__pytest_1_1monkeypatch_1_1_monkey_patch_a188f5623428b6b29b94e5144bc2d75b3}} 
+\index{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}!setitem@{setitem}}
+\index{setitem@{setitem}!\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}}
+\subsubsection{\texorpdfstring{setitem()}{setitem()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+monkeypatch.\+Monkey\+Patch.\+setitem (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dic,  }\item[{}]{name,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set dictionary entry ``name`` to value. \end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1monkeypatch_1_1_monkey_patch_a0f6b909b0c6dfd6873488c43feb22bd5}\label{class__pytest_1_1monkeypatch_1_1_monkey_patch_a0f6b909b0c6dfd6873488c43feb22bd5}} 
+\index{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}!syspath\+\_\+prepend@{syspath\+\_\+prepend}}
+\index{syspath\+\_\+prepend@{syspath\+\_\+prepend}!\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}}
+\subsubsection{\texorpdfstring{syspath\+\_\+prepend()}{syspath\_prepend()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+monkeypatch.\+Monkey\+Patch.\+syspath\+\_\+prepend (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prepend ``path`` to ``sys.path`` list of import locations. \end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1monkeypatch_1_1_monkey_patch_a0c15865c3de639e2501f49d164aaf7c4}\label{class__pytest_1_1monkeypatch_1_1_monkey_patch_a0c15865c3de639e2501f49d164aaf7c4}} 
+\index{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}!undo@{undo}}
+\index{undo@{undo}!\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch@{\+\_\+pytest\+::monkeypatch\+::\+Monkey\+Patch}}
+\subsubsection{\texorpdfstring{undo()}{undo()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+monkeypatch.\+Monkey\+Patch.\+undo (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Undo previous changes.  This call consumes the
+undo stack. Calling it a second time has no effect unless
+you do more monkeypatching after the undo call.
+
+There is generally no need to call `undo()`, since it is
+called automatically during tear-down.
+
+Note that the same `monkeypatch` fixture is used across a
+single test function invocation. If `monkeypatch` is used both by
+the test function itself and one of the test fixtures,
+calling `undo()` will undo all of the changes made in
+both functions.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/monkeypatch.\+py\end{DoxyCompactItemize}

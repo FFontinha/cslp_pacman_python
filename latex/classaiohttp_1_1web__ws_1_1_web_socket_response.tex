@@ -1,0 +1,81 @@
+\hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response}{}\section{aiohttp.\+web\+\_\+ws.\+Web\+Socket\+Response Class Reference}
+\label{classaiohttp_1_1web__ws_1_1_web_socket_response}\index{aiohttp.\+web\+\_\+ws.\+Web\+Socket\+Response@{aiohttp.\+web\+\_\+ws.\+Web\+Socket\+Response}}
+
+
+Inherits \hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{aiohttp.\+web\+\_\+response.\+Stream\+Response}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_a05eb718ee3c79d9f95fb81b1798b80cd}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_a05eb718ee3c79d9f95fb81b1798b80cd}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, timeout=10.\+0, receive\+\_\+timeout=None, autoclose=True, autoping=True, heartbeat=None, protocols=(), compress=True, max\+\_\+msg\+\_\+size=4 $\ast$1024 $\ast$1024)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_a4f719cd7c2345a2a378d43788acf4bfc}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_a4f719cd7c2345a2a378d43788acf4bfc}} 
+def {\bfseries prepare} (self, request)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_a73dad1e7a446ddc8c654b662e1a42819}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_a73dad1e7a446ddc8c654b662e1a42819}} 
+def {\bfseries can\+\_\+prepare} (self, request)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_a6f966305129d421736d7fcfc153382dd}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_a6f966305129d421736d7fcfc153382dd}} 
+def {\bfseries closed} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_ad4d8e29e4aee3e63964b602f321bafc3}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_ad4d8e29e4aee3e63964b602f321bafc3}} 
+def {\bfseries close\+\_\+code} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_a2f1f12d4398c415faa9e64f1e30b00a0}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_a2f1f12d4398c415faa9e64f1e30b00a0}} 
+def {\bfseries ws\+\_\+protocol} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_af368ba57cad430f8ef525c18d07edcef}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_af368ba57cad430f8ef525c18d07edcef}} 
+def {\bfseries compress} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_ac4499d3722eb8fff00464d3bc25f06b8}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_ac4499d3722eb8fff00464d3bc25f06b8}} 
+def {\bfseries exception} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_a1f04865e75f88e0f431bec3938688065}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_a1f04865e75f88e0f431bec3938688065}} 
+def {\bfseries ping} (self, message=\textquotesingle{}b\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_a8bfbe634b2b69a8d4d607e60b2f0e9f9}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_a8bfbe634b2b69a8d4d607e60b2f0e9f9}} 
+def {\bfseries pong} (self, message=\textquotesingle{}b\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_abc6848bb781e130901f2b6ab385aba81}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_abc6848bb781e130901f2b6ab385aba81}} 
+def {\bfseries send\+\_\+str} (self, data, compress=None)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_af41faecd735d37e8aff53b6ba91dfb85}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_af41faecd735d37e8aff53b6ba91dfb85}} 
+def {\bfseries send\+\_\+bytes} (self, data, compress=None)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_aec0bd15e639e8579c77a16cd43bb4184}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_aec0bd15e639e8579c77a16cd43bb4184}} 
+def {\bfseries send\+\_\+json} (self, data, compress=None, dumps=json.\+dumps)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_a70e110042d4867a43d8f37b214c0a1ca}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_a70e110042d4867a43d8f37b214c0a1ca}} 
+def {\bfseries write\+\_\+eof} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_ab3bac87b1d9ccdbd1a3dd96ffd03a179}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_ab3bac87b1d9ccdbd1a3dd96ffd03a179}} 
+def {\bfseries close} (self, code=1000, message=b\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_ac2b4b7671e477c6849ba4b6c279cf302}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_ac2b4b7671e477c6849ba4b6c279cf302}} 
+def {\bfseries receive} (self, timeout=None)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_ab9ff21925f16b145593b834883dd1d70}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_ab9ff21925f16b145593b834883dd1d70}} 
+def {\bfseries receive\+\_\+str} (self, timeout=None)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_a4858ecca86f031c26ba2627ece6eb80d}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_a4858ecca86f031c26ba2627ece6eb80d}} 
+def {\bfseries receive\+\_\+bytes} (self, timeout=None)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_add6d579bc52a1d8b783d1f831962a895}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_add6d579bc52a1d8b783d1f831962a895}} 
+def {\bfseries receive\+\_\+json} (self, loads=json.\+loads, timeout=None)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_adb1a68a3265716aad984b8e9ffbf6985}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_adb1a68a3265716aad984b8e9ffbf6985}} 
+def {\bfseries write} (self, data)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_a1fa79361ea5630b181b207e3a0cad173}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_a1fa79361ea5630b181b207e3a0cad173}} 
+def {\bfseries \+\_\+\+\_\+aiter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1web__ws_1_1_web_socket_response_a1948aa2bca47cb6dc59b5b7a97f975f1}\label{classaiohttp_1_1web__ws_1_1_web_socket_response_a1948aa2bca47cb6dc59b5b7a97f975f1}} 
+def {\bfseries \+\_\+\+\_\+anext\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/web\+\_\+ws.\+py\end{DoxyCompactItemize}

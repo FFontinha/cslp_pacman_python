@@ -1,0 +1,6 @@
+var namespacewebsockets_1_1extensions_1_1permessage__deflate =
+[
+    [ "ClientPerMessageDeflateFactory", "classwebsockets_1_1extensions_1_1permessage__deflate_1_1_client_per_message_deflate_factory.html", "classwebsockets_1_1extensions_1_1permessage__deflate_1_1_client_per_message_deflate_factory" ],
+    [ "PerMessageDeflate", "classwebsockets_1_1extensions_1_1permessage__deflate_1_1_per_message_deflate.html", "classwebsockets_1_1extensions_1_1permessage__deflate_1_1_per_message_deflate" ],
+    [ "ServerPerMessageDeflateFactory", "classwebsockets_1_1extensions_1_1permessage__deflate_1_1_server_per_message_deflate_factory.html", "classwebsockets_1_1extensions_1_1permessage__deflate_1_1_server_per_message_deflate_factory" ]
+];

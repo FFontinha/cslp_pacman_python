@@ -1,0 +1,210 @@
+\hypertarget{class__pytest_1_1fixtures_1_1_fixture_request}{}\section{\+\_\+pytest.\+fixtures.\+Fixture\+Request Class Reference}
+\label{class__pytest_1_1fixtures_1_1_fixture_request}\index{\+\_\+pytest.\+fixtures.\+Fixture\+Request@{\+\_\+pytest.\+fixtures.\+Fixture\+Request}}
+
+
+Inherits Funcargnames\+Compat\+Attr.
+
+
+
+Inherited by \hyperlink{class__pytest_1_1fixtures_1_1_sub_request}{\+\_\+pytest.\+fixtures.\+Sub\+Request}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_ae031615d46a9a9ae4036e0860ce290f7}\label{class__pytest_1_1fixtures_1_1_fixture_request_ae031615d46a9a9ae4036e0860ce290f7}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, pyfuncitem)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_a99ba28e6393d7f6f9586966987820ec9}\label{class__pytest_1_1fixtures_1_1_fixture_request_a99ba28e6393d7f6f9586966987820ec9}} 
+def {\bfseries fixturenames} (self)
+\item 
+def \hyperlink{class__pytest_1_1fixtures_1_1_fixture_request_ad363bf4f5e5846e32c2f4d1468e0a74e}{node} (self)
+\item 
+def \hyperlink{class__pytest_1_1fixtures_1_1_fixture_request_ae41f6d70a2ddfd056f6a2d73d1029b84}{config} (self)
+\item 
+def \hyperlink{class__pytest_1_1fixtures_1_1_fixture_request_a10c225d34b909de4e4f5cdc82cb38898}{function} (self)
+\item 
+def \hyperlink{class__pytest_1_1fixtures_1_1_fixture_request_ad5b658c8c4dab7339e2ae529f2f63b28}{cls} (self)
+\item 
+def \hyperlink{class__pytest_1_1fixtures_1_1_fixture_request_a82d8c64637664a475cacd0fa4f5fe15a}{instance} (self)
+\item 
+def \hyperlink{class__pytest_1_1fixtures_1_1_fixture_request_aa457e0a0e07c11337096d90398db010b}{module} (self)
+\item 
+def \hyperlink{class__pytest_1_1fixtures_1_1_fixture_request_a4974a2a4bcab4c73ae32e131c06180ff}{fspath} (self)
+\item 
+def \hyperlink{class__pytest_1_1fixtures_1_1_fixture_request_aa35d76f59a1e72f33960df812ff36844}{keywords} (self)
+\item 
+def \hyperlink{class__pytest_1_1fixtures_1_1_fixture_request_af3d8460bd359cc34d2b086cf2fed4472}{session} (self)
+\item 
+def \hyperlink{class__pytest_1_1fixtures_1_1_fixture_request_abecbd3112fdcd3d0c541fd59066a3dc6}{addfinalizer} (self, finalizer)
+\item 
+def \hyperlink{class__pytest_1_1fixtures_1_1_fixture_request_a0e23d2c6b917b1732e1cff59040c0f94}{applymarker} (self, marker)
+\item 
+def \hyperlink{class__pytest_1_1fixtures_1_1_fixture_request_af9a9e65ea190f5af08d128dd68a3fc6f}{raiseerror} (self, msg)
+\item 
+def \hyperlink{class__pytest_1_1fixtures_1_1_fixture_request_a775e63459d22474875baaff278273220}{cached\+\_\+setup} (self, setup, teardown=None, scope=\char`\"{}module\char`\"{}, extrakey=None)
+\item 
+def \hyperlink{class__pytest_1_1fixtures_1_1_fixture_request_adcdc72e4da6ef0a8fe5a58f4f6800d2f}{getfixturevalue} (self, argname)
+\item 
+def \hyperlink{class__pytest_1_1fixtures_1_1_fixture_request_ad3fb29fde8a0deb9f3f84d9b7de5fa78}{getfuncargvalue} (self, argname)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_a508e042f6218eada7cf94ede7c67f9e1}\label{class__pytest_1_1fixtures_1_1_fixture_request_a508e042f6218eada7cf94ede7c67f9e1}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_adaa4fc3a2be3498563ef8a8e96fb65e8}\label{class__pytest_1_1fixtures_1_1_fixture_request_adaa4fc3a2be3498563ef8a8e96fb65e8}} 
+{\bfseries fixturename}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_ad89fd77bd665bb8e594f2a9e124e9122}\label{class__pytest_1_1fixtures_1_1_fixture_request_ad89fd77bd665bb8e594f2a9e124e9122}} 
+{\bfseries scope}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A request for a fixture from a test or fixture function.
+
+A request object gives access to the requesting test context
+and has an optional ``param`` attribute in case
+the fixture is parametrized indirectly.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_abecbd3112fdcd3d0c541fd59066a3dc6}\label{class__pytest_1_1fixtures_1_1_fixture_request_abecbd3112fdcd3d0c541fd59066a3dc6}} 
+\index{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}!addfinalizer@{addfinalizer}}
+\index{addfinalizer@{addfinalizer}!\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}}
+\subsubsection{\texorpdfstring{addfinalizer()}{addfinalizer()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+Fixture\+Request.\+addfinalizer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{finalizer }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}add finalizer/teardown function to be called after the
+last test within the requesting test context finished
+execution. \end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_a0e23d2c6b917b1732e1cff59040c0f94}\label{class__pytest_1_1fixtures_1_1_fixture_request_a0e23d2c6b917b1732e1cff59040c0f94}} 
+\index{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}!applymarker@{applymarker}}
+\index{applymarker@{applymarker}!\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}}
+\subsubsection{\texorpdfstring{applymarker()}{applymarker()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+Fixture\+Request.\+applymarker (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{marker }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Apply a marker to a single test function invocation.
+This method is useful if you don't want to have a keyword/marker
+on all function invocations.
+
+:arg marker: a :py:class:`_pytest.mark.MarkDecorator` object
+    created by a call to ``pytest.mark.NAME(...)``.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_a775e63459d22474875baaff278273220}\label{class__pytest_1_1fixtures_1_1_fixture_request_a775e63459d22474875baaff278273220}} 
+\index{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}!cached\+\_\+setup@{cached\+\_\+setup}}
+\index{cached\+\_\+setup@{cached\+\_\+setup}!\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}}
+\subsubsection{\texorpdfstring{cached\+\_\+setup()}{cached\_setup()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+Fixture\+Request.\+cached\+\_\+setup (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{setup,  }\item[{}]{teardown = {\ttfamily None},  }\item[{}]{scope = {\ttfamily \char`\"{}module\char`\"{}},  }\item[{}]{extrakey = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}(deprecated) Return a testing resource managed by ``setup`` &
+``teardown`` calls.  ``scope`` and ``extrakey`` determine when the
+``teardown`` function will be called so that subsequent calls to
+``setup`` would recreate the resource.  With pytest-2.3 you often
+do not need ``cached_setup()`` as you can directly declare a scope
+on a fixture function and register a finalizer through
+``request.addfinalizer()``.
+
+:arg teardown: function receiving a previously setup resource.
+:arg setup: a no-argument function creating a resource.
+:arg scope: a string value out of ``function``, ``class``, ``module``
+    or ``session`` indicating the caching lifecycle of the resource.
+:arg extrakey: added to internal caching key of (funcargname, scope).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_ad5b658c8c4dab7339e2ae529f2f63b28}\label{class__pytest_1_1fixtures_1_1_fixture_request_ad5b658c8c4dab7339e2ae529f2f63b28}} 
+\index{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}!cls@{cls}}
+\index{cls@{cls}!\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}}
+\subsubsection{\texorpdfstring{cls()}{cls()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+Fixture\+Request.\+cls (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}class (can be None) where the test function was collected. \end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_ae41f6d70a2ddfd056f6a2d73d1029b84}\label{class__pytest_1_1fixtures_1_1_fixture_request_ae41f6d70a2ddfd056f6a2d73d1029b84}} 
+\index{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}!config@{config}}
+\index{config@{config}!\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}}
+\subsubsection{\texorpdfstring{config()}{config()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+Fixture\+Request.\+config (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}the pytest config object associated with this request. \end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_a4974a2a4bcab4c73ae32e131c06180ff}\label{class__pytest_1_1fixtures_1_1_fixture_request_a4974a2a4bcab4c73ae32e131c06180ff}} 
+\index{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}!fspath@{fspath}}
+\index{fspath@{fspath}!\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}}
+\subsubsection{\texorpdfstring{fspath()}{fspath()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+Fixture\+Request.\+fspath (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}the file system path of the test module which collected this test. \end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_a10c225d34b909de4e4f5cdc82cb38898}\label{class__pytest_1_1fixtures_1_1_fixture_request_a10c225d34b909de4e4f5cdc82cb38898}} 
+\index{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}!function@{function}}
+\index{function@{function}!\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}}
+\subsubsection{\texorpdfstring{function()}{function()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+Fixture\+Request.\+function (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}test function object if the request has a per-function scope. \end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_adcdc72e4da6ef0a8fe5a58f4f6800d2f}\label{class__pytest_1_1fixtures_1_1_fixture_request_adcdc72e4da6ef0a8fe5a58f4f6800d2f}} 
+\index{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}!getfixturevalue@{getfixturevalue}}
+\index{getfixturevalue@{getfixturevalue}!\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}}
+\subsubsection{\texorpdfstring{getfixturevalue()}{getfixturevalue()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+Fixture\+Request.\+getfixturevalue (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{argname }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dynamically run a named fixture function.
+
+Declaring fixtures via function argument is recommended where possible.
+But if you can only decide whether to use another fixture at test
+setup time, you may use this function to retrieve it inside a fixture
+or test function body.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_ad3fb29fde8a0deb9f3f84d9b7de5fa78}\label{class__pytest_1_1fixtures_1_1_fixture_request_ad3fb29fde8a0deb9f3f84d9b7de5fa78}} 
+\index{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}!getfuncargvalue@{getfuncargvalue}}
+\index{getfuncargvalue@{getfuncargvalue}!\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}}
+\subsubsection{\texorpdfstring{getfuncargvalue()}{getfuncargvalue()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+Fixture\+Request.\+getfuncargvalue (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{argname }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Deprecated, use getfixturevalue. \end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_a82d8c64637664a475cacd0fa4f5fe15a}\label{class__pytest_1_1fixtures_1_1_fixture_request_a82d8c64637664a475cacd0fa4f5fe15a}} 
+\index{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}!instance@{instance}}
+\index{instance@{instance}!\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}}
+\subsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+Fixture\+Request.\+instance (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}instance (can be None) on which test function was collected. \end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_aa35d76f59a1e72f33960df812ff36844}\label{class__pytest_1_1fixtures_1_1_fixture_request_aa35d76f59a1e72f33960df812ff36844}} 
+\index{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}!keywords@{keywords}}
+\index{keywords@{keywords}!\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}}
+\subsubsection{\texorpdfstring{keywords()}{keywords()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+Fixture\+Request.\+keywords (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}keywords/markers dictionary for the underlying node. \end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_aa457e0a0e07c11337096d90398db010b}\label{class__pytest_1_1fixtures_1_1_fixture_request_aa457e0a0e07c11337096d90398db010b}} 
+\index{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}!module@{module}}
+\index{module@{module}!\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}}
+\subsubsection{\texorpdfstring{module()}{module()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+Fixture\+Request.\+module (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}python module object where the test function was collected. \end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_ad363bf4f5e5846e32c2f4d1468e0a74e}\label{class__pytest_1_1fixtures_1_1_fixture_request_ad363bf4f5e5846e32c2f4d1468e0a74e}} 
+\index{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}!node@{node}}
+\index{node@{node}!\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}}
+\subsubsection{\texorpdfstring{node()}{node()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+Fixture\+Request.\+node (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}underlying collection node (depends on current request scope)\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_af9a9e65ea190f5af08d128dd68a3fc6f}\label{class__pytest_1_1fixtures_1_1_fixture_request_af9a9e65ea190f5af08d128dd68a3fc6f}} 
+\index{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}!raiseerror@{raiseerror}}
+\index{raiseerror@{raiseerror}!\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}}
+\subsubsection{\texorpdfstring{raiseerror()}{raiseerror()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+Fixture\+Request.\+raiseerror (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}raise a FixtureLookupError with the given message. \end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1fixtures_1_1_fixture_request_af3d8460bd359cc34d2b086cf2fed4472}\label{class__pytest_1_1fixtures_1_1_fixture_request_af3d8460bd359cc34d2b086cf2fed4472}} 
+\index{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}!session@{session}}
+\index{session@{session}!\+\_\+pytest\+::fixtures\+::\+Fixture\+Request@{\+\_\+pytest\+::fixtures\+::\+Fixture\+Request}}
+\subsubsection{\texorpdfstring{session()}{session()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+Fixture\+Request.\+session (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pytest session object. \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/fixtures.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,34 @@
+\hypertarget{classgevent_1_1__waiter_1_1_multiple_waiter}{}\section{gevent.\+\_\+waiter.\+Multiple\+Waiter Class Reference}
+\label{classgevent_1_1__waiter_1_1_multiple_waiter}\index{gevent.\+\_\+waiter.\+Multiple\+Waiter@{gevent.\+\_\+waiter.\+Multiple\+Waiter}}
+
+
+Inherits \hyperlink{classgevent_1_1__waiter_1_1_waiter}{gevent.\+\_\+waiter.\+Waiter}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__waiter_1_1_multiple_waiter_a8284252056079bf7eecb8d4fd547d95b}\label{classgevent_1_1__waiter_1_1_multiple_waiter_a8284252056079bf7eecb8d4fd547d95b}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, hub=None)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__waiter_1_1_multiple_waiter_a649b1a50d4602c6ce0baf1dea846cf8d}\label{classgevent_1_1__waiter_1_1_multiple_waiter_a649b1a50d4602c6ce0baf1dea846cf8d}} 
+def {\bfseries switch} (self, value)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__waiter_1_1_multiple_waiter_a5513b566171731aa7b537954dac92fb8}\label{classgevent_1_1__waiter_1_1_multiple_waiter_a5513b566171731aa7b537954dac92fb8}} 
+def {\bfseries get} (self)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}An internal extension of Waiter that can be used if multiple objects
+must be waited on, and there is a chance that in between waits greenlets
+might be switched out. All greenlets that switch to this waiter
+will have their value returned.
+
+This does not handle exceptions or throw methods.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/\+\_\+waiter.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,321 @@
+\hypertarget{namespacepygame_1_1cursors}{}\section{pygame.\+cursors Namespace Reference}
+\label{namespacepygame_1_1cursors}\index{pygame.\+cursors@{pygame.\+cursors}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepygame_1_1cursors_a19f38a01d13e77f591209869d99d99e5}{compile} (strings, black=\textquotesingle{}X\textquotesingle{}, white=\textquotesingle{}.\textquotesingle{}, xor=\textquotesingle{}o\textquotesingle{})
+\item 
+def \hyperlink{namespacepygame_1_1cursors_a2a84c8676fb5765acdb5556d7bf9ca22}{load\+\_\+xbm} (curs, mask)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacepygame_1_1cursors_af1f11288e22a66d5740e960da4da51b2}{arrow}
+\begin{DoxyCompactList}\small\item\em pygame -\/ Python Game Library Copyright (C) 2000-\/2003 Pete Shinners \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacepygame_1_1cursors_a548edbe0912474b543f62821a6f93466}{diamond}
+\item 
+tuple \hyperlink{namespacepygame_1_1cursors_af65f9378a20934bb0164ba76d0acaa7e}{ball}
+\item 
+tuple \hyperlink{namespacepygame_1_1cursors_a85c7b15bfadda6d7d8c6df861376f4b7}{broken\+\_\+x}
+\item 
+tuple \hyperlink{namespacepygame_1_1cursors_ab8f9d468f408955fabc83a987ec5d043}{tri\+\_\+left}
+\item 
+tuple \hyperlink{namespacepygame_1_1cursors_a4713aff102abe2b2d27c5ebe1b853bcc}{tri\+\_\+right}
+\item 
+tuple \hyperlink{namespacepygame_1_1cursors_ae6ff5b89a2625015133293e6cce576d9}{thickarrow\+\_\+strings}
+\item 
+tuple \hyperlink{namespacepygame_1_1cursors_a9e8996ddcf02b7a1f494f6ee00a9bf52}{sizer\+\_\+x\+\_\+strings}
+\item 
+tuple \hyperlink{namespacepygame_1_1cursors_a1e9668d9192c520351b6fc6ea6aeb1ab}{sizer\+\_\+y\+\_\+strings}
+\item 
+tuple \hyperlink{namespacepygame_1_1cursors_a9647ff45f5032a1cfd9745fbcb588512}{sizer\+\_\+xy\+\_\+strings}
+\item 
+tuple \hyperlink{namespacepygame_1_1cursors_a44fb57310f6f4f5a8a008acdfda21d2c}{textmarker\+\_\+strings}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1cursors_a19f38a01d13e77f591209869d99d99e5}\label{namespacepygame_1_1cursors_a19f38a01d13e77f591209869d99d99e5}} 
+\index{pygame\+::cursors@{pygame\+::cursors}!compile@{compile}}
+\index{compile@{compile}!pygame\+::cursors@{pygame\+::cursors}}
+\subsubsection{\texorpdfstring{compile()}{compile()}}
+{\footnotesize\ttfamily def pygame.\+cursors.\+compile (\begin{DoxyParamCaption}\item[{}]{strings,  }\item[{}]{black = {\ttfamily \textquotesingle{}X\textquotesingle{}},  }\item[{}]{white = {\ttfamily \textquotesingle{}.\textquotesingle{}},  }\item[{}]{xor = {\ttfamily \textquotesingle{}o\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.cursors.compile(strings, black, white,xor) -> data, mask
+compile cursor strings into cursor data
+
+This takes a set of strings with equal length and computes
+the binary data for that cursor. The string widths must be
+divisible by 8.
+
+The black and white arguments are single letter strings that
+tells which characters will represent black pixels, and which
+characters represent white pixels. All other characters are
+considered clear.
+
+This returns a tuple containing the cursor data and cursor mask
+data. Both these arguments are used when setting a cursor with
+pygame.mouse.set_cursor().
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1cursors_a2a84c8676fb5765acdb5556d7bf9ca22}\label{namespacepygame_1_1cursors_a2a84c8676fb5765acdb5556d7bf9ca22}} 
+\index{pygame\+::cursors@{pygame\+::cursors}!load\+\_\+xbm@{load\+\_\+xbm}}
+\index{load\+\_\+xbm@{load\+\_\+xbm}!pygame\+::cursors@{pygame\+::cursors}}
+\subsubsection{\texorpdfstring{load\+\_\+xbm()}{load\_xbm()}}
+{\footnotesize\ttfamily def pygame.\+cursors.\+load\+\_\+xbm (\begin{DoxyParamCaption}\item[{}]{curs,  }\item[{}]{mask }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pygame.cursors.load_xbm(cursorfile, maskfile) -> cursor_args
+reads a pair of XBM files into set_cursor arguments
+
+Arguments can either be filenames or filelike objects
+with the readlines method. Not largely tested, but
+should work with typical XBM files.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1cursors_af1f11288e22a66d5740e960da4da51b2}\label{namespacepygame_1_1cursors_af1f11288e22a66d5740e960da4da51b2}} 
+\index{pygame\+::cursors@{pygame\+::cursors}!arrow@{arrow}}
+\index{arrow@{arrow}!pygame\+::cursors@{pygame\+::cursors}}
+\subsubsection{\texorpdfstring{arrow}{arrow}}
+{\footnotesize\ttfamily tuple pygame.\+cursors.\+arrow}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  ((16, 16), (0, 0),
+2     (0x00,0x00,0x40,0x00,0x60,0x00,0x70,0x00,0x78,0x00,0x7C,0x00,0x7E,0x00,0x7F,0x00,
+3      0x7F,0x80,0x7C,0x00,0x6C,0x00,0x46,0x00,0x06,0x00,0x03,0x00,0x03,0x00,0x00,0x00),
+4     (0x40,0x00,0xE0,0x00,0xF0,0x00,0xF8,0x00,0xFC,0x00,0xFE,0x00,0xFF,0x00,0xFF,0x80,
+5      0xFF,0xC0,0xFF,0x80,0xFE,0x00,0xEF,0x00,0x4F,0x00,0x07,0x80,0x07,0x80,0x03,0x00))
+\end{DoxyCode}
+
+
+pygame -\/ Python Game Library Copyright (C) 2000-\/2003 Pete Shinners 
+
+This library is free software; you can redistribute it and/or modify it under the terms of the G\+NU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Library General Public License for more details.
+
+You should have received a copy of the G\+NU Library General Public License along with this library; if not, write to the Free Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-\/1307 U\+SA
+
+Pete Shinners \href{mailto:pete@shinners.org}{\tt pete@shinners.\+org} \mbox{\Hypertarget{namespacepygame_1_1cursors_af65f9378a20934bb0164ba76d0acaa7e}\label{namespacepygame_1_1cursors_af65f9378a20934bb0164ba76d0acaa7e}} 
+\index{pygame\+::cursors@{pygame\+::cursors}!ball@{ball}}
+\index{ball@{ball}!pygame\+::cursors@{pygame\+::cursors}}
+\subsubsection{\texorpdfstring{ball}{ball}}
+{\footnotesize\ttfamily tuple pygame.\+cursors.\+ball}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  ((16, 16), (7, 7),
+2     (0, 0, 3, 192, 15, 240, 24, 248, 51, 252, 55, 252, 127, 254, 127, 254,
+3      127, 254, 127, 254, 63, 252, 63, 252, 31, 248, 15, 240, 3, 192, 0, 0),
+4     (3, 192, 15, 240, 31, 248, 63, 252, 127, 254, 127, 254, 255, 255, 255,
+5      255, 255, 255, 255, 255, 127, 254, 127, 254, 63, 252, 31, 248, 15, 240,
+6      3, 192))
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepygame_1_1cursors_a85c7b15bfadda6d7d8c6df861376f4b7}\label{namespacepygame_1_1cursors_a85c7b15bfadda6d7d8c6df861376f4b7}} 
+\index{pygame\+::cursors@{pygame\+::cursors}!broken\+\_\+x@{broken\+\_\+x}}
+\index{broken\+\_\+x@{broken\+\_\+x}!pygame\+::cursors@{pygame\+::cursors}}
+\subsubsection{\texorpdfstring{broken\+\_\+x}{broken\_x}}
+{\footnotesize\ttfamily tuple pygame.\+cursors.\+broken\+\_\+x}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  ((16, 16), (7, 7),
+2     (0, 0, 96, 6, 112, 14, 56, 28, 28, 56, 12, 48, 0, 0, 0, 0, 0, 0, 0, 0,
+3      12, 48, 28, 56, 56, 28, 112, 14, 96, 6, 0, 0),
+4     (224, 7, 240, 15, 248, 31, 124, 62, 62, 124, 30, 120, 14, 112, 0, 0, 0,
+5      0, 14, 112, 30, 120, 62, 124, 124, 62, 248, 31, 240, 15, 224, 7))
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepygame_1_1cursors_a548edbe0912474b543f62821a6f93466}\label{namespacepygame_1_1cursors_a548edbe0912474b543f62821a6f93466}} 
+\index{pygame\+::cursors@{pygame\+::cursors}!diamond@{diamond}}
+\index{diamond@{diamond}!pygame\+::cursors@{pygame\+::cursors}}
+\subsubsection{\texorpdfstring{diamond}{diamond}}
+{\footnotesize\ttfamily tuple pygame.\+cursors.\+diamond}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  ((16, 16), (7, 7),
+2     (0, 0, 1, 0, 3, 128, 7, 192, 14, 224, 28, 112, 56, 56, 112, 28, 56,
+3      56, 28, 112, 14, 224, 7, 192, 3, 128, 1, 0, 0, 0, 0, 0),
+4     (1, 0, 3, 128, 7, 192, 15, 224, 31, 240, 62, 248, 124, 124, 248, 62,
+5      124, 124, 62, 248, 31, 240, 15, 224, 7, 192, 3, 128, 1, 0, 0, 0))
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepygame_1_1cursors_a9e8996ddcf02b7a1f494f6ee00a9bf52}\label{namespacepygame_1_1cursors_a9e8996ddcf02b7a1f494f6ee00a9bf52}} 
+\index{pygame\+::cursors@{pygame\+::cursors}!sizer\+\_\+x\+\_\+strings@{sizer\+\_\+x\+\_\+strings}}
+\index{sizer\+\_\+x\+\_\+strings@{sizer\+\_\+x\+\_\+strings}!pygame\+::cursors@{pygame\+::cursors}}
+\subsubsection{\texorpdfstring{sizer\+\_\+x\+\_\+strings}{sizer\_x\_strings}}
+{\footnotesize\ttfamily tuple pygame.\+cursors.\+sizer\+\_\+x\+\_\+strings}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (               \textcolor{comment}{#sized 24x16}
+2  \textcolor{stringliteral}{"     X      X           "},
+3  \textcolor{stringliteral}{"    XX      XX          "},
+4  \textcolor{stringliteral}{"   X.X      X.X         "},
+5  \textcolor{stringliteral}{"  X..X      X..X        "},
+6  \textcolor{stringliteral}{" X...XXXXXXXX...X       "},
+7  \textcolor{stringliteral}{"X................X      "},
+8  \textcolor{stringliteral}{" X...XXXXXXXX...X       "},
+9  \textcolor{stringliteral}{"  X..X      X..X        "},
+10  \textcolor{stringliteral}{"   X.X      X.X         "},
+11  \textcolor{stringliteral}{"    XX      XX          "},
+12  \textcolor{stringliteral}{"     X      X           "},
+13  \textcolor{stringliteral}{"                        "},
+14  \textcolor{stringliteral}{"                        "},
+15  \textcolor{stringliteral}{"                        "},
+16  \textcolor{stringliteral}{"                        "},
+17  \textcolor{stringliteral}{"                        "},
+18 )
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepygame_1_1cursors_a9647ff45f5032a1cfd9745fbcb588512}\label{namespacepygame_1_1cursors_a9647ff45f5032a1cfd9745fbcb588512}} 
+\index{pygame\+::cursors@{pygame\+::cursors}!sizer\+\_\+xy\+\_\+strings@{sizer\+\_\+xy\+\_\+strings}}
+\index{sizer\+\_\+xy\+\_\+strings@{sizer\+\_\+xy\+\_\+strings}!pygame\+::cursors@{pygame\+::cursors}}
+\subsubsection{\texorpdfstring{sizer\+\_\+xy\+\_\+strings}{sizer\_xy\_strings}}
+{\footnotesize\ttfamily tuple pygame.\+cursors.\+sizer\+\_\+xy\+\_\+strings}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (               \textcolor{comment}{#sized 24x16}
+2  \textcolor{stringliteral}{"XXXXXXXX                "},
+3  \textcolor{stringliteral}{"X.....X                 "},
+4  \textcolor{stringliteral}{"X....X                  "},
+5  \textcolor{stringliteral}{"X...X                   "},
+6  \textcolor{stringliteral}{"X..X.X                  "},
+7  \textcolor{stringliteral}{"X.X X.X                 "},
+8  \textcolor{stringliteral}{"XX   X.X    X           "},
+9  \textcolor{stringliteral}{"X     X.X  XX           "},
+10  \textcolor{stringliteral}{"       X.XX.X           "},
+11  \textcolor{stringliteral}{"        X...X           "},
+12  \textcolor{stringliteral}{"        X...X           "},
+13  \textcolor{stringliteral}{"       X....X           "},
+14  \textcolor{stringliteral}{"      X.....X           "},
+15  \textcolor{stringliteral}{"     XXXXXXXX           "},
+16  \textcolor{stringliteral}{"                        "},
+17  \textcolor{stringliteral}{"                        "},
+18 )
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepygame_1_1cursors_a1e9668d9192c520351b6fc6ea6aeb1ab}\label{namespacepygame_1_1cursors_a1e9668d9192c520351b6fc6ea6aeb1ab}} 
+\index{pygame\+::cursors@{pygame\+::cursors}!sizer\+\_\+y\+\_\+strings@{sizer\+\_\+y\+\_\+strings}}
+\index{sizer\+\_\+y\+\_\+strings@{sizer\+\_\+y\+\_\+strings}!pygame\+::cursors@{pygame\+::cursors}}
+\subsubsection{\texorpdfstring{sizer\+\_\+y\+\_\+strings}{sizer\_y\_strings}}
+{\footnotesize\ttfamily tuple pygame.\+cursors.\+sizer\+\_\+y\+\_\+strings}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (               \textcolor{comment}{#sized 16x24}
+2  \textcolor{stringliteral}{"     X          "},
+3  \textcolor{stringliteral}{"    X.X         "},
+4  \textcolor{stringliteral}{"   X...X        "},
+5  \textcolor{stringliteral}{"  X.....X       "},
+6  \textcolor{stringliteral}{" X.......X      "},
+7  \textcolor{stringliteral}{"XXXXX.XXXXX     "},
+8  \textcolor{stringliteral}{"    X.X         "},
+9  \textcolor{stringliteral}{"    X.X         "},
+10  \textcolor{stringliteral}{"    X.X         "},
+11  \textcolor{stringliteral}{"    X.X         "},
+12  \textcolor{stringliteral}{"    X.X         "},
+13  \textcolor{stringliteral}{"    X.X         "},
+14  \textcolor{stringliteral}{"    X.X         "},
+15  \textcolor{stringliteral}{"XXXXX.XXXXX     "},
+16  \textcolor{stringliteral}{" X.......X      "},
+17  \textcolor{stringliteral}{"  X.....X       "},
+18  \textcolor{stringliteral}{"   X...X        "},
+19  \textcolor{stringliteral}{"    X.X         "},
+20  \textcolor{stringliteral}{"     X          "},
+21  \textcolor{stringliteral}{"                "},
+22  \textcolor{stringliteral}{"                "},
+23  \textcolor{stringliteral}{"                "},
+24  \textcolor{stringliteral}{"                "},
+25  \textcolor{stringliteral}{"                "},
+26 )
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepygame_1_1cursors_a44fb57310f6f4f5a8a008acdfda21d2c}\label{namespacepygame_1_1cursors_a44fb57310f6f4f5a8a008acdfda21d2c}} 
+\index{pygame\+::cursors@{pygame\+::cursors}!textmarker\+\_\+strings@{textmarker\+\_\+strings}}
+\index{textmarker\+\_\+strings@{textmarker\+\_\+strings}!pygame\+::cursors@{pygame\+::cursors}}
+\subsubsection{\texorpdfstring{textmarker\+\_\+strings}{textmarker\_strings}}
+{\footnotesize\ttfamily tuple pygame.\+cursors.\+textmarker\+\_\+strings}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (               \textcolor{comment}{#sized 8x16}
+2  \textcolor{stringliteral}{"ooo ooo "},
+3  \textcolor{stringliteral}{"   o    "},
+4  \textcolor{stringliteral}{"   o    "},
+5  \textcolor{stringliteral}{"   o    "},
+6  \textcolor{stringliteral}{"   o    "},
+7  \textcolor{stringliteral}{"   o    "},
+8  \textcolor{stringliteral}{"   o    "},
+9  \textcolor{stringliteral}{"   o    "},
+10  \textcolor{stringliteral}{"   o    "},
+11  \textcolor{stringliteral}{"   o    "},
+12  \textcolor{stringliteral}{"   o    "},
+13  \textcolor{stringliteral}{"ooo ooo "},
+14  \textcolor{stringliteral}{"        "},
+15  \textcolor{stringliteral}{"        "},
+16  \textcolor{stringliteral}{"        "},
+17  \textcolor{stringliteral}{"        "},
+18 )
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepygame_1_1cursors_ae6ff5b89a2625015133293e6cce576d9}\label{namespacepygame_1_1cursors_ae6ff5b89a2625015133293e6cce576d9}} 
+\index{pygame\+::cursors@{pygame\+::cursors}!thickarrow\+\_\+strings@{thickarrow\+\_\+strings}}
+\index{thickarrow\+\_\+strings@{thickarrow\+\_\+strings}!pygame\+::cursors@{pygame\+::cursors}}
+\subsubsection{\texorpdfstring{thickarrow\+\_\+strings}{thickarrow\_strings}}
+{\footnotesize\ttfamily tuple pygame.\+cursors.\+thickarrow\+\_\+strings}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (               \textcolor{comment}{#sized 24x24}
+2   \textcolor{stringliteral}{"XX                      "},
+3   \textcolor{stringliteral}{"XXX                     "},
+4   \textcolor{stringliteral}{"XXXX                    "},
+5   \textcolor{stringliteral}{"XX.XX                   "},
+6   \textcolor{stringliteral}{"XX..XX                  "},
+7   \textcolor{stringliteral}{"XX...XX                 "},
+8   \textcolor{stringliteral}{"XX....XX                "},
+9   \textcolor{stringliteral}{"XX.....XX               "},
+10   \textcolor{stringliteral}{"XX......XX              "},
+11   \textcolor{stringliteral}{"XX.......XX             "},
+12   \textcolor{stringliteral}{"XX........XX            "},
+13   \textcolor{stringliteral}{"XX........XXX           "},
+14   \textcolor{stringliteral}{"XX......XXXXX           "},
+15   \textcolor{stringliteral}{"XX.XXX..XX              "},
+16   \textcolor{stringliteral}{"XXXX XX..XX             "},
+17   \textcolor{stringliteral}{"XX   XX..XX             "},
+18   \textcolor{stringliteral}{"     XX..XX             "},
+19   \textcolor{stringliteral}{"      XX..XX            "},
+20   \textcolor{stringliteral}{"      XX..XX            "},
+21   \textcolor{stringliteral}{"       XXXX             "},
+22   \textcolor{stringliteral}{"       XX               "},
+23   \textcolor{stringliteral}{"                        "},
+24   \textcolor{stringliteral}{"                        "},
+25   \textcolor{stringliteral}{"                        "},
+26 )
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepygame_1_1cursors_ab8f9d468f408955fabc83a987ec5d043}\label{namespacepygame_1_1cursors_ab8f9d468f408955fabc83a987ec5d043}} 
+\index{pygame\+::cursors@{pygame\+::cursors}!tri\+\_\+left@{tri\+\_\+left}}
+\index{tri\+\_\+left@{tri\+\_\+left}!pygame\+::cursors@{pygame\+::cursors}}
+\subsubsection{\texorpdfstring{tri\+\_\+left}{tri\_left}}
+{\footnotesize\ttfamily tuple pygame.\+cursors.\+tri\+\_\+left}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  ((16, 16), (1, 1),
+2     (0, 0, 96, 0, 120, 0, 62, 0, 63, 128, 31, 224, 31, 248, 15, 254, 15, 254,
+3      7, 128, 7, 128, 3, 128, 3, 128, 1, 128, 1, 128, 0, 0),
+4     (224, 0, 248, 0, 254, 0, 127, 128, 127, 224, 63, 248, 63, 254, 31, 255,
+5      31, 255, 15, 254, 15, 192, 7, 192, 7, 192, 3, 192, 3, 192, 1, 128))
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepygame_1_1cursors_a4713aff102abe2b2d27c5ebe1b853bcc}\label{namespacepygame_1_1cursors_a4713aff102abe2b2d27c5ebe1b853bcc}} 
+\index{pygame\+::cursors@{pygame\+::cursors}!tri\+\_\+right@{tri\+\_\+right}}
+\index{tri\+\_\+right@{tri\+\_\+right}!pygame\+::cursors@{pygame\+::cursors}}
+\subsubsection{\texorpdfstring{tri\+\_\+right}{tri\_right}}
+{\footnotesize\ttfamily tuple pygame.\+cursors.\+tri\+\_\+right}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  ((16, 16), (14, 1),
+2     (0, 0, 0, 6, 0, 30, 0, 124, 1, 252, 7, 248, 31, 248, 127, 240, 127, 240,
+3      1, 224, 1, 224, 1, 192, 1, 192, 1, 128, 1, 128, 0, 0),
+4     (0, 7, 0, 31, 0, 127, 1, 254, 7, 254, 31, 252, 127, 252, 255, 248, 255,
+5      248, 127, 240, 3, 240, 3, 224, 3, 224, 3, 192, 3, 192, 1, 128))
+\end{DoxyCode}

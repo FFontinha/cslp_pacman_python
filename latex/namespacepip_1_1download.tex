@@ -1,0 +1,183 @@
+\hypertarget{namespacepip_1_1download}{}\section{pip.\+download Namespace Reference}
+\label{namespacepip_1_1download}\index{pip.\+download@{pip.\+download}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpip_1_1download_1_1_insecure_h_t_t_p_adapter}{Insecure\+H\+T\+T\+P\+Adapter}
+\item 
+class \hyperlink{classpip_1_1download_1_1_local_f_s_adapter}{Local\+F\+S\+Adapter}
+\item 
+class \hyperlink{classpip_1_1download_1_1_multi_domain_basic_auth}{Multi\+Domain\+Basic\+Auth}
+\item 
+class \hyperlink{classpip_1_1download_1_1_pip_session}{Pip\+Session}
+\item 
+class \hyperlink{classpip_1_1download_1_1_pip_xmlrpc_transport}{Pip\+Xmlrpc\+Transport}
+\item 
+class \hyperlink{classpip_1_1download_1_1_safe_file_cache}{Safe\+File\+Cache}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepip_1_1download_a1adf8d9a00b88ff01bb5de6168965549}{user\+\_\+agent} ()
+\item 
+def \hyperlink{namespacepip_1_1download_aff76caa03b1aca7c40ca9ba67fe85580}{get\+\_\+file\+\_\+content} (url, comes\+\_\+from=None, session=None)
+\item 
+def \hyperlink{namespacepip_1_1download_afec89d460aaf7de168f8f2423dbb08b0}{is\+\_\+url} (name)
+\item 
+def \hyperlink{namespacepip_1_1download_ad818b3bf9d9360957de154b2d3a35629}{url\+\_\+to\+\_\+path} (url)
+\item 
+def \hyperlink{namespacepip_1_1download_a7297c9435d47ee6174bded394c991c2a}{path\+\_\+to\+\_\+url} (path)
+\item 
+def \hyperlink{namespacepip_1_1download_a81e68dcf701c507fefeff41b73a93f42}{is\+\_\+archive\+\_\+file} (name)
+\item 
+def \hyperlink{namespacepip_1_1download_a9059fb2bd4b17f476f692a556eeeace9}{unpack\+\_\+vcs\+\_\+link} (link, location)
+\item 
+def \hyperlink{namespacepip_1_1download_a178d555d11b1cca09822a4d4ef5bac64}{is\+\_\+vcs\+\_\+url} (link)
+\item 
+def \hyperlink{namespacepip_1_1download_ac03d1f30794f44be8cac701ef45c54de}{is\+\_\+file\+\_\+url} (link)
+\item 
+def \hyperlink{namespacepip_1_1download_af644adf56a465c06667edaab9ec093a3}{is\+\_\+dir\+\_\+url} (link)
+\item 
+def \hyperlink{namespacepip_1_1download_ad5084221b7a7bd5dd25924defc00e79d}{unpack\+\_\+http\+\_\+url} (link, location, download\+\_\+dir=None, session=None, hashes=None)
+\item 
+def \hyperlink{namespacepip_1_1download_ae6e106ffe2dffa7730badf96e678d849}{unpack\+\_\+file\+\_\+url} (link, location, download\+\_\+dir=None, hashes=None)
+\item 
+def \hyperlink{namespacepip_1_1download_a89f50969cc2d8f8ecf384c7b4f1a4031}{unpack\+\_\+url} (link, location, download\+\_\+dir=None, only\+\_\+download=False, session=None, hashes=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespacepip_1_1download_a76157632746f2b98b33010db6ebbad83}{H\+A\+S\+\_\+\+T\+LS} = True
+\item 
+\hyperlink{namespacepip_1_1download_ac16ff9630d200de4db31f3da4ca8352f}{logger} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepip_1_1download_aff76caa03b1aca7c40ca9ba67fe85580}\label{namespacepip_1_1download_aff76caa03b1aca7c40ca9ba67fe85580}} 
+\index{pip\+::download@{pip\+::download}!get\+\_\+file\+\_\+content@{get\+\_\+file\+\_\+content}}
+\index{get\+\_\+file\+\_\+content@{get\+\_\+file\+\_\+content}!pip\+::download@{pip\+::download}}
+\subsubsection{\texorpdfstring{get\+\_\+file\+\_\+content()}{get\_file\_content()}}
+{\footnotesize\ttfamily def pip.\+download.\+get\+\_\+file\+\_\+content (\begin{DoxyParamCaption}\item[{}]{url,  }\item[{}]{comes\+\_\+from = {\ttfamily None},  }\item[{}]{session = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the content of a file; it may be a filename, file: URL, or
+http: URL.  Returns (location, content).  Content is unicode.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1download_a81e68dcf701c507fefeff41b73a93f42}\label{namespacepip_1_1download_a81e68dcf701c507fefeff41b73a93f42}} 
+\index{pip\+::download@{pip\+::download}!is\+\_\+archive\+\_\+file@{is\+\_\+archive\+\_\+file}}
+\index{is\+\_\+archive\+\_\+file@{is\+\_\+archive\+\_\+file}!pip\+::download@{pip\+::download}}
+\subsubsection{\texorpdfstring{is\+\_\+archive\+\_\+file()}{is\_archive\_file()}}
+{\footnotesize\ttfamily def pip.\+download.\+is\+\_\+archive\+\_\+file (\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if `name` is a considered as an archive file.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1download_af644adf56a465c06667edaab9ec093a3}\label{namespacepip_1_1download_af644adf56a465c06667edaab9ec093a3}} 
+\index{pip\+::download@{pip\+::download}!is\+\_\+dir\+\_\+url@{is\+\_\+dir\+\_\+url}}
+\index{is\+\_\+dir\+\_\+url@{is\+\_\+dir\+\_\+url}!pip\+::download@{pip\+::download}}
+\subsubsection{\texorpdfstring{is\+\_\+dir\+\_\+url()}{is\_dir\_url()}}
+{\footnotesize\ttfamily def pip.\+download.\+is\+\_\+dir\+\_\+url (\begin{DoxyParamCaption}\item[{}]{link }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether a file:// Link points to a directory.
+
+``link`` must not have any other scheme but file://. Call is_file_url()
+first.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1download_ac03d1f30794f44be8cac701ef45c54de}\label{namespacepip_1_1download_ac03d1f30794f44be8cac701ef45c54de}} 
+\index{pip\+::download@{pip\+::download}!is\+\_\+file\+\_\+url@{is\+\_\+file\+\_\+url}}
+\index{is\+\_\+file\+\_\+url@{is\+\_\+file\+\_\+url}!pip\+::download@{pip\+::download}}
+\subsubsection{\texorpdfstring{is\+\_\+file\+\_\+url()}{is\_file\_url()}}
+{\footnotesize\ttfamily def pip.\+download.\+is\+\_\+file\+\_\+url (\begin{DoxyParamCaption}\item[{}]{link }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepip_1_1download_afec89d460aaf7de168f8f2423dbb08b0}\label{namespacepip_1_1download_afec89d460aaf7de168f8f2423dbb08b0}} 
+\index{pip\+::download@{pip\+::download}!is\+\_\+url@{is\+\_\+url}}
+\index{is\+\_\+url@{is\+\_\+url}!pip\+::download@{pip\+::download}}
+\subsubsection{\texorpdfstring{is\+\_\+url()}{is\_url()}}
+{\footnotesize\ttfamily def pip.\+download.\+is\+\_\+url (\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns true if the name looks like a URL\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1download_a178d555d11b1cca09822a4d4ef5bac64}\label{namespacepip_1_1download_a178d555d11b1cca09822a4d4ef5bac64}} 
+\index{pip\+::download@{pip\+::download}!is\+\_\+vcs\+\_\+url@{is\+\_\+vcs\+\_\+url}}
+\index{is\+\_\+vcs\+\_\+url@{is\+\_\+vcs\+\_\+url}!pip\+::download@{pip\+::download}}
+\subsubsection{\texorpdfstring{is\+\_\+vcs\+\_\+url()}{is\_vcs\_url()}}
+{\footnotesize\ttfamily def pip.\+download.\+is\+\_\+vcs\+\_\+url (\begin{DoxyParamCaption}\item[{}]{link }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepip_1_1download_a7297c9435d47ee6174bded394c991c2a}\label{namespacepip_1_1download_a7297c9435d47ee6174bded394c991c2a}} 
+\index{pip\+::download@{pip\+::download}!path\+\_\+to\+\_\+url@{path\+\_\+to\+\_\+url}}
+\index{path\+\_\+to\+\_\+url@{path\+\_\+to\+\_\+url}!pip\+::download@{pip\+::download}}
+\subsubsection{\texorpdfstring{path\+\_\+to\+\_\+url()}{path\_to\_url()}}
+{\footnotesize\ttfamily def pip.\+download.\+path\+\_\+to\+\_\+url (\begin{DoxyParamCaption}\item[{}]{path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert a path to a file: URL.  The path will be made absolute and have
+quoted path parts.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1download_ae6e106ffe2dffa7730badf96e678d849}\label{namespacepip_1_1download_ae6e106ffe2dffa7730badf96e678d849}} 
+\index{pip\+::download@{pip\+::download}!unpack\+\_\+file\+\_\+url@{unpack\+\_\+file\+\_\+url}}
+\index{unpack\+\_\+file\+\_\+url@{unpack\+\_\+file\+\_\+url}!pip\+::download@{pip\+::download}}
+\subsubsection{\texorpdfstring{unpack\+\_\+file\+\_\+url()}{unpack\_file\_url()}}
+{\footnotesize\ttfamily def pip.\+download.\+unpack\+\_\+file\+\_\+url (\begin{DoxyParamCaption}\item[{}]{link,  }\item[{}]{location,  }\item[{}]{download\+\_\+dir = {\ttfamily None},  }\item[{}]{hashes = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Unpack link into location.
+
+If download_dir is provided and link points to a file, make a copy
+of the link file inside download_dir.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1download_ad5084221b7a7bd5dd25924defc00e79d}\label{namespacepip_1_1download_ad5084221b7a7bd5dd25924defc00e79d}} 
+\index{pip\+::download@{pip\+::download}!unpack\+\_\+http\+\_\+url@{unpack\+\_\+http\+\_\+url}}
+\index{unpack\+\_\+http\+\_\+url@{unpack\+\_\+http\+\_\+url}!pip\+::download@{pip\+::download}}
+\subsubsection{\texorpdfstring{unpack\+\_\+http\+\_\+url()}{unpack\_http\_url()}}
+{\footnotesize\ttfamily def pip.\+download.\+unpack\+\_\+http\+\_\+url (\begin{DoxyParamCaption}\item[{}]{link,  }\item[{}]{location,  }\item[{}]{download\+\_\+dir = {\ttfamily None},  }\item[{}]{session = {\ttfamily None},  }\item[{}]{hashes = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepip_1_1download_a89f50969cc2d8f8ecf384c7b4f1a4031}\label{namespacepip_1_1download_a89f50969cc2d8f8ecf384c7b4f1a4031}} 
+\index{pip\+::download@{pip\+::download}!unpack\+\_\+url@{unpack\+\_\+url}}
+\index{unpack\+\_\+url@{unpack\+\_\+url}!pip\+::download@{pip\+::download}}
+\subsubsection{\texorpdfstring{unpack\+\_\+url()}{unpack\_url()}}
+{\footnotesize\ttfamily def pip.\+download.\+unpack\+\_\+url (\begin{DoxyParamCaption}\item[{}]{link,  }\item[{}]{location,  }\item[{}]{download\+\_\+dir = {\ttfamily None},  }\item[{}]{only\+\_\+download = {\ttfamily False},  }\item[{}]{session = {\ttfamily None},  }\item[{}]{hashes = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Unpack link.
+   If link is a VCS link:
+     if only_download, export into download_dir and ignore location
+      else unpack into location
+   for other types of link:
+     - unpack into location
+     - if download_dir, copy the file into download_dir
+     - if only_download, mark location for deletion
+
+:param hashes: A Hashes object, one of whose embedded hashes must match,
+    or HashMismatch will be raised. If the Hashes is empty, no matches are
+    required, and unhashable types of requirements (like VCS ones, which
+    would ordinarily raise HashUnsupported) are allowed.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1download_a9059fb2bd4b17f476f692a556eeeace9}\label{namespacepip_1_1download_a9059fb2bd4b17f476f692a556eeeace9}} 
+\index{pip\+::download@{pip\+::download}!unpack\+\_\+vcs\+\_\+link@{unpack\+\_\+vcs\+\_\+link}}
+\index{unpack\+\_\+vcs\+\_\+link@{unpack\+\_\+vcs\+\_\+link}!pip\+::download@{pip\+::download}}
+\subsubsection{\texorpdfstring{unpack\+\_\+vcs\+\_\+link()}{unpack\_vcs\_link()}}
+{\footnotesize\ttfamily def pip.\+download.\+unpack\+\_\+vcs\+\_\+link (\begin{DoxyParamCaption}\item[{}]{link,  }\item[{}]{location }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepip_1_1download_ad818b3bf9d9360957de154b2d3a35629}\label{namespacepip_1_1download_ad818b3bf9d9360957de154b2d3a35629}} 
+\index{pip\+::download@{pip\+::download}!url\+\_\+to\+\_\+path@{url\+\_\+to\+\_\+path}}
+\index{url\+\_\+to\+\_\+path@{url\+\_\+to\+\_\+path}!pip\+::download@{pip\+::download}}
+\subsubsection{\texorpdfstring{url\+\_\+to\+\_\+path()}{url\_to\_path()}}
+{\footnotesize\ttfamily def pip.\+download.\+url\+\_\+to\+\_\+path (\begin{DoxyParamCaption}\item[{}]{url }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert a file: URL to a path.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1download_a1adf8d9a00b88ff01bb5de6168965549}\label{namespacepip_1_1download_a1adf8d9a00b88ff01bb5de6168965549}} 
+\index{pip\+::download@{pip\+::download}!user\+\_\+agent@{user\+\_\+agent}}
+\index{user\+\_\+agent@{user\+\_\+agent}!pip\+::download@{pip\+::download}}
+\subsubsection{\texorpdfstring{user\+\_\+agent()}{user\_agent()}}
+{\footnotesize\ttfamily def pip.\+download.\+user\+\_\+agent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a string representing the user agent.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepip_1_1download_a76157632746f2b98b33010db6ebbad83}\label{namespacepip_1_1download_a76157632746f2b98b33010db6ebbad83}} 
+\index{pip\+::download@{pip\+::download}!H\+A\+S\+\_\+\+T\+LS@{H\+A\+S\+\_\+\+T\+LS}}
+\index{H\+A\+S\+\_\+\+T\+LS@{H\+A\+S\+\_\+\+T\+LS}!pip\+::download@{pip\+::download}}
+\subsubsection{\texorpdfstring{H\+A\+S\+\_\+\+T\+LS}{HAS\_TLS}}
+{\footnotesize\ttfamily bool pip.\+download.\+H\+A\+S\+\_\+\+T\+LS = True}
+
+\mbox{\Hypertarget{namespacepip_1_1download_ac16ff9630d200de4db31f3da4ca8352f}\label{namespacepip_1_1download_ac16ff9630d200de4db31f3da4ca8352f}} 
+\index{pip\+::download@{pip\+::download}!logger@{logger}}
+\index{logger@{logger}!pip\+::download@{pip\+::download}}
+\subsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily pip.\+download.\+logger = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+

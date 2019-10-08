@@ -1,0 +1,84 @@
+\hypertarget{font_8h}{}\section{venv/include/site/python3.6/pygame/font.h File Reference}
+\label{font_8h}\index{venv/include/site/python3.\+6/pygame/font.\+h@{venv/include/site/python3.\+6/pygame/font.\+h}}
+{\ttfamily \#include $<$Python.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L\+\_\+ttf.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_py_font_object}{Py\+Font\+Object}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{font_8h_a4268adeee4ffda3e9f142d11ceb24f35}{F\+O\+N\+T\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK}()
+\item 
+\#define \hyperlink{font_8h_a7031f09eb484ac630859df8fa154f202}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+F\+O\+N\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}~0
+\item 
+\#define \hyperlink{font_8h_a5bd29e8c4d8c7e590bd3e4147f07ba05}{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+F\+O\+N\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS}~3
+\item 
+\#define \hyperlink{font_8h_ac6d74ebb0c15737ab5c5a8be05e85007}{Py\+Font\+\_\+\+As\+Font}(x)~(((\hyperlink{struct_py_font_object}{Py\+Font\+Object}$\ast$)x)-\/$>$font)
+\item 
+\#define \hyperlink{font_8h_a8f7be35618178b9b62743cb7e7e67258}{Py\+Font\+\_\+\+Check}(x)~((x)-\/$>$ob\+\_\+type == (Py\+Type\+Object$\ast$)Py\+F\+O\+N\+T\+\_\+\+C\+\_\+\+A\+PI\mbox{[}0\mbox{]})
+\item 
+\#define \hyperlink{font_8h_ab0bedb9c8a99028d7d02fbebd7c64f12}{Py\+Font\+\_\+\+Type}~($\ast$(Py\+Type\+Object$\ast$)Py\+F\+O\+N\+T\+\_\+\+C\+\_\+\+A\+PI\mbox{[}0\mbox{]})
+\item 
+\#define \hyperlink{font_8h_a85adc9a2aab2a5831bcfe48693eb3f79}{Py\+Font\+\_\+\+New}~($\ast$(Py\+Object$\ast$($\ast$)(T\+T\+F\+\_\+\+Font$\ast$))Py\+F\+O\+N\+T\+\_\+\+C\+\_\+\+A\+PI\mbox{[}1\mbox{]})
+\item 
+\#define \hyperlink{font_8h_af8123f8634cbc4c1594f540f018df5c7}{import\+\_\+pygame\+\_\+font}()~\hyperlink{__pygame_8h_a97ba72dc608817ef953d8fefeeccc4f1}{\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}(font, F\+O\+NT, Py\+F\+O\+N\+T\+\_\+\+C\+\_\+\+A\+PI)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{font_8h_a4268adeee4ffda3e9f142d11ceb24f35}\label{font_8h_a4268adeee4ffda3e9f142d11ceb24f35}} 
+\index{font.\+h@{font.\+h}!F\+O\+N\+T\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK@{F\+O\+N\+T\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK}}
+\index{F\+O\+N\+T\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK@{F\+O\+N\+T\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK}!font.\+h@{font.\+h}}
+\subsubsection{\texorpdfstring{F\+O\+N\+T\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK}{FONT\_INIT\_CHECK}}
+{\footnotesize\ttfamily \#define F\+O\+N\+T\+\_\+\+I\+N\+I\+T\+\_\+\+C\+H\+E\+CK(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if}(!(*(\textcolor{keywordtype}{int}*)PyFONT\_C\_API[2])) \(\backslash\)
+        return \hyperlink{__pygame_8h_aa133c030761504a9ed589e590a98c269}{RAISE}(\hyperlink{__pygame_8h_ad80ae665421878ea243b8c23dfbf7d34}{PyExc\_SDLError}, \textcolor{stringliteral}{"font system not initialized"})
+\end{DoxyCode}
+\mbox{\Hypertarget{font_8h_af8123f8634cbc4c1594f540f018df5c7}\label{font_8h_af8123f8634cbc4c1594f540f018df5c7}} 
+\index{font.\+h@{font.\+h}!import\+\_\+pygame\+\_\+font@{import\+\_\+pygame\+\_\+font}}
+\index{import\+\_\+pygame\+\_\+font@{import\+\_\+pygame\+\_\+font}!font.\+h@{font.\+h}}
+\subsubsection{\texorpdfstring{import\+\_\+pygame\+\_\+font}{import\_pygame\_font}}
+{\footnotesize\ttfamily \#define import\+\_\+pygame\+\_\+font(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\hyperlink{__pygame_8h_a97ba72dc608817ef953d8fefeeccc4f1}{\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+P\+Y\+G\+A\+M\+E\+\_\+\+M\+O\+D\+U\+LE}(font, F\+O\+NT, Py\+F\+O\+N\+T\+\_\+\+C\+\_\+\+A\+PI)}
+
+\mbox{\Hypertarget{font_8h_ac6d74ebb0c15737ab5c5a8be05e85007}\label{font_8h_ac6d74ebb0c15737ab5c5a8be05e85007}} 
+\index{font.\+h@{font.\+h}!Py\+Font\+\_\+\+As\+Font@{Py\+Font\+\_\+\+As\+Font}}
+\index{Py\+Font\+\_\+\+As\+Font@{Py\+Font\+\_\+\+As\+Font}!font.\+h@{font.\+h}}
+\subsubsection{\texorpdfstring{Py\+Font\+\_\+\+As\+Font}{PyFont\_AsFont}}
+{\footnotesize\ttfamily \#define Py\+Font\+\_\+\+As\+Font(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((\hyperlink{struct_py_font_object}{Py\+Font\+Object}$\ast$)x)-\/$>$font)}
+
+\mbox{\Hypertarget{font_8h_a8f7be35618178b9b62743cb7e7e67258}\label{font_8h_a8f7be35618178b9b62743cb7e7e67258}} 
+\index{font.\+h@{font.\+h}!Py\+Font\+\_\+\+Check@{Py\+Font\+\_\+\+Check}}
+\index{Py\+Font\+\_\+\+Check@{Py\+Font\+\_\+\+Check}!font.\+h@{font.\+h}}
+\subsubsection{\texorpdfstring{Py\+Font\+\_\+\+Check}{PyFont\_Check}}
+{\footnotesize\ttfamily \#define Py\+Font\+\_\+\+Check(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((x)-\/$>$ob\+\_\+type == (Py\+Type\+Object$\ast$)Py\+F\+O\+N\+T\+\_\+\+C\+\_\+\+A\+PI\mbox{[}0\mbox{]})}
+
+\mbox{\Hypertarget{font_8h_a85adc9a2aab2a5831bcfe48693eb3f79}\label{font_8h_a85adc9a2aab2a5831bcfe48693eb3f79}} 
+\index{font.\+h@{font.\+h}!Py\+Font\+\_\+\+New@{Py\+Font\+\_\+\+New}}
+\index{Py\+Font\+\_\+\+New@{Py\+Font\+\_\+\+New}!font.\+h@{font.\+h}}
+\subsubsection{\texorpdfstring{Py\+Font\+\_\+\+New}{PyFont\_New}}
+{\footnotesize\ttfamily \#define Py\+Font\+\_\+\+New~($\ast$(Py\+Object$\ast$($\ast$)(T\+T\+F\+\_\+\+Font$\ast$))Py\+F\+O\+N\+T\+\_\+\+C\+\_\+\+A\+PI\mbox{[}1\mbox{]})}
+
+\mbox{\Hypertarget{font_8h_ab0bedb9c8a99028d7d02fbebd7c64f12}\label{font_8h_ab0bedb9c8a99028d7d02fbebd7c64f12}} 
+\index{font.\+h@{font.\+h}!Py\+Font\+\_\+\+Type@{Py\+Font\+\_\+\+Type}}
+\index{Py\+Font\+\_\+\+Type@{Py\+Font\+\_\+\+Type}!font.\+h@{font.\+h}}
+\subsubsection{\texorpdfstring{Py\+Font\+\_\+\+Type}{PyFont\_Type}}
+{\footnotesize\ttfamily \#define Py\+Font\+\_\+\+Type~($\ast$(Py\+Type\+Object$\ast$)Py\+F\+O\+N\+T\+\_\+\+C\+\_\+\+A\+PI\mbox{[}0\mbox{]})}
+
+\mbox{\Hypertarget{font_8h_a7031f09eb484ac630859df8fa154f202}\label{font_8h_a7031f09eb484ac630859df8fa154f202}} 
+\index{font.\+h@{font.\+h}!P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+F\+O\+N\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+F\+O\+N\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}}
+\index{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+F\+O\+N\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+F\+O\+N\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}!font.\+h@{font.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+F\+O\+N\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT}{PYGAMEAPI\_FONT\_FIRSTSLOT}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+F\+O\+N\+T\+\_\+\+F\+I\+R\+S\+T\+S\+L\+OT~0}
+
+\mbox{\Hypertarget{font_8h_a5bd29e8c4d8c7e590bd3e4147f07ba05}\label{font_8h_a5bd29e8c4d8c7e590bd3e4147f07ba05}} 
+\index{font.\+h@{font.\+h}!P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+F\+O\+N\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+F\+O\+N\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS}}
+\index{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+F\+O\+N\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS@{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+F\+O\+N\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS}!font.\+h@{font.\+h}}
+\subsubsection{\texorpdfstring{P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+F\+O\+N\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS}{PYGAMEAPI\_FONT\_NUMSLOTS}}
+{\footnotesize\ttfamily \#define P\+Y\+G\+A\+M\+E\+A\+P\+I\+\_\+\+F\+O\+N\+T\+\_\+\+N\+U\+M\+S\+L\+O\+TS~3}
+

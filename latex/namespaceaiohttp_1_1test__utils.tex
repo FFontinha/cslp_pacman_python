@@ -1,0 +1,106 @@
+\hypertarget{namespaceaiohttp_1_1test__utils}{}\section{aiohttp.\+test\+\_\+utils Namespace Reference}
+\label{namespaceaiohttp_1_1test__utils}\index{aiohttp.\+test\+\_\+utils@{aiohttp.\+test\+\_\+utils}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case}{Aio\+H\+T\+T\+P\+Test\+Case}
+\item 
+class \hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server}{Base\+Test\+Server}
+\item 
+class \hyperlink{classaiohttp_1_1test__utils_1_1_raw_test_server}{Raw\+Test\+Server}
+\item 
+class \hyperlink{classaiohttp_1_1test__utils_1_1_test_client}{Test\+Client}
+\item 
+class \hyperlink{classaiohttp_1_1test__utils_1_1_test_server}{Test\+Server}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceaiohttp_1_1test__utils_a9770c40215cbadb9fa185c34b7fe8935}{unused\+\_\+port} ()
+\item 
+def \hyperlink{namespaceaiohttp_1_1test__utils_adfdfa4b84d5dfa6d789cef9eb3dc36b7}{unittest\+\_\+run\+\_\+loop} (func, args, kwargs)
+\item 
+def \hyperlink{namespaceaiohttp_1_1test__utils_ab8e5dd7849cf2738ae5cc90a616e3349}{loop\+\_\+context} (loop\+\_\+factory=asyncio.\+new\+\_\+event\+\_\+loop, fast=False)
+\item 
+def \hyperlink{namespaceaiohttp_1_1test__utils_a78b60aab76f3be72e95f7cf4d6c84eaa}{setup\+\_\+test\+\_\+loop} (loop\+\_\+factory=asyncio.\+new\+\_\+event\+\_\+loop)
+\item 
+def \hyperlink{namespaceaiohttp_1_1test__utils_a363c70db902f00b6b6c1e71971a8ed3b}{teardown\+\_\+test\+\_\+loop} (loop, fast=False)
+\item 
+def \hyperlink{namespaceaiohttp_1_1test__utils_a2ebaf0270b54d8cf8c9ee700d30bdc00}{make\+\_\+mocked\+\_\+request} (method, path, headers=None, match\+\_\+info=sentinel, version=Http\+Version(1, 1), closing=False, app=None, writer=sentinel, protocol=sentinel, transport=sentinel, payload=sentinel, sslcontext=None, client\+\_\+max\+\_\+size=1024 $\ast$$\ast$2, loop=...)
+\item 
+def \hyperlink{namespaceaiohttp_1_1test__utils_aa94db37a64ab84f56f7190edc72f0f05}{make\+\_\+mocked\+\_\+coro} (return\+\_\+value=sentinel, raise\+\_\+exception=sentinel)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Utilities shared by tests.\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceaiohttp_1_1test__utils_ab8e5dd7849cf2738ae5cc90a616e3349}\label{namespaceaiohttp_1_1test__utils_ab8e5dd7849cf2738ae5cc90a616e3349}} 
+\index{aiohttp\+::test\+\_\+utils@{aiohttp\+::test\+\_\+utils}!loop\+\_\+context@{loop\+\_\+context}}
+\index{loop\+\_\+context@{loop\+\_\+context}!aiohttp\+::test\+\_\+utils@{aiohttp\+::test\+\_\+utils}}
+\subsubsection{\texorpdfstring{loop\+\_\+context()}{loop\_context()}}
+{\footnotesize\ttfamily def aiohttp.\+test\+\_\+utils.\+loop\+\_\+context (\begin{DoxyParamCaption}\item[{}]{loop\+\_\+factory = {\ttfamily asyncio.new\+\_\+event\+\_\+loop},  }\item[{}]{fast = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A contextmanager that creates an event_loop, for test purposes.
+
+Handles the creation and cleanup of a test loop.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceaiohttp_1_1test__utils_aa94db37a64ab84f56f7190edc72f0f05}\label{namespaceaiohttp_1_1test__utils_aa94db37a64ab84f56f7190edc72f0f05}} 
+\index{aiohttp\+::test\+\_\+utils@{aiohttp\+::test\+\_\+utils}!make\+\_\+mocked\+\_\+coro@{make\+\_\+mocked\+\_\+coro}}
+\index{make\+\_\+mocked\+\_\+coro@{make\+\_\+mocked\+\_\+coro}!aiohttp\+::test\+\_\+utils@{aiohttp\+::test\+\_\+utils}}
+\subsubsection{\texorpdfstring{make\+\_\+mocked\+\_\+coro()}{make\_mocked\_coro()}}
+{\footnotesize\ttfamily def aiohttp.\+test\+\_\+utils.\+make\+\_\+mocked\+\_\+coro (\begin{DoxyParamCaption}\item[{}]{return\+\_\+value = {\ttfamily sentinel},  }\item[{}]{raise\+\_\+exception = {\ttfamily sentinel} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a coroutine mock.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceaiohttp_1_1test__utils_a2ebaf0270b54d8cf8c9ee700d30bdc00}\label{namespaceaiohttp_1_1test__utils_a2ebaf0270b54d8cf8c9ee700d30bdc00}} 
+\index{aiohttp\+::test\+\_\+utils@{aiohttp\+::test\+\_\+utils}!make\+\_\+mocked\+\_\+request@{make\+\_\+mocked\+\_\+request}}
+\index{make\+\_\+mocked\+\_\+request@{make\+\_\+mocked\+\_\+request}!aiohttp\+::test\+\_\+utils@{aiohttp\+::test\+\_\+utils}}
+\subsubsection{\texorpdfstring{make\+\_\+mocked\+\_\+request()}{make\_mocked\_request()}}
+{\footnotesize\ttfamily def aiohttp.\+test\+\_\+utils.\+make\+\_\+mocked\+\_\+request (\begin{DoxyParamCaption}\item[{}]{method,  }\item[{}]{path,  }\item[{}]{headers = {\ttfamily None},  }\item[{}]{match\+\_\+info = {\ttfamily sentinel},  }\item[{}]{version = {\ttfamily HttpVersion(1,~1)},  }\item[{}]{closing = {\ttfamily False},  }\item[{}]{app = {\ttfamily None},  }\item[{}]{writer = {\ttfamily sentinel},  }\item[{}]{protocol = {\ttfamily sentinel},  }\item[{}]{transport = {\ttfamily sentinel},  }\item[{}]{payload = {\ttfamily sentinel},  }\item[{}]{sslcontext = {\ttfamily None},  }\item[{}]{client\+\_\+max\+\_\+size = {\ttfamily 1024$\ast$$\ast$2},  }\item[{}]{loop = {\ttfamily ...} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates mocked web.Request testing purposes.
+
+Useful in unit tests, when spinning full web server is overkill or
+specific conditions and errors are hard to trigger.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceaiohttp_1_1test__utils_a78b60aab76f3be72e95f7cf4d6c84eaa}\label{namespaceaiohttp_1_1test__utils_a78b60aab76f3be72e95f7cf4d6c84eaa}} 
+\index{aiohttp\+::test\+\_\+utils@{aiohttp\+::test\+\_\+utils}!setup\+\_\+test\+\_\+loop@{setup\+\_\+test\+\_\+loop}}
+\index{setup\+\_\+test\+\_\+loop@{setup\+\_\+test\+\_\+loop}!aiohttp\+::test\+\_\+utils@{aiohttp\+::test\+\_\+utils}}
+\subsubsection{\texorpdfstring{setup\+\_\+test\+\_\+loop()}{setup\_test\_loop()}}
+{\footnotesize\ttfamily def aiohttp.\+test\+\_\+utils.\+setup\+\_\+test\+\_\+loop (\begin{DoxyParamCaption}\item[{}]{loop\+\_\+factory = {\ttfamily asyncio.new\+\_\+event\+\_\+loop} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create and return an asyncio.BaseEventLoop
+instance.
+
+The caller should also call teardown_test_loop,
+once they are done with the loop.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceaiohttp_1_1test__utils_a363c70db902f00b6b6c1e71971a8ed3b}\label{namespaceaiohttp_1_1test__utils_a363c70db902f00b6b6c1e71971a8ed3b}} 
+\index{aiohttp\+::test\+\_\+utils@{aiohttp\+::test\+\_\+utils}!teardown\+\_\+test\+\_\+loop@{teardown\+\_\+test\+\_\+loop}}
+\index{teardown\+\_\+test\+\_\+loop@{teardown\+\_\+test\+\_\+loop}!aiohttp\+::test\+\_\+utils@{aiohttp\+::test\+\_\+utils}}
+\subsubsection{\texorpdfstring{teardown\+\_\+test\+\_\+loop()}{teardown\_test\_loop()}}
+{\footnotesize\ttfamily def aiohttp.\+test\+\_\+utils.\+teardown\+\_\+test\+\_\+loop (\begin{DoxyParamCaption}\item[{}]{loop,  }\item[{}]{fast = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Teardown and cleanup an event_loop created
+by setup_test_loop.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceaiohttp_1_1test__utils_adfdfa4b84d5dfa6d789cef9eb3dc36b7}\label{namespaceaiohttp_1_1test__utils_adfdfa4b84d5dfa6d789cef9eb3dc36b7}} 
+\index{aiohttp\+::test\+\_\+utils@{aiohttp\+::test\+\_\+utils}!unittest\+\_\+run\+\_\+loop@{unittest\+\_\+run\+\_\+loop}}
+\index{unittest\+\_\+run\+\_\+loop@{unittest\+\_\+run\+\_\+loop}!aiohttp\+::test\+\_\+utils@{aiohttp\+::test\+\_\+utils}}
+\subsubsection{\texorpdfstring{unittest\+\_\+run\+\_\+loop()}{unittest\_run\_loop()}}
+{\footnotesize\ttfamily def aiohttp.\+test\+\_\+utils.\+unittest\+\_\+run\+\_\+loop (\begin{DoxyParamCaption}\item[{}]{func,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A decorator dedicated to use with asynchronous methods of an
+AioHTTPTestCase.
+
+Handles executing an asynchronous function, using
+the self.loop of the AioHTTPTestCase.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceaiohttp_1_1test__utils_a9770c40215cbadb9fa185c34b7fe8935}\label{namespaceaiohttp_1_1test__utils_a9770c40215cbadb9fa185c34b7fe8935}} 
+\index{aiohttp\+::test\+\_\+utils@{aiohttp\+::test\+\_\+utils}!unused\+\_\+port@{unused\+\_\+port}}
+\index{unused\+\_\+port@{unused\+\_\+port}!aiohttp\+::test\+\_\+utils@{aiohttp\+::test\+\_\+utils}}
+\subsubsection{\texorpdfstring{unused\+\_\+port()}{unused\_port()}}
+{\footnotesize\ttfamily def aiohttp.\+test\+\_\+utils.\+unused\+\_\+port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a port that is unused on the current host.\end{DoxyVerb}
+ 

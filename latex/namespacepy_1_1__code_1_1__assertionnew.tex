@@ -1,0 +1,85 @@
+\hypertarget{namespacepy_1_1__code_1_1__assertionnew}{}\section{py.\+\_\+code.\+\_\+assertionnew Namespace Reference}
+\label{namespacepy_1_1__code_1_1__assertionnew}\index{py.\+\_\+code.\+\_\+assertionnew@{py.\+\_\+code.\+\_\+assertionnew}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpy_1_1__code_1_1__assertionnew_1_1_debug_interpreter}{Debug\+Interpreter}
+\item 
+class \hyperlink{classpy_1_1__code_1_1__assertionnew_1_1_failure}{Failure}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepy_1_1__code_1_1__assertionnew_a9392809445ffd2b0eabef2a45e59ca65}\label{namespacepy_1_1__code_1_1__assertionnew_a9392809445ffd2b0eabef2a45e59ca65}} 
+def {\bfseries interpret} (source, frame, should\+\_\+fail=False)
+\item 
+\mbox{\Hypertarget{namespacepy_1_1__code_1_1__assertionnew_a13c71189d49371c1f4312e64e9e63cc7}\label{namespacepy_1_1__code_1_1__assertionnew_a13c71189d49371c1f4312e64e9e63cc7}} 
+def {\bfseries run} (offending\+\_\+line, frame=None)
+\item 
+\mbox{\Hypertarget{namespacepy_1_1__code_1_1__assertionnew_acec3dcd8cb5a6e1b957291c65cf2fab2}\label{namespacepy_1_1__code_1_1__assertionnew_acec3dcd8cb5a6e1b957291c65cf2fab2}} 
+def {\bfseries getfailure} (failure)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dictionary {\bfseries operator\+\_\+map}
+\item 
+dictionary {\bfseries unary\+\_\+map}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Find intermediate evalutation results in assert statements through builtin AST.
+This should replace _assertionold.py eventually.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepy_1_1__code_1_1__assertionnew_a9c79030ebd9012577415c4c8ee262e77}\label{namespacepy_1_1__code_1_1__assertionnew_a9c79030ebd9012577415c4c8ee262e77}} 
+\index{py\+::\+\_\+code\+::\+\_\+assertionnew@{py\+::\+\_\+code\+::\+\_\+assertionnew}!operator\+\_\+map@{operator\+\_\+map}}
+\index{operator\+\_\+map@{operator\+\_\+map}!py\+::\+\_\+code\+::\+\_\+assertionnew@{py\+::\+\_\+code\+::\+\_\+assertionnew}}
+\subsubsection{\texorpdfstring{operator\+\_\+map}{operator\_map}}
+{\footnotesize\ttfamily dictionary py.\+\_\+code.\+\_\+assertionnew.\+operator\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  \{
+2     ast.BitOr : \textcolor{stringliteral}{"|"},
+3     ast.BitXor : \textcolor{stringliteral}{"^"},
+4     ast.BitAnd : \textcolor{stringliteral}{"&"},
+5     ast.LShift : \textcolor{stringliteral}{"<<"},
+6     ast.RShift : \textcolor{stringliteral}{">>"},
+7     ast.Add : \textcolor{stringliteral}{"+"},
+8     ast.Sub : \textcolor{stringliteral}{"-"},
+9     ast.Mult : \textcolor{stringliteral}{"*"},
+10     ast.Div : \textcolor{stringliteral}{"/"},
+11     ast.FloorDiv : \textcolor{stringliteral}{"//"},
+12     ast.Mod : \textcolor{stringliteral}{"%"},
+13     ast.Eq : \textcolor{stringliteral}{"=="},
+14     ast.NotEq : \textcolor{stringliteral}{"!="},
+15     ast.Lt : \textcolor{stringliteral}{"<"},
+16     ast.LtE : \textcolor{stringliteral}{"<="},
+17     ast.Gt : \textcolor{stringliteral}{">"},
+18     ast.GtE : \textcolor{stringliteral}{">="},
+19     ast.Pow : \textcolor{stringliteral}{"**"},
+20     ast.Is : \textcolor{stringliteral}{"is"},
+21     ast.IsNot : \textcolor{stringliteral}{"is not"},
+22     ast.In : \textcolor{stringliteral}{"in"},
+23     ast.NotIn : \textcolor{stringliteral}{"not in"}
+24 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepy_1_1__code_1_1__assertionnew_a4e9eeeb04f81a0545905b1760028abb7}\label{namespacepy_1_1__code_1_1__assertionnew_a4e9eeeb04f81a0545905b1760028abb7}} 
+\index{py\+::\+\_\+code\+::\+\_\+assertionnew@{py\+::\+\_\+code\+::\+\_\+assertionnew}!unary\+\_\+map@{unary\+\_\+map}}
+\index{unary\+\_\+map@{unary\+\_\+map}!py\+::\+\_\+code\+::\+\_\+assertionnew@{py\+::\+\_\+code\+::\+\_\+assertionnew}}
+\subsubsection{\texorpdfstring{unary\+\_\+map}{unary\_map}}
+{\footnotesize\ttfamily dictionary py.\+\_\+code.\+\_\+assertionnew.\+unary\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  \{
+2     ast.Not : \textcolor{stringliteral}{"not %s"},
+3     ast.Invert : \textcolor{stringliteral}{"~%s"},
+4     ast.USub : \textcolor{stringliteral}{"-%s"},
+5     ast.UAdd : \textcolor{stringliteral}{"+%s"}
+6 \}
+\end{DoxyCode}

@@ -1,0 +1,84 @@
+\hypertarget{namespacepy_1_1__log_1_1log}{}\section{py.\+\_\+log.\+log Namespace Reference}
+\label{namespacepy_1_1__log_1_1log}\index{py.\+\_\+log.\+log@{py.\+\_\+log.\+log}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpy_1_1__log_1_1log_1_1_file}{File}
+\item 
+class \hyperlink{classpy_1_1__log_1_1log_1_1_keyword_mapper}{Keyword\+Mapper}
+\item 
+class \hyperlink{classpy_1_1__log_1_1log_1_1_message}{Message}
+\item 
+class \hyperlink{classpy_1_1__log_1_1log_1_1_path}{Path}
+\item 
+class \hyperlink{classpy_1_1__log_1_1log_1_1_producer}{Producer}
+\item 
+class \hyperlink{classpy_1_1__log_1_1log_1_1_syslog}{Syslog}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepy_1_1__log_1_1log_a1057ab2ad3a0224ea93a79d090bde3bd}{default\+\_\+consumer} (msg)
+\item 
+\mbox{\Hypertarget{namespacepy_1_1__log_1_1log_a13a8784f72b786391fd63562bcd303b5}\label{namespacepy_1_1__log_1_1log_a13a8784f72b786391fd63562bcd303b5}} 
+def {\bfseries setconsumer} (keywords, consumer)
+\item 
+\mbox{\Hypertarget{namespacepy_1_1__log_1_1log_ac167fddbf461d9e0e41ecf042bdb5856}\label{namespacepy_1_1__log_1_1log_ac167fddbf461d9e0e41ecf042bdb5856}} 
+def {\bfseries setstate} (state)
+\item 
+\mbox{\Hypertarget{namespacepy_1_1__log_1_1log_a46015b75230f5022d180d5b3f7beadee}\label{namespacepy_1_1__log_1_1log_a46015b75230f5022d180d5b3f7beadee}} 
+def {\bfseries getstate} ()
+\item 
+def \hyperlink{namespacepy_1_1__log_1_1log_a6046f594a3d2b2ad0e7023ff5bfd72ea}{S\+T\+D\+O\+UT} (msg)
+\item 
+def \hyperlink{namespacepy_1_1__log_1_1log_a7519bc63315c0687184766ebfe36ab3d}{S\+T\+D\+E\+RR} (msg)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepy_1_1__log_1_1log_aa0794e75e3f9dd0784395a17f06a8fee}\label{namespacepy_1_1__log_1_1log_aa0794e75e3f9dd0784395a17f06a8fee}} 
+{\bfseries default\+\_\+keywordmapper} = \hyperlink{classpy_1_1__log_1_1log_1_1_keyword_mapper}{Keyword\+Mapper}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}basic logging functionality based on a producer/consumer scheme.
+
+XXX implement this API: (maybe put it into slogger.py?)
+
+log = Logger(
+            info=py.log.STDOUT,
+            debug=py.log.STDOUT,
+            command=None)
+log.info("hello", "world")
+log.command("hello", "world")
+
+log = Logger(info=Logger(something=...),
+             debug=py.log.STDOUT,
+             command=None)
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepy_1_1__log_1_1log_a1057ab2ad3a0224ea93a79d090bde3bd}\label{namespacepy_1_1__log_1_1log_a1057ab2ad3a0224ea93a79d090bde3bd}} 
+\index{py\+::\+\_\+log\+::log@{py\+::\+\_\+log\+::log}!default\+\_\+consumer@{default\+\_\+consumer}}
+\index{default\+\_\+consumer@{default\+\_\+consumer}!py\+::\+\_\+log\+::log@{py\+::\+\_\+log\+::log}}
+\subsubsection{\texorpdfstring{default\+\_\+consumer()}{default\_consumer()}}
+{\footnotesize\ttfamily def py.\+\_\+log.\+log.\+default\+\_\+consumer (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}the default consumer, prints the message to stdout (using 'print') \end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepy_1_1__log_1_1log_a7519bc63315c0687184766ebfe36ab3d}\label{namespacepy_1_1__log_1_1log_a7519bc63315c0687184766ebfe36ab3d}} 
+\index{py\+::\+\_\+log\+::log@{py\+::\+\_\+log\+::log}!S\+T\+D\+E\+RR@{S\+T\+D\+E\+RR}}
+\index{S\+T\+D\+E\+RR@{S\+T\+D\+E\+RR}!py\+::\+\_\+log\+::log@{py\+::\+\_\+log\+::log}}
+\subsubsection{\texorpdfstring{S\+T\+D\+E\+R\+R()}{STDERR()}}
+{\footnotesize\ttfamily def py.\+\_\+log.\+log.\+S\+T\+D\+E\+RR (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}consumer that writes to sys.stderr \end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepy_1_1__log_1_1log_a6046f594a3d2b2ad0e7023ff5bfd72ea}\label{namespacepy_1_1__log_1_1log_a6046f594a3d2b2ad0e7023ff5bfd72ea}} 
+\index{py\+::\+\_\+log\+::log@{py\+::\+\_\+log\+::log}!S\+T\+D\+O\+UT@{S\+T\+D\+O\+UT}}
+\index{S\+T\+D\+O\+UT@{S\+T\+D\+O\+UT}!py\+::\+\_\+log\+::log@{py\+::\+\_\+log\+::log}}
+\subsubsection{\texorpdfstring{S\+T\+D\+O\+U\+T()}{STDOUT()}}
+{\footnotesize\ttfamily def py.\+\_\+log.\+log.\+S\+T\+D\+O\+UT (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}consumer that writes to sys.stdout \end{DoxyVerb}
+ 

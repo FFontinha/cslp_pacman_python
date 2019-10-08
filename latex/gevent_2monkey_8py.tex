@@ -1,0 +1,66 @@
+\hypertarget{gevent_2monkey_8py}{}\section{venv/lib/python3.6/site-\/packages/gevent/monkey.py File Reference}
+\label{gevent_2monkey_8py}\index{venv/lib/python3.\+6/site-\/packages/gevent/monkey.\+py@{venv/lib/python3.\+6/site-\/packages/gevent/monkey.\+py}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgevent_1_1monkey_1_1_monkey_patch_warning}{gevent.\+monkey.\+Monkey\+Patch\+Warning}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacegevent_1_1monkey}{gevent.\+monkey}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1monkey_aaaa4854f7592d3709914701abaf3049c}{gevent.\+monkey.\+is\+\_\+module\+\_\+patched} (mod\+\_\+name)
+\item 
+def \hyperlink{namespacegevent_1_1monkey_a0fa2edf73aebcd8f4ce9d2f90fdb7156}{gevent.\+monkey.\+is\+\_\+object\+\_\+patched} (mod\+\_\+name, item\+\_\+name)
+\item 
+def \hyperlink{namespacegevent_1_1monkey_a3128c39309cb9a10ee47a0307ac36b10}{gevent.\+monkey.\+get\+\_\+original} (mod\+\_\+name, item\+\_\+name)
+\item 
+def \hyperlink{namespacegevent_1_1monkey_a427173356bbfbfe80987e3b28e4b1b58}{gevent.\+monkey.\+patch\+\_\+item} (module, attr, newitem)
+\item 
+def \hyperlink{namespacegevent_1_1monkey_a56d7bc7df5444f3776834dfc73450ac1}{gevent.\+monkey.\+remove\+\_\+item} (module, attr)
+\item 
+def \hyperlink{namespacegevent_1_1monkey_ad3b37abeb612c38561500a824c0e7f1c}{gevent.\+monkey.\+patch\+\_\+module} (target\+\_\+module, source\+\_\+module, items=None, \+\_\+warnings=None, \+\_\+notify\+\_\+did\+\_\+subscribers=True)
+\item 
+def \hyperlink{namespacegevent_1_1monkey_aeb8b7b80a2732e697d59550acfdca3d7}{gevent.\+monkey.\+patch\+\_\+sys} (stdin=True, stdout=True, stderr=True)
+\item 
+def \hyperlink{namespacegevent_1_1monkey_ae0d897ace1d55978c5bdbcf59e963de3}{gevent.\+monkey.\+patch\+\_\+os} ()
+\item 
+def \hyperlink{namespacegevent_1_1monkey_a98bfba3bfb9f774f0a3480940d491f26}{gevent.\+monkey.\+patch\+\_\+queue} ()
+\item 
+def \hyperlink{namespacegevent_1_1monkey_a28161e4e18de4aa37ea67c6844f46b8d}{gevent.\+monkey.\+patch\+\_\+time} ()
+\item 
+def \hyperlink{namespacegevent_1_1monkey_a922c34edbe660ed3786aeabcced05e13}{gevent.\+monkey.\+patch\+\_\+thread} (threading=True, \+\_\+threading\+\_\+local=True, Event=True, logging=True, existing\+\_\+locks=True, \+\_\+warnings=None)
+\item 
+def \hyperlink{namespacegevent_1_1monkey_a788700ce9056db65b14e84481718e87c}{gevent.\+monkey.\+patch\+\_\+socket} (dns=True, aggressive=True)
+\item 
+def \hyperlink{namespacegevent_1_1monkey_a7de4a05d2bb76f083f3389ee774e5d09}{gevent.\+monkey.\+patch\+\_\+dns} ()
+\item 
+def \hyperlink{namespacegevent_1_1monkey_a7e519f075b2b4d2f3e62ca378b9ab966}{gevent.\+monkey.\+patch\+\_\+ssl} (\+\_\+warnings=None, \+\_\+first\+\_\+time=True)
+\item 
+def \hyperlink{namespacegevent_1_1monkey_a5307838fbb23c93e4f6d59c180738969}{gevent.\+monkey.\+patch\+\_\+select} (aggressive=True)
+\item 
+def \hyperlink{namespacegevent_1_1monkey_a50e99d9b8101122d6168b660eb83d77e}{gevent.\+monkey.\+patch\+\_\+subprocess} ()
+\item 
+def \hyperlink{namespacegevent_1_1monkey_a78f107b224c0bb218b319d7dc4a67187}{gevent.\+monkey.\+patch\+\_\+builtins} ()
+\item 
+def \hyperlink{namespacegevent_1_1monkey_a39402c98ba8110d30f262ea6a0594aee}{gevent.\+monkey.\+patch\+\_\+signal} ()
+\item 
+def \hyperlink{namespacegevent_1_1monkey_a260d359ce3b17b34391adbab15f59a34}{gevent.\+monkey.\+patch\+\_\+all} (socket=True, dns=True, time=True, select=True, thread=True, os=True, ssl=True, httplib=False, subprocess=True, sys=False, aggressive=True, Event=True, builtins=True, signal=True, queue=True, kwargs)
+\item 
+def \hyperlink{namespacegevent_1_1monkey_a34e6151272ef3946238fd34ea5b8f643}{gevent.\+monkey.\+main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacegevent_1_1monkey_a843df4ed92a84ef85d193b69b766507c}{gevent.\+monkey.\+string\+\_\+types} = (str,)
+\item 
+bool \hyperlink{namespacegevent_1_1monkey_a8426b2152217e404635e4e33c917cabb}{gevent.\+monkey.\+P\+Y3} = True
+\item 
+\hyperlink{namespacegevent_1_1monkey_a99c717c50e546ec3e7a21aec9239beab}{gevent.\+monkey.\+W\+IN} = sys.\+platform.\+startswith(\char`\"{}win\char`\"{})
+\item 
+dictionary \hyperlink{namespacegevent_1_1monkey_a0dce9d1ea2d50a7e9fa54491816ea488}{gevent.\+monkey.\+saved} = \{\}
+\end{DoxyCompactItemize}

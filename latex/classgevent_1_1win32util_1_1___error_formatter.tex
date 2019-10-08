@@ -1,0 +1,80 @@
+\hypertarget{classgevent_1_1win32util_1_1___error_formatter}{}\section{gevent.\+win32util.\+\_\+\+Error\+Formatter Class Reference}
+\label{classgevent_1_1win32util_1_1___error_formatter}\index{gevent.\+win32util.\+\_\+\+Error\+Formatter@{gevent.\+win32util.\+\_\+\+Error\+Formatter}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1win32util_1_1___error_formatter_a891c6611438d404d16826259468b30b4}\label{classgevent_1_1win32util_1_1___error_formatter_a891c6611438d404d16826259468b30b4}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, Win\+Error, Format\+Message, error\+Tab)
+\item 
+def \hyperlink{classgevent_1_1win32util_1_1___error_formatter_ad5e16793772869bf37441b45203f3ced}{from\+Environment} (cls)
+\item 
+def \hyperlink{classgevent_1_1win32util_1_1___error_formatter_ad2de43218a67eb8f265c1db29450dec2}{format\+Error} (self, errorcode)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1win32util_1_1___error_formatter_a8129a370914bab92782f9262bca7c105}\label{classgevent_1_1win32util_1_1___error_formatter_a8129a370914bab92782f9262bca7c105}} 
+{\bfseries win\+Error}
+\item 
+\mbox{\Hypertarget{classgevent_1_1win32util_1_1___error_formatter_a65fcbf23ee9027152ff6eacc42cbf920}\label{classgevent_1_1win32util_1_1___error_formatter_a65fcbf23ee9027152ff6eacc42cbf920}} 
+{\bfseries format\+Message}
+\item 
+\mbox{\Hypertarget{classgevent_1_1win32util_1_1___error_formatter_a41b7c74b93393c9cc47f8811665f1662}\label{classgevent_1_1win32util_1_1___error_formatter_a41b7c74b93393c9cc47f8811665f1662}} 
+{\bfseries error\+Tab}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Formatter for Windows error messages.
+
+@ivar winError: A callable which takes one integer error number argument
+    and returns an L{exceptions.WindowsError} instance for that error (like
+    L{ctypes.WinError}).
+
+@ivar formatMessage: A callable which takes one integer error number
+    argument and returns a C{str} giving the message for that error (like
+    L{win32api.FormatMessage}).
+
+@ivar errorTab: A mapping from integer error numbers to C{str} messages
+    which correspond to those errors (like L{socket.errorTab}).
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1win32util_1_1___error_formatter_ad2de43218a67eb8f265c1db29450dec2}\label{classgevent_1_1win32util_1_1___error_formatter_ad2de43218a67eb8f265c1db29450dec2}} 
+\index{gevent\+::win32util\+::\+\_\+\+Error\+Formatter@{gevent\+::win32util\+::\+\_\+\+Error\+Formatter}!format\+Error@{format\+Error}}
+\index{format\+Error@{format\+Error}!gevent\+::win32util\+::\+\_\+\+Error\+Formatter@{gevent\+::win32util\+::\+\_\+\+Error\+Formatter}}
+\subsubsection{\texorpdfstring{format\+Error()}{formatError()}}
+{\footnotesize\ttfamily def gevent.\+win32util.\+\_\+\+Error\+Formatter.\+format\+Error (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{errorcode }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the string associated with a Windows error message, such as the
+ones found in socket.error.
+
+Attempts direct lookup against the win32 API via ctypes and then
+pywin32 if available), then in the error table in the socket module,
+then finally defaulting to C{os.strerror}.
+
+@param errorcode: the Windows error code
+@type errorcode: C{int}
+
+@return: The error message string
+@rtype: C{str}
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1win32util_1_1___error_formatter_ad5e16793772869bf37441b45203f3ced}\label{classgevent_1_1win32util_1_1___error_formatter_ad5e16793772869bf37441b45203f3ced}} 
+\index{gevent\+::win32util\+::\+\_\+\+Error\+Formatter@{gevent\+::win32util\+::\+\_\+\+Error\+Formatter}!from\+Environment@{from\+Environment}}
+\index{from\+Environment@{from\+Environment}!gevent\+::win32util\+::\+\_\+\+Error\+Formatter@{gevent\+::win32util\+::\+\_\+\+Error\+Formatter}}
+\subsubsection{\texorpdfstring{from\+Environment()}{fromEnvironment()}}
+{\footnotesize\ttfamily def gevent.\+win32util.\+\_\+\+Error\+Formatter.\+from\+Environment (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get as many of the platform-specific error translation objects as
+possible and return an instance of C{cls} created with them.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/win32util.\+py\end{DoxyCompactItemize}

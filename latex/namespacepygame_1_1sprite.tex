@@ -1,0 +1,277 @@
+\hypertarget{namespacepygame_1_1sprite}{}\section{pygame.\+sprite Namespace Reference}
+\label{namespacepygame_1_1sprite}\index{pygame.\+sprite@{pygame.\+sprite}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpygame_1_1sprite_1_1_abstract_group}{Abstract\+Group}
+\item 
+class \hyperlink{classpygame_1_1sprite_1_1collide__circle__ratio}{collide\+\_\+circle\+\_\+ratio}
+\item 
+class \hyperlink{classpygame_1_1sprite_1_1collide__rect__ratio}{collide\+\_\+rect\+\_\+ratio}
+\item 
+class \hyperlink{classpygame_1_1sprite_1_1_dirty_sprite}{Dirty\+Sprite}
+\item 
+class \hyperlink{classpygame_1_1sprite_1_1_group}{Group}
+\item 
+class \hyperlink{classpygame_1_1sprite_1_1_group_single}{Group\+Single}
+\item 
+class \hyperlink{classpygame_1_1sprite_1_1_layered_dirty}{Layered\+Dirty}
+\item 
+class \hyperlink{classpygame_1_1sprite_1_1_layered_updates}{Layered\+Updates}
+\item 
+class \hyperlink{classpygame_1_1sprite_1_1_ordered_updates}{Ordered\+Updates}
+\item 
+class \hyperlink{classpygame_1_1sprite_1_1_render_updates}{Render\+Updates}
+\item 
+class \hyperlink{classpygame_1_1sprite_1_1_sprite}{Sprite}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepygame_1_1sprite_ac3dd48705499b86a7214761b75380981}{clear} (self, surface, bgd)
+\begin{DoxyCompactList}\small\item\em \subsection*{debug}
+
+print \char`\"{}               check\+: using dirty rects\+:\char`\"{}, self.\+\_\+use\+\_\+update \end{DoxyCompactList}\item 
+def \hyperlink{namespacepygame_1_1sprite_af63faa0befe41ad5ed3c2c970a735275}{repaint\+\_\+rect} (self, screen\+\_\+rect)
+\item 
+def \hyperlink{namespacepygame_1_1sprite_a2724cd881e8ebb2a5f1f01e9d641a7f2}{set\+\_\+clip} (self, screen\+\_\+rect=None)
+\item 
+def \hyperlink{namespacepygame_1_1sprite_a60842ea8d65ad8db56c52b1f6f90de29}{get\+\_\+clip} (self)
+\item 
+def \hyperlink{namespacepygame_1_1sprite_a382eb838f5cdf51df1202a0f3350f8fc}{change\+\_\+layer} (self, \hyperlink{namespacepygame_aa4b7d2ae8175850dd21d2b548f184cb8}{sprite}, new\+\_\+layer)
+\item 
+def \hyperlink{namespacepygame_1_1sprite_a900a993afbcd946ffcd9af8f54154b8f}{set\+\_\+timing\+\_\+treshold} (self, time\+\_\+ms)
+\item 
+def \hyperlink{namespacepygame_1_1sprite_a38539bf4d7efe1157a864e4ecb9b5237}{collide\+\_\+rect} (left, right)
+\item 
+def \hyperlink{namespacepygame_1_1sprite_a69e8ebb1118757911e5fc2931aebf494}{collide\+\_\+circle} (left, right)
+\item 
+def \hyperlink{namespacepygame_1_1sprite_ac070f5d4ef6163636321a2a0ba458dcb}{collide\+\_\+mask} (left, right)
+\item 
+def \hyperlink{namespacepygame_1_1sprite_aa68d7d247355b00f22e3dc6b84b92dfb}{spritecollide} (\hyperlink{namespacepygame_aa4b7d2ae8175850dd21d2b548f184cb8}{sprite}, group, dokill, collided=None)
+\item 
+def \hyperlink{namespacepygame_1_1sprite_aa6cf4fd668b1d579f5d1385739e52851}{groupcollide} (groupa, groupb, dokilla, dokillb, collided=None)
+\item 
+def \hyperlink{namespacepygame_1_1sprite_a25941b8c21cff8ba445e32266ba1282d}{spritecollideany} (\hyperlink{namespacepygame_aa4b7d2ae8175850dd21d2b548f184cb8}{sprite}, group, collided=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacepygame_1_1sprite_a800dcabe3c7d87b3e8f22bcbb204bf22}{callable} = lambda obj\+: hasattr(obj, \textquotesingle{}\+\_\+\+\_\+call\+\_\+\+\_\+\textquotesingle{})
+\item 
+\hyperlink{namespacepygame_1_1sprite_a3e060a482e09d1a567cb7356c2cf4a33}{Render\+Plain} = \hyperlink{classpygame_1_1sprite_1_1_group}{Group}
+\item 
+\hyperlink{namespacepygame_1_1sprite_a809335dc88fa487b290217358e9638d7}{Render\+Clear} = \hyperlink{classpygame_1_1sprite_1_1_group}{Group}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1sprite_a382eb838f5cdf51df1202a0f3350f8fc}\label{namespacepygame_1_1sprite_a382eb838f5cdf51df1202a0f3350f8fc}} 
+\index{pygame\+::sprite@{pygame\+::sprite}!change\+\_\+layer@{change\+\_\+layer}}
+\index{change\+\_\+layer@{change\+\_\+layer}!pygame\+::sprite@{pygame\+::sprite}}
+\subsubsection{\texorpdfstring{change\+\_\+layer()}{change\_layer()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+change\+\_\+layer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sprite,  }\item[{}]{new\+\_\+layer }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}change the layer of the sprite
+
+LayeredUpdates.change_layer(sprite, new_layer): return None
+
+The sprite must have been added to the renderer already. This is not
+checked.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1sprite_ac3dd48705499b86a7214761b75380981}\label{namespacepygame_1_1sprite_ac3dd48705499b86a7214761b75380981}} 
+\index{pygame\+::sprite@{pygame\+::sprite}!clear@{clear}}
+\index{clear@{clear}!pygame\+::sprite@{pygame\+::sprite}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+clear (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{surface,  }\item[{}]{bgd }\end{DoxyParamCaption})}
+
+
+
+\subsection*{debug}
+
+print \char`\"{}               check\+: using dirty rects\+:\char`\"{}, self.\+\_\+use\+\_\+update 
+
+\begin{DoxyVerb}use to set background
+
+Group.clear(surface, bgd): return None\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1sprite_a69e8ebb1118757911e5fc2931aebf494}\label{namespacepygame_1_1sprite_a69e8ebb1118757911e5fc2931aebf494}} 
+\index{pygame\+::sprite@{pygame\+::sprite}!collide\+\_\+circle@{collide\+\_\+circle}}
+\index{collide\+\_\+circle@{collide\+\_\+circle}!pygame\+::sprite@{pygame\+::sprite}}
+\subsubsection{\texorpdfstring{collide\+\_\+circle()}{collide\_circle()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+collide\+\_\+circle (\begin{DoxyParamCaption}\item[{}]{left,  }\item[{}]{right }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}detect collision between two sprites using circles
+
+pygame.sprite.collide_circle(left, right): return bool
+
+Tests for collision between two sprites by testing whether two circles
+centered on the sprites overlap. If the sprites have a "radius" attribute,
+then that radius is used to create the circle; otherwise, a circle is
+created that is big enough to completely enclose the sprite's rect as
+given by the "rect" attribute. This function is intended to be passed as
+a collided callback function to the *collide functions. Sprites must have a
+"rect" and an optional "radius" attribute.
+
+New in pygame 1.8.0\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1sprite_ac070f5d4ef6163636321a2a0ba458dcb}\label{namespacepygame_1_1sprite_ac070f5d4ef6163636321a2a0ba458dcb}} 
+\index{pygame\+::sprite@{pygame\+::sprite}!collide\+\_\+mask@{collide\+\_\+mask}}
+\index{collide\+\_\+mask@{collide\+\_\+mask}!pygame\+::sprite@{pygame\+::sprite}}
+\subsubsection{\texorpdfstring{collide\+\_\+mask()}{collide\_mask()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+collide\+\_\+mask (\begin{DoxyParamCaption}\item[{}]{left,  }\item[{}]{right }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}collision detection between two sprites, using masks.
+
+pygame.sprite.collide_mask(SpriteLeft, SpriteRight): bool
+
+Tests for collision between two sprites by testing if their bitmasks
+overlap. If the sprites have a "mask" attribute, that is used as the mask;
+otherwise, a mask is created from the sprite image. Intended to be passed
+as a collided callback function to the *collide functions. Sprites must
+have a "rect" and an optional "mask" attribute.
+
+New in pygame 1.8.0\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1sprite_a38539bf4d7efe1157a864e4ecb9b5237}\label{namespacepygame_1_1sprite_a38539bf4d7efe1157a864e4ecb9b5237}} 
+\index{pygame\+::sprite@{pygame\+::sprite}!collide\+\_\+rect@{collide\+\_\+rect}}
+\index{collide\+\_\+rect@{collide\+\_\+rect}!pygame\+::sprite@{pygame\+::sprite}}
+\subsubsection{\texorpdfstring{collide\+\_\+rect()}{collide\_rect()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+collide\+\_\+rect (\begin{DoxyParamCaption}\item[{}]{left,  }\item[{}]{right }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}collision detection between two sprites, using rects.
+
+pygame.sprite.collide_rect(left, right): return bool
+
+Tests for collision between two sprites. Uses the pygame.Rect colliderect
+function to calculate the collision. It is intended to be passed as a
+collided callback function to the *collide functions. Sprites must have
+"rect" attributes.
+
+New in pygame 1.8.0\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1sprite_a60842ea8d65ad8db56c52b1f6f90de29}\label{namespacepygame_1_1sprite_a60842ea8d65ad8db56c52b1f6f90de29}} 
+\index{pygame\+::sprite@{pygame\+::sprite}!get\+\_\+clip@{get\+\_\+clip}}
+\index{get\+\_\+clip@{get\+\_\+clip}!pygame\+::sprite@{pygame\+::sprite}}
+\subsubsection{\texorpdfstring{get\+\_\+clip()}{get\_clip()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+get\+\_\+clip (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}get the area where drawing will occur
+
+LayeredDirty.get_clip(): return Rect\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1sprite_aa6cf4fd668b1d579f5d1385739e52851}\label{namespacepygame_1_1sprite_aa6cf4fd668b1d579f5d1385739e52851}} 
+\index{pygame\+::sprite@{pygame\+::sprite}!groupcollide@{groupcollide}}
+\index{groupcollide@{groupcollide}!pygame\+::sprite@{pygame\+::sprite}}
+\subsubsection{\texorpdfstring{groupcollide()}{groupcollide()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+groupcollide (\begin{DoxyParamCaption}\item[{}]{groupa,  }\item[{}]{groupb,  }\item[{}]{dokilla,  }\item[{}]{dokillb,  }\item[{}]{collided = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}detect collision between a group and another group
+
+pygame.sprite.groupcollide(groupa, groupb, dokilla, dokillb):
+    return dict
+
+Given two groups, this will find the intersections between all sprites in
+each group. It returns a dictionary of all sprites in the first group that
+collide. The value for each item in the dictionary is a list of the sprites
+in the second group it collides with. The two dokill arguments control if
+the sprites from either group will be automatically removed from all
+groups. Collided is a callback function used to calculate if two sprites
+are colliding. it should take two sprites as values, and return a bool
+value indicating if they are colliding. If collided is not passed, all
+sprites must have a "rect" value, which is a rectangle of the sprite area
+that will be used to calculate the collision.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1sprite_af63faa0befe41ad5ed3c2c970a735275}\label{namespacepygame_1_1sprite_af63faa0befe41ad5ed3c2c970a735275}} 
+\index{pygame\+::sprite@{pygame\+::sprite}!repaint\+\_\+rect@{repaint\+\_\+rect}}
+\index{repaint\+\_\+rect@{repaint\+\_\+rect}!pygame\+::sprite@{pygame\+::sprite}}
+\subsubsection{\texorpdfstring{repaint\+\_\+rect()}{repaint\_rect()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+repaint\+\_\+rect (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{screen\+\_\+rect }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}repaint the given area
+
+LayeredDirty.repaint_rect(screen_rect): return None
+
+screen_rect is in screen coordinates.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1sprite_a2724cd881e8ebb2a5f1f01e9d641a7f2}\label{namespacepygame_1_1sprite_a2724cd881e8ebb2a5f1f01e9d641a7f2}} 
+\index{pygame\+::sprite@{pygame\+::sprite}!set\+\_\+clip@{set\+\_\+clip}}
+\index{set\+\_\+clip@{set\+\_\+clip}!pygame\+::sprite@{pygame\+::sprite}}
+\subsubsection{\texorpdfstring{set\+\_\+clip()}{set\_clip()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+set\+\_\+clip (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{screen\+\_\+rect = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}clip the area where to draw; pass None (default) to reset the clip
+
+LayeredDirty.set_clip(screen_rect=None): return None\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1sprite_a900a993afbcd946ffcd9af8f54154b8f}\label{namespacepygame_1_1sprite_a900a993afbcd946ffcd9af8f54154b8f}} 
+\index{pygame\+::sprite@{pygame\+::sprite}!set\+\_\+timing\+\_\+treshold@{set\+\_\+timing\+\_\+treshold}}
+\index{set\+\_\+timing\+\_\+treshold@{set\+\_\+timing\+\_\+treshold}!pygame\+::sprite@{pygame\+::sprite}}
+\subsubsection{\texorpdfstring{set\+\_\+timing\+\_\+treshold()}{set\_timing\_treshold()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+set\+\_\+timing\+\_\+treshold (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{time\+\_\+ms }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}set the treshold in milliseconds
+
+set_timing_treshold(time_ms): return None
+
+Defaults to 1000.0 / 80.0. This means that the screen will be painted
+using the flip method rather than the update method if the update
+method is taking so long to update the screen that the frame rate falls
+below 80 frames per second.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1sprite_aa68d7d247355b00f22e3dc6b84b92dfb}\label{namespacepygame_1_1sprite_aa68d7d247355b00f22e3dc6b84b92dfb}} 
+\index{pygame\+::sprite@{pygame\+::sprite}!spritecollide@{spritecollide}}
+\index{spritecollide@{spritecollide}!pygame\+::sprite@{pygame\+::sprite}}
+\subsubsection{\texorpdfstring{spritecollide()}{spritecollide()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+spritecollide (\begin{DoxyParamCaption}\item[{}]{sprite,  }\item[{}]{group,  }\item[{}]{dokill,  }\item[{}]{collided = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}find Sprites in a Group that intersect another Sprite
+
+pygame.sprite.spritecollide(sprite, group, dokill, collided=None):
+    return Sprite_list
+
+Return a list containing all Sprites in a Group that intersect with another
+Sprite. Intersection is determined by comparing the Sprite.rect attribute
+of each Sprite.
+
+The dokill argument is a bool. If set to True, all Sprites that collide
+will be removed from the Group.
+
+The collided argument is a callback function used to calculate if two
+sprites are colliding. it should take two sprites as values, and return a
+bool value indicating if they are colliding. If collided is not passed, all
+sprites must have a "rect" value, which is a rectangle of the sprite area,
+which will be used to calculate the collision.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepygame_1_1sprite_a25941b8c21cff8ba445e32266ba1282d}\label{namespacepygame_1_1sprite_a25941b8c21cff8ba445e32266ba1282d}} 
+\index{pygame\+::sprite@{pygame\+::sprite}!spritecollideany@{spritecollideany}}
+\index{spritecollideany@{spritecollideany}!pygame\+::sprite@{pygame\+::sprite}}
+\subsubsection{\texorpdfstring{spritecollideany()}{spritecollideany()}}
+{\footnotesize\ttfamily def pygame.\+sprite.\+spritecollideany (\begin{DoxyParamCaption}\item[{}]{sprite,  }\item[{}]{group,  }\item[{}]{collided = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}finds any sprites in a group that collide with the given sprite
+
+pygame.sprite.spritecollideany(sprite, group): return sprite
+
+Given a sprite and a group of sprites, this will return return any single
+sprite that collides with with the given sprite. If there are no
+collisions, then this returns None.
+
+If you don't need all the features of the spritecollide function, this
+function will be a bit quicker.
+
+Collided is a callback function used to calculate if two sprites are
+colliding. It should take two sprites as values and return a bool value
+indicating if they are colliding. If collided is not passed, then all
+sprites must have a "rect" value, which is a rectangle of the sprite area,
+which will be used to calculate the collision.\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1sprite_a800dcabe3c7d87b3e8f22bcbb204bf22}\label{namespacepygame_1_1sprite_a800dcabe3c7d87b3e8f22bcbb204bf22}} 
+\index{pygame\+::sprite@{pygame\+::sprite}!callable@{callable}}
+\index{callable@{callable}!pygame\+::sprite@{pygame\+::sprite}}
+\subsubsection{\texorpdfstring{callable}{callable}}
+{\footnotesize\ttfamily pygame.\+sprite.\+callable = lambda obj\+: hasattr(obj, \textquotesingle{}\+\_\+\+\_\+call\+\_\+\+\_\+\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacepygame_1_1sprite_a809335dc88fa487b290217358e9638d7}\label{namespacepygame_1_1sprite_a809335dc88fa487b290217358e9638d7}} 
+\index{pygame\+::sprite@{pygame\+::sprite}!Render\+Clear@{Render\+Clear}}
+\index{Render\+Clear@{Render\+Clear}!pygame\+::sprite@{pygame\+::sprite}}
+\subsubsection{\texorpdfstring{Render\+Clear}{RenderClear}}
+{\footnotesize\ttfamily pygame.\+sprite.\+Render\+Clear = \hyperlink{classpygame_1_1sprite_1_1_group}{Group}}
+
+\mbox{\Hypertarget{namespacepygame_1_1sprite_a3e060a482e09d1a567cb7356c2cf4a33}\label{namespacepygame_1_1sprite_a3e060a482e09d1a567cb7356c2cf4a33}} 
+\index{pygame\+::sprite@{pygame\+::sprite}!Render\+Plain@{Render\+Plain}}
+\index{Render\+Plain@{Render\+Plain}!pygame\+::sprite@{pygame\+::sprite}}
+\subsubsection{\texorpdfstring{Render\+Plain}{RenderPlain}}
+{\footnotesize\ttfamily pygame.\+sprite.\+Render\+Plain = \hyperlink{classpygame_1_1sprite_1_1_group}{Group}}
+

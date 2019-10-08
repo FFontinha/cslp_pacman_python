@@ -1,0 +1,101 @@
+\hypertarget{classgevent_1_1threadpool_1_1_thread_pool}{}\section{gevent.\+threadpool.\+Thread\+Pool Class Reference}
+\label{classgevent_1_1threadpool_1_1_thread_pool}\index{gevent.\+threadpool.\+Thread\+Pool@{gevent.\+threadpool.\+Thread\+Pool}}
+
+
+Inherits \hyperlink{classgevent_1_1pool_1_1_group_mapping_mixin}{gevent.\+pool.\+Group\+Mapping\+Mixin}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_ac74babd5e3d1b131c2681fee13f18172}\label{classgevent_1_1threadpool_1_1_thread_pool_ac74babd5e3d1b131c2681fee13f18172}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, maxsize, hub=None)
+\item 
+\mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_a2f149bc2f41b4a6ffd19b074cc771eed}\label{classgevent_1_1threadpool_1_1_thread_pool_a2f149bc2f41b4a6ffd19b074cc771eed}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_a34b8f14d7c22f4af7c11d719bf4693a0}\label{classgevent_1_1threadpool_1_1_thread_pool_a34b8f14d7c22f4af7c11d719bf4693a0}} 
+def {\bfseries \+\_\+\+\_\+len\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classgevent_1_1threadpool_1_1_thread_pool_a41714dec077e4743eb1ecc8c3480907a}{join} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_ae31967a9562643996593cd6486ff9b98}\label{classgevent_1_1threadpool_1_1_thread_pool_ae31967a9562643996593cd6486ff9b98}} 
+def {\bfseries kill} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_a279b55ef415b64c2f2264347f0c292ac}\label{classgevent_1_1threadpool_1_1_thread_pool_a279b55ef415b64c2f2264347f0c292ac}} 
+def {\bfseries adjust} (self)
+\item 
+def \hyperlink{classgevent_1_1threadpool_1_1_thread_pool_a26f9ca9ff98d972996db01c82a58848a}{spawn} (self, func, args, kwargs)
+\item 
+def \hyperlink{classgevent_1_1threadpool_1_1_thread_pool_a45cd7c1a5881b6c153e573e71f4d5f45}{apply\+\_\+e} (self, expected\+\_\+errors, function, args=None, kwargs=None)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_acfd43301a0d7567dcba7dfe4a013e620}\label{classgevent_1_1threadpool_1_1_thread_pool_acfd43301a0d7567dcba7dfe4a013e620}} 
+{\bfseries hub}
+\item 
+\mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_aba9199623ca3bf5901b8bb66bb262ca9}\label{classgevent_1_1threadpool_1_1_thread_pool_aba9199623ca3bf5901b8bb66bb262ca9}} 
+{\bfseries manager}
+\item 
+\mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_ac7eb46dea15360c80a7c1cec9f45bc42}\label{classgevent_1_1threadpool_1_1_thread_pool_ac7eb46dea15360c80a7c1cec9f45bc42}} 
+{\bfseries pid}
+\item 
+\mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_a0249bdcb12d746dcf58e11dc7e1bed50}\label{classgevent_1_1threadpool_1_1_thread_pool_a0249bdcb12d746dcf58e11dc7e1bed50}} 
+{\bfseries fork\+\_\+watcher}
+\item 
+\mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_abe27bfbefb6930585b958f397d896af9}\label{classgevent_1_1threadpool_1_1_thread_pool_abe27bfbefb6930585b958f397d896af9}} 
+{\bfseries task\+\_\+queue}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_ad406081bc067382500a1f3723e9cc5cc}\label{classgevent_1_1threadpool_1_1_thread_pool_ad406081bc067382500a1f3723e9cc5cc}} 
+{\bfseries maxsize} = property(\+\_\+get\+\_\+maxsize, \+\_\+set\+\_\+maxsize)
+\item 
+\mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_af6363efbcb2e380d38422661c4842968}\label{classgevent_1_1threadpool_1_1_thread_pool_af6363efbcb2e380d38422661c4842968}} 
+{\bfseries size} = property(\+\_\+get\+\_\+size, \+\_\+set\+\_\+size)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}.. note:: The method :meth:`apply_async` will always return a new
+   greenlet, bypassing the threadpool entirely.
+.. caution:: Instances of this class are only true if they have
+   unfinished tasks.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_a45cd7c1a5881b6c153e573e71f4d5f45}\label{classgevent_1_1threadpool_1_1_thread_pool_a45cd7c1a5881b6c153e573e71f4d5f45}} 
+\index{gevent\+::threadpool\+::\+Thread\+Pool@{gevent\+::threadpool\+::\+Thread\+Pool}!apply\+\_\+e@{apply\+\_\+e}}
+\index{apply\+\_\+e@{apply\+\_\+e}!gevent\+::threadpool\+::\+Thread\+Pool@{gevent\+::threadpool\+::\+Thread\+Pool}}
+\subsubsection{\texorpdfstring{apply\+\_\+e()}{apply\_e()}}
+{\footnotesize\ttfamily def gevent.\+threadpool.\+Thread\+Pool.\+apply\+\_\+e (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{expected\+\_\+errors,  }\item[{}]{function,  }\item[{}]{args = {\ttfamily None},  }\item[{}]{kwargs = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}.. deprecated:: 1.1a2
+   Identical to :meth:`apply`; the ``expected_errors`` argument is ignored.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_a41714dec077e4743eb1ecc8c3480907a}\label{classgevent_1_1threadpool_1_1_thread_pool_a41714dec077e4743eb1ecc8c3480907a}} 
+\index{gevent\+::threadpool\+::\+Thread\+Pool@{gevent\+::threadpool\+::\+Thread\+Pool}!join@{join}}
+\index{join@{join}!gevent\+::threadpool\+::\+Thread\+Pool@{gevent\+::threadpool\+::\+Thread\+Pool}}
+\subsubsection{\texorpdfstring{join()}{join()}}
+{\footnotesize\ttfamily def gevent.\+threadpool.\+Thread\+Pool.\+join (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Waits until all outstanding tasks have been completed.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_a26f9ca9ff98d972996db01c82a58848a}\label{classgevent_1_1threadpool_1_1_thread_pool_a26f9ca9ff98d972996db01c82a58848a}} 
+\index{gevent\+::threadpool\+::\+Thread\+Pool@{gevent\+::threadpool\+::\+Thread\+Pool}!spawn@{spawn}}
+\index{spawn@{spawn}!gevent\+::threadpool\+::\+Thread\+Pool@{gevent\+::threadpool\+::\+Thread\+Pool}}
+\subsubsection{\texorpdfstring{spawn()}{spawn()}}
+{\footnotesize\ttfamily def gevent.\+threadpool.\+Thread\+Pool.\+spawn (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a new task to the threadpool that will run ``func(*args, **kwargs)``.
+
+Waits until a slot is available. Creates a new thread if necessary.
+
+:return: A :class:`gevent.event.AsyncResult`.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/threadpool.\+py\end{DoxyCompactItemize}

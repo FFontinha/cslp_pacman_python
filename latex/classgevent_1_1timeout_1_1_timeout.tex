@@ -1,0 +1,256 @@
+\hypertarget{classgevent_1_1timeout_1_1_timeout}{}\section{gevent.\+timeout.\+Timeout Class Reference}
+\label{classgevent_1_1timeout_1_1_timeout}\index{gevent.\+timeout.\+Timeout@{gevent.\+timeout.\+Timeout}}
+
+
+Inherits Base\+Exception.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1timeout_1_1_timeout_a5bc99887abdb4a04fe0953eb4162e095}\label{classgevent_1_1timeout_1_1_timeout_a5bc99887abdb4a04fe0953eb4162e095}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, seconds=None, exception=None, ref=True, priority=-\/1, \+\_\+one\+\_\+shot=False)
+\item 
+def \hyperlink{classgevent_1_1timeout_1_1_timeout_aecfcded6ca193f39d43e1b837ede20bf}{start} (self)
+\item 
+def \hyperlink{classgevent_1_1timeout_1_1_timeout_aad464b2ffc2d4da13f849135ec777dc2}{start\+\_\+new} (cls, timeout=None, exception=None, ref=True, \+\_\+one\+\_\+shot=False)
+\item 
+def \hyperlink{classgevent_1_1timeout_1_1_timeout_a9129164e18e7f93454a49606513b1bf6}{pending} (self)
+\item 
+def \hyperlink{classgevent_1_1timeout_1_1_timeout_a7c9775359278ff54e4653b2e8522ba7b}{cancel} (self)
+\item 
+def \hyperlink{classgevent_1_1timeout_1_1_timeout_ac85307f16caa1c0de21b395c63a5fbb0}{close} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1timeout_1_1_timeout_a7af1abb270d5b529c9bb1a84421f606f}\label{classgevent_1_1timeout_1_1_timeout_a7af1abb270d5b529c9bb1a84421f606f}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classgevent_1_1timeout_1_1_timeout_a80b97bf726be5c11358d1f6cceae2983}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classgevent_1_1timeout_1_1_timeout_aef6ed2b9efb272007383f7618bdefc6d}{\+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classgevent_1_1timeout_1_1_timeout_a96c60d581798d23384f73dd75d83b855}{\+\_\+\+\_\+exit\+\_\+\+\_\+} (self, typ, value, tb)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1timeout_1_1_timeout_a5fad92bd9faa59896df3eb93da62f368}\label{classgevent_1_1timeout_1_1_timeout_a5fad92bd9faa59896df3eb93da62f368}} 
+{\bfseries seconds}
+\item 
+\mbox{\Hypertarget{classgevent_1_1timeout_1_1_timeout_accf9b61e2d8ef9c7df0a3a17d878730d}\label{classgevent_1_1timeout_1_1_timeout_accf9b61e2d8ef9c7df0a3a17d878730d}} 
+{\bfseries exception}
+\item 
+\mbox{\Hypertarget{classgevent_1_1timeout_1_1_timeout_a14d494aabb18c61b8c45091096d9d964}\label{classgevent_1_1timeout_1_1_timeout_a14d494aabb18c61b8c45091096d9d964}} 
+{\bfseries timer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Timeout(seconds=None, exception=None, ref=True, priority=-1)
+
+Raise *exception* in the current greenlet after *seconds*
+have elapsed::
+
+    timeout = Timeout(seconds, exception)
+    timeout.start()
+    try:
+        ...  # exception will be raised here, after *seconds* passed since start() call
+    finally:
+        timeout.close()
+
+.. note::
+
+    If the code that the timeout was protecting finishes
+    executing before the timeout elapses, be sure to ``close`` the
+    timeout so it is not unexpectedly raised in the future. Even if it
+    is raised, it is a best practice to close it. This ``try/finally``
+    construct or a ``with`` statement is a recommended pattern. (If
+    the timeout object will be started again, use ``cancel`` instead
+    of ``close``; this is rare.)
+
+When *exception* is omitted or ``None``, the ``Timeout`` instance
+itself is raised::
+
+    >>> import gevent
+    >>> gevent.Timeout(0.1).start()
+    >>> gevent.sleep(0.2)  #doctest: +IGNORE_EXCEPTION_DETAIL
+    Traceback (most recent call last):
+     ...
+    Timeout: 0.1 seconds
+
+If the *seconds* argument is not given or is ``None`` (e.g.,
+``Timeout()``), then the timeout will never expire and never raise
+*exception*. This is convenient for creating functions which take
+an optional timeout parameter of their own. (Note that this is **not**
+the same thing as a *seconds* value of ``0``.)
+
+::
+
+   def function(args, timeout=None):
+      "A function with an optional timeout."
+      timer = Timeout(timeout)
+      with timer:
+         ...
+
+.. caution::
+
+    A *seconds* value less than ``0.0`` (e.g., ``-1``) is poorly defined. In the future,
+    support for negative values is likely to do the same thing as a value
+    of ``None`` or ``0``
+
+A *seconds* value of ``0`` requests that the event loop spin and poll for I/O;
+it will immediately expire as soon as control returns to the event loop.
+
+.. rubric:: Use As A Context Manager
+
+To simplify starting and canceling timeouts, the ``with``
+statement can be used::
+
+    with gevent.Timeout(seconds, exception) as timeout:
+        pass  # ... code block ...
+
+This is equivalent to the try/finally block above with one
+additional feature: if *exception* is the literal ``False``, the
+timeout is still raised, but the context manager suppresses it, so
+the code outside the with-block won't see it.
+
+This is handy for adding a timeout to the functions that don't
+support a *timeout* parameter themselves::
+
+    data = None
+    with gevent.Timeout(5, False):
+        data = mysock.makefile().readline()
+    if data is None:
+        ...  # 5 seconds passed without reading a line
+    else:
+        ...  # a line was read within 5 seconds
+
+.. caution::
+
+    If ``readline()`` above catches and doesn't re-raise
+    :exc:`BaseException` (for example, with a bare ``except:``), then
+    your timeout will fail to function and control won't be returned
+    to you when you expect.
+
+.. rubric:: Catching Timeouts
+
+When catching timeouts, keep in mind that the one you catch may
+not be the one you have set (a calling function may have set its
+own timeout); if you going to silence a timeout, always check that
+it's the instance you need::
+
+    timeout = Timeout(1)
+    timeout.start()
+    try:
+        ...
+    except Timeout as t:
+        if t is not timeout:
+            raise # not my timeout
+    finally:
+        timeout.close()
+
+
+.. versionchanged:: 1.1b2
+
+    If *seconds* is not given or is ``None``, no longer allocate a
+    native timer object that will never be started.
+
+.. versionchanged:: 1.1
+
+    Add warning about negative *seconds* values.
+
+.. versionchanged:: 1.3a1
+
+    Timeout objects now have a :meth:`close`
+    method that must be called when the timeout will no longer be
+    used to properly clean up native resources.
+    The ``with`` statement does this automatically.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1timeout_1_1_timeout_aef6ed2b9efb272007383f7618bdefc6d}\label{classgevent_1_1timeout_1_1_timeout_aef6ed2b9efb272007383f7618bdefc6d}} 
+\index{gevent\+::timeout\+::\+Timeout@{gevent\+::timeout\+::\+Timeout}!\+\_\+\+\_\+enter\+\_\+\+\_\+@{\+\_\+\+\_\+enter\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+enter\+\_\+\+\_\+@{\+\_\+\+\_\+enter\+\_\+\+\_\+}!gevent\+::timeout\+::\+Timeout@{gevent\+::timeout\+::\+Timeout}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+enter\+\_\+\+\_\+()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily def gevent.\+timeout.\+Timeout.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Start and return the timer. If the timer is already started, just return it.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1timeout_1_1_timeout_a96c60d581798d23384f73dd75d83b855}\label{classgevent_1_1timeout_1_1_timeout_a96c60d581798d23384f73dd75d83b855}} 
+\index{gevent\+::timeout\+::\+Timeout@{gevent\+::timeout\+::\+Timeout}!\+\_\+\+\_\+exit\+\_\+\+\_\+@{\+\_\+\+\_\+exit\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+exit\+\_\+\+\_\+@{\+\_\+\+\_\+exit\+\_\+\+\_\+}!gevent\+::timeout\+::\+Timeout@{gevent\+::timeout\+::\+Timeout}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+exit\+\_\+\+\_\+()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily def gevent.\+timeout.\+Timeout.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{typ,  }\item[{}]{value,  }\item[{}]{tb }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Stop the timer.
+
+.. versionchanged:: 1.3a1
+   The underlying native timer is also stopped. This object cannot be
+   used again.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1timeout_1_1_timeout_a80b97bf726be5c11358d1f6cceae2983}\label{classgevent_1_1timeout_1_1_timeout_a80b97bf726be5c11358d1f6cceae2983}} 
+\index{gevent\+::timeout\+::\+Timeout@{gevent\+::timeout\+::\+Timeout}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!gevent\+::timeout\+::\+Timeout@{gevent\+::timeout\+::\+Timeout}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def gevent.\+timeout.\+Timeout.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}>>> raise Timeout #doctest: +IGNORE_EXCEPTION_DETAIL
+Traceback (most recent call last):
+    ...
+Timeout
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1timeout_1_1_timeout_a7c9775359278ff54e4653b2e8522ba7b}\label{classgevent_1_1timeout_1_1_timeout_a7c9775359278ff54e4653b2e8522ba7b}} 
+\index{gevent\+::timeout\+::\+Timeout@{gevent\+::timeout\+::\+Timeout}!cancel@{cancel}}
+\index{cancel@{cancel}!gevent\+::timeout\+::\+Timeout@{gevent\+::timeout\+::\+Timeout}}
+\subsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily def gevent.\+timeout.\+Timeout.\+cancel (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If the timeout is pending, cancel it. Otherwise, do nothing.
+
+The timeout object can be :meth:`started <start>` again. If
+you will not start the timeout again, you should use
+:meth:`close` instead.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1timeout_1_1_timeout_ac85307f16caa1c0de21b395c63a5fbb0}\label{classgevent_1_1timeout_1_1_timeout_ac85307f16caa1c0de21b395c63a5fbb0}} 
+\index{gevent\+::timeout\+::\+Timeout@{gevent\+::timeout\+::\+Timeout}!close@{close}}
+\index{close@{close}!gevent\+::timeout\+::\+Timeout@{gevent\+::timeout\+::\+Timeout}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily def gevent.\+timeout.\+Timeout.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Close the timeout and free resources. The timer cannot be started again
+after this method has been used.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1timeout_1_1_timeout_a9129164e18e7f93454a49606513b1bf6}\label{classgevent_1_1timeout_1_1_timeout_a9129164e18e7f93454a49606513b1bf6}} 
+\index{gevent\+::timeout\+::\+Timeout@{gevent\+::timeout\+::\+Timeout}!pending@{pending}}
+\index{pending@{pending}!gevent\+::timeout\+::\+Timeout@{gevent\+::timeout\+::\+Timeout}}
+\subsubsection{\texorpdfstring{pending()}{pending()}}
+{\footnotesize\ttfamily def gevent.\+timeout.\+Timeout.\+pending (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}True if the timeout is scheduled to be raised.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1timeout_1_1_timeout_aecfcded6ca193f39d43e1b837ede20bf}\label{classgevent_1_1timeout_1_1_timeout_aecfcded6ca193f39d43e1b837ede20bf}} 
+\index{gevent\+::timeout\+::\+Timeout@{gevent\+::timeout\+::\+Timeout}!start@{start}}
+\index{start@{start}!gevent\+::timeout\+::\+Timeout@{gevent\+::timeout\+::\+Timeout}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily def gevent.\+timeout.\+Timeout.\+start (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Schedule the timeout.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1timeout_1_1_timeout_aad464b2ffc2d4da13f849135ec777dc2}\label{classgevent_1_1timeout_1_1_timeout_aad464b2ffc2d4da13f849135ec777dc2}} 
+\index{gevent\+::timeout\+::\+Timeout@{gevent\+::timeout\+::\+Timeout}!start\+\_\+new@{start\+\_\+new}}
+\index{start\+\_\+new@{start\+\_\+new}!gevent\+::timeout\+::\+Timeout@{gevent\+::timeout\+::\+Timeout}}
+\subsubsection{\texorpdfstring{start\+\_\+new()}{start\_new()}}
+{\footnotesize\ttfamily def gevent.\+timeout.\+Timeout.\+start\+\_\+new (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{timeout = {\ttfamily None},  }\item[{}]{exception = {\ttfamily None},  }\item[{}]{ref = {\ttfamily True},  }\item[{}]{\+\_\+one\+\_\+shot = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a started :class:`Timeout`.
+
+This is a shortcut, the exact action depends on *timeout*'s type:
+
+* If *timeout* is a :class:`Timeout`, then call its :meth:`start` method
+  if it's not already begun.
+* Otherwise, create a new :class:`Timeout` instance, passing (*timeout*, *exception*) as
+  arguments, then call its :meth:`start` method.
+
+Returns the :class:`Timeout` instance.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/timeout.\+py\end{DoxyCompactItemize}

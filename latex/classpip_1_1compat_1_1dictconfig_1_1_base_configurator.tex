@@ -1,0 +1,133 @@
+\hypertarget{classpip_1_1compat_1_1dictconfig_1_1_base_configurator}{}\section{pip.\+compat.\+dictconfig.\+Base\+Configurator Class Reference}
+\label{classpip_1_1compat_1_1dictconfig_1_1_base_configurator}\index{pip.\+compat.\+dictconfig.\+Base\+Configurator@{pip.\+compat.\+dictconfig.\+Base\+Configurator}}
+
+
+Inherits object.
+
+
+
+Inherited by \hyperlink{classpip_1_1compat_1_1dictconfig_1_1_dict_configurator}{pip.\+compat.\+dictconfig.\+Dict\+Configurator}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a9f6ff3792dd0d96509944cff23b9de46}\label{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a9f6ff3792dd0d96509944cff23b9de46}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, config)
+\item 
+def \hyperlink{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a725dbb93cfdbff08fc3ea9fbabe77860}{resolve} (self, s)
+\item 
+def \hyperlink{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_aa6a371555c612cdb9149653dc9d7b47a}{ext\+\_\+convert} (self, value)
+\item 
+def \hyperlink{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a0bdc0a32a3393474db5e8f86f44f824f}{cfg\+\_\+convert} (self, value)
+\item 
+def \hyperlink{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a2caf473e25a04dbfcee4e57df8a8849f}{convert} (self, value)
+\item 
+def \hyperlink{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_aca57746baed3a8d32cdcb9f36927f015}{configure\+\_\+custom} (self, config)
+\item 
+def \hyperlink{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a2125f5c394bb8bbae02b1ecf89b6ba10}{as\+\_\+tuple} (self, value)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_ac1d83fa10bbdc42e2bfa1375945d17a1}\label{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_ac1d83fa10bbdc42e2bfa1375945d17a1}} 
+{\bfseries config}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a16d71888a0a0416fc67f87da404765a2}\label{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a16d71888a0a0416fc67f87da404765a2}} 
+{\bfseries C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+A\+T\+T\+E\+RN} = re.\+compile(r\textquotesingle{}$^\wedge$(?P$<$prefix$>$\mbox{[}a-\/z\mbox{]}+)\+://(?P$<$suffix$>$.$\ast$)\$\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a732ec2589655e26816b061e16e42a866}\label{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a732ec2589655e26816b061e16e42a866}} 
+{\bfseries W\+O\+R\+D\+\_\+\+P\+A\+T\+T\+E\+RN} = re.\+compile(r\textquotesingle{}$^\wedge$\textbackslash{}s$\ast$(\textbackslash{}w+)\textbackslash{}s$\ast$\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a87c98c71a2e6f32b9d1253503c13fdac}\label{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a87c98c71a2e6f32b9d1253503c13fdac}} 
+{\bfseries D\+O\+T\+\_\+\+P\+A\+T\+T\+E\+RN} = re.\+compile(r\textquotesingle{}$^\wedge$\textbackslash{}.\textbackslash{}s$\ast$(\textbackslash{}w+)\textbackslash{}s$\ast$\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_afc5b903be033c15bb17242a54a2ee76d}\label{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_afc5b903be033c15bb17242a54a2ee76d}} 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+P\+A\+T\+T\+E\+RN} = re.\+compile(r\textquotesingle{}$^\wedge$\textbackslash{}\mbox{[}\textbackslash{}s$\ast$(\textbackslash{}w+)\textbackslash{}s$\ast$\textbackslash{}\mbox{]}\textbackslash{}s$\ast$\textquotesingle{})
+\item 
+\mbox{\Hypertarget{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a70fe137adf4b3b96ae82aab2d160be65}\label{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a70fe137adf4b3b96ae82aab2d160be65}} 
+{\bfseries D\+I\+G\+I\+T\+\_\+\+P\+A\+T\+T\+E\+RN} = re.\+compile(r\textquotesingle{}$^\wedge$\textbackslash{}d+\$\textquotesingle{})
+\item 
+dictionary {\bfseries value\+\_\+converters}
+\item 
+\mbox{\Hypertarget{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a3e15d04d68618601781294fa23f29eca}\label{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a3e15d04d68618601781294fa23f29eca}} 
+{\bfseries importer} = \+\_\+\+\_\+import\+\_\+\+\_\+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}The configurator base class which defines some useful defaults.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a2125f5c394bb8bbae02b1ecf89b6ba10}\label{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a2125f5c394bb8bbae02b1ecf89b6ba10}} 
+\index{pip\+::compat\+::dictconfig\+::\+Base\+Configurator@{pip\+::compat\+::dictconfig\+::\+Base\+Configurator}!as\+\_\+tuple@{as\+\_\+tuple}}
+\index{as\+\_\+tuple@{as\+\_\+tuple}!pip\+::compat\+::dictconfig\+::\+Base\+Configurator@{pip\+::compat\+::dictconfig\+::\+Base\+Configurator}}
+\subsubsection{\texorpdfstring{as\+\_\+tuple()}{as\_tuple()}}
+{\footnotesize\ttfamily def pip.\+compat.\+dictconfig.\+Base\+Configurator.\+as\+\_\+tuple (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Utility function which converts lists to tuples.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a0bdc0a32a3393474db5e8f86f44f824f}\label{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a0bdc0a32a3393474db5e8f86f44f824f}} 
+\index{pip\+::compat\+::dictconfig\+::\+Base\+Configurator@{pip\+::compat\+::dictconfig\+::\+Base\+Configurator}!cfg\+\_\+convert@{cfg\+\_\+convert}}
+\index{cfg\+\_\+convert@{cfg\+\_\+convert}!pip\+::compat\+::dictconfig\+::\+Base\+Configurator@{pip\+::compat\+::dictconfig\+::\+Base\+Configurator}}
+\subsubsection{\texorpdfstring{cfg\+\_\+convert()}{cfg\_convert()}}
+{\footnotesize\ttfamily def pip.\+compat.\+dictconfig.\+Base\+Configurator.\+cfg\+\_\+convert (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Default converter for the cfg:// protocol.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_aca57746baed3a8d32cdcb9f36927f015}\label{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_aca57746baed3a8d32cdcb9f36927f015}} 
+\index{pip\+::compat\+::dictconfig\+::\+Base\+Configurator@{pip\+::compat\+::dictconfig\+::\+Base\+Configurator}!configure\+\_\+custom@{configure\+\_\+custom}}
+\index{configure\+\_\+custom@{configure\+\_\+custom}!pip\+::compat\+::dictconfig\+::\+Base\+Configurator@{pip\+::compat\+::dictconfig\+::\+Base\+Configurator}}
+\subsubsection{\texorpdfstring{configure\+\_\+custom()}{configure\_custom()}}
+{\footnotesize\ttfamily def pip.\+compat.\+dictconfig.\+Base\+Configurator.\+configure\+\_\+custom (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{config }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configure an object with a user-supplied factory.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a2caf473e25a04dbfcee4e57df8a8849f}\label{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a2caf473e25a04dbfcee4e57df8a8849f}} 
+\index{pip\+::compat\+::dictconfig\+::\+Base\+Configurator@{pip\+::compat\+::dictconfig\+::\+Base\+Configurator}!convert@{convert}}
+\index{convert@{convert}!pip\+::compat\+::dictconfig\+::\+Base\+Configurator@{pip\+::compat\+::dictconfig\+::\+Base\+Configurator}}
+\subsubsection{\texorpdfstring{convert()}{convert()}}
+{\footnotesize\ttfamily def pip.\+compat.\+dictconfig.\+Base\+Configurator.\+convert (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert values to an appropriate type. dicts, lists and tuples are
+replaced by their converting alternatives. Strings are checked to
+see if they have a conversion format and are converted if they do.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_aa6a371555c612cdb9149653dc9d7b47a}\label{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_aa6a371555c612cdb9149653dc9d7b47a}} 
+\index{pip\+::compat\+::dictconfig\+::\+Base\+Configurator@{pip\+::compat\+::dictconfig\+::\+Base\+Configurator}!ext\+\_\+convert@{ext\+\_\+convert}}
+\index{ext\+\_\+convert@{ext\+\_\+convert}!pip\+::compat\+::dictconfig\+::\+Base\+Configurator@{pip\+::compat\+::dictconfig\+::\+Base\+Configurator}}
+\subsubsection{\texorpdfstring{ext\+\_\+convert()}{ext\_convert()}}
+{\footnotesize\ttfamily def pip.\+compat.\+dictconfig.\+Base\+Configurator.\+ext\+\_\+convert (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Default converter for the ext:// protocol.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a725dbb93cfdbff08fc3ea9fbabe77860}\label{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a725dbb93cfdbff08fc3ea9fbabe77860}} 
+\index{pip\+::compat\+::dictconfig\+::\+Base\+Configurator@{pip\+::compat\+::dictconfig\+::\+Base\+Configurator}!resolve@{resolve}}
+\index{resolve@{resolve}!pip\+::compat\+::dictconfig\+::\+Base\+Configurator@{pip\+::compat\+::dictconfig\+::\+Base\+Configurator}}
+\subsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily def pip.\+compat.\+dictconfig.\+Base\+Configurator.\+resolve (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{s }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolve strings to objects using standard import and attribute
+syntax.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a8b9be496a96f1623bcf5c6bab3e6895a}\label{classpip_1_1compat_1_1dictconfig_1_1_base_configurator_a8b9be496a96f1623bcf5c6bab3e6895a}} 
+\index{pip\+::compat\+::dictconfig\+::\+Base\+Configurator@{pip\+::compat\+::dictconfig\+::\+Base\+Configurator}!value\+\_\+converters@{value\+\_\+converters}}
+\index{value\+\_\+converters@{value\+\_\+converters}!pip\+::compat\+::dictconfig\+::\+Base\+Configurator@{pip\+::compat\+::dictconfig\+::\+Base\+Configurator}}
+\subsubsection{\texorpdfstring{value\+\_\+converters}{value\_converters}}
+{\footnotesize\ttfamily dictionary pip.\+compat.\+dictconfig.\+Base\+Configurator.\+value\+\_\+converters\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \{
+        \textcolor{stringliteral}{'ext'} : \textcolor{stringliteral}{'ext\_convert'},
+        \textcolor{stringliteral}{'cfg'} : \textcolor{stringliteral}{'cfg\_convert'},
+    \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pip/compat/dictconfig.\+py\end{DoxyCompactItemize}

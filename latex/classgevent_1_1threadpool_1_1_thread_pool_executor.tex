@@ -1,0 +1,47 @@
+\hypertarget{classgevent_1_1threadpool_1_1_thread_pool_executor}{}\section{gevent.\+threadpool.\+Thread\+Pool\+Executor Class Reference}
+\label{classgevent_1_1threadpool_1_1_thread_pool_executor}\index{gevent.\+threadpool.\+Thread\+Pool\+Executor@{gevent.\+threadpool.\+Thread\+Pool\+Executor}}
+
+
+Inherits Thread\+Pool\+Executor.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_executor_a911ec8079605bdcd82013b6ac2815af6}\label{classgevent_1_1threadpool_1_1_thread_pool_executor_a911ec8079605bdcd82013b6ac2815af6}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, max\+\_\+workers)
+\item 
+\mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_executor_a70bcb04b0a037a771215e1dea619d379}\label{classgevent_1_1threadpool_1_1_thread_pool_executor_a70bcb04b0a037a771215e1dea619d379}} 
+def {\bfseries submit} (self, fn, args, kwargs)
+\item 
+\mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_executor_afb5aacb1d1ad99df78adc57bb708c256}\label{classgevent_1_1threadpool_1_1_thread_pool_executor_afb5aacb1d1ad99df78adc57bb708c256}} 
+def {\bfseries shutdown} (self, wait=True)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1threadpool_1_1_thread_pool_executor_a283ab0409cadf22e421a2993c447dfbf}\label{classgevent_1_1threadpool_1_1_thread_pool_executor_a283ab0409cadf22e421a2993c447dfbf}} 
+def {\bfseries kill} = shutdown
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A version of :class:`concurrent.futures.ThreadPoolExecutor` that
+always uses native threads, even when threading is monkey-patched.
+
+The ``Future`` objects returned from this object can be used
+with gevent waiting primitives like :func:`gevent.wait`.
+
+.. caution:: If threading is *not* monkey-patched, then the ``Future``
+   objects returned by this object are not guaranteed to work with
+   :func:`~concurrent.futures.as_completed` and :func:`~concurrent.futures.wait`.
+   The individual blocking methods like :meth:`~concurrent.futures.Future.result`
+   and :meth:`~concurrent.futures.Future.exception` will always work.
+
+.. versionadded:: 1.2a1
+   This is a provisional API.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/threadpool.\+py\end{DoxyCompactItemize}

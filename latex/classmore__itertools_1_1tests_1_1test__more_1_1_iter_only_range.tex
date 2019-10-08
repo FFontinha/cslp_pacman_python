@@ -1,0 +1,58 @@
+\hypertarget{classmore__itertools_1_1tests_1_1test__more_1_1_iter_only_range}{}\section{more\+\_\+itertools.\+tests.\+test\+\_\+more.\+Iter\+Only\+Range Class Reference}
+\label{classmore__itertools_1_1tests_1_1test__more_1_1_iter_only_range}\index{more\+\_\+itertools.\+tests.\+test\+\_\+more.\+Iter\+Only\+Range@{more\+\_\+itertools.\+tests.\+test\+\_\+more.\+Iter\+Only\+Range}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmore__itertools_1_1tests_1_1test__more_1_1_iter_only_range_ae98cee0cc33c8665d432c97a1720b3fa}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, n)
+\item 
+def \hyperlink{classmore__itertools_1_1tests_1_1test__more_1_1_iter_only_range_aa6ac9b01cb131d745b4d62d286a89ddf}{\+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmore__itertools_1_1tests_1_1test__more_1_1_iter_only_range_a8e1fb21052d004a1cdf4631e3573bd3f}\label{classmore__itertools_1_1tests_1_1test__more_1_1_iter_only_range_a8e1fb21052d004a1cdf4631e3573bd3f}} 
+{\bfseries n}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}User-defined iterable class which only support __iter__.
+
+It is not specified to inherit ``object``, so indexing on a instance will
+raise an ``AttributeError`` rather than ``TypeError`` in Python 2.
+
+>>> r = IterOnlyRange(5)
+>>> r[0]
+AttributeError: IterOnlyRange instance has no attribute '__getitem__'
+
+Note: In Python 3, ``TypeError`` will be raised because ``object`` is
+inherited implicitly by default.
+
+>>> r[0]
+TypeError: 'IterOnlyRange' object does not support indexing
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmore__itertools_1_1tests_1_1test__more_1_1_iter_only_range_ae98cee0cc33c8665d432c97a1720b3fa}\label{classmore__itertools_1_1tests_1_1test__more_1_1_iter_only_range_ae98cee0cc33c8665d432c97a1720b3fa}} 
+\index{more\+\_\+itertools\+::tests\+::test\+\_\+more\+::\+Iter\+Only\+Range@{more\+\_\+itertools\+::tests\+::test\+\_\+more\+::\+Iter\+Only\+Range}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!more\+\_\+itertools\+::tests\+::test\+\_\+more\+::\+Iter\+Only\+Range@{more\+\_\+itertools\+::tests\+::test\+\_\+more\+::\+Iter\+Only\+Range}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+tests.\+test\+\_\+more.\+Iter\+Only\+Range.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{n }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the length of the range.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmore__itertools_1_1tests_1_1test__more_1_1_iter_only_range_aa6ac9b01cb131d745b4d62d286a89ddf}\label{classmore__itertools_1_1tests_1_1test__more_1_1_iter_only_range_aa6ac9b01cb131d745b4d62d286a89ddf}} 
+\index{more\+\_\+itertools\+::tests\+::test\+\_\+more\+::\+Iter\+Only\+Range@{more\+\_\+itertools\+::tests\+::test\+\_\+more\+::\+Iter\+Only\+Range}!\+\_\+\+\_\+iter\+\_\+\+\_\+@{\+\_\+\+\_\+iter\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+iter\+\_\+\+\_\+@{\+\_\+\+\_\+iter\+\_\+\+\_\+}!more\+\_\+itertools\+::tests\+::test\+\_\+more\+::\+Iter\+Only\+Range@{more\+\_\+itertools\+::tests\+::test\+\_\+more\+::\+Iter\+Only\+Range}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+iter\+\_\+\+\_\+()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+tests.\+test\+\_\+more.\+Iter\+Only\+Range.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Works same as range().\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/more\+\_\+itertools/tests/test\+\_\+more.\+py\end{DoxyCompactItemize}

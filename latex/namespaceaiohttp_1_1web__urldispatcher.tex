@@ -1,0 +1,67 @@
+\hypertarget{namespaceaiohttp_1_1web__urldispatcher}{}\section{aiohttp.\+web\+\_\+urldispatcher Namespace Reference}
+\label{namespaceaiohttp_1_1web__urldispatcher}\index{aiohttp.\+web\+\_\+urldispatcher@{aiohttp.\+web\+\_\+urldispatcher}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource}{Abstract\+Resource}
+\item 
+class \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_route}{Abstract\+Route}
+\item 
+class \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_dynamic_resource}{Dynamic\+Resource}
+\item 
+class \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_match_info_error}{Match\+Info\+Error}
+\item 
+class \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_plain_resource}{Plain\+Resource}
+\item 
+class \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_prefixed_sub_app_resource}{Prefixed\+Sub\+App\+Resource}
+\item 
+class \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_prefix_resource}{Prefix\+Resource}
+\item 
+class \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_resource}{Resource}
+\item 
+class \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_resource_route}{Resource\+Route}
+\item 
+class \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_resources_view}{Resources\+View}
+\item 
+class \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_routes_view}{Routes\+View}
+\item 
+class \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_static_resource}{Static\+Resource}
+\item 
+class \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_system_route}{System\+Route}
+\item 
+class \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_url_dispatcher}{Url\+Dispatcher}
+\item 
+class \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_url_mapping_match_info}{Url\+Mapping\+Match\+Info}
+\item 
+class \hyperlink{classaiohttp_1_1web__urldispatcher_1_1_view}{View}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceaiohttp_1_1web__urldispatcher_a039b77152a24518dbc91d0f710b30262}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+RE} = re.\+compile(r\char`\"{}$^\wedge$\mbox{[}0-\/9\+A-\/\+Za-\/z!\#\textbackslash{}\$\%\&\textquotesingle{}\textbackslash{}$\ast$\textbackslash{}+\textbackslash{}-\/\textbackslash{}.\textbackslash{}$^\wedge$\+\_\+`\textbackslash{}$\vert$$\sim$\mbox{]}+\$\char`\"{})
+\item 
+\hyperlink{namespaceaiohttp_1_1web__urldispatcher_adc3ed650e619736128775c3d60ea7730}{R\+O\+U\+T\+E\+\_\+\+RE} = re.\+compile(r\textquotesingle{}(\textbackslash{}\{\mbox{[}\+\_\+a-\/zA-\/Z\mbox{]}\mbox{[}$^\wedge$\{\}\mbox{]}$\ast$(?\+:\textbackslash{}\{\mbox{[}$^\wedge$\{\}\mbox{]}$\ast$\textbackslash{}\}\mbox{[}$^\wedge$\{\}\mbox{]}$\ast$)$\ast$\textbackslash{}\})\textquotesingle{})
+\item 
+\hyperlink{namespaceaiohttp_1_1web__urldispatcher_a8e6301c2d8abb3c89df1af3741eeae54}{P\+A\+T\+H\+\_\+\+S\+EP} = re.\+escape(\textquotesingle{}/\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceaiohttp_1_1web__urldispatcher_a039b77152a24518dbc91d0f710b30262}\label{namespaceaiohttp_1_1web__urldispatcher_a039b77152a24518dbc91d0f710b30262}} 
+\index{aiohttp\+::web\+\_\+urldispatcher@{aiohttp\+::web\+\_\+urldispatcher}!H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+RE@{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+RE}}
+\index{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+RE@{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+RE}!aiohttp\+::web\+\_\+urldispatcher@{aiohttp\+::web\+\_\+urldispatcher}}
+\subsubsection{\texorpdfstring{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+RE}{HTTP\_METHOD\_RE}}
+{\footnotesize\ttfamily aiohttp.\+web\+\_\+urldispatcher.\+H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+RE = re.\+compile(r\char`\"{}$^\wedge$\mbox{[}0-\/9\+A-\/\+Za-\/z!\#\textbackslash{}\$\%\&\textquotesingle{}\textbackslash{}$\ast$\textbackslash{}+\textbackslash{}-\/\textbackslash{}.\textbackslash{}$^\wedge$\+\_\+`\textbackslash{}$\vert$$\sim$\mbox{]}+\$\char`\"{})}
+
+\mbox{\Hypertarget{namespaceaiohttp_1_1web__urldispatcher_a8e6301c2d8abb3c89df1af3741eeae54}\label{namespaceaiohttp_1_1web__urldispatcher_a8e6301c2d8abb3c89df1af3741eeae54}} 
+\index{aiohttp\+::web\+\_\+urldispatcher@{aiohttp\+::web\+\_\+urldispatcher}!P\+A\+T\+H\+\_\+\+S\+EP@{P\+A\+T\+H\+\_\+\+S\+EP}}
+\index{P\+A\+T\+H\+\_\+\+S\+EP@{P\+A\+T\+H\+\_\+\+S\+EP}!aiohttp\+::web\+\_\+urldispatcher@{aiohttp\+::web\+\_\+urldispatcher}}
+\subsubsection{\texorpdfstring{P\+A\+T\+H\+\_\+\+S\+EP}{PATH\_SEP}}
+{\footnotesize\ttfamily aiohttp.\+web\+\_\+urldispatcher.\+P\+A\+T\+H\+\_\+\+S\+EP = re.\+escape(\textquotesingle{}/\textquotesingle{})}
+
+\mbox{\Hypertarget{namespaceaiohttp_1_1web__urldispatcher_adc3ed650e619736128775c3d60ea7730}\label{namespaceaiohttp_1_1web__urldispatcher_adc3ed650e619736128775c3d60ea7730}} 
+\index{aiohttp\+::web\+\_\+urldispatcher@{aiohttp\+::web\+\_\+urldispatcher}!R\+O\+U\+T\+E\+\_\+\+RE@{R\+O\+U\+T\+E\+\_\+\+RE}}
+\index{R\+O\+U\+T\+E\+\_\+\+RE@{R\+O\+U\+T\+E\+\_\+\+RE}!aiohttp\+::web\+\_\+urldispatcher@{aiohttp\+::web\+\_\+urldispatcher}}
+\subsubsection{\texorpdfstring{R\+O\+U\+T\+E\+\_\+\+RE}{ROUTE\_RE}}
+{\footnotesize\ttfamily aiohttp.\+web\+\_\+urldispatcher.\+R\+O\+U\+T\+E\+\_\+\+RE = re.\+compile(r\textquotesingle{}(\textbackslash{}\{\mbox{[}\+\_\+a-\/zA-\/Z\mbox{]}\mbox{[}$^\wedge$\{\}\mbox{]}$\ast$(?\+:\textbackslash{}\{\mbox{[}$^\wedge$\{\}\mbox{]}$\ast$\textbackslash{}\}\mbox{[}$^\wedge$\{\}\mbox{]}$\ast$)$\ast$\textbackslash{}\})\textquotesingle{})}
+

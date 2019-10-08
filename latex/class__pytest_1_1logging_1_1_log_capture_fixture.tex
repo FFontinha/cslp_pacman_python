@@ -1,0 +1,155 @@
+\hypertarget{class__pytest_1_1logging_1_1_log_capture_fixture}{}\section{\+\_\+pytest.\+logging.\+Log\+Capture\+Fixture Class Reference}
+\label{class__pytest_1_1logging_1_1_log_capture_fixture}\index{\+\_\+pytest.\+logging.\+Log\+Capture\+Fixture@{\+\_\+pytest.\+logging.\+Log\+Capture\+Fixture}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{class__pytest_1_1logging_1_1_log_capture_fixture_a211edb4f72a05a77c61298917f9d1375}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, item)
+\item 
+def \hyperlink{class__pytest_1_1logging_1_1_log_capture_fixture_ad233a808ae98380a9eda47f4cc0a7fe0}{handler} (self)
+\item 
+def \hyperlink{class__pytest_1_1logging_1_1_log_capture_fixture_a48adea0085ebd2742cc9f508e65e5c9c}{get\+\_\+records} (self, when)
+\item 
+def \hyperlink{class__pytest_1_1logging_1_1_log_capture_fixture_a565ec737a85feaff999463f62a4863f3}{text} (self)
+\item 
+def \hyperlink{class__pytest_1_1logging_1_1_log_capture_fixture_a90b009f2fdf80ff95d66688fcc699471}{records} (self)
+\item 
+def \hyperlink{class__pytest_1_1logging_1_1_log_capture_fixture_a1b9b4a75a5b14249e040436e53dffa95}{record\+\_\+tuples} (self)
+\item 
+def \hyperlink{class__pytest_1_1logging_1_1_log_capture_fixture_a09facf7b01bf03f51314819d58882d2e}{messages} (self)
+\item 
+def \hyperlink{class__pytest_1_1logging_1_1_log_capture_fixture_afabeb49ab9e53e42cdaf70c60c249225}{clear} (self)
+\item 
+def \hyperlink{class__pytest_1_1logging_1_1_log_capture_fixture_aca085734a490329f84018fa43c426e7d}{set\+\_\+level} (self, level, logger=None)
+\item 
+def \hyperlink{class__pytest_1_1logging_1_1_log_capture_fixture_aaa1bebdc955ec8aec6298622f2931dfc}{at\+\_\+level} (self, level, logger=None)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Provides access and control of log capturing.\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class__pytest_1_1logging_1_1_log_capture_fixture_a211edb4f72a05a77c61298917f9d1375}\label{class__pytest_1_1logging_1_1_log_capture_fixture_a211edb4f72a05a77c61298917f9d1375}} 
+\index{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+logging.\+Log\+Capture\+Fixture.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{item }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a new funcarg.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1logging_1_1_log_capture_fixture_aaa1bebdc955ec8aec6298622f2931dfc}\label{class__pytest_1_1logging_1_1_log_capture_fixture_aaa1bebdc955ec8aec6298622f2931dfc}} 
+\index{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}!at\+\_\+level@{at\+\_\+level}}
+\index{at\+\_\+level@{at\+\_\+level}!\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}}
+\subsubsection{\texorpdfstring{at\+\_\+level()}{at\_level()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+logging.\+Log\+Capture\+Fixture.\+at\+\_\+level (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{level,  }\item[{}]{logger = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Context manager that sets the level for capturing of logs. After the end of the 'with' statement the
+level is restored to its original value.
+
+:param int level: the logger to level.
+:param str logger: the logger to update the level. If not given, the root logger level is updated.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1logging_1_1_log_capture_fixture_afabeb49ab9e53e42cdaf70c60c249225}\label{class__pytest_1_1logging_1_1_log_capture_fixture_afabeb49ab9e53e42cdaf70c60c249225}} 
+\index{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}!clear@{clear}}
+\index{clear@{clear}!\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+logging.\+Log\+Capture\+Fixture.\+clear (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reset the list of log records and the captured log text.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1logging_1_1_log_capture_fixture_a48adea0085ebd2742cc9f508e65e5c9c}\label{class__pytest_1_1logging_1_1_log_capture_fixture_a48adea0085ebd2742cc9f508e65e5c9c}} 
+\index{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}!get\+\_\+records@{get\+\_\+records}}
+\index{get\+\_\+records@{get\+\_\+records}!\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}}
+\subsubsection{\texorpdfstring{get\+\_\+records()}{get\_records()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+logging.\+Log\+Capture\+Fixture.\+get\+\_\+records (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{when }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the logging records for one of the possible test phases.
+
+:param str when:
+    Which test phase to obtain the records from. Valid values are: "setup", "call" and "teardown".
+
+:rtype: List[logging.LogRecord]
+:return: the list of captured records at the given stage
+
+.. versionadded:: 3.4
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1logging_1_1_log_capture_fixture_ad233a808ae98380a9eda47f4cc0a7fe0}\label{class__pytest_1_1logging_1_1_log_capture_fixture_ad233a808ae98380a9eda47f4cc0a7fe0}} 
+\index{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}!handler@{handler}}
+\index{handler@{handler}!\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}}
+\subsubsection{\texorpdfstring{handler()}{handler()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+logging.\+Log\+Capture\+Fixture.\+handler (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:rtype: LogCaptureHandler
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1logging_1_1_log_capture_fixture_a09facf7b01bf03f51314819d58882d2e}\label{class__pytest_1_1logging_1_1_log_capture_fixture_a09facf7b01bf03f51314819d58882d2e}} 
+\index{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}!messages@{messages}}
+\index{messages@{messages}!\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}}
+\subsubsection{\texorpdfstring{messages()}{messages()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+logging.\+Log\+Capture\+Fixture.\+messages (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a list of format-interpolated log messages.
+
+Unlike 'records', which contains the format string and parameters for interpolation, log messages in this list
+are all interpolated.
+Unlike 'text', which contains the output from the handler, log messages in this list are unadorned with
+levels, timestamps, etc, making exact comparisions more reliable.
+
+Note that traceback or stack info (from :func:`logging.exception` or the `exc_info` or `stack_info` arguments
+to the logging functions) is not included, as this is added by the formatter in the handler.
+
+.. versionadded:: 3.7
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1logging_1_1_log_capture_fixture_a1b9b4a75a5b14249e040436e53dffa95}\label{class__pytest_1_1logging_1_1_log_capture_fixture_a1b9b4a75a5b14249e040436e53dffa95}} 
+\index{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}!record\+\_\+tuples@{record\+\_\+tuples}}
+\index{record\+\_\+tuples@{record\+\_\+tuples}!\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}}
+\subsubsection{\texorpdfstring{record\+\_\+tuples()}{record\_tuples()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+logging.\+Log\+Capture\+Fixture.\+record\+\_\+tuples (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a list of a striped down version of log records intended
+for use in assertion comparison.
+
+The format of the tuple is:
+
+    (logger_name, log_level, message)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1logging_1_1_log_capture_fixture_a90b009f2fdf80ff95d66688fcc699471}\label{class__pytest_1_1logging_1_1_log_capture_fixture_a90b009f2fdf80ff95d66688fcc699471}} 
+\index{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}!records@{records}}
+\index{records@{records}!\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}}
+\subsubsection{\texorpdfstring{records()}{records()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+logging.\+Log\+Capture\+Fixture.\+records (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the list of log records.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1logging_1_1_log_capture_fixture_aca085734a490329f84018fa43c426e7d}\label{class__pytest_1_1logging_1_1_log_capture_fixture_aca085734a490329f84018fa43c426e7d}} 
+\index{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}!set\+\_\+level@{set\+\_\+level}}
+\index{set\+\_\+level@{set\+\_\+level}!\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}}
+\subsubsection{\texorpdfstring{set\+\_\+level()}{set\_level()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+logging.\+Log\+Capture\+Fixture.\+set\+\_\+level (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{level,  }\item[{}]{logger = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets the level for capturing of logs. The level will be restored to its previous value at the end of
+the test.
+
+:param int level: the logger to level.
+:param str logger: the logger to update the level. If not given, the root logger level is updated.
+
+.. versionchanged:: 3.4
+    The levels of the loggers changed by this function will be restored to their initial values at the
+    end of the test.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1logging_1_1_log_capture_fixture_a565ec737a85feaff999463f62a4863f3}\label{class__pytest_1_1logging_1_1_log_capture_fixture_a565ec737a85feaff999463f62a4863f3}} 
+\index{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}!text@{text}}
+\index{text@{text}!\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture@{\+\_\+pytest\+::logging\+::\+Log\+Capture\+Fixture}}
+\subsubsection{\texorpdfstring{text()}{text()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+logging.\+Log\+Capture\+Fixture.\+text (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the log text.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/logging.\+py\end{DoxyCompactItemize}

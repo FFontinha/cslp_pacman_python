@@ -1,0 +1,34 @@
+\hypertarget{classgevent_1_1events_1_1_i_memory_usage_threshold_exceeded}{}\section{gevent.\+events.\+I\+Memory\+Usage\+Threshold\+Exceeded Class Reference}
+\label{classgevent_1_1events_1_1_i_memory_usage_threshold_exceeded}\index{gevent.\+events.\+I\+Memory\+Usage\+Threshold\+Exceeded@{gevent.\+events.\+I\+Memory\+Usage\+Threshold\+Exceeded}}
+
+
+Inherits \hyperlink{classgevent_1_1__util_1_1_interface}{gevent.\+\_\+util.\+Interface}.
+
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1events_1_1_i_memory_usage_threshold_exceeded_a5e440a1e5b9e38b8a751df34e49b19e8}\label{classgevent_1_1events_1_1_i_memory_usage_threshold_exceeded_a5e440a1e5b9e38b8a751df34e49b19e8}} 
+{\bfseries mem\+\_\+usage} = Attribute(\char`\"{}The current process memory usage, in bytes.\char`\"{})
+\item 
+\mbox{\Hypertarget{classgevent_1_1events_1_1_i_memory_usage_threshold_exceeded_aad147856af1e46ccf00b7191e3ad2650}\label{classgevent_1_1events_1_1_i_memory_usage_threshold_exceeded_aad147856af1e46ccf00b7191e3ad2650}} 
+{\bfseries max\+\_\+allowed} = Attribute(\char`\"{}The maximum allowed memory usage, in bytes.\char`\"{})
+\item 
+\mbox{\Hypertarget{classgevent_1_1events_1_1_i_memory_usage_threshold_exceeded_abb66fccf777fd939422ad72233849c61}\label{classgevent_1_1events_1_1_i_memory_usage_threshold_exceeded_abb66fccf777fd939422ad72233849c61}} 
+{\bfseries memory\+\_\+info} = Attribute(\char`\"{}The tuple of memory usage stats return by psutil.\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}The event emitted when the memory usage threshold is exceeded.
+
+This event is emitted only while memory continues to grow
+above the threshold. Only if the condition or stabilized is corrected (memory
+usage drops) will the event be emitted in the future.
+
+This event is emitted in the monitor thread.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/events.\+py\end{DoxyCompactItemize}

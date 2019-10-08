@@ -1,0 +1,237 @@
+\hypertarget{camera_8h}{}\section{venv/include/site/python3.6/pygame/camera.h File Reference}
+\label{camera_8h}\index{venv/include/site/python3.\+6/pygame/camera.\+h@{venv/include/site/python3.\+6/pygame/camera.\+h}}
+{\ttfamily \#include \char`\"{}pygame.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}doc/camera\+\_\+doc.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbuffer}{buffer}
+\item 
+struct \hyperlink{struct_py_camera_object}{Py\+Camera\+Object}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{camera_8h_aa807ba1a3c4f30be53bda729161520fb}{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B24}~\textquotesingle{}R\+G\+B3\textquotesingle{}
+\item 
+\#define \hyperlink{camera_8h_ad160406e838dd17b4efbb013324ef600}{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B444}~\textquotesingle{}R444\textquotesingle{}
+\item 
+\#define \hyperlink{camera_8h_a5e78c1fcd63f3e67a818c9c9bf11fac7}{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+Y\+U\+YV}~\textquotesingle{}Y\+U\+YV\textquotesingle{}
+\item 
+\#define \hyperlink{camera_8h_ab0ba4dd6e237b96132c0a66be2fb3bc2}{C\+L\+E\+AR}(x)~\hyperlink{libuv_2__corecffi__cdef_8c_acdbffdc29c4d784d83e08e8388803a81}{memset} (\&(x), 0, sizeof (x))
+\item 
+\#define \hyperlink{camera_8h_ab20ef9c02db6d17a4d398d9cd70ada82}{S\+AT}(c)~if (c \& ($\sim$255)) \{ if (c $<$ 0) c = 0; else c = 255; \}
+\item 
+\#define \hyperlink{camera_8h_af4cb7fc28424a86815336c6b27f13c60}{S\+A\+T2}(c)~((c) \& ($\sim$255) ? ((c) $<$ 0 ? 0 \+: 255) \+: (c))
+\item 
+\#define \hyperlink{camera_8h_a93493eb8fae5549bd5be67f3449245e0}{D\+E\+F\+A\+U\+L\+T\+\_\+\+W\+I\+D\+TH}~640
+\item 
+\#define \hyperlink{camera_8h_a1879f9e5604a01f0983829846001ab23}{D\+E\+F\+A\+U\+L\+T\+\_\+\+H\+E\+I\+G\+HT}~480
+\item 
+\#define \hyperlink{camera_8h_aceb4cff8917b474171a1abf7118cc624}{R\+G\+B\+\_\+\+O\+UT}~1
+\item 
+\#define \hyperlink{camera_8h_a7e478bddaad17cdb90d235ac6c3d2334}{Y\+U\+V\+\_\+\+O\+UT}~2
+\item 
+\#define \hyperlink{camera_8h_ae318f064c20dc114bef22f1ee61fa009}{H\+S\+V\+\_\+\+O\+UT}~4
+\item 
+\#define \hyperlink{camera_8h_af1eee8175f9533ace83bb2240756ed1d}{C\+A\+M\+\_\+\+V4L}~1 /$\ast$ deprecated. the incomplete support in pygame was removed $\ast$/
+\item 
+\#define \hyperlink{camera_8h_a72aa631989ed613a015ac145a97b0854}{C\+A\+M\+\_\+\+V4\+L2}~2
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_py_camera_object}{Py\+Camera\+Object} \hyperlink{camera_8h_a0582cbee1a1fea85b096b9aaf143d818}{Py\+Camera\+Object}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{camera_8h_ace54b55c0bb6bad402d9d5b77fe9edb7}{colorspace} (S\+D\+L\+\_\+\+Surface $\ast$src, S\+D\+L\+\_\+\+Surface $\ast$dst, int cspace)
+\item 
+void \hyperlink{camera_8h_a8173aad02424ad8d9e12dc09e2c7a3d7}{rgb24\+\_\+to\+\_\+rgb} (const void $\ast$src, void $\ast$dst, int length, S\+D\+L\+\_\+\+Pixel\+Format $\ast$format)
+\item 
+void \hyperlink{camera_8h_a91959aa20dd8a1ee0e48b3af0046231e}{rgb444\+\_\+to\+\_\+rgb} (const void $\ast$src, void $\ast$dst, int length, S\+D\+L\+\_\+\+Pixel\+Format $\ast$format)
+\item 
+void \hyperlink{camera_8h_a3b20981f63e4e14298631a157537b0b1}{rgb\+\_\+to\+\_\+yuv} (const void $\ast$src, void $\ast$dst, int length, unsigned long source, S\+D\+L\+\_\+\+Pixel\+Format $\ast$format)
+\item 
+void \hyperlink{camera_8h_afa783d3721685fe2e4027b1642afa578}{rgb\+\_\+to\+\_\+hsv} (const void $\ast$src, void $\ast$dst, int length, unsigned long source, S\+D\+L\+\_\+\+Pixel\+Format $\ast$format)
+\item 
+void \hyperlink{camera_8h_a5f0711dc1488fc0bfa8905efdcb1dc70}{yuyv\+\_\+to\+\_\+rgb} (const void $\ast$src, void $\ast$dst, int length, S\+D\+L\+\_\+\+Pixel\+Format $\ast$format)
+\item 
+void \hyperlink{camera_8h_a35e7868980f2007400fd84543c9b1626}{yuyv\+\_\+to\+\_\+yuv} (const void $\ast$src, void $\ast$dst, int length, S\+D\+L\+\_\+\+Pixel\+Format $\ast$format)
+\item 
+void \hyperlink{camera_8h_a464152ff09f6de09e74c8f1268573774}{uyvy\+\_\+to\+\_\+rgb} (const void $\ast$src, void $\ast$dst, int length, S\+D\+L\+\_\+\+Pixel\+Format $\ast$format)
+\item 
+void \hyperlink{camera_8h_a8190bc2f7318a436bd0a896abeb3cadb}{uyvy\+\_\+to\+\_\+yuv} (const void $\ast$src, void $\ast$dst, int length, S\+D\+L\+\_\+\+Pixel\+Format $\ast$format)
+\item 
+void \hyperlink{camera_8h_a6189ee471d787fb0c4507707d61b6905}{sbggr8\+\_\+to\+\_\+rgb} (const void $\ast$src, void $\ast$dst, int width, int height, S\+D\+L\+\_\+\+Pixel\+Format $\ast$format)
+\item 
+void \hyperlink{camera_8h_a3b63c2b940db9f95fd45fa3d52989bfd}{yuv420\+\_\+to\+\_\+rgb} (const void $\ast$src, void $\ast$dst, int width, int height, S\+D\+L\+\_\+\+Pixel\+Format $\ast$format)
+\item 
+void \hyperlink{camera_8h_ad9226101925417d0382e5d08e871ba47}{yuv420\+\_\+to\+\_\+yuv} (const void $\ast$src, void $\ast$dst, int width, int height, S\+D\+L\+\_\+\+Pixel\+Format $\ast$format)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{camera_8h_af1eee8175f9533ace83bb2240756ed1d}\label{camera_8h_af1eee8175f9533ace83bb2240756ed1d}} 
+\index{camera.\+h@{camera.\+h}!C\+A\+M\+\_\+\+V4L@{C\+A\+M\+\_\+\+V4L}}
+\index{C\+A\+M\+\_\+\+V4L@{C\+A\+M\+\_\+\+V4L}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{C\+A\+M\+\_\+\+V4L}{CAM\_V4L}}
+{\footnotesize\ttfamily \#define C\+A\+M\+\_\+\+V4L~1 /$\ast$ deprecated. the incomplete support in pygame was removed $\ast$/}
+
+\mbox{\Hypertarget{camera_8h_a72aa631989ed613a015ac145a97b0854}\label{camera_8h_a72aa631989ed613a015ac145a97b0854}} 
+\index{camera.\+h@{camera.\+h}!C\+A\+M\+\_\+\+V4\+L2@{C\+A\+M\+\_\+\+V4\+L2}}
+\index{C\+A\+M\+\_\+\+V4\+L2@{C\+A\+M\+\_\+\+V4\+L2}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{C\+A\+M\+\_\+\+V4\+L2}{CAM\_V4L2}}
+{\footnotesize\ttfamily \#define C\+A\+M\+\_\+\+V4\+L2~2}
+
+\mbox{\Hypertarget{camera_8h_ab0ba4dd6e237b96132c0a66be2fb3bc2}\label{camera_8h_ab0ba4dd6e237b96132c0a66be2fb3bc2}} 
+\index{camera.\+h@{camera.\+h}!C\+L\+E\+AR@{C\+L\+E\+AR}}
+\index{C\+L\+E\+AR@{C\+L\+E\+AR}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{C\+L\+E\+AR}{CLEAR}}
+{\footnotesize\ttfamily \#define C\+L\+E\+AR(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\hyperlink{libuv_2__corecffi__cdef_8c_acdbffdc29c4d784d83e08e8388803a81}{memset} (\&(x), 0, sizeof (x))}
+
+\mbox{\Hypertarget{camera_8h_a1879f9e5604a01f0983829846001ab23}\label{camera_8h_a1879f9e5604a01f0983829846001ab23}} 
+\index{camera.\+h@{camera.\+h}!D\+E\+F\+A\+U\+L\+T\+\_\+\+H\+E\+I\+G\+HT@{D\+E\+F\+A\+U\+L\+T\+\_\+\+H\+E\+I\+G\+HT}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+H\+E\+I\+G\+HT@{D\+E\+F\+A\+U\+L\+T\+\_\+\+H\+E\+I\+G\+HT}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+H\+E\+I\+G\+HT}{DEFAULT\_HEIGHT}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+H\+E\+I\+G\+HT~480}
+
+\mbox{\Hypertarget{camera_8h_a93493eb8fae5549bd5be67f3449245e0}\label{camera_8h_a93493eb8fae5549bd5be67f3449245e0}} 
+\index{camera.\+h@{camera.\+h}!D\+E\+F\+A\+U\+L\+T\+\_\+\+W\+I\+D\+TH@{D\+E\+F\+A\+U\+L\+T\+\_\+\+W\+I\+D\+TH}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+W\+I\+D\+TH@{D\+E\+F\+A\+U\+L\+T\+\_\+\+W\+I\+D\+TH}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+W\+I\+D\+TH}{DEFAULT\_WIDTH}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+W\+I\+D\+TH~640}
+
+\mbox{\Hypertarget{camera_8h_ae318f064c20dc114bef22f1ee61fa009}\label{camera_8h_ae318f064c20dc114bef22f1ee61fa009}} 
+\index{camera.\+h@{camera.\+h}!H\+S\+V\+\_\+\+O\+UT@{H\+S\+V\+\_\+\+O\+UT}}
+\index{H\+S\+V\+\_\+\+O\+UT@{H\+S\+V\+\_\+\+O\+UT}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{H\+S\+V\+\_\+\+O\+UT}{HSV\_OUT}}
+{\footnotesize\ttfamily \#define H\+S\+V\+\_\+\+O\+UT~4}
+
+\mbox{\Hypertarget{camera_8h_aceb4cff8917b474171a1abf7118cc624}\label{camera_8h_aceb4cff8917b474171a1abf7118cc624}} 
+\index{camera.\+h@{camera.\+h}!R\+G\+B\+\_\+\+O\+UT@{R\+G\+B\+\_\+\+O\+UT}}
+\index{R\+G\+B\+\_\+\+O\+UT@{R\+G\+B\+\_\+\+O\+UT}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{R\+G\+B\+\_\+\+O\+UT}{RGB\_OUT}}
+{\footnotesize\ttfamily \#define R\+G\+B\+\_\+\+O\+UT~1}
+
+\mbox{\Hypertarget{camera_8h_ab20ef9c02db6d17a4d398d9cd70ada82}\label{camera_8h_ab20ef9c02db6d17a4d398d9cd70ada82}} 
+\index{camera.\+h@{camera.\+h}!S\+AT@{S\+AT}}
+\index{S\+AT@{S\+AT}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{S\+AT}{SAT}}
+{\footnotesize\ttfamily \#define S\+AT(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})~if (c \& ($\sim$255)) \{ if (c $<$ 0) c = 0; else c = 255; \}}
+
+\mbox{\Hypertarget{camera_8h_af4cb7fc28424a86815336c6b27f13c60}\label{camera_8h_af4cb7fc28424a86815336c6b27f13c60}} 
+\index{camera.\+h@{camera.\+h}!S\+A\+T2@{S\+A\+T2}}
+\index{S\+A\+T2@{S\+A\+T2}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{S\+A\+T2}{SAT2}}
+{\footnotesize\ttfamily \#define S\+A\+T2(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})~((c) \& ($\sim$255) ? ((c) $<$ 0 ? 0 \+: 255) \+: (c))}
+
+\mbox{\Hypertarget{camera_8h_aa807ba1a3c4f30be53bda729161520fb}\label{camera_8h_aa807ba1a3c4f30be53bda729161520fb}} 
+\index{camera.\+h@{camera.\+h}!V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B24@{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B24}}
+\index{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B24@{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B24}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B24}{V4L2\_PIX\_FMT\_RGB24}}
+{\footnotesize\ttfamily \#define V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B24~\textquotesingle{}R\+G\+B3\textquotesingle{}}
+
+\mbox{\Hypertarget{camera_8h_ad160406e838dd17b4efbb013324ef600}\label{camera_8h_ad160406e838dd17b4efbb013324ef600}} 
+\index{camera.\+h@{camera.\+h}!V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B444@{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B444}}
+\index{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B444@{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B444}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B444}{V4L2\_PIX\_FMT\_RGB444}}
+{\footnotesize\ttfamily \#define V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B444~\textquotesingle{}R444\textquotesingle{}}
+
+\mbox{\Hypertarget{camera_8h_a5e78c1fcd63f3e67a818c9c9bf11fac7}\label{camera_8h_a5e78c1fcd63f3e67a818c9c9bf11fac7}} 
+\index{camera.\+h@{camera.\+h}!V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+Y\+U\+YV@{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+Y\+U\+YV}}
+\index{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+Y\+U\+YV@{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+Y\+U\+YV}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+Y\+U\+YV}{V4L2\_PIX\_FMT\_YUYV}}
+{\footnotesize\ttfamily \#define V4\+L2\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+Y\+U\+YV~\textquotesingle{}Y\+U\+YV\textquotesingle{}}
+
+\mbox{\Hypertarget{camera_8h_a7e478bddaad17cdb90d235ac6c3d2334}\label{camera_8h_a7e478bddaad17cdb90d235ac6c3d2334}} 
+\index{camera.\+h@{camera.\+h}!Y\+U\+V\+\_\+\+O\+UT@{Y\+U\+V\+\_\+\+O\+UT}}
+\index{Y\+U\+V\+\_\+\+O\+UT@{Y\+U\+V\+\_\+\+O\+UT}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{Y\+U\+V\+\_\+\+O\+UT}{YUV\_OUT}}
+{\footnotesize\ttfamily \#define Y\+U\+V\+\_\+\+O\+UT~2}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{camera_8h_a0582cbee1a1fea85b096b9aaf143d818}\label{camera_8h_a0582cbee1a1fea85b096b9aaf143d818}} 
+\index{camera.\+h@{camera.\+h}!Py\+Camera\+Object@{Py\+Camera\+Object}}
+\index{Py\+Camera\+Object@{Py\+Camera\+Object}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{Py\+Camera\+Object}{PyCameraObject}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct_py_camera_object}{Py\+Camera\+Object}  \hyperlink{struct_py_camera_object}{Py\+Camera\+Object}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{camera_8h_ace54b55c0bb6bad402d9d5b77fe9edb7}\label{camera_8h_ace54b55c0bb6bad402d9d5b77fe9edb7}} 
+\index{camera.\+h@{camera.\+h}!colorspace@{colorspace}}
+\index{colorspace@{colorspace}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{colorspace()}{colorspace()}}
+{\footnotesize\ttfamily void colorspace (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{src,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{dst,  }\item[{int}]{cspace }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a8173aad02424ad8d9e12dc09e2c7a3d7}\label{camera_8h_a8173aad02424ad8d9e12dc09e2c7a3d7}} 
+\index{camera.\+h@{camera.\+h}!rgb24\+\_\+to\+\_\+rgb@{rgb24\+\_\+to\+\_\+rgb}}
+\index{rgb24\+\_\+to\+\_\+rgb@{rgb24\+\_\+to\+\_\+rgb}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{rgb24\+\_\+to\+\_\+rgb()}{rgb24\_to\_rgb()}}
+{\footnotesize\ttfamily void rgb24\+\_\+to\+\_\+rgb (\begin{DoxyParamCaption}\item[{const void $\ast$}]{src,  }\item[{void $\ast$}]{dst,  }\item[{int}]{length,  }\item[{S\+D\+L\+\_\+\+Pixel\+Format $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a91959aa20dd8a1ee0e48b3af0046231e}\label{camera_8h_a91959aa20dd8a1ee0e48b3af0046231e}} 
+\index{camera.\+h@{camera.\+h}!rgb444\+\_\+to\+\_\+rgb@{rgb444\+\_\+to\+\_\+rgb}}
+\index{rgb444\+\_\+to\+\_\+rgb@{rgb444\+\_\+to\+\_\+rgb}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{rgb444\+\_\+to\+\_\+rgb()}{rgb444\_to\_rgb()}}
+{\footnotesize\ttfamily void rgb444\+\_\+to\+\_\+rgb (\begin{DoxyParamCaption}\item[{const void $\ast$}]{src,  }\item[{void $\ast$}]{dst,  }\item[{int}]{length,  }\item[{S\+D\+L\+\_\+\+Pixel\+Format $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_afa783d3721685fe2e4027b1642afa578}\label{camera_8h_afa783d3721685fe2e4027b1642afa578}} 
+\index{camera.\+h@{camera.\+h}!rgb\+\_\+to\+\_\+hsv@{rgb\+\_\+to\+\_\+hsv}}
+\index{rgb\+\_\+to\+\_\+hsv@{rgb\+\_\+to\+\_\+hsv}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{rgb\+\_\+to\+\_\+hsv()}{rgb\_to\_hsv()}}
+{\footnotesize\ttfamily void rgb\+\_\+to\+\_\+hsv (\begin{DoxyParamCaption}\item[{const void $\ast$}]{src,  }\item[{void $\ast$}]{dst,  }\item[{int}]{length,  }\item[{unsigned long}]{source,  }\item[{S\+D\+L\+\_\+\+Pixel\+Format $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a3b20981f63e4e14298631a157537b0b1}\label{camera_8h_a3b20981f63e4e14298631a157537b0b1}} 
+\index{camera.\+h@{camera.\+h}!rgb\+\_\+to\+\_\+yuv@{rgb\+\_\+to\+\_\+yuv}}
+\index{rgb\+\_\+to\+\_\+yuv@{rgb\+\_\+to\+\_\+yuv}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{rgb\+\_\+to\+\_\+yuv()}{rgb\_to\_yuv()}}
+{\footnotesize\ttfamily void rgb\+\_\+to\+\_\+yuv (\begin{DoxyParamCaption}\item[{const void $\ast$}]{src,  }\item[{void $\ast$}]{dst,  }\item[{int}]{length,  }\item[{unsigned long}]{source,  }\item[{S\+D\+L\+\_\+\+Pixel\+Format $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a6189ee471d787fb0c4507707d61b6905}\label{camera_8h_a6189ee471d787fb0c4507707d61b6905}} 
+\index{camera.\+h@{camera.\+h}!sbggr8\+\_\+to\+\_\+rgb@{sbggr8\+\_\+to\+\_\+rgb}}
+\index{sbggr8\+\_\+to\+\_\+rgb@{sbggr8\+\_\+to\+\_\+rgb}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{sbggr8\+\_\+to\+\_\+rgb()}{sbggr8\_to\_rgb()}}
+{\footnotesize\ttfamily void sbggr8\+\_\+to\+\_\+rgb (\begin{DoxyParamCaption}\item[{const void $\ast$}]{src,  }\item[{void $\ast$}]{dst,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{S\+D\+L\+\_\+\+Pixel\+Format $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a464152ff09f6de09e74c8f1268573774}\label{camera_8h_a464152ff09f6de09e74c8f1268573774}} 
+\index{camera.\+h@{camera.\+h}!uyvy\+\_\+to\+\_\+rgb@{uyvy\+\_\+to\+\_\+rgb}}
+\index{uyvy\+\_\+to\+\_\+rgb@{uyvy\+\_\+to\+\_\+rgb}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{uyvy\+\_\+to\+\_\+rgb()}{uyvy\_to\_rgb()}}
+{\footnotesize\ttfamily void uyvy\+\_\+to\+\_\+rgb (\begin{DoxyParamCaption}\item[{const void $\ast$}]{src,  }\item[{void $\ast$}]{dst,  }\item[{int}]{length,  }\item[{S\+D\+L\+\_\+\+Pixel\+Format $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a8190bc2f7318a436bd0a896abeb3cadb}\label{camera_8h_a8190bc2f7318a436bd0a896abeb3cadb}} 
+\index{camera.\+h@{camera.\+h}!uyvy\+\_\+to\+\_\+yuv@{uyvy\+\_\+to\+\_\+yuv}}
+\index{uyvy\+\_\+to\+\_\+yuv@{uyvy\+\_\+to\+\_\+yuv}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{uyvy\+\_\+to\+\_\+yuv()}{uyvy\_to\_yuv()}}
+{\footnotesize\ttfamily void uyvy\+\_\+to\+\_\+yuv (\begin{DoxyParamCaption}\item[{const void $\ast$}]{src,  }\item[{void $\ast$}]{dst,  }\item[{int}]{length,  }\item[{S\+D\+L\+\_\+\+Pixel\+Format $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a3b63c2b940db9f95fd45fa3d52989bfd}\label{camera_8h_a3b63c2b940db9f95fd45fa3d52989bfd}} 
+\index{camera.\+h@{camera.\+h}!yuv420\+\_\+to\+\_\+rgb@{yuv420\+\_\+to\+\_\+rgb}}
+\index{yuv420\+\_\+to\+\_\+rgb@{yuv420\+\_\+to\+\_\+rgb}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{yuv420\+\_\+to\+\_\+rgb()}{yuv420\_to\_rgb()}}
+{\footnotesize\ttfamily void yuv420\+\_\+to\+\_\+rgb (\begin{DoxyParamCaption}\item[{const void $\ast$}]{src,  }\item[{void $\ast$}]{dst,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{S\+D\+L\+\_\+\+Pixel\+Format $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_ad9226101925417d0382e5d08e871ba47}\label{camera_8h_ad9226101925417d0382e5d08e871ba47}} 
+\index{camera.\+h@{camera.\+h}!yuv420\+\_\+to\+\_\+yuv@{yuv420\+\_\+to\+\_\+yuv}}
+\index{yuv420\+\_\+to\+\_\+yuv@{yuv420\+\_\+to\+\_\+yuv}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{yuv420\+\_\+to\+\_\+yuv()}{yuv420\_to\_yuv()}}
+{\footnotesize\ttfamily void yuv420\+\_\+to\+\_\+yuv (\begin{DoxyParamCaption}\item[{const void $\ast$}]{src,  }\item[{void $\ast$}]{dst,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{S\+D\+L\+\_\+\+Pixel\+Format $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a5f0711dc1488fc0bfa8905efdcb1dc70}\label{camera_8h_a5f0711dc1488fc0bfa8905efdcb1dc70}} 
+\index{camera.\+h@{camera.\+h}!yuyv\+\_\+to\+\_\+rgb@{yuyv\+\_\+to\+\_\+rgb}}
+\index{yuyv\+\_\+to\+\_\+rgb@{yuyv\+\_\+to\+\_\+rgb}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{yuyv\+\_\+to\+\_\+rgb()}{yuyv\_to\_rgb()}}
+{\footnotesize\ttfamily void yuyv\+\_\+to\+\_\+rgb (\begin{DoxyParamCaption}\item[{const void $\ast$}]{src,  }\item[{void $\ast$}]{dst,  }\item[{int}]{length,  }\item[{S\+D\+L\+\_\+\+Pixel\+Format $\ast$}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{camera_8h_a35e7868980f2007400fd84543c9b1626}\label{camera_8h_a35e7868980f2007400fd84543c9b1626}} 
+\index{camera.\+h@{camera.\+h}!yuyv\+\_\+to\+\_\+yuv@{yuyv\+\_\+to\+\_\+yuv}}
+\index{yuyv\+\_\+to\+\_\+yuv@{yuyv\+\_\+to\+\_\+yuv}!camera.\+h@{camera.\+h}}
+\subsubsection{\texorpdfstring{yuyv\+\_\+to\+\_\+yuv()}{yuyv\_to\_yuv()}}
+{\footnotesize\ttfamily void yuyv\+\_\+to\+\_\+yuv (\begin{DoxyParamCaption}\item[{const void $\ast$}]{src,  }\item[{void $\ast$}]{dst,  }\item[{int}]{length,  }\item[{S\+D\+L\+\_\+\+Pixel\+Format $\ast$}]{format }\end{DoxyParamCaption})}
+

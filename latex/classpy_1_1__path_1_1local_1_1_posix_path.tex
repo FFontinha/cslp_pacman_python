@@ -1,0 +1,58 @@
+\hypertarget{classpy_1_1__path_1_1local_1_1_posix_path}{}\section{py.\+\_\+path.\+local.\+Posix\+Path Class Reference}
+\label{classpy_1_1__path_1_1local_1_1_posix_path}\index{py.\+\_\+path.\+local.\+Posix\+Path@{py.\+\_\+path.\+local.\+Posix\+Path}}
+
+
+Inherits \hyperlink{classpy_1_1__path_1_1common_1_1_path_base}{py.\+\_\+path.\+common.\+Path\+Base}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpy_1_1__path_1_1local_1_1_posix_path_ad36c26ff885b3327c728b1f88d791e62}{chown} (self, user, group, rec=0)
+\item 
+def \hyperlink{classpy_1_1__path_1_1local_1_1_posix_path_a84de60c88bf0a3c2ca992c74bc4688fe}{readlink} (self)
+\item 
+def \hyperlink{classpy_1_1__path_1_1local_1_1_posix_path_aeeb54221c77afa4cf6e89aa0ec381e0a}{mklinkto} (self, oldname)
+\item 
+def \hyperlink{classpy_1_1__path_1_1local_1_1_posix_path_ae6498265065f978e73d808d7ecd9ccea}{mksymlinkto} (self, value, absolute=1)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpy_1_1__path_1_1local_1_1_posix_path_ad36c26ff885b3327c728b1f88d791e62}\label{classpy_1_1__path_1_1local_1_1_posix_path_ad36c26ff885b3327c728b1f88d791e62}} 
+\index{py\+::\+\_\+path\+::local\+::\+Posix\+Path@{py\+::\+\_\+path\+::local\+::\+Posix\+Path}!chown@{chown}}
+\index{chown@{chown}!py\+::\+\_\+path\+::local\+::\+Posix\+Path@{py\+::\+\_\+path\+::local\+::\+Posix\+Path}}
+\subsubsection{\texorpdfstring{chown()}{chown()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+local.\+Posix\+Path.\+chown (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{user,  }\item[{}]{group,  }\item[{}]{rec = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}change ownership to the given user and group.
+    user and group may be specified by a number or
+    by a name.  if rec is True change ownership
+    recursively.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__path_1_1local_1_1_posix_path_aeeb54221c77afa4cf6e89aa0ec381e0a}\label{classpy_1_1__path_1_1local_1_1_posix_path_aeeb54221c77afa4cf6e89aa0ec381e0a}} 
+\index{py\+::\+\_\+path\+::local\+::\+Posix\+Path@{py\+::\+\_\+path\+::local\+::\+Posix\+Path}!mklinkto@{mklinkto}}
+\index{mklinkto@{mklinkto}!py\+::\+\_\+path\+::local\+::\+Posix\+Path@{py\+::\+\_\+path\+::local\+::\+Posix\+Path}}
+\subsubsection{\texorpdfstring{mklinkto()}{mklinkto()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+local.\+Posix\+Path.\+mklinkto (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{oldname }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}posix style hard link to another name. \end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__path_1_1local_1_1_posix_path_ae6498265065f978e73d808d7ecd9ccea}\label{classpy_1_1__path_1_1local_1_1_posix_path_ae6498265065f978e73d808d7ecd9ccea}} 
+\index{py\+::\+\_\+path\+::local\+::\+Posix\+Path@{py\+::\+\_\+path\+::local\+::\+Posix\+Path}!mksymlinkto@{mksymlinkto}}
+\index{mksymlinkto@{mksymlinkto}!py\+::\+\_\+path\+::local\+::\+Posix\+Path@{py\+::\+\_\+path\+::local\+::\+Posix\+Path}}
+\subsubsection{\texorpdfstring{mksymlinkto()}{mksymlinkto()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+local.\+Posix\+Path.\+mksymlinkto (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value,  }\item[{}]{absolute = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}create a symbolic link with the given value (pointing to another name). \end{DoxyVerb}
+ \mbox{\Hypertarget{classpy_1_1__path_1_1local_1_1_posix_path_a84de60c88bf0a3c2ca992c74bc4688fe}\label{classpy_1_1__path_1_1local_1_1_posix_path_a84de60c88bf0a3c2ca992c74bc4688fe}} 
+\index{py\+::\+\_\+path\+::local\+::\+Posix\+Path@{py\+::\+\_\+path\+::local\+::\+Posix\+Path}!readlink@{readlink}}
+\index{readlink@{readlink}!py\+::\+\_\+path\+::local\+::\+Posix\+Path@{py\+::\+\_\+path\+::local\+::\+Posix\+Path}}
+\subsubsection{\texorpdfstring{readlink()}{readlink()}}
+{\footnotesize\ttfamily def py.\+\_\+path.\+local.\+Posix\+Path.\+readlink (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return value of a symbolic link. \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/py/\+\_\+path/local.\+py\end{DoxyCompactItemize}

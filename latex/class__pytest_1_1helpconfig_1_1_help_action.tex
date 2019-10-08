@@ -1,0 +1,30 @@
+\hypertarget{class__pytest_1_1helpconfig_1_1_help_action}{}\section{\+\_\+pytest.\+helpconfig.\+Help\+Action Class Reference}
+\label{class__pytest_1_1helpconfig_1_1_help_action}\index{\+\_\+pytest.\+helpconfig.\+Help\+Action@{\+\_\+pytest.\+helpconfig.\+Help\+Action}}
+
+
+Inherits Action.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1helpconfig_1_1_help_action_a212496189a3e0759999e6dda3166cb0c}\label{class__pytest_1_1helpconfig_1_1_help_action_a212496189a3e0759999e6dda3166cb0c}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, option\+\_\+strings, dest=None, default=False, help=None)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1helpconfig_1_1_help_action_ab8ff342284f473581a4ad7c6ad3ebcae}\label{class__pytest_1_1helpconfig_1_1_help_action_ab8ff342284f473581a4ad7c6ad3ebcae}} 
+def {\bfseries \+\_\+\+\_\+call\+\_\+\+\_\+} (self, parser, namespace, values, option\+\_\+string=None)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}This is an argparse Action that will raise an exception in
+order to skip the rest of the argument parsing when --help is passed.
+This prevents argparse from quitting due to missing required arguments
+when any are defined, for example by ``pytest_addoption``.
+This is similar to the way that the builtin argparse --help option is
+implemented by raising SystemExit.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/helpconfig.\+py\end{DoxyCompactItemize}

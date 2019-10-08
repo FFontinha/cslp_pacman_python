@@ -1,0 +1,92 @@
+\hypertarget{namespacegevent_1_1util}{}\section{gevent.\+util Namespace Reference}
+\label{namespacegevent_1_1util}\index{gevent.\+util@{gevent.\+util}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgevent_1_1util_1_1___failed_to_switch}{\+\_\+\+Failed\+To\+Switch}
+\item 
+class \hyperlink{classgevent_1_1util_1_1___tree_formatter}{\+\_\+\+Tree\+Formatter}
+\item 
+class \hyperlink{classgevent_1_1util_1_1assert__switches}{assert\+\_\+switches}
+\item 
+class \hyperlink{classgevent_1_1util_1_1_greenlet_tree}{Greenlet\+Tree}
+\item 
+class \hyperlink{classgevent_1_1util_1_1wrap__errors}{wrap\+\_\+errors}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1util_a5e6c937d41783b4b331bf067bb66575d}{print\+\_\+run\+\_\+info} (thread\+\_\+stacks=True, greenlet\+\_\+stacks=True, limit=\hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE}, file=None)
+\item 
+def \hyperlink{namespacegevent_1_1util_a090199c0559180f496b56c8352241891}{format\+\_\+run\+\_\+info} (thread\+\_\+stacks=True, greenlet\+\_\+stacks=True, limit=\hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE}, current\+\_\+thread\+\_\+ident=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegevent_1_1util_aa4740cf4e565f83d9965dd88af403f48}{dump\+\_\+stacks} = \hyperlink{namespacegevent_1_1util_a090199c0559180f496b56c8352241891}{format\+\_\+run\+\_\+info}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1util_a090199c0559180f496b56c8352241891}\label{namespacegevent_1_1util_a090199c0559180f496b56c8352241891}} 
+\index{gevent\+::util@{gevent\+::util}!format\+\_\+run\+\_\+info@{format\+\_\+run\+\_\+info}}
+\index{format\+\_\+run\+\_\+info@{format\+\_\+run\+\_\+info}!gevent\+::util@{gevent\+::util}}
+\subsubsection{\texorpdfstring{format\+\_\+run\+\_\+info()}{format\_run\_info()}}
+{\footnotesize\ttfamily def gevent.\+util.\+format\+\_\+run\+\_\+info (\begin{DoxyParamCaption}\item[{}]{thread\+\_\+stacks = {\ttfamily True},  }\item[{}]{greenlet\+\_\+stacks = {\ttfamily True},  }\item[{}]{limit = {\ttfamily \hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE}},  }\item[{}]{current\+\_\+thread\+\_\+ident = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}format_run_info(thread_stacks=True, greenlet_stacks=True, limit=None) -> [str]
+
+Request information about the running threads of the current process.
+
+This is a debugging utility. Its output has no guarantees other than being
+intended for human consumption.
+
+:keyword bool thread_stacks: If true, then include the stacks for
+   running threads.
+:keyword bool greenlet_stacks: If true, then include the stacks for
+   running greenlets. (Spawning stacks will always be printed.)
+   Setting this to False can reduce the output volume considerably
+   without reducing the overall information if *thread_stacks* is true
+   and you can associate a greenlet to a thread (using ``thread_ident``
+   printed values).
+:keyword int limit: If given, passed directly to `traceback.format_stack`.
+   If not given, this defaults to the whole stack under CPython, and a
+   smaller stack under PyPy.
+
+:return: A sequence of text lines detailing the stacks of running
+        threads and greenlets. (One greenlet will duplicate one thread,
+        the current thread and greenlet. If there are multiple running threads,
+        the stack for the current greenlet may be incorrectly duplicated in multiple
+        greenlets.)
+        Extra information about
+        :class:`gevent.Greenlet` object will also be returned.
+
+.. versionadded:: 1.3a1
+.. versionchanged:: 1.3a2
+   Renamed from ``dump_stacks`` to reflect the fact that this
+   prints additional information about greenlets, including their
+   spawning stack, parent, locals, and any spawn tree locals.
+.. versionchanged:: 1.3b1
+   Added the *thread_stacks*, *greenlet_stacks*, and *limit* params.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegevent_1_1util_a5e6c937d41783b4b331bf067bb66575d}\label{namespacegevent_1_1util_a5e6c937d41783b4b331bf067bb66575d}} 
+\index{gevent\+::util@{gevent\+::util}!print\+\_\+run\+\_\+info@{print\+\_\+run\+\_\+info}}
+\index{print\+\_\+run\+\_\+info@{print\+\_\+run\+\_\+info}!gevent\+::util@{gevent\+::util}}
+\subsubsection{\texorpdfstring{print\+\_\+run\+\_\+info()}{print\_run\_info()}}
+{\footnotesize\ttfamily def gevent.\+util.\+print\+\_\+run\+\_\+info (\begin{DoxyParamCaption}\item[{}]{thread\+\_\+stacks = {\ttfamily True},  }\item[{}]{greenlet\+\_\+stacks = {\ttfamily True},  }\item[{}]{limit = {\ttfamily \hyperlink{classgevent_1_1__util_1_1___n_o_n_e}{\+\_\+\+N\+O\+NE}},  }\item[{}]{file = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call `format_run_info` and print the results to *file*.
+
+If *file* is not given, `sys.stderr` will be used.
+
+.. versionadded:: 1.3b1
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegevent_1_1util_aa4740cf4e565f83d9965dd88af403f48}\label{namespacegevent_1_1util_aa4740cf4e565f83d9965dd88af403f48}} 
+\index{gevent\+::util@{gevent\+::util}!dump\+\_\+stacks@{dump\+\_\+stacks}}
+\index{dump\+\_\+stacks@{dump\+\_\+stacks}!gevent\+::util@{gevent\+::util}}
+\subsubsection{\texorpdfstring{dump\+\_\+stacks}{dump\_stacks}}
+{\footnotesize\ttfamily def gevent.\+util.\+dump\+\_\+stacks = \hyperlink{namespacegevent_1_1util_a090199c0559180f496b56c8352241891}{format\+\_\+run\+\_\+info}}
+

@@ -1,0 +1,30 @@
+\hypertarget{namespace__pytest_1_1__code_1_1__py2traceback}{}\section{\+\_\+pytest.\+\_\+code.\+\_\+py2traceback Namespace Reference}
+\label{namespace__pytest_1_1__code_1_1__py2traceback}\index{\+\_\+pytest.\+\_\+code.\+\_\+py2traceback@{\+\_\+pytest.\+\_\+code.\+\_\+py2traceback}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespace__pytest_1_1__code_1_1__py2traceback_ac1f73c403a15cfa4095e3d4f10a89d15}{format\+\_\+exception\+\_\+only} (etype, value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1__code_1_1__py2traceback_ac1f73c403a15cfa4095e3d4f10a89d15}\label{namespace__pytest_1_1__code_1_1__py2traceback_ac1f73c403a15cfa4095e3d4f10a89d15}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::\+\_\+py2traceback@{\+\_\+pytest\+::\+\_\+code\+::\+\_\+py2traceback}!format\+\_\+exception\+\_\+only@{format\+\_\+exception\+\_\+only}}
+\index{format\+\_\+exception\+\_\+only@{format\+\_\+exception\+\_\+only}!\+\_\+pytest\+::\+\_\+code\+::\+\_\+py2traceback@{\+\_\+pytest\+::\+\_\+code\+::\+\_\+py2traceback}}
+\subsubsection{\texorpdfstring{format\+\_\+exception\+\_\+only()}{format\_exception\_only()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+\_\+py2traceback.\+format\+\_\+exception\+\_\+only (\begin{DoxyParamCaption}\item[{}]{etype,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Format the exception part of a traceback.
+
+The arguments are the exception type and value such as given by
+sys.last_type and sys.last_value. The return value is a list of
+strings, each ending in a newline.
+
+Normally, the list contains a single string; however, for
+SyntaxError exceptions, it contains several lines that (when
+printed) display detailed information about where the syntax
+error occurred.
+
+The message indicating which exception occurred is always the last
+string in the list.\end{DoxyVerb}
+ 

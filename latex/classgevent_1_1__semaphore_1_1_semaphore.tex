@@ -1,0 +1,160 @@
+\hypertarget{classgevent_1_1__semaphore_1_1_semaphore}{}\section{gevent.\+\_\+semaphore.\+Semaphore Class Reference}
+\label{classgevent_1_1__semaphore_1_1_semaphore}\index{gevent.\+\_\+semaphore.\+Semaphore@{gevent.\+\_\+semaphore.\+Semaphore}}
+
+
+Inherits object.
+
+
+
+Inherited by \hyperlink{classgevent_1_1__semaphore_1_1_bounded_semaphore}{gevent.\+\_\+semaphore.\+Bounded\+Semaphore}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__semaphore_1_1_semaphore_af5edcc550a2da8137efdb203e5eec39e}\label{classgevent_1_1__semaphore_1_1_semaphore_af5edcc550a2da8137efdb203e5eec39e}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, value=1)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__semaphore_1_1_semaphore_a101da910442ed07a93c0d09073ab0681}\label{classgevent_1_1__semaphore_1_1_semaphore_a101da910442ed07a93c0d09073ab0681}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classgevent_1_1__semaphore_1_1_semaphore_a3d8aae11706959b43e675d25bb587ad3}{locked} (self)
+\item 
+def \hyperlink{classgevent_1_1__semaphore_1_1_semaphore_a2ab3e1fb465052beb0665375bcaebc7e}{release} (self)
+\item 
+def \hyperlink{classgevent_1_1__semaphore_1_1_semaphore_a000832ddde5e835f5585ee3ca9327f34}{rawlink} (self, callback)
+\item 
+def \hyperlink{classgevent_1_1__semaphore_1_1_semaphore_a39e5f5a6a79ce124d551b7ee76670d52}{unlink} (self, callback)
+\item 
+def \hyperlink{classgevent_1_1__semaphore_1_1_semaphore_a8827acbc1a049a86b7334a7361e201ba}{wait} (self, timeout=None)
+\item 
+def \hyperlink{classgevent_1_1__semaphore_1_1_semaphore_a656f8277b06803a835ea1c59acc8d069}{acquire} (self, blocking=True, timeout=None)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__semaphore_1_1_semaphore_ad93963fef0e40a66d5d3b904a61fe001}\label{classgevent_1_1__semaphore_1_1_semaphore_ad93963fef0e40a66d5d3b904a61fe001}} 
+def {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1__semaphore_1_1_semaphore_ad0288926d89446f4c1e92329deaa24c1}\label{classgevent_1_1__semaphore_1_1_semaphore_ad0288926d89446f4c1e92329deaa24c1}} 
+def {\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, t, v, tb)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__semaphore_1_1_semaphore_ac0c3add63c1d661e0713c409e4ff97f0}\label{classgevent_1_1__semaphore_1_1_semaphore_ac0c3add63c1d661e0713c409e4ff97f0}} 
+{\bfseries counter}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Semaphore(value=1) -> Semaphore
+
+A semaphore manages a counter representing the number of release()
+calls minus the number of acquire() calls, plus an initial value.
+The acquire() method blocks if necessary until it can return
+without making the counter negative.
+
+If not given, ``value`` defaults to 1.
+
+The semaphore is a context manager and can be used in ``with`` statements.
+
+This Semaphore's ``__exit__`` method does not call the trace function
+on CPython, but does under PyPy.
+
+.. seealso:: :class:`BoundedSemaphore` for a safer version that prevents
+   some classes of bugs.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1__semaphore_1_1_semaphore_a656f8277b06803a835ea1c59acc8d069}\label{classgevent_1_1__semaphore_1_1_semaphore_a656f8277b06803a835ea1c59acc8d069}} 
+\index{gevent\+::\+\_\+semaphore\+::\+Semaphore@{gevent\+::\+\_\+semaphore\+::\+Semaphore}!acquire@{acquire}}
+\index{acquire@{acquire}!gevent\+::\+\_\+semaphore\+::\+Semaphore@{gevent\+::\+\_\+semaphore\+::\+Semaphore}}
+\subsubsection{\texorpdfstring{acquire()}{acquire()}}
+{\footnotesize\ttfamily def gevent.\+\_\+semaphore.\+Semaphore.\+acquire (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{blocking = {\ttfamily True},  }\item[{}]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}acquire(blocking=True, timeout=None) -> bool
+
+Acquire the semaphore.
+
+.. caution:: If this semaphore was initialized with a size of 0,
+   this method will block forever (unless a timeout is given or blocking is
+   set to false).
+
+:keyword bool blocking: If True (the default), this function will block
+   until the semaphore is acquired.
+:keyword float timeout: If given, specifies the maximum amount of seconds
+   this method will block.
+:return: A boolean indicating whether the semaphore was acquired.
+   If ``blocking`` is True and ``timeout`` is None (the default), then
+   (so long as this semaphore was initialized with a size greater than 0)
+   this will always return True. If a timeout was given, and it expired before
+   the semaphore was acquired, False will be returned. (Note that this can still
+   raise a ``Timeout`` exception, if some other caller had already started a timer.)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__semaphore_1_1_semaphore_a3d8aae11706959b43e675d25bb587ad3}\label{classgevent_1_1__semaphore_1_1_semaphore_a3d8aae11706959b43e675d25bb587ad3}} 
+\index{gevent\+::\+\_\+semaphore\+::\+Semaphore@{gevent\+::\+\_\+semaphore\+::\+Semaphore}!locked@{locked}}
+\index{locked@{locked}!gevent\+::\+\_\+semaphore\+::\+Semaphore@{gevent\+::\+\_\+semaphore\+::\+Semaphore}}
+\subsubsection{\texorpdfstring{locked()}{locked()}}
+{\footnotesize\ttfamily def gevent.\+\_\+semaphore.\+Semaphore.\+locked (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a boolean indicating whether the semaphore can be acquired.
+Most useful with binary semaphores.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__semaphore_1_1_semaphore_a000832ddde5e835f5585ee3ca9327f34}\label{classgevent_1_1__semaphore_1_1_semaphore_a000832ddde5e835f5585ee3ca9327f34}} 
+\index{gevent\+::\+\_\+semaphore\+::\+Semaphore@{gevent\+::\+\_\+semaphore\+::\+Semaphore}!rawlink@{rawlink}}
+\index{rawlink@{rawlink}!gevent\+::\+\_\+semaphore\+::\+Semaphore@{gevent\+::\+\_\+semaphore\+::\+Semaphore}}
+\subsubsection{\texorpdfstring{rawlink()}{rawlink()}}
+{\footnotesize\ttfamily def gevent.\+\_\+semaphore.\+Semaphore.\+rawlink (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{callback }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}rawlink(callback) -> None
+
+Register a callback to call when a counter is more than zero.
+
+*callback* will be called in the :class:`Hub <gevent.hub.Hub>`, so it must not use blocking gevent API.
+*callback* will be passed one argument: this instance.
+
+This method is normally called automatically by :meth:`acquire` and :meth:`wait`; most code
+will not need to use it.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__semaphore_1_1_semaphore_a2ab3e1fb465052beb0665375bcaebc7e}\label{classgevent_1_1__semaphore_1_1_semaphore_a2ab3e1fb465052beb0665375bcaebc7e}} 
+\index{gevent\+::\+\_\+semaphore\+::\+Semaphore@{gevent\+::\+\_\+semaphore\+::\+Semaphore}!release@{release}}
+\index{release@{release}!gevent\+::\+\_\+semaphore\+::\+Semaphore@{gevent\+::\+\_\+semaphore\+::\+Semaphore}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily def gevent.\+\_\+semaphore.\+Semaphore.\+release (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Release the semaphore, notifying any waiters if needed.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__semaphore_1_1_semaphore_a39e5f5a6a79ce124d551b7ee76670d52}\label{classgevent_1_1__semaphore_1_1_semaphore_a39e5f5a6a79ce124d551b7ee76670d52}} 
+\index{gevent\+::\+\_\+semaphore\+::\+Semaphore@{gevent\+::\+\_\+semaphore\+::\+Semaphore}!unlink@{unlink}}
+\index{unlink@{unlink}!gevent\+::\+\_\+semaphore\+::\+Semaphore@{gevent\+::\+\_\+semaphore\+::\+Semaphore}}
+\subsubsection{\texorpdfstring{unlink()}{unlink()}}
+{\footnotesize\ttfamily def gevent.\+\_\+semaphore.\+Semaphore.\+unlink (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{callback }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}unlink(callback) -> None
+
+Remove the callback set by :meth:`rawlink`.
+
+This method is normally called automatically by :meth:`acquire`  and :meth:`wait`; most
+code will not need to use it.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__semaphore_1_1_semaphore_a8827acbc1a049a86b7334a7361e201ba}\label{classgevent_1_1__semaphore_1_1_semaphore_a8827acbc1a049a86b7334a7361e201ba}} 
+\index{gevent\+::\+\_\+semaphore\+::\+Semaphore@{gevent\+::\+\_\+semaphore\+::\+Semaphore}!wait@{wait}}
+\index{wait@{wait}!gevent\+::\+\_\+semaphore\+::\+Semaphore@{gevent\+::\+\_\+semaphore\+::\+Semaphore}}
+\subsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily def gevent.\+\_\+semaphore.\+Semaphore.\+wait (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}wait(timeout=None) -> int
+
+Wait until it is possible to acquire this semaphore, or until the optional
+*timeout* elapses.
+
+.. caution:: If this semaphore was initialized with a size of 0,
+   this method will block forever if no timeout is given.
+
+:keyword float timeout: If given, specifies the maximum amount of seconds
+   this method will block.
+:return: A number indicating how many times the semaphore can be acquired
+    before blocking.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/\+\_\+semaphore.\+py\end{DoxyCompactItemize}

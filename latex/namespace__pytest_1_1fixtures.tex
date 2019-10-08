@@ -1,0 +1,348 @@
+\hypertarget{namespace__pytest_1_1fixtures}{}\section{\+\_\+pytest.\+fixtures Namespace Reference}
+\label{namespace__pytest_1_1fixtures}\index{\+\_\+pytest.\+fixtures@{\+\_\+pytest.\+fixtures}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class__pytest_1_1fixtures_1_1_fixture_def}{Fixture\+Def}
+\item 
+class \hyperlink{class__pytest_1_1fixtures_1_1_fixture_function_marker}{Fixture\+Function\+Marker}
+\item 
+class \hyperlink{class__pytest_1_1fixtures_1_1_fixture_lookup_error}{Fixture\+Lookup\+Error}
+\item 
+class \hyperlink{class__pytest_1_1fixtures_1_1_fixture_lookup_error_repr}{Fixture\+Lookup\+Error\+Repr}
+\item 
+class \hyperlink{class__pytest_1_1fixtures_1_1_fixture_manager}{Fixture\+Manager}
+\item 
+class \hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{Fixture\+Request}
+\item 
+class \hyperlink{class__pytest_1_1fixtures_1_1_func_fixture_info}{Func\+Fixture\+Info}
+\item 
+class \hyperlink{class__pytest_1_1fixtures_1_1_pseudo_fixture_def}{Pseudo\+Fixture\+Def}
+\item 
+class \hyperlink{class__pytest_1_1fixtures_1_1_scope_mismatch_error}{Scope\+Mismatch\+Error}
+\item 
+class \hyperlink{class__pytest_1_1fixtures_1_1_sub_request}{Sub\+Request}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_a995865f09bb645c7a5bcfdcb11e2c154}{pytest\+\_\+sessionstart} (session)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_a1b3d6eac66174544e16dfd62cc0f77fa}{scopeproperty} (name=None, doc=None)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_ae4cdf7af597ce69288c82a6dd57bcb6b}{get\+\_\+scope\+\_\+package} (node, fixturedef)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_a214e840e7e5ebbe2333e4880664a148f}{get\+\_\+scope\+\_\+node} (node, \hyperlink{namespace__pytest_1_1fixtures_a13dd74c58426e1e7d1f13069b3caffee}{scope})
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_af889cb5dc2338f176beed2d20c138fb0}{add\+\_\+funcarg\+\_\+pseudo\+\_\+fixture\+\_\+def} (collector, metafunc, fixturemanager)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_acf7e1a776f0cacd5616d771b8f7d84f7}{getfixturemarker} (obj)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_a726d8a513109c1b11172bf9dc9a6608b}{get\+\_\+parametrized\+\_\+fixture\+\_\+keys} (item, scopenum)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_abc92ba4fd6b080bb8f11cbcef4aeafe0}{reorder\+\_\+items} (items)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_a90425ae7b8fd46e6cd3b3f56b53c07a5}{fix\+\_\+cache\+\_\+order} (item, argkeys\+\_\+cache, items\+\_\+by\+\_\+argkey)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_a4644c7729264a65ac60b0101edb98fd7}{reorder\+\_\+items\+\_\+atscope} (items, argkeys\+\_\+cache, items\+\_\+by\+\_\+argkey, scopenum)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_ab51e45645c048bd941b30a831c6de613}{fillfixtures} (function)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_a774fbc96746af54bc0891207dae6d82b}{get\+\_\+direct\+\_\+param\+\_\+fixture\+\_\+func} (request)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_a93accbaf2095e10285b690f2b1de6d73}{scopemismatch} (currentscope, newscope)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_a819d1c10ac18ab8e0b5a879fad486139}{scope2index} (\hyperlink{namespace__pytest_1_1fixtures_a13dd74c58426e1e7d1f13069b3caffee}{scope}, descr, where=None)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_ab4db5207efee05fed81a09e34db5a9d8}{fail\+\_\+fixturefunc} (fixturefunc, msg)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_ae5ee458ad8ebcfb047be1634d070a471}{call\+\_\+fixture\+\_\+func} (fixturefunc, request, kwargs)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_a0a6fb5395a06f72a7f10b75dbf46fb21}{resolve\+\_\+fixture\+\_\+function} (fixturedef, request)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_aed1459f1e2e4ded96083b27b1a0cbcef}{pytest\+\_\+fixture\+\_\+setup} (fixturedef, request)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_a52468614fd8fd54547e07684ef6de052}{wrap\+\_\+function\+\_\+to\+\_\+warning\+\_\+if\+\_\+called\+\_\+directly} (function, fixture\+\_\+marker)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_a7f10df0ff0d8d2c5e29e89f022c59d15}{fixture} (\hyperlink{namespace__pytest_1_1fixtures_a13dd74c58426e1e7d1f13069b3caffee}{scope}=\char`\"{}function\char`\"{}, params=None, autouse=False, ids=None, name=None)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_ad7ab41d1dd454c1b1c2c4f638d1def30}{yield\+\_\+fixture} (\hyperlink{namespace__pytest_1_1fixtures_a13dd74c58426e1e7d1f13069b3caffee}{scope}=\char`\"{}function\char`\"{}, params=None, autouse=False, ids=None, name=None)
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_a711059d3b8fdee306cc7126243cf9528}{pytestconfig} (request)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespace__pytest_1_1fixtures_a88653bd907ec73d3cfd6dc4c6c9928fe}{F\+I\+X\+T\+U\+R\+E\+\_\+\+M\+SG} = \textquotesingle{}fixtures cannot have \char`\"{}pytest\+\_\+funcarg\+\_\+\+\_\+\char`\"{} prefix and be decorated with @pytest.\+fixture\+:\textbackslash{}n\{\}\textquotesingle{}
+\item 
+\hyperlink{namespace__pytest_1_1fixtures_af250e366ef9bfe4ef3e2074295296f9e}{frozen}
+\item 
+dictionary \hyperlink{namespace__pytest_1_1fixtures_a7c2b0c124a04d5ff761ba4c7df24799a}{scopename2class} = \{\}
+\item 
+\hyperlink{namespace__pytest_1_1fixtures_ac4b7be2ab4a0289ebecd81bbdaeabccd}{scope2props} = dict(session=())
+\item 
+string \hyperlink{namespace__pytest_1_1fixtures_a5015c1644820a9b78acf9d3466b0d57e}{scopes} = \char`\"{}session package module class function\char`\"{}.split()
+\item 
+string \hyperlink{namespace__pytest_1_1fixtures_aeaedc5d547d078e5e81f0344ea8b023c}{scopenum\+\_\+function} = scopes.\+index(\char`\"{}function\char`\"{})
+\item 
+def \hyperlink{namespace__pytest_1_1fixtures_a865b6418bbc806ac46031a25f5021f77}{defaultfuncargprefixmarker} = \hyperlink{namespace__pytest_1_1fixtures_a7f10df0ff0d8d2c5e29e89f022c59d15}{fixture}()
+\item 
+\hyperlink{namespace__pytest_1_1fixtures_a13dd74c58426e1e7d1f13069b3caffee}{scope}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_af889cb5dc2338f176beed2d20c138fb0}\label{namespace__pytest_1_1fixtures_af889cb5dc2338f176beed2d20c138fb0}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!add\+\_\+funcarg\+\_\+pseudo\+\_\+fixture\+\_\+def@{add\+\_\+funcarg\+\_\+pseudo\+\_\+fixture\+\_\+def}}
+\index{add\+\_\+funcarg\+\_\+pseudo\+\_\+fixture\+\_\+def@{add\+\_\+funcarg\+\_\+pseudo\+\_\+fixture\+\_\+def}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{add\+\_\+funcarg\+\_\+pseudo\+\_\+fixture\+\_\+def()}{add\_funcarg\_pseudo\_fixture\_def()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+add\+\_\+funcarg\+\_\+pseudo\+\_\+fixture\+\_\+def (\begin{DoxyParamCaption}\item[{}]{collector,  }\item[{}]{metafunc,  }\item[{}]{fixturemanager }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_ae5ee458ad8ebcfb047be1634d070a471}\label{namespace__pytest_1_1fixtures_ae5ee458ad8ebcfb047be1634d070a471}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!call\+\_\+fixture\+\_\+func@{call\+\_\+fixture\+\_\+func}}
+\index{call\+\_\+fixture\+\_\+func@{call\+\_\+fixture\+\_\+func}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{call\+\_\+fixture\+\_\+func()}{call\_fixture\_func()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+call\+\_\+fixture\+\_\+func (\begin{DoxyParamCaption}\item[{}]{fixturefunc,  }\item[{}]{request,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_ab4db5207efee05fed81a09e34db5a9d8}\label{namespace__pytest_1_1fixtures_ab4db5207efee05fed81a09e34db5a9d8}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!fail\+\_\+fixturefunc@{fail\+\_\+fixturefunc}}
+\index{fail\+\_\+fixturefunc@{fail\+\_\+fixturefunc}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{fail\+\_\+fixturefunc()}{fail\_fixturefunc()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+fail\+\_\+fixturefunc (\begin{DoxyParamCaption}\item[{}]{fixturefunc,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_ab51e45645c048bd941b30a831c6de613}\label{namespace__pytest_1_1fixtures_ab51e45645c048bd941b30a831c6de613}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!fillfixtures@{fillfixtures}}
+\index{fillfixtures@{fillfixtures}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{fillfixtures()}{fillfixtures()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+fillfixtures (\begin{DoxyParamCaption}\item[{}]{function }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}fill missing funcargs for a test function. \end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1fixtures_a90425ae7b8fd46e6cd3b3f56b53c07a5}\label{namespace__pytest_1_1fixtures_a90425ae7b8fd46e6cd3b3f56b53c07a5}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!fix\+\_\+cache\+\_\+order@{fix\+\_\+cache\+\_\+order}}
+\index{fix\+\_\+cache\+\_\+order@{fix\+\_\+cache\+\_\+order}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{fix\+\_\+cache\+\_\+order()}{fix\_cache\_order()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+fix\+\_\+cache\+\_\+order (\begin{DoxyParamCaption}\item[{}]{item,  }\item[{}]{argkeys\+\_\+cache,  }\item[{}]{items\+\_\+by\+\_\+argkey }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_a7f10df0ff0d8d2c5e29e89f022c59d15}\label{namespace__pytest_1_1fixtures_a7f10df0ff0d8d2c5e29e89f022c59d15}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!fixture@{fixture}}
+\index{fixture@{fixture}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{fixture()}{fixture()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+fixture (\begin{DoxyParamCaption}\item[{}]{scope = {\ttfamily \char`\"{}function\char`\"{}},  }\item[{}]{params = {\ttfamily None},  }\item[{}]{autouse = {\ttfamily False},  }\item[{}]{ids = {\ttfamily None},  }\item[{}]{name = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorator to mark a fixture factory function.
+
+This decorator can be used, with or without parameters, to define a
+fixture function.
+
+The name of the fixture function can later be referenced to cause its
+invocation ahead of running tests: test
+modules or classes can use the ``pytest.mark.usefixtures(fixturename)``
+marker.
+
+Test functions can directly use fixture names as input
+arguments in which case the fixture instance returned from the fixture
+function will be injected.
+
+Fixtures can provide their values to test functions using ``return`` or ``yield``
+statements. When using ``yield`` the code block after the ``yield`` statement is executed
+as teardown code regardless of the test outcome, and must yield exactly once.
+
+:arg scope: the scope for which this fixture is shared, one of
+            ``"function"`` (default), ``"class"``, ``"module"``,
+            ``"package"`` or ``"session"``.
+
+            ``"package"`` is considered **experimental** at this time.
+
+:arg params: an optional list of parameters which will cause multiple
+            invocations of the fixture function and all of the tests
+            using it.
+
+:arg autouse: if True, the fixture func is activated for all tests that
+            can see it.  If False (the default) then an explicit
+            reference is needed to activate the fixture.
+
+:arg ids: list of string ids each corresponding to the params
+            so that they are part of the test id. If no ids are provided
+            they will be generated automatically from the params.
+
+:arg name: the name of the fixture. This defaults to the name of the
+            decorated function. If a fixture is used in the same module in
+            which it is defined, the function name of the fixture will be
+            shadowed by the function arg that requests the fixture; one way
+            to resolve this is to name the decorated function
+            ``fixture_<fixturename>`` and then use
+            ``@pytest.fixture(name='<fixturename>')``.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1fixtures_a774fbc96746af54bc0891207dae6d82b}\label{namespace__pytest_1_1fixtures_a774fbc96746af54bc0891207dae6d82b}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!get\+\_\+direct\+\_\+param\+\_\+fixture\+\_\+func@{get\+\_\+direct\+\_\+param\+\_\+fixture\+\_\+func}}
+\index{get\+\_\+direct\+\_\+param\+\_\+fixture\+\_\+func@{get\+\_\+direct\+\_\+param\+\_\+fixture\+\_\+func}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{get\+\_\+direct\+\_\+param\+\_\+fixture\+\_\+func()}{get\_direct\_param\_fixture\_func()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+get\+\_\+direct\+\_\+param\+\_\+fixture\+\_\+func (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_a726d8a513109c1b11172bf9dc9a6608b}\label{namespace__pytest_1_1fixtures_a726d8a513109c1b11172bf9dc9a6608b}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!get\+\_\+parametrized\+\_\+fixture\+\_\+keys@{get\+\_\+parametrized\+\_\+fixture\+\_\+keys}}
+\index{get\+\_\+parametrized\+\_\+fixture\+\_\+keys@{get\+\_\+parametrized\+\_\+fixture\+\_\+keys}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{get\+\_\+parametrized\+\_\+fixture\+\_\+keys()}{get\_parametrized\_fixture\_keys()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+get\+\_\+parametrized\+\_\+fixture\+\_\+keys (\begin{DoxyParamCaption}\item[{}]{item,  }\item[{}]{scopenum }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return list of keys for all parametrized arguments which match
+the specified scope. \end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1fixtures_a214e840e7e5ebbe2333e4880664a148f}\label{namespace__pytest_1_1fixtures_a214e840e7e5ebbe2333e4880664a148f}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!get\+\_\+scope\+\_\+node@{get\+\_\+scope\+\_\+node}}
+\index{get\+\_\+scope\+\_\+node@{get\+\_\+scope\+\_\+node}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{get\+\_\+scope\+\_\+node()}{get\_scope\_node()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+get\+\_\+scope\+\_\+node (\begin{DoxyParamCaption}\item[{}]{node,  }\item[{}]{scope }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_ae4cdf7af597ce69288c82a6dd57bcb6b}\label{namespace__pytest_1_1fixtures_ae4cdf7af597ce69288c82a6dd57bcb6b}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!get\+\_\+scope\+\_\+package@{get\+\_\+scope\+\_\+package}}
+\index{get\+\_\+scope\+\_\+package@{get\+\_\+scope\+\_\+package}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{get\+\_\+scope\+\_\+package()}{get\_scope\_package()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+get\+\_\+scope\+\_\+package (\begin{DoxyParamCaption}\item[{}]{node,  }\item[{}]{fixturedef }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_acf7e1a776f0cacd5616d771b8f7d84f7}\label{namespace__pytest_1_1fixtures_acf7e1a776f0cacd5616d771b8f7d84f7}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!getfixturemarker@{getfixturemarker}}
+\index{getfixturemarker@{getfixturemarker}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{getfixturemarker()}{getfixturemarker()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+getfixturemarker (\begin{DoxyParamCaption}\item[{}]{obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return fixturemarker or None if it doesn't exist or raised
+exceptions.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1fixtures_aed1459f1e2e4ded96083b27b1a0cbcef}\label{namespace__pytest_1_1fixtures_aed1459f1e2e4ded96083b27b1a0cbcef}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!pytest\+\_\+fixture\+\_\+setup@{pytest\+\_\+fixture\+\_\+setup}}
+\index{pytest\+\_\+fixture\+\_\+setup@{pytest\+\_\+fixture\+\_\+setup}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{pytest\+\_\+fixture\+\_\+setup()}{pytest\_fixture\_setup()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+pytest\+\_\+fixture\+\_\+setup (\begin{DoxyParamCaption}\item[{}]{fixturedef,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Execution of fixture setup. \end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1fixtures_a995865f09bb645c7a5bcfdcb11e2c154}\label{namespace__pytest_1_1fixtures_a995865f09bb645c7a5bcfdcb11e2c154}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!pytest\+\_\+sessionstart@{pytest\+\_\+sessionstart}}
+\index{pytest\+\_\+sessionstart@{pytest\+\_\+sessionstart}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{pytest\+\_\+sessionstart()}{pytest\_sessionstart()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+pytest\+\_\+sessionstart (\begin{DoxyParamCaption}\item[{}]{session }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_a711059d3b8fdee306cc7126243cf9528}\label{namespace__pytest_1_1fixtures_a711059d3b8fdee306cc7126243cf9528}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!pytestconfig@{pytestconfig}}
+\index{pytestconfig@{pytestconfig}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{pytestconfig()}{pytestconfig()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+pytestconfig (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Session-scoped fixture that returns the :class:`_pytest.config.Config` object.
+
+Example::
+
+    def test_foo(pytestconfig):
+        if pytestconfig.getoption("verbose"):
+            ...\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1fixtures_abc92ba4fd6b080bb8f11cbcef4aeafe0}\label{namespace__pytest_1_1fixtures_abc92ba4fd6b080bb8f11cbcef4aeafe0}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!reorder\+\_\+items@{reorder\+\_\+items}}
+\index{reorder\+\_\+items@{reorder\+\_\+items}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{reorder\+\_\+items()}{reorder\_items()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+reorder\+\_\+items (\begin{DoxyParamCaption}\item[{}]{items }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_a4644c7729264a65ac60b0101edb98fd7}\label{namespace__pytest_1_1fixtures_a4644c7729264a65ac60b0101edb98fd7}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!reorder\+\_\+items\+\_\+atscope@{reorder\+\_\+items\+\_\+atscope}}
+\index{reorder\+\_\+items\+\_\+atscope@{reorder\+\_\+items\+\_\+atscope}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{reorder\+\_\+items\+\_\+atscope()}{reorder\_items\_atscope()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+reorder\+\_\+items\+\_\+atscope (\begin{DoxyParamCaption}\item[{}]{items,  }\item[{}]{argkeys\+\_\+cache,  }\item[{}]{items\+\_\+by\+\_\+argkey,  }\item[{}]{scopenum }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_a0a6fb5395a06f72a7f10b75dbf46fb21}\label{namespace__pytest_1_1fixtures_a0a6fb5395a06f72a7f10b75dbf46fb21}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!resolve\+\_\+fixture\+\_\+function@{resolve\+\_\+fixture\+\_\+function}}
+\index{resolve\+\_\+fixture\+\_\+function@{resolve\+\_\+fixture\+\_\+function}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{resolve\+\_\+fixture\+\_\+function()}{resolve\_fixture\_function()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+resolve\+\_\+fixture\+\_\+function (\begin{DoxyParamCaption}\item[{}]{fixturedef,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the actual callable that can be called to obtain the fixture value, dealing with unittest-specific
+instances and bound methods.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1fixtures_a819d1c10ac18ab8e0b5a879fad486139}\label{namespace__pytest_1_1fixtures_a819d1c10ac18ab8e0b5a879fad486139}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!scope2index@{scope2index}}
+\index{scope2index@{scope2index}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{scope2index()}{scope2index()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+scope2index (\begin{DoxyParamCaption}\item[{}]{scope,  }\item[{}]{descr,  }\item[{}]{where = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Look up the index of ``scope`` and raise a descriptive value error
+if not defined.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1fixtures_a93accbaf2095e10285b690f2b1de6d73}\label{namespace__pytest_1_1fixtures_a93accbaf2095e10285b690f2b1de6d73}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!scopemismatch@{scopemismatch}}
+\index{scopemismatch@{scopemismatch}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{scopemismatch()}{scopemismatch()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+scopemismatch (\begin{DoxyParamCaption}\item[{}]{currentscope,  }\item[{}]{newscope }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_a1b3d6eac66174544e16dfd62cc0f77fa}\label{namespace__pytest_1_1fixtures_a1b3d6eac66174544e16dfd62cc0f77fa}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!scopeproperty@{scopeproperty}}
+\index{scopeproperty@{scopeproperty}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{scopeproperty()}{scopeproperty()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+scopeproperty (\begin{DoxyParamCaption}\item[{}]{name = {\ttfamily None},  }\item[{}]{doc = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_a52468614fd8fd54547e07684ef6de052}\label{namespace__pytest_1_1fixtures_a52468614fd8fd54547e07684ef6de052}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!wrap\+\_\+function\+\_\+to\+\_\+warning\+\_\+if\+\_\+called\+\_\+directly@{wrap\+\_\+function\+\_\+to\+\_\+warning\+\_\+if\+\_\+called\+\_\+directly}}
+\index{wrap\+\_\+function\+\_\+to\+\_\+warning\+\_\+if\+\_\+called\+\_\+directly@{wrap\+\_\+function\+\_\+to\+\_\+warning\+\_\+if\+\_\+called\+\_\+directly}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{wrap\+\_\+function\+\_\+to\+\_\+warning\+\_\+if\+\_\+called\+\_\+directly()}{wrap\_function\_to\_warning\_if\_called\_directly()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+wrap\+\_\+function\+\_\+to\+\_\+warning\+\_\+if\+\_\+called\+\_\+directly (\begin{DoxyParamCaption}\item[{}]{function,  }\item[{}]{fixture\+\_\+marker }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wrap the given fixture function so we can issue warnings about it being called directly, instead of
+used as an argument in a test function.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1fixtures_ad7ab41d1dd454c1b1c2c4f638d1def30}\label{namespace__pytest_1_1fixtures_ad7ab41d1dd454c1b1c2c4f638d1def30}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!yield\+\_\+fixture@{yield\+\_\+fixture}}
+\index{yield\+\_\+fixture@{yield\+\_\+fixture}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{yield\+\_\+fixture()}{yield\_fixture()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+yield\+\_\+fixture (\begin{DoxyParamCaption}\item[{}]{scope = {\ttfamily \char`\"{}function\char`\"{}},  }\item[{}]{params = {\ttfamily None},  }\item[{}]{autouse = {\ttfamily False},  }\item[{}]{ids = {\ttfamily None},  }\item[{}]{name = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}(return a) decorator to mark a yield-fixture factory function.
+
+.. deprecated:: 3.0
+    Use :py:func:`pytest.fixture` directly instead.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_a865b6418bbc806ac46031a25f5021f77}\label{namespace__pytest_1_1fixtures_a865b6418bbc806ac46031a25f5021f77}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!defaultfuncargprefixmarker@{defaultfuncargprefixmarker}}
+\index{defaultfuncargprefixmarker@{defaultfuncargprefixmarker}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{defaultfuncargprefixmarker}{defaultfuncargprefixmarker}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+fixtures.\+defaultfuncargprefixmarker = \hyperlink{namespace__pytest_1_1fixtures_a7f10df0ff0d8d2c5e29e89f022c59d15}{fixture}()}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_a88653bd907ec73d3cfd6dc4c6c9928fe}\label{namespace__pytest_1_1fixtures_a88653bd907ec73d3cfd6dc4c6c9928fe}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!F\+I\+X\+T\+U\+R\+E\+\_\+\+M\+SG@{F\+I\+X\+T\+U\+R\+E\+\_\+\+M\+SG}}
+\index{F\+I\+X\+T\+U\+R\+E\+\_\+\+M\+SG@{F\+I\+X\+T\+U\+R\+E\+\_\+\+M\+SG}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{F\+I\+X\+T\+U\+R\+E\+\_\+\+M\+SG}{FIXTURE\_MSG}}
+{\footnotesize\ttfamily string \+\_\+pytest.\+fixtures.\+F\+I\+X\+T\+U\+R\+E\+\_\+\+M\+SG = \textquotesingle{}fixtures cannot have \char`\"{}pytest\+\_\+funcarg\+\_\+\+\_\+\char`\"{} prefix and be decorated with @pytest.\+fixture\+:\textbackslash{}n\{\}\textquotesingle{}}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_af250e366ef9bfe4ef3e2074295296f9e}\label{namespace__pytest_1_1fixtures_af250e366ef9bfe4ef3e2074295296f9e}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!frozen@{frozen}}
+\index{frozen@{frozen}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{frozen}{frozen}}
+{\footnotesize\ttfamily \+\_\+pytest.\+fixtures.\+frozen}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_a13dd74c58426e1e7d1f13069b3caffee}\label{namespace__pytest_1_1fixtures_a13dd74c58426e1e7d1f13069b3caffee}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!scope@{scope}}
+\index{scope@{scope}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{scope}{scope}}
+{\footnotesize\ttfamily \+\_\+pytest.\+fixtures.\+scope}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_ac4b7be2ab4a0289ebecd81bbdaeabccd}\label{namespace__pytest_1_1fixtures_ac4b7be2ab4a0289ebecd81bbdaeabccd}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!scope2props@{scope2props}}
+\index{scope2props@{scope2props}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{scope2props}{scope2props}}
+{\footnotesize\ttfamily \+\_\+pytest.\+fixtures.\+scope2props = dict(session=())}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_a7c2b0c124a04d5ff761ba4c7df24799a}\label{namespace__pytest_1_1fixtures_a7c2b0c124a04d5ff761ba4c7df24799a}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!scopename2class@{scopename2class}}
+\index{scopename2class@{scopename2class}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{scopename2class}{scopename2class}}
+{\footnotesize\ttfamily dictionary \+\_\+pytest.\+fixtures.\+scopename2class = \{\}}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_aeaedc5d547d078e5e81f0344ea8b023c}\label{namespace__pytest_1_1fixtures_aeaedc5d547d078e5e81f0344ea8b023c}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!scopenum\+\_\+function@{scopenum\+\_\+function}}
+\index{scopenum\+\_\+function@{scopenum\+\_\+function}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{scopenum\+\_\+function}{scopenum\_function}}
+{\footnotesize\ttfamily string \+\_\+pytest.\+fixtures.\+scopenum\+\_\+function = scopes.\+index(\char`\"{}function\char`\"{})}
+
+\mbox{\Hypertarget{namespace__pytest_1_1fixtures_a5015c1644820a9b78acf9d3466b0d57e}\label{namespace__pytest_1_1fixtures_a5015c1644820a9b78acf9d3466b0d57e}} 
+\index{\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}!scopes@{scopes}}
+\index{scopes@{scopes}!\+\_\+pytest\+::fixtures@{\+\_\+pytest\+::fixtures}}
+\subsubsection{\texorpdfstring{scopes}{scopes}}
+{\footnotesize\ttfamily string \+\_\+pytest.\+fixtures.\+scopes = \char`\"{}session package module class function\char`\"{}.split()}
+

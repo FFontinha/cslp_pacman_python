@@ -1,0 +1,51 @@
+\hypertarget{classmore__itertools_1_1tests_1_1test__recipes_1_1_random_product_tests}{}\section{more\+\_\+itertools.\+tests.\+test\+\_\+recipes.\+Random\+Product\+Tests Class Reference}
+\label{classmore__itertools_1_1tests_1_1test__recipes_1_1_random_product_tests}\index{more\+\_\+itertools.\+tests.\+test\+\_\+recipes.\+Random\+Product\+Tests@{more\+\_\+itertools.\+tests.\+test\+\_\+recipes.\+Random\+Product\+Tests}}
+
+
+Inherits Test\+Case.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmore__itertools_1_1tests_1_1test__recipes_1_1_random_product_tests_a67d44670f2f8e8ffa4ce4e17814aca61}{test\+\_\+simple\+\_\+lists} (self)
+\item 
+def \hyperlink{classmore__itertools_1_1tests_1_1test__recipes_1_1_random_product_tests_a78465ed31f025ae2209c509e6492247a}{test\+\_\+list\+\_\+with\+\_\+repeat} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Tests for ``random_product()``
+
+Since random.choice() has different results with the same seed across
+python versions 2.x and 3.x, these tests use highly probably events to
+create predictable outcomes across platforms.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmore__itertools_1_1tests_1_1test__recipes_1_1_random_product_tests_a78465ed31f025ae2209c509e6492247a}\label{classmore__itertools_1_1tests_1_1test__recipes_1_1_random_product_tests_a78465ed31f025ae2209c509e6492247a}} 
+\index{more\+\_\+itertools\+::tests\+::test\+\_\+recipes\+::\+Random\+Product\+Tests@{more\+\_\+itertools\+::tests\+::test\+\_\+recipes\+::\+Random\+Product\+Tests}!test\+\_\+list\+\_\+with\+\_\+repeat@{test\+\_\+list\+\_\+with\+\_\+repeat}}
+\index{test\+\_\+list\+\_\+with\+\_\+repeat@{test\+\_\+list\+\_\+with\+\_\+repeat}!more\+\_\+itertools\+::tests\+::test\+\_\+recipes\+::\+Random\+Product\+Tests@{more\+\_\+itertools\+::tests\+::test\+\_\+recipes\+::\+Random\+Product\+Tests}}
+\subsubsection{\texorpdfstring{test\+\_\+list\+\_\+with\+\_\+repeat()}{test\_list\_with\_repeat()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+tests.\+test\+\_\+recipes.\+Random\+Product\+Tests.\+test\+\_\+list\+\_\+with\+\_\+repeat (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}ensure multiple items are chosen, and that they appear to be chosen
+from one list then the next, in proper order.\end{DoxyVerb}
+ \mbox{\Hypertarget{classmore__itertools_1_1tests_1_1test__recipes_1_1_random_product_tests_a67d44670f2f8e8ffa4ce4e17814aca61}\label{classmore__itertools_1_1tests_1_1test__recipes_1_1_random_product_tests_a67d44670f2f8e8ffa4ce4e17814aca61}} 
+\index{more\+\_\+itertools\+::tests\+::test\+\_\+recipes\+::\+Random\+Product\+Tests@{more\+\_\+itertools\+::tests\+::test\+\_\+recipes\+::\+Random\+Product\+Tests}!test\+\_\+simple\+\_\+lists@{test\+\_\+simple\+\_\+lists}}
+\index{test\+\_\+simple\+\_\+lists@{test\+\_\+simple\+\_\+lists}!more\+\_\+itertools\+::tests\+::test\+\_\+recipes\+::\+Random\+Product\+Tests@{more\+\_\+itertools\+::tests\+::test\+\_\+recipes\+::\+Random\+Product\+Tests}}
+\subsubsection{\texorpdfstring{test\+\_\+simple\+\_\+lists()}{test\_simple\_lists()}}
+{\footnotesize\ttfamily def more\+\_\+itertools.\+tests.\+test\+\_\+recipes.\+Random\+Product\+Tests.\+test\+\_\+simple\+\_\+lists (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ensure that one item is chosen from each list in each pair.
+Also ensure that each item from each list eventually appears in
+the chosen combinations.
+
+Odds are roughly 1 in 7.1 * 10e16 that one item from either list will
+not be chosen after 100 samplings of one item from each list. Just to
+be safe, better use a known random seed, too.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/more\+\_\+itertools/tests/test\+\_\+recipes.\+py\end{DoxyCompactItemize}

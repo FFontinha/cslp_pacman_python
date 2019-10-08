@@ -1,0 +1,73 @@
+\hypertarget{classgevent_1_1pywsgi_1_1_logging_log_adapter}{}\section{gevent.\+pywsgi.\+Logging\+Log\+Adapter Class Reference}
+\label{classgevent_1_1pywsgi_1_1_logging_log_adapter}\index{gevent.\+pywsgi.\+Logging\+Log\+Adapter@{gevent.\+pywsgi.\+Logging\+Log\+Adapter}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classgevent_1_1pywsgi_1_1_logging_log_adapter_add4f028eb6d5379e6d96f8461b92a4d2}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, logger, level=20)
+\item 
+\mbox{\Hypertarget{classgevent_1_1pywsgi_1_1_logging_log_adapter_a53ed5b663acf70b8e575d9a3e0d3ec34}\label{classgevent_1_1pywsgi_1_1_logging_log_adapter_a53ed5b663acf70b8e575d9a3e0d3ec34}} 
+def {\bfseries write} (self, msg)
+\item 
+\mbox{\Hypertarget{classgevent_1_1pywsgi_1_1_logging_log_adapter_a3fdc5dad04a44d812dfc368f4f3fe1b0}\label{classgevent_1_1pywsgi_1_1_logging_log_adapter_a3fdc5dad04a44d812dfc368f4f3fe1b0}} 
+def {\bfseries flush} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1pywsgi_1_1_logging_log_adapter_a221ed1cd8c37d5d5522488ff94d5e93a}\label{classgevent_1_1pywsgi_1_1_logging_log_adapter_a221ed1cd8c37d5d5522488ff94d5e93a}} 
+def {\bfseries writelines} (self, lines)
+\item 
+\mbox{\Hypertarget{classgevent_1_1pywsgi_1_1_logging_log_adapter_ad39e475e2c19a4d0f3803fc4966f594b}\label{classgevent_1_1pywsgi_1_1_logging_log_adapter_ad39e475e2c19a4d0f3803fc4966f594b}} 
+def {\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, name)
+\item 
+\mbox{\Hypertarget{classgevent_1_1pywsgi_1_1_logging_log_adapter_a7a83fcf62bdc85fcea3ebe213e0f3a0d}\label{classgevent_1_1pywsgi_1_1_logging_log_adapter_a7a83fcf62bdc85fcea3ebe213e0f3a0d}} 
+def {\bfseries \+\_\+\+\_\+setattr\+\_\+\+\_\+} (self, name, value)
+\item 
+\mbox{\Hypertarget{classgevent_1_1pywsgi_1_1_logging_log_adapter_a2e0902881917661395edd14683e9800d}\label{classgevent_1_1pywsgi_1_1_logging_log_adapter_a2e0902881917661395edd14683e9800d}} 
+def {\bfseries \+\_\+\+\_\+delattr\+\_\+\+\_\+} (self, name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}An adapter for :class:`logging.Logger` instances
+to let them be used with :class:`WSGIServer`.
+
+.. warning:: Unless the entire process is monkey-patched at a very
+    early part of the lifecycle (before logging is configured),
+    loggers are likely to not be gevent-cooperative. For example,
+    the socket and syslog handlers use the socket module in a way
+    that can block, and most handlers acquire threading locks.
+
+.. warning:: It *may* be possible for the logging functions to be
+   called in the :class:`gevent.Hub` greenlet. Code running in the
+   hub greenlet cannot use any gevent blocking functions without triggering
+   a ``LoopExit``.
+
+.. versionadded:: 1.1a3
+
+.. versionchanged:: 1.1b6
+   Attributes not present on this object are proxied to the underlying
+   logger instance. This permits using custom :class:`~logging.Logger`
+   subclasses (or indeed, even duck-typed objects).
+
+.. versionchanged:: 1.1
+   Strip trailing newline characters on the message passed to :meth:`write`
+   because log handlers will usually add one themselves.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgevent_1_1pywsgi_1_1_logging_log_adapter_add4f028eb6d5379e6d96f8461b92a4d2}\label{classgevent_1_1pywsgi_1_1_logging_log_adapter_add4f028eb6d5379e6d96f8461b92a4d2}} 
+\index{gevent\+::pywsgi\+::\+Logging\+Log\+Adapter@{gevent\+::pywsgi\+::\+Logging\+Log\+Adapter}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!gevent\+::pywsgi\+::\+Logging\+Log\+Adapter@{gevent\+::pywsgi\+::\+Logging\+Log\+Adapter}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def gevent.\+pywsgi.\+Logging\+Log\+Adapter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{logger,  }\item[{}]{level = {\ttfamily 20} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write information to the *logger* at the given *level* (default to INFO).
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/pywsgi.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,59 @@
+\hypertarget{class__pytest_1_1capture_1_1_capture_fixture}{}\section{\+\_\+pytest.\+capture.\+Capture\+Fixture Class Reference}
+\label{class__pytest_1_1capture_1_1_capture_fixture}\index{\+\_\+pytest.\+capture.\+Capture\+Fixture@{\+\_\+pytest.\+capture.\+Capture\+Fixture}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_a68f063f014e670fab1511a5da0eb82ed}\label{class__pytest_1_1capture_1_1_capture_fixture_a68f063f014e670fab1511a5da0eb82ed}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, captureclass, request)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_acfe7f707b4045fdcecfa751addd45948}\label{class__pytest_1_1capture_1_1_capture_fixture_acfe7f707b4045fdcecfa751addd45948}} 
+def {\bfseries close} (self)
+\item 
+def \hyperlink{class__pytest_1_1capture_1_1_capture_fixture_a1067f56196649f375e080bf9f65d3a33}{readouterr} (self)
+\item 
+def \hyperlink{class__pytest_1_1capture_1_1_capture_fixture_abd27f778592b89220819fb1dbf93fa61}{disabled} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_ae23f7033254e8168fcc4ae86ee2e897b}\label{class__pytest_1_1capture_1_1_capture_fixture_ae23f7033254e8168fcc4ae86ee2e897b}} 
+{\bfseries captureclass}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_adfcaf66fb993d7b6f9eadc9bf7dbebad}\label{class__pytest_1_1capture_1_1_capture_fixture_adfcaf66fb993d7b6f9eadc9bf7dbebad}} 
+{\bfseries request}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Object returned by :py:func:`capsys`, :py:func:`capsysbinary`, :py:func:`capfd` and :py:func:`capfdbinary`
+fixtures.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_abd27f778592b89220819fb1dbf93fa61}\label{class__pytest_1_1capture_1_1_capture_fixture_abd27f778592b89220819fb1dbf93fa61}} 
+\index{\+\_\+pytest\+::capture\+::\+Capture\+Fixture@{\+\_\+pytest\+::capture\+::\+Capture\+Fixture}!disabled@{disabled}}
+\index{disabled@{disabled}!\+\_\+pytest\+::capture\+::\+Capture\+Fixture@{\+\_\+pytest\+::capture\+::\+Capture\+Fixture}}
+\subsubsection{\texorpdfstring{disabled()}{disabled()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+capture.\+Capture\+Fixture.\+disabled (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Temporarily disables capture while inside the 'with' block.\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_a1067f56196649f375e080bf9f65d3a33}\label{class__pytest_1_1capture_1_1_capture_fixture_a1067f56196649f375e080bf9f65d3a33}} 
+\index{\+\_\+pytest\+::capture\+::\+Capture\+Fixture@{\+\_\+pytest\+::capture\+::\+Capture\+Fixture}!readouterr@{readouterr}}
+\index{readouterr@{readouterr}!\+\_\+pytest\+::capture\+::\+Capture\+Fixture@{\+\_\+pytest\+::capture\+::\+Capture\+Fixture}}
+\subsubsection{\texorpdfstring{readouterr()}{readouterr()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+capture.\+Capture\+Fixture.\+readouterr (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read and return the captured output so far, resetting the internal buffer.
+
+:return: captured content as a namedtuple with  ``out`` and ``err`` string attributes
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/capture.\+py\end{DoxyCompactItemize}

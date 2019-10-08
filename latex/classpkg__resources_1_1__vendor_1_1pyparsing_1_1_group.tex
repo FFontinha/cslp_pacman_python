@@ -1,0 +1,42 @@
+\hypertarget{classpkg__resources_1_1__vendor_1_1pyparsing_1_1_group}{}\section{pkg\+\_\+resources.\+\_\+vendor.\+pyparsing.\+Group Class Reference}
+\label{classpkg__resources_1_1__vendor_1_1pyparsing_1_1_group}\index{pkg\+\_\+resources.\+\_\+vendor.\+pyparsing.\+Group@{pkg\+\_\+resources.\+\_\+vendor.\+pyparsing.\+Group}}
+
+
+Inherits \hyperlink{classpkg__resources_1_1__vendor_1_1pyparsing_1_1_token_converter}{pkg\+\_\+resources.\+\_\+vendor.\+pyparsing.\+Token\+Converter}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpkg__resources_1_1__vendor_1_1pyparsing_1_1_group_a4027ca22a29af1111ae2c7c0194bb330}\label{classpkg__resources_1_1__vendor_1_1pyparsing_1_1_group_a4027ca22a29af1111ae2c7c0194bb330}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, expr)
+\item 
+\mbox{\Hypertarget{classpkg__resources_1_1__vendor_1_1pyparsing_1_1_group_a2fdaf84a40e16b32658acd842a7c8582}\label{classpkg__resources_1_1__vendor_1_1pyparsing_1_1_group_a2fdaf84a40e16b32658acd842a7c8582}} 
+def {\bfseries post\+Parse} (self, instring, loc, tokenlist)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpkg__resources_1_1__vendor_1_1pyparsing_1_1_group_a24b2b05e0aecefa6623eb3ffe38ec492}\label{classpkg__resources_1_1__vendor_1_1pyparsing_1_1_group_a24b2b05e0aecefa6623eb3ffe38ec492}} 
+{\bfseries save\+As\+List}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Converter to return the matched tokens as a list - useful for returning tokens of C{L{ZeroOrMore}} and C{L{OneOrMore}} expressions.
+
+Example::
+    ident = Word(alphas)
+    num = Word(nums)
+    term = ident | num
+    func = ident + Optional(delimitedList(term))
+    print(func.parseString("fn a,b,100"))  # -> ['fn', 'a', 'b', '100']
+
+    func = ident + Group(Optional(delimitedList(term)))
+    print(func.parseString("fn a,b,100"))  # -> ['fn', ['a', 'b', '100']]
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/pkg\+\_\+resources/\+\_\+vendor/pyparsing.\+py\end{DoxyCompactItemize}

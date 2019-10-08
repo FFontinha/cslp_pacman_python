@@ -1,0 +1,26 @@
+var namespacechardet =
+[
+    [ "big5prober", "namespacechardet_1_1big5prober.html", "namespacechardet_1_1big5prober" ],
+    [ "chardistribution", "namespacechardet_1_1chardistribution.html", "namespacechardet_1_1chardistribution" ],
+    [ "charsetgroupprober", "namespacechardet_1_1charsetgroupprober.html", "namespacechardet_1_1charsetgroupprober" ],
+    [ "charsetprober", "namespacechardet_1_1charsetprober.html", "namespacechardet_1_1charsetprober" ],
+    [ "cli", "namespacechardet_1_1cli.html", null ],
+    [ "codingstatemachine", "namespacechardet_1_1codingstatemachine.html", "namespacechardet_1_1codingstatemachine" ],
+    [ "cp949prober", "namespacechardet_1_1cp949prober.html", "namespacechardet_1_1cp949prober" ],
+    [ "enums", "namespacechardet_1_1enums.html", "namespacechardet_1_1enums" ],
+    [ "escprober", "namespacechardet_1_1escprober.html", "namespacechardet_1_1escprober" ],
+    [ "eucjpprober", "namespacechardet_1_1eucjpprober.html", "namespacechardet_1_1eucjpprober" ],
+    [ "euckrprober", "namespacechardet_1_1euckrprober.html", "namespacechardet_1_1euckrprober" ],
+    [ "euctwprober", "namespacechardet_1_1euctwprober.html", "namespacechardet_1_1euctwprober" ],
+    [ "gb2312prober", "namespacechardet_1_1gb2312prober.html", "namespacechardet_1_1gb2312prober" ],
+    [ "hebrewprober", "namespacechardet_1_1hebrewprober.html", "namespacechardet_1_1hebrewprober" ],
+    [ "jpcntx", "namespacechardet_1_1jpcntx.html", "namespacechardet_1_1jpcntx" ],
+    [ "latin1prober", "namespacechardet_1_1latin1prober.html", "namespacechardet_1_1latin1prober" ],
+    [ "mbcharsetprober", "namespacechardet_1_1mbcharsetprober.html", "namespacechardet_1_1mbcharsetprober" ],
+    [ "mbcsgroupprober", "namespacechardet_1_1mbcsgroupprober.html", "namespacechardet_1_1mbcsgroupprober" ],
+    [ "sbcharsetprober", "namespacechardet_1_1sbcharsetprober.html", "namespacechardet_1_1sbcharsetprober" ],
+    [ "sbcsgroupprober", "namespacechardet_1_1sbcsgroupprober.html", "namespacechardet_1_1sbcsgroupprober" ],
+    [ "sjisprober", "namespacechardet_1_1sjisprober.html", "namespacechardet_1_1sjisprober" ],
+    [ "universaldetector", "namespacechardet_1_1universaldetector.html", "namespacechardet_1_1universaldetector" ],
+    [ "utf8prober", "namespacechardet_1_1utf8prober.html", "namespacechardet_1_1utf8prober" ]
+];

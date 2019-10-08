@@ -1,0 +1,103 @@
+\hypertarget{namespacepy_1_1__code_1_1source}{}\section{py.\+\_\+code.\+source Namespace Reference}
+\label{namespacepy_1_1__code_1_1source}\index{py.\+\_\+code.\+source@{py.\+\_\+code.\+source}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpy_1_1__code_1_1source_1_1_source}{Source}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepy_1_1__code_1_1source_af3f5dcbd3ee701b6ecc866bd59a61f02}{compile\+\_\+} (source, filename=None, mode=\textquotesingle{}exec\textquotesingle{}, flags=generators.\+compiler\+\_\+flag, dont\+\_\+inherit=0)
+\item 
+def \hyperlink{namespacepy_1_1__code_1_1source_a0896e6c85119e84b6724fec4e7a1a750}{getfslineno} (obj)
+\item 
+def \hyperlink{namespacepy_1_1__code_1_1source_a2dd0b2333eacba0776e5e9508c346ee0}{findsource} (obj)
+\item 
+def \hyperlink{namespacepy_1_1__code_1_1source_a33bbc3ce5c7299f3b5be06578650e0be}{getsource} (obj, kwargs)
+\item 
+def \hyperlink{namespacepy_1_1__code_1_1source_ac2f9860641c07be3e9f445e0e79977ee}{deindent} (lines, offset=None)
+\item 
+def \hyperlink{namespacepy_1_1__code_1_1source_a980f74c1a6c12b6e34b6486a443b14c8}{get\+\_\+statement\+\_\+startend2} (lineno, node)
+\item 
+def \hyperlink{namespacepy_1_1__code_1_1source_afd23693d2233203cacb7f1a89f4526ba}{getstatementrange\+\_\+ast} (lineno, source, assertion=False, astnode=None)
+\item 
+def \hyperlink{namespacepy_1_1__code_1_1source_a53f7409a708ee74c1c91ccf1aabdf8b0}{getstatementrange\+\_\+old} (lineno, source, assertion=False)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacepy_1_1__code_1_1source_a1cd74262fbc8a23faf3a58accebb63de}{cpy\+\_\+compile} = compile
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepy_1_1__code_1_1source_af3f5dcbd3ee701b6ecc866bd59a61f02}\label{namespacepy_1_1__code_1_1source_af3f5dcbd3ee701b6ecc866bd59a61f02}} 
+\index{py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}!compile\+\_\+@{compile\+\_\+}}
+\index{compile\+\_\+@{compile\+\_\+}!py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}}
+\subsubsection{\texorpdfstring{compile\+\_\+()}{compile\_()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+source.\+compile\+\_\+ (\begin{DoxyParamCaption}\item[{}]{source,  }\item[{}]{filename = {\ttfamily None},  }\item[{}]{mode = {\ttfamily \textquotesingle{}exec\textquotesingle{}},  }\item[{}]{flags = {\ttfamily generators.compiler\+\_\+flag},  }\item[{}]{dont\+\_\+inherit = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}compile the given source to a raw code object,
+    and maintain an internal cache which allows later
+    retrieval of the source code for the code object
+    and any recursively created code objects.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepy_1_1__code_1_1source_ac2f9860641c07be3e9f445e0e79977ee}\label{namespacepy_1_1__code_1_1source_ac2f9860641c07be3e9f445e0e79977ee}} 
+\index{py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}!deindent@{deindent}}
+\index{deindent@{deindent}!py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}}
+\subsubsection{\texorpdfstring{deindent()}{deindent()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+source.\+deindent (\begin{DoxyParamCaption}\item[{}]{lines,  }\item[{}]{offset = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepy_1_1__code_1_1source_a2dd0b2333eacba0776e5e9508c346ee0}\label{namespacepy_1_1__code_1_1source_a2dd0b2333eacba0776e5e9508c346ee0}} 
+\index{py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}!findsource@{findsource}}
+\index{findsource@{findsource}!py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}}
+\subsubsection{\texorpdfstring{findsource()}{findsource()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+source.\+findsource (\begin{DoxyParamCaption}\item[{}]{obj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepy_1_1__code_1_1source_a980f74c1a6c12b6e34b6486a443b14c8}\label{namespacepy_1_1__code_1_1source_a980f74c1a6c12b6e34b6486a443b14c8}} 
+\index{py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}!get\+\_\+statement\+\_\+startend2@{get\+\_\+statement\+\_\+startend2}}
+\index{get\+\_\+statement\+\_\+startend2@{get\+\_\+statement\+\_\+startend2}!py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}}
+\subsubsection{\texorpdfstring{get\+\_\+statement\+\_\+startend2()}{get\_statement\_startend2()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+source.\+get\+\_\+statement\+\_\+startend2 (\begin{DoxyParamCaption}\item[{}]{lineno,  }\item[{}]{node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepy_1_1__code_1_1source_a0896e6c85119e84b6724fec4e7a1a750}\label{namespacepy_1_1__code_1_1source_a0896e6c85119e84b6724fec4e7a1a750}} 
+\index{py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}!getfslineno@{getfslineno}}
+\index{getfslineno@{getfslineno}!py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}}
+\subsubsection{\texorpdfstring{getfslineno()}{getfslineno()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+source.\+getfslineno (\begin{DoxyParamCaption}\item[{}]{obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return source location (path, lineno) for the given object.
+If the source cannot be determined return ("", -1)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepy_1_1__code_1_1source_a33bbc3ce5c7299f3b5be06578650e0be}\label{namespacepy_1_1__code_1_1source_a33bbc3ce5c7299f3b5be06578650e0be}} 
+\index{py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}!getsource@{getsource}}
+\index{getsource@{getsource}!py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}}
+\subsubsection{\texorpdfstring{getsource()}{getsource()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+source.\+getsource (\begin{DoxyParamCaption}\item[{}]{obj,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepy_1_1__code_1_1source_afd23693d2233203cacb7f1a89f4526ba}\label{namespacepy_1_1__code_1_1source_afd23693d2233203cacb7f1a89f4526ba}} 
+\index{py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}!getstatementrange\+\_\+ast@{getstatementrange\+\_\+ast}}
+\index{getstatementrange\+\_\+ast@{getstatementrange\+\_\+ast}!py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}}
+\subsubsection{\texorpdfstring{getstatementrange\+\_\+ast()}{getstatementrange\_ast()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+source.\+getstatementrange\+\_\+ast (\begin{DoxyParamCaption}\item[{}]{lineno,  }\item[{}]{source,  }\item[{}]{assertion = {\ttfamily False},  }\item[{}]{astnode = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepy_1_1__code_1_1source_a53f7409a708ee74c1c91ccf1aabdf8b0}\label{namespacepy_1_1__code_1_1source_a53f7409a708ee74c1c91ccf1aabdf8b0}} 
+\index{py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}!getstatementrange\+\_\+old@{getstatementrange\+\_\+old}}
+\index{getstatementrange\+\_\+old@{getstatementrange\+\_\+old}!py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}}
+\subsubsection{\texorpdfstring{getstatementrange\+\_\+old()}{getstatementrange\_old()}}
+{\footnotesize\ttfamily def py.\+\_\+code.\+source.\+getstatementrange\+\_\+old (\begin{DoxyParamCaption}\item[{}]{lineno,  }\item[{}]{source,  }\item[{}]{assertion = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return (start, end) tuple which spans the minimal
+    statement region which containing the given lineno.
+    raise an IndexError if no such statementrange can be found.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepy_1_1__code_1_1source_a1cd74262fbc8a23faf3a58accebb63de}\label{namespacepy_1_1__code_1_1source_a1cd74262fbc8a23faf3a58accebb63de}} 
+\index{py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}!cpy\+\_\+compile@{cpy\+\_\+compile}}
+\index{cpy\+\_\+compile@{cpy\+\_\+compile}!py\+::\+\_\+code\+::source@{py\+::\+\_\+code\+::source}}
+\subsubsection{\texorpdfstring{cpy\+\_\+compile}{cpy\_compile}}
+{\footnotesize\ttfamily py.\+\_\+code.\+source.\+cpy\+\_\+compile = compile}
+

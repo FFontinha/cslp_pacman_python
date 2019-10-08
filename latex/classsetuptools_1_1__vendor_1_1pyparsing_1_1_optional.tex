@@ -1,0 +1,75 @@
+\hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_optional}{}\section{setuptools.\+\_\+vendor.\+pyparsing.\+Optional Class Reference}
+\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_optional}\index{setuptools.\+\_\+vendor.\+pyparsing.\+Optional@{setuptools.\+\_\+vendor.\+pyparsing.\+Optional}}
+
+
+Inherits \hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parse_element_enhance}{setuptools.\+\_\+vendor.\+pyparsing.\+Parse\+Element\+Enhance}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_optional_a03acdb87a4205db8e25a4ded39b732ce}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_optional_a03acdb87a4205db8e25a4ded39b732ce}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, expr, default=\+\_\+optional\+Not\+Matched)
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_optional_a836f8c10ed1ac54f47ed8a99ed364114}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_optional_a836f8c10ed1ac54f47ed8a99ed364114}} 
+def {\bfseries parse\+Impl} (self, instring, loc, do\+Actions=True)
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_optional_aa773455e67fdf106d587585d384c1b4b}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_optional_aa773455e67fdf106d587585d384c1b4b}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_optional_a2f7baad9ccdd255c84df1695c609f4dd}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_optional_a2f7baad9ccdd255c84df1695c609f4dd}} 
+{\bfseries save\+As\+List}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_optional_a1337c761fd9525eca71a94dfaec01114}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_optional_a1337c761fd9525eca71a94dfaec01114}} 
+{\bfseries default\+Value}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_optional_a595698691fa87a858c9e0b7a52f65a9c}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_optional_a595698691fa87a858c9e0b7a52f65a9c}} 
+{\bfseries may\+Return\+Empty}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_optional_a4ece373bbdc974de87c5bf0bbcc8c811}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_optional_a4ece373bbdc974de87c5bf0bbcc8c811}} 
+{\bfseries str\+Repr}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Optional matching of the given expression.
+
+Parameters:
+ - expr - expression that must match zero or more times
+ - default (optional) - value to be returned if the optional expression is not found.
+
+Example::
+    # US postal code can be a 5-digit zip, plus optional 4-digit qualifier
+    zip = Combine(Word(nums, exact=5) + Optional('-' + Word(nums, exact=4)))
+    zip.runTests('''
+        # traditional ZIP code
+        12345
+        
+        # ZIP+4 form
+        12101-0001
+        
+        # invalid ZIP
+        98765-
+        ''')
+prints::
+    # traditional ZIP code
+    12345
+    ['12345']
+
+    # ZIP+4 form
+    12101-0001
+    ['12101-0001']
+
+    # invalid ZIP
+    98765-
+         ^
+    FAIL: Expected end of text (at char 5), (line:1, col:6)
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/setuptools/\+\_\+vendor/pyparsing.\+py\end{DoxyCompactItemize}

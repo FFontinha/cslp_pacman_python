@@ -1,0 +1,62 @@
+\hypertarget{classgevent_1_1util_1_1wrap__errors}{}\section{gevent.\+util.\+wrap\+\_\+errors Class Reference}
+\label{classgevent_1_1util_1_1wrap__errors}\index{gevent.\+util.\+wrap\+\_\+errors@{gevent.\+util.\+wrap\+\_\+errors}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classgevent_1_1util_1_1wrap__errors_ad69e6df9bdc02cf4005dbad8e1df7eb4}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, errors, func)
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1wrap__errors_a91491c4c04cbc9e01e0f96d89322ef57}\label{classgevent_1_1util_1_1wrap__errors_a91491c4c04cbc9e01e0f96d89322ef57}} 
+def {\bfseries \+\_\+\+\_\+call\+\_\+\+\_\+} (self, args, kwargs)
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1wrap__errors_ae09760b7d7364135d268251719def583}\label{classgevent_1_1util_1_1wrap__errors_ae09760b7d7364135d268251719def583}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1wrap__errors_aa125b4aadfbce3e54bfa9cb0bd1e554d}\label{classgevent_1_1util_1_1wrap__errors_aa125b4aadfbce3e54bfa9cb0bd1e554d}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classgevent_1_1util_1_1wrap__errors_aa15330353a25257db700b454ec15aa7a}\label{classgevent_1_1util_1_1wrap__errors_aa15330353a25257db700b454ec15aa7a}} 
+def {\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Helper to make function return an exception, rather than raise it.
+
+Because every exception that is unhandled by greenlet will be logged,
+it is desirable to prevent non-error exceptions from leaving a greenlet.
+This can done with a simple ``try/except`` construct::
+
+    def wrapped_func(*args, **kwargs):
+        try:
+            return func(*args, **kwargs)
+        except (TypeError, ValueError, AttributeError) as ex:
+            return ex
+
+This class provides a shortcut to write that in one line::
+
+    wrapped_func = wrap_errors((TypeError, ValueError, AttributeError), func)
+
+It also preserves ``__str__`` and ``__repr__`` of the original function.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgevent_1_1util_1_1wrap__errors_ad69e6df9bdc02cf4005dbad8e1df7eb4}\label{classgevent_1_1util_1_1wrap__errors_ad69e6df9bdc02cf4005dbad8e1df7eb4}} 
+\index{gevent\+::util\+::wrap\+\_\+errors@{gevent\+::util\+::wrap\+\_\+errors}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!gevent\+::util\+::wrap\+\_\+errors@{gevent\+::util\+::wrap\+\_\+errors}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def gevent.\+util.\+wrap\+\_\+errors.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{errors,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calling this makes a new function from *func*, such that it catches *errors* (an
+:exc:`BaseException` subclass, or a tuple of :exc:`BaseException` subclasses) and
+return it as a value.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/util.\+py\end{DoxyCompactItemize}

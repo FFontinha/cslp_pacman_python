@@ -1,0 +1,245 @@
+\hypertarget{classgevent_1_1__interfaces_1_1_i_loop}{}\section{gevent.\+\_\+interfaces.\+I\+Loop Class Reference}
+\label{classgevent_1_1__interfaces_1_1_i_loop}\index{gevent.\+\_\+interfaces.\+I\+Loop@{gevent.\+\_\+interfaces.\+I\+Loop}}
+
+
+Inherits \hyperlink{classgevent_1_1__util_1_1_interface}{gevent.\+\_\+util.\+Interface}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_loop_a7f53dece62e43f3f57e37e5bb62d2c94}{run} (nowait=False, once=False)
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_loop_aec5c80eb8f80fc97f69630579a0aa469}{now} ()
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_loop_ac25c25cd6fc59358ceb64c26b88dc556}{update\+\_\+now} ()
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_loop_a7cfa09e2e74deecd8bc68891d8334104}{destroy} ()
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_loop_a223a81b01db7e75e1bbf4f0113e30f5b}{io} (fd, events, ref=True, priority=None)
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_loop_a7d6251104dbf1e3181696df8265a0fd3}{timer} (after, repeat=0.\+0, ref=True, priority=None)
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_loop_a015a1465fa9731920cbadab0cf735695}{signal} (signum, ref=True, priority=None)
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_loop_a7f29887a9b79a854c5631ac347e3d3bc}{idle} (ref=True, priority=None)
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_loop_a99382b16152552bc9a38100746f1323f}{prepare} (ref=True, priority=None)
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_loop_ae02c602ae5216043beeae4696295fb40}{check} (ref=True, priority=None)
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_loop_a74e8e81d3f018814e59d281b1d78d189}{fork} (ref=True, priority=None)
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_loop_a6357e9929330e0a8b7bd600a8ad84afb}{async\+\_\+} (ref=True, priority=None)
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_loop_ac64946c90ea5c9eaebab62293013705a}{child} (pid, trace=0, ref=True)
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_loop_a8906af9ad6b57cb89d18a376221031e6}{stat} (path, interval=0.\+0, ref=True, priority=None)
+\item 
+def \hyperlink{classgevent_1_1__interfaces_1_1_i_loop_a56e64ac55f2f91b38cd415b57d4e37c5}{run\+\_\+callback} (func, args)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_loop_a3f323ce6330e9aafe057fbeb1472ed00}\label{classgevent_1_1__interfaces_1_1_i_loop_a3f323ce6330e9aafe057fbeb1472ed00}} 
+{\bfseries default} = Attribute(\char`\"{}Boolean indicating whether this is the default loop\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}The common interface expected for all event loops.
+
+.. caution::
+   This is an internal, low-level interface. It may change
+   between minor versions of gevent.
+
+.. rubric:: Watchers
+
+The methods that create event loop watchers are `io`, `timer`,
+`signal`, `idle`, `prepare`, `check`, `fork`, `async_`, `child`,
+`stat`. These all return various types of :class:`IWatcher`.
+
+All of those methods have one or two common arguments. *ref* is a
+boolean saying whether the event loop is allowed to exit even if
+this watcher is still started. *priority* is event loop specific.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_loop_a6357e9929330e0a8b7bd600a8ad84afb}\label{classgevent_1_1__interfaces_1_1_i_loop_a6357e9929330e0a8b7bd600a8ad84afb}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}!async\+\_\+@{async\+\_\+}}
+\index{async\+\_\+@{async\+\_\+}!gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}}
+\subsubsection{\texorpdfstring{async\+\_\+()}{async\_()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Loop.\+async\+\_\+ (\begin{DoxyParamCaption}\item[{}]{ref = {\ttfamily True},  }\item[{}]{priority = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a watcher that fires when triggered, possibly
+from another thread.
+
+.. versionchanged:: 1.3
+   This was previously just named ``async``; for compatibility
+   with Python 3.7 where ``async`` is a keyword it was renamed.
+   On older versions of Python the old name is still around, but
+   it will be removed in the future.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_loop_ae02c602ae5216043beeae4696295fb40}\label{classgevent_1_1__interfaces_1_1_i_loop_ae02c602ae5216043beeae4696295fb40}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}!check@{check}}
+\index{check@{check}!gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}}
+\subsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Loop.\+check (\begin{DoxyParamCaption}\item[{}]{ref = {\ttfamily True},  }\item[{}]{priority = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create and return a watcher that fires after the event loop
+polls for IO.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_loop_ac64946c90ea5c9eaebab62293013705a}\label{classgevent_1_1__interfaces_1_1_i_loop_ac64946c90ea5c9eaebab62293013705a}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}!child@{child}}
+\index{child@{child}!gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}}
+\subsubsection{\texorpdfstring{child()}{child()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Loop.\+child (\begin{DoxyParamCaption}\item[{}]{pid,  }\item[{}]{trace = {\ttfamily 0},  }\item[{}]{ref = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a watcher that fires for events on the child with process ID *pid*.
+
+This is platform specific.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_loop_a7cfa09e2e74deecd8bc68891d8334104}\label{classgevent_1_1__interfaces_1_1_i_loop_a7cfa09e2e74deecd8bc68891d8334104}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}!destroy@{destroy}}
+\index{destroy@{destroy}!gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Loop.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clean up resources used by this loop.
+
+If you create loops
+(especially loops that are not the default) you *should* call
+this method when you are done with the loop.
+
+.. caution::
+
+    As an implementation note, the libev C loop implementation has a
+    finalizer (``__del__``) that destroys the object, but the libuv
+    and libev CFFI implementations do not. The C implementation may change.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_loop_a74e8e81d3f018814e59d281b1d78d189}\label{classgevent_1_1__interfaces_1_1_i_loop_a74e8e81d3f018814e59d281b1d78d189}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}!fork@{fork}}
+\index{fork@{fork}!gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}}
+\subsubsection{\texorpdfstring{fork()}{fork()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Loop.\+fork (\begin{DoxyParamCaption}\item[{}]{ref = {\ttfamily True},  }\item[{}]{priority = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a watcher that fires when the process forks.
+
+Availability: POSIX
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_loop_a7f29887a9b79a854c5631ac347e3d3bc}\label{classgevent_1_1__interfaces_1_1_i_loop_a7f29887a9b79a854c5631ac347e3d3bc}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}!idle@{idle}}
+\index{idle@{idle}!gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}}
+\subsubsection{\texorpdfstring{idle()}{idle()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Loop.\+idle (\begin{DoxyParamCaption}\item[{}]{ref = {\ttfamily True},  }\item[{}]{priority = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create and return a watcher that fires when the event loop is idle.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_loop_a223a81b01db7e75e1bbf4f0113e30f5b}\label{classgevent_1_1__interfaces_1_1_i_loop_a223a81b01db7e75e1bbf4f0113e30f5b}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}!io@{io}}
+\index{io@{io}!gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}}
+\subsubsection{\texorpdfstring{io()}{io()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Loop.\+io (\begin{DoxyParamCaption}\item[{}]{fd,  }\item[{}]{events,  }\item[{}]{ref = {\ttfamily True},  }\item[{}]{priority = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create and return a new IO watcher for the given *fd*.
+
+*events* is a bitmask specifying which events to watch
+for. 1 means read, and 2 means write.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_loop_aec5c80eb8f80fc97f69630579a0aa469}\label{classgevent_1_1__interfaces_1_1_i_loop_aec5c80eb8f80fc97f69630579a0aa469}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}!now@{now}}
+\index{now@{now}!gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}}
+\subsubsection{\texorpdfstring{now()}{now()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Loop.\+now (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}now() -> float
+
+Return the loop's notion of the current time.
+
+This may not necessarily be related to :func:`time.time` (it
+may have a different starting point), but it must be expressed
+in fractional seconds (the same *units* used by :func:`time.time`).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_loop_a99382b16152552bc9a38100746f1323f}\label{classgevent_1_1__interfaces_1_1_i_loop_a99382b16152552bc9a38100746f1323f}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}!prepare@{prepare}}
+\index{prepare@{prepare}!gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}}
+\subsubsection{\texorpdfstring{prepare()}{prepare()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Loop.\+prepare (\begin{DoxyParamCaption}\item[{}]{ref = {\ttfamily True},  }\item[{}]{priority = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create and return a watcher that fires before the event loop
+polls for IO.
+
+.. caution:: This method is not supported by libuv.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_loop_a7f53dece62e43f3f57e37e5bb62d2c94}\label{classgevent_1_1__interfaces_1_1_i_loop_a7f53dece62e43f3f57e37e5bb62d2c94}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}!run@{run}}
+\index{run@{run}!gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Loop.\+run (\begin{DoxyParamCaption}\item[{}]{nowait = {\ttfamily False},  }\item[{}]{once = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run the event loop.
+
+This is usually called automatically by the hub greenlet, but
+in special cases (when the hub is *not* running) you can use
+this to control how the event loop runs (for example, to integrate
+it with another event loop).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_loop_a56e64ac55f2f91b38cd415b57d4e37c5}\label{classgevent_1_1__interfaces_1_1_i_loop_a56e64ac55f2f91b38cd415b57d4e37c5}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}!run\+\_\+callback@{run\+\_\+callback}}
+\index{run\+\_\+callback@{run\+\_\+callback}!gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}}
+\subsubsection{\texorpdfstring{run\+\_\+callback()}{run\_callback()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Loop.\+run\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{func,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run the *func* passing it *args* at the next opportune moment.
+
+This is a way of handing control to the event loop and deferring
+an action.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_loop_a015a1465fa9731920cbadab0cf735695}\label{classgevent_1_1__interfaces_1_1_i_loop_a015a1465fa9731920cbadab0cf735695}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}!signal@{signal}}
+\index{signal@{signal}!gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}}
+\subsubsection{\texorpdfstring{signal()}{signal()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Loop.\+signal (\begin{DoxyParamCaption}\item[{}]{signum,  }\item[{}]{ref = {\ttfamily True},  }\item[{}]{priority = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create and return a signal watcher for the signal *signum*,
+one of the constants defined in :mod:`signal`.
+
+This is platform and event loop specific.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_loop_a8906af9ad6b57cb89d18a376221031e6}\label{classgevent_1_1__interfaces_1_1_i_loop_a8906af9ad6b57cb89d18a376221031e6}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}!stat@{stat}}
+\index{stat@{stat}!gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}}
+\subsubsection{\texorpdfstring{stat()}{stat()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Loop.\+stat (\begin{DoxyParamCaption}\item[{}]{path,  }\item[{}]{interval = {\ttfamily 0.0},  }\item[{}]{ref = {\ttfamily True},  }\item[{}]{priority = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a watcher that monitors the filesystem item at *path*.
+
+If the operating system doesn't support event notifications
+from the filesystem, poll for changes every *interval* seconds.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_loop_a7d6251104dbf1e3181696df8265a0fd3}\label{classgevent_1_1__interfaces_1_1_i_loop_a7d6251104dbf1e3181696df8265a0fd3}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}!timer@{timer}}
+\index{timer@{timer}!gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}}
+\subsubsection{\texorpdfstring{timer()}{timer()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Loop.\+timer (\begin{DoxyParamCaption}\item[{}]{after,  }\item[{}]{repeat = {\ttfamily 0.0},  }\item[{}]{ref = {\ttfamily True},  }\item[{}]{priority = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create and return a timer watcher that will fire after *after* seconds.
+
+If *repeat* is given, the timer will continue to fire every *repeat* seconds.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgevent_1_1__interfaces_1_1_i_loop_ac25c25cd6fc59358ceb64c26b88dc556}\label{classgevent_1_1__interfaces_1_1_i_loop_ac25c25cd6fc59358ceb64c26b88dc556}} 
+\index{gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}!update\+\_\+now@{update\+\_\+now}}
+\index{update\+\_\+now@{update\+\_\+now}!gevent\+::\+\_\+interfaces\+::\+I\+Loop@{gevent\+::\+\_\+interfaces\+::\+I\+Loop}}
+\subsubsection{\texorpdfstring{update\+\_\+now()}{update\_now()}}
+{\footnotesize\ttfamily def gevent.\+\_\+interfaces.\+I\+Loop.\+update\+\_\+now (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update the loop's notion of the current time.
+
+.. versionadded:: 1.3
+   In the past, this available as ``update``. This is still available as
+   an alias but will be removed in the future.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/\+\_\+interfaces.\+py\end{DoxyCompactItemize}

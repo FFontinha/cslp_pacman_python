@@ -1,0 +1,54 @@
+\hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_or}{}\section{setuptools.\+\_\+vendor.\+pyparsing.\+Or Class Reference}
+\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_or}\index{setuptools.\+\_\+vendor.\+pyparsing.\+Or@{setuptools.\+\_\+vendor.\+pyparsing.\+Or}}
+
+
+Inherits \hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parse_expression}{setuptools.\+\_\+vendor.\+pyparsing.\+Parse\+Expression}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_or_a68d209328487bf3f8e70efb3f9f7f114}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_or_a68d209328487bf3f8e70efb3f9f7f114}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, exprs, savelist=False)
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_or_a4b5bd6872dfe9002f590802f902328cd}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_or_a4b5bd6872dfe9002f590802f902328cd}} 
+def {\bfseries parse\+Impl} (self, instring, loc, do\+Actions=True)
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_or_a18953323a799c8234ef73ce10a4afb72}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_or_a18953323a799c8234ef73ce10a4afb72}} 
+def {\bfseries \+\_\+\+\_\+ixor\+\_\+\+\_\+} (self, other)
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_or_ada6d1a60f3284ea741fe53ae77e7a38f}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_or_ada6d1a60f3284ea741fe53ae77e7a38f}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_or_a3e7cea25c071116e2554f41c8bdc65d6}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_or_a3e7cea25c071116e2554f41c8bdc65d6}} 
+def {\bfseries check\+Recursion} (self, parse\+Element\+List)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_or_a9fdd01868295eb0d39b27fa15bbabd14}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_or_a9fdd01868295eb0d39b27fa15bbabd14}} 
+{\bfseries may\+Return\+Empty}
+\item 
+\mbox{\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_or_aad2de411355fe47546488fded5f3b696}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_or_aad2de411355fe47546488fded5f3b696}} 
+{\bfseries str\+Repr}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Requires that at least one C{ParseExpression} is found.
+If two expressions match, the expression that matches the longest string will be used.
+May be constructed using the C{'^'} operator.
+
+Example::
+    # construct Or using '^' operator
+    
+    number = Word(nums) ^ Combine(Word(nums) + '.' + Word(nums))
+    print(number.searchString("123 3.1416 789"))
+prints::
+    [['123'], ['3.1416'], ['789']]
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/setuptools/\+\_\+vendor/pyparsing.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,105 @@
+\hypertarget{class__pytest_1_1__code_1_1code_1_1_exception_info}{}\section{\+\_\+pytest.\+\_\+code.\+code.\+Exception\+Info Class Reference}
+\label{class__pytest_1_1__code_1_1code_1_1_exception_info}\index{\+\_\+pytest.\+\_\+code.\+code.\+Exception\+Info@{\+\_\+pytest.\+\_\+code.\+code.\+Exception\+Info}}
+
+
+Inherits object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_exception_info_af1bec3aff93c302543acc5b4e432874f}\label{class__pytest_1_1__code_1_1code_1_1_exception_info_af1bec3aff93c302543acc5b4e432874f}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, tup=None, exprinfo=None)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_exception_info_a0ba5a2c5c325c4b33472fa3662dcd51d}\label{class__pytest_1_1__code_1_1code_1_1_exception_info_a0ba5a2c5c325c4b33472fa3662dcd51d}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_exception_info_a9d620ab4a39df99eb21c640a6e6677ff}{exconly} (self, tryshort=False)
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_exception_info_ad860848bfec5f4a146816240745e0ae5}{errisinstance} (self, exc)
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_exception_info_adb77d6564f59da03dc2a08ba64484cad}{getrepr} (self, showlocals=False, style=\char`\"{}long\char`\"{}, abspath=False, tbfilter=True, funcargs=False, truncate\+\_\+locals=True)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_exception_info_a4ceb8d3c2a09aac6bee0af4a66776faa}\label{class__pytest_1_1__code_1_1code_1_1_exception_info_a4ceb8d3c2a09aac6bee0af4a66776faa}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_exception_info_a16a2518031df1cfa9057c8feff154c2b}\label{class__pytest_1_1__code_1_1code_1_1_exception_info_a16a2518031df1cfa9057c8feff154c2b}} 
+def {\bfseries \+\_\+\+\_\+unicode\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{class__pytest_1_1__code_1_1code_1_1_exception_info_a4f098c68872a17664de89b00ebac9190}{match} (self, regexp)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_exception_info_aac52e13e3b15c04b1af062b8a322654e}\label{class__pytest_1_1__code_1_1code_1_1_exception_info_aac52e13e3b15c04b1af062b8a322654e}} 
+{\bfseries type}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_exception_info_a41eb8b117a5d52da357c593bb96006fe}\label{class__pytest_1_1__code_1_1code_1_1_exception_info_a41eb8b117a5d52da357c593bb96006fe}} 
+{\bfseries value}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_exception_info_a4a3d5ddc9e198f0283d0766f14a94b90}\label{class__pytest_1_1__code_1_1code_1_1_exception_info_a4a3d5ddc9e198f0283d0766f14a94b90}} 
+{\bfseries tb}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_exception_info_ae2ccd1d02998c461fc2f34c1b26fdc84}\label{class__pytest_1_1__code_1_1code_1_1_exception_info_ae2ccd1d02998c461fc2f34c1b26fdc84}} 
+{\bfseries typename}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_exception_info_aa8b5fa4eb59eae298e7b48d40a6bddde}\label{class__pytest_1_1__code_1_1code_1_1_exception_info_aa8b5fa4eb59eae298e7b48d40a6bddde}} 
+{\bfseries traceback}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}wraps sys.exc_info() objects and offers
+    help for navigating the traceback.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_exception_info_ad860848bfec5f4a146816240745e0ae5}\label{class__pytest_1_1__code_1_1code_1_1_exception_info_ad860848bfec5f4a146816240745e0ae5}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Exception\+Info@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Exception\+Info}!errisinstance@{errisinstance}}
+\index{errisinstance@{errisinstance}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Exception\+Info@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Exception\+Info}}
+\subsubsection{\texorpdfstring{errisinstance()}{errisinstance()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Exception\+Info.\+errisinstance (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{exc }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return True if the exception is an instance of exc \end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_exception_info_a9d620ab4a39df99eb21c640a6e6677ff}\label{class__pytest_1_1__code_1_1code_1_1_exception_info_a9d620ab4a39df99eb21c640a6e6677ff}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Exception\+Info@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Exception\+Info}!exconly@{exconly}}
+\index{exconly@{exconly}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Exception\+Info@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Exception\+Info}}
+\subsubsection{\texorpdfstring{exconly()}{exconly()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Exception\+Info.\+exconly (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tryshort = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return the exception as a string
+
+    when 'tryshort' resolves to True, and the exception is a
+    _pytest._code._AssertionError, only the actual exception part of
+    the exception representation is returned (so 'AssertionError: ' is
+    removed from the beginning)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_exception_info_adb77d6564f59da03dc2a08ba64484cad}\label{class__pytest_1_1__code_1_1code_1_1_exception_info_adb77d6564f59da03dc2a08ba64484cad}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Exception\+Info@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Exception\+Info}!getrepr@{getrepr}}
+\index{getrepr@{getrepr}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Exception\+Info@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Exception\+Info}}
+\subsubsection{\texorpdfstring{getrepr()}{getrepr()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Exception\+Info.\+getrepr (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{showlocals = {\ttfamily False},  }\item[{}]{style = {\ttfamily \char`\"{}long\char`\"{}},  }\item[{}]{abspath = {\ttfamily False},  }\item[{}]{tbfilter = {\ttfamily True},  }\item[{}]{funcargs = {\ttfamily False},  }\item[{}]{truncate\+\_\+locals = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return str()able representation of this exception info.
+    showlocals: show locals per traceback entry
+    style: long|short|no|native traceback style
+    tbfilter: hide entries (where __tracebackhide__ is true)
+
+    in case of style==native, tbfilter and showlocals is ignored.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1__code_1_1code_1_1_exception_info_a4f098c68872a17664de89b00ebac9190}\label{class__pytest_1_1__code_1_1code_1_1_exception_info_a4f098c68872a17664de89b00ebac9190}} 
+\index{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Exception\+Info@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Exception\+Info}!match@{match}}
+\index{match@{match}!\+\_\+pytest\+::\+\_\+code\+::code\+::\+Exception\+Info@{\+\_\+pytest\+::\+\_\+code\+::code\+::\+Exception\+Info}}
+\subsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+\_\+code.\+code.\+Exception\+Info.\+match (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{regexp }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Match the regular expression 'regexp' on the string representation of
+the exception. If it matches then True is returned (so that it is
+possible to write 'assert excinfo.match()'). If it doesn't match an
+AssertionError is raised.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/\+\_\+code/code.\+py\end{DoxyCompactItemize}

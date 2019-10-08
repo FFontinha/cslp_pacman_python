@@ -1,0 +1,121 @@
+\hypertarget{class__pytest_1_1python_1_1_metafunc}{}\section{\+\_\+pytest.\+python.\+Metafunc Class Reference}
+\label{class__pytest_1_1python_1_1_metafunc}\index{\+\_\+pytest.\+python.\+Metafunc@{\+\_\+pytest.\+python.\+Metafunc}}
+
+
+Inherits Funcargnames\+Compat\+Attr.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1python_1_1_metafunc_a4d0cefafd8b6bad5d68098f07b7ac58a}\label{class__pytest_1_1python_1_1_metafunc_a4d0cefafd8b6bad5d68098f07b7ac58a}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, definition, fixtureinfo, config, cls=None, module=None)
+\item 
+def \hyperlink{class__pytest_1_1python_1_1_metafunc_abc41169b0a1db224380e1f7aaa4e5eaa}{parametrize} (self, argnames, argvalues, indirect=False, ids=None, scope=None)
+\item 
+def \hyperlink{class__pytest_1_1python_1_1_metafunc_adb6df445cadf2192144df7e44b66dd3b}{addcall} (self, funcargs=None, id=N\+O\+T\+S\+ET, param=N\+O\+T\+S\+ET)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1python_1_1_metafunc_aa30a1f1d5d6e2410a039b1a42c154aa8}\label{class__pytest_1_1python_1_1_metafunc_aa30a1f1d5d6e2410a039b1a42c154aa8}} 
+{\bfseries definition}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1python_1_1_metafunc_a646f937ccd4b32c3f775d0485b8e5191}\label{class__pytest_1_1python_1_1_metafunc_a646f937ccd4b32c3f775d0485b8e5191}} 
+{\bfseries config}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1python_1_1_metafunc_adc6c09caf09134f1e1b12593ad86805d}\label{class__pytest_1_1python_1_1_metafunc_adc6c09caf09134f1e1b12593ad86805d}} 
+{\bfseries module}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1python_1_1_metafunc_a3e8ccf8ff90acbc2dba12de5795c0f79}\label{class__pytest_1_1python_1_1_metafunc_a3e8ccf8ff90acbc2dba12de5795c0f79}} 
+{\bfseries function}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1python_1_1_metafunc_acafc9ad599a20ddee090b1f62d53bf0a}\label{class__pytest_1_1python_1_1_metafunc_acafc9ad599a20ddee090b1f62d53bf0a}} 
+{\bfseries fixturenames}
+\item 
+\mbox{\Hypertarget{class__pytest_1_1python_1_1_metafunc_a1c6ac6e568d78b4d9d743246c8fda072}\label{class__pytest_1_1python_1_1_metafunc_a1c6ac6e568d78b4d9d743246c8fda072}} 
+{\bfseries cls}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Metafunc objects are passed to the :func:`pytest_generate_tests <_pytest.hookspec.pytest_generate_tests>` hook.
+They help to inspect a test function and to generate tests according to
+test configuration or values specified in the class or module where a
+test function is defined.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class__pytest_1_1python_1_1_metafunc_adb6df445cadf2192144df7e44b66dd3b}\label{class__pytest_1_1python_1_1_metafunc_adb6df445cadf2192144df7e44b66dd3b}} 
+\index{\+\_\+pytest\+::python\+::\+Metafunc@{\+\_\+pytest\+::python\+::\+Metafunc}!addcall@{addcall}}
+\index{addcall@{addcall}!\+\_\+pytest\+::python\+::\+Metafunc@{\+\_\+pytest\+::python\+::\+Metafunc}}
+\subsubsection{\texorpdfstring{addcall()}{addcall()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+python.\+Metafunc.\+addcall (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{funcargs = {\ttfamily None},  }\item[{}]{id = {\ttfamily NOTSET},  }\item[{}]{param = {\ttfamily NOTSET} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a new call to the underlying test function during the collection phase of a test run.
+
+.. deprecated:: 3.3
+
+    Use :meth:`parametrize` instead.
+
+Note that request.addcall() is called during the test collection phase prior and
+independently to actual test execution.  You should only use addcall()
+if you need to specify multiple arguments of a test function.
+
+:arg funcargs: argument keyword dictionary used when invoking
+    the test function.
+
+:arg id: used for reporting and identification purposes.  If you
+    don't supply an `id` an automatic unique id will be generated.
+
+:arg param: a parameter which will be exposed to a later fixture function
+    invocation through the ``request.param`` attribute.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class__pytest_1_1python_1_1_metafunc_abc41169b0a1db224380e1f7aaa4e5eaa}\label{class__pytest_1_1python_1_1_metafunc_abc41169b0a1db224380e1f7aaa4e5eaa}} 
+\index{\+\_\+pytest\+::python\+::\+Metafunc@{\+\_\+pytest\+::python\+::\+Metafunc}!parametrize@{parametrize}}
+\index{parametrize@{parametrize}!\+\_\+pytest\+::python\+::\+Metafunc@{\+\_\+pytest\+::python\+::\+Metafunc}}
+\subsubsection{\texorpdfstring{parametrize()}{parametrize()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+python.\+Metafunc.\+parametrize (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{argnames,  }\item[{}]{argvalues,  }\item[{}]{indirect = {\ttfamily False},  }\item[{}]{ids = {\ttfamily None},  }\item[{}]{scope = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add new invocations to the underlying test function using the list
+of argvalues for the given argnames.  Parametrization is performed
+during the collection phase.  If you need to setup expensive resources
+see about setting indirect to do it rather at test setup time.
+
+:arg argnames: a comma-separated string denoting one or more argument
+       names, or a list/tuple of argument strings.
+
+:arg argvalues: The list of argvalues determines how often a
+    test is invoked with different argument values.  If only one
+    argname was specified argvalues is a list of values.  If N
+    argnames were specified, argvalues must be a list of N-tuples,
+    where each tuple-element specifies a value for its respective
+    argname.
+
+:arg indirect: The list of argnames or boolean. A list of arguments'
+    names (subset of argnames). If True the list contains all names from
+    the argnames. Each argvalue corresponding to an argname in this list will
+    be passed as request.param to its respective argname fixture
+    function so that it can perform more expensive setups during the
+    setup phase of a test rather than at collection time.
+
+:arg ids: list of string ids, or a callable.
+    If strings, each is corresponding to the argvalues so that they are
+    part of the test id. If None is given as id of specific test, the
+    automatically generated id for that argument will be used.
+    If callable, it should take one argument (a single argvalue) and return
+    a string or return None. If None, the automatically generated id for that
+    argument will be used.
+    If no ids are provided they will be generated automatically from
+    the argvalues.
+
+:arg scope: if specified it denotes the scope of the parameters.
+    The scope is used for grouping tests by parameter instances.
+    It will also override any fixture-function defined scope, allowing
+    to set a dynamic scope using test context or configuration.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/\+\_\+pytest/python.\+py\end{DoxyCompactItemize}

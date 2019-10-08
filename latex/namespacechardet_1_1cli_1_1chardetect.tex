@@ -1,0 +1,52 @@
+\hypertarget{namespacechardet_1_1cli_1_1chardetect}{}\section{chardet.\+cli.\+chardetect Namespace Reference}
+\label{namespacechardet_1_1cli_1_1chardetect}\index{chardet.\+cli.\+chardetect@{chardet.\+cli.\+chardetect}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacechardet_1_1cli_1_1chardetect_a6f0bde6dc4e6fb80b8cd261810833998}{description\+\_\+of} (lines, name=\textquotesingle{}stdin\textquotesingle{})
+\item 
+def \hyperlink{namespacechardet_1_1cli_1_1chardetect_af41492a0775361976aa3864cb94f1679}{main} (argv=None)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Script which takes one or more file paths and reports on their detected
+encodings
+
+Example::
+
+    % chardetect somefile someotherfile
+    somefile: windows-1252 with confidence 0.5
+    someotherfile: ascii with confidence 1.0
+
+If no paths are provided, it takes its input from stdin.\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacechardet_1_1cli_1_1chardetect_a6f0bde6dc4e6fb80b8cd261810833998}\label{namespacechardet_1_1cli_1_1chardetect_a6f0bde6dc4e6fb80b8cd261810833998}} 
+\index{chardet\+::cli\+::chardetect@{chardet\+::cli\+::chardetect}!description\+\_\+of@{description\+\_\+of}}
+\index{description\+\_\+of@{description\+\_\+of}!chardet\+::cli\+::chardetect@{chardet\+::cli\+::chardetect}}
+\subsubsection{\texorpdfstring{description\+\_\+of()}{description\_of()}}
+{\footnotesize\ttfamily def chardet.\+cli.\+chardetect.\+description\+\_\+of (\begin{DoxyParamCaption}\item[{}]{lines,  }\item[{}]{name = {\ttfamily \textquotesingle{}stdin\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a string describing the probable encoding of a file or
+list of strings.
+
+:param lines: The lines to get the encoding of.
+:type lines: Iterable of bytes
+:param name: Name of file or collection of lines
+:type name: str
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacechardet_1_1cli_1_1chardetect_af41492a0775361976aa3864cb94f1679}\label{namespacechardet_1_1cli_1_1chardetect_af41492a0775361976aa3864cb94f1679}} 
+\index{chardet\+::cli\+::chardetect@{chardet\+::cli\+::chardetect}!main@{main}}
+\index{main@{main}!chardet\+::cli\+::chardetect@{chardet\+::cli\+::chardetect}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def chardet.\+cli.\+chardetect.\+main (\begin{DoxyParamCaption}\item[{}]{argv = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handles command line arguments and gets things started.
+
+:param argv: List of arguments, as if specified on the command-line.
+             If None, ``sys.argv[1:]`` is used instead.
+:type argv: list of str
+\end{DoxyVerb}
+ 

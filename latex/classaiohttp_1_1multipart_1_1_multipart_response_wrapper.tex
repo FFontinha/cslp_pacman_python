@@ -1,0 +1,67 @@
+\hypertarget{classaiohttp_1_1multipart_1_1_multipart_response_wrapper}{}\section{aiohttp.\+multipart.\+Multipart\+Response\+Wrapper Class Reference}
+\label{classaiohttp_1_1multipart_1_1_multipart_response_wrapper}\index{aiohttp.\+multipart.\+Multipart\+Response\+Wrapper@{aiohttp.\+multipart.\+Multipart\+Response\+Wrapper}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_aea4a3071d426122765f5221e58847827}\label{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_aea4a3071d426122765f5221e58847827}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, resp, stream)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_a91b8b151c2c28b69de09cff1e898d461}\label{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_a91b8b151c2c28b69de09cff1e898d461}} 
+def {\bfseries \+\_\+\+\_\+aiter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_a6001133cd2422489920dcab5f74ed1a0}\label{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_a6001133cd2422489920dcab5f74ed1a0}} 
+def {\bfseries \+\_\+\+\_\+anext\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_af86234292ee8ba0be29210b08f3b1126}{at\+\_\+eof} (self)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_ae70d44e747019ec003377347bfd09740}{next} (self)
+\item 
+def \hyperlink{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_a00580c25330fc7d7bada33b767c8f411}{release} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_ae1acee62757244c52fc1cba2c3c12d27}\label{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_ae1acee62757244c52fc1cba2c3c12d27}} 
+{\bfseries resp}
+\item 
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_a7cde86ca66192143fff577893e117c16}\label{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_a7cde86ca66192143fff577893e117c16}} 
+{\bfseries stream}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Wrapper around the MultipartBodyReader.
+
+It takes care about
+underlying connection and close it when it needs in.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_af86234292ee8ba0be29210b08f3b1126}\label{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_af86234292ee8ba0be29210b08f3b1126}} 
+\index{aiohttp\+::multipart\+::\+Multipart\+Response\+Wrapper@{aiohttp\+::multipart\+::\+Multipart\+Response\+Wrapper}!at\+\_\+eof@{at\+\_\+eof}}
+\index{at\+\_\+eof@{at\+\_\+eof}!aiohttp\+::multipart\+::\+Multipart\+Response\+Wrapper@{aiohttp\+::multipart\+::\+Multipart\+Response\+Wrapper}}
+\subsubsection{\texorpdfstring{at\+\_\+eof()}{at\_eof()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Multipart\+Response\+Wrapper.\+at\+\_\+eof (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns True when all response data had been read.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_ae70d44e747019ec003377347bfd09740}\label{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_ae70d44e747019ec003377347bfd09740}} 
+\index{aiohttp\+::multipart\+::\+Multipart\+Response\+Wrapper@{aiohttp\+::multipart\+::\+Multipart\+Response\+Wrapper}!next@{next}}
+\index{next@{next}!aiohttp\+::multipart\+::\+Multipart\+Response\+Wrapper@{aiohttp\+::multipart\+::\+Multipart\+Response\+Wrapper}}
+\subsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Multipart\+Response\+Wrapper.\+next (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Emits next multipart reader object.\end{DoxyVerb}
+ \mbox{\Hypertarget{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_a00580c25330fc7d7bada33b767c8f411}\label{classaiohttp_1_1multipart_1_1_multipart_response_wrapper_a00580c25330fc7d7bada33b767c8f411}} 
+\index{aiohttp\+::multipart\+::\+Multipart\+Response\+Wrapper@{aiohttp\+::multipart\+::\+Multipart\+Response\+Wrapper}!release@{release}}
+\index{release@{release}!aiohttp\+::multipart\+::\+Multipart\+Response\+Wrapper@{aiohttp\+::multipart\+::\+Multipart\+Response\+Wrapper}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily def aiohttp.\+multipart.\+Multipart\+Response\+Wrapper.\+release (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Releases the connection gracefully, reading all the content
+to the void.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/aiohttp/multipart.\+py\end{DoxyCompactItemize}

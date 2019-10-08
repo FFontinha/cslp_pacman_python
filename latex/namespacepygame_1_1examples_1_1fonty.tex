@@ -1,0 +1,65 @@
+\hypertarget{namespacepygame_1_1examples_1_1fonty}{}\section{pygame.\+examples.\+fonty Namespace Reference}
+\label{namespacepygame_1_1examples_1_1fonty}\index{pygame.\+examples.\+fonty@{pygame.\+examples.\+fonty}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1fonty_aae19a43d265a3f820bd60f2bea57c37d}\label{namespacepygame_1_1examples_1_1fonty_aae19a43d265a3f820bd60f2bea57c37d}} 
+def {\bfseries print\+\_\+unicode} (s)
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1fonty_a8e86292efd47d1bc96db0fe6007825c5}\label{namespacepygame_1_1examples_1_1fonty_a8e86292efd47d1bc96db0fe6007825c5}} 
+def {\bfseries main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1fonty_a961d7f80a684ef6e9554741c5c93e0dc}\label{namespacepygame_1_1examples_1_1fonty_a961d7f80a684ef6e9554741c5c93e0dc}} 
+int \hyperlink{namespacepygame_1_1examples_1_1fonty_a961d7f80a684ef6e9554741c5c93e0dc}{fg} = 250, 240, 230
+\begin{DoxyCompactList}\small\item\em pygame.\+mouse.\+set\+\_\+cursor($\ast$pygame.cursors.\+diamond) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1fonty_afd331fbd898e20d909e8655f81104aa2}\label{namespacepygame_1_1examples_1_1fonty_afd331fbd898e20d909e8655f81104aa2}} 
+int {\bfseries bg} = 5, 5, 5
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1fonty_a25f169031d42ec6b69df1f3cf156ddb0}\label{namespacepygame_1_1examples_1_1fonty_a25f169031d42ec6b69df1f3cf156ddb0}} 
+int {\bfseries wincolor} = 40, 40, 90
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1fonty_a2b69f732fadd32de026a0b85f74bc8d3}\label{namespacepygame_1_1examples_1_1fonty_a2b69f732fadd32de026a0b85f74bc8d3}} 
+{\bfseries font} = pygame.\+font.\+Font(None, 80)
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1fonty_a75f64a643fe77b3d6bccdaf128421deb}\label{namespacepygame_1_1examples_1_1fonty_a75f64a643fe77b3d6bccdaf128421deb}} 
+string {\bfseries text} = \textquotesingle{}Fonty\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1fonty_a9c368b5b0921d50d1e41a2fe94e8607d}\label{namespacepygame_1_1examples_1_1fonty_a9c368b5b0921d50d1e41a2fe94e8607d}} 
+{\bfseries size} = font.\+size(text)
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1fonty_a76d883ca3923581a75e3fe1aa547194d}\label{namespacepygame_1_1examples_1_1fonty_a76d883ca3923581a75e3fe1aa547194d}} 
+{\bfseries ren} = font.\+render(text, 0, \hyperlink{namespacepygame_1_1examples_1_1fonty_a961d7f80a684ef6e9554741c5c93e0dc}{fg}, bg)
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1fonty_a233771208acfea445c554d217d7a28c4}\label{namespacepygame_1_1examples_1_1fonty_a233771208acfea445c554d217d7a28c4}} 
+{\bfseries a\+\_\+sys\+\_\+font} = pygame.\+font.\+Sys\+Font(\char`\"{}Arial\char`\"{}, 60)
+\item 
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1fonty_a09330bd399a372c9680a50acc79b8657}\label{namespacepygame_1_1examples_1_1fonty_a09330bd399a372c9680a50acc79b8657}} 
+int {\bfseries ch} = unicode\+\_\+(\char`\"{}\%c\char`\"{}) \% 0x3060
+\item 
+tuple {\bfseries msg}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Here we load a .TTF font file, and display it in
+a basic pygame window. It demonstrates several of the
+Font object attributes. Nothing exciting in here, but
+it makes a great example for basic window, event, and
+font management.\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepygame_1_1examples_1_1fonty_ab925efabb0d4a5e2979041136c6c1b4e}\label{namespacepygame_1_1examples_1_1fonty_ab925efabb0d4a5e2979041136c6c1b4e}} 
+\index{pygame\+::examples\+::fonty@{pygame\+::examples\+::fonty}!msg@{msg}}
+\index{msg@{msg}!pygame\+::examples\+::fonty@{pygame\+::examples\+::fonty}}
+\subsubsection{\texorpdfstring{msg}{msg}}
+{\footnotesize\ttfamily tuple pygame.\+examples.\+fonty.\+msg}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (unicode\_(\textcolor{stringliteral}{"Font metrics for '%s':  %s"}) %
+2            (ch, a\_sys\_font.metrics (ch)))
+\end{DoxyCode}

@@ -1,0 +1,72 @@
+\hypertarget{classgevent_1_1__config_1_1_loop}{}\section{gevent.\+\_\+config.\+Loop Class Reference}
+\label{classgevent_1_1__config_1_1_loop}\index{gevent.\+\_\+config.\+Loop@{gevent.\+\_\+config.\+Loop}}
+
+
+Inherits \hyperlink{classgevent_1_1__config_1_1_importable_setting}{gevent.\+\_\+config.\+Importable\+Setting}, and \hyperlink{classgevent_1_1__config_1_1_setting}{gevent.\+\_\+config.\+Setting}.
+
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries desc}
+\item 
+list {\bfseries default}
+\item 
+dictionary {\bfseries shortname\+\_\+map}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_loop_a8decfd5bfd7e209ce848476205748382}\label{classgevent_1_1__config_1_1_loop_a8decfd5bfd7e209ce848476205748382}} 
+\index{gevent\+::\+\_\+config\+::\+Loop@{gevent\+::\+\_\+config\+::\+Loop}!default@{default}}
+\index{default@{default}!gevent\+::\+\_\+config\+::\+Loop@{gevent\+::\+\_\+config\+::\+Loop}}
+\subsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily list gevent.\+\_\+config.\+Loop.\+default\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  [
+        \textcolor{stringliteral}{'libev-cext'},
+        \textcolor{stringliteral}{'libev-cffi'},
+        \textcolor{stringliteral}{'libuv-cffi'},
+    ] \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} WIN \textcolor{keywordflow}{else} [
+        \textcolor{stringliteral}{'libuv-cffi'},
+        \textcolor{stringliteral}{'libev-cext'},
+        \textcolor{stringliteral}{'libev-cffi'},
+    ]
+\end{DoxyCode}
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_loop_a65a3c334e9325bf3a56601dd8be881df}\label{classgevent_1_1__config_1_1_loop_a65a3c334e9325bf3a56601dd8be881df}} 
+\index{gevent\+::\+\_\+config\+::\+Loop@{gevent\+::\+\_\+config\+::\+Loop}!desc@{desc}}
+\index{desc@{desc}!gevent\+::\+\_\+config\+::\+Loop@{gevent\+::\+\_\+config\+::\+Loop}}
+\subsubsection{\texorpdfstring{desc}{desc}}
+{\footnotesize\ttfamily string gevent.\+\_\+config.\+Loop.\+desc\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \textcolor{stringliteral}{"""\(\backslash\)}
+\textcolor{stringliteral}{The kind of the loop we use.}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{On Windows, this defaults to libuv, while on}
+\textcolor{stringliteral}{other platforms it defaults to libev.}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{"""}
+\end{DoxyCode}
+\mbox{\Hypertarget{classgevent_1_1__config_1_1_loop_a04ab8b38285fca2cb3f40c6af15d737e}\label{classgevent_1_1__config_1_1_loop_a04ab8b38285fca2cb3f40c6af15d737e}} 
+\index{gevent\+::\+\_\+config\+::\+Loop@{gevent\+::\+\_\+config\+::\+Loop}!shortname\+\_\+map@{shortname\+\_\+map}}
+\index{shortname\+\_\+map@{shortname\+\_\+map}!gevent\+::\+\_\+config\+::\+Loop@{gevent\+::\+\_\+config\+::\+Loop}}
+\subsubsection{\texorpdfstring{shortname\+\_\+map}{shortname\_map}}
+{\footnotesize\ttfamily dictionary gevent.\+\_\+config.\+Loop.\+shortname\+\_\+map\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \{
+        \textcolor{stringliteral}{'libev-cext'}: \textcolor{stringliteral}{'gevent.libev.corecext.loop'},
+        \textcolor{stringliteral}{'libev-cffi'}: \textcolor{stringliteral}{'gevent.libev.corecffi.loop'},
+        \textcolor{stringliteral}{'libuv-cffi'}: \textcolor{stringliteral}{'gevent.libuv.loop.loop'},
+    \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/lib/python3.\+6/site-\/packages/gevent/\+\_\+config.\+py\end{DoxyCompactItemize}

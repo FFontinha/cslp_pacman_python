@@ -1,0 +1,159 @@
+\hypertarget{namespace__pytest_1_1config}{}\section{\+\_\+pytest.\+config Namespace Reference}
+\label{namespace__pytest_1_1config}\index{\+\_\+pytest.\+config@{\+\_\+pytest.\+config}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class__pytest_1_1config_1_1cmdline}{cmdline}
+\item 
+class \hyperlink{class__pytest_1_1config_1_1_config}{Config}
+\item 
+class \hyperlink{class__pytest_1_1config_1_1_conftest_import_failure}{Conftest\+Import\+Failure}
+\item 
+class \hyperlink{class__pytest_1_1config_1_1_notset}{Notset}
+\item 
+class \hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager}{Pytest\+Plugin\+Manager}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespace__pytest_1_1config_aa283449cbd8f4350fafbace4f4c0d97a}{main} (args=None, plugins=None)
+\item 
+def \hyperlink{namespace__pytest_1_1config_a5b6a91e7986a9a63f55f2bedcbf10c33}{filename\+\_\+arg} (path, optname)
+\item 
+def \hyperlink{namespace__pytest_1_1config_a2d031894eb39f6335bed2f49405b0aff}{directory\+\_\+arg} (path, optname)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1config_ab6454e7ac8576333952a3d00bbfbce40}\label{namespace__pytest_1_1config_ab6454e7ac8576333952a3d00bbfbce40}} 
+def {\bfseries get\+\_\+config} ()
+\item 
+def \hyperlink{namespace__pytest_1_1config_ae94af57e2987e05f9de5a48fb4e5d6dd}{get\+\_\+plugin\+\_\+manager} ()
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1config_ada2a195938193c621bef2b738c3d657b}\label{namespace__pytest_1_1config_ada2a195938193c621bef2b738c3d657b}} 
+def {\bfseries setns} (obj, dic)
+\item 
+def \hyperlink{namespace__pytest_1_1config_a837ae06a76ed429052389abf9d761c53}{create\+\_\+terminal\+\_\+writer} (config, args, kwargs)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1config_a0e9dfb5c105ffa3105c3a76f19d5c9ce}\label{namespace__pytest_1_1config_a0e9dfb5c105ffa3105c3a76f19d5c9ce}} 
+{\bfseries hookimpl} = Hookimpl\+Marker(\char`\"{}pytest\char`\"{})
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1config_a968c519dcb5d8c97d24cda82a02eec85}\label{namespace__pytest_1_1config_a968c519dcb5d8c97d24cda82a02eec85}} 
+{\bfseries hookspec} = Hookspec\+Marker(\char`\"{}pytest\char`\"{})
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1config_a7a5dd2bc8c96724804fd340c0a3ec069}\label{namespace__pytest_1_1config_a7a5dd2bc8c96724804fd340c0a3ec069}} 
+{\bfseries main} = staticmethod(main)
+\item 
+tuple {\bfseries default\+\_\+plugins}
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1config_ad764040c3c5d5d9653f7b3bd585ffc5b}\label{namespace__pytest_1_1config_ad764040c3c5d5d9653f7b3bd585ffc5b}} 
+{\bfseries builtin\+\_\+plugins} = set(default\+\_\+plugins)
+\item 
+\mbox{\Hypertarget{namespace__pytest_1_1config_af03792b43fdf62b219099dc9bdd6ca3d}\label{namespace__pytest_1_1config_af03792b43fdf62b219099dc9bdd6ca3d}} 
+{\bfseries notset} = \hyperlink{class__pytest_1_1config_1_1_notset}{Notset}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}command line options, ini-file and conftest.py processing. \end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1config_a837ae06a76ed429052389abf9d761c53}\label{namespace__pytest_1_1config_a837ae06a76ed429052389abf9d761c53}} 
+\index{\+\_\+pytest\+::config@{\+\_\+pytest\+::config}!create\+\_\+terminal\+\_\+writer@{create\+\_\+terminal\+\_\+writer}}
+\index{create\+\_\+terminal\+\_\+writer@{create\+\_\+terminal\+\_\+writer}!\+\_\+pytest\+::config@{\+\_\+pytest\+::config}}
+\subsubsection{\texorpdfstring{create\+\_\+terminal\+\_\+writer()}{create\_terminal\_writer()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+config.\+create\+\_\+terminal\+\_\+writer (\begin{DoxyParamCaption}\item[{}]{config,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a TerminalWriter instance configured according to the options
+in the config object. Every code which requires a TerminalWriter object
+and has access to a config object should use this function.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1config_a2d031894eb39f6335bed2f49405b0aff}\label{namespace__pytest_1_1config_a2d031894eb39f6335bed2f49405b0aff}} 
+\index{\+\_\+pytest\+::config@{\+\_\+pytest\+::config}!directory\+\_\+arg@{directory\+\_\+arg}}
+\index{directory\+\_\+arg@{directory\+\_\+arg}!\+\_\+pytest\+::config@{\+\_\+pytest\+::config}}
+\subsubsection{\texorpdfstring{directory\+\_\+arg()}{directory\_arg()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+config.\+directory\+\_\+arg (\begin{DoxyParamCaption}\item[{}]{path,  }\item[{}]{optname }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Argparse type validator for directory arguments.
+
+:path: path of directory
+:optname: name of the option
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1config_a5b6a91e7986a9a63f55f2bedcbf10c33}\label{namespace__pytest_1_1config_a5b6a91e7986a9a63f55f2bedcbf10c33}} 
+\index{\+\_\+pytest\+::config@{\+\_\+pytest\+::config}!filename\+\_\+arg@{filename\+\_\+arg}}
+\index{filename\+\_\+arg@{filename\+\_\+arg}!\+\_\+pytest\+::config@{\+\_\+pytest\+::config}}
+\subsubsection{\texorpdfstring{filename\+\_\+arg()}{filename\_arg()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+config.\+filename\+\_\+arg (\begin{DoxyParamCaption}\item[{}]{path,  }\item[{}]{optname }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Argparse type validator for filename arguments.
+
+:path: path of filename
+:optname: name of the option
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1config_ae94af57e2987e05f9de5a48fb4e5d6dd}\label{namespace__pytest_1_1config_ae94af57e2987e05f9de5a48fb4e5d6dd}} 
+\index{\+\_\+pytest\+::config@{\+\_\+pytest\+::config}!get\+\_\+plugin\+\_\+manager@{get\+\_\+plugin\+\_\+manager}}
+\index{get\+\_\+plugin\+\_\+manager@{get\+\_\+plugin\+\_\+manager}!\+\_\+pytest\+::config@{\+\_\+pytest\+::config}}
+\subsubsection{\texorpdfstring{get\+\_\+plugin\+\_\+manager()}{get\_plugin\_manager()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+config.\+get\+\_\+plugin\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Obtain a new instance of the
+:py:class:`_pytest.config.PytestPluginManager`, with default plugins
+already loaded.
+
+This function can be used by integration with other tools, like hooking
+into pytest to run tests into an IDE.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace__pytest_1_1config_aa283449cbd8f4350fafbace4f4c0d97a}\label{namespace__pytest_1_1config_aa283449cbd8f4350fafbace4f4c0d97a}} 
+\index{\+\_\+pytest\+::config@{\+\_\+pytest\+::config}!main@{main}}
+\index{main@{main}!\+\_\+pytest\+::config@{\+\_\+pytest\+::config}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def \+\_\+pytest.\+config.\+main (\begin{DoxyParamCaption}\item[{}]{args = {\ttfamily None},  }\item[{}]{plugins = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return exit code, after performing an in-process test run.
+
+:arg args: list of command line arguments.
+
+:arg plugins: list of plugin objects to be auto-registered during
+              initialization.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespace__pytest_1_1config_aa674b255ec7869901e28721600f3ca76}\label{namespace__pytest_1_1config_aa674b255ec7869901e28721600f3ca76}} 
+\index{\+\_\+pytest\+::config@{\+\_\+pytest\+::config}!default\+\_\+plugins@{default\+\_\+plugins}}
+\index{default\+\_\+plugins@{default\+\_\+plugins}!\+\_\+pytest\+::config@{\+\_\+pytest\+::config}}
+\subsubsection{\texorpdfstring{default\+\_\+plugins}{default\_plugins}}
+{\footnotesize\ttfamily tuple \+\_\+pytest.\+config.\+default\+\_\+plugins}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  (
+2     \textcolor{stringliteral}{"mark"},
+3     \textcolor{stringliteral}{"main"},
+4     \textcolor{stringliteral}{"terminal"},
+5     \textcolor{stringliteral}{"runner"},
+6     \textcolor{stringliteral}{"python"},
+7     \textcolor{stringliteral}{"fixtures"},
+8     \textcolor{stringliteral}{"debugging"},
+9     \textcolor{stringliteral}{"unittest"},
+10     \textcolor{stringliteral}{"capture"},
+11     \textcolor{stringliteral}{"skipping"},
+12     \textcolor{stringliteral}{"tmpdir"},
+13     \textcolor{stringliteral}{"monkeypatch"},
+14     \textcolor{stringliteral}{"recwarn"},
+15     \textcolor{stringliteral}{"pastebin"},
+16     \textcolor{stringliteral}{"helpconfig"},
+17     \textcolor{stringliteral}{"nose"},
+18     \textcolor{stringliteral}{"assertion"},
+19     \textcolor{stringliteral}{"junitxml"},
+20     \textcolor{stringliteral}{"resultlog"},
+21     \textcolor{stringliteral}{"doctest"},
+22     \textcolor{stringliteral}{"cacheprovider"},
+23     \textcolor{stringliteral}{"freeze\_support"},
+24     \textcolor{stringliteral}{"setuponly"},
+25     \textcolor{stringliteral}{"setupplan"},
+26     \textcolor{stringliteral}{"warnings"},
+27     \textcolor{stringliteral}{"logging"},
+28 )
+\end{DoxyCode}
